@@ -611,7 +611,7 @@ def build():
              f"світло {p_demand['lights']:.0f} + звук {p_demand['audio']:.0f} "
              f"+ холостий хід станції {p_demand['standby']:.0f}", "good"),
         tile("Панель в нуль", f"~{breakeven:.0f}", "Вт",
-             f"беремо {PP['panel']['chosen_w']} Вт — запас на пил і хмари"),
+             f"{PP['panel']['chosen_w']} Вт узято лише як точку відліку — не рішення"),
         tile("Ясна доба", f"{p_sunny['balance_wh']:+.0f}", "Wh",
              f"панель дає {p_sunny['gen_wh']:.0f}, система бере {p_sunny['demand_wh']:.0f}", "good"),
         tile("Без панелей", f"{p_dead['days_to_swap']:.1f}", "доби",
@@ -673,7 +673,7 @@ def build():
         swap = "тримає" if o["days_to_swap"] == float("inf") else f'{o["days_to_swap"]:.1f} діб'
         cap = "" if o["panel_used_w"] >= PP["panel"]["chosen_w"] else \
               f' <span class="pill add">бере лише {o["panel_used_w"]:.0f} Вт</span>'
-        mark = " ←" if o["name"] == st_name else ""
+        mark = ""  # жодна станція ще не обрана — не позначаємо «вибрану»
         b_style = ' style="color:var(--crit)"' if o["balance_wh"] < 0 else ""
         st_rows.append(
             f'      <tr><td><b>{esc(o["name"])}</b>{mark}</td><td class="num">{o["wh"]} Wh</td>'
@@ -683,7 +683,7 @@ def build():
             f'<td class="num">{o["recharge_h"]:.1f} год</td></tr>')
     solar_page = solar_page.replace("{{STATION_ROWS}}", "\n".join(st_rows))
     solar_page = solar_page.replace("{{STATION_CAPTION}}",
-        f'Рахунок під масив {PP["panel"]["chosen_w"]} Вт і композитну добу {p_demand["total"]:.0f} Wh. '
+        f'Рахунок при орієнтовному масиві {PP["panel"]["chosen_w"]} Вт і композитній добі {p_demand["total"]:.0f} Wh. '
         f'Дві менші станції фізично не приймуть увесь масив — у них нижча стеля сонячного входу, '
         f'і зайві вати просто пропадуть. {esc(PP["_verify"])}')
 
