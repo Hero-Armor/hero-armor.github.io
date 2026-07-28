@@ -1,0 +1,62 @@
+[
+  {
+    "task": "A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)",
+    "component": "audio",
+    "status": "waiting",
+    "note": "чекає доставки; план тесту — в лабораторії"
+  },
+  {
+    "task": "Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч",
+    "component": "solar",
+    "status": "todo",
+    "note": "критично: без цього робот засне; заодно обрати модель станції"
+  },
+  {
+    "task": "Замовити решту BOM одним кошиком",
+    "component": "project",
+    "status": "todo",
+    "note": "усі лінки — в BOM на головній; ~$95 (+$60 плати, якщо ще не куплені)"
+  },
+  {
+    "task": "Прошивка ESP32: MP3→I2S моно, 3 шари гучності, LDR день/ніч, UART радара",
+    "component": "audio",
+    "status": "todo",
+    "note": "тригер на 2.5–3 м по відстані з LD2410C"
+  },
+  {
+    "task": "Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+",
+    "component": "audio",
+    "status": "todo",
+    "note": "рецепт — з сигнальної моделі"
+  },
+  {
+    "task": "Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу",
+    "component": "armor",
+    "status": "todo",
+    "note": "можна фарбувати неметалевою фарбою"
+  },
+  {
+    "task": "Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба",
+    "component": "audio",
+    "status": "todo",
+    "note": "радіатор крізь стінку, зіркова земля"
+  },
+  {
+    "task": "Пилозахист динаміка: гриль + тканина, мембрана вниз",
+    "component": "audio",
+    "status": "todo",
+    "note": "гриль у кошику"
+  },
+  {
+    "task": "Створити repo hero-armor (моно-репо) + GitHub Pages",
+    "component": "project",
+    "status": "todo",
+    "note": "layout узгоджено: audio/ lights/ solar/ armor/ + спільний data/"
+  },
+  {
+    "task": "Заповнити дату переїзду LA→SF і адреси в data/private/",
+    "component": "project",
+    "status": "todo",
+    "note": "без дати ship-to порадник не працює"
+  }
+]

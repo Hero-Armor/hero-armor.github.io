@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ORD-001",
+    "date": "2026-07-27",
+    "vendor": "Amazon",
+    "items": [
+      "Poly-Planar MA-3013, пара",
+      "Herdio HMS60 3\", пара"
+    ],
+    "status": "ordered",
+    "deliver_to": "la",
+    "url": "https://www.amazon.com/dp/B00197V836",
+    "note": "кандидати на A/B тест звуку",
+    "component": "audio"
+  }
+]

@@ -1,0 +1,97 @@
+<title>Hero Armor — операції: задачі й замовлення</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c; }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem; margin: 2.4rem 0 .9rem; }
+  .sub { color: var(--ink-2); max-width: 64ch; margin: 0 0 1.4rem; }
+  a { color: var(--signal); }
+  .banner { border-left: 3px solid var(--warn); background: var(--warn-bg); color: var(--ink);
+            border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-bottom: 1.2rem; font-size: .9rem; }
+  .banner.ok { border-left-color: var(--good); background: var(--good-bg); }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
+          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
+  .pill.done { background: var(--good-bg); color: var(--good); }
+  .pill.doing { background: var(--warn-bg); color: var(--warn); }
+  .pill.waiting { background: var(--warn-bg); color: var(--warn); }
+  .pill.todo { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
+  .pill.ordered { background: var(--warn-bg); color: var(--warn); }
+  .pill.shipped { background: var(--warn-bg); color: var(--warn); }
+  .pill.delivered { background: var(--good-bg); color: var(--good); }
+  .pill.received { background: var(--good-bg); color: var(--good); }
+  .comp { font-family: var(--mono); font-size: .68rem; color: var(--signal); }
+  .gen { font-size: .75rem; color: var(--ink-2); margin-top: 2rem; }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://claude.ai/code/artifact/b5f9223c-1934-413a-9557-be9204d2572b">← головна</a> ·
+     <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced">лабораторія</a> · операції</p>
+  <h1>Задачі й замовлення</h1>
+  <p class="sub">Логістика проєкту: що робимо, що їде поштою і куди. Джерело —
+  <span style="font-family:var(--mono)">data/tasks.json · orders.json · addresses.json</span>;
+  адреси й трек-номери живуть у приватному файлі поза публічним репо.</p>
+
+  {{SHIPTO_HTML}}
+
+  <h2>Задачі</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Статус</th><th>Задача</th><th>Компонент</th><th>Нотатка</th></tr></thead>
+    <tbody>
+{{TASKS_HTML}}
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Замовлення</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>ID</th><th>Дата</th><th>Днів</th><th>Продавець</th><th>Що</th><th>Статус</th><th>Куди</th><th>Трек</th><th>Нотатка</th></tr></thead>
+    <tbody>
+{{ORDERS_HTML}}
+    </tbody>
+  </table>
+  </div>
+
+  <p class="gen">Згенеровано {{GEN_DATE}} · model/build_dashboard.py</p>
+</div>

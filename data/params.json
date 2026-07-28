@@ -1,0 +1,74 @@
+{
+  "rail_v": 12.6,
+  "buck_eff": 0.9,
+  "amp_eff": 0.88,
+  "amp_idle_a": 0.045,
+  "crest_db": 12.0,
+  "thermal": {
+    "rth_jc": 2.0,
+    "rth_pad": 1.5,
+    "heatsink_rth": 5.0,
+    "tj_derate": 100.0,
+    "tj_max": 150.0
+  },
+  "dac_fs_vrms": 2.1,
+  "gain_db": 26,
+  "gain_options": [
+    20,
+    26,
+    32,
+    36
+  ],
+  "currents_33v": {
+    "esp32_play": 0.11,
+    "esp32_idle": 0.045,
+    "dac": 0.02,
+    "sd_read": 0.08
+  },
+  "sensor": {
+    "type": "LD2410C",
+    "a_5v": 0.08,
+    "range_m": 3.0,
+    "pir_a_33v": 6.5e-05,
+    "skin_c": 33.5
+  },
+  "speaker": {
+    "chosen": "ma3013",
+    "config": "mono",
+    "candidates": {
+      "ma3013": {
+        "name": "Poly-Planar MA-3013",
+        "sens_db": 83,
+        "ohms": 4,
+        "rms_w": 30,
+        "fmin_hz": 70
+      },
+      "herdio": {
+        "name": "Herdio HMS60 3\"",
+        "sens_db": 80,
+        "ohms": 4,
+        "rms_w": 20,
+        "fmin_hz": 120
+      }
+    }
+  },
+  "power_source": {
+    "type": "ecoflow",
+    "standby_w": 2.5,
+    "usable_frac": 0.9,
+    "models": {
+      "River 2": 256,
+      "River 2 Max": 512,
+      "Delta 2": 1024
+    },
+    "default_wh": 512
+  },
+  "solar": {
+    "sun_hours": 5,
+    "system_eff": 0.7
+  },
+  "volume": {
+    "day_dbfs": -14,
+    "night_delta_db": -8
+  }
+}

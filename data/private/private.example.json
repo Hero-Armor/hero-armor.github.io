@@ -1,0 +1,10 @@
+{
+  "_comment": "Скопіюй у data/private/private.json і заповни. Тека data/private/ — у .gitignore: НІКОЛИ не потрапляє в публічний репозиторій. Build підхоплює файл автоматично, якщо він є (локально видно все; на публічному сайті — тільки статуси).",
+  "addresses": {
+    "la": "вулиця, місто, zip — Los Angeles",
+    "sf": "вулиця, місто, zip — San Francisco"
+  },
+  "tracking": {
+    "ORD-001": { "carrier": "UPS/USPS/Amazon", "number": "1Z..." }
+  }
+}

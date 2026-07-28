@@ -1,0 +1,11 @@
+{
+  "current": "la",
+  "move_date": null,
+  "locations": {
+    "la": { "label": "Los Angeles", "period": "зараз" },
+    "sf": { "label": "San Francisco", "period": "після переїзду, фінальний стейджинг перед Burn" }
+  },
+  "typical_delivery_days": 3,
+  "move_buffer_days": 2,
+  "note": "Реальні адреси й трек-номери — у data/private/ (gitignored, ніколи не публікується). move_date: YYYY-MM-DD — заповнити!"
+}

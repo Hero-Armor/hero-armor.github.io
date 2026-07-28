@@ -1,0 +1,42 @@
+name: Build and deploy dashboard to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # NOTE: the private repo (addresses/tracking) is deliberately NOT checked
+      # out here — the public site must never contain private logistics data.
+      # build_dashboard.py additionally zeroes private data when CI is set.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build site (stdlib only, no deps)
+        run: cd model && python3 build_dashboard.py --docs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

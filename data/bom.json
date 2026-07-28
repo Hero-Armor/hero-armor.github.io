@@ -1,0 +1,161 @@
+[
+  {
+    "item": "ESP32 WROOM-32 DevKit",
+    "qty": "3",
+    "price": "$17/3шт",
+    "status": "have",
+    "note": "AITRIP 3PCS USB-C, CP2102 — 1 в роботі + 2 запас",
+    "url": "https://www.amazon.com/dp/B0CR5Y2JVD",
+    "component": "audio"
+  },
+  {
+    "item": "PCM5102A (GY-PCM5102)",
+    "qty": "1–2",
+    "price": "$12/3шт",
+    "status": "have",
+    "note": "ACEIRMC 3pcs — ЦАП + 2 запасні",
+    "url": "https://www.amazon.com/dp/B08YNJGSN4",
+    "component": "audio"
+  },
+  {
+    "item": "microSD SPI модуль",
+    "qty": "3",
+    "price": "$7/5шт",
+    "status": "have",
+    "note": "HiLetgo 5pcs з рівнями — живити 5В (LDO на платі)",
+    "url": "https://www.amazon.com/dp/B07BJ2P6X6",
+    "component": "audio"
+  },
+  {
+    "item": "SanDisk 32GB Class 10",
+    "qty": "1–2",
+    "price": "~$10",
+    "status": "have",
+    "note": "SanDisk Ultra 32GB A1 — сотні годин голосу",
+    "url": "https://www.amazon.com/dp/B08L5HMJVW",
+    "component": "audio"
+  },
+  {
+    "item": "TPA3116D2 Mono (WINGONEER)",
+    "qty": "1–2",
+    "price": "$14/2шт",
+    "status": "have",
+    "note": "HiLetgo 2pcs mono 100W — основний + запас",
+    "url": "https://www.amazon.com/dp/B082F7P184",
+    "component": "audio"
+  },
+  {
+    "item": "Poly-Planar MA-3013, пара",
+    "qty": "1",
+    "price": "$70",
+    "status": "have",
+    "note": "83 дБ/Вт/м, 4Ω, 30 Вт RMS, 70 Гц+; фаворит тесту — 1 в роботу (моно), 1 запас",
+    "component": "audio"
+  },
+  {
+    "item": "Herdio HMS60 3\", пара",
+    "qty": "1",
+    "price": "$32",
+    "status": "have",
+    "note": "80 дБ/Вт/м, 4Ω, 20 Вт RMS, 120 Гц+; запасний варіант, готовий IP44 бокс",
+    "component": "audio"
+  },
+  {
+    "item": "LD2410C",
+    "qty": "2–3",
+    "price": "$20/3шт",
+    "status": "add",
+    "note": "3-pack — рівно план запасів; вікно без металу",
+    "url": "https://www.amazon.com/dp/B0F1F97422",
+    "component": "audio"
+  },
+  {
+    "item": "Buck 12→5В ≥1.5А + LC",
+    "qty": "2",
+    "price": "$9/5шт",
+    "status": "add",
+    "note": "MP1584 фіксовані 5В (без крутилки = нічого не зіб'ється); LC-фільтр досипати",
+    "url": "https://www.amazon.com/dp/B0B779ZYN1",
+    "component": "audio"
+  },
+  {
+    "item": "Радіатор 50×50 мм + термопрокладка",
+    "qty": "1",
+    "price": "~$9/4шт",
+    "status": "add",
+    "note": "Easycargo 50×50×20 + термоскотч 3M; крізь стінку, тіньовий бік",
+    "url": "https://www.amazon.com/dp/B0BC15L51H",
+    "component": "audio"
+  },
+  {
+    "item": "Запобіжник 3А + тримач, 1000 µФ 25В",
+    "qty": "1+1",
+    "price": "$9/6шт",
+    "status": "add",
+    "note": "VANSIHO 6 тримачів 18AWG + 6×3А — запаси; обовʼязковий (пожежна безпека)",
+    "url": "https://www.amazon.com/dp/B0C15H3F9M",
+    "component": "audio"
+  },
+  {
+    "item": "Конденсатор 1000 µФ 25В low-ESR",
+    "qty": "10",
+    "price": "$5/10шт",
+    "status": "add",
+    "url": "https://www.amazon.com/dp/B0D78R727K",
+    "note": "страховка від просадок на запиленому контакті (на платі ампа свої вже є)",
+    "component": "audio"
+  },
+  {
+    "item": "Захист динаміка від пилу",
+    "qty": "—",
+    "price": "$10/2шт",
+    "status": "add",
+    "note": "3\" гриль ABS + металева сітка, 2 шт; мембрана вниз",
+    "url": "https://www.amazon.com/dp/B0CGH4D68B",
+    "component": "audio"
+  },
+  {
+    "item": "EcoFlow (12V DC-порт)",
+    "qty": "1",
+    "price": "—",
+    "status": "have",
+    "note": "AC вимкнути, «DC always on»; River 2 ≈ 2.3 доби, R2 Max ≈ 4.7, Delta 2 ≈ 9.3",
+    "component": "solar"
+  },
+  {
+    "item": "Фоторезистор LDR + 10к",
+    "qty": "2",
+    "price": "$6/20шт",
+    "status": "add",
+    "note": "Chanzon GL5528 20 шт — авто день/ніч (GPIO34)",
+    "url": "https://www.amazon.com/dp/B08QRYD4GR",
+    "component": "audio"
+  },
+  {
+    "item": "Штекер-прикурювач з клемами",
+    "qty": "1",
+    "price": "$6/2шт",
+    "status": "add",
+    "note": "YONHAN 2-pack з запобіжником — другий = запас",
+    "url": "https://www.amazon.com/dp/B07L9HQ25S",
+    "component": "audio"
+  },
+  {
+    "item": "XT60 пара + пігтейли",
+    "qty": "2",
+    "price": "$7/2пари",
+    "status": "add",
+    "note": "XT60 з корпусами, 14AWG пігтейли — переплюсовка неможлива",
+    "url": "https://www.amazon.com/dp/B07BF8154S",
+    "component": "audio"
+  },
+  {
+    "item": "Кабель 18AWG силікон, 2×2 м",
+    "qty": "1",
+    "price": "$13/18м",
+    "status": "add",
+    "note": "силікон 2-жильний 30ft+30ft — вистачить на все",
+    "url": "https://www.amazon.com/dp/B07FMRDP87",
+    "component": "audio"
+  }
+]

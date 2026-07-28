@@ -1,0 +1,411 @@
+<title>Hero Armor — лабораторія: симулятор і гучність</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; letter-spacing: .01em; }
+  .sub { color: var(--ink-2); max-width: 64ch; margin: 0 0 1.6rem; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
+       margin: 2.6rem 0 .9rem; letter-spacing: .02em; }
+  .presets { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.2rem; }
+  .presets button, .seg button {
+    font-family: var(--mono); font-size: .78rem; padding: .45rem .8rem;
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 4px; cursor: pointer;
+  }
+  .presets button:hover, .seg button:hover { border-color: var(--accent); }
+  .presets button.active, .seg button.active {
+    background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+  .seg { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .7rem; }
+  .sim { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 1.25rem; align-items: start; }
+  @media (max-width: 760px) { .sim { grid-template-columns: 1fr; } }
+  .controls, .outputs { background: var(--panel); border: 1px solid var(--line);
+                        border-radius: 6px; padding: 1.1rem 1.2rem; }
+  .ctrl { margin-bottom: .9rem; }
+  .ctrl label { display: flex; justify-content: space-between; font-size: .82rem;
+                color: var(--ink-2); margin-bottom: .15rem; }
+  .ctrl label b { font-family: var(--mono); color: var(--ink); font-weight: 600;
+                  font-variant-numeric: tabular-nums; }
+  .ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+  .ctrl-group { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--ink-2);
+                border-top: 1px solid var(--line); padding-top: .8rem; margin: 1.1rem 0 .7rem; }
+  .ctrl-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+  .check { display: flex; align-items: center; gap: .5rem; font-size: .84rem; color: var(--ink); }
+  .check input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .7rem .8rem; background: var(--bg); }
+  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.45rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+  .tile.good { background: var(--good-bg); } .tile.good .v { color: var(--good); }
+  .tile.warn { background: var(--warn-bg); } .tile.warn .v { color: var(--warn); }
+  .tile.crit { background: var(--crit-bg); } .tile.crit .v { color: var(--crit); }
+  .bar-row { margin-top: 1rem; }
+  .bar-row .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+                text-transform: uppercase; color: var(--ink-2); margin-bottom: .3rem; }
+  .bar { position: relative; height: 14px; background: var(--bg); border: 1px solid var(--line);
+         border-radius: 3px; overflow: hidden; }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--signal); transition: width .2s; }
+  .bar .fill.heat { background: linear-gradient(90deg, var(--good), var(--warn) 60%, var(--crit)); }
+  .bar .mark { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--crit); }
+  .bar-legend { display: flex; justify-content: space-between; font-family: var(--mono);
+                font-size: .68rem; color: var(--ink-2); margin-top: .2rem;
+                font-variant-numeric: tabular-nums; }
+  .fig { background: #fcfcfb; border: 1px solid var(--line); border-radius: 6px;
+         padding: .8rem; overflow-x: auto; }
+  .fig img { display: block; min-width: 900px; width: 100%; }
+  .fig-cap { font-size: .8rem; color: var(--ink-2); margin-top: .5rem; max-width: 80ch; }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  .layers { display: grid; gap: .8rem; }
+  .layer { border-left: 3px solid var(--signal); background: var(--panel);
+           border-radius: 0 5px 5px 0; padding: .8rem 1rem; }
+  .layer h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .layer p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://claude.ai/code/artifact/b5f9223c-1934-413a-9557-be9204d2572b">← Hero Armor · головна</a> · лабораторія</p>
+  <h1>Симулятор кейсів + регулювання гучності</h1>
+  <p class="sub">Конфігуратор аудіо-вузла: гучність тепер керується як у житті — стрій gain
+  підсилювача + цифрова гучність DAC. Модель рахує кліпінг, споживання (мова, крест 12 дБ,
+  а не синус), тепло та чутність. Пресети — типові кейси плайї.</p>
+
+  <div class="presets" id="presets"></div>
+
+  <div class="sim">
+    <div class="controls">
+      <div class="ctrl-group">Гучність</div>
+      <div class="seg" id="gain-seg" title="Стрій підсилювача (перемичка/резистор на платі)">
+        <button data-g="20">gain 20 dB</button>
+        <button data-g="26" class="active">26 dB</button>
+        <button data-g="32">32 dB</button>
+        <button data-g="36">36 dB</button>
+      </div>
+      <div class="ctrl"><label>Цифрова гучність DAC <b id="v-vol"></b></label>
+        <input type="range" id="vol" min="-30" max="0" step="0.5" value="-14" aria-label="Цифрова гучність"></div>
+      <label class="check"><input type="checkbox" id="night"> Нічний режим (−8 дБ після 02:00)</label>
+
+      <div class="ctrl-group">Датчик</div>
+      <div class="seg" id="sensor-toggle">
+        <button data-s="radar" class="active">LD2410C радар</button>
+        <button data-s="pir">PIR (порівняння)</button>
+      </div>
+
+      <div class="ctrl-group">Середовище</div>
+      <div class="ctrl"><label>Температура повітря <b id="v-tamb"></b></label>
+        <input type="range" id="tamb" min="-5" max="45" step="1" aria-label="Температура повітря"></div>
+      <div class="ctrl"><label>Сонце на радіаторі (нагрів) <b id="v-solar"></b></label>
+        <input type="range" id="solar" min="0" max="20" step="1" aria-label="Сонячний нагрів"></div>
+      <div class="ctrl"><label>Фоновий шум плайї <b id="v-noise"></b></label>
+        <input type="range" id="noise" min="45" max="100" step="1" aria-label="Фоновий шум"></div>
+
+      <div class="ctrl-group">Сценарій роботи</div>
+      <div class="ctrl"><label>Спрацювань за годину <b id="v-trig"></b></label>
+        <input type="range" id="trig" min="0" max="80" step="1" aria-label="Спрацювань за годину"></div>
+      <div class="ctrl"><label>Довжина фрази <b id="v-clip"></b></label>
+        <input type="range" id="clip" min="5" max="90" step="1" aria-label="Довжина фрази"></div>
+      <div class="ctrl"><label>Пауза після фрази <b id="v-cool"></b></label>
+        <input type="range" id="cool" min="5" max="120" step="5" aria-label="Пауза"></div>
+      <div class="ctrl"><label>Відстань до людини <b id="v-dist"></b></label>
+        <input type="range" id="dist" min="1" max="10" step="0.5" aria-label="Відстань"></div>
+
+      <div class="ctrl-group">Динамік (кандидати на тесті)</div>
+      <div class="seg" id="spk-seg">
+        {{SPK_BTNS}}
+      </div>
+      <label class="check"><input type="checkbox" id="dual"> Стерео-варіант ×2 динаміки (+3 дБ) — відхилено, для порівняння</label>
+
+      <div class="ctrl-group">Залізо</div>
+      <div class="ctrl"><label>Радіатор, тепловий опір <b id="v-rth"></b></label>
+        <input type="range" id="rth" min="1" max="12" step="0.5" aria-label="Тепловий опір радіатора"></div>
+      <div class="ctrl"><label>Чутливість динаміка <b id="v-sens"></b></label>
+        <input type="range" id="sens" min="78" max="96" step="1" aria-label="Чутливість динаміка"></div>
+      <div class="ctrl"><label>EcoFlow, ємність <b id="v-bat"></b></label>
+        <input type="range" id="bat" min="200" max="1100" step="50" aria-label="Ємність EcoFlow"></div>
+    </div>
+
+    <div class="outputs">
+      <div class="tiles" id="tiles"></div>
+      <div class="bar-row">
+        <div class="k">Температура кристала TPA3116 (worst: синус на піковому рівні)</div>
+        <div class="bar"><div class="fill heat" id="bar-tj"></div><div class="mark" style="left: 93.75%"></div></div>
+        <div class="bar-legend"><span>0°C</span><span id="tj-label"></span><span>150°C = захисне відключення</span></div>
+      </div>
+      <div class="bar-row">
+        <div class="k">Голос (середній рівень мови) проти шуму на відстані слухача</div>
+        <div class="bar"><div class="fill" id="bar-spl"></div><div class="mark" id="mark-noise"></div></div>
+        <div class="bar-legend"><span>40 dB</span><span id="spl-label"></span><span>110 dB</span></div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Сигнальний тракт (модель)</h2>
+  <div class="fig">
+    <img src="{{SIGNAL_PNG}}" alt="Три панелі: gain staging і кліпінг; АЧХ каскадів тракту; мова у часі проти межі 12V рейки">
+  </div>
+  <p class="fig-cap">A: де DAC починає кліпувати для кожного strap-гейну (на 26 дБ — від −13.9 dBFS).
+  B: АЧХ всіх каскадів — мовний діапазон 300–3400 Гц проходить без втрат.
+  C: мова з крестом 12 дБ — на нормальній гучності кліпує лише ~1% семплів (нечутно),
+  перекручена — 12% (чутна каша).</p>
+
+  <h2>Регулювання гучності — три шари</h2>
+  <div class="layers">
+    <div class="layer">
+      <h3>1 · Цифрова гучність у прошивці — основне керування</h3>
+      <p>ESP32 множить семпли перед I2S. Робочий діапазон −30…−14 dBFS (на gain 26 дБ вище
+      −13.9 почнеться кліпінг рейки). Профілі: день −14, ніч −22. Годинника в ESP32 нема —
+      день/ніч — фоторезистор LDR на ADC GPIO34 (дільник з 10к) — затверджено і додано на схему;
+      резервно — команда по BLE з телефону. Файли нормалізуємо до піків −1 dBFS, HPF 120 Гц при експорті з ElevenLabs.</p>
+    </div>
+    <div class="layer">
+      <h3>2 · Апаратна межа — потенціометр на платі ампа</h3>
+      <p>Виставляється раз при зборці як стеля гучності: навіть якщо прошивка помилиться і
+      подасть 0 dBFS, амп фізично не зможе перекричати сусідів. Крутимо під час нічного тесту
+      в кемпі до «голосно, але не боляче на 3 метрах» — і фіксуємо лаком.</p>
+    </div>
+    <div class="layer">
+      <h3>3 · Адаптивна гучність від радара — фішка LD2410C</h3>
+      <p>Радар віддає відстань до людини по UART. Людина на 3 м — повна гучність; підійшла
+      впритул на 1 м — тихіше на ~8 дБ (комфортно, не кричить в обличчя). Формула:
+      vol = base − 4·(3 − dist_м) дБ, кламп 0…−10. Це неможливо з PIR — ще один аргумент
+      рішення про радар.</p>
+    </div>
+  </div>
+
+  <h2>{{CASE_TABLE_TITLE}}</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Кейс</th><th>Duty</th><th>Сер. струм</th><th>Wh/добу</th><th>Tj макс</th><th>SPL сер. @3м</th><th>Запас над шумом</th><th>Детекція</th></tr></thead>
+    <tbody>
+{{CASE_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{LAB_CAPTION}}</p>
+
+  <h2>План тесту динаміків (замовлені обидва)</h2>
+  <div class="layers">
+    <div class="layer">
+      <h3>A/B на реальному тракті, не «на слух від телефона»</h3>
+      <p>Зібрати повний ланцюг (ESP32 → PCM5102A → TPA3116 @12В), той самий тестовий кліп голосу
+      Захара, нормалізований до −1 dBFS. Міряти SPL-метром (застосунок на телефоні ок) на 3 м:
+      (1) середній рівень на мові, (2) чи чутно кожне слово при фоновій музиці ~70 дБ.
+      Проганяти кожен динамік окремо і парою — модель прогнозує MA-3013×2 ≈ 77 дБ сер. @3 м,
+      Herdio×2 ≈ 74 дБ; різниця 3 дБ має бути явно чутна.</p>
+    </div>
+    <div class="layer">
+      <h3>Що ще слухати крім гучності</h3>
+      <p>Розбірливість на піках (чи не «плюється» на гучних приголосних — у MA-3013 запас RMS 30 Вт
+      більший за Herdio 20 Вт); низ голосу (MA-3013 грає від 70 Гц, Herdio — від 120 Гц: голос Захара
+      буде «тоншим» на Herdio); деренчання корпусу на максимумі. Herdio — готовий IP44 бокс
+      (простіший монтаж, краще від пилу), MA-3013 — флаш-монтаж, йому потрібен герметичний
+      обʼєм у грудях робота.</p>
+    </div>
+    <div class="layer">
+      <h3>Конфігурація: моно (рішення прийнято)</h3>
+      <p>Один динамік на моно-платі TPA3116D2, другий з пари — готовий запас у боксі.
+      На тесті все одно проганяємо обидва екземпляри окремо: перевірка на брак + вибір
+      кращого в роботу. Пам'ятати про компроміс: −3 дБ проти стерео-варіанту, на гучних
+      вечірках середина мови на межі шуму — піки витягують розбірливість.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const $ = id => document.getElementById(id);
+  {{JS_CONST_1}}
+  {{JS_CONST_2}}
+
+  let sensor = "radar";
+  let gainDb = 26;
+
+  const presets = {{PRESETS_JSON}};
+  const ids = ["vol","tamb","solar","noise","trig","clip","cool","dist","rth","sens","bat"];
+  const units = { vol:" dBFS", tamb:"°C", solar:"+°C", noise:" dB", trig:"/год",
+                  clip:" с", cool:" с", dist:" м", rth:" °C/W", sens:" dB/W/m", bat:" Wh" };
+  const ECOFLOW_STANDBY_W = {{ECOFLOW_STANDBY}};   // DC-port-on standby draw of the station
+
+  function rail33(playing){
+    const a33 = playing ? {{A33_PLAY}} : {{A33_IDLE}};
+    const sensW = sensor === "radar" ? {{RADAR_W}} : {{PIR_W}};
+    return (a33*3.3 + sensW)/(V*BUCK);
+  }
+
+  function compute(p){
+    // --- volume stage: DAC level + amp gain -> peak power, clip headroom
+    const volEff = p.vol + (p.night ? -8 : 0);
+    const vReq = DACFS * Math.pow(10, volEff/20) * Math.pow(10, gainDb/20);
+    const vRms = Math.min(vReq, VCLIP);
+    const pPeak = vRms*vRms/R;               // sine-equivalent peak power
+    const headroom = 20*Math.log10(VCLIP/vReq);
+    const pAvg = pPeak/CREST;                // speech average
+
+    const cycle = p.clip + p.cool;
+    const trig = Math.min(p.trig, 3600/cycle);
+    const duty = trig*p.clip/3600;
+    const iPlay = pAvg/(EFF*V)+IDLE + rail33(true);
+    const iIdle = IDLE + rail33(false);
+    const iAvg = duty*iPlay + (1-duty)*iIdle;
+    const whDay = iAvg*V*24;
+
+    const pDis = pPeak*(1/EFF-1) + IDLE*V*0.5;   // conservative: sine at peak level
+    const tSink = p.tamb + p.solar;
+    const tjW = tSink + pDis*(RJC+RPAD+p.rth);
+
+    const sensEff = p.sens + (p.dual ? 3 : 0);
+    const splAvg = sensEff + 10*Math.log10(Math.max(pAvg,0.001)) - 20*Math.log10(p.dist);
+    const splPeak = sensEff + 10*Math.log10(Math.max(pPeak,0.001)) - 20*Math.log10(p.dist);
+    const margin = splAvg - p.noise;
+
+    const contrast = Math.max(SKIN - p.tamb, 0);
+    const pirM = sensor === "radar" ? 3.0 : 3*Math.min(1, Math.max(0.15, contrast/13.5));
+    const whTotal = whDay + ECOFLOW_STANDBY_W*24;
+    const days = p.bat*0.9/whTotal;
+    const solarW = whTotal/(5*0.7);
+    return { volEff, pPeak, pAvg, headroom, duty, iAvg, whDay, pDis, tjW,
+             splAvg, splPeak, margin, pirM, days, solarW, trig };
+  }
+
+  function tile(k, v, u, note, cls){
+    return `<div class="tile ${cls||""}"><div class="k">${k}</div><div class="v">${v}<span class="u"> ${u}</span></div>${note?`<div class="note">${note}</div>`:""}</div>`;
+  }
+
+  function render(){
+    const p = {};
+    ids.forEach(id => p[id] = parseFloat($(id).value));
+    p.night = $("night").checked;
+    p.dual = $("dual").checked;
+    ids.forEach(id => $("v-"+id).textContent = $(id).value + units[id]);
+    const r = compute(p);
+
+    const clipCls = r.headroom >= 0 ? "good" : (r.headroom >= -3 ? "warn" : "crit");
+    const clipNote = r.headroom >= 0 ? `чисто, запас ${r.headroom.toFixed(1)} дБ`
+                   : (r.headroom >= -3 ? "легкий кліпінг піків" : "чутні спотворення!");
+    const tjCls = r.tjW < 85 ? "good" : (r.tjW < 115 ? "warn" : "crit");
+    const splCls = r.margin >= 6 ? "good" : (r.margin >= 0 ? "warn" : "crit");
+    const pirCls = r.pirM >= 2 ? "good" : (r.pirM >= 1 ? "warn" : "crit");
+    const batCls = r.days >= 7 ? "good" : (r.days >= 3 ? "warn" : "crit");
+
+    $("tiles").innerHTML =
+      tile("Гучність ефект.", r.volEff.toFixed(1), "dBFS", p.night ? "нічний −8 дБ активний" : `gain ${gainDb} дБ`) +
+      tile("Кліпінг", r.headroom >= 0 ? "ні" : `−${(-r.headroom).toFixed(1)}`,
+           r.headroom >= 0 ? "" : "дБ", clipNote, clipCls) +
+      tile("Пік / серед.", `${r.pPeak.toFixed(1)} / ${r.pAvg.toFixed(1)}`, "Вт",
+           "синус-екв. пік / мова") +
+      tile("Duty cycle", (r.duty*100).toFixed(1), "%", `${r.trig.toFixed(0)} спрацювань/год`) +
+      tile("Сер. струм @12V", (r.iAvg*1000).toFixed(0), "mA") +
+      tile("Споживання", r.whDay.toFixed(0), "Wh/добу", `${(r.whDay/V).toFixed(1)} Ah/добу`) +
+      tile("Автономність", r.days.toFixed(1), "діб",
+           `зі стендбаєм EcoFlow ${ECOFLOW_STANDBY_W} Вт; сонце в нуль ~${r.solarW.toFixed(0)} Вт`, batCls) +
+      tile("Tj кристала", r.tjW.toFixed(0), "°C",
+           tjCls==="good"?"норма, < 85°C":(tjCls==="warn"?"тепло, але працює":"ризик відключення!"), tjCls) +
+      tile("SPL сер./пік", `${r.splAvg.toFixed(0)} / ${r.splPeak.toFixed(0)}`, "dB",
+           `запас над шумом ${r.margin>=0?"+":""}${r.margin.toFixed(1)} дБ`, splCls) +
+      tile("Радіус детекції", r.pirM.toFixed(2), "м",
+        sensor==="radar" ? "LD2410C: стабільно, до 6 м" :
+        (pirCls==="crit"?"PIR сліпне вдень!":(pirCls==="warn"?"контраст падає":"повний радіус")),
+        sensor==="radar" ? "good" : pirCls);
+
+    $("bar-tj").style.width = Math.min(100, r.tjW/160*100) + "%";
+    $("tj-label").textContent = `Tj = ${r.tjW.toFixed(0)}°C`;
+    $("bar-spl").style.width = Math.min(100, Math.max(0,(r.splAvg-40)/70*100)) + "%";
+    $("mark-noise").style.left = Math.min(100, Math.max(0,(p.noise-40)/70*100)) + "%";
+    $("spl-label").textContent = `голос ${r.splAvg.toFixed(0)} dB · шум ${p.noise} dB`;
+  }
+
+  const presetBox = $("presets");
+  presets.forEach(pr => {
+    const b = document.createElement("button");
+    b.textContent = pr.name;
+    b.addEventListener("click", () => {
+      ids.forEach(id => { if (id in pr) $(id).value = pr[id]; });
+      $("night").checked = pr.night;
+      gainDb = pr.gain;
+      document.querySelectorAll("#gain-seg button").forEach(x =>
+        x.classList.toggle("active", parseFloat(x.dataset.g) === gainDb));
+      presetBox.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      render();
+    });
+    presetBox.appendChild(b);
+  });
+
+  const clearPreset = () =>
+    presetBox.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+  ids.forEach(id => $(id).addEventListener("input", () => { clearPreset(); render(); }));
+  $("night").addEventListener("change", () => { clearPreset(); render(); });
+  $("dual").addEventListener("change", () => { clearPreset(); render(); });
+
+  document.querySelectorAll("#spk-seg button").forEach(b => {
+    b.addEventListener("click", () => {
+      $("sens").value = b.dataset.sens;
+      document.querySelectorAll("#spk-seg button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      clearPreset(); render();
+    });
+  });
+
+  document.querySelectorAll("#gain-seg button").forEach(b => {
+    b.addEventListener("click", () => {
+      gainDb = parseFloat(b.dataset.g);
+      document.querySelectorAll("#gain-seg button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      clearPreset(); render();
+    });
+  });
+  document.querySelectorAll("#sensor-toggle button").forEach(b => {
+    b.addEventListener("click", () => {
+      sensor = b.dataset.s;
+      document.querySelectorAll("#sensor-toggle button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      clearPreset(); render();
+    });
+  });
+
+  presetBox.children[1].click();
+</script>
