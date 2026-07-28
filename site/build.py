@@ -38,6 +38,7 @@ ORDERS = json.loads((DATA / "orders.json").read_text())
 ADDR = json.loads((DATA / "addresses.json").read_text())
 COMPONENTS_REG = json.loads((DATA / "components.json").read_text())
 PROJ = json.loads((DATA / "project.json").read_text())
+PLAYBOOKS = json.loads((DATA / "playbooks.json").read_text())
 PRIVATE_FILE = DATA / "private" / "private.json"
 PRIVATE = json.loads(PRIVATE_FILE.read_text()) if PRIVATE_FILE.exists() else {}
 if __import__("os").environ.get("CI"):
@@ -177,7 +178,8 @@ def build_knowledge():
             "genre": "engineering-decision", "name": d["title"],
             "text": re.sub(r"<[^>]+>", "", d["why"]), "about": comp_ref(d["component"])})
 
-    for fname, desc in [("data/project.json", "Project metadata and event dates"),
+    for fname, desc in [("data/project.json", "Project metadata, event dates, change log"),
+                        ("data/playbooks.json", "Working-process playbooks"),
                         ("data/components.json", "Component registry with status"),
                         ("data/bom.json", "Bill of materials with sourcing status"),
                         ("data/decisions.json", "Engineering decision log"),
@@ -466,6 +468,18 @@ def build_okf():
     index_md("computations/index.md", "Обчислення", [("Обчислення", [
         "[Модель аудіо-вузла](audio-node-model.md) - санкціонований розрахунок цифр"])])
 
+    # ---- playbooks ----
+    pb_items = []
+    for pb in PLAYBOOKS:
+        s = uslug(pb["title"])
+        write(f"playbooks/{s}.md", {
+            "type": "Playbook", "title": pb["title"], "description": pb["description"],
+            "tags": pb.get("tags", ["project"]), "generated": gen,
+            "verified": {"by": "human:gumanist", "at": "2026-07-28T00:00:00Z"},
+        }, pb["body"])
+        pb_items.append(f"[{pb['title']}]({s}.md) - {pb['description']}")
+    index_md("playbooks/index.md", "Плейбуки", [("Плейбуки", pb_items)])
+
     # ---- log + root index ----
     log_by_date = {}
     for entry in PROJ.get("log", []):
@@ -491,7 +505,8 @@ def build_okf():
             f"[Закупівля](bom/index.md) - {len(BOM)} позицій, докупити {tobuy_n}",
             f"[Замовлення](orders/index.md) - {len(ORDERS)}",
             "[Модель](model/index.md) - розраховані цифри аудіо-вузла",
-            "[Обчислення](computations/index.md) - санкціоновані розрахунки"]),
+            "[Обчислення](computations/index.md) - санкціоновані розрахунки",
+            f"[Плейбуки](playbooks/index.md) - {len(PLAYBOOKS)} робочих процеси"]),
     ], root=True)
 
     n_files = sum(1 for _ in okf.rglob("*.md"))

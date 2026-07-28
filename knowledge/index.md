@@ -21,3 +21,4 @@ okf_version: "0.2"
 * [Замовлення](orders/index.md) - 1
 * [Модель](model/index.md) - розраховані цифри аудіо-вузла
 * [Обчислення](computations/index.md) - санкціоновані розрахунки
+* [Плейбуки](playbooks/index.md) - 2 робочих процеси

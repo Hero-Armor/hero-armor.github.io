@@ -46,8 +46,25 @@ cd site && python3 build.py --docs              # → dashboard/ + docs/
 ```
 
 `site/build.py` бере числа ТІЛЬКИ з моделі (яка читає `audio/data/`), решту — з `data/*.json`.
-Жодних чисел руками в HTML. Новий компонент: рядки з `component`-тегом у спільних даних
-+ картка в `data/components.json`; своя тека — коли почнеться інженерія.
+Жодних чисел руками в HTML.
+
+## Компоненти: життєвий цикл
+
+Реєстр — `data/components.json`; статуси `concept → in-design → design-ready → build`.
+
+1. **Реєстрація**: картка в `components.json` (`key`, `label`, `emoji`, `status`,
+   `summary`, `page: "<key>.html"`) → сторінка компонента генерується автоматично
+   (`component.tmpl.html`), зʼявляється в навігації і на дашборді.
+2. **Дані**: будь-який запис у спільних `data/*.json` з `"component": "<key>"`
+   сам потрапляє на сторінку компонента, дашборд і в `knowledge/`.
+   Креслення — `site/assets/*.jpg` + `figures` у картці.
+3. **Інженерія** (як audio): `<key>/data/params.json` (+`cases.json`) +
+   `<key>/model/*.py` — числа рахує тільки модель.
+4. **Власний дашборд** (як `audio.html` + `lab.html`): свій шаблон
+   `site/templates/<key>.tmpl.html` + секція в `build.py`; симулятор — окремою
+   сторінкою; артефакт-дзеркало на claude.ai; лінк у `links` картки.
+
+Повний плейбук — [knowledge/playbooks/](knowledge/playbooks/index.md).
 
 ## Команда: доступ і приватні дані
 
