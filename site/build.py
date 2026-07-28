@@ -104,6 +104,7 @@ def build_knowledge():
                        "TPA3116D2 → speaker, 12V from EcoFlow).",
         "url": "https://hero-armor.com/",
         "sameAs": [SITE_URL, "https://github.com/Hero-Armor/hero-armor.github.io"],
+        "image": "https://hero-armor.com/images/hero-render.jpg",
         "hasPart": [{"@id": f"#sub-{c}"} for c in COMPONENTS if c != "project"],
     }]
     for c in COMPONENTS:
@@ -418,7 +419,8 @@ def build_docs(out):
             html = html.replace(url, rel)
         (docs / name).write_text(html)
     (docs / "assets").mkdir(exist_ok=True)
-    (docs / "assets" / "hero.jpg").write_bytes((SITE / "assets" / "hero.jpg").read_bytes())
+    for a in (SITE / "assets").glob("*.jpg"):
+        (docs / "assets" / a.name).write_bytes(a.read_bytes())
     (docs / "knowledge.jsonld").write_text((out / "knowledge.jsonld").read_text())
     print("wrote docs/ (index, audio, lab, ops, knowledge.jsonld) — Pages-ready")
 
