@@ -147,7 +147,7 @@ axC.legend(frameon=True, facecolor=SURFACE, edgecolor=GRID,
 fig.suptitle("Hero Armor · сигнальний тракт: DAC 2.1 Vrms → TPA3116D2 @12V → 4Ω",
              fontsize=12, fontweight="bold", x=0.05, ha="left")
 
-out = "/Users/gumanist/projects/hero-armoour/model/signal_chain.png"
+out = str(__import__("pathlib").Path(__file__).resolve().parent / "signal_chain.png")
 fig.savefig(out, dpi=170)
 print("wrote", out)
 

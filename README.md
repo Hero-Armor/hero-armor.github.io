@@ -13,18 +13,30 @@
 | `data/bom.json` | BOM зі статусами (`have`/`add`/`tbd`) |
 | `data/decisions.json` | журнал рішень (заголовок + «чому») |
 
+## Структура
+
+Публічний сайт проєкту: https://hero-armor.com/ (окремий хостинг).
+Інженерний хаб (цей репозиторій): https://hero-armor.github.io/
+
+```
+data/        спільна база: components, bom, tasks, orders, decisions, addresses
+audio/       модель + схема + params/cases аудіо-вузла
+solar/ lights/ armor/   так само, коли зʼявиться контент
+site/        збірник сайту + шаблони; site/assets/hero.png — арт (codex)
+docs/        генерований сайт (gitignored; збирає CI)
+```
+
 ## Збірка
 
 ```bash
-cd model
-python3 audio_node_model.py     # консольна таблиця кейсів (перевірка)
-python3 schematic.py            # схема → schematic.svg/png
-python3 signal_chain.py         # сигнальний тракт → signal_chain.png
-python3 build_dashboard.py      # → dashboard/main.html + dashboard/lab.html
+cd audio/model && python3 audio_node_model.py   # консольна таблиця кейсів
+cd audio/model && python3 schematic.py          # схема → schematic.svg/png
+cd site && python3 build.py --docs              # → dashboard/ + docs/
 ```
 
-`build_dashboard.py` бере числа ТІЛЬКИ з моделі (яка читає `data/`), BOM і рішення — з JSON.
-Жодних чисел руками в HTML. `--copy-to DIR` — скопіювати у теку публікації артефактів.
+`site/build.py` бере числа ТІЛЬКИ з моделі (яка читає `audio/data/`), решту — з `data/*.json`.
+Жодних чисел руками в HTML. Новий компонент: рядки з `component`-тегом у спільних даних
++ картка в `data/components.json`; своя тека — коли почнеться інженерія.
 
 ## Команда: доступ і приватні дані
 

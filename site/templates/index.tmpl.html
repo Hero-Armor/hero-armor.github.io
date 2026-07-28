@@ -1,0 +1,157 @@
+<title>Hero Armor — проєкт</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c; }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+       margin: 0 0 .3rem; text-wrap: balance; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem; margin: 2.6rem 0 .9rem; }
+  .sub { color: var(--ink-2); max-width: 66ch; margin: 0 0 1.6rem; }
+  a { color: var(--signal); }
+  .nav { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.8rem; }
+  .nav a { display: inline-block; font-family: var(--mono); font-size: .8rem;
+           padding: .5rem .9rem; background: var(--panel); border: 1px solid var(--line);
+           border-radius: 4px; text-decoration: none; color: var(--ink); }
+  .nav a:hover { border-color: var(--accent); }
+  .nav a b { color: var(--accent); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .75rem .85rem; background: var(--panel); }
+  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.5rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: .9rem; }
+  .card { border: 1px solid var(--line); border-radius: 6px; background: var(--panel);
+          padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .5rem; }
+  .card h3 { margin: 0; font-family: var(--disp); font-size: 1.2rem; font-weight: 600; }
+  .card p { margin: 0; font-size: .87rem; color: var(--ink-2); flex: 1; }
+  .card .row { display: flex; align-items: center; gap: .6rem; justify-content: space-between; }
+  .card .links { display: flex; gap: .8rem; font-size: .82rem; }
+  .card .open { font-family: var(--mono); font-size: .72rem; color: var(--ink-2); }
+  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
+          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
+  .pill.design-ready { background: var(--good-bg); color: var(--good); }
+  .pill.in-design { background: var(--warn-bg); color: var(--warn); }
+  .pill.build { background: var(--warn-bg); color: var(--warn); }
+  .pill.concept { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
+  .pill.have { background: var(--good-bg); color: var(--good); }
+  .pill.add { background: var(--warn-bg); color: var(--warn); }
+  .pill.tbd { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  .onboard { background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
+             padding: 1rem 1.2rem; font-size: .88rem; }
+  .onboard pre { background: var(--bg); border: 1px solid var(--line); border-radius: 4px;
+                 padding: .7rem .9rem; overflow-x: auto; font-family: var(--mono);
+                 font-size: .78rem; margin: .6rem 0 0; }
+  .foot { font-size: .78rem; color: var(--ink-2); margin-top: 2.2rem; }
+  .hero { position: relative; border-radius: 8px; overflow: hidden;
+          border: 1px solid var(--line); margin-bottom: .5rem; }
+  .hero img { display: block; width: 100%; height: auto; }
+  .zone { position: absolute; border: 2px solid transparent; border-radius: 8px;
+          text-decoration: none; }
+  .zone span { position: absolute; left: 50%; top: -1.6rem; transform: translateX(-50%);
+               background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+               font-family: var(--mono); font-size: .7rem; padding: .1rem .5rem;
+               border-radius: 999px; white-space: nowrap; opacity: 0;
+               transition: opacity .15s; pointer-events: none; }
+  .zone:hover, .zone:focus-visible { border-color: var(--accent);
+          background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .zone:hover span, .zone:focus-visible span { opacity: 1; }
+  .hero-hint { font-size: .75rem; color: var(--ink-2); margin: 0 0 1.4rem; }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Burning Man 2026 · <a href="https://hero-armor.com/">hero-armor.com</a> · інженерний хаб</p>
+  <h1>Hero Armor — робот, що говорить голосом Захара</h1>
+  <p class="sub">Хаб проєкту: чотири компоненти, спільна закупівля, задачі й логістика.
+  Все генерується з файлової бази <span style="font-family:var(--mono)">data/</span> —
+  цифри рахує модель, руками HTML ніхто не править.</p>
+
+  <div class="hero">
+    <img src="assets/hero.jpg" alt="Hero Armor: бронований робот на плайї — сонячна панель за спиною, динамік у грудях, радарний екран на животі" width="1400" height="933">
+    <a class="zone" style="left:44%;top:8%;width:12.5%;height:15%" href="#card-lights" aria-label="Світло"><span>💡 світло</span></a>
+    <a class="zone" style="left:31%;top:17.5%;width:38%;height:12%" href="#card-solar" aria-label="Сонце і живлення"><span>☀️ сонце / живлення</span></a>
+    <a class="zone" style="left:43.5%;top:25%;width:13.5%;height:17%" href="https://hero-armor.github.io/audio.html" aria-label="Аудіо"><span>🔊 аудіо — динамік</span></a>
+    <a class="zone" style="left:45.5%;top:42.5%;width:9.5%;height:9%" href="https://hero-armor.github.io/audio.html" aria-label="Радар"><span>📡 радар LD2410C</span></a>
+    <a class="zone" style="left:32.5%;top:24%;width:10.5%;height:40%" href="#card-armor" aria-label="Броня — ліва рука"><span>🛡️ броня</span></a>
+    <a class="zone" style="left:57%;top:24%;width:10.5%;height:40%" href="#card-armor" aria-label="Броня — права рука"><span>🛡️ броня</span></a>
+    <a class="zone" style="left:37.5%;top:55%;width:25%;height:40%" href="#card-armor" aria-label="Броня — корпус і ноги"><span>🛡️ броня</span></a>
+  </div>
+  <p class="hero-hint">Клікабельно: динамік і радар → аудіо, панель → живлення, голова → світло, корпус → броня.</p>
+
+  <div class="nav">
+    <a href="https://hero-armor.github.io/audio.html"><b>🔊 Аудіо</b> — рішення і схема</a>
+    <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced"><b>🎚️ Лабораторія</b> — симулятор</a>
+    <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"><b>📦 Операції</b> — задачі, замовлення, LA→SF</a>
+  </div>
+
+  <div class="tiles">
+{{PROJECT_TILES}}
+  </div>
+
+  <h2>Компоненти</h2>
+  <div class="cards">
+{{COMPONENT_CARDS}}
+  </div>
+
+  <h2>Спільна закупівля (BOM)</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Позиція</th><th>Компонент</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>
+    <tbody>
+{{BOM_ROWS}}
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Команда</h2>
+  <div class="onboard">
+    Клонував — отримав усе: моделі, дашборд, агентів (<span style="font-family:var(--mono)">logistics, procurement</span>)
+    і скіли (<span style="font-family:var(--mono)">/order-placed, /project-status</span>). Приватні адреси/треки —
+    окрема репа за доступом.
+    <pre>git clone https://github.com/Hero-Armor/hero-armor.github.io
+git clone https://github.com/Hero-Armor/private hero-armor.github.io/data/private</pre>
+  </div>
+
+  <p class="foot">Дані машинно-читабельні: <a href="knowledge.jsonld">knowledge.jsonld</a>
+  (schema.org JSON-LD) · <a href="https://github.com/Hero-Armor/hero-armor.github.io">GitHub</a> ·
+  згенеровано {{GEN_DATE}}</p>
+</div>

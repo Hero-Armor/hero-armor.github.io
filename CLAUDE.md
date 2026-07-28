@@ -5,13 +5,14 @@ Burning Man проєкт: робот, що говорить голосом За�
 
 ## Джерело правди — файлова база `data/`
 
-- `params.json` — константи моделі · `cases.json` — кейси плайї
+- `audio/data/params.json` — константи моделі · `audio/data/cases.json` — кейси плайї
+- `data/components.json` — реєстр компонентів (картки на індексі)
 - `bom.json` — закупівля · `decisions.json` — рішення · `tasks.json` — задачі
 - `orders.json` — замовлення · `addresses.json` — логістика LA→SF
 - Кожен запис має `component`: `audio | solar | lights | armor | project`
 
 **НІКОЛИ не редагуй HTML дашборда руками.** Правиш `data/*.json` →
-`cd model && python3 build_dashboard.py` → перепублікувати артефакти (ті самі URL).
+`cd site && python3 build.py` → перепублікувати артефакти (ті самі URL).
 Числа на сторінках рахує тільки модель (`model/audio_node_model.py`).
 
 ## Приватність
@@ -37,4 +38,4 @@ Burning Man проєкт: робот, що говорить голосом За�
 - `logistics` — задачі/замовлення/доставки, ops-сторінка
 - `procurement` — BOM, ціни, підготовка кошиків (без покупок)
 
-Схема правиться в `model/schematic.py` (schemdraw), сигнальний тракт — `model/signal_chain.py`.
+Схема правиться в `audio/model/schematic.py` (schemdraw), сигнальний тракт — `audio/model/signal_chain.py`. Публічний сайт проєкту hero-armor.com — ОКРЕМИЙ хостинг, не чіпати; хаб — hero-armor.github.io.

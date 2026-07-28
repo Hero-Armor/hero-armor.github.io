@@ -17,7 +17,7 @@ import schemdraw.elements as elm
 schemdraw.config(fontsize=9, lw=1.4)
 
 PIN_SP = 0.6
-OUT = "/Users/gumanist/projects/hero-armoour/model/schematic"
+OUT = str(__import__("pathlib").Path(__file__).resolve().parent / "schematic")
 
 
 def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0.45):

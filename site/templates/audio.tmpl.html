@@ -1,4 +1,4 @@
-<title>Hero Armor — аудіо-вузол: рішення</title>
+<title>Hero Armor — аудіо-вузол</title>
 <style>
   :root {
     --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
@@ -85,7 +85,7 @@
 </style>
 
 <div class="wrap">
-  <p class="eyebrow">Hero Armor · Burning Man 2026 · аудіо-вузол</p>
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← огляд проєкту</a> · аудіо-вузол</p>
   <h1>Робот говорить голосом Захара: підсумок і рішення</h1>
   <p class="sub">Ланцюг: LD2410C радар → ESP32 (MP3 з картки) → PCM5102A → TPA3116D2 →
   динамік у грудях. Людина на 2.5–3 м → фраза → пауза 30 с. Працює 24/7. Світло — окрема
@@ -108,21 +108,11 @@
   <h2>Схема з'єднань</h2>
   <div class="fig">{{SCHEMATIC_SVG}}</div>
   <p class="fig-cap">Повна попінова схема. Конфіг-піни PCM5102A: SCK→GND (внутрішній PLL),
-  FMT→GND (I2S), XSMT→3V3 (без цього — тиша). Джерело: <span style="font-family:var(--mono)">model/schematic.py</span>
+  FMT→GND (I2S), XSMT→3V3 (без цього — тиша). Джерело: <span style="font-family:var(--mono)">audio/model/schematic.py</span>
   (schemdraw) — правиться кодом і перегенеровується.</p>
 
-  <h2>BOM — статус закупівлі</h2>
-  <div class="tbl-wrap">
-  <table>
-    <thead><tr><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>
-    <tbody>
-{{BOM_ROWS}}
-</tbody>
-  </table>
-  </div>
-
   <h2>Файли проєкту</h2>
-  <p class="files">У репо <code>hero-armoour/model/</code>:
+  <p class="files">У репо <code>audio/model/</code>:
   <code>audio_node_model.py</code> — модель живлення/тепла/акустики (всі константи зверху),
   <code>schematic.py</code> → <code>schematic.svg/png</code> — ця схема,
   <code>signal_chain.py</code> → <code>signal_chain.png</code> — сигнальний тракт.

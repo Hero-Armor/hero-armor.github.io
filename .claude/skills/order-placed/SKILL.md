@@ -15,6 +15,6 @@ description: Зафіксувати покупку — користувач що
 4. Відповідні рядки `data/bom.json` → `status: "have"`.
 5. Якщо є трек-номер — запиши в `data/private/private.json` (`tracking.ORD-NNN`),
    НЕ в публічні файли.
-6. `cd model && python3 build_dashboard.py` + перепублікувати артефакти
+6. `cd site && python3 build.py` + перепублікувати артефакти
    «Головна» і «Операції» (ті самі file paths → ті самі URL).
 7. Підсумуй: номер замовлення, куди їде, що розблокується після доставки.

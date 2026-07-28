@@ -9,7 +9,7 @@ tools: Read, Edit, Write, Bash, WebFetch
 
 Правила:
 1. Джерело правди — JSON-файли. Після БУДЬ-ЯКОЇ зміни:
-   `cd model && python3 build_dashboard.py` — і скажи користувачу, що треба
+   `cd site && python3 build.py` — і скажи користувачу, що треба
    перепублікувати артефакт «Операції» (той самий URL).
 2. Нові замовлення: id `ORD-NNN` (наступний номер), дата сьогодні,
    `deliver_to` за правилом: якщо `move_date` задана і сьогодні + typical_delivery_days

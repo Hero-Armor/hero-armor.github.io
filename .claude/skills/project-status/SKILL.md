@@ -6,7 +6,7 @@ description: Зведення по проєкту Hero Armor — відкрит�
 Побудуй зведення проєкту:
 
 1. Прочитай `data/tasks.json`, `orders.json`, `bom.json`, `addresses.json`.
-2. Запусти `cd model && python3 audio_node_model.py` — свіжі числа моделі.
+2. Запусти `cd audio/model && python3 audio_node_model.py` — свіжі числа моделі.
 3. Звіт у чат (стисло, по-людськи):
    - Задачі по саб-проєктах: doing → waiting (що їх розблокує) → топ-3 todo.
    - Замовлення: що в дорозі, скільки днів, куди; що вже можна тестувати.
