@@ -1,0 +1,14 @@
+---
+type: "Part"
+title: "Щит-бокс із тримачами запобіжників"
+description: "Блок на 4 позиції: головний 40 A + Гр.1 5 A, Гр.2 20 A, Гр.3А 7.5 A. Автомобільні ножові ATO/ATC"
+tags: ["lights"]
+quantity: "1"
+price: "—"
+procurement_status: "add"
+generated: { by: "process:site-build" }
+---
+
+Блок на 4 позиції: головний 40 A + Гр.1 5 A, Гр.2 20 A, Гр.3А 7.5 A. Автомобільні ножові ATO/ATC
+
+Компонент: [Світло](/components/lights.md) · статус: **купити** · ціна — · к-сть 1

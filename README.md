@@ -26,14 +26,24 @@
 Інженерний хаб (цей репозиторій): https://hero-armor.github.io/
 
 ```
-data/        спільна база: components, bom, tasks, orders, decisions, addresses
+data/        спільна база: components, bom, tasks, orders, decisions, addresses, project
 audio/       модель + схема + params/cases аудіо-вузла
 lights/      модель + схема + params/cases світлового вузла (чистий споживач)
 solar/       живлення: станція + масив; модель тягне споживання з lights і audio
 armor/       так само, коли зʼявиться контент
 site/        збірник сайту + шаблони; site/assets/hero.png — арт (codex)
+knowledge/   OKF-бандл (Open Knowledge Format v0.2) — ГЕНЕРУЄТЬСЯ з data/, не правити
 docs/        генерований сайт (gitignored; збирає CI)
 ```
+
+## База знань — Open Knowledge Format
+
+`knowledge/` — [OKF v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)
+бандл: один markdown-концепт на файл (компонент, рішення, задача, позиція BOM,
+замовлення), YAML frontmatter, крос-лінки = граф. Його генерує `build.py` з
+`data/*.json` — читати можна будь-чим (GitHub, Obsidian, будь-який агент),
+правити треба JSON. Рішення несуть `verified: human:…`, розраховані цифри
+посилаються на санкціоновану модель (`type: Attested Computation`).
 
 ## Збірка
 
@@ -54,8 +64,25 @@ cd site && python3 build.py --docs                # → dashboard/ + docs/
 принципом «споживачі не знають про джерело»: `lights` і `audio` рахують лише власне
 споживання, а `solar` імпортує його з них і рахує генерацію, запас і підміну станції.
 Тому цифри не можуть розійтися: змінив режим світла — баланс живлення переїхав сам.
-Жодних чисел руками в HTML. Новий компонент: рядки з `component`-тегом у спільних даних
-+ картка в `data/components.json`; своя тека — коли почнеться інженерія.
+Жодних чисел руками в HTML.
+
+## Компоненти: життєвий цикл
+
+Реєстр — `data/components.json`; статуси `concept → in-design → design-ready → build`.
+
+1. **Реєстрація**: картка в `components.json` (`key`, `label`, `emoji`, `status`,
+   `summary`, `page: "<key>.html"`) → сторінка компонента генерується автоматично
+   (`component.tmpl.html`), зʼявляється в навігації і на дашборді.
+2. **Дані**: будь-який запис у спільних `data/*.json` з `"component": "<key>"`
+   сам потрапляє на сторінку компонента, дашборд і в `knowledge/`.
+   Креслення — `site/assets/*.jpg` + `figures` у картці.
+3. **Інженерія** (як audio): `<key>/data/params.json` (+`cases.json`) +
+   `<key>/model/*.py` — числа рахує тільки модель.
+4. **Власний дашборд** (як `audio.html` + `lab.html`): свій шаблон
+   `site/templates/<key>.tmpl.html` + секція в `build.py`; симулятор — окремою
+   сторінкою; артефакт-дзеркало на claude.ai; лінк у `links` картки.
+
+Повний плейбук — [knowledge/playbooks/](knowledge/playbooks/index.md).
 
 ## Команда: доступ і приватні дані
 

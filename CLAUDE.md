@@ -21,6 +21,30 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 про джерело живлення; `power_node_model` сам імпортує з них споживання. Не дублюй
 автономність і сонце на сторінках споживачів — це компонент «Живлення».
 
+**`knowledge/` — OKF-бандл (Open Knowledge Format v0.2, Google Cloud spec):**
+markdown-концепти з YAML frontmatter, генеруються тим самим `build.py` з
+`data/*.json`. НІКОЛИ не правити руками — це build-продукт, комітиться в репо
+для агентів/людей. Журнал проєкту — `data/project.json → log`; робочі
+процеси — `data/playbooks.json` → `knowledge/playbooks/`.
+
+## Компоненти: як ведемо
+
+Реєстр — `data/components.json` (key, label, emoji, status, summary, page,
+links, figures). Статуси: `concept → in-design → design-ready → build`.
+
+- **Сторінка компонента** (`solar.html`, `lights.html`, `armor.html`)
+  генерується автоматично з `component.tmpl.html`: рішення/задачі/BOM/замовлення
+  з відповідним `component`-тегом підтягуються самі. Додати компонент =
+  картка в реєстрі, сторінка зʼявиться після build.
+- **Інженерія починається** → створюємо `<key>/data/params.json` (+`cases.json`)
+  і `<key>/model/*.py`; числа на сторінках рахує ТІЛЬКИ модель (приклад: audio;
+  наступний кандидат — модель бюджету світла).
+- **Власний дашборд** (як `audio.html` + `lab.html`) — коли generic-сторінки
+  мало: свій шаблон `site/templates/<key>.tmpl.html` + секція в `build.py`,
+  інтерактив окремою сторінкою, артефакт-дзеркало на claude.ai (той самий
+  file path → той самий URL), лінк у `links` картки і navbar index.
+- Повний плейбук: `knowledge/playbooks/` (генерується з `data/playbooks.json`).
+
 ## Приватність
 
 `data/private/` — gitignored: реальні адреси і трек-номери. НІКОЛИ не комітити,
