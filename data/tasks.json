@@ -50,8 +50,8 @@
   {
     "task": "Створити repo hero-armor (моно-репо) + GitHub Pages",
     "component": "project",
-    "status": "todo",
-    "note": "layout узгоджено: audio/ lights/ solar/ armor/ + спільний data/"
+    "status": "done",
+    "note": "https://hero-armor.github.io/ · публічна + приватна репи, Pages через CI"
   },
   {
     "task": "Заповнити дату переїзду LA→SF і адреси в data/private/",
