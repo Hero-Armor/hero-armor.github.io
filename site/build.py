@@ -352,6 +352,83 @@ def build():
     ops = ops.replace("{{ORDERS_HTML}}", "\n".join(orows))
     ops = ops.replace("{{GEN_DATE}}", today.isoformat())
 
+
+    # ================= generic component pages (solar/lights/armor) =================
+    comp_pages = {}
+    for reg in COMPONENTS_REG:
+        k = reg["key"]
+        if k == "audio":
+            continue
+        page = tmpl("component.tmpl.html")
+        page = page.replace("{{PAGE_TITLE}}", f"Hero Armor — {reg['label']}")
+        page = page.replace("{{KEY}}", k).replace("{{EMOJI}}", reg["emoji"])
+        page = page.replace("{{LABEL}}", esc(reg["label"]))
+        page = page.replace("{{STATUS}}", reg["status"])
+        page = page.replace("{{STATUS_LABEL}}", COMP_STATUS_LABEL[reg["status"]])
+        page = page.replace("{{SUMMARY}}", esc(reg["summary"]))
+
+        sections = []
+        figs = reg.get("figures", [])
+        if figs:
+            f_html = "\n".join(
+                f'    <div class="fig"><img src="{src_}" alt="{esc(cap)}" loading="lazy"><p>{esc(cap)}</p></div>'
+                for src_, cap in figs)
+            sections.append(f'  <h2>Креслення</h2>\n  <div class="figs">\n{f_html}\n  </div>')
+
+        c_decs = [d for d in DECISIONS if d["component"] == k]
+        if c_decs:
+            d_html = "\n".join(
+                f'  <div class="decision">\n    <h3>{esc(d["title"])}</h3>\n'
+                f'    <p><span class="why">чому</span> · {d["why"]}</p>\n  </div>'
+                for d in c_decs)
+            sections.append(f'  <h2>Рішення</h2>\n{d_html}')
+
+        c_tasks = [t for t in TASKS if t["component"] == k]
+        if c_tasks:
+            t_rows = "\n".join(
+                f'      <tr><td><span class="pill {t["status"]}">{TASK_STATUS[t["status"]]}</span></td>'
+                f'<td>{esc(t["task"])}</td><td>{esc(t.get("note", ""))}</td></tr>'
+                for t in sorted(c_tasks, key=lambda x: {"doing":0,"waiting":1,"todo":2,"done":3}.get(x["status"], 9)))
+            sections.append('  <h2>Задачі</h2>\n  <div class="tbl-wrap">\n  <table>\n'
+                            '    <thead><tr><th>Статус</th><th>Задача</th><th>Нотатка</th></tr></thead>\n'
+                            f'    <tbody>\n{t_rows}\n    </tbody>\n  </table>\n  </div>')
+
+        c_bom = [b for b in BOM if b["component"] == k]
+        if c_bom:
+            b_rows = []
+            for b in c_bom:
+                cls, label = PILL[b["status"]]
+                label = PILL_OVERRIDES.get(b["item"], label)
+                item = f'<a href="{b["url"]}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"])
+                b_rows.append(f'      <tr><td>{item}</td><td class="num">{b["qty"]}</td>'
+                              f'<td class="num">{b["price"]}</td>'
+                              f'<td><span class="pill {b["status"]}">{label}</span></td>'
+                              f'<td>{esc(b["note"])}</td></tr>')
+            sections.append('  <h2>Закупівля</h2>\n  <div class="tbl-wrap">\n  <table>\n'
+                            '    <thead><tr><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>\n'
+                            f'    <tbody>\n{chr(10).join(b_rows)}\n    </tbody>\n  </table>\n  </div>')
+
+        c_orders = [o for o in ORDERS if o["component"] == k]
+        if c_orders:
+            o_rows = "\n".join(
+                f'      <tr><td class="num">{o["id"]}</td><td class="num">{o["date"]}</td>'
+                f'<td>{esc("; ".join(o["items"]))}</td>'
+                f'<td><span class="pill {o["status"]}">{ORDER_STATUS[o["status"]]}</span></td>'
+                f'<td>{esc(ADDR["locations"][o["deliver_to"]]["label"])}</td></tr>'
+                for o in c_orders)
+            sections.append('  <h2>Замовлення</h2>\n  <div class="tbl-wrap">\n  <table>\n'
+                            '    <thead><tr><th>ID</th><th>Дата</th><th>Що</th><th>Статус</th><th>Куди</th></tr></thead>\n'
+                            f'    <tbody>\n{o_rows}\n    </tbody>\n  </table>\n  </div>')
+
+        if not sections:
+            sections.append('  <div class="empty">Тут поки порожньо. Додай задачі/BOM/рішення з тегом '
+                            f'<span style="font-family:var(--mono)">component: "{k}"</span> у data/ — '
+                            'і вони зʼявляться тут автоматично.</div>')
+
+        page = page.replace("{{SECTIONS}}", "\n\n".join(sections))
+        page = page.replace("{{GEN_DATE}}", today.isoformat())
+        comp_pages[reg["page"]] = page
+
     # ================= index (project overview) =================
     index = tmpl("index.tmpl.html")
     open_tasks = sum(1 for t in TASKS if t["status"] != "done")
@@ -395,7 +472,7 @@ def build():
     index += f'\n<script type="application/ld+json">\n{kg_json}\n</script>\n'
 
     OUT.mkdir(exist_ok=True)
-    pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops}
+    pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops, **comp_pages}
     for name, html in pages.items():
         (OUT / name).write_text(html)
     (OUT / "knowledge.jsonld").write_text(json.dumps(kg, ensure_ascii=False, indent=1))
@@ -411,9 +488,10 @@ def build_docs(out):
     docs = ROOT / "docs"
     docs.mkdir(exist_ok=True)
     swaps = [(ART_MAIN, "index.html"), (ART_LAB, "lab.html"), (ART_OPS, "ops.html"),
-             (SITE_URL + "audio.html", "audio.html"),
+             (SITE_URL + "audio.html", "audio.html"), (SITE_URL + "solar.html", "solar.html"),
+             (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
              ('href="' + SITE_URL + '"', 'href="index.html"')]
-    for name in ("index.html", "audio.html", "lab.html", "ops.html"):
+    for name in ("index.html", "audio.html", "lab.html", "ops.html", "solar.html", "lights.html", "armor.html"):
         html = (out / name).read_text()
         for url, rel in swaps:
             html = html.replace(url, rel)
