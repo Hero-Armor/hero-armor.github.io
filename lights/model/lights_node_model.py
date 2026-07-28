@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """
-Hero Armor lights node — system-level model, driven by ../data/params.json + cases.json.
+Hero Armor lights node — how much the light actually eats. 12V bus.
 
-Bus: LiFePO4 24V -> Victron MPPT + LVD -> three groups
-  g1  прожектори заливки (MR16 12V через ШІМ-диммер, voltage-following)
+  g1  прожектори заливки (MR16 через ШІМ-диммер, voltage-following)
   g2  декоративне: лампи робота + адресна «біжуча вода» + контролер WLED
-  g3a аварійна лінія: габаритні вогні + сходи (окремий поріг LVD 22.2В)
+  g3a аварійна лінія: габаритні вогні + сходи — не регулюється, горить рівно
 
-All constants live in lights/data/params.json; playa scenarios in cases.json.
-This module is the single computation source for the CLI table AND the dashboard
-(site/build.py imports it). Stdlib only — CI builds the site without deps.
+This node is a pure CONSUMER: it knows nothing about batteries, panels or
+autonomy. Generation and storage live in the power node (solar/), which imports
+demand() from here. Keeping the split means changing the EcoFlow model never
+touches the light calculation, and vice versa.
+
+All constants live in lights/data/params.json; night scenarios in cases.json.
+Stdlib only — CI builds the site without deps.
 """
 
 import json
@@ -23,8 +26,6 @@ BUS_V = P["bus_v"]
 VF = P["voltage_following"]
 ADDR = P["addressable"]
 WIRE = P["wiring"]
-BATT = P["battery"]
-SOL = P["solar"]
 PHOTO = P["photometry"]
 GROUPS = P["groups"]
 
@@ -93,10 +94,14 @@ def wiring_losses(g_watts):
     return runs
 
 
-def solar_yield(sun_factor=1.0, panel_w=None):
-    panel_w = SOL["panel_w"] if panel_w is None else panel_w
-    return (panel_w * SOL["sun_hours"] * SOL["mppt_eff"]
-            * SOL["dust_derate"] * SOL["heat_derate"] * sun_factor)
+
+def min_awg(run, g_watts):
+    """Thinnest stocked gauge that keeps this run under the critical drop."""
+    i = sum(g_watts[k] for k in run["groups"]) / BUS_V
+    limit = WIRE["drop_crit_pct"] / 100 * BUS_V
+    ok = [int(a) for a, ohm in sorted(WIRE["awg_ohm_per_m"].items(), key=lambda x: -int(x[0]))
+          if i * 2 * run["length_m"] * ohm <= limit]
+    return max(ok) if ok else None
 
 
 def run_case(c):
@@ -105,25 +110,20 @@ def run_case(c):
     load_w = sum(g.values())
     loss_w = sum(r["loss_w"] for r in runs)
     draw_w = load_w + loss_w
-    wh_night = draw_w * c["hours"]
 
     _, lm_ratio = spot_ratios(c["v_spot"])
     spot = next(f for f in P["fixtures"] if f["id"] == "spot")
     lumens = spot["qty"] * spot["lumens"] * lm_ratio
     lux = lumens * PHOTO["utilization"] / PHOTO["figure_area_m2"]
 
-    gen_wh = solar_yield(c["sun_factor"])
-    usable_wh = BATT["ah"] * BATT["v_nom"] * BATT["dod"]
-
     return dict(
         case=c["name"], key=c["key"], hours=c["hours"],
         g1=g["g1"], g2=g["g2"], g3a=g["g3a"],
-        load_w=load_w, loss_w=loss_w, draw_w=draw_w, wh_night=wh_night,
+        load_w=load_w, loss_w=loss_w, draw_w=draw_w,
+        wh_night=draw_w * c["hours"],
         amps=draw_w / BUS_V, lumens=lumens, lux=lux,
         lux_margin=lux - PHOTO["target_lux"],
         worst_drop_pct=max(r["drop_pct"] for r in runs),
-        gen_wh=gen_wh, balance_wh=gen_wh - wh_night,
-        nights=usable_wh / wh_night if wh_night else float("inf"),
         runs=runs)
 
 
@@ -134,30 +134,39 @@ def composite_night():
     return wh, results
 
 
-def energy_balance(wh_night):
-    """Autonomy per battery option + panel size needed to break even."""
-    usable = {name: ah * BATT["v_nom"] * BATT["dod"] for name, ah in BATT["models_ah"].items()}
-    nights = {name: wh / wh_night for name, wh in usable.items()}
-    per_w = solar_yield(1.0, panel_w=1.0)
-    return dict(
-        wh_night=wh_night, nights=nights,
-        usable_wh=BATT["ah"] * BATT["v_nom"] * BATT["dod"],
-        solar_need_w=wh_night / per_w,
-        gen_wh=solar_yield(), legacy_gen_wh=solar_yield(panel_w=SOL["legacy_panel_w"]),
-        balance_wh=solar_yield() - wh_night)
+def group_energy():
+    """Wh per composite night split by power group + copper losses."""
+    _, results = composite_night()
+    acc = {"g1": 0.0, "g2": 0.0, "g3a": 0.0, "loss": 0.0}
+    for k, h in CASES_DOC["composite_night"].items():
+        r = results[k]
+        for grp in ("g1", "g2", "g3a"):
+            acc[grp] += r[grp] * h
+        acc["loss"] += r["loss_w"] * h
+    return acc
+
+
+def demand():
+    """Public contract for the power node: what the light asks of the station."""
+    wh, results = composite_night()
+    return dict(node="lights", wh_per_day=wh,
+                hours=sum(CASES_DOC["composite_night"].values()),
+                peak_w=sum(peak_watts().values()),
+                max_draw_w=max(r["draw_w"] for r in results.values()),
+                by_group=group_energy())
 
 
 def main():
     hdr = (f"{'Case':28} {'Гр.1':>6} {'Гр.2':>6} {'Гр.3А':>6} {'Разом':>7} "
-           f"{'Wh/ніч':>7} {'lux':>6} {'просад':>7} {'баланс':>8}")
+           f"{'Wh/ніч':>7} {'lux':>6} {'просадка':>9}")
     print(hdr)
     print("-" * len(hdr))
     for c in CASES_DOC["cases"]:
         r = run_case(c)
-        flag = " !!" if r["balance_wh"] < 0 else ""
+        flag = " !!" if r["worst_drop_pct"] > WIRE["drop_crit_pct"] else ""
         print(f"{r['case']:28} {r['g1']:5.1f}W {r['g2']:5.1f}W {r['g3a']:5.1f}W "
               f"{r['draw_w']:6.1f}W {r['wh_night']:7.0f} {r['lux']:6.0f} "
-              f"{r['worst_drop_pct']:6.2f}% {r['balance_wh']:+7.0f}{flag}")
+              f"{r['worst_drop_pct']:8.2f}%{flag}")
 
     pk = peak_watts()
     ref = P["spec_reference"]
@@ -166,21 +175,20 @@ def main():
     print(f"  (розрахунок архітектора: {ref['architect_groups_w']} → "
           f"{ref['architect_peak_w']}W / {ref['architect_night_wh']} Wh)")
 
-    wh, _ = composite_night()
-    b = energy_balance(wh)
-    print(f"\nКомпозитна ніч: {wh:.0f} Wh")
-    for name, n in b["nights"].items():
-        print(f"  АКБ {name:8} -> {n:4.1f} ночей без сонця")
-    print(f"  Панель {SOL['panel_w']}W дає {b['gen_wh']:.0f} Wh/добу -> баланс {b['balance_wh']:+.0f} Wh")
-    print(f"  Попередня панель {SOL['legacy_panel_w']}W дала б {b['legacy_gen_wh']:.0f} Wh -> "
-          f"{b['legacy_gen_wh'] - wh:+.0f} Wh")
-    print(f"  Панель в нуль: ~{b['solar_need_w']:.0f} W")
+    d = demand()
+    print(f"\nКомпозитна ніч {d['hours']:.1f} год -> {d['wh_per_day']:.0f} Wh/добу "
+          f"(пік споживання {d['max_draw_w']:.0f} W)")
+    for k, label in (("g2", "декор (стрічка+робот)"), ("g3a", "аварійна (габарити+сходи)"),
+                     ("g1", "прожектори"), ("loss", "втрати в міді")):
+        v = d["by_group"][k]
+        print(f"  {label:28} {v:5.0f} Wh  {100*v/d['wh_per_day']:4.1f}%")
 
-    print("\nПросадка в лініях (worst case — усе на повну):")
-    for r in wiring_losses(peak_watts()):
+    print(f"\nПросадка на шині {BUS_V:.0f} В (усе на повну, межа {WIRE['drop_crit_pct']:.0f}%):")
+    for r in wiring_losses(pk):
+        need = min_awg(next(x for x in WIRE["runs"] if x["id"] == r["id"]), pk)
+        verdict = "ok" if r["drop_pct"] <= WIRE["drop_crit_pct"] else f"ТРЕБА AWG {need}"
         print(f"  {r['label']:32} AWG{r['awg']:<3} {r['length_m']:5.1f}m "
-              f"{r['amps']:5.1f}A  −{r['v_drop']:.2f}V ({r['drop_pct']:.2f}%)  "
-              f"втрати {r['loss_w']:.1f}W")
+              f"{r['amps']:5.1f}A  −{r['v_drop']:.2f}V ({r['drop_pct']:5.2f}%)  {verdict}")
 
 
 if __name__ == "__main__":

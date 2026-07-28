@@ -1,30 +1,26 @@
 #!/usr/bin/env python3
 """
-Hero Armor lights node — wiring schematic (module-to-module).
+Hero Armor lights node — wiring schematic, 12V bus.
 Generates schematic.svg + schematic.png next to this file.
 
-  SunGoldPower 500W --> Victron MPPT 100/20 --> LiFePO4 24V 200Ah (ANL 100A)
-  24V bus --LVD1 23.6V--> Гр.1 (ШІМ-диммер -> 8x MR16 spot)
-                      --> Гр.2 (WLED ESP32 -> WS2811 neon; лампи робота)
-          --LVD2 22.2V--> Гр.3А (габаритні вогні + сходи) — аварійна лінія
+Starts at the station's 12V output — everything upstream (panels, EcoFlow,
+swap logic) belongs to the power node and lives in solar/model/schematic.py.
 
-Two LVD thresholds are the whole point: main light dies first, the emergency
-line keeps the podium visible so nobody walks into it in the dark.
+  12V from station --> щит подіуму --> Гр.1 ШІМ-диммер -> 8x MR16
+                                   --> Гр.2 WLED -> WS2811 неон; лампи робота
+                                   --> Гр.3А габаритні вогні + сходи (аварійна)
 """
 
 import schemdraw
 import schemdraw.elements as elm
 
 schemdraw.config(fontsize=9, lw=1.4)
-
-PIN_SP = 0.6
 OUT = str(__import__("pathlib").Path(__file__).resolve().parent / "schematic")
 
 
-def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0.45):
-    """Sides listed bottom-up (left/right) or in listed order (top/bottom)."""
+def ic(left=(), right=(), w=3.2, pinspacing=0.6, edgepad=0.5):
     pins = []
-    for side, plist in (("left", left), ("right", right), ("top", top), ("bottom", bottom)):
+    for side, plist in (("left", left), ("right", right)):
         for pname, pinlabel, anchor in plist:
             pins.append(elm.IcPin(name=pname, pin=pinlabel, side=side,
                                   anchorname=anchor or pname))
@@ -33,94 +29,69 @@ def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0
 
 with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
 
-    # ---------------- solar panel -> MPPT ----------------
-    panel = ic(right=[("−", "", "NEG"), ("+", "", "POS")], w=3.0, edgepad=0.7)
-    d += panel.right().anchor("POS").at((0, 0)).label(
-        "Сонячна панель\nSunGoldPower 500W\nVoc 44.4V · Vmp 37.6V", "top", fontsize=10)
-
-    mppt = ic(left=[("PV−", "", "PVN"), ("PV+", "", "PVP")],
-              right=[("BAT−", "", "BATN"), ("BAT+", "", "BATP")],
-              w=3.4, edgepad=0.7)
-    d += mppt.right().anchor("PVP").at((5.5, 0)).label(
-        "Victron SmartSolar\nMPPT 100/20", "top", fontsize=10)
-    d += elm.Line().at(panel.POS).to(mppt.PVP)
-    d += elm.Line().at(panel.NEG).to(mppt.PVN)
-
-    # ---------------- battery + main fuse ----------------
-    fuse = elm.Fuse().right().at(mppt.BATP).length(2.0).label("ANL 100A", fontsize=9)
+    # ---------------- 12V in from the station ----------------
+    d += elm.Vdd().at((0, 0)).label("12V зі станції EcoFlow", fontsize=10)
+    d += elm.Line().down().at((0, 0)).length(1.2)
+    fuse = elm.Fuse().right().length(2.2).label("30A", fontsize=9)
     d += fuse
-    busbar = fuse.end
-    d += elm.Dot().at(busbar)
+    bus = fuse.end
+    d += elm.Dot().at(bus)
+    d += elm.Label().at((1.0, -2.6)).label(
+        "магістраль AWG 6\n(наявний AWG 8 просідає 5.3%)", fontsize=8, color="#b23a2e")
 
-    batt = elm.BatteryCell().at((13.0, -3.2)).up().label(
-        "LiFePO4 24V 200Ah\n4800 Wh · DoD 80%", fontsize=9, loc="bottom")
-    d += batt
-    d += elm.Wire("|-").at(batt.end).to(busbar)
-    d += elm.Ground().at(batt.start)
-    d += elm.Line().at(mppt.BATN).to((mppt.absanchors["BATN"][0] + 1.0, mppt.absanchors["BATN"][1]))
-    d += elm.Ground()
+    panel_box = ic(left=[("IN", "", "IN")],
+                   right=[("G3A", "Гр.3А", "G3A"), ("G2", "Гр.2", "G2"), ("G1", "Гр.1", "G1")],
+                   w=3.6, pinspacing=2.2, edgepad=1.0)
+    d += panel_box.right().anchor("IN").at((5.5, 0)).label(
+        "Щит подіуму\nтри незалежні лінії", "top", fontsize=10)
+    d += elm.Line().at(bus).to(panel_box.IN)
 
-    d += elm.Line().up().at(busbar).length(0.9)
-    d += elm.Vdd().label("шина 24V", fontsize=9)
-
-    # ---------------- LVD split: main vs emergency ----------------
-    lvd1 = ic(left=[("IN", "", "IN")], right=[("OUT", "", "OUT")], w=3.4, edgepad=0.6)
-    d += lvd1.right().anchor("IN").at((16.5, 2.4)).label(
-        "LVD #1 — поріг 23.6V\nICSTATION 20A", "top", fontsize=9)
-    d += elm.Wire("-|").at(busbar).to(lvd1.IN)
-
-    lvd2 = ic(left=[("IN", "", "IN")], right=[("OUT", "", "OUT")], w=3.4, edgepad=0.6)
-    d += lvd2.right().anchor("IN").at((16.5, -5.0)).label(
-        "LVD #2 — поріг 22.2V\nаварійна лінія", "bottom", fontsize=9)
-    d += elm.Wire("-|").at(busbar).to(lvd2.IN)
-
-    # ---------------- Гр.1 — прожектори через ШІМ-диммер ----------------
-    d += elm.Label().at((20.6, 4.6)).label("Гр.1 · 40W пік", fontsize=10, color="#b35b1e")
+    # ---------------- Гр.1 spots ----------------
     dim = ic(left=[("IN", "", "IN")], right=[("OUT", "", "OUT")], w=3.2, edgepad=0.6)
-    d += dim.right().anchor("IN").at((22.5, 5.8)).label(
-        "ШІМ-диммер\nSUPERNIGHT 12-24V 30A", "top", fontsize=9)
-    d += elm.Wire("-|").at(lvd1.OUT).to(dim.IN)
+    d += dim.right().anchor("IN").at((12.0, 2.2)).label(
+        "ШІМ-диммер\nSUPERNIGHT 30A", "top", fontsize=9)
+    d += elm.Wire("-|").at(panel_box.G1).to(dim.IN)
+    d += elm.Lamp().right().at((19.0, 2.2)).label(
+        "8× MR16 5W · 4000K · 60°\nрегулюються напругою", "top", fontsize=8)
+    d += elm.Line().at(dim.OUT).to((19.0, 2.2))
+    d += elm.Label().at((10.2, 3.0)).label("Гр.1 · 40 Вт", fontsize=10, color="#b35b1e")
 
-    d += elm.Lamp().right().at((30.0, 5.8)).label("8× MR16 5W · 4000K · 60°", "top", fontsize=8)
-    d += elm.Line().at(dim.OUT).to((30.0, 5.8))
-
-    # ---------------- Гр.2 — WLED -> адресний неон + лампи робота ----------------
-    d += elm.Label().at((20.6, 0.2)).label("Гр.2 · 155W пік", fontsize=10, color="#b35b1e")
-    wled = ic(left=[("5-24V", "", "VIN")], right=[("DATA", "", "DATA"), ("V+", "", "VOUT")],
+    # ---------------- Гр.2 decor ----------------
+    wled = ic(left=[("VIN", "12V", "VIN")], right=[("DATA", "DATA", "DATA")],
               w=3.2, edgepad=0.6)
-    d += wled.right().anchor("VIN").at((22.5, 1.4)).label(
-        "GLEDOPTO ESP32 WLED\nIP65 · WiFi", "top", fontsize=9)
-    d += elm.Wire("-|").at(lvd1.OUT).to(wled.VIN)
+    d += wled.right().anchor("VIN").at((12.0, -1.4)).label(
+        "ESP32 WLED\nIP65 · WiFi", "top", fontsize=9)
+    d += elm.Wire("-|").at(panel_box.G2).to(wled.VIN)
 
-    strip = ic(left=[("DIN", "", "DIN"), ("+24V", "", "VP")], w=3.6, edgepad=0.6)
-    d += strip.right().anchor("DIN").at((30.0, 1.4)).label(
-        "WS2811 24V неон\nкільце 2.17м + 8×0.95м", "top", fontsize=9)
+    strip = ic(left=[("DIN", "", "DIN")], w=3.6, edgepad=0.7)
+    d += strip.right().anchor("DIN").at((19.0, -1.4)).label(
+        "WS2811 12V неон\nкільце 2.17м + 8× 0.95м", "top", fontsize=9)
     d += elm.Line().at(wled.DATA).to(strip.DIN)
-    d += elm.Line().at(wled.VOUT).to(strip.VP)
-    d += elm.Label().at((32.2, -0.4)).label(
+    d += elm.Label().at((14.8, -3.8)).label(
+        "лінія декору — треба AWG 8\n(на AWG 12 просадка 10%!)", fontsize=8, color="#b23a2e")
+    d += elm.Label().at((21.5, -3.2)).label(
         "power injection кожні 2.5–3 м\nвдень ВИМКНЕНО (перегрів чипів)", fontsize=8)
 
-    d += elm.Lamp().right().at((23.5, -2.4)).label(
-        "8× 12мм + 2× 8мм — лампи робота 0.4W", "bottom", fontsize=8)
-    d += elm.Wire("-|").at(lvd1.OUT).to((23.5, -2.4))
+    d += elm.Lamp().right().at((12.5, -5.0)).label(
+        "8× 12мм + 2× 8мм — лампи робота", "bottom", fontsize=8)
+    d += elm.Wire("-|").at(panel_box.G2).to((12.5, -5.0))
+    d += elm.Label().at((10.2, -0.6)).label("Гр.2 · 155 Вт", fontsize=10, color="#b35b1e")
 
-    # ---------------- Гр.3А — аварійна лінія ----------------
-    d += elm.Label().at((26.5, -4.4)).label("Гр.3А · 48W — аварійна", fontsize=10, color="#3d7a4f")
-    d += elm.Lamp().right().at((23.5, -6.4)).label(
+    # ---------------- Гр.3А emergency ----------------
+    d += elm.Label().at((10.2, -6.6)).label(
+        "Гр.3А · 48 Вт — аварійна,\nне регулюється", fontsize=10, color="#3d7a4f")
+    d += elm.Lamp().right().at((12.5, -8.0)).label(
         "8× габаритні 3W\nNilight IP67", "bottom", fontsize=8)
-    d += elm.Wire("-|").at(lvd2.OUT).to((23.5, -6.4))
-
-    d += elm.Lamp().right().at((30.0, -6.4)).label(
+    d += elm.Wire("-|").at(panel_box.G3A).to((12.5, -8.0))
+    d += elm.Lamp().right().at((19.0, -8.0)).label(
         "24× сходи 1W\nврізні IP67", "bottom", fontsize=8)
-    d += elm.Wire("-|").at(lvd2.OUT).to((30.0, -6.4))
+    d += elm.Wire("-|").at(panel_box.G3A).to((19.0, -8.0))
 
-    # ---------------- notes ----------------
-    d += elm.Label().at((8.0, -9.0)).label(
-        "Шина 24V, не 12V: удвічі менший струм — удвічі менша просадка в довгих лініях.\n"
-        "Кабель: магістраль Ancor 8/2 AWG, відгалуження 12/2 AWG (просадка < 3% у всіх режимах).\n"
-        "Два пороги LVD — головне рішення: на 23.6V гасне основне світло, на 22.2V — аварійне,\n"
-        "щоб подіум лишався видимим до останнього. Земля — зіркою в одній точці біля АКБ.\n"
-        "Все обладнання в тінь, зазор від землі 5+ см, плати вкриті лаком MG 422B (пил pH 9-10).",
+    d += elm.Label().at((8.0, -10.6)).label(
+        "Три лінії окремі, щоб гасити їх по черзі: коли станція сідає, першими йдуть\n"
+        "прожектори і декор, а габарити зі сходами тримаються найдовше — щоб у темряві\n"
+        "ніхто не наштовхнувся на подіум. Аварійна лінія за ніч з'їдає стільки ж, як декор.\n"
+        "Земля — зіркою в одній точці біля щита. Все обладнання в тінь, зазор від землі 5+ см.",
         fontsize=8)
 
 d.save(OUT + ".png", dpi=200)

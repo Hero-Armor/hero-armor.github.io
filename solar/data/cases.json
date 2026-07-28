@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "key": "sunny",
+      "name": "Ясний день, штатна ніч",
+      "light_case": "normal",
+      "sun_factor": 1.0,
+      "dashboard": true,
+      "note": "базовий режим бурну: панелі працюють, світло за розкладом"
+    },
+    {
+      "key": "burn",
+      "name": "Ніч Burn на повну",
+      "light_case": "burn",
+      "sun_factor": 1.0,
+      "dashboard": true,
+      "note": "головна ніч — усе світить на максимум усі 10.5 год"
+    },
+    {
+      "key": "dusty",
+      "name": "Запилені панелі",
+      "light_case": "normal",
+      "sun_factor": 0.6,
+      "dashboard": true,
+      "note": "скло не мили кілька днів — типова ситуація, якщо про це не пам'ятати"
+    },
+    {
+      "key": "storm",
+      "name": "Пилова буря",
+      "light_case": "storm",
+      "sun_factor": 0.35,
+      "dashboard": true,
+      "note": "декор вимкнено, але й сонця майже нема"
+    },
+    {
+      "key": "dead",
+      "name": "Панелі не працюють",
+      "light_case": "normal",
+      "sun_factor": 0.0,
+      "dashboard": true,
+      "note": "зламались або зірвало вітром — живемо на запасі станції до підміни"
+    },
+    {
+      "key": "dead_eco",
+      "name": "Панелі не працюють + економ",
+      "light_case": "eco",
+      "sun_factor": 0.0,
+      "dashboard": true,
+      "note": "аварійний план: панелей нема, світло прикручено — скільки протягнемо"
+    }
+  ]
+}

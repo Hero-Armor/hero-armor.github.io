@@ -27,11 +27,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA, SITE, OUT = ROOT / "data", ROOT / "site", ROOT / "dashboard"
-AUDIO, LIGHTS = ROOT / "audio", ROOT / "lights"
+AUDIO, LIGHTS, SOLAR = ROOT / "audio", ROOT / "lights", ROOT / "solar"
 sys.path.insert(0, str(AUDIO / "model"))
 sys.path.insert(0, str(LIGHTS / "model"))
+sys.path.insert(0, str(SOLAR / "model"))
 import audio_node_model as m  # noqa: E402  (reads audio/data/*)
 import lights_node_model as lm  # noqa: E402  (reads lights/data/*)
+import power_node_model as pw  # noqa: E402  (pulls demand from lights + audio)
 
 BOM = json.loads((DATA / "bom.json").read_text())
 DECISIONS = json.loads((DATA / "decisions.json").read_text())
@@ -52,9 +54,10 @@ ART_LAB = "https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced"
 ART_OPS = "https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"
 ART_TASKS = "https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1"
 LIGHTS_LAB_URL = SITE_URL + "lights_lab.html"
+SOLAR_LAB_URL = SITE_URL + "solar_lab.html"
 
 COMPONENTS = ["project", "audio", "solar", "lights", "armor"]
-COMP_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Сонце/живлення",
+COMP_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Живлення",
               "lights": "Світло", "armor": "Броня"}
 COMP_STATUS_LABEL = {"design-ready": "дизайн готовий", "in-design": "проєктується",
                      "build": "збірка", "concept": "концепт"}
@@ -190,7 +193,10 @@ def build_knowledge():
                         ("audio/data/cases.json", "Playa scenarios for the audio model"),
                         ("lights/data/params.json", "Lights node model constants: fixtures, "
                                                     "power groups, wiring, battery and solar"),
-                        ("lights/data/cases.json", "Playa night scenarios for the lights model")]:
+                        ("lights/data/cases.json", "Playa night scenarios for the lights model"),
+                        ("solar/data/params.json", "Power node constants: EcoFlow stations, "
+                                                   "self-built array, playa derates"),
+                        ("solar/data/cases.json", "Generation scenarios and swap cases")]:
         graph.append({"@id": f"#data-{slug(fname)}", "@type": "Dataset",
                       "name": f"Hero Armor {fname}", "description": desc,
                       "isPartOf": {"@id": "#project"},
@@ -206,7 +212,6 @@ def build():
     day, night = results["day"], results["night"]
     tj_worst = max(r["t_j_worst"] for r in results.values())
     i_comp = wh_node / m.V / 24
-    days_lo, days_hi = min(auto["days"].values()), max(auto["days"].values())
     spk = m.SPK
     sn = P["sensor"]
     cfg = "моно" if P["speaker"]["config"] == "mono" else "стерео ×2"
@@ -225,10 +230,9 @@ def build():
     audio_tiles = [
         tile("Споживання вузла", f"{wh_node:.0f}", "Wh/добу",
              f"мова (крест {P['crest_db']:.0f} дБ), композитна доба", "good"),
-        tile("Автономність (EcoFlow)", f"{days_lo:.1f}–{days_hi:.1f}", "діб",
-             f"{' → '.join(auto['days'])}; стендбай станції ~{P['power_source']['standby_w']} Вт"),
-        tile("Сонце в нуль", f"~{auto['solar_w']:.0f}", "Вт",
-             f"разом зі стендбаєм EcoFlow (вузол сам — ~{wh_node/(P['solar']['sun_hours']*P['solar']['system_eff']):.0f} Вт)"),
+        tile("Частка в системі", f"{100*wh_node/pw.demand()['total']:.0f}", "%",
+             "звук — найдешевший вузол; запас і підміна станції рахуються "
+             "в компоненті «Живлення»"),
         tile("Tj ампа, найгірший кейс", f"{tj_worst:.0f}", "°C",
              f"межа {P['thermal']['tj_max']:.0f}°C; радіатор {P['thermal']['heatsink_rth']}°C/W назовні", "good"),
         tile("Гучність @3 м", f"{day['spl_peak']:.0f}", "dB пік",
@@ -319,39 +323,42 @@ def build():
     # ================= lights page + lights lab =================
     LP = lm.P
     wh_light, l_res = lm.composite_night()
-    l_bal = lm.energy_balance(wh_light)
+    l_demand = lm.demand()
     l_peak = lm.peak_watts()
     peak_runs = lm.wiring_losses(l_peak)
     l_burn, l_norm, l_eco = l_res["burn"], l_res["normal"], l_res["eco"]
     worst_drop = max(r["drop_pct"] for r in peak_runs)
+    bad_runs = [r for r in peak_runs if r["drop_pct"] > LP["wiring"]["drop_crit_pct"]]
     ref = LP["spec_reference"]
-    photo, sol_l, batt_l = LP["photometry"], LP["solar"], LP["battery"]
-    night_h = sum(lm.CASES_DOC["composite_night"].values())
+    photo = LP["photometry"]
+    night_h = l_demand["hours"]
+    by_grp = l_demand["by_group"]
+    GAUGES = sorted((int(a) for a in LP["wiring"]["awg_ohm_per_m"]), reverse=True)
 
     lights = tmpl("lights.tmpl.html")
     lsvg = (LIGHTS / "model" / "schematic.svg").read_text()
     lsvg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", lsvg)
     lights = lights.replace("{{SCHEMATIC_SVG}}", lsvg)
 
-    l_nights = l_bal["nights"]
     lights_tiles = [
         tile("Спожито за ніч", f"{wh_light:.0f}", "Wh",
              f"композитна ніч {night_h:.1f} год: пік, штатно, економ", "good"),
-        tile("Добовий баланс", f"{l_bal['balance_wh']:+.0f}", "Wh",
-             f"панель {sol_l['panel_w']} Вт дає {l_bal['gen_wh']:.0f} Wh з деративами пилу і жари",
-             "good" if l_bal["balance_wh"] >= 0 else "crit"),
-        tile("Автономність", f"{min(l_nights.values()):.1f}–{max(l_nights.values()):.1f}", "ночей",
-             f"{' → '.join(l_nights)} без сонця взагалі; робоча {batt_l['ah']} Аг"),
-        tile("Панель в нуль", f"~{l_bal['solar_need_w']:.0f}", "Вт",
-             f"попередні {sol_l['legacy_panel_w']} Вт з сайту дали б {l_bal['legacy_gen_wh'] - wh_light:+.0f} Wh щодоби"),
+        tile("Найбільший їдок", f"{by_grp['g2']:.0f}", "Wh",
+             f"декор — {100*by_grp['g2']/wh_light:.0f}% ночі; аварійна {by_grp['g3a']:.0f}, "
+             f"прожектори лише {by_grp['g1']:.0f}"),
+        tile("Аварійна лінія", f"{l_res['emergency']['g3a']:.0f}", "Вт",
+             f"не регулюється зовсім — {by_grp['g3a']:.0f} Wh за ніч, "
+             f"з них половина це 24 лампи сходів"),
         tile("Пік системи", f"{sum(l_peak.values()):.0f}", "Вт",
              f"Гр.1 {l_peak['g1']:.0f} · Гр.2 {l_peak['g2']:.0f} · Гр.3А {l_peak['g3a']:.0f}; "
-             f"у архітектора {ref['architect_peak_w']} Вт (з аудіоплеєром)"),
+             f"у архітектора {ref['architect_peak_w']} Вт"),
         tile("Освітленість фігури", f"{l_burn['lux']:.0f}", "лк",
-             f"ціль {photo['target_lux']} лк; у штатному режимі {l_norm['lux']:.0f}, "
-             f"в економі {l_eco['lux']:.0f}", "good"),
+             f"ціль {photo['target_lux']} лк; штатно {l_norm['lux']:.0f}, "
+             f"економ {l_eco['lux']:.0f}", "good"),
         tile("Просадка в лініях", f"{worst_drop:.1f}", "%",
-             f"межа {LP['wiring']['drop_warn_pct']:.0f}%; тримається завдяки шині 24 В", "good"),
+             f"межа {LP['wiring']['drop_crit_pct']:.0f}% — "
+             + ("наявний кабель не тягне на 12 В" if bad_runs else "у нормі"),
+             "crit" if bad_runs else "good"),
     ]
     lights = lights.replace("{{TILES_HTML}}", "\n".join(lights_tiles))
 
@@ -368,10 +375,7 @@ def build():
     grp_label = {k: v["label"] for k, v in LP["groups"].items()}
     f_rows = []
     for f in LP["fixtures"]:
-        if f.get("addressable"):
-            qty = f'{f["qty"]}× {f["length_m"]} м'
-        else:
-            qty = str(f["qty"])
+        qty = f'{f["qty"]}× {f["length_m"]} м' if f.get("addressable") else str(f["qty"])
         f_rows.append(
             f'      <tr><td class="num">{f["spec"]}</td><td>{esc(f["name"])}</td>'
             f'<td>{esc(f["zone"])}</td><td class="num">{qty}</td>'
@@ -380,23 +384,30 @@ def build():
             f'<td>{esc(f.get("model", "—"))}</td></tr>')
     lights = lights.replace("{{FIXTURES_ROWS}}", "\n".join(f_rows))
     lights = lights.replace("{{FIXTURES_CAPTION}}",
-        f'Паспортний пік — усе світить на повну, анімація не врахована: '
-        f'{sum(l_peak.values()):.0f} Вт проти {ref["architect_peak_w"]} Вт у розрахунку архітектора '
-        f'(різниця — аудіоплеєр, який у нас живиться окремо від EcoFlow, і сходи 1 Вт замість 0.48 Вт '
-        f'у кресленні). У реальних режимах система бере {l_eco["draw_w"]:.0f}–{l_burn["draw_w"]:.0f} Вт: '
-        f'прожектори підсаджені по напрузі, а «біжуча вода» світить біжучим фронтом, '
-        f'а не всією довжиною одразу.')
+        f'Паспортний пік — усе на повну, анімація не врахована: {sum(l_peak.values()):.0f} Вт '
+        f'проти {ref["architect_peak_w"]} Вт у розрахунку архітектора (у його Гр.2 сидів ще аудіоплеєр, '
+        f'а сходи в кресленні були 0.48 Вт замість наших 1 Вт). У реальних режимах система бере '
+        f'{l_eco["draw_w"]:.0f}–{l_burn["draw_w"]:.0f} Вт.')
 
-    w_rows = "\n".join(
-        f'      <tr><td>{esc(r["label"])}</td><td class="num">AWG {r["awg"]}</td>'
-        f'<td class="num">{r["length_m"]:.1f} м</td><td class="num">{r["amps"]:.1f} A</td>'
-        f'<td class="num">−{r["v_drop"]:.2f} В ({r["drop_pct"]:.2f}%)</td>'
-        f'<td class="num">{r["loss_w"]:.1f} Вт</td></tr>' for r in peak_runs)
-    lights = lights.replace("{{WIRING_ROWS}}", w_rows)
+    w_rows = []
+    for r in peak_runs:
+        run = next(x for x in LP["wiring"]["runs"] if x["id"] == r["id"])
+        need = lm.min_awg(run, l_peak)
+        ok = r["drop_pct"] <= LP["wiring"]["drop_crit_pct"]
+        verdict = ('<span class="pill have">ok</span>' if ok
+                   else f'<span class="pill add">треба AWG {need}</span>')
+        style = "" if ok else ' style="color:var(--crit)"'
+        w_rows.append(
+            f'      <tr><td>{esc(r["label"])}</td><td class="num">AWG {r["awg"]}</td>'
+            f'<td class="num">{r["length_m"]:.1f} м</td><td class="num">{r["amps"]:.1f} A</td>'
+            f'<td class="num"{style}>−{r["v_drop"]:.2f} В ({r["drop_pct"]:.2f}%)</td>'
+            f'<td>{verdict}</td></tr>')
+    lights = lights.replace("{{WIRING_ROWS}}", "\n".join(w_rows))
     lights = lights.replace("{{WIRING_CAPTION}}",
-        f'Опір рахується туди-назад (2 × довжина). Найгірша лінія — {worst_drop:.2f}% при межі '
-        f'{LP["wiring"]["drop_warn_pct"]:.0f}%, у міді гріється {sum(r["loss_w"] for r in peak_runs):.1f} Вт. '
-        f'{esc(LP["wiring"]["note"])}')
+        f'Опір рахується туди-назад. {esc(LP["wiring"]["note"])} '
+        + (f'Зараз не проходять {len(bad_runs)} лінії з {len(peak_runs)} — '
+           f'найгірша {worst_drop:.2f}% при межі {LP["wiring"]["drop_crit_pct"]:.0f}%.'
+           if bad_runs else "Усі лінії в межах норми."))
 
     # ---- lights lab ----
     llab = tmpl("lights_lab.tmpl.html")
@@ -409,10 +420,8 @@ def build():
         f'DROP_WARN={wl["drop_warn_pct"]}, DROP_CRIT={wl["drop_crit_pct"]};\n'
         f'  const SPOT_QTY={spot["qty"]}, SPOT_LM={spot["lumens"]}, '
         f'UTIL={photo["utilization"]}, AREA={photo["figure_area_m2"]}, '
-        f'TARGET_LUX={photo["target_lux"]};\n'
-        f'  const SUNH={sol_l["sun_hours"]}, MPPT={sol_l["mppt_eff"]}, '
-        f'DUST={sol_l["dust_derate"]}, HEAT={sol_l["heat_derate"]};\n'
-        f'  const BATT_V={batt_l["v_nom"]}, DOD={batt_l["dod"]};')
+        f'TARGET_LUX={photo["target_lux"]};')
+    llab = llab.replace("{{GAUGES_JSON}}", json.dumps(GAUGES))
     llab = llab.replace("{{FIXTURES_JSON}}", json.dumps([
         {k: f[k] for k in ("group", "qty", "dimming") if k in f}
         | {k: f[k] for k in ("w_unit", "length_m", "w_per_m", "addressable") if k in f}
@@ -423,43 +432,163 @@ def build():
     llab = llab.replace("{{PRESETS_JSON}}", json.dumps([
         dict(name=c["name"], vspot=c["v_spot"], dim2=round(c["dim_g2"] * 100),
              duty=round(LP["addressable"]["duty_animation"] * 100), hours=c["hours"],
-             sun=round(c["sun_factor"] * 100), panel=sol_l["panel_w"], ah=batt_l["ah"],
+             awgt=GAUGES.index(8), awgd=GAUGES.index(12),
              emerg=1 if c["dim_g3a"] > 0 else 0)
         for c in lm.CASES_DOC["cases"] if c.get("dashboard")], ensure_ascii=False))
     llab = llab.replace("{{CASE_TABLE_TITLE}}",
-        f'Кейси ночі (модель: шина {LP["bus_v"]:.0f} В, панель {sol_l["panel_w"]} Вт, '
-        f'АКБ {batt_l["ah"]} Аг, анімація {LP["addressable"]["duty_animation"]*100:.0f}%)')
+        f'Кейси ночі (шина {LP["bus_v"]:.0f} В, наявний кабель, анімація '
+        f'{LP["addressable"]["duty_animation"]*100:.0f}%)')
 
     l_rows = []
     for c in lm.CASES_DOC["cases"]:
         if not c.get("dashboard"):
             continue
         r = l_res[c["key"]]
-        bal = r["balance_wh"]
-        bal_s = (f'<td class="num"{" style=\"color:var(--crit)\"" if bal < 0 else ""}>'
-                 f'{"+" if bal >= 0 else "−"}{abs(bal):.0f} Wh</td>')
+        d_style = ' style="color:var(--crit)"' if r["worst_drop_pct"] > wl["drop_crit_pct"] else ""
         l_rows.append(
             f'      <tr><td>{esc(r["case"])}</td>'
             f'<td class="num">{r["g1"]:.0f} Вт</td><td class="num">{r["g2"]:.0f} Вт</td>'
             f'<td class="num">{r["g3a"]:.0f} Вт</td><td class="num">{r["draw_w"]:.0f} Вт</td>'
             f'<td class="num">{r["wh_night"]:.0f}</td><td class="num">{r["lux"]:.0f} лк</td>'
-            f'<td class="num">{r["gen_wh"]:.0f} Wh</td>{bal_s}</tr>')
+            f'<td class="num"{d_style}>{r["worst_drop_pct"]:.2f}%</td></tr>')
     l_rows.append(
         f'      <tr><td><b>Композитна ніч</b></td><td class="num">—</td><td class="num">—</td>'
         f'<td class="num">—</td><td class="num">~{wh_light/night_h:.0f} Вт</td>'
         f'<td class="num"><b>{wh_light:.0f}</b></td><td class="num">—</td>'
-        f'<td class="num">{l_bal["gen_wh"]:.0f} Wh</td>'
-        f'<td class="num">{l_bal["balance_wh"]:+.0f} Wh</td></tr>')
+        f'<td class="num">—</td></tr>')
     llab = llab.replace("{{CASE_ROWS}}", "\n".join(l_rows))
     llab = llab.replace("{{LAB_CAPTION}}",
-        f'Композитна ніч ({night_h:.1f} год) — {wh_light:.0f} Wh. Панель {sol_l["panel_w"]} Вт з '
-        f'деративами (MPPT {sol_l["mppt_eff"]}, пил {sol_l["dust_derate"]}, жара {sol_l["heat_derate"]}) '
-        f'дає {l_bal["gen_wh"]:.0f} Wh за добу — баланс {l_bal["balance_wh"]:+.0f} Wh. '
-        f'АКБ {batt_l["ah"]} Аг при DoD {batt_l["dod"]*100:.0f}% тримає '
-        f'{l_bal["usable_wh"]/wh_light:.1f} ночі повністю без сонця. '
-        f'Найвужче місце — пилова буря: сонце падає до {[c["sun_factor"] for c in lm.CASES_DOC["cases"] if c["key"]=="storm"][0]*100:.0f}%, '
-        f'і навіть з вимкненим декором доба йде в мінус '
-        f'{l_res["storm"]["balance_wh"]:.0f} Wh. Дві такі доби поспіль — і треба гасити все, крім аварійної лінії.')
+        f'Композитна ніч ({night_h:.1f} год) — {wh_light:.0f} Wh. Розклад споживання: декор '
+        f'{by_grp["g2"]:.0f} Wh ({100*by_grp["g2"]/wh_light:.0f}%), аварійна {by_grp["g3a"]:.0f} Wh '
+        f'({100*by_grp["g3a"]/wh_light:.0f}%), прожектори {by_grp["g1"]:.0f} Wh '
+        f'({100*by_grp["g1"]/wh_light:.0f}%), у міді згорає {by_grp["loss"]:.0f} Wh. '
+        f'Просадка в таблиці порахована на наявному кабелі — посунь повзунки калібру, '
+        f'щоб побачити, що дає товща мідь.')
+
+    # ================= power node page + lab =================
+    PP = pw.P
+    p_demand = pw.demand()
+    p_cases = {c["key"]: pw.run_case(c) for c in pw.CASES_DOC["cases"]}
+    p_opts = pw.station_options()
+    st_name, st_spec = pw.station()
+    p_chosen = next(o for o in p_opts if o["name"] == st_name)
+    p_sunny, p_dead = p_cases["sunny"], p_cases["dead"]
+    breakeven = pw.break_even_panel_w()
+
+    solar_page = tmpl("solar.tmpl.html")
+    psvg = (SOLAR / "model" / "schematic.svg").read_text()
+    psvg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", psvg)
+    solar_page = solar_page.replace("{{SCHEMATIC_SVG}}", psvg)
+
+    solar_tiles = [
+        tile("Уся система жере", f"{p_demand['total']:.0f}", "Wh/добу",
+             f"світло {p_demand['lights']:.0f} + звук {p_demand['audio']:.0f} "
+             f"+ холостий хід станції {p_demand['standby']:.0f}", "good"),
+        tile("Панель в нуль", f"~{breakeven:.0f}", "Вт",
+             f"беремо {PP['panel']['chosen_w']} Вт — запас на пил і хмари"),
+        tile("Ясна доба", f"{p_sunny['balance_wh']:+.0f}", "Wh",
+             f"панель дає {p_sunny['gen_wh']:.0f}, система бере {p_sunny['demand_wh']:.0f}", "good"),
+        tile("Без панелей", f"{p_dead['days_to_swap']:.1f}", "доби",
+             "стільки тримає повна станція, якщо масив став — далі підміна", "crit"),
+        tile("Запилені панелі", f"{p_cases['dusty']['days_to_swap']:.1f}", "діб",
+             "при 60% сонця вже йдемо в мінус — мити скло щоранку", "warn"),
+        tile("Зарядка на базі", f"{p_chosen['recharge_h']:.1f}", "год",
+             f"{esc(st_name)} від розетки — обіг швидкий, але станцій треба дві"),
+    ]
+    solar_page = solar_page.replace("{{TILES_HTML}}", "\n".join(solar_tiles))
+
+    d_rows, d_labels = [], {"lights": "Світло", "audio": "Звук",
+                            "standby": "Холостий хід станції"}
+    d_notes = {c["node"]: c["note"] for c in PP["consumers"]}
+    d_notes["standby"] = "станція витрачає на себе, навіть коли нічого не увімкнено"
+    for k in ("lights", "audio", "standby"):
+        v = p_demand[k]
+        d_rows.append(
+            f'      <tr><td>{d_labels[k]}</td><td class="num">{v:.0f}</td>'
+            f'<td class="num">{100*v/p_demand["total"]:.0f}%</td>'
+            f'<td>{esc(d_notes.get(k, ""))}</td></tr>')
+    solar_page = solar_page.replace("{{DEMAND_ROWS}}", "\n".join(d_rows))
+    solar_page = solar_page.replace("{{DEMAND_CAPTION}}",
+        f'Ці числа не вписані руками — модель живлення тягне їх прямо з моделей світла і звуку. '
+        f'Змінив режим світла — тут переїде саме. Світло з\'їдає '
+        f'{100*p_demand["lights"]/p_demand["total"]:.0f}% усього, звук — менше трьох відсотків.')
+
+    s_decs = [d for d in DECISIONS if d["component"] == "solar"]
+    solar_page = solar_page.replace("{{DECISIONS_HTML}}", "\n".join(
+        f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
+        f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
+        for d in s_decs if not d.get("open")))
+    solar_page = solar_page.replace("{{FLAGS_HTML}}", "\n".join(
+        f'  <div class="flag">\n    <h3>{esc(d["title"])}</h3>\n'
+        f'    <p><span class="why">відкрите</span> · {d["why"]}</p>\n  </div>'
+        for d in s_decs if d.get("open")))
+
+    c_rows = []
+    for c in pw.CASES_DOC["cases"]:
+        r = p_cases[c["key"]]
+        swap = "—" if r["days_to_swap"] == float("inf") else f'{r["days_to_swap"]:.1f} діб'
+        bal = r["balance_wh"]
+        b_style = ' style="color:var(--crit)"' if bal < 0 else ""
+        c_rows.append(
+            f'      <tr><td>{esc(r["case"])}</td><td class="num">{c["sun_factor"]*100:.0f}%</td>'
+            f'<td class="num">{r["gen_wh"]:.0f} Wh</td>'
+            f'<td class="num">{r["demand_wh"]:.0f} Wh</td>'
+            f'<td class="num"{b_style}>{bal:+.0f} Wh</td>'
+            f'<td class="num">{swap}</td></tr>')
+    solar_page = solar_page.replace("{{CASE_ROWS}}", "\n".join(c_rows))
+    solar_page = solar_page.replace("{{CASE_CAPTION}}",
+        f'«До підміни» — скільки діб тримає повна станція {esc(st_name)}, поки не з\'їсть робочий '
+        f'запас (ємність мінус {PP["station"]["reserve_frac"]*100:.0f}% недоторканого резерву). '
+        f'Головне тут — рядок про непрацюючі панелі: доба. Тобто масив не страховка, а несуча '
+        f'частина системи, і друга станція має бути зарядженою заздалегідь, а не «якось потім».')
+
+    st_rows = []
+    for o in p_opts:
+        swap = "тримає" if o["days_to_swap"] == float("inf") else f'{o["days_to_swap"]:.1f} діб'
+        cap = "" if o["panel_used_w"] >= PP["panel"]["chosen_w"] else \
+              f' <span class="pill add">бере лише {o["panel_used_w"]:.0f} Вт</span>'
+        mark = " ←" if o["name"] == st_name else ""
+        b_style = ' style="color:var(--crit)"' if o["balance_wh"] < 0 else ""
+        st_rows.append(
+            f'      <tr><td><b>{esc(o["name"])}</b>{mark}</td><td class="num">{o["wh"]} Wh</td>'
+            f'<td class="num">{o["solar_in_w"]} Вт{cap}</td>'
+            f'<td class="num"{b_style}>{o["balance_wh"]:+.0f} Wh</td>'
+            f'<td class="num">{o["nights_no_sun"]:.1f} діб</td>'
+            f'<td class="num">{o["recharge_h"]:.1f} год</td></tr>')
+    solar_page = solar_page.replace("{{STATION_ROWS}}", "\n".join(st_rows))
+    solar_page = solar_page.replace("{{STATION_CAPTION}}",
+        f'Рахунок під масив {PP["panel"]["chosen_w"]} Вт і композитну добу {p_demand["total"]:.0f} Wh. '
+        f'Дві менші станції фізично не приймуть увесь масив — у них нижча стеля сонячного входу, '
+        f'і зайві вати просто пропадуть. {esc(PP["_verify"])}')
+
+    # ---- power lab ----
+    slab = tmpl("solar_lab.tmpl.html")
+    pl, base = PP["playa"], PP["base"]
+    _, l_res_for_lab = lm.composite_night()
+    light_cases = {"composite": {"wh": wh_light, "label": "композитна ніч"}}
+    for c in lm.CASES_DOC["cases"]:
+        r = l_res_for_lab[c["key"]]
+        light_cases[c["key"]] = {"wh": r["draw_w"] * r["hours"], "label": c["name"]}
+    slab = slab.replace("{{JS_CONST}}",
+        f'const AUDIO_WH={p_demand["audio"]:.1f}, STANDBY_W={PP["station"]["standby_w"]}, '
+        f'USABLE={PP["station"]["usable_frac"]}, BASE_AC_W={base["ac_charge_w"]};\n'
+        f'  const DUST={pl["dust_derate"]}, HEAT={pl["heat_derate"]}, CABLE={pl["cable_derate"]};')
+    slab = slab.replace("{{STATIONS_JSON}}", json.dumps(PP["stations"], ensure_ascii=False))
+    slab = slab.replace("{{LIGHT_CASES_JSON}}", json.dumps(light_cases, ensure_ascii=False))
+    slab = slab.replace("{{STATION_DEFAULT}}", json.dumps(st_name, ensure_ascii=False))
+    slab = slab.replace("{{LIGHT_DEFAULT}}", json.dumps("composite"))
+    slab = slab.replace("{{STATION_BTNS}}", "\n        ".join(
+        f'<button data-s="{esc(n)}"{" class=\'active\'" if n == st_name else ""}>'
+        f'{esc(n)} · {v["wh"]} Wh</button>' for n, v in PP["stations"].items()))
+    slab = slab.replace("{{LIGHT_BTNS}}", "\n        ".join(
+        f'<button data-c="{esc(k)}"{" class=\'active\'" if k == "composite" else ""}>'
+        f'{esc(v["label"])}</button>' for k, v in light_cases.items()))
+    slab = slab.replace("{{PRESETS_JSON}}", json.dumps([
+        dict(name=c["name"], panel=PP["panel"]["chosen_w"],
+             sun=round(c["sun_factor"] * 100), sunh=pl["sun_hours"],
+             reserve=round(PP["station"]["reserve_frac"] * 100),
+             light=c.get("light_case") or "composite")
+        for c in pw.CASES_DOC["cases"] if c.get("dashboard")], ensure_ascii=False))
 
     # ================= ops page =================
     ops = tmpl("ops.tmpl.html")
@@ -506,7 +635,7 @@ def build():
     comp_pages = {}
     for reg in COMPONENTS_REG:
         k = reg["key"]
-        if k in ("audio", "lights"):
+        if k in ("audio", "lights", "solar"):
             continue
         page = tmpl("component.tmpl.html")
         page = page.replace("{{PAGE_TITLE}}", f"Hero Armor — {reg['label']}")
@@ -663,7 +792,8 @@ def build():
         links = []
         for label, href in c.get("links", []):
             art = {"lab.html": ART_LAB, "ops.html": ART_OPS,
-                   "lights_lab.html": LIGHTS_LAB_URL}.get(href, SITE_URL + href)
+                   "lights_lab.html": LIGHTS_LAB_URL,
+                   "solar_lab.html": SOLAR_LAB_URL}.get(href, SITE_URL + href)
             links.append(f'<a href="{art}">{esc(label.split(" (")[0].lower())}</a>')
         meta = []
         if c_tasks:
@@ -732,7 +862,8 @@ def build():
     OUT.mkdir(exist_ok=True)
     pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
-             "lights_lab.html": llab, **comp_pages}
+             "lights_lab.html": llab, "solar.html": solar_page,
+             "solar_lab.html": slab, **comp_pages}
     for name, html in pages.items():
         (OUT / name).write_text(html)
     (OUT / "knowledge.jsonld").write_text(json.dumps(kg, ensure_ascii=False, indent=1))
@@ -752,10 +883,13 @@ def build_docs(out):
              (SITE_URL + "audio.html", "audio.html"), (SITE_URL + "tasks.html", "tasks.html"),
              (SITE_URL + "solar.html", "solar.html"),
              (LIGHTS_LAB_URL, "lights_lab.html"),
+             (SOLAR_LAB_URL, "solar_lab.html"),
+             (SITE_URL + "audio.html", "audio.html"),
              (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
              ('href="' + SITE_URL + '"', 'href="index.html"')]
     for name in ("index.html", "audio.html", "lab.html", "ops.html", "tasks.html",
-                 "solar.html", "lights.html", "lights_lab.html", "armor.html"):
+                 "solar.html", "solar_lab.html", "lights.html", "lights_lab.html",
+                 "armor.html"):
         html = (out / name).read_text()
         for url, rel in swaps:
             html = html.replace(url, rel)

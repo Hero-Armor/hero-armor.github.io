@@ -1,4 +1,4 @@
-<title>Hero Armor — аудіо-вузол</title>
+<title>Hero Armor — живлення</title>
 <style>
   :root {
     --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
@@ -82,41 +82,90 @@
   .files { font-size: .85rem; color: var(--ink-2); }
   .files code { font-family: var(--mono); font-size: .8rem; color: var(--ink);
                 background: var(--panel); padding: .1rem .35rem; border-radius: 3px; }
+  .grp { display: inline-block; font-family: var(--mono); font-size: .66rem;
+         padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         border: 1px solid var(--line); color: var(--ink-2); }
+  .grp.g1 { background: var(--warn-bg); color: var(--warn); border-color: transparent; }
+  .grp.g2 { background: var(--bg); }
+  .grp.g3a { background: var(--good-bg); color: var(--good); border-color: transparent; }
+  .flag { border-left: 3px solid var(--warn); background: var(--panel);
+          border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-bottom: .8rem; }
+  .flag h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .flag p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
+  .flag .why { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+               text-transform: uppercase; color: var(--warn); }
 </style>
 
+
 <div class="wrap">
-  <p class="eyebrow"><a href="https://hero-armor.github.io/">← огляд проєкту</a> · аудіо-вузол</p>
-  <h1>Аудіо-вузол: підсумок і рішення</h1>
-  <p class="sub">Вартовий промовляє голосом Захара (ElevenLabs-клон), коли людина підходить
-  на 2.5–3 м. Ланцюг: LD2410C радар → ESP32 (MP3 з картки) → PCM5102A → TPA3116D2 → динамік
-  у грудях; пауза 30 с; працює 24/7. Живлення — спільна станція EcoFlow, її рахує окремий компонент «Живлення»; тут тільки звук. Усі числа
-  нижче — з моделі (живлення/тепло/акустика/сигнал).</p>
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← огляд проєкту</a> · живлення</p>
+  <h1>Живлення: станція, панелі, підміна</h1>
+  <p class="sub">Одна станція EcoFlow годує обидва вузли — і світло, і звук. Панелі збираємо
+  самі й заряджаємо від них станцію. Станція змінна за задумом: сіла або стало сонце —
+  знімаємо, ставимо заряджену, цю везем на базу під розетку. Тут рахується тільки генерація,
+  запас і момент підміни; скільки жеруть споживачі — рахують їхні власні вузли.</p>
 
   <div class="nav">
-    <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced"><b>🎚️ Лабораторія</b> — симулятор кейсів + регулювання гучності</a>
-    <a href="https://hero-armor.github.io/solar.html"><b>🔋 Живлення</b> — станція, панелі, підміна</a>
-    <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"><b>📦 Операції</b> — задачі, замовлення, LA→SF</a>
+    <a href="https://hero-armor.github.io/solar_lab.html"><b>🔋 Лабораторія живлення</b> — панель, станція, запас ходу</a>
+    <a href="https://hero-armor.github.io/lights.html"><b>💡 Світло</b> — головний споживач</a>
+    <a href="https://hero-armor.github.io/audio.html"><b>🔊 Звук</b> — другий споживач</a>
   </div>
 
   <div class="tiles">
 {{TILES_HTML}}
   </div>
 
+  <h2>Хто скільки жере</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Споживач</th><th>Wh/добу</th><th>Частка</th><th>Що це</th></tr></thead>
+    <tbody>
+{{DEMAND_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{DEMAND_CAPTION}}</p>
+
   <h2>Прийняті рішення</h2>
   <div class="decisions">
 {{DECISIONS_HTML}}
   </div>
 
-  <h2>Схема з'єднань</h2>
+  <h2>Відкриті питання</h2>
+{{FLAGS_HTML}}
+
+  <h2>Сценарії: коли доводиться міняти станцію</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Сценарій</th><th>Сонце</th><th>Панель дає</th><th>Система жере</th><th>Баланс</th><th>До підміни</th></tr></thead>
+    <tbody>
+{{CASE_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{CASE_CAPTION}}</p>
+
+  <h2>Яку станцію брати</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Станція</th><th>Ємність</th><th>Вхід сонця</th><th>Баланс за добу</th><th>Без сонця</th><th>Зарядка на базі</th></tr></thead>
+    <tbody>
+{{STATION_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{STATION_CAPTION}}</p>
+
+  <h2>Схема</h2>
   <div class="fig">{{SCHEMATIC_SVG}}</div>
-  <p class="fig-cap">Повна попінова схема. Конфіг-піни PCM5102A: SCK→GND (внутрішній PLL),
-  FMT→GND (I2S), XSMT→3V3 (без цього — тиша). Джерело: <span style="font-family:var(--mono)">audio/model/schematic.py</span>
-  (schemdraw) — правиться кодом і перегенеровується.</p>
+  <p class="fig-cap">Масив панелей заходить у сонячний вхід станції, з неї 12&nbsp;В йде на щит
+  світла і на аудіо-вузол. Пунктир зліва — та сама станція на базі під розеткою.
+  Джерело: <span style="font-family:var(--mono)">solar/model/schematic.py</span>.</p>
 
   <h2>Файли проєкту</h2>
-  <p class="files">У репо <code>audio/model/</code>:
-  <code>audio_node_model.py</code> — модель живлення/тепла/акустики (всі константи зверху),
-  <code>schematic.py</code> → <code>schematic.svg/png</code> — ця схема,
-  <code>signal_chain.py</code> → <code>signal_chain.png</code> — сигнальний тракт.
-  Інтерактивний симулятор — у <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced">лабораторії</a>.</p>
+  <p class="files">У репо <code>solar/model/</code>:
+  <code>power_node_model.py</code> — модель генерації, запасу і підміни; вона імпортує
+  споживання прямо з <code>lights</code> і <code>audio</code>, тому цифри не можуть розійтися.
+  Константи — <code>solar/data/params.json</code>, сценарії — <code>solar/data/cases.json</code>.
+  Інтерактив — у <a href="https://hero-armor.github.io/solar_lab.html">лабораторії живлення</a>.</p>
 </div>

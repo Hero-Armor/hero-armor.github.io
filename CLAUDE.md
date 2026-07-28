@@ -1,13 +1,14 @@
 # Hero Armor — правила для Claude Code
 
 Burning Man 2026: меморіальна інсталяція памʼяті Захара Захарова (hero-armor.com); вартовий промовляє його голосом. Саб-проєкти: **audio** (готовий дизайн),
-**solar** (живлення/EcoFlow), **lights** (модель готова, чекає неон), **armor**,
-**project** (спільне).
+**solar** = ЖИВЛЕННЯ (одна станція EcoFlow на все + самозбірний масив, станція змінна),
+**lights** (шина 12В, три групи), **armor**, **project** (спільне).
 
 ## Джерело правди — файлова база `data/`
 
 - `audio/data/params.json` — константи аудіо · `audio/data/cases.json` — кейси плайї
 - `lights/data/params.json` — константи світла · `lights/data/cases.json` — сценарії ночі
+- `solar/data/params.json` — станції і масив · `solar/data/cases.json` — сценарії генерації
 - `data/components.json` — реєстр компонентів (картки на індексі)
 - `bom.json` — закупівля · `decisions.json` — рішення · `tasks.json` — задачі
 - `orders.json` — замовлення · `addresses.json` — логістика LA→SF
@@ -15,8 +16,10 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 
 **НІКОЛИ не редагуй HTML дашборда руками.** Правиш `data/*.json` →
 `cd site && python3 build.py` → перепублікувати артефакти (ті самі URL).
-Числа на сторінках рахують тільки моделі (`audio/model/audio_node_model.py`,
-`lights/model/lights_node_model.py`) — руками в HTML жодної цифри.
+Числа на сторінках рахують тільки моделі (`audio_node_model.py`, `lights_node_model.py`,
+`power_node_model.py`) — руками в HTML жодної цифри. Споживачі (audio, lights) НЕ знають
+про джерело живлення; `power_node_model` сам імпортує з них споживання. Не дублюй
+автономність і сонце на сторінках споживачів — це компонент «Живлення».
 
 ## Приватність
 
@@ -42,5 +45,5 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 - `logistics` — задачі/замовлення/доставки, ops-сторінка
 - `procurement` — BOM, ціни, підготовка кошиків (без покупок)
 
-Схеми правляться в `audio/model/schematic.py` і `lights/model/schematic.py` (schemdraw),
+Схеми правляться в `audio/`, `lights/`, `solar/` → `model/schematic.py` (schemdraw),
 сигнальний тракт — `audio/model/signal_chain.py`. Публічний сайт проєкту hero-armor.com — ОКРЕМИЙ хостинг, не чіпати; хаб — hero-armor.github.io.

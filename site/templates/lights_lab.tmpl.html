@@ -110,18 +110,18 @@
                font-family: var(--mono); font-size: .7rem; }
   .grp-split span { padding: .2rem .55rem; border-radius: 3px; background: var(--bg);
                     border: 1px solid var(--line); }
-  .bar .fill.gen { background: var(--good); }
   .bar .fill.lux { background: linear-gradient(90deg, var(--crit), var(--warn) 35%, var(--good)); }
+  .bar .fill.drop { background: linear-gradient(90deg, var(--good), var(--warn) 55%, var(--crit)); }
 </style>
 
 
 <div class="wrap">
   <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor · головна</a> · світлова лабораторія</p>
-  <h1>Симулятор ночі + баланс сонця</h1>
-  <p class="sub">Конфігуратор світлового вузла: прожектори регулюються напругою (MR16 без
-  стабілізатора — струм слідує за напругою), декоративна стрічка — ШІМ і щільністю анімації.
-  Модель рахує потужність по групах, енергію за ніч, просадку в кабелях, освітленість фігури
-  і чи закриває сонце добовий баланс. Пресети — типові ночі плайї.</p>
+  <h1>Скільки жере світло і що з кабелями</h1>
+  <p class="sub">Прожектори регулюються напругою (MR16 без стабілізатора — струм слідує за
+  напругою), декоративна стрічка — ШІМ і щільністю анімації. Модель рахує потужність по групах,
+  енергію за ніч, освітленість фігури і просадку в мідних лініях. Про запас і автономність тут
+  нічого нема — це справа <a href="https://hero-armor.github.io/solar_lab.html">вузла живлення</a>.</p>
 
   <div class="presets" id="presets"></div>
 
@@ -138,33 +138,31 @@
         <input type="range" id="duty" min="10" max="100" step="5" value="45" aria-label="Щільність анімації"></div>
 
       <div class="ctrl-group">Аварійна лінія (Гр.3А)</div>
-      <label class="check"><input type="checkbox" id="emerg" checked> Габарити і сходи увімкнені (окремий поріг LVD 22.2В)</label>
+      <label class="check"><input type="checkbox" id="emerg" checked> Габарити і сходи увімкнені</label>
 
-      <div class="ctrl-group">Ніч і погода</div>
+      <div class="ctrl-group">Ніч</div>
       <div class="ctrl"><label>Годин світла за ніч <b id="v-hours"></b></label>
         <input type="range" id="hours" min="6" max="14" step="0.5" value="10.5" aria-label="Годин світла"></div>
-      <div class="ctrl"><label>Сонце цього дня <b id="v-sun"></b></label>
-        <input type="range" id="sun" min="0" max="100" step="5" value="100" aria-label="Сонце"></div>
 
-      <div class="ctrl-group">Джерело живлення</div>
-      <div class="ctrl"><label>Сонячна панель <b id="v-panel"></b></label>
-        <input type="range" id="panel" min="100" max="900" step="50" value="500" aria-label="Панель"></div>
-      <div class="ctrl"><label>АКБ LiFePO4 24В <b id="v-ah"></b></label>
-        <input type="range" id="ah" min="50" max="400" step="25" value="200" aria-label="Ємність АКБ"></div>
+      <div class="ctrl-group">Кабель</div>
+      <div class="ctrl"><label>Магістраль АКБ → щит <b id="v-awgt"></b></label>
+        <input type="range" id="awgt" min="0" max="7" step="1" value="3" aria-label="Калібр магістралі"></div>
+      <div class="ctrl"><label>Щит → стрічки і робот <b id="v-awgd"></b></label>
+        <input type="range" id="awgd" min="0" max="7" step="1" value="5" aria-label="Калібр лінії декору"></div>
     </div>
 
     <div class="outputs">
       <div class="tiles" id="tiles"></div>
       <div class="grp-split" id="grp-split"></div>
       <div class="bar-row">
-        <div class="k">Добовий баланс: сонце проти спожитого за ніч</div>
-        <div class="bar"><div class="fill gen" id="bar-gen"></div><div class="mark" id="mark-use"></div></div>
-        <div class="bar-legend"><span>0 Wh</span><span id="gen-label"></span><span id="gen-max"></span></div>
-      </div>
-      <div class="bar-row">
-        <div class="k">Освітленість фігури проти цільових 60 лк</div>
+        <div class="k">Освітленість фігури проти цільових <span id="lux-target"></span> лк</div>
         <div class="bar"><div class="fill lux" id="bar-lux"></div><div class="mark" id="mark-lux"></div></div>
         <div class="bar-legend"><span>0 лк</span><span id="lux-label"></span><span>250 лк</span></div>
+      </div>
+      <div class="bar-row">
+        <div class="k">Найгірша просадка в лінії проти межі</div>
+        <div class="bar"><div class="fill drop" id="bar-drop"></div><div class="mark" id="mark-drop"></div></div>
+        <div class="bar-legend"><span>0%</span><span id="drop-label"></span><span>12%</span></div>
       </div>
     </div>
   </div>
@@ -174,63 +172,35 @@
     <div class="layer">
       <h3>1 · Напруга на прожекторах — основний регулятор</h3>
       <p>MR16 у корпусах Gardencoin — без стабілізатора: струм іде за напругою, тому
-      потужність падає як квадрат (P ~ V²), а світловий потік — лінійно. Це і був головний
-      критерій вибору лампи: підсадив напругу — реально економиш ватти, а не просто гріє
-      той самий струм. Практичний наслідок: на 9&nbsp;В прожектор бере 56% потужності,
-      але віддає 75% світла. Нижче ~8.5&nbsp;В лампа просто гасне.</p>
+      потужність падає як квадрат, а світловий потік — лінійно. Це і був головний критерій
+      вибору лампи: підсадив напругу — реально економиш ватти. На 9&nbsp;В прожектор бере
+      56% потужності, але віддає 75% світла. Нижче ~8.5&nbsp;В лампа просто гасне.</p>
     </div>
     <div class="layer">
       <h3>2 · ШІМ на адресній стрічці — анімація замість заливки</h3>
-      <p>«Біжуча вода» ніколи не світить усією довжиною одночасно — світиться біжучий
-      фронт. При щільності 45% стрічка бере менше половини паспортних 15&nbsp;Вт/м.
-      Друге правило — вдень адресна стрічка ВИМКНЕНА: чипи перегріваються під сонцем плайї,
-      а вдень її однаково не видно.</p>
+      <p>«Біжуча вода» ніколи не світить усією довжиною одночасно — світиться біжучий фронт.
+      При щільності 45% стрічка бере менше половини паспортних 15&nbsp;Вт/м. Друге правило —
+      вдень стрічка ВИМКНЕНА: чипи перегріваються під сонцем плайї, а вдень її однаково не видно.</p>
     </div>
     <div class="layer">
-      <h3>3 · Два пороги LVD — апаратна межа</h3>
-      <p>Не прошивка, а залізо: реле ICSTATION рубають навантаження за напругою АКБ.
-      На 23.6&nbsp;В гасне основне світло (прожектори + декор), на 22.2&nbsp;В — аварійна лінія.
-      Сенс розділення: коли батарея сідає, останнім гасне саме те, що робить подіум
-      видимим — габарити і підсвітка сходів, щоб у темряві ніхто не наштовхнувся на конструкцію.</p>
+      <h3>3 · Аварійна лінія взагалі не регулюється — і це найдорожче</h3>
+      <p>Габарити і сходи горять рівно, без димінгу, всю ніч. Разом це 48&nbsp;Вт, тобто
+      більше третини всього нічного споживання — більше, ніж самі прожектори. Половина цієї
+      цифри — 24 лампи сходів по вату. Якщо винести сходи на автономні садові світильники
+      з власними батарейками, нічне споживання падає одразу на 17%.</p>
     </div>
   </div>
 
   <h2>{{CASE_TABLE_TITLE}}</h2>
   <div class="tbl-wrap">
   <table>
-    <thead><tr><th>Кейс</th><th>Гр.1</th><th>Гр.2</th><th>Гр.3А</th><th>Разом</th><th>Wh/ніч</th><th>Освітленість</th><th>Сонце</th><th>Баланс</th></tr></thead>
+    <thead><tr><th>Кейс</th><th>Гр.1</th><th>Гр.2</th><th>Гр.3А</th><th>Разом</th><th>Wh/ніч</th><th>Освітленість</th><th>Просадка</th></tr></thead>
     <tbody>
 {{CASE_ROWS}}
 </tbody>
   </table>
   </div>
   <p class="fig-cap">{{LAB_CAPTION}}</p>
-
-  <h2>Що перевірити ватметром до поїздки</h2>
-  <div class="layers">
-    <div class="layer">
-      <h3>Voltage-following — головний тест</h3>
-      <p>Зібрати одну лінію: АКБ → диммер → один корпус Gardencoin з лампою MR16.
-      Ватметр на вході. Знімати пари «напруга / ватти» на 12, 11, 10, 9&nbsp;В і звірити
-      з моделлю: якщо потужність падає як квадрат напруги — лампа справді voltage-following
-      і вся економія в цій моделі реальна. Якщо ватти тримаються сталими — у лампі
-      стабілізатор, і регулювати доведеться тільки ШІМ-диммером.</p>
-    </div>
-    <div class="layer">
-      <h3>Освітленість — люксметром, а не на око</h3>
-      <p>Поставити один прожектор на робочу дистанцію 4&nbsp;м і зміряти люкси на
-      вертикальній поверхні. Модель дає ~110&nbsp;лк від восьми на повній напрузі при
-      цільових 60. Якщо реальність виявиться вдвічі гіршою — або піднімати напругу назад
-      до 12&nbsp;В, або додавати прожектори (і тоді перераховувати панель).</p>
-    </div>
-    <div class="layer">
-      <h3>Просадка в кабелі — під навантаженням</h3>
-      <p>Зміряти напругу на початку і в кінці кожної лінії при увімкненому світлі.
-      Модель обіцяє менше 3% у всіх режимах на шині 24&nbsp;В — саме заради цього
-      систему підняли з 12 на 24&nbsp;В: удвічі менший струм дає удвічі меншу просадку
-      на тій самій міді.</p>
-    </div>
-  </div>
 </div>
 
 <script>
@@ -239,9 +209,9 @@
   const FIXTURES = {{FIXTURES_JSON}};
   const RUNS = {{RUNS_JSON}};
   const presets = {{PRESETS_JSON}};
+  const GAUGES = {{GAUGES_JSON}};
 
-  const ids = ["vspot","dim2","duty","hours","sun","panel","ah"];
-  const units = { vspot:" В", dim2:"%", duty:"%", hours:" год", sun:"%", panel:" Вт", ah:" Аг" };
+  const ids = ["vspot","dim2","duty","hours","awgt","awgd"];
 
   function spotRatios(v){
     if (v < VMIN) return [0, 0];
@@ -262,27 +232,23 @@
     FIXTURES.forEach(f => g[f.group] += fixtureW(f, s));
     const loadW = g.g1 + g.g2 + g.g3a;
 
-    let lossW = 0, worstDrop = 0, trunkA = 0;
+    let lossW = 0, worstDrop = 0, trunkA = 0, drops = {};
     RUNS.forEach(r => {
+      const awg = r.id === "trunk" ? s.awgt : (r.id === "deco" ? s.awgd : r.awg);
       const w = r.groups.reduce((a, k) => a + g[k], 0);
       const i = w / BUS;
-      const res = 2 * r.length_m * OHM[r.awg];
+      const res = 2 * r.length_m * OHM[awg];
       lossW += i * i * res;
-      worstDrop = Math.max(worstDrop, 100 * i * res / BUS);
+      const pct = 100 * i * res / BUS;
+      drops[r.id] = { pct, awg, amps: i };
+      worstDrop = Math.max(worstDrop, pct);
       if (r.id === "trunk") trunkA = i;
     });
 
     const drawW = loadW + lossW;
-    const whNight = drawW * s.hours;
     const lm = SPOT_QTY * SPOT_LM * spotRatios(s.vspot)[1];
-    const lux = lm * UTIL / AREA;
-    const perW = SUNH * MPPT * DUST * HEAT;
-    const gen = s.panel * perW * s.sun;
-    const usable = s.ah * BATT_V * DOD;
-    return { g, loadW, lossW, drawW, whNight, lux, trunkA, worstDrop,
-             gen, balance: gen - whNight,
-             nights: whNight > 0 ? usable / whNight : Infinity,
-             needW: whNight / perW };
+    return { g, loadW, lossW, drawW, whNight: drawW * s.hours,
+             lux: lm * UTIL / AREA, trunkA, worstDrop, drops };
   }
 
   function tile(k, v, u, note, cls){
@@ -292,45 +258,44 @@
   function render(){
     const s = {};
     ids.forEach(id => s[id] = parseFloat($(id).value));
-    ids.forEach(id => $("v-"+id).textContent = $(id).value + units[id]);
-    s.dim2 /= 100; s.duty /= 100; s.sun /= 100;
+    $("v-vspot").textContent = s.vspot + " В";
+    $("v-dim2").textContent = s.dim2 + "%";
+    $("v-duty").textContent = s.duty + "%";
+    $("v-hours").textContent = s.hours + " год";
+    $("v-awgt").textContent = "AWG " + GAUGES[s.awgt];
+    $("v-awgd").textContent = "AWG " + GAUGES[s.awgd];
+    s.awgt = GAUGES[s.awgt]; s.awgd = GAUGES[s.awgd];
+    s.dim2 /= 100; s.duty /= 100;
     s.emerg = $("emerg").checked ? 1 : 0;
     const r = compute(s);
 
-    const balCls = r.balance >= 200 ? "good" : (r.balance >= 0 ? "warn" : "crit");
     const luxCls = r.lux >= TARGET_LUX ? "good" : (r.lux >= TARGET_LUX * 0.6 ? "warn" : "crit");
-    const dropCls = r.worstDrop <= DROP_WARN ? "good" : (r.worstDrop <= DROP_CRIT ? "warn" : "crit");
-    const nightsCls = r.nights >= 2 ? "good" : (r.nights >= 1 ? "warn" : "crit");
+    const dCls = p => p <= DROP_WARN ? "good" : (p <= DROP_CRIT ? "warn" : "crit");
 
     $("tiles").innerHTML =
-      tile("Потужність", r.drawW.toFixed(0), "Вт",
-           `у кабелях гріється ${r.lossW.toFixed(1)} Вт`) +
+      tile("Потужність", r.drawW.toFixed(0), "Вт", `у кабелях гріється ${r.lossW.toFixed(1)} Вт`) +
       tile("За ніч", r.whNight.toFixed(0), "Wh", `${s.hours} год · ${r.trunkA.toFixed(1)} A в магістралі`) +
-      tile("Сонце дає", r.gen.toFixed(0), "Wh/добу",
-           `панель ${s.panel} Вт з деративами пилу і жари`) +
-      tile("Добовий баланс", (r.balance >= 0 ? "+" : "") + r.balance.toFixed(0), "Wh",
-           r.balance >= 0 ? "батарея встигає зарядитись" : "щодня йдемо в мінус!", balCls) +
-      tile("Автономність", r.nights === Infinity ? "∞" : r.nights.toFixed(1), "ночей",
-           `АКБ ${s.ah} Аг · DoD ${(DOD*100).toFixed(0)}%`, nightsCls) +
-      tile("Панель в нуль", r.needW.toFixed(0), "Вт", "щоб вийти рівно в баланс") +
       tile("Освітленість", r.lux.toFixed(0), "лк",
            `ціль ${TARGET_LUX} лк · запас ${r.lux >= TARGET_LUX ? "+" : ""}${(r.lux - TARGET_LUX).toFixed(0)}`, luxCls) +
-      tile("Просадка", r.worstDrop.toFixed(2), "%",
-           dropCls === "good" ? "у нормі, < 3%" : (dropCls === "warn" ? "терпимо" : "товщий кабель!"), dropCls);
+      tile("Просадка магістралі", r.drops.trunk.pct.toFixed(2), "%",
+           `AWG ${s.awgt} · ${r.drops.trunk.amps.toFixed(1)} A`, dCls(r.drops.trunk.pct)) +
+      tile("Просадка декору", r.drops.deco.pct.toFixed(2), "%",
+           `AWG ${s.awgd} · ${r.drops.deco.amps.toFixed(1)} A`, dCls(r.drops.deco.pct)) +
+      tile("Просадка аварійної", r.drops.emerg.pct.toFixed(2), "%",
+           `AWG ${r.drops.emerg.awg} · ${r.drops.emerg.amps.toFixed(1)} A`, dCls(r.drops.emerg.pct));
 
     $("grp-split").innerHTML =
       `<span>Гр.1 прожектори · ${r.g.g1.toFixed(1)} Вт</span>` +
       `<span>Гр.2 декор · ${r.g.g2.toFixed(1)} Вт</span>` +
       `<span>Гр.3А аварійна · ${r.g.g3a.toFixed(1)} Вт</span>`;
 
-    const scale = Math.max(r.gen, r.whNight, 1) * 1.15;
-    $("bar-gen").style.width = Math.min(100, r.gen / scale * 100) + "%";
-    $("mark-use").style.left = Math.min(100, r.whNight / scale * 100) + "%";
-    $("gen-label").textContent = `сонце ${r.gen.toFixed(0)} · спожито ${r.whNight.toFixed(0)} Wh`;
-    $("gen-max").textContent = scale.toFixed(0) + " Wh";
+    $("lux-target").textContent = TARGET_LUX;
     $("bar-lux").style.width = Math.min(100, r.lux / 250 * 100) + "%";
     $("mark-lux").style.left = (TARGET_LUX / 250 * 100) + "%";
     $("lux-label").textContent = `${r.lux.toFixed(0)} лк на фігурі`;
+    $("bar-drop").style.width = Math.min(100, r.worstDrop / 12 * 100) + "%";
+    $("mark-drop").style.left = (DROP_CRIT / 12 * 100) + "%";
+    $("drop-label").textContent = `найгірша ${r.worstDrop.toFixed(2)}% · межа ${DROP_CRIT}%`;
   }
 
   const presetBox = $("presets");

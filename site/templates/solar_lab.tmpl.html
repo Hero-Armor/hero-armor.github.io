@@ -1,0 +1,317 @@
+<title>Hero Armor — лабораторія живлення</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; letter-spacing: .01em; }
+  .sub { color: var(--ink-2); max-width: 64ch; margin: 0 0 1.6rem; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
+       margin: 2.6rem 0 .9rem; letter-spacing: .02em; }
+  .presets { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.2rem; }
+  .presets button, .seg button {
+    font-family: var(--mono); font-size: .78rem; padding: .45rem .8rem;
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 4px; cursor: pointer;
+  }
+  .presets button:hover, .seg button:hover { border-color: var(--accent); }
+  .presets button.active, .seg button.active {
+    background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+  .seg { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .7rem; }
+  .sim { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 1.25rem; align-items: start; }
+  @media (max-width: 760px) { .sim { grid-template-columns: 1fr; } }
+  .controls, .outputs { background: var(--panel); border: 1px solid var(--line);
+                        border-radius: 6px; padding: 1.1rem 1.2rem; }
+  .ctrl { margin-bottom: .9rem; }
+  .ctrl label { display: flex; justify-content: space-between; font-size: .82rem;
+                color: var(--ink-2); margin-bottom: .15rem; }
+  .ctrl label b { font-family: var(--mono); color: var(--ink); font-weight: 600;
+                  font-variant-numeric: tabular-nums; }
+  .ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+  .ctrl-group { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--ink-2);
+                border-top: 1px solid var(--line); padding-top: .8rem; margin: 1.1rem 0 .7rem; }
+  .ctrl-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+  .check { display: flex; align-items: center; gap: .5rem; font-size: .84rem; color: var(--ink); }
+  .check input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .7rem .8rem; background: var(--bg); }
+  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.45rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+  .tile.good { background: var(--good-bg); } .tile.good .v { color: var(--good); }
+  .tile.warn { background: var(--warn-bg); } .tile.warn .v { color: var(--warn); }
+  .tile.crit { background: var(--crit-bg); } .tile.crit .v { color: var(--crit); }
+  .bar-row { margin-top: 1rem; }
+  .bar-row .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+                text-transform: uppercase; color: var(--ink-2); margin-bottom: .3rem; }
+  .bar { position: relative; height: 14px; background: var(--bg); border: 1px solid var(--line);
+         border-radius: 3px; overflow: hidden; }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--signal); transition: width .2s; }
+  .bar .fill.heat { background: linear-gradient(90deg, var(--good), var(--warn) 60%, var(--crit)); }
+  .bar .mark { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--crit); }
+  .bar-legend { display: flex; justify-content: space-between; font-family: var(--mono);
+                font-size: .68rem; color: var(--ink-2); margin-top: .2rem;
+                font-variant-numeric: tabular-nums; }
+  .fig { background: #fcfcfb; border: 1px solid var(--line); border-radius: 6px;
+         padding: .8rem; overflow-x: auto; }
+  .fig img { display: block; min-width: 900px; width: 100%; }
+  .fig-cap { font-size: .8rem; color: var(--ink-2); margin-top: .5rem; max-width: 80ch; }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  .layers { display: grid; gap: .8rem; }
+  .layer { border-left: 3px solid var(--signal); background: var(--panel);
+           border-radius: 0 5px 5px 0; padding: .8rem 1rem; }
+  .layer h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .layer p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
+  .grp-split { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .8rem;
+               font-family: var(--mono); font-size: .7rem; }
+  .grp-split span { padding: .2rem .55rem; border-radius: 3px; background: var(--bg);
+                    border: 1px solid var(--line); }
+  .bar .fill.gen { background: var(--good); }
+  .bar .fill.soc { background: linear-gradient(90deg, var(--crit), var(--warn) 30%, var(--good) 60%); }
+</style>
+
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor · головна</a> · лабораторія живлення</p>
+  <h1>Панель, станція і запас ходу</h1>
+  <p class="sub">Крути панель і станцію — модель показує, чи закриває доба сама себе, скільки
+  лишається запасу і через скільки діб доведеться везти підміну. Споживання підтягується
+  живцем зі світла і звуку, руками його тут не задати — і в цьому сенс: змінив режим світла,
+  цифри живлення поїхали слідом.</p>
+
+  <div class="presets" id="presets"></div>
+
+  <div class="sim">
+    <div class="controls">
+      <div class="ctrl-group">Сонячний масив</div>
+      <div class="ctrl"><label>Панель, сумарно <b id="v-panel"></b></label>
+        <input type="range" id="panel" min="100" max="1200" step="50" value="600" aria-label="Панель"></div>
+      <div class="ctrl"><label>Сонце цього дня <b id="v-sun"></b></label>
+        <input type="range" id="sun" min="0" max="100" step="5" value="100" aria-label="Сонце"></div>
+      <div class="ctrl"><label>Сонце-годин на добу <b id="v-sunh"></b></label>
+        <input type="range" id="sunh" min="3" max="7" step="0.5" value="5" aria-label="Сонце-годин"></div>
+
+      <div class="ctrl-group">Станція</div>
+      <div class="seg" id="station-seg">
+        {{STATION_BTNS}}
+      </div>
+      <div class="ctrl"><label>Недоторканий запас <b id="v-reserve"></b></label>
+        <input type="range" id="reserve" min="0" max="40" step="5" value="15" aria-label="Резерв"></div>
+
+      <div class="ctrl-group">Режим світла (звідси береться споживання)</div>
+      <div class="seg" id="light-seg">
+        {{LIGHT_BTNS}}
+      </div>
+    </div>
+
+    <div class="outputs">
+      <div class="tiles" id="tiles"></div>
+      <div class="grp-split" id="split"></div>
+      <div class="bar-row">
+        <div class="k">Доба: скільки дала панель проти того, скільки з'їли</div>
+        <div class="bar"><div class="fill gen" id="bar-gen"></div><div class="mark" id="mark-use"></div></div>
+        <div class="bar-legend"><span>0 Wh</span><span id="gen-label"></span><span id="gen-max"></span></div>
+      </div>
+      <div class="bar-row">
+        <div class="k">Заряд станції через добу такого режиму</div>
+        <div class="bar"><div class="fill soc" id="bar-soc"></div><div class="mark" id="mark-res"></div></div>
+        <div class="bar-legend"><span>порожня</span><span id="soc-label"></span><span>повна</span></div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Як це працює</h2>
+  <div class="layers">
+    <div class="layer">
+      <h3>1 · Стеля не в бюджеті, а у вході станції</h3>
+      <p>Скільки панелі не постав, станція візьме лише стільки, скільки дозволяє її сонячний
+      вхід. У River 2 Pro це 220&nbsp;Вт, у Delta 2 — 500, у Delta 2 Max — 1000. Тобто
+      «докинути ще панель» на маленькій станції просто не працює: зайві вати нікуди не підуть.
+      У лабораторії це видно одразу — з'являється позначка, скільки ват пропадає намарно.</p>
+    </div>
+    <div class="layer">
+      <h3>2 · Пил ріже більше, ніж здається</h3>
+      <p>Модель множить вихід на три поправки: пил на склі, спека і втрати в кабелі.
+      Разом це забирає близько чверті ще до того, як почалась хмарність. А запилене скло на
+      плайї — не аварія, а норма через кілька днів: саме тому мити панелі щоранку дешевше,
+      ніж возити підміну.</p>
+    </div>
+    <div class="layer">
+      <h3>3 · Підміна — це план, а не аварія</h3>
+      <p>Станція знімається і їде на базу під розетку, на її місце стає заряджена. Тому
+      питання не «чи вистачить», а «через скільки діб». Модель рахує саме це: беремо робочий
+      запас (ємність мінус недоторканий резерв) і ділимо на щоденний мінус. Якщо панелі
+      стали зовсім — запас ходу видно в тайлі «до підміни».</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const $ = id => document.getElementById(id);
+  {{JS_CONST}}
+  const STATIONS = {{STATIONS_JSON}};
+  const LIGHT_CASES = {{LIGHT_CASES_JSON}};
+  const presets = {{PRESETS_JSON}};
+
+  let stationName = {{STATION_DEFAULT}};
+  let lightCase = {{LIGHT_DEFAULT}};
+
+  const ids = ["panel","sun","sunh","reserve"];
+  const units = { panel:" Вт", sun:"%", sunh:" год", reserve:"%" };
+
+  function compute(s){
+    const st = STATIONS[stationName];
+    const lc = LIGHT_CASES[lightCase];
+    const demand = lc.wh + AUDIO_WH + STANDBY_W * 24;
+
+    const used = Math.min(s.panel, st.solar_in_w);
+    const gen = used * s.sunh * DUST * HEAT * CABLE * s.sun;
+
+    const usable = st.wh * USABLE;
+    const reserve = usable * s.reserve;
+    const workable = usable - reserve;
+    const net = gen - demand;
+
+    const perW = s.sunh * DUST * HEAT * CABLE;
+    return { st, lc, demand, used, wasted: s.panel - used, gen, usable, reserve,
+             workable, net,
+             daysToSwap: net < 0 ? workable / -net : Infinity,
+             socAfterDay: Math.max(0, Math.min(1, (usable + net) / usable)),
+             needW: demand / perW,
+             rechargeH: usable / Math.min(st.ac_in_w, BASE_AC_W) };
+  }
+
+  function tile(k, v, u, note, cls){
+    return `<div class="tile ${cls||""}"><div class="k">${k}</div><div class="v">${v}<span class="u"> ${u}</span></div>${note?`<div class="note">${note}</div>`:""}</div>`;
+  }
+
+  function render(){
+    const s = {};
+    ids.forEach(id => s[id] = parseFloat($(id).value));
+    ids.forEach(id => $("v-"+id).textContent = $(id).value + units[id]);
+    s.sun /= 100; s.reserve /= 100;
+    const r = compute(s);
+
+    const netCls = r.net >= 300 ? "good" : (r.net >= 0 ? "warn" : "crit");
+    const swapCls = r.daysToSwap === Infinity ? "good" : (r.daysToSwap >= 3 ? "warn" : "crit");
+    const capCls = r.wasted > 0 ? "warn" : "good";
+
+    $("tiles").innerHTML =
+      tile("Панель дає", r.gen.toFixed(0), "Wh/добу",
+           r.wasted > 0 ? `станція бере лише ${r.used} Вт — ${r.wasted} Вт намарно`
+                        : `весь масив ${r.used} Вт заходить у станцію`, capCls) +
+      tile("Система жере", r.demand.toFixed(0), "Wh/добу",
+           `світло ${r.lc.wh.toFixed(0)} + звук ${AUDIO_WH.toFixed(0)} + холостий хід ${(STANDBY_W*24).toFixed(0)}`) +
+      tile("Баланс доби", (r.net >= 0 ? "+" : "") + r.net.toFixed(0), "Wh",
+           r.net >= 0 ? "станція встигає добрати" : "щодня йдемо в мінус", netCls) +
+      tile("До підміни", r.daysToSwap === Infinity ? "—" : r.daysToSwap.toFixed(1),
+           r.daysToSwap === Infinity ? "" : "діб",
+           r.daysToSwap === Infinity ? "у цьому режимі підміна не потрібна"
+                                     : "поки не з'їсть робочий запас", swapCls) +
+      tile("Панель в нуль", r.needW.toFixed(0), "Вт", "щоб доба закривала сама себе") +
+      tile("Робочий запас", r.workable.toFixed(0), "Wh",
+           `з ${r.usable.toFixed(0)} корисних, ${r.reserve.toFixed(0)} недоторкані`) +
+      tile("Зарядка на базі", r.rechargeH.toFixed(1), "год",
+           `від розетки ${Math.min(r.st.ac_in_w, BASE_AC_W)} Вт`) +
+      tile("Заряд через добу", (r.socAfterDay * 100).toFixed(0), "%",
+           r.socAfterDay > 0.9 ? "повна" : (r.socAfterDay > 0.3 ? "просідає" : "майже порожня"),
+           r.socAfterDay > 0.5 ? "good" : (r.socAfterDay > 0.2 ? "warn" : "crit"));
+
+    $("split").innerHTML =
+      `<span>Світло · ${r.lc.wh.toFixed(0)} Wh</span>` +
+      `<span>Звук · ${AUDIO_WH.toFixed(0)} Wh</span>` +
+      `<span>Холостий хід · ${(STANDBY_W*24).toFixed(0)} Wh</span>`;
+
+    const scale = Math.max(r.gen, r.demand, 1) * 1.15;
+    $("bar-gen").style.width = Math.min(100, r.gen / scale * 100) + "%";
+    $("mark-use").style.left = Math.min(100, r.demand / scale * 100) + "%";
+    $("gen-label").textContent = `дала ${r.gen.toFixed(0)} · з'їли ${r.demand.toFixed(0)} Wh`;
+    $("gen-max").textContent = scale.toFixed(0) + " Wh";
+    $("bar-soc").style.width = (r.socAfterDay * 100).toFixed(0) + "%";
+    $("mark-res").style.left = (s.reserve * 100).toFixed(0) + "%";
+    $("soc-label").textContent = `${(r.socAfterDay*100).toFixed(0)}% після доби · різ ${s.reserve*100}%`;
+  }
+
+  const presetBox = $("presets");
+  presets.forEach(pr => {
+    const b = document.createElement("button");
+    b.textContent = pr.name;
+    b.addEventListener("click", () => {
+      ids.forEach(id => { if (id in pr) $(id).value = pr[id]; });
+      lightCase = pr.light;
+      document.querySelectorAll("#light-seg button").forEach(x =>
+        x.classList.toggle("active", x.dataset.c === lightCase));
+      presetBox.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      render();
+    });
+    presetBox.appendChild(b);
+  });
+
+  const clearPreset = () =>
+    presetBox.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+  ids.forEach(id => $(id).addEventListener("input", () => { clearPreset(); render(); }));
+
+  document.querySelectorAll("#station-seg button").forEach(b => {
+    b.addEventListener("click", () => {
+      stationName = b.dataset.s;
+      document.querySelectorAll("#station-seg button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      clearPreset(); render();
+    });
+  });
+  document.querySelectorAll("#light-seg button").forEach(b => {
+    b.addEventListener("click", () => {
+      lightCase = b.dataset.c;
+      document.querySelectorAll("#light-seg button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      clearPreset(); render();
+    });
+  });
+
+  presetBox.children[0].click();
+</script>
