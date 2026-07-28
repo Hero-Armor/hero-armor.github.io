@@ -15,6 +15,11 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 `cd site && python3 build.py` → перепублікувати артефакти (ті самі URL).
 Числа на сторінках рахує тільки модель (`model/audio_node_model.py`).
 
+**`knowledge/` — OKF-бандл (Open Knowledge Format v0.2, Google Cloud spec):**
+markdown-концепти з YAML frontmatter, генеруються тим самим `build.py` з
+`data/*.json`. НІКОЛИ не правити руками — це build-продукт, комітиться в репо
+для агентів/людей. Журнал проєкту — `data/project.json → log`.
+
 ## Приватність
 
 `data/private/` — gitignored: реальні адреси і трек-номери. НІКОЛИ не комітити,

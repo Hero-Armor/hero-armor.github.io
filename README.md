@@ -20,12 +20,22 @@
 Інженерний хаб (цей репозиторій): https://hero-armor.github.io/
 
 ```
-data/        спільна база: components, bom, tasks, orders, decisions, addresses
+data/        спільна база: components, bom, tasks, orders, decisions, addresses, project
 audio/       модель + схема + params/cases аудіо-вузла
 solar/ lights/ armor/   так само, коли зʼявиться контент
 site/        збірник сайту + шаблони; site/assets/hero.png — арт (codex)
+knowledge/   OKF-бандл (Open Knowledge Format v0.2) — ГЕНЕРУЄТЬСЯ з data/, не правити
 docs/        генерований сайт (gitignored; збирає CI)
 ```
+
+## База знань — Open Knowledge Format
+
+`knowledge/` — [OKF v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)
+бандл: один markdown-концепт на файл (компонент, рішення, задача, позиція BOM,
+замовлення), YAML frontmatter, крос-лінки = граф. Його генерує `build.py` з
+`data/*.json` — читати можна будь-чим (GitHub, Obsidian, будь-який агент),
+правити треба JSON. Рішення несуть `verified: human:…`, розраховані цифри
+посилаються на санкціоновану модель (`type: Attested Computation`).
 
 ## Збірка
 

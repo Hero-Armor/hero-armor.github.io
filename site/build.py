@@ -193,6 +193,311 @@ def build_knowledge():
     return {"@context": "https://schema.org", "@graph": graph}
 
 
+GH = "https://github.com/Hero-Armor/hero-armor.github.io"
+UK2LAT = {
+    "а": "a", "б": "b", "в": "v", "г": "h", "ґ": "g", "д": "d", "е": "e", "є": "ie",
+    "ж": "zh", "з": "z", "и": "y", "і": "i", "ї": "i", "й": "i", "к": "k", "л": "l",
+    "м": "m", "н": "n", "о": "o", "п": "p", "р": "r", "с": "s", "т": "t", "у": "u",
+    "ф": "f", "х": "kh", "ц": "ts", "ч": "ch", "ш": "sh", "щ": "shch", "ь": "",
+    "ю": "iu", "я": "ia", "’": "", "ʼ": "", "'": "",
+}
+
+
+def uslug(s):
+    """Transliterated slug for OKF file names (Ukrainian-safe)."""
+    return slug("".join(UK2LAT.get(ch, ch) for ch in s.lower()))
+
+
+def md_text(html):
+    """decisions.why is light HTML -> markdown (links kept, tags stripped)."""
+    txt = re.sub(r'<a href="([^"]+)">([^<]+)</a>', r"[\2](\1)", html)
+    return re.sub(r"<[^>]+>", "", txt)
+
+
+def fm(fields):
+    """YAML frontmatter from an ordered dict of simple values."""
+    lines = ["---"]
+    for k, v in fields.items():
+        if v is None:
+            continue
+        if isinstance(v, list) and v and isinstance(v[0], dict):
+            lines.append(f"{k}:")
+            for item in v:
+                inner = ", ".join(f"{ik}: {json.dumps(iv, ensure_ascii=False)}"
+                                  for ik, iv in item.items())
+                lines.append(f"  - {{ {inner} }}")
+        elif isinstance(v, list):
+            lines.append(f"{k}: [{', '.join(json.dumps(x, ensure_ascii=False) for x in v)}]")
+        elif isinstance(v, dict):
+            inner = ", ".join(f"{ik}: {json.dumps(iv, ensure_ascii=False)}" for ik, iv in v.items())
+            lines.append(f"{k}: {{ {inner} }}")
+        else:
+            lines.append(f"{k}: {json.dumps(v, ensure_ascii=False)}")
+    lines.append("---")
+    return "\n".join(lines) + "\n\n"
+
+
+def build_okf():
+    """Compile data/ into an OKF v0.2 bundle (knowledge/): one markdown concept
+    per file, YAML frontmatter, bundle-relative cross-links. data/*.json stays
+    the editing format; this is generated — never hand-edit knowledge/."""
+    import shutil
+    okf = ROOT / "knowledge"
+    if okf.exists():
+        shutil.rmtree(okf)
+    okf.mkdir()
+    gen = {"by": "process:site-build"}
+    ev = PROJ["event"]
+    wh_node, results = m.composite_day()
+    auto = m.autonomy(wh_node)
+    day, night = results["day"], results["night"]
+    tj_worst = max(r["t_j_worst"] for r in results.values())
+
+    comp_slug = {c["key"]: c["key"] for c in COMPONENTS_REG}
+    comp_link = {k: f"/components/{k}.md" for k in comp_slug}
+    comp_link["project"] = "/project.md"
+
+    def clink(k):
+        label = COMP_LABEL.get(k, k)
+        return f"[{label}]({comp_link.get(k, '/project.md')})"
+
+    def write(path, fields, body):
+        p = okf / path
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(fm(fields) + body.rstrip() + "\n")
+
+    def index_md(path, title, sections, root=False):
+        head = f'---\nokf_version: "0.2"\n---\n\n' if root else ""
+        parts = [head + f"# {title}\n"]
+        for heading, items in sections:
+            if not items:
+                continue
+            parts.append(f"\n# {heading}\n" if heading != title else "")
+            parts.extend(f"* {it}" for it in items)
+            parts.append("")
+        (okf / path).write_text("\n".join(parts).rstrip() + "\n")
+
+    # ---- project + event ----
+    write("project.md", {
+        "type": "Project", "title": "Hero Armor",
+        "description": "Меморіальна інсталяція для Burning Man 2026 памʼяті Захара Захарова — "
+                       "воїн-захисник, що промовляє його голосом.",
+        "resource": "https://hero-armor.com/", "tags": ["project"], "generated": gen,
+    }, f"""Меморіальна інсталяція памʼяті Захара Захарова — 3D-художника, який загинув,
+захищаючи Україну (2022). Історія — на [hero-armor.com](https://hero-armor.com/)
+(меморіальний сайт, окремий хостинг). Вартовий промовляє голосом Захара
+(ElevenLabs-клон), коли людина підходить на 2.5–3 м.
+
+# Складові
+
+* [Компоненти](/components/index.md) — аудіо, сонце/живлення, світло, броня
+* [Рішення](/decisions/index.md) — інженерний лог рішень з «чому»
+* [Задачі](/tasks/index.md) — дошка по компонентах
+* [Закупівля](/bom/index.md) — BOM з лінками й статусами
+* [Замовлення](/orders/index.md) — що їде і куди
+* [Модель](/model/index.md) — розраховані цифри аудіо-вузла
+* [Подія](/event.md) — {ev["name"]}
+
+# Джерела правди
+
+Бандл генерується з файлової бази `data/*.json` командою
+`cd site && python3 build.py` — правити треба JSON, не ці файли.
+Інженерний хаб: [hero-armor.github.io]({SITE_URL}) · [репозиторій]({GH}).""")
+
+    write("event.md", {
+        "type": "Event", "title": ev["name"],
+        "description": f"Ворота {ev['gate_open']}, Man горить {ev['burn_night']}, фінал {ev['end']} — {ev['location']}.",
+        "resource": "https://burningman.org/", "tags": ["project"], "generated": gen,
+        "start_date": ev["gate_open"], "end_date": ev["end"],
+    }, f"""# Дати
+
+| Що | Коли |
+|----|------|
+| Ворота відчиняються | {ev["gate_open"]} |
+| Man горить | {ev["burn_night"]} |
+| Фінал | {ev["end"]} |
+
+Місце: {ev["location"]}. Інсталяція: [Hero Armor](/project.md).""")
+
+    # ---- components ----
+    comp_items = []
+    for c in COMPONENTS_REG:
+        k = c["key"]
+        c_dec = [d for d in DECISIONS if d["component"] == k]
+        c_tasks = [t for t in TASKS if t["component"] == k]
+        c_bom = [b for b in BOM if b["component"] == k]
+        body = [c["summary"], ""]
+        if c_dec:
+            body.append("# Рішення\n")
+            body += [f"* [{d['title']}](/decisions/{uslug(d['title'])}.md)" for d in c_dec]
+            body.append("")
+        if c_tasks:
+            body.append("# Задачі\n")
+            body += [f"* [{t['task']}](/tasks/{uslug(t['task'])}.md) — {TASK_STATUS[t['status']]}"
+                     for t in c_tasks]
+            body.append("")
+        if c_bom:
+            body.append("# Закупівля\n")
+            body += [f"* [{b['item']}](/bom/{uslug(b['item'])}.md) — {b['price']}, "
+                     f"{'є' if b['status'] == 'have' else 'купити'}" for b in c_bom]
+            body.append("")
+        if k == "audio":
+            body.append("# Розраховані цифри\n\nДив. [модель аудіо-вузла](/model/audio-node.md) — "
+                        "числа рахує тільки [санкціонована модель](/computations/audio-node-model.md).\n")
+        write(f"components/{k}.md", {
+            "type": "Component", "title": c["label"], "description": c["summary"][:160],
+            "resource": SITE_URL + c["page"], "tags": [k],
+            "component_status": c["status"], "generated": gen,
+        }, "\n".join(body))
+        comp_items.append(f"[{c['label']}]({k}.md) - {COMP_STATUS_LABEL[c['status']]}")
+    index_md("components/index.md", "Компоненти", [("Компоненти", comp_items)])
+
+    # ---- decisions (human-confirmed => verified: human) ----
+    dec_items = []
+    for d in DECISIONS:
+        s = uslug(d["title"])
+        write(f"decisions/{s}.md", {
+            "type": "Engineering Decision", "title": d["title"],
+            "description": re.split(r"(?<=[.!?])\s+", md_text(d["why"]))[0][:200],
+            "tags": [d["component"]], "generated": gen,
+            "verified": {"by": "human:gumanist", "at": "2026-07-27T00:00:00Z"},
+        }, f"Компонент: {clink(d['component'])}\n\n# Чому\n\n{md_text(d['why'])}")
+        dec_items.append(f"[{d['title']}]({s}.md)")
+    index_md("decisions/index.md", "Інженерні рішення", [("Рішення", dec_items)])
+
+    # ---- tasks ----
+    t_items = []
+    for t in TASKS:
+        s = uslug(t["task"])
+        note = t.get("note", "")
+        write(f"tasks/{s}.md", {
+            "type": "Task", "title": t["task"], "description": note[:160] or None,
+            "tags": [t["component"]], "task_status": t["status"], "generated": gen,
+        }, f"Статус: **{TASK_STATUS[t['status']]}** · компонент: {clink(t['component'])}"
+           + (f"\n\n{note}" if note else ""))
+        t_items.append(f"[{t['task']}]({s}.md) - {TASK_STATUS[t['status']]}")
+    index_md("tasks/index.md", "Задачі", [("Задачі", t_items)])
+
+    # ---- BOM parts ----
+    b_items = []
+    for b in BOM:
+        s = uslug(b["item"])
+        write(f"bom/{s}.md", {
+            "type": "Part", "title": b["item"], "description": b["note"][:160],
+            "resource": b.get("url"), "tags": [b["component"]],
+            "quantity": b["qty"], "price": b["price"],
+            "procurement_status": b["status"], "generated": gen,
+        }, f"{b['note']}\n\nКомпонент: {clink(b['component'])} · статус: "
+           f"**{'є' if b['status'] == 'have' else 'купити'}** · ціна {b['price']} · к-сть {b['qty']}")
+        b_items.append(f"[{b['item']}]({s}.md) - {b['price']}, "
+                       f"{'є' if b['status'] == 'have' else 'купити'}")
+    index_md("bom/index.md", "Закупівля (BOM)", [("Позиції", b_items)])
+
+    # ---- orders ----
+    o_items = []
+    for o in ORDERS:
+        s = o["id"].lower()
+        items_md = "\n".join(f"* [{i}](/bom/{uslug(i)}.md)" for i in o["items"])
+        write(f"orders/{s}.md", {
+            "type": "Order", "title": f"{o['id']} — {o['vendor']}",
+            "description": o.get("note", ""), "resource": o.get("url"),
+            "tags": [o["component"]], "order_status": o["status"],
+            "order_date": o["date"],
+            "deliver_to": ADDR["locations"][o["deliver_to"]]["label"],
+            "generated": gen,
+        }, f"Статус: **{ORDER_STATUS[o['status']]}** · замовлено {o['date']} · "
+           f"доставка: {ADDR['locations'][o['deliver_to']]['label']}\n\n# Позиції\n\n{items_md}"
+           + (f"\n\n{o['note']}" if o.get("note") else ""))
+        o_items.append(f"[{o['id']} — {o['vendor']}]({s}.md) - {ORDER_STATUS[o['status']]}")
+    index_md("orders/index.md", "Замовлення", [("Замовлення", o_items)])
+
+    # ---- model snapshot + attested computation ----
+    days_txt = " · ".join(f"{n} ≈ {d:.1f} діб" for n, d in auto["days"].items())
+    write("model/audio-node.md", {
+        "type": "Model Snapshot", "title": "Аудіо-вузол — розраховані цифри",
+        "description": "Ключові числа з моделі: споживання, автономність, температура, гучність.",
+        "tags": ["audio"], "generated": gen,
+        "sources": [
+            {"id": "params", "resource": f"{GH}/blob/main/audio/data/params.json",
+             "title": "audio/data/params.json — константи моделі"},
+            {"id": "cases", "resource": f"{GH}/blob/main/audio/data/cases.json",
+             "title": "audio/data/cases.json — кейси плайї"},
+        ],
+    }, f"""Числа нижче рахує тільки [санкціонована модель](/computations/audio-node-model.md);
+руками їх ніхто не пише.[^params]
+
+# Цифри
+
+| Метрика | Значення |
+|---------|----------|
+| Споживання вузла | {wh_node:.0f} Wh/добу (композитна доба)[^cases] |
+| Разом з EcoFlow standby | {auto["total_wh_day"]:.0f} Wh/добу |
+| Автономність | {days_txt} |
+| Сонце «в нуль» | ~{auto["solar_w"]:.0f} Вт |
+| Tj ампа, найгірший кейс | {tj_worst:.0f} °C (межа {P["thermal"]["tj_max"]:.0f}) |
+| Гучність @3 м, день | {day["spl_peak"]:.0f} dB пік / ~{day["spl_avg"]:.0f} dB сер. ({day["margin_avg"]:+.0f} дБ до шуму) |
+| Гучність @3 м, гучна ніч | запас {night["margin_avg"]:+.0f} дБ |
+
+Компонент: [Аудіо](/components/audio.md).
+
+[^params]: audio/data/params.json — константи моделі
+[^cases]: audio/data/cases.json — кейси плайї""")
+    index_md("model/index.md", "Модель", [("Модель", [
+        "[Аудіо-вузол — розраховані цифри](audio-node.md) - Wh/добу, автономність, Tj, SPL"])])
+
+    write("computations/audio-node-model.md", {
+        "type": "Attested Computation", "title": "Модель аудіо-вузла",
+        "description": "Санкціонований розрахунок усіх цифр аудіо-вузла з data/params.json + cases.json.",
+        "runtime": "python",
+        "computation": f"{GH}/blob/main/audio/model/audio_node_model.py",
+        "tags": ["audio"], "generated": gen,
+        "verified": {"by": "human:gumanist", "at": "2026-07-27T00:00:00Z"},
+    }, """Єдине санкціоноване джерело чисел аудіо-вузла: power budget (крест-фактор
+мови), теплова модель TPA3116, SPL, автономність від EcoFlow.
+
+# Запуск
+
+    cd site && python3 build.py        # перерахує все і перебудує сторінки
+    python3 audio/model/audio_node_model.py   # тільки модель, друк у консоль
+
+Вхід — [params.json](/model/audio-node.md) (константи) і кейси плайї; вихід —
+числа на сторінках хабу та в [знімку моделі](/model/audio-node.md).
+Правило проєкту: числа на сторінках рахує тільки ця модель.""")
+    index_md("computations/index.md", "Обчислення", [("Обчислення", [
+        "[Модель аудіо-вузла](audio-node-model.md) - санкціонований розрахунок цифр"])])
+
+    # ---- log + root index ----
+    log_by_date = {}
+    for entry in PROJ.get("log", []):
+        log_by_date.setdefault(entry["date"], []).append(entry)
+    log_lines = ["# Журнал проєкту", ""]
+    for d_key in sorted(log_by_date, reverse=True):
+        log_lines.append(f"## {d_key}")
+        log_lines += [f"* **{e['kind']}**: {e['text']}" for e in log_by_date[d_key]]
+        log_lines.append("")
+    (okf / "log.md").write_text("\n".join(log_lines).rstrip() + "\n")
+
+    open_n = sum(1 for t in TASKS if t["status"] != "done")
+    tobuy_n = sum(1 for b in BOM if b["status"] != "have")
+    index_md("index.md", "Hero Armor — база знань (OKF)", [
+        ("Проєкт", [
+            "[Hero Armor](project.md) - меморіальна інсталяція памʼяті Захара Захарова",
+            f"[{ev['name']}](event.md) - ворота {ev['gate_open']}, Man горить {ev['burn_night']}",
+            "[Журнал](log.md) - хронологія проєкту"]),
+        ("Розділи", [
+            f"[Компоненти](components/index.md) - {len(COMPONENTS_REG)} підсистеми",
+            f"[Рішення](decisions/index.md) - {len(DECISIONS)} інженерних рішень з «чому»",
+            f"[Задачі](tasks/index.md) - {len(TASKS)} задач, відкрито {open_n}",
+            f"[Закупівля](bom/index.md) - {len(BOM)} позицій, докупити {tobuy_n}",
+            f"[Замовлення](orders/index.md) - {len(ORDERS)}",
+            "[Модель](model/index.md) - розраховані цифри аудіо-вузла",
+            "[Обчислення](computations/index.md) - санкціоновані розрахунки"]),
+    ], root=True)
+
+    n_files = sum(1 for _ in okf.rglob("*.md"))
+    print(f"built knowledge/ — OKF v0.2 bundle, {n_files} files")
+
+
 def build():
     today = date.today()
     wh_node, results = m.composite_day()
@@ -587,6 +892,7 @@ def build():
     if leftovers:
         sys.exit(f"unreplaced tokens: {leftovers}")
     print("built dashboard/: " + ", ".join(f"{n} ({len(h)//1024} KB)" for n, h in pages.items()))
+    build_okf()
     return OUT
 
 
