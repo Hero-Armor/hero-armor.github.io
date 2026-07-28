@@ -99,9 +99,10 @@ def build_knowledge():
     reg = {c["key"]: c for c in COMPONENTS_REG}
     graph = [{
         "@id": "#project", "@type": "Project", "name": "Hero Armor",
-        "description": "Burning Man robot that speaks with a cloned voice when "
-                       "someone approaches (LD2410C radar → ESP32 → PCM5102A → "
-                       "TPA3116D2 → speaker, 12V from EcoFlow).",
+        "description": "Memorial art installation for Burning Man 2026 honoring "
+                       "Ukrainian defenders, in memory of Zakhar Zakharov — a "
+                       "guardian figure that speaks with his voice when someone "
+                       "approaches (LD2410C radar → ESP32 → PCM5102A → TPA3116D2).",
         "url": "https://hero-armor.com/",
         "sameAs": [SITE_URL, "https://github.com/Hero-Armor/hero-armor.github.io"],
         "image": "https://hero-armor.com/images/hero-render.jpg",
