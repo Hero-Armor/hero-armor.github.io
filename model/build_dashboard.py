@@ -246,7 +246,12 @@ def build():
     ops = ops.replace("{{ORDERS_HTML}}", "\n".join(orows))
     ops = ops.replace("{{GEN_DATE}}", today.isoformat())
 
+    # ---------- knowledge graph (schema.org JSON-LD), embedded in the main page ----------
+    kg = build_knowledge()
+    kg_json = json.dumps(kg, ensure_ascii=False, indent=1).replace("</", "<\\/")
+    main += f'\n<script type="application/ld+json">\n{kg_json}\n</script>\n'
     OUT.mkdir(exist_ok=True)
+    (OUT / "knowledge.jsonld").write_text(json.dumps(kg, ensure_ascii=False, indent=1))
     (OUT / "lab.html").write_text(lab)
     (OUT / "main.html").write_text(main)
     (OUT / "ops.html").write_text(ops)
@@ -256,6 +261,92 @@ def build():
     print(f"built dashboard/: main ({len(main)//1024} KB), lab ({len(lab)//1024} KB), "
           f"ops ({len(ops)//1024} KB)")
     return OUT
+
+
+SITE = "https://hero-armor.github.io/"
+ORDER_STATUS_LD = {"ordered": "OrderProcessing", "shipped": "OrderInTransit",
+                   "delivered": "OrderDelivered", "received": "OrderDelivered"}
+ACTION_STATUS_LD = {"todo": "PotentialActionStatus", "doing": "ActiveActionStatus",
+                    "waiting": "PotentialActionStatus", "done": "CompletedActionStatus"}
+
+
+def slug(s):
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")[:60]
+
+
+def build_knowledge():
+    """Everything in data/ as a schema.org JSON-LD @graph (Google's recommended
+    open structured-data format). Public by design: no addresses beyond city,
+    never tracking numbers."""
+    graph = [{
+        "@id": "#project", "@type": "Project", "name": "Hero Armor",
+        "description": "Burning Man robot that speaks with a cloned voice when "
+                       "someone approaches (LD2410C radar → ESP32 → PCM5102A → "
+                       "TPA3116D2 → speaker, 12V from EcoFlow).",
+        "url": SITE,
+        "hasPart": [{"@id": f"#sub-{c}"} for c in COMPONENTS if c != "project"],
+    }]
+    for c in COMPONENTS:
+        if c != "project":
+            graph.append({"@id": f"#sub-{c}", "@type": "Project",
+                          "name": f"Hero Armor — {COMP_LABEL[c]}",
+                          "parentOrganization": {"@id": "#project"}})
+
+    def comp_ref(c):
+        return {"@id": "#project" if c == "project" else f"#sub-{c}"}
+
+    bom_ids = {}
+    for b in BOM:
+        bid = f"#bom-{slug(b['item'])}"
+        bom_ids[b["item"]] = bid
+        node = {"@id": bid, "@type": "Product", "name": b["item"],
+                "description": b["note"], "isRelatedTo": comp_ref(b["component"]),
+                "additionalProperty": [
+                    {"@type": "PropertyValue", "name": "procurement-status", "value": b["status"]},
+                    {"@type": "PropertyValue", "name": "quantity", "value": b["qty"]}]}
+        price = re.search(r"\$(\d+(?:\.\d+)?)", b["price"])
+        if b.get("url"):
+            node["offers"] = {"@type": "Offer", "url": b["url"],
+                              **({"price": price.group(1), "priceCurrency": "USD"} if price else {})}
+        graph.append(node)
+
+    for o in ORDERS:
+        graph.append({
+            "@id": f"#{o['id'].lower()}", "@type": "Order",
+            "orderNumber": o["id"], "orderDate": o["date"],
+            "orderStatus": f"https://schema.org/{ORDER_STATUS_LD[o['status']]}",
+            "seller": {"@type": "Organization", "name": o["vendor"]},
+            "orderedItem": [{"@id": bom_ids[i]} for i in o["items"] if i in bom_ids],
+            "orderDelivery": {"@type": "ParcelDelivery", "deliveryAddress": {
+                "@type": "PostalAddress",
+                "addressLocality": ADDR["locations"][o["deliver_to"]]["label"]}},
+            "description": o.get("note", "")})
+
+    for t in TASKS:
+        graph.append({
+            "@id": f"#task-{slug(t['task'])}", "@type": "Action",
+            "name": t["task"], "description": t.get("note", ""),
+            "actionStatus": f"https://schema.org/{ACTION_STATUS_LD[t['status']]}",
+            "object": comp_ref(t["component"])})
+
+    for d in DECISIONS:
+        graph.append({
+            "@id": f"#decision-{slug(d['title'])}", "@type": "CreativeWork",
+            "genre": "engineering-decision", "name": d["title"],
+            "text": re.sub(r"<[^>]+>", "", d["why"]), "about": comp_ref(d["component"])})
+
+    for fname, desc in [("params.json", "Model constants: electrical, thermal, acoustics, power source"),
+                        ("cases.json", "Playa scenarios driving the system model"),
+                        ("bom.json", "Bill of materials with sourcing status"),
+                        ("decisions.json", "Engineering decision log"),
+                        ("tasks.json", "Task board by sub-project"),
+                        ("orders.json", "Purchase orders and delivery status")]:
+        graph.append({"@id": f"#data-{fname.split('.')[0]}", "@type": "Dataset",
+                      "name": f"Hero Armor data/{fname}", "description": desc,
+                      "isPartOf": {"@id": "#project"},
+                      "encodingFormat": "application/json"})
+
+    return {"@context": "https://schema.org", "@graph": graph}
 
 
 def build_docs(out):
@@ -269,7 +360,8 @@ def build_docs(out):
         for url, rel in swaps:
             html = html.replace(url, rel)
         (docs / dst).write_text(html)
-    print(f"wrote docs/ (index, lab, ops) — Pages-ready")
+    (docs / "knowledge.jsonld").write_text((out / "knowledge.jsonld").read_text())
+    print(f"wrote docs/ (index, lab, ops, knowledge.jsonld) — Pages-ready")
 
 
 if __name__ == "__main__":
