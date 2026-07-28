@@ -2,6 +2,7 @@
 
 Меморіальна інсталяція памʼяті Захара Захарова — https://hero-armor.com/
 Аудіо-вузол: вартовий промовляє голосом Захара. LD2410C радар → ESP32 → PCM5102A → TPA3116D2 Mono → MA-3013.
+Світловий вузол: панель 500Вт → Victron MPPT → LiFePO4 24В 200Аг → три групи (прожектори / декор / аварійна).
 
 ## Файлова база даних → дашборд
 
@@ -9,10 +10,12 @@
 
 | Файл | Що в ньому |
 |---|---|
-| `data/params.json` | всі константи: електрика, тепло, динаміки, EcoFlow, гучність |
-| `data/cases.json` | кейси плайї (джерело для моделі, пресетів лаби і таблиці) |
+| `audio/data/params.json` | константи аудіо: електрика, тепло, динаміки, EcoFlow, гучність |
+| `audio/data/cases.json` | кейси плайї для аудіо (модель, пресети лаби, таблиця) |
+| `lights/data/params.json` | константи світла: світильники, групи живлення, кабелі, АКБ, сонце |
+| `lights/data/cases.json` | сценарії ночі (пік / штатно / економ / буря / аварія) |
 | `data/bom.json` | BOM зі статусами (`have`/`add`/`tbd`) |
-| `data/decisions.json` | журнал рішень (заголовок + «чому») |
+| `data/decisions.json` | журнал рішень (заголовок + «чому»; `open: true` — відкрите питання) |
 
 ## Структура
 
@@ -22,7 +25,8 @@
 ```
 data/        спільна база: components, bom, tasks, orders, decisions, addresses
 audio/       модель + схема + params/cases аудіо-вузла
-solar/ lights/ armor/   так само, коли зʼявиться контент
+lights/      модель + схема + params/cases світлового вузла
+solar/ armor/   так само, коли зʼявиться контент
 site/        збірник сайту + шаблони; site/assets/hero.png — арт (codex)
 docs/        генерований сайт (gitignored; збирає CI)
 ```
@@ -30,12 +34,18 @@ docs/        генерований сайт (gitignored; збирає CI)
 ## Збірка
 
 ```bash
-cd audio/model && python3 audio_node_model.py   # консольна таблиця кейсів
-cd audio/model && python3 schematic.py          # схема → schematic.svg/png
-cd site && python3 build.py --docs              # → dashboard/ + docs/
+cd audio/model  && python3 audio_node_model.py    # консольна таблиця кейсів аудіо
+cd lights/model && python3 lights_node_model.py   # таблиця ночей + баланс сонця
+cd audio/model  && python3 schematic.py           # схема → schematic.svg/png
+cd lights/model && python3 schematic.py           # те саме для світла (треба schemdraw)
+cd site && python3 build.py --docs                # → dashboard/ + docs/
 ```
 
-`site/build.py` бере числа ТІЛЬКИ з моделі (яка читає `audio/data/`), решту — з `data/*.json`.
+Моделі — на стандартній бібліотеці (CI збирає сайт без залежностей). `schemdraw` потрібен
+тільки щоб перегенерувати схеми; самі `.svg`/`.png` лежать у репо.
+
+`site/build.py` бере числа ТІЛЬКИ з моделей (які читають `audio/data/` і `lights/data/`),
+решту — з `data/*.json`.
 Жодних чисел руками в HTML. Новий компонент: рядки з `component`-тегом у спільних даних
 + картка в `data/components.json`; своя тека — коли почнеться інженерія.
 

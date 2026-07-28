@@ -1,11 +1,13 @@
 # Hero Armor — правила для Claude Code
 
 Burning Man 2026: меморіальна інсталяція памʼяті Захара Захарова (hero-armor.com); вартовий промовляє його голосом. Саб-проєкти: **audio** (готовий дизайн),
-**solar** (живлення/EcoFlow), **lights**, **armor**, **project** (спільне).
+**solar** (живлення/EcoFlow), **lights** (модель готова, чекає неон), **armor**,
+**project** (спільне).
 
 ## Джерело правди — файлова база `data/`
 
-- `audio/data/params.json` — константи моделі · `audio/data/cases.json` — кейси плайї
+- `audio/data/params.json` — константи аудіо · `audio/data/cases.json` — кейси плайї
+- `lights/data/params.json` — константи світла · `lights/data/cases.json` — сценарії ночі
 - `data/components.json` — реєстр компонентів (картки на індексі)
 - `bom.json` — закупівля · `decisions.json` — рішення · `tasks.json` — задачі
 - `orders.json` — замовлення · `addresses.json` — логістика LA→SF
@@ -13,7 +15,8 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 
 **НІКОЛИ не редагуй HTML дашборда руками.** Правиш `data/*.json` →
 `cd site && python3 build.py` → перепублікувати артефакти (ті самі URL).
-Числа на сторінках рахує тільки модель (`model/audio_node_model.py`).
+Числа на сторінках рахують тільки моделі (`audio/model/audio_node_model.py`,
+`lights/model/lights_node_model.py`) — руками в HTML жодної цифри.
 
 ## Приватність
 
@@ -39,4 +42,5 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 - `logistics` — задачі/замовлення/доставки, ops-сторінка
 - `procurement` — BOM, ціни, підготовка кошиків (без покупок)
 
-Схема правиться в `audio/model/schematic.py` (schemdraw), сигнальний тракт — `audio/model/signal_chain.py`. Публічний сайт проєкту hero-armor.com — ОКРЕМИЙ хостинг, не чіпати; хаб — hero-armor.github.io.
+Схеми правляться в `audio/model/schematic.py` і `lights/model/schematic.py` (schemdraw),
+сигнальний тракт — `audio/model/signal_chain.py`. Публічний сайт проєкту hero-armor.com — ОКРЕМИЙ хостинг, не чіпати; хаб — hero-armor.github.io.

@@ -1,0 +1,161 @@
+<title>Hero Armor — світловий вузол</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.8rem, 4vw, 2.6rem);
+       margin: 0 0 .3rem; text-wrap: balance; letter-spacing: .01em; }
+  .sub { color: var(--ink-2); max-width: 64ch; margin: 0 0 1.4rem; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
+       margin: 2.6rem 0 .9rem; letter-spacing: .02em; }
+  a { color: var(--signal); }
+  .nav { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.6rem; }
+  .nav a { display: inline-block; font-family: var(--mono); font-size: .8rem;
+           padding: .5rem .9rem; background: var(--panel); border: 1px solid var(--line);
+           border-radius: 4px; text-decoration: none; color: var(--ink); }
+  .nav a:hover { border-color: var(--accent); }
+  .nav a b { color: var(--accent); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .75rem .85rem; background: var(--panel); }
+  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.5rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+  .tile.good { background: var(--good-bg); } .tile.good .v { color: var(--good); }
+  .decisions { display: grid; gap: .8rem; }
+  .decision { border-left: 3px solid var(--good); background: var(--panel);
+              border-radius: 0 5px 5px 0; padding: .8rem 1rem; }
+  .decision h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .decision p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
+  .decision .why { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+                   text-transform: uppercase; color: var(--good); }
+  .fig { background: #fcfcfb; border: 1px solid var(--line); border-radius: 6px;
+         padding: 1rem; overflow-x: auto; }
+  .fig svg { display: block; min-width: 980px; width: 100%; height: auto; }
+  .fig-cap { font-size: .8rem; color: var(--ink-2); margin-top: .5rem; max-width: 80ch; }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
+          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
+  .pill.have { background: var(--good-bg); color: var(--good); }
+  .pill.add { background: var(--warn-bg); color: var(--warn); }
+  .pill.tbd { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
+  .files { font-size: .85rem; color: var(--ink-2); }
+  .files code { font-family: var(--mono); font-size: .8rem; color: var(--ink);
+                background: var(--panel); padding: .1rem .35rem; border-radius: 3px; }
+  .grp { display: inline-block; font-family: var(--mono); font-size: .66rem;
+         padding: .1rem .5rem; border-radius: 999px; white-space: nowrap;
+         border: 1px solid var(--line); color: var(--ink-2); }
+  .grp.g1 { background: var(--warn-bg); color: var(--warn); border-color: transparent; }
+  .grp.g2 { background: var(--bg); }
+  .grp.g3a { background: var(--good-bg); color: var(--good); border-color: transparent; }
+  .flag { border-left: 3px solid var(--warn); background: var(--panel);
+          border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-bottom: .8rem; }
+  .flag h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .flag p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
+  .flag .why { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+               text-transform: uppercase; color: var(--warn); }
+</style>
+
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← огляд проєкту</a> · світловий вузол</p>
+  <h1>Світловий вузол: підсумок і рішення</h1>
+  <p class="sub">Вісім прожекторів заливають фігуру, «біжуча вода» тече по променях подіуму,
+  габаритні вогні тримають октагон видимим до останнього. Живлення власне — панель
+  SunGoldPower 500&nbsp;Вт → Victron MPPT → LiFePO4 24&nbsp;В 200&nbsp;Аг, два пороги
+  відключення. Аудіо — окрема система від EcoFlow, тут тільки світло. Усі числа нижче —
+  з моделі (потужність/енергія/просадка/освітленість).</p>
+
+  <div class="nav">
+    <a href="https://hero-armor.github.io/lights_lab.html"><b>💡 Світлова лабораторія</b> — симулятор ночі + баланс сонця</a>
+    <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"><b>📦 Операції</b> — задачі, замовлення, LA→SF</a>
+  </div>
+
+  <div class="tiles">
+{{TILES_HTML}}
+  </div>
+
+  <h2>Прийняті рішення</h2>
+  <div class="decisions">
+{{DECISIONS_HTML}}
+  </div>
+
+  <h2>Відкриті питання</h2>
+{{FLAGS_HTML}}
+
+  <h2>Склад системи по групах живлення</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>№</th><th>Позиція</th><th>Зона</th><th>К-сть</th><th>Пік</th><th>Група</th><th>Модель</th></tr></thead>
+    <tbody>
+{{FIXTURES_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{FIXTURES_CAPTION}}</p>
+
+  <h2>Схема з'єднань</h2>
+  <div class="fig">{{SCHEMATIC_SVG}}</div>
+  <p class="fig-cap">Повна схема живлення: панель → MPPT → АКБ, далі два пороги LVD.
+  На 23.6&nbsp;В гасне основне світло (Гр.1 і Гр.2), на 22.2&nbsp;В — аварійна Гр.3А:
+  подіум лишається видимим найдовше. Джерело: <span style="font-family:var(--mono)">lights/model/schematic.py</span>
+  (schemdraw) — правиться кодом і перегенеровується.</p>
+
+  <h2>Просадка в лініях (усе на повну)</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Лінія</th><th>Кабель</th><th>Довжина</th><th>Струм</th><th>Просадка</th><th>Втрати</th></tr></thead>
+    <tbody>
+{{WIRING_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{WIRING_CAPTION}}</p>
+
+  <h2>Файли проєкту</h2>
+  <p class="files">У репо <code>lights/model/</code>:
+  <code>lights_node_model.py</code> — модель потужності/енергії/просадки/освітленості (всі константи в
+  <code>lights/data/params.json</code>), <code>schematic.py</code> → <code>schematic.svg/png</code> — ця схема.
+  Сценарії ночі — <code>lights/data/cases.json</code>.
+  Інтерактивний симулятор — у <a href="https://hero-armor.github.io/lights_lab.html">світловій лабораторії</a>.</p>
+</div>

@@ -1,0 +1,190 @@
+{
+  "_source": "Зведена «Специфікація електрообладнання» В.Кормільця (11 позицій, 16.06.2026) + інженерні рішення Івана 15–21.07.2026 (перехід на шину 24В, октагон-подіум, біжуча вода білим).",
+  "_note_bus": "Сайт hero-armor.com показує ПОПЕРЕДНЮ специфікацію 12В / панель 100Вт / 100Ач. Актуальна інженерія — 24В / 500Вт / 200Ач. Модель рахує по актуальній, а попередню тримає для порівняння.",
+  "bus_v": 24.0,
+  "fixtures": [
+    {
+      "id": "spot",
+      "spec": 6,
+      "name": "Прожектор заливки фігури",
+      "zone": "B · стійки по периметру",
+      "group": "g1",
+      "qty": 8,
+      "w_unit": 5.0,
+      "lumens": 350,
+      "cct": 4000,
+      "beam_deg": 60,
+      "ip": "IP66",
+      "dimming": "voltage",
+      "essential": true,
+      "model": "Gardencoin B0F43C2H3R + MR16 12V 4000K",
+      "price_usd": 42.99,
+      "note": "Прицілювання ~16° до фігури. Живиться через ШІМ-диммер SUPERNIGHT 12-24V 30A."
+    },
+    {
+      "id": "led12",
+      "spec": 1,
+      "name": "LED-лампа 12 мм на корпусі робота",
+      "zone": "A · сам костюм",
+      "group": "g2",
+      "qty": 8,
+      "w_unit": 0.4,
+      "ip": "IP65",
+      "dimming": "none",
+      "essential": false,
+      "model": "Gebildet 12мм, металева, screw-foot",
+      "note": "Голова 4, плечі 2, груди, коліно, стопа"
+    },
+    {
+      "id": "led8",
+      "spec": 2,
+      "name": "LED-лампа 8 мм на корпусі робота",
+      "zone": "A · сам костюм",
+      "group": "g2",
+      "qty": 2,
+      "w_unit": 0.4,
+      "ip": "IP65",
+      "dimming": "none",
+      "essential": false,
+      "model": "Gebildet 8мм, strip-line"
+    },
+    {
+      "id": "water_ring",
+      "spec": 9,
+      "name": "«Біжуча вода» — внутрішнє коло",
+      "zone": "C · подіум",
+      "group": "g2",
+      "qty": 1,
+      "length_m": 2.17,
+      "w_per_m": 15.0,
+      "ip": "IP67",
+      "dimming": "pwm",
+      "addressable": true,
+      "essential": false,
+      "model": "WS2811 24V неон silicone (ledbe.com)",
+      "note": "Коло R346 мм. Біле (рішення 16.07), зовнішній контур прибрано."
+    },
+    {
+      "id": "water_rays",
+      "spec": 10,
+      "name": "«Біжуча вода» — 8 променів зірки",
+      "zone": "C · подіум",
+      "group": "g2",
+      "qty": 8,
+      "length_m": 0.95,
+      "w_per_m": 15.0,
+      "ip": "IP67",
+      "dimming": "pwm",
+      "addressable": true,
+      "essential": false,
+      "model": "WS2811 24V неон silicone (ledbe.com)",
+      "note": "Радіальні промені від периметра октагона до центру"
+    },
+    {
+      "id": "wled",
+      "spec": 11,
+      "name": "Контролер WLED",
+      "zone": "щит",
+      "group": "g2",
+      "qty": 1,
+      "w_unit": 4.0,
+      "ip": "IP65",
+      "dimming": "none",
+      "essential": false,
+      "model": "GLEDOPTO ESP32 WLED, вхід 5-24В",
+      "note": "Керує анімацією біжучої води по WiFi. Другий — запас."
+    },
+    {
+      "id": "markers",
+      "spec": 7,
+      "name": "Габаритні вогні на стійках",
+      "zone": "B · 8 кутів октагона",
+      "group": "g3a",
+      "qty": 8,
+      "w_unit": 3.0,
+      "ip": "IP67",
+      "dimming": "none",
+      "essential": true,
+      "model": "Nilight amber 10-30V",
+      "price_usd": 18.5,
+      "note": "Колір під звірку: креслення жовті, рішення 16.07 — червоні"
+    },
+    {
+      "id": "stairs",
+      "spec": 8,
+      "name": "Лампи сходів подіуму",
+      "zone": "C · сходи октагона",
+      "group": "g3a",
+      "qty": 24,
+      "w_unit": 1.0,
+      "ip": "IP67",
+      "dimming": "none",
+      "essential": true,
+      "model": "Landscapestation B0CF565SRW, врізні",
+      "note": "US-версія 1Вт (креслення давало 0.48Вт). Відкрите питання: наша лінія чи автономні сонячні садові."
+    }
+  ],
+  "groups": {
+    "g1": { "label": "Гр.1 · прожектори заливки", "emergency": false, "lvd_v": 23.6 },
+    "g2": { "label": "Гр.2 · декоративне (робот, вода)", "emergency": false, "lvd_v": 23.6 },
+    "g3a": { "label": "Гр.3А · аварійна лінія", "emergency": true, "lvd_v": 22.2 }
+  },
+  "addressable": {
+    "duty_animation": 0.45,
+    "day_lockout": true,
+    "note": "Біжуча вода: одночасно світиться частка стрічки, не вся. Вдень адресна стрічка ВИМКНЕНА — чипи перегріваються на сонці (правило Івана 18.07)."
+  },
+  "voltage_following": {
+    "v_nominal": 12.0,
+    "v_min": 8.5,
+    "v_max": 14.0,
+    "power_exponent": 2.0,
+    "note": "MR16 без стабілізатора: струм слідує за напругою, потужність ~ (V/Vnom)², світловий потік ~ струм ~ (V/Vnom). Перевірено ватметром на еталоні Gardencoin."
+  },
+  "wiring": {
+    "runs": [
+      { "id": "trunk", "label": "АКБ → щит подіуму", "awg": 8, "length_m": 7.6, "groups": ["g1", "g2", "g3a"] },
+      { "id": "spots", "label": "Щит → кільце прожекторів", "awg": 12, "length_m": 12.0, "groups": ["g1"] },
+      { "id": "deco", "label": "Щит → стрічки і робот", "awg": 12, "length_m": 9.0, "groups": ["g2"] },
+      { "id": "emerg", "label": "Щит → габарити і сходи", "awg": 12, "length_m": 14.0, "groups": ["g3a"] }
+    ],
+    "awg_ohm_per_m": { "8": 0.002061, "10": 0.003277, "12": 0.005211, "14": 0.008286, "16": 0.013172 },
+    "drop_warn_pct": 3.0,
+    "drop_crit_pct": 5.0,
+    "note": "Ancor 8/2 AWG 50ft і 12/2 AWG 100ft — доставлені 20.07. Опір рахується туди-назад (2 × довжина)."
+  },
+  "battery": {
+    "type": "LiFePO4 24V",
+    "ah": 200,
+    "v_nom": 24.0,
+    "dod": 0.8,
+    "lvd_main_v": 23.6,
+    "lvd_emerg_v": 22.2,
+    "models_ah": { "100 Ah": 100, "200 Ah": 200, "300 Ah": 300 },
+    "note": "Двоступеневий захист ICSTATION: 23.6В рубає основне світло, 22.2В — аварійну лінію"
+  },
+  "solar": {
+    "panel_w": 500,
+    "sun_hours": 5.0,
+    "mppt_eff": 0.92,
+    "dust_derate": 0.85,
+    "heat_derate": 0.88,
+    "model": "SunGoldPower SG-500WM + Victron SmartSolar MPPT 100/20",
+    "legacy_panel_w": 100,
+    "note": "Пил плайї (pH 9-10) і жара 40-45°C ріжуть виробіток — деративи в моделі. legacy_panel_w — попередня цифра з сайту, для порівняння."
+  },
+  "night_hours": 10.5,
+  "photometry": {
+    "figure_dist_m": 4.0,
+    "figure_area_m2": 18.0,
+    "utilization": 0.7,
+    "target_lux": 60,
+    "note": "8 прожекторів по колу заливають фігуру ~4 м (освітлювана поверхня ~18 м²), частина світла йде повз. Цільові 60 лк — щоб фігура читалась і знімалась вночі."
+  },
+  "spec_reference": {
+    "architect_peak_w": 233,
+    "architect_night_wh": 2446,
+    "architect_groups_w": { "g1": 40, "g2": 157, "g3a": 36 },
+    "note": "Розрахунок архітектора (16.06): пік 233Вт → 2446 Вт·год за 10.5 год. У Гр.2 архітектора входив і аудіоплеєр; у нас аудіо живиться окремо від EcoFlow."
+  }
+}
