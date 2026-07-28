@@ -48,6 +48,7 @@ SITE_URL = "https://hero-armor.github.io/"
 ART_MAIN = "https://claude.ai/code/artifact/b5f9223c-1934-413a-9557-be9204d2572b"
 ART_LAB = "https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced"
 ART_OPS = "https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"
+ART_TASKS = "https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1"
 
 COMPONENTS = ["project", "audio", "solar", "lights", "armor"]
 COMP_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Сонце/живлення",
@@ -330,24 +331,6 @@ def build():
                 'переїзду — слати одразу на SF.</div>')
     ops = ops.replace("{{SHIPTO_HTML}}", ship)
 
-    status_order = {"doing": 0, "waiting": 1, "todo": 2, "done": 3}
-    trows = []
-    for comp in COMPONENTS:
-        group = [t for t in TASKS if t["component"] == comp]
-        if not group:
-            continue
-        open_n = sum(1 for t in group if t["status"] != "done")
-        trows.append(f'      <tr><td colspan="4" style="background:var(--panel);'
-                     f'font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;'
-                     f'text-transform:uppercase;color:var(--accent)">'
-                     f'{COMP_LABEL[comp]} — відкрито {open_n}</td></tr>')
-        for t in sorted(group, key=lambda x: status_order.get(x["status"], 9)):
-            trows.append(
-                f'      <tr><td><span class="pill {t["status"]}">{TASK_STATUS[t["status"]]}</span></td>'
-                f'<td>{esc(t["task"])}</td><td><span class="comp">{t["component"]}</span></td>'
-                f'<td>{esc(t.get("note", ""))}</td></tr>')
-    ops = ops.replace("{{TASKS_HTML}}", "\n".join(trows))
-
     tracking = PRIVATE.get("tracking", {})
     orows = []
     for o in ORDERS:
@@ -444,6 +427,39 @@ def build():
         page = page.replace("{{GEN_DATE}}", today.isoformat())
         comp_pages[reg["page"]] = page
 
+    # ================= tasks page (kanban board) =================
+    tasks_page = tmpl("tasks.tmpl.html")
+    kan_status = [("doing", "в роботі"), ("waiting", "чекаємо"),
+                  ("todo", "до роботи"), ("done", "готово")]
+    comp_order = {c: i for i, c in enumerate(COMPONENTS)}
+    cols = []
+    for st, st_label in kan_status:
+        cards_k = []
+        for t in sorted((t for t in TASKS if t["status"] == st),
+                        key=lambda x: comp_order.get(x["component"], 9)):
+            note = f'<p class="kn">{esc(t["note"])}</p>' if t.get("note") else ""
+            done_cls = " done-card" if st == "done" else ""
+            cards_k.append(
+                f'      <div class="kcard{done_cls}" data-comp="{t["component"]}">\n'
+                f'        <p class="kt">{esc(t["task"])}</p>\n{("        " + note + chr(10)) if note else ""}'
+                f'        <span class="chip {t["component"]}">{COMP_LABEL[t["component"]].lower()}</span>\n'
+                f'      </div>')
+        body = "\n".join(cards_k) if cards_k else '      <p class="kempty">порожньо</p>'
+        cols.append(
+            f'    <div class="kcol" data-status="{st}">\n'
+            f'      <h3>{st_label} <span class="count">{len(cards_k)}</span></h3>\n'
+            f'{body}\n    </div>')
+    tasks_page = tasks_page.replace("{{KANBAN_COLUMNS}}", "\n".join(cols))
+
+    chips = [f'      <button class="fchip active" data-f="all">всі · {len(TASKS)}</button>']
+    for k in COMPONENTS:
+        n = sum(1 for t in TASKS if t["component"] == k)
+        if n:
+            chips.append(f'      <button class="fchip" data-f="{k}">'
+                         f'{COMP_LABEL[k].lower()} · {n}</button>')
+    tasks_page = tasks_page.replace("{{TASK_FILTER_CHIPS}}", "\n".join(chips))
+    tasks_page = tasks_page.replace("{{GEN_DATE}}", today.isoformat())
+
     # ================= index (project dashboard) =================
     index = tmpl("index.tmpl.html")
     ev = PROJ["event"]
@@ -514,36 +530,16 @@ def build():
             f'    </div>')
     index = index.replace("{{COMPONENT_CARDS}}", "\n".join(cards))
 
-    # kanban board
-    kan_status = [("doing", "в роботі"), ("waiting", "чекаємо"),
-                  ("todo", "до роботи"), ("done", "готово")]
-    comp_order = {c: i for i, c in enumerate(COMPONENTS)}
-    cols = []
+    # task summary strip (full board lives on tasks.html)
+    summary = []
     for st, st_label in kan_status:
-        cards_k = []
-        for t in sorted((t for t in TASKS if t["status"] == st),
-                        key=lambda x: comp_order.get(x["component"], 9)):
-            note = f'<p class="kn">{esc(t["note"])}</p>' if t.get("note") else ""
-            done_cls = " done-card" if st == "done" else ""
-            cards_k.append(
-                f'      <div class="kcard{done_cls}" data-comp="{t["component"]}">\n'
-                f'        <p class="kt">{esc(t["task"])}</p>\n{("        " + note + chr(10)) if note else ""}'
-                f'        <span class="chip {t["component"]}">{COMP_LABEL[t["component"]].lower()}</span>\n'
-                f'      </div>')
-        body = "\n".join(cards_k) if cards_k else '      <p class="kempty">порожньо</p>'
-        cols.append(
-            f'    <div class="kcol" data-status="{st}">\n'
-            f'      <h3>{st_label} <span class="count">{len(cards_k)}</span></h3>\n'
-            f'{body}\n    </div>')
-    index = index.replace("{{KANBAN_COLUMNS}}", "\n".join(cols))
-
-    chips = [f'      <button class="fchip active" data-f="all">всі · {len(TASKS)}</button>']
+        n = sum(1 for t in TASKS if t["status"] == st)
+        summary.append(f'        <span class="pill {st}">{st_label} · {n}</span>')
     for k in COMPONENTS:
-        n = sum(1 for t in TASKS if t["component"] == k)
+        n = sum(1 for t in TASKS if t["component"] == k and t["status"] != "done")
         if n:
-            chips.append(f'      <button class="fchip" data-f="{k}">'
-                         f'{COMP_LABEL[k].lower()} · {n}</button>')
-    index = index.replace("{{TASK_FILTER_CHIPS}}", "\n".join(chips))
+            summary.append(f'        <span class="chip {k}">{COMP_LABEL[k].lower()} · {n}</span>')
+    index = index.replace("{{TASK_SUMMARY}}", "\n".join(summary))
 
     # BOM + budget
     total_b = budget_have + budget_tobuy
@@ -582,7 +578,8 @@ def build():
     index += f'\n<script type="application/ld+json">\n{kg_json}\n</script>\n'
 
     OUT.mkdir(exist_ok=True)
-    pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops, **comp_pages}
+    pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
+             "tasks.html": tasks_page, **comp_pages}
     for name, html in pages.items():
         (OUT / name).write_text(html)
     (OUT / "knowledge.jsonld").write_text(json.dumps(kg, ensure_ascii=False, indent=1))
@@ -598,10 +595,13 @@ def build_docs(out):
     docs = ROOT / "docs"
     docs.mkdir(exist_ok=True)
     swaps = [(ART_MAIN, "index.html"), (ART_LAB, "lab.html"), (ART_OPS, "ops.html"),
-             (SITE_URL + "audio.html", "audio.html"), (SITE_URL + "solar.html", "solar.html"),
+             (ART_TASKS, "tasks.html"),
+             (SITE_URL + "audio.html", "audio.html"), (SITE_URL + "tasks.html", "tasks.html"),
+             (SITE_URL + "solar.html", "solar.html"),
              (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
              ('href="' + SITE_URL + '"', 'href="index.html"')]
-    for name in ("index.html", "audio.html", "lab.html", "ops.html", "solar.html", "lights.html", "armor.html"):
+    for name in ("index.html", "audio.html", "lab.html", "ops.html", "tasks.html",
+                 "solar.html", "lights.html", "armor.html"):
         html = (out / name).read_text()
         for url, rel in swaps:
             html = html.replace(url, rel)
@@ -633,4 +633,5 @@ if __name__ == "__main__":
         (dst / "hero-armor-audio-sim.html").write_text(idx)
         shutil.copy(out / "lab.html", dst / "hero-armor-lab.html")
         shutil.copy(out / "ops.html", dst / "hero-armor-ops.html")
+        shutil.copy(out / "tasks.html", dst / "hero-armor-tasks.html")
         print(f"copied artifact mirrors to {dst}")

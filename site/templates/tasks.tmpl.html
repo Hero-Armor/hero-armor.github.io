@@ -1,0 +1,164 @@
+<title>Hero Armor — дошка задач</title>
+<style>
+  :root {
+    --bg: #eceadf; --panel: #f7f5ec; --panel-2: #fdfcf7; --ink: #26241c; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #33628f;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --comp-audio: #33628f; --comp-solar: #a07414; --comp-lights: #7a5a9e;
+    --comp-armor: #2f7a72; --comp-project: #6b675c;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1218; --panel: #171b24; --panel-2: #1d222d; --ink: #e9e6da; --ink-2: #9a968a;
+      --line: #2c313c; --accent: #e6902f; --signal: #6fa9d8;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #1d2c1e; --warn-bg: #2f2814; --crit-bg: #33201c;
+      --comp-audio: #6fa9d8; --comp-solar: #d9a83a; --comp-lights: #a98ac9;
+      --comp-armor: #5fb3a9; --comp-project: #9a968a; }
+  }
+  :root[data-theme="light"] {
+    --bg: #eceadf; --panel: #f7f5ec; --panel-2: #fdfcf7; --ink: #26241c; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #33628f;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --comp-audio: #33628f; --comp-solar: #a07414; --comp-lights: #7a5a9e;
+    --comp-armor: #2f7a72; --comp-project: #6b675c;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1218; --panel: #171b24; --panel-2: #1d222d; --ink: #e9e6da; --ink-2: #9a968a;
+    --line: #2c313c; --accent: #e6902f; --signal: #6fa9d8;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #1d2c1e; --warn-bg: #2f2814; --crit-bg: #33201c;
+    --comp-audio: #6fa9d8; --comp-solar: #d9a83a; --comp-lights: #a98ac9;
+    --comp-armor: #5fb3a9; --comp-project: #9a968a;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem; margin: 2.4rem 0 .9rem; }
+  .sub { color: var(--ink-2); max-width: 66ch; margin: 0 0 1.4rem; }
+  a { color: var(--signal); }
+
+  .chip { display: inline-block; font-family: var(--mono); font-size: .64rem;
+          padding: .08rem .45rem; border-radius: 999px; white-space: nowrap;
+          background: color-mix(in srgb, var(--cc) 14%, transparent); color: var(--cc); }
+  .chip.audio { --cc: var(--comp-audio); } .chip.solar { --cc: var(--comp-solar); }
+  .chip.lights { --cc: var(--comp-lights); } .chip.armor { --cc: var(--comp-armor); }
+  .chip.project { --cc: var(--comp-project); }
+
+  .fchips { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .9rem; }
+  .fchip { font-family: var(--mono); font-size: .72rem; padding: .3rem .7rem;
+           border-radius: 999px; border: 1px solid var(--line); background: var(--panel);
+           color: var(--ink-2); cursor: pointer; }
+  .fchip:hover { border-color: var(--accent); color: var(--ink); }
+  .fchip.active { background: var(--accent); border-color: var(--accent);
+                  color: var(--bg); font-weight: 600; }
+
+  .board-wrap { overflow-x: auto; padding-bottom: .4rem; }
+  .board { display: grid; grid-template-columns: repeat(4, minmax(225px, 1fr)); gap: .8rem;
+           min-width: 940px; }
+  .kcol { background: color-mix(in srgb, var(--panel) 55%, var(--bg));
+          border: 1px solid var(--line); border-radius: 8px; padding: .6rem .6rem .4rem;
+          border-top: 3px solid var(--kc, var(--line)); transition: opacity .2s; }
+  .kcol.dim { opacity: .45; }
+  .kcol[data-status="doing"]   { --kc: var(--warn); }
+  .kcol[data-status="waiting"] { --kc: var(--signal); }
+  .kcol[data-status="todo"]    { --kc: var(--ink-2); }
+  .kcol[data-status="done"]    { --kc: var(--good); }
+  .kcol h3 { margin: .1rem .2rem .6rem; font-family: var(--mono); font-size: .7rem;
+             letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2);
+             display: flex; justify-content: space-between; align-items: center; }
+  .kcol h3 .count { background: var(--panel-2); border: 1px solid var(--line);
+                    border-radius: 999px; padding: 0 .5rem; font-size: .68rem;
+                    color: var(--ink); font-variant-numeric: tabular-nums; }
+  .kcard { background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px;
+           padding: .6rem .7rem; margin-bottom: .55rem;
+           transition: transform .15s ease, box-shadow .15s ease; }
+  .kcard:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+  .kcard.off { display: none; }
+  .kcard .kt { margin: 0 0 .3rem; font-size: .82rem; line-height: 1.35; }
+  .kcard .kn { margin: 0 0 .4rem; font-size: .72rem; color: var(--ink-2); }
+  .kcard.done-card .kt { color: var(--ink-2); text-decoration: line-through;
+                         text-decoration-color: color-mix(in srgb, var(--ink-2) 45%, transparent); }
+  .kempty { font-size: .75rem; color: var(--ink-2); text-align: center; padding: .8rem 0; }
+
+  .howto { background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+           padding: 1rem 1.2rem; font-size: .88rem; }
+  .howto ol { margin: .5rem 0 0; padding-left: 1.3rem; }
+  .howto li { margin-bottom: .55rem; }
+  .howto li:last-child { margin-bottom: 0; }
+  .howto code, .howto pre { font-family: var(--mono); font-size: .78rem;
+           background: var(--bg); border: 1px solid var(--line); border-radius: 4px; }
+  .howto code { padding: .05rem .35rem; }
+  .howto pre { padding: .7rem .9rem; overflow-x: auto; margin: .5rem 0 0; }
+  .gen { font-size: .75rem; color: var(--ink-2); margin-top: 2.2rem; }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://claude.ai/code/artifact/b5f9223c-1934-413a-9557-be9204d2572b">← дашборд</a> ·
+     <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859">операції</a> · задачі</p>
+  <h1>Дошка задач</h1>
+  <p class="sub">Всі задачі проєкту по компонентах. Джерело —
+  <span style="font-family:var(--mono)">data/tasks.json</span>: правиш файл — дошка перебудовується,
+  руками HTML ніхто не править.</p>
+
+  <div class="fchips">
+{{TASK_FILTER_CHIPS}}
+  </div>
+  <div class="board-wrap">
+  <div class="board">
+{{KANBAN_COLUMNS}}
+  </div>
+  </div>
+
+  <h2 id="howto">Як оновлювати задачі</h2>
+  <div class="howto">
+    Задача — це запис у <code>data/tasks.json</code>:
+    <pre>{ "task": "Що зробити", "component": "audio | solar | lights | armor | project",
+  "status": "todo | doing | waiting | done", "note": "деталі (опційно)" }</pre>
+    <ol>
+      <li><b>Через Claude / агента logistics</b> — найпростіше: «додай задачу…», «задача … готова»,
+        «що по задачах?». Агент править JSON, перебудовує сайт і публікує.</li>
+      <li><b>Локально</b>: відредагуй <code>data/tasks.json</code> →
+        <code>cd site &amp;&amp; python3 build.py</code> → <code>git commit &amp;&amp; git push</code> —
+        CI перевикладе Pages за ~хвилину.</li>
+      <li><b>Прямо на GitHub</b> (без клона): відкрий
+        <a href="https://github.com/Hero-Armor/hero-armor.github.io/edit/main/data/tasks.json">data/tasks.json → Edit</a>,
+        зміни статус чи додай запис, commit у <code>main</code> — CI сам перебудує сайт.
+        Дзеркала-артефакти оновляться при наступній локальній публікації.</li>
+    </ol>
+  </div>
+
+  <p class="gen">Згенеровано {{GEN_DATE}} ·
+  <a href="https://github.com/Hero-Armor/hero-armor.github.io">GitHub</a></p>
+</div>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.fchip');
+  chips.forEach(function (ch) {
+    ch.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      ch.classList.add('active');
+      var comp = ch.dataset.f;
+      document.querySelectorAll('.kcard').forEach(function (k) {
+        k.classList.toggle('off', comp !== 'all' && k.dataset.comp !== comp);
+      });
+      document.querySelectorAll('.kcol').forEach(function (col) {
+        var n = col.querySelectorAll('.kcard:not(.off)').length;
+        col.querySelector('.count').textContent = n;
+        col.classList.toggle('dim', n === 0);
+      });
+    });
+  });
+})();
+</script>

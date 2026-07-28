@@ -1,4 +1,4 @@
-<title>Hero Armor — операції: задачі й замовлення</title>
+<title>Hero Armor — операції: замовлення й логістика</title>
 <style>
   :root {
     --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
@@ -66,22 +66,13 @@
 <div class="wrap">
   <p class="eyebrow"><a href="https://claude.ai/code/artifact/b5f9223c-1934-413a-9557-be9204d2572b">← головна</a> ·
      <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced">лабораторія</a> · операції</p>
-  <h1>Задачі й замовлення</h1>
-  <p class="sub">Логістика проєкту: що робимо, що їде поштою і куди. Джерело —
-  <span style="font-family:var(--mono)">data/tasks.json · orders.json · addresses.json</span>;
-  адреси й трек-номери живуть у приватному файлі поза публічним репо.</p>
+  <h1>Замовлення й логістика</h1>
+  <p class="sub">Що їде поштою і куди. Джерело —
+  <span style="font-family:var(--mono)">data/orders.json · addresses.json</span>;
+  адреси й трек-номери живуть у приватному файлі поза публічним репо.
+  Задачі проєкту — на окремій <a href="https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1">дошці задач</a>.</p>
 
   {{SHIPTO_HTML}}
-
-  <h2>Задачі</h2>
-  <div class="tbl-wrap">
-  <table>
-    <thead><tr><th>Статус</th><th>Задача</th><th>Компонент</th><th>Нотатка</th></tr></thead>
-    <tbody>
-{{TASKS_HTML}}
-    </tbody>
-  </table>
-  </div>
 
   <h2>Замовлення</h2>
   <div class="tbl-wrap">

@@ -29,7 +29,8 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 
 ## Опубліковані сторінки (артефакти)
 
-- Головна: https://claude.ai/code/artifact/b5f9223c-1934-413a-9557-be9204d2572b
+- Головна (дашборд): https://claude.ai/code/artifact/b5f9223c-1934-413a-9557-be9204d2572b
+- Задачі (kanban): https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1
 - Лабораторія: https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced
 - Операції: https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859
 

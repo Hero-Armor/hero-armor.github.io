@@ -156,34 +156,18 @@
   .fchip.active { background: var(--accent); border-color: var(--accent);
                   color: var(--bg); font-weight: 600; }
 
-  /* ---- kanban ---- */
-  .board-wrap { overflow-x: auto; padding-bottom: .4rem; }
-  .board { display: grid; grid-template-columns: repeat(4, minmax(225px, 1fr)); gap: .8rem;
-           min-width: 940px; }
-  .kcol { background: color-mix(in srgb, var(--panel) 55%, var(--bg));
-          border: 1px solid var(--line); border-radius: 8px; padding: .6rem .6rem .4rem;
-          border-top: 3px solid var(--kc, var(--line)); transition: opacity .2s; }
-  .kcol.dim { opacity: .45; }
-  .kcol[data-status="doing"]   { --kc: var(--warn); }
-  .kcol[data-status="waiting"] { --kc: var(--signal); }
-  .kcol[data-status="todo"]    { --kc: var(--ink-2); }
-  .kcol[data-status="done"]    { --kc: var(--good); }
-  .kcol h3 { margin: .1rem .2rem .6rem; font-family: var(--mono); font-size: .7rem;
-             letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2);
-             display: flex; justify-content: space-between; align-items: center; }
-  .kcol h3 .count { background: var(--panel-2); border: 1px solid var(--line);
-                    border-radius: 999px; padding: 0 .5rem; font-size: .68rem;
-                    color: var(--ink); font-variant-numeric: tabular-nums; }
-  .kcard { background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px;
-           padding: .6rem .7rem; margin-bottom: .55rem;
-           transition: transform .15s ease, box-shadow .15s ease; }
-  .kcard:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
-  .kcard.off { display: none; }
-  .kcard .kt { margin: 0 0 .3rem; font-size: .82rem; line-height: 1.35; }
-  .kcard .kn { margin: 0 0 .4rem; font-size: .72rem; color: var(--ink-2); }
-  .kcard.done-card .kt { color: var(--ink-2); text-decoration: line-through;
-                         text-decoration-color: color-mix(in srgb, var(--ink-2) 45%, transparent); }
-  .kempty { font-size: .75rem; color: var(--ink-2); text-align: center; padding: .8rem 0; }
+  /* ---- task summary ---- */
+  .tsum { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+          background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+          padding: .9rem 1.1rem; }
+  .tcounts { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; flex: 1;
+             min-width: 240px; }
+  .btn { font-family: var(--mono); font-size: .78rem; font-weight: 600;
+         padding: .55rem 1rem; background: var(--accent); color: var(--bg);
+         border-radius: 6px; text-decoration: none; white-space: nowrap;
+         transition: transform .15s ease, box-shadow .15s ease; }
+  .btn:hover { transform: translateY(-1px);
+               box-shadow: 0 4px 14px color-mix(in srgb, var(--accent) 35%, transparent); }
 
   /* ---- tables ---- */
   table { border-collapse: collapse; width: 100%; font-size: .84rem; }
@@ -235,7 +219,7 @@
   <a class="brand" href="https://hero-armor.github.io/">Hero <b>Armor</b></a>
   <nav class="topnav">
     <a href="#components">компоненти</a>
-    <a href="#board">задачі</a>
+    <a href="https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1">задачі</a>
     <a href="#bom">закупівля</a>
     <a href="#orders">замовлення</a>
     <a href="https://hero-armor.github.io/audio.html">аудіо</a>
@@ -280,17 +264,13 @@
   </section>
 
   <section class="reveal" id="board">
-    <h2>Дошка задач</h2>
-    <div class="fchips">
-{{TASK_FILTER_CHIPS}}
+    <h2>Задачі</h2>
+    <div class="tsum">
+      <div class="tcounts">
+{{TASK_SUMMARY}}
+      </div>
+      <a class="btn" href="https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1">відкрити дошку →</a>
     </div>
-    <div class="board-wrap">
-    <div class="board">
-{{KANBAN_COLUMNS}}
-    </div>
-    </div>
-    <p class="hero-hint" style="margin-top:.5rem">Задачі живуть у
-    <span style="font-family:var(--mono)">data/tasks.json</span> — редагуй там (або скажи агенту), і дошка перебудується.</p>
   </section>
 
   <section class="reveal" id="bom">
@@ -387,7 +367,7 @@ git clone https://github.com/Hero-Armor/private hero-armor.github.io/data/privat
     setInterval(tick, 1000);
   }
 
-  /* component filter on the task board */
+  /* BOM filter */
   function wireChips(chipSel, apply) {
     var chips = document.querySelectorAll(chipSel);
     chips.forEach(function (ch) {
@@ -398,16 +378,6 @@ git clone https://github.com/Hero-Armor/private hero-armor.github.io/data/privat
       });
     });
   }
-  wireChips('#board .fchip', function (comp) {
-    document.querySelectorAll('#board .kcard').forEach(function (k) {
-      k.classList.toggle('off', comp !== 'all' && k.dataset.comp !== comp);
-    });
-    document.querySelectorAll('#board .kcol').forEach(function (col) {
-      var n = col.querySelectorAll('.kcard:not(.off)').length;
-      col.querySelector('.count').textContent = n;
-      col.classList.toggle('dim', n === 0);
-    });
-  });
   wireChips('#bom .fchip', function (f) {
     document.querySelectorAll('#bomTable tbody tr').forEach(function (tr) {
       tr.classList.toggle('off', f !== 'all' && tr.dataset.status !== f);
