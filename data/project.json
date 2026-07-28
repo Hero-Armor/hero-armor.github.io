@@ -1,0 +1,10 @@
+{
+  "name": "Hero Armor",
+  "event": {
+    "name": "Burning Man 2026",
+    "location": "Black Rock City, NV",
+    "gate_open": "2026-08-30",
+    "burn_night": "2026-09-05",
+    "end": "2026-09-07"
+  }
+}

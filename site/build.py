@@ -37,6 +37,7 @@ TASKS = json.loads((DATA / "tasks.json").read_text())
 ORDERS = json.loads((DATA / "orders.json").read_text())
 ADDR = json.loads((DATA / "addresses.json").read_text())
 COMPONENTS_REG = json.loads((DATA / "components.json").read_text())
+PROJ = json.loads((DATA / "project.json").read_text())
 PRIVATE_FILE = DATA / "private" / "private.json"
 PRIVATE = json.loads(PRIVATE_FILE.read_text()) if PRIVATE_FILE.exists() else {}
 if __import__("os").environ.get("CI"):
@@ -77,6 +78,12 @@ def tmpl(name):
     return (SITE / "templates" / name).read_text()
 
 
+def usd(price_str):
+    """First $-amount in a BOM price string ('$17/3шт' -> 17.0), 0 if none."""
+    mm = re.search(r"\$(\d+(?:\.\d+)?)", price_str or "")
+    return float(mm.group(1)) if mm else 0.0
+
+
 def bom_rows_html():
     rows = []
     for b in BOM:
@@ -86,7 +93,8 @@ def bom_rows_html():
         if b.get("url"):
             item = f'<a href="{b["url"]}">{item}</a>'
         rows.append(
-            f'      <tr><td>{item}</td><td><span class="comp">{b["component"]}</span></td>'
+            f'      <tr data-status="{b["status"]}"><td>{item}</td>'
+            f'<td><span class="chip {b["component"]}">{b["component"]}</span></td>'
             f'<td class="num">{b["qty"]}</td>'
             f'<td class="num">{b["price"]}</td><td><span class="pill {cls}">{label}</span></td>'
             f'<td>{esc(b["note"])}</td></tr>')
@@ -107,6 +115,11 @@ def build_knowledge():
         "sameAs": [SITE_URL, "https://github.com/Hero-Armor/hero-armor.github.io"],
         "image": "https://hero-armor.com/images/hero-render.jpg",
         "hasPart": [{"@id": f"#sub-{c}"} for c in COMPONENTS if c != "project"],
+    }, {
+        "@id": "#event", "@type": "Event", "name": PROJ["event"]["name"],
+        "startDate": PROJ["event"]["gate_open"], "endDate": PROJ["event"]["end"],
+        "location": {"@type": "Place", "name": PROJ["event"]["location"]},
+        "workFeatured": {"@id": "#project"},
     }]
     for c in COMPONENTS:
         if c == "project":
@@ -163,7 +176,8 @@ def build_knowledge():
             "genre": "engineering-decision", "name": d["title"],
             "text": re.sub(r"<[^>]+>", "", d["why"]), "about": comp_ref(d["component"])})
 
-    for fname, desc in [("data/components.json", "Component registry with status"),
+    for fname, desc in [("data/project.json", "Project metadata and event dates"),
+                        ("data/components.json", "Component registry with status"),
                         ("data/bom.json", "Bill of materials with sourcing status"),
                         ("data/decisions.json", "Engineering decision log"),
                         ("data/tasks.json", "Task board by sub-project"),
@@ -430,41 +444,136 @@ def build():
         page = page.replace("{{GEN_DATE}}", today.isoformat())
         comp_pages[reg["page"]] = page
 
-    # ================= index (project overview) =================
+    # ================= index (project dashboard) =================
     index = tmpl("index.tmpl.html")
+    ev = PROJ["event"]
+    gate = date.fromisoformat(ev["gate_open"])
+    burn = date.fromisoformat(ev["burn_night"])
+    days_to_gate = gate.toordinal() - today.toordinal()
+
     open_tasks = sum(1 for t in TASKS if t["status"] != "done")
-    in_transit = sum(1 for o in ORDERS if o["status"] in ("ordered", "shipped"))
-    have = sum(1 for b in BOM if b["status"] == "have")
-    index = index.replace("{{PROJECT_TILES}}", "\n".join([
-        tile("Компоненти", str(len(COMPONENTS_REG)), "",
-             " · ".join(f"{c['emoji']} {COMP_STATUS_LABEL[c['status']]}" for c in COMPONENTS_REG)),
-        tile("Задач відкрито", str(open_tasks), "",
-             f"з {len(TASKS)}; дошка — в операціях"),
-        tile("Замовлень у дорозі", str(in_transit), "",
-             "динаміки на A/B тест" if in_transit else "—"),
-        tile("Закупівля", f"{have}/{len(BOM)}", "позицій",
-             "решта — лінками нижче, одним кошиком"),
+    doing_n = sum(1 for t in TASKS if t["status"] == "doing")
+    done_tasks = len(TASKS) - open_tasks
+    in_transit = [o for o in ORDERS if o["status"] in ("ordered", "shipped")]
+    have_n = sum(1 for b in BOM if b["status"] == "have")
+    budget_have = sum(usd(b["price"]) for b in BOM if b["status"] == "have")
+    budget_tobuy = sum(usd(b["price"]) for b in BOM if b["status"] != "have")
+    ready_pct = round(100 * (done_tasks + have_n) / (len(TASKS) + len(BOM)))
+
+    def stat(k, v, note, extra="", cls=""):
+        return (f'    <div class="stat {cls}"><div class="k">{k}</div>'
+                f'<div class="v">{v}</div><div class="note">{note}</div>{extra}</div>')
+
+    index = index.replace("{{STAT_TILES}}", "\n".join([
+        stat("до воріт Burning Man",
+             f'<span id="countdown" data-gate="{ev["gate_open"]}">{days_to_gate}'
+             '<span class="u"> дн</span></span>',
+             f'ворота {gate.strftime("%d.%m")} · Man горить {burn.strftime("%d.%m")} · '
+             f'{esc(ev["location"])}', cls="hero-stat"),
+        stat("готовність", f'{ready_pct}<span class="u">%</span>',
+             f'{done_tasks}/{len(TASKS)} задач · {have_n}/{len(BOM)} позицій BOM',
+             f'<div class="bar"><i style="--w:{ready_pct}%"></i></div>'),
+        stat("задачі", f'{open_tasks}<span class="u"> відкрито</span>',
+             f'{doing_n} в роботі · дошка нижче'),
+        stat("у дорозі", str(len(in_transit)),
+             esc(in_transit[0]["note"]) if in_transit else "нічого не їде"),
+        stat("докупити", f'~${budget_tobuy:.0f}',
+             "кошик лінками в BOM нижче"),
     ]))
 
+    comp_hue = {"audio": "var(--comp-audio)", "solar": "var(--comp-solar)",
+                "lights": "var(--comp-lights)", "armor": "var(--comp-armor)",
+                "project": "var(--comp-project)"}
     cards = []
     for c in COMPONENTS_REG:
-        open_n = sum(1 for t in TASKS if t["component"] == c["key"] and t["status"] != "done")
+        k = c["key"]
+        c_tasks = [t for t in TASKS if t["component"] == k]
+        c_done = sum(1 for t in c_tasks if t["status"] == "done")
+        c_bom = [b for b in BOM if b["component"] == k]
+        c_have = sum(1 for b in c_bom if b["status"] == "have")
+        tot = len(c_tasks) + len(c_bom)
+        pct = round(100 * (c_done + c_have) / tot) if tot else 0
         links = []
-        if c.get("page"):
-            links.append(f'<a href="{SITE_URL}{c["page"]}">сторінка</a>')
         for label, href in c.get("links", []):
             art = {"lab.html": ART_LAB, "ops.html": ART_OPS}.get(href, SITE_URL + href)
             links.append(f'<a href="{art}">{esc(label.split(" (")[0].lower())}</a>')
+        meta = []
+        if c_tasks:
+            meta.append(f"задач: {len(c_tasks) - c_done}")
+        if c_bom:
+            meta.append(f"купити: {len(c_bom) - c_have}")
         cards.append(
-            f'    <div class="card" id="card-{c["key"]}">\n'
-            f'      <div class="row"><h3>{c["emoji"]} {esc(c["label"])}</h3>'
+            f'    <div class="card" id="card-{k}" style="--cc:{comp_hue[k]}">\n'
+            f'      <div class="row"><h3><a href="{SITE_URL}{c["page"]}">{c["emoji"]} {esc(c["label"])}</a></h3>'
             f'<span class="pill {c["status"]}">{COMP_STATUS_LABEL[c["status"]]}</span></div>\n'
             f'      <p>{esc(c["summary"])}</p>\n'
-            f'      <div class="row"><span class="links">{" · ".join(links) or "&nbsp;"}</span>'
-            f'<span class="open">задач: {open_n}</span></div>\n'
+            f'      <div class="bar"><i style="--w:{pct}%"></i></div>\n'
+            f'      <div class="row"><span class="links"><a href="{SITE_URL}{c["page"]}">сторінка</a>'
+            f'{"".join(" · " + s for s in links)}</span>'
+            f'<span class="meta">{pct}% · {" · ".join(meta) or "—"}</span></div>\n'
             f'    </div>')
     index = index.replace("{{COMPONENT_CARDS}}", "\n".join(cards))
+
+    # kanban board
+    kan_status = [("doing", "в роботі"), ("waiting", "чекаємо"),
+                  ("todo", "до роботи"), ("done", "готово")]
+    comp_order = {c: i for i, c in enumerate(COMPONENTS)}
+    cols = []
+    for st, st_label in kan_status:
+        cards_k = []
+        for t in sorted((t for t in TASKS if t["status"] == st),
+                        key=lambda x: comp_order.get(x["component"], 9)):
+            note = f'<p class="kn">{esc(t["note"])}</p>' if t.get("note") else ""
+            done_cls = " done-card" if st == "done" else ""
+            cards_k.append(
+                f'      <div class="kcard{done_cls}" data-comp="{t["component"]}">\n'
+                f'        <p class="kt">{esc(t["task"])}</p>\n{("        " + note + chr(10)) if note else ""}'
+                f'        <span class="chip {t["component"]}">{COMP_LABEL[t["component"]].lower()}</span>\n'
+                f'      </div>')
+        body = "\n".join(cards_k) if cards_k else '      <p class="kempty">порожньо</p>'
+        cols.append(
+            f'    <div class="kcol" data-status="{st}">\n'
+            f'      <h3>{st_label} <span class="count">{len(cards_k)}</span></h3>\n'
+            f'{body}\n    </div>')
+    index = index.replace("{{KANBAN_COLUMNS}}", "\n".join(cols))
+
+    chips = [f'      <button class="fchip active" data-f="all">всі · {len(TASKS)}</button>']
+    for k in COMPONENTS:
+        n = sum(1 for t in TASKS if t["component"] == k)
+        if n:
+            chips.append(f'      <button class="fchip" data-f="{k}">'
+                         f'{COMP_LABEL[k].lower()} · {n}</button>')
+    index = index.replace("{{TASK_FILTER_CHIPS}}", "\n".join(chips))
+
+    # BOM + budget
+    total_b = budget_have + budget_tobuy
+    seg_have = round(100 * budget_have / total_b) if total_b else 0
+    index = index.replace("{{BUDGET_SEGMENTS}}",
+        f'<i class="seg-have" style="--w:{seg_have}%"></i>'
+        f'<i class="seg-add" style="--w:{100 - seg_have}%"></i>')
+    index = index.replace("{{BUDGET_HAVE}}", f"{budget_have:.0f}")
+    index = index.replace("{{BUDGET_TOBUY}}", f"{budget_tobuy:.0f}")
+    n_add = sum(1 for b in BOM if b["status"] != "have")
+    index = index.replace("{{BOM_FILTER_CHIPS}}", "\n".join([
+        f'      <button class="fchip active" data-f="all">всі · {len(BOM)}</button>',
+        f'      <button class="fchip" data-f="add">купити · {n_add}</button>',
+        f'      <button class="fchip" data-f="have">є · {have_n}</button>']))
     index = index.replace("{{BOM_ROWS}}", bom_rows_html())
+
+    # orders
+    orows_i = []
+    for o in ORDERS:
+        days = today.toordinal() - date.fromisoformat(o["date"]).toordinal()
+        vendor = f'<a href="{o["url"]}">{esc(o["vendor"])}</a>' if o.get("url") else esc(o["vendor"])
+        orows_i.append(
+            f'      <tr><td class="num">{o["id"]}</td><td class="num">{o["date"]}</td>'
+            f'<td class="num">{days}</td><td>{vendor}</td>'
+            f'<td>{esc("; ".join(o["items"]))}</td>'
+            f'<td><span class="pill {o["status"]}">{ORDER_STATUS[o["status"]]}</span></td>'
+            f'<td>{esc(ADDR["locations"][o["deliver_to"]]["label"])}</td></tr>')
+    if not orows_i:
+        orows_i.append('      <tr><td colspan="7">Поки нічого не замовлено.</td></tr>')
+    index = index.replace("{{ORDER_ROWS}}", "\n".join(orows_i))
     index = index.replace("{{GEN_DATE}}", today.isoformat())
 
     # knowledge graph embedded in index

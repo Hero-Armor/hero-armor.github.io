@@ -1,155 +1,431 @@
-<title>Hero Armor — проєкт</title>
+<title>Hero Armor — дашборд проєкту</title>
 <style>
   :root {
-    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
-    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --bg: #eceadf; --panel: #f7f5ec; --panel-2: #fdfcf7; --ink: #26241c; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #33628f;
     --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
     --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --comp-audio: #33628f; --comp-solar: #a07414; --comp-lights: #7a5a9e;
+    --comp-armor: #2f7a72; --comp-project: #6b675c;
+    --glow: 0 0 0 transparent;
     --mono: ui-monospace, "SF Mono", Menlo, monospace;
     --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
     --body: -apple-system, "Segoe UI", Roboto, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
-      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    :root { --bg: #0f1218; --panel: #171b24; --panel-2: #1d222d; --ink: #e9e6da; --ink-2: #9a968a;
+      --line: #2c313c; --accent: #e6902f; --signal: #6fa9d8;
       --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
-      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c; }
+      --good-bg: #1d2c1e; --warn-bg: #2f2814; --crit-bg: #33201c;
+      --comp-audio: #6fa9d8; --comp-solar: #d9a83a; --comp-lights: #a98ac9;
+      --comp-armor: #5fb3a9; --comp-project: #9a968a;
+      --glow: 0 0 22px color-mix(in srgb, var(--accent) 30%, transparent); }
   }
   :root[data-theme="light"] {
-    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
-    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --bg: #eceadf; --panel: #f7f5ec; --panel-2: #fdfcf7; --ink: #26241c; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #33628f;
     --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
     --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --comp-audio: #33628f; --comp-solar: #a07414; --comp-lights: #7a5a9e;
+    --comp-armor: #2f7a72; --comp-project: #6b675c;
+    --glow: 0 0 0 transparent;
   }
   :root[data-theme="dark"] {
-    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
-    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --bg: #0f1218; --panel: #171b24; --panel-2: #1d222d; --ink: #e9e6da; --ink-2: #9a968a;
+    --line: #2c313c; --accent: #e6902f; --signal: #6fa9d8;
     --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
-    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    --good-bg: #1d2c1e; --warn-bg: #2f2814; --crit-bg: #33201c;
+    --comp-audio: #6fa9d8; --comp-solar: #d9a83a; --comp-lights: #a98ac9;
+    --comp-armor: #5fb3a9; --comp-project: #9a968a;
+    --glow: 0 0 22px color-mix(in srgb, var(--accent) 30%, transparent);
   }
   * { box-sizing: border-box; }
   body { background: var(--bg); color: var(--ink); font-family: var(--body);
-         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
-  .wrap { max-width: 1060px; margin: 0 auto; }
+         margin: 0; padding: 0 0 4rem; line-height: 1.5; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* ---- sticky nav ---- */
+  .topbar { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line);
+            background: color-mix(in srgb, var(--bg) 84%, transparent);
+            -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+  .topbar .row { display: flex; align-items: center; gap: 1rem;
+                 max-width: 1100px; margin: 0 auto; padding: .55rem 1.25rem; }
+  .brand { font-family: var(--disp); font-weight: 600; font-size: 1.05rem;
+           text-decoration: none; color: var(--ink); white-space: nowrap; }
+  .brand b { color: var(--accent); }
+  .topnav { display: flex; gap: .15rem; flex: 1; overflow-x: auto; scrollbar-width: none; }
+  .topnav::-webkit-scrollbar { display: none; }
+  .topnav a { font-family: var(--mono); font-size: .72rem; color: var(--ink-2);
+              text-decoration: none; padding: .35rem .6rem; border-radius: 4px; white-space: nowrap; }
+  .topnav a:hover { color: var(--ink); background: var(--panel); }
+  #themeBtn { border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+              border-radius: 999px; width: 2rem; height: 2rem; cursor: pointer;
+              font-size: .9rem; line-height: 1; flex: none; }
+  #themeBtn:hover { border-color: var(--accent); }
+
+  /* ---- header ---- */
+  header.hd { padding-top: 2.2rem; }
   .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
              text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
   h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.9rem, 4.5vw, 2.8rem);
        margin: 0 0 .3rem; text-wrap: balance; }
-  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem; margin: 2.6rem 0 .9rem; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.3rem; margin: 0 0 .9rem; }
+  section { margin-top: 2.6rem; }
   .sub { color: var(--ink-2); max-width: 66ch; margin: 0 0 1.6rem; }
   a { color: var(--signal); }
-  .nav { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.8rem; }
-  .nav a { display: inline-block; font-family: var(--mono); font-size: .8rem;
-           padding: .5rem .9rem; background: var(--panel); border: 1px solid var(--line);
-           border-radius: 4px; text-decoration: none; color: var(--ink); }
-  .nav a:hover { border-color: var(--accent); }
-  .nav a b { color: var(--accent); }
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .7rem; }
-  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .75rem .85rem; background: var(--panel); }
-  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+
+  /* ---- status strip ---- */
+  .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: .7rem; }
+  @media (max-width: 900px) {
+    .stats { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  }
+  .stat { border: 1px solid var(--line); border-radius: 7px; padding: .8rem .9rem;
+          background: var(--panel); }
+  .stat .k { font-family: var(--mono); font-size: .64rem; letter-spacing: .1em;
              text-transform: uppercase; color: var(--ink-2); }
-  .tile .v { font-family: var(--mono); font-size: 1.5rem; font-weight: 600;
-             margin-top: .15rem; font-variant-numeric: tabular-nums; }
-  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
-  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: .9rem; }
-  .card { border: 1px solid var(--line); border-radius: 6px; background: var(--panel);
-          padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .5rem; }
-  .card h3 { margin: 0; font-family: var(--disp); font-size: 1.2rem; font-weight: 600; }
-  .card p { margin: 0; font-size: .87rem; color: var(--ink-2); flex: 1; }
-  .card .row { display: flex; align-items: center; gap: .6rem; justify-content: space-between; }
-  .card .links { display: flex; gap: .8rem; font-size: .82rem; }
-  .card .open { font-family: var(--mono); font-size: .72rem; color: var(--ink-2); }
-  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
-          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
-  .pill.design-ready { background: var(--good-bg); color: var(--good); }
-  .pill.in-design { background: var(--warn-bg); color: var(--warn); }
-  .pill.build { background: var(--warn-bg); color: var(--warn); }
-  .pill.concept { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
-  .pill.have { background: var(--good-bg); color: var(--good); }
-  .pill.add { background: var(--warn-bg); color: var(--warn); }
-  .pill.tbd { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
-  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
-  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
-  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); }
-  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
-       text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
-  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
-  tr:last-child td { border-bottom: 0; }
-  .onboard { background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
-             padding: 1rem 1.2rem; font-size: .88rem; }
-  .onboard pre { background: var(--bg); border: 1px solid var(--line); border-radius: 4px;
-                 padding: .7rem .9rem; overflow-x: auto; font-family: var(--mono);
-                 font-size: .78rem; margin: .6rem 0 0; }
-  .foot { font-size: .78rem; color: var(--ink-2); margin-top: 2.2rem; }
-  .hero { position: relative; border-radius: 8px; overflow: hidden;
+  .stat .v { font-family: var(--mono); font-size: 1.55rem; font-weight: 650; margin-top: .2rem;
+             font-variant-numeric: tabular-nums; }
+  .stat .v .u { font-size: .85rem; color: var(--ink-2); font-weight: 400; }
+  .stat .note { font-size: .73rem; color: var(--ink-2); margin-top: .25rem; }
+  .stat.hero-stat { grid-column: span 2; border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+                    box-shadow: var(--glow); }
+  .stat.hero-stat .v { color: var(--accent); font-size: 1.8rem; }
+  @media (max-width: 480px) { .stat.hero-stat { grid-column: span 1; } }
+  .bar { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; margin-top: .5rem; }
+  .bar i { display: block; height: 100%; border-radius: 99px; background: var(--accent); width: var(--w); }
+
+  /* ---- hero image ---- */
+  .hero { position: relative; border-radius: 10px; overflow: hidden;
           border: 1px solid var(--line); margin-bottom: .5rem; }
   .hero img { display: block; width: 100%; height: auto; }
   .zone { position: absolute; border: 2px solid transparent; border-radius: 8px;
           text-decoration: none; }
-  .zone span { position: absolute; left: 50%; top: -1.6rem; transform: translateX(-50%);
+  .zone .dot { position: absolute; left: 50%; top: 50%; width: 9px; height: 9px;
+               margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: var(--accent);
+               box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+  .zone span.tip { position: absolute; left: 50%; top: -1.7rem; transform: translateX(-50%);
                background: var(--panel); color: var(--ink); border: 1px solid var(--line);
-               font-family: var(--mono); font-size: .7rem; padding: .1rem .5rem;
+               font-family: var(--mono); font-size: .7rem; padding: .12rem .55rem;
                border-radius: 999px; white-space: nowrap; opacity: 0;
                transition: opacity .15s; pointer-events: none; }
   .zone:hover, .zone:focus-visible { border-color: var(--accent);
           background: color-mix(in srgb, var(--accent) 12%, transparent); }
-  .zone:hover span, .zone:focus-visible span { opacity: 1; }
-  .hero-hint { font-size: .75rem; color: var(--ink-2); margin: 0 0 1.4rem; }
+  .zone:hover span.tip, .zone:focus-visible span.tip { opacity: 1; }
+  .zone:hover .dot { opacity: 0; }
+  .hero-hint { font-size: .75rem; color: var(--ink-2); margin: 0; }
+
+  /* ---- component cards ---- */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .9rem; }
+  .card { border: 1px solid var(--line); border-radius: 8px; background: var(--panel);
+          padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .55rem;
+          transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+  .card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--cc, var(--accent)) 55%, var(--line));
+                box-shadow: 0 6px 18px color-mix(in srgb, var(--cc, var(--accent)) 12%, transparent); }
+  .card h3 { margin: 0; font-family: var(--disp); font-size: 1.2rem; font-weight: 600; }
+  .card h3 a { color: var(--ink); text-decoration: none; }
+  .card h3 a:hover { color: var(--cc, var(--accent)); }
+  .card p { margin: 0; font-size: .85rem; color: var(--ink-2); flex: 1; }
+  .card .row { display: flex; align-items: center; gap: .6rem; justify-content: space-between; }
+  .card .meta { font-family: var(--mono); font-size: .7rem; color: var(--ink-2); }
+  .card .bar i { background: var(--cc, var(--accent)); }
+  .card .links { display: flex; gap: .8rem; font-size: .8rem; }
+
+  /* ---- pills & chips ---- */
+  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
+          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
+  .pill.design-ready, .pill.done, .pill.have, .pill.delivered, .pill.received
+    { background: var(--good-bg); color: var(--good); }
+  .pill.in-design, .pill.build, .pill.doing, .pill.waiting, .pill.add, .pill.ordered, .pill.shipped
+    { background: var(--warn-bg); color: var(--warn); }
+  .pill.concept, .pill.todo, .pill.tbd
+    { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
+  .chip { display: inline-block; font-family: var(--mono); font-size: .64rem;
+          padding: .08rem .45rem; border-radius: 999px; white-space: nowrap;
+          background: color-mix(in srgb, var(--cc) 14%, transparent); color: var(--cc); }
+  .chip.audio { --cc: var(--comp-audio); } .chip.solar { --cc: var(--comp-solar); }
+  .chip.lights { --cc: var(--comp-lights); } .chip.armor { --cc: var(--comp-armor); }
+  .chip.project { --cc: var(--comp-project); }
+
+  /* ---- filter chips ---- */
+  .fchips { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .9rem; }
+  .fchip { font-family: var(--mono); font-size: .72rem; padding: .3rem .7rem;
+           border-radius: 999px; border: 1px solid var(--line); background: var(--panel);
+           color: var(--ink-2); cursor: pointer; }
+  .fchip:hover { border-color: var(--accent); color: var(--ink); }
+  .fchip.active { background: var(--accent); border-color: var(--accent);
+                  color: var(--bg); font-weight: 600; }
+
+  /* ---- kanban ---- */
+  .board-wrap { overflow-x: auto; padding-bottom: .4rem; }
+  .board { display: grid; grid-template-columns: repeat(4, minmax(225px, 1fr)); gap: .8rem;
+           min-width: 940px; }
+  .kcol { background: color-mix(in srgb, var(--panel) 55%, var(--bg));
+          border: 1px solid var(--line); border-radius: 8px; padding: .6rem .6rem .4rem;
+          border-top: 3px solid var(--kc, var(--line)); transition: opacity .2s; }
+  .kcol.dim { opacity: .45; }
+  .kcol[data-status="doing"]   { --kc: var(--warn); }
+  .kcol[data-status="waiting"] { --kc: var(--signal); }
+  .kcol[data-status="todo"]    { --kc: var(--ink-2); }
+  .kcol[data-status="done"]    { --kc: var(--good); }
+  .kcol h3 { margin: .1rem .2rem .6rem; font-family: var(--mono); font-size: .7rem;
+             letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2);
+             display: flex; justify-content: space-between; align-items: center; }
+  .kcol h3 .count { background: var(--panel-2); border: 1px solid var(--line);
+                    border-radius: 999px; padding: 0 .5rem; font-size: .68rem;
+                    color: var(--ink); font-variant-numeric: tabular-nums; }
+  .kcard { background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px;
+           padding: .6rem .7rem; margin-bottom: .55rem;
+           transition: transform .15s ease, box-shadow .15s ease; }
+  .kcard:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+  .kcard.off { display: none; }
+  .kcard .kt { margin: 0 0 .3rem; font-size: .82rem; line-height: 1.35; }
+  .kcard .kn { margin: 0 0 .4rem; font-size: .72rem; color: var(--ink-2); }
+  .kcard.done-card .kt { color: var(--ink-2); text-decoration: line-through;
+                         text-decoration-color: color-mix(in srgb, var(--ink-2) 45%, transparent); }
+  .kempty { font-size: .75rem; color: var(--ink-2); text-align: center; padding: .8rem 0; }
+
+  /* ---- tables ---- */
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  tr.off { display: none; }
+
+  /* ---- budget bar ---- */
+  .bwrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin: .3rem 0 .9rem; }
+  .bbar { display: flex; gap: 2px; height: 10px; border-radius: 99px; overflow: hidden;
+          flex: 1; min-width: 220px; background: var(--line); }
+  .bbar i { display: block; height: 100%; }
+  .bbar .seg-have { background: var(--good); width: var(--w); border-radius: 99px 0 0 99px; }
+  .bbar .seg-add  { background: var(--warn); width: var(--w); border-radius: 0 99px 99px 0; }
+  .blegend { font-family: var(--mono); font-size: .72rem; color: var(--ink-2); white-space: nowrap; }
+  .blegend b { color: var(--ink); }
+  .blegend .sw { display: inline-block; width: .65em; height: .65em; border-radius: 2px;
+                 margin-right: .3em; vertical-align: baseline; }
+
+  /* ---- team / foot ---- */
+  .onboard { background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+             padding: 1rem 1.2rem; font-size: .88rem; }
+  .onboard pre { background: var(--bg); border: 1px solid var(--line); border-radius: 4px;
+                 padding: .7rem .9rem; overflow-x: auto; font-family: var(--mono);
+                 font-size: .78rem; margin: .6rem 0 0; }
+  .foot { font-size: .78rem; color: var(--ink-2); margin-top: 2.6rem; }
+
+  /* ---- motion (guarded) ---- */
+  @media (prefers-reduced-motion: no-preference) {
+    html.js .reveal { opacity: 0; transform: translateY(14px);
+                      transition: opacity .55s ease, transform .55s ease; }
+    html.js .reveal.in { opacity: 1; transform: none; }
+    html.js .bar i { transition: width .9s cubic-bezier(.25,.7,.3,1) .15s; }
+    html.js .reveal:not(.in) .bar i { width: 0; }
+    .zone .dot { animation: pulse 2.6s ease-out infinite; }
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 45%, transparent); }
+      70%  { box-shadow: 0 0 0 13px transparent; }
+      100% { box-shadow: 0 0 0 0 transparent; }
+    }
+  }
 </style>
 
+<div class="topbar"><div class="row">
+  <a class="brand" href="https://hero-armor.github.io/">Hero <b>Armor</b></a>
+  <nav class="topnav">
+    <a href="#components">компоненти</a>
+    <a href="#board">задачі</a>
+    <a href="#bom">закупівля</a>
+    <a href="#orders">замовлення</a>
+    <a href="https://hero-armor.github.io/audio.html">аудіо</a>
+    <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced">лабораторія</a>
+    <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859">операції</a>
+  </nav>
+  <button id="themeBtn" title="Тема: світла / темна" aria-label="Перемкнути тему">◐</button>
+</div></div>
+
 <div class="wrap">
-  <p class="eyebrow">Burning Man 2026 · <a href="https://hero-armor.com/">hero-armor.com</a> · інженерний хаб</p>
-  <h1>Hero Armor — воїн-захисник. Памʼяті Захара Захарова</h1>
-  <p class="sub">Меморіальна інсталяція для Burning Man 2026 — історія на
-  <a href="https://hero-armor.com/">hero-armor.com</a>. Тут — інженерія: чотири компоненти,
-  спільна закупівля, задачі й логістика. Все генерується з файлової бази
-  <span style="font-family:var(--mono)">data/</span> — цифри рахує модель, руками HTML ніхто не править.</p>
+  <header class="hd">
+    <p class="eyebrow">Burning Man 2026 · <a href="https://hero-armor.com/">hero-armor.com</a> · інженерний хаб</p>
+    <h1>Hero Armor — воїн-захисник. Памʼяті Захара Захарова</h1>
+    <p class="sub">Меморіальна інсталяція для Burning Man 2026 — історія на
+    <a href="https://hero-armor.com/">hero-armor.com</a>. Тут — інженерія: чотири компоненти,
+    спільна закупівля, задачі й логістика. Все генерується з файлової бази
+    <span style="font-family:var(--mono)">data/</span> — цифри рахує модель, руками HTML ніхто не править.</p>
+  </header>
 
-  <div class="hero">
-    <img src="assets/hero.jpg" alt="Hero Armor: синьо-жовтий воїн-захисник на світному октагональному подіумі на плайї, рендер інсталяції" width="1600" height="900">
-    <a class="zone" style="left:20%;top:55%;width:63%;height:38%" href="https://hero-armor.github.io/lights.html" aria-label="Світло — подіум і периметр"><span>💡 світло — подіум і периметр</span></a>
-    <a class="zone" style="left:41%;top:6%;width:17%;height:72%" href="https://hero-armor.github.io/armor.html" aria-label="Броня — постать воїна"><span>🛡️ броня — постать</span></a>
-    <a class="zone" style="left:45.5%;top:17%;width:8.5%;height:21%" href="https://hero-armor.github.io/audio.html" aria-label="Аудіо — динамік і радар у грудях"><span>🔊 аудіо — динамік і радар</span></a>
-  </div>
-  <p class="hero-hint">Рендер інсталяції — <a href="https://hero-armor.com/">hero-armor.com</a>.
-  Клікабельно: груди воїна → аудіо, постать → броня, світний подіум → світло; сонце/живлення — у картках нижче.</p>
+  <section class="reveal" id="status" style="margin-top:.4rem">
+    <div class="stats">
+{{STAT_TILES}}
+    </div>
+  </section>
 
-  <div class="nav">
-    <a href="https://hero-armor.github.io/audio.html"><b>🔊 Аудіо</b> — рішення і схема</a>
-    <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced"><b>🎚️ Лабораторія</b> — симулятор</a>
-    <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"><b>📦 Операції</b> — задачі, замовлення, LA→SF</a>
-  </div>
+  <section class="reveal" id="install">
+    <div class="hero">
+      <img src="assets/hero.jpg" alt="Hero Armor: синьо-жовтий воїн-захисник на світному октагональному подіумі на плайї, рендер інсталяції" width="1600" height="900">
+      <a class="zone" style="left:20%;top:55%;width:63%;height:38%" href="https://hero-armor.github.io/lights.html" aria-label="Світло — подіум і периметр"><span class="dot"></span><span class="tip">💡 світло — подіум і периметр</span></a>
+      <a class="zone" style="left:41%;top:6%;width:17%;height:72%" href="https://hero-armor.github.io/armor.html" aria-label="Броня — постать воїна"><span class="dot"></span><span class="tip">🛡️ броня — постать</span></a>
+      <a class="zone" style="left:45.5%;top:17%;width:8.5%;height:21%" href="https://hero-armor.github.io/audio.html" aria-label="Аудіо — динамік і радар у грудях"><span class="dot"></span><span class="tip">🔊 аудіо — динамік і радар</span></a>
+    </div>
+    <p class="hero-hint">Рендер інсталяції — <a href="https://hero-armor.com/">hero-armor.com</a>.
+    Клікабельно: груди воїна → аудіо, постать → броня, світний подіум → світло; сонце/живлення — у картках нижче.</p>
+  </section>
 
-  <div class="tiles">
-{{PROJECT_TILES}}
-  </div>
-
-  <h2>Компоненти</h2>
-  <div class="cards">
+  <section class="reveal" id="components">
+    <h2>Компоненти</h2>
+    <div class="cards">
 {{COMPONENT_CARDS}}
-  </div>
+    </div>
+  </section>
 
-  <h2>Спільна закупівля (BOM)</h2>
-  <div class="tbl-wrap">
-  <table>
-    <thead><tr><th>Позиція</th><th>Компонент</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>
-    <tbody>
+  <section class="reveal" id="board">
+    <h2>Дошка задач</h2>
+    <div class="fchips">
+{{TASK_FILTER_CHIPS}}
+    </div>
+    <div class="board-wrap">
+    <div class="board">
+{{KANBAN_COLUMNS}}
+    </div>
+    </div>
+    <p class="hero-hint" style="margin-top:.5rem">Задачі живуть у
+    <span style="font-family:var(--mono)">data/tasks.json</span> — редагуй там (або скажи агенту), і дошка перебудується.</p>
+  </section>
+
+  <section class="reveal" id="bom">
+    <h2>Спільна закупівля (BOM)</h2>
+    <div class="bwrap">
+      <div class="bbar">{{BUDGET_SEGMENTS}}</div>
+      <span class="blegend"><span class="sw" style="background:var(--good)"></span>є на ~<b>${{BUDGET_HAVE}}</b>
+        &nbsp;·&nbsp; <span class="sw" style="background:var(--warn)"></span>докупити ~<b>${{BUDGET_TOBUY}}</b></span>
+    </div>
+    <div class="fchips">
+{{BOM_FILTER_CHIPS}}
+    </div>
+    <div class="tbl-wrap">
+    <table id="bomTable">
+      <thead><tr><th>Позиція</th><th>Компонент</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>
+      <tbody>
 {{BOM_ROWS}}
-    </tbody>
-  </table>
-  </div>
+      </tbody>
+    </table>
+    </div>
+  </section>
 
-  <h2>Команда</h2>
-  <div class="onboard">
-    Клонував — отримав усе: моделі, дашборд, агентів (<span style="font-family:var(--mono)">logistics, procurement</span>)
-    і скіли (<span style="font-family:var(--mono)">/order-placed, /project-status</span>). Приватні адреси/треки —
-    окрема репа за доступом.
-    <pre>git clone https://github.com/Hero-Armor/hero-armor.github.io
+  <section class="reveal" id="orders">
+    <h2>Замовлення</h2>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>Дата</th><th>Днів</th><th>Продавець</th><th>Що</th><th>Статус</th><th>Куди</th></tr></thead>
+      <tbody>
+{{ORDER_ROWS}}
+      </tbody>
+    </table>
+    </div>
+    <p class="hero-hint" style="margin-top:.5rem">Трек-номери і адреси — приватні
+    (<span style="font-family:var(--mono)">data/private/</span>); деталі та ship-to порадник —
+    в <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859">операціях</a>.</p>
+  </section>
+
+  <section class="reveal" id="team">
+    <h2>Команда</h2>
+    <div class="onboard">
+      Клонував — отримав усе: моделі, дашборд, агентів (<span style="font-family:var(--mono)">logistics, procurement</span>)
+      і скіли (<span style="font-family:var(--mono)">/order-placed, /project-status</span>). Приватні адреси/треки —
+      окрема репа за доступом.
+      <pre>git clone https://github.com/Hero-Armor/hero-armor.github.io
 git clone https://github.com/Hero-Armor/private hero-armor.github.io/data/private</pre>
-  </div>
+    </div>
+  </section>
 
   <p class="foot">Дані машинно-читабельні: <a href="knowledge.jsonld">knowledge.jsonld</a>
   (schema.org JSON-LD) · <a href="https://github.com/Hero-Armor/hero-armor.github.io">GitHub</a> ·
   згенеровано {{GEN_DATE}}</p>
 </div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
+
+  /* theme toggle (persists; artifact host also stamps data-theme — same attr, no conflict) */
+  var KEY = 'ha-theme', btn = document.getElementById('themeBtn');
+  try {
+    var saved = localStorage.getItem(KEY);
+    if (saved === 'dark' || saved === 'light') root.dataset.theme = saved;
+  } catch (e) {}
+  function themeNow() {
+    return root.dataset.theme ||
+      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  }
+  function paintBtn() { btn.textContent = themeNow() === 'dark' ? '☾' : '☀'; }
+  if (btn) {
+    paintBtn();
+    btn.addEventListener('click', function () {
+      var next = themeNow() === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+      paintBtn();
+    });
+  }
+
+  /* live countdown to the gate */
+  var cd = document.getElementById('countdown');
+  if (cd) {
+    var gate = new Date(cd.dataset.gate + 'T00:00:00-07:00');
+    var pad = function (n) { return String(n).padStart(2, '0'); };
+    var tick = function () {
+      var ms = gate - Date.now();
+      if (ms <= 0) { cd.innerHTML = 'ворота відчинено'; return; }
+      var s = Math.floor(ms / 1000);
+      cd.innerHTML = Math.floor(s / 86400) + '<span class="u"> дн </span>' +
+        pad(Math.floor(s % 86400 / 3600)) + ':' + pad(Math.floor(s % 3600 / 60)) +
+        ':' + pad(s % 60);
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  /* component filter on the task board */
+  function wireChips(chipSel, apply) {
+    var chips = document.querySelectorAll(chipSel);
+    chips.forEach(function (ch) {
+      ch.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('active'); });
+        ch.classList.add('active');
+        apply(ch.dataset.f);
+      });
+    });
+  }
+  wireChips('#board .fchip', function (comp) {
+    document.querySelectorAll('#board .kcard').forEach(function (k) {
+      k.classList.toggle('off', comp !== 'all' && k.dataset.comp !== comp);
+    });
+    document.querySelectorAll('#board .kcol').forEach(function (col) {
+      var n = col.querySelectorAll('.kcard:not(.off)').length;
+      col.querySelector('.count').textContent = n;
+      col.classList.toggle('dim', n === 0);
+    });
+  });
+  wireChips('#bom .fchip', function (f) {
+    document.querySelectorAll('#bomTable tbody tr').forEach(function (tr) {
+      tr.classList.toggle('off', f !== 'all' && tr.dataset.status !== f);
+    });
+  });
+
+  /* scroll reveal (+ progress-bar animation) */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window &&
+      matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
