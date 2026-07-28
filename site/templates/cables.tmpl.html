@@ -1,4 +1,4 @@
-<title>Hero Armor — світловий вузол</title>
+<title>Hero Armor — кабелі, щит і монтаж</title>
 <style>
   :root {
     --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
@@ -94,26 +94,88 @@
   .flag p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
   .flag .why { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
                text-transform: uppercase; color: var(--warn); }
+  .seg-name { white-space: nowrap; }
+  .seg-d1 { padding-left: 1.2rem; } .seg-d2 { padding-left: 2.4rem; } .seg-d3 { padding-left: 3.6rem; }
+  .est { font-family: var(--mono); font-size: .62rem; color: var(--warn);
+         border: 1px solid var(--warn); border-radius: 3px; padding: 0 .25rem; margin-left: .3rem; }
+  .kit { display: grid; gap: .8rem; }
+  .kit-item { border-left: 3px solid var(--signal); background: var(--panel);
+              border-radius: 0 5px 5px 0; padding: .8rem 1rem; }
+  .kit-item h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .kit-item p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
 </style>
 
 
 <div class="wrap">
-  <p class="eyebrow"><a href="https://hero-armor.github.io/">← огляд проєкту</a> · світловий вузол</p>
-  <h1>Світловий вузол: підсумок і рішення</h1>
-  <p class="sub">Вісім прожекторів заливають фігуру, «біжуча вода» тече по променях подіуму,
-  габаритні вогні тримають октагон видимим до останнього. Живлення — спільна станція EcoFlow на весь проєкт, її рахує окремий компонент
-  «Живлення»; тут тільки споживання світла. Усі числа нижче —
-  з моделі (потужність/енергія/просадка/освітленість).</p>
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← огляд проєкту</a> · кабелі, щит і монтаж</p>
+  <h1>Кабелі, щит і монтаж</h1>
+  <p class="sub">Що чим з'єднується — від кожного світильника через коробки і щит до магістралі
+  й станції. Головне тут: просадки вздовж ланцюга <b>додаються</b>, тому кінцевий світильник
+  бачить суму всіх ділянок над собою, а не лише свій хвіст. Нижче — повне дерево з розрахунком,
+  номінали запобіжників, автоматика вмикання і перелік залізяччя для монтажу.</p>
 
   <div class="nav">
-    <a href="https://hero-armor.github.io/lights_lab.html"><b>🔬 Світлова лабораторія</b> — споживання і кабелі</a>
-    <a href="https://hero-armor.github.io/cables.html"><b>🔌 Кабелі, щит і монтаж</b> — дерево, запобіжники, автоматика</a>
-    <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"><b>📦 Операції</b> — задачі, замовлення, LA→SF</a>
+    <a href="https://hero-armor.github.io/lights.html"><b>💡 Світло</b> — споживання і групи</a>
+    <a href="https://hero-armor.github.io/lights_lab.html"><b>🔬 Лабораторія</b> — покрутити калібри</a>
+    <a href="https://hero-armor.github.io/solar.html"><b>🔋 Живлення</b> — станція і панелі</a>
   </div>
 
   <div class="tiles">
 {{TILES_HTML}}
   </div>
+
+  <h2>Дерево кабелів — робочий режим</h2>
+  <p class="sub">Те, що реально буде вночі: прожектори підсаджені по напрузі, «біжуча вода»
+  світить біжучим фронтом. Саме ці цифри видно очима.</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Ділянка</th><th>Кабель</th><th>Довжина</th><th>Струм</th><th>Своя просадка</th><th>Накопичено</th><th>Напруга на кінці</th><th>Вердикт</th></tr></thead>
+    <tbody>
+{{TREE_OP_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{TREE_OP_CAPTION}}</p>
+
+  <h2>Те саме на паспортному піку</h2>
+  <p class="sub">Усе світить на максимум, анімація не врахована. Режим, якого в житті не буде,
+  але саме під нього підбирається переріз і номінали запобіжників.</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Ділянка</th><th>Кабель</th><th>Струм</th><th>Своя просадка</th><th>Накопичено</th><th>Межа</th><th>Вердикт</th></tr></thead>
+    <tbody>
+{{TREE_PEAK_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{TREE_PEAK_CAPTION}}</p>
+
+  <h2>Щит із запобіжниками</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Лінія</th><th>Робочий струм</th><th>Із запасом ×{{DERATE}}</th><th>Номінал</th></tr></thead>
+    <tbody>
+{{FUSE_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{FUSE_CAPTION}}</p>
+
+  <h2>Автоматика: коли вмикається світло</h2>
+  <div class="kit">
+{{AUTOMATION_HTML}}
+  </div>
+
+  <h2>Залізо для монтажу</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Позиція</th><th>К-сть</th><th>Статус</th><th>Навіщо і куди</th></tr></thead>
+    <tbody>
+{{KIT_ROWS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{KIT_CAPTION}}</p>
 
   <h2>Прийняті рішення</h2>
   <div class="decisions">
@@ -123,41 +185,9 @@
   <h2>Відкриті питання</h2>
 {{FLAGS_HTML}}
 
-  <h2>Склад системи по групах живлення</h2>
-  <div class="tbl-wrap">
-  <table>
-    <thead><tr><th>№</th><th>Позиція</th><th>Зона</th><th>К-сть</th><th>Пік</th><th>Група</th><th>Модель</th></tr></thead>
-    <tbody>
-{{FIXTURES_ROWS}}
-</tbody>
-  </table>
-  </div>
-  <p class="fig-cap">{{FIXTURES_CAPTION}}</p>
-
-  <h2>Схема з'єднань</h2>
-  <div class="fig">{{SCHEMATIC_SVG}}</div>
-  <p class="fig-cap">Схема починається від 12&nbsp;В зі станції — усе, що вище (панелі, EcoFlow,
-  підміна), належить компоненту <a href="https://hero-armor.github.io/solar.html">Живлення</a>.
-  Три лінії розведені окремо не для краси: коли станція сідає, гасити їх треба по черзі —
-  спершу прожектори і декор, аварійна тримається останньою. Червоним позначені місця, де
-  наявний кабель не проходить на 12&nbsp;В. Джерело:
-  <span style="font-family:var(--mono)">lights/model/schematic.py</span>.</p>
-
-  <h2>Просадка в лініях (усе на повну)</h2>
-  <div class="tbl-wrap">
-  <table>
-    <thead><tr><th>Лінія</th><th>Кабель</th><th>Довжина</th><th>Струм</th><th>Просадка</th><th>Втрати</th></tr></thead>
-    <tbody>
-{{WIRING_ROWS}}
-</tbody>
-  </table>
-  </div>
-  <p class="fig-cap">{{WIRING_CAPTION}}</p>
-
   <h2>Файли проєкту</h2>
-  <p class="files">У репо <code>lights/model/</code>:
-  <code>lights_node_model.py</code> — модель потужності/енергії/просадки/освітленості (всі константи в
-  <code>lights/data/params.json</code>), <code>schematic.py</code> → <code>schematic.svg/png</code> — ця схема.
-  Сценарії ночі — <code>lights/data/cases.json</code>.
-  Інтерактивний симулятор — у <a href="https://hero-armor.github.io/lights_lab.html">світловій лабораторії</a>.</p>
+  <p class="files">Дерево живе в <code>lights/data/params.json</code> → <code>topology.segments</code>:
+  довжини, калібри і що куди йде. Рахує <code>lights/model/lights_node_model.py</code> —
+  функції <code>cable_tree()</code>, <code>cable_tree_operating()</code> і <code>fuses()</code>.
+  Поправив довжину — вся таблиця перерахувалась сама.</p>
 </div>

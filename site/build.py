@@ -465,6 +465,132 @@ def build():
         f'Просадка в таблиці порахована на наявному кабелі — посунь повзунки калібру, '
         f'щоб побачити, що дає товща мідь.')
 
+    # ================= cables / installation page =================
+    tree_op = lm.cable_tree_operating()
+    tree_pk = lm.cable_tree()
+    fuse_rows_data = lm.fuses()
+    auto = LP["automation"]
+    fusing = LP["fusing"]
+    bad_op = [r for r in tree_op if not r["ok"]]
+    bad_pk = [r for r in tree_pk if not r["ok"]]
+    worst_op = max(tree_op, key=lambda r: r["cum_pct"])
+    total_cable_m = sum(x["length_m"] for x in LP["topology"]["segments"])
+
+    cables = tmpl("cables.tmpl.html")
+    cab_tiles = [
+        tile("Ділянок у дереві", f"{len(tree_op)}", "",
+             f"від станції до кожного пристрою · ~{total_cable_m:.0f} м кабелю разом"),
+        tile("Найдовший ланцюг", f"{worst_op['cum_pct']:.1f}", "%",
+             f"{esc(worst_op['label'])} — на кінці {worst_op['v_at_end']:.1f} В",
+             "good" if worst_op["ok"] else "warn"),
+        tile("Робочий режим", "усе ok" if not bad_op else f"{len(bad_op)} не проходить", "",
+             "те, що реально буде вночі", "good" if not bad_op else "crit"),
+        tile("Паспортний пік", "усе ok" if not bad_pk else f"{len(bad_pk)} не проходить", "",
+             "режим, якого не буде, але кабель рахуємо під нього",
+             "good" if not bad_pk else "warn"),
+        tile("Головний запобіжник", f"{fuse_rows_data[0]['rating']}", "A",
+             f"робочий струм {fuse_rows_data[0]['amps']:.1f} A із запасом ×{fusing['derate']}"),
+        tile("Вмикання світла", "фотореле", "",
+             f"поріг {auto['lux_on']} лк, гасне на {auto['lux_off']}, "
+             f"затримка {auto['delay_s']} с", "good"),
+    ]
+    cables = cables.replace("{{TILES_HTML}}", "\n".join(cab_tiles))
+
+    def seg_name(r):
+        est = ' <span class="est">оцінка</span>' if r["estimate"] else ""
+        return f'<td class="seg-name seg-d{r["depth"]}">{esc(r["label"])}{est}</td>'
+
+    def verdict(r):
+        if r["ok"]:
+            return '<span class="pill have">ok</span>'
+        if r["need_awg"]:
+            return f'<span class="pill add">треба AWG {r["need_awg"]}</span>'
+        return '<span class="pill tbd">лікувати вище по ланцюгу</span>'
+
+    op_rows = []
+    for r in tree_op:
+        style_c = "" if r["ok"] else ' style="color:var(--crit)"'
+        op_rows.append(
+            f'      <tr>{seg_name(r)}<td class="num">AWG {r["awg"]}</td>'
+            f'<td class="num">{r["length_m"]:.1f} м</td><td class="num">{r["amps"]:.2f} A</td>'
+            f'<td class="num">{r["drop_pct"]:.2f}%</td>'
+            f'<td class="num"{style_c}>{r["cum_pct"]:.2f}%</td>'
+            f'<td class="num">{r["v_at_end"]:.2f} В</td><td>{verdict(r)}</td></tr>')
+    cables = cables.replace("{{TREE_OP_ROWS}}", "\n".join(op_rows))
+    cables = cables.replace("{{TREE_OP_CAPTION}}",
+        (f'У робочому режимі проходить усе: найгірше місце — {esc(worst_op["label"].lower())} '
+         f'з накопиченими {worst_op["cum_pct"]:.2f}%, на кінці лишається {worst_op["v_at_end"]:.2f} В. '
+         if not bad_op else
+         f'Не проходять {len(bad_op)} ділянки навіть у робочому режимі — це вже треба лікувати. ')
+        + 'Відступ у першій колонці показує глибину: кожен рівень додає свою просадку до всіх, '
+          'хто нижче. Позначка «оцінка» — довжина ще не міряна по факту.')
+
+    pk_rows = []
+    for r in tree_pk:
+        style_c = "" if r["ok"] else ' style="color:var(--crit)"'
+        pk_rows.append(
+            f'      <tr>{seg_name(r)}<td class="num">AWG {r["awg"]}</td>'
+            f'<td class="num">{r["amps"]:.2f} A</td>'
+            f'<td class="num">{r["drop_pct"]:.2f}%</td>'
+            f'<td class="num"{style_c}>{r["cum_pct"]:.2f}%</td>'
+            f'<td class="num">{r["budget_pct"]:.0f}%</td><td>{verdict(r)}</td></tr>')
+    cables = cables.replace("{{TREE_PEAK_ROWS}}", "\n".join(pk_rows))
+    budget = LP["wiring"]["drop_budget"]
+    cables = cables.replace("{{TREE_PEAK_CAPTION}}",
+        f'Межі різні навмисно: {budget["strict_pct"]:.0f}% для адресної стрічки і '
+        f'{budget["relaxed_pct"]:.0f}% для звичайних ламп. {esc(budget["note"])} '
+        + (f'На піку вилітає лише {len(bad_pk)} ділянка — лінія стрічки. Але «пік» тут означає '
+           f'усю стрічку білим на повну довжину, чого в анімації «біжуча вода» не буває: '
+           f'простіше поставити ліміт струму в WLED, ніж тягнути мідь під режим, який не увімкнеться.'
+           if bad_pk else "На піку проходить усе."))
+
+    f_rows = "\n".join(
+        f'      <tr><td>{esc(f["label"])}</td><td class="num">{f["amps"]:.1f} A</td>'
+        f'<td class="num">{f["amps"]*fusing["derate"]:.1f} A</td>'
+        f'<td class="num"><b>{f["rating"]} A</b></td></tr>' for f in fuse_rows_data)
+    cables = cables.replace("{{FUSE_ROWS}}", f_rows)
+    cables = cables.replace("{{DERATE}}", str(fusing["derate"]))
+    cables = cables.replace("{{FUSE_CAPTION}}", esc(fusing["note"]) +
+        " Окремі запобіжники на групи потрібні саме для того, щоб коротке в одній гілці "
+        "не гасило всю інсталяцію — вночі на плайї це різниця між «одна гілка не світить» "
+        "і «фігура зникла».")
+
+    grp_lbl = {k: v["label"] for k, v in LP["groups"].items()}
+    auto_html = [
+        f'    <div class="kit-item">\n      <h3>Чим вмикається</h3>\n'
+        f'      <p>{esc(auto["note"])}</p>\n    </div>']
+    for c in auto["controls"]:
+        auto_html.append(
+            f'    <div class="kit-item">\n      <h3>{esc(grp_lbl[c["group"]])}</h3>\n'
+            f'      <p>{esc(c["via"])} — {esc(c["note"])}</p>\n    </div>')
+    cables = cables.replace("{{AUTOMATION_HTML}}", "\n".join(auto_html))
+
+    kit_items = [b for b in BOM if b["component"] == "lights"
+                 and not b["item"].startswith("Кабель:")
+                 and any(w in b["item"] for w in ("Щит", "Запобіжники", "Фотореле", "Реле",
+                                                  "Гермокоробка", "Гермокоробки", "Гермороз",
+                                                  "Гель-конектори", "Гофра"))]
+    k_rows = "\n".join(
+        f'      <tr><td>{esc(b["item"])}</td><td class="num">{esc(b["qty"])}</td>'
+        f'<td><span class="pill {b["status"]}">{PILL[b["status"]][1]}</span></td>'
+        f'<td>{esc(b["note"])}</td></tr>' for b in kit_items)
+    cables = cables.replace("{{KIT_ROWS}}", k_rows)
+    cables = cables.replace("{{KIT_CAPTION}}",
+        "Кабель на кожну ділянку дерева заведено в закупівлю окремими рядками — шукай їх у "
+        "загальному списку на головній за префіксом «Кабель:». Головне правило по коробках: "
+        "вентиляція важливіша за герметичність. Глухо закритий бокс на сонці плайї перегріється "
+        "швидше, ніж у нього набʼється пил.")
+
+    cab_decs = [d for d in DECISIONS if d["component"] == "lights"]
+    cables = cables.replace("{{DECISIONS_HTML}}", "\n".join(
+        f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
+        f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
+        for d in cab_decs if not d.get("open")))
+    cables = cables.replace("{{FLAGS_HTML}}", "\n".join(
+        f'  <div class="flag">\n    <h3>{esc(d["title"])}</h3>\n'
+        f'    <p><span class="why">відкрите</span> · {d["why"]}</p>\n  </div>'
+        for d in cab_decs if d.get("open")))
+
     # ================= power node page + lab =================
     PP = pw.P
     p_demand = pw.demand()
@@ -862,7 +988,8 @@ def build():
     OUT.mkdir(exist_ok=True)
     pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
-             "lights_lab.html": llab, "solar.html": solar_page,
+             "lights_lab.html": llab, "cables.html": cables,
+             "solar.html": solar_page,
              "solar_lab.html": slab, **comp_pages}
     for name, html in pages.items():
         (OUT / name).write_text(html)
@@ -883,13 +1010,14 @@ def build_docs(out):
              (SITE_URL + "audio.html", "audio.html"), (SITE_URL + "tasks.html", "tasks.html"),
              (SITE_URL + "solar.html", "solar.html"),
              (LIGHTS_LAB_URL, "lights_lab.html"),
+             (SITE_URL + "cables.html", "cables.html"),
              (SOLAR_LAB_URL, "solar_lab.html"),
              (SITE_URL + "audio.html", "audio.html"),
              (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
              ('href="' + SITE_URL + '"', 'href="index.html"')]
     for name in ("index.html", "audio.html", "lab.html", "ops.html", "tasks.html",
                  "solar.html", "solar_lab.html", "lights.html", "lights_lab.html",
-                 "armor.html"):
+                 "cables.html", "armor.html"):
         html = (out / name).read_text()
         for url, rel in swaps:
             html = html.replace(url, rel)

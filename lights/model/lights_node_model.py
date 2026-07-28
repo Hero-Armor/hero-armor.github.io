@@ -104,6 +104,108 @@ def min_awg(run, g_watts):
     return max(ok) if ok else None
 
 
+# ---------------------------------------------------------------- cable tree
+TOPO = P["topology"]["segments"]
+FUSE = P["fusing"]
+SEG = {x["id"]: x for x in TOPO}
+
+
+def _seg_load_w(seg, g_watts):
+    """Watts flowing through one segment: a group branch carries whole groups,
+    a device drop carries its own fixtures (optionally a share of them)."""
+    if seg.get("feeds"):
+        return sum(g_watts[k] for k in seg["feeds"])
+    f = next(x for x in P["fixtures"] if x["id"] == seg["device"])
+    return fixture_peak(f) * seg.get("share", 1)
+
+
+def _chain(seg_id):
+    """Segment ids from the station down to this one, inclusive."""
+    out, cur = [], SEG[seg_id]
+    while cur:
+        out.append(cur["id"])
+        cur = SEG[cur["parent"]] if cur.get("parent") else None
+    return list(reversed(out))
+
+
+def cable_tree(g_watts=None):
+    """Every segment with its own drop AND the drop accumulated from the station.
+
+    The accumulated figure is the one that matters: a lamp at the end of three
+    hops sees the sum, not just its own tail."""
+    g_watts = peak_watts() if g_watts is None else g_watts
+    own = {}
+    for seg in TOPO:
+        w = _seg_load_w(seg, g_watts)
+        i = w / BUS_V
+        res = 2 * seg["length_m"] * WIRE["awg_ohm_per_m"][str(seg["awg"])]
+        own[seg["id"]] = dict(seg=seg, load_w=w, amps=i, ohm=res,
+                              v_drop=i * res, loss_w=i * i * res)
+
+    rows = []
+    for seg in TOPO:
+        chain = _chain(seg["id"])
+        cum_v = sum(own[s]["v_drop"] for s in chain)
+        o = own[seg["id"]]
+        rows.append(dict(
+            id=seg["id"], label=seg["label"], cable=seg.get("cable", ""),
+            note=seg.get("note", ""), estimate=seg.get("estimate", False),
+            awg=seg["awg"], length_m=seg["length_m"], depth=len(chain) - 1,
+            load_w=o["load_w"], amps=o["amps"], loss_w=o["loss_w"],
+            v_drop=o["v_drop"], drop_pct=100 * o["v_drop"] / BUS_V,
+            cum_v=cum_v, cum_pct=100 * cum_v / BUS_V,
+            v_at_end=BUS_V - cum_v,
+            need_awg=_need_awg(seg, o["amps"], chain, own),
+            budget_pct=_budget(seg["id"]),
+            ok=100 * cum_v / BUS_V <= _budget(seg["id"]),
+            is_leaf=bool(seg.get("device"))))
+    return rows
+
+
+def _budget(seg_id):
+    """Addressable strip needs a tight budget; plain lamps tolerate more."""
+    b = WIRE["drop_budget"]
+    return b["strict_pct"] if seg_id in b["strict_ids"] else b["relaxed_pct"]
+
+
+def cable_tree_operating():
+    """Same tree at the normal working point, not the nameplate peak.
+
+    Sizing and fusing use the peak; what the eye actually sees is this."""
+    _, res = composite_night()
+    r = res["normal"]
+    return cable_tree({"g1": r["g1"], "g2": r["g2"], "g3a": r["g3a"]})
+
+
+def _need_awg(seg, amps, chain, own):
+    """Thinnest gauge for THIS segment that keeps the whole chain under the limit."""
+    upstream = sum(own[s]["v_drop"] for s in chain[:-1])
+    budget = _budget(seg["id"]) / 100 * BUS_V - upstream
+    if budget <= 0:
+        return None
+    ok = [int(a) for a, ohm in WIRE["awg_ohm_per_m"].items()
+          if amps * 2 * seg["length_m"] * ohm <= budget]
+    return max(ok) if ok else None
+
+
+def fuses(g_watts=None):
+    """Fuse rating per group + main, from real current with a safety factor."""
+    g_watts = peak_watts() if g_watts is None else g_watts
+    ladder = FUSE["standard_a"]
+
+    def pick(a):
+        need = a * FUSE["derate"]
+        return next((x for x in ladder if x >= need), ladder[-1])
+
+    out = [dict(id="main", label="Головний, на магістралі",
+                amps=sum(g_watts.values()) / BUS_V,
+                rating=pick(sum(g_watts.values()) / BUS_V))]
+    for k, g in GROUPS.items():
+        a = g_watts[k] / BUS_V
+        out.append(dict(id=k, label=g["label"], amps=a, rating=pick(a)))
+    return out
+
+
 def run_case(c):
     g = group_watts(c)
     runs = wiring_losses(g)
