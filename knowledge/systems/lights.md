@@ -19,7 +19,7 @@ generated: { by: "process:site-build" }
 * [Анімація замість заливки — стрічка світить не вся одразу](/decisions/animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)
 * [Сходи подіуму — наша лінія чи автономні сонячні](/decisions/skhody-podiumu-nasha-liniia-chy-avtonomni-soniachni.md)
 * [Колір габаритних вогнів — жовтий чи червоний](/decisions/kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
-* [Неон WS2811 ще не замовлено](/decisions/neon-ws2811-shche-ne-zamovleno.md)
+* [Неон: брати WS2815 12В із підтвердженими +60°C](/decisions/neon-braty-ws2815-12v-iz-pidtverdzhenymy-60-c.md)
 * [Світло вмикає фотореле, а не таймер](/decisions/svitlo-vmykaie-fotorele-a-ne-taimer.md)
 * [Три групи — три реле, аварійна на своєму каналі](/decisions/try-hrupy-try-rele-avariina-na-svoiemu-kanali.md)
 * [Просадку рахуємо деревом, а не по лініях](/decisions/prosadku-rakhuiemo-derevom-a-ne-po-liniiakh.md)

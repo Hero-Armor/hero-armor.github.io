@@ -17,7 +17,7 @@
 * [Анімація замість заливки — стрічка світить не вся одразу](animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)
 * [Сходи подіуму — наша лінія чи автономні сонячні](skhody-podiumu-nasha-liniia-chy-avtonomni-soniachni.md)
 * [Колір габаритних вогнів — жовтий чи червоний](kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
-* [Неон WS2811 ще не замовлено](neon-ws2811-shche-ne-zamovleno.md)
+* [Неон: брати WS2815 12В із підтвердженими +60°C](neon-braty-ws2815-12v-iz-pidtverdzhenymy-60-c.md)
 * [Живлення — окремий компонент, одна станція на все](zhyvlennia-okremyi-komponent-odna-stantsiia-na-vse.md)
 * [Станція змінна за задумом, а не в аварії](stantsiia-zminna-za-zadumom-a-ne-v-avarii.md)
 * [Панелі — несуча частина, а не страховка](paneli-nesucha-chastyna-a-ne-strakhovka.md)
