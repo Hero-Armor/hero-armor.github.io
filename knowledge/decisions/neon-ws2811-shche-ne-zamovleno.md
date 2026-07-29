@@ -4,12 +4,12 @@ title: "Неон WS2811 ще не замовлено"
 description: "BTF-LIGHTING відхилено по температурі, ALITOVE — по напрузі і температурі."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-decided_by: "volodymyr"
-decision_zone: "конструкція/креслення"
-verified: { by: "human:volodymyr", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md) · вирішив: **Володимир (конструктор)** (конструкція/креслення)
+Система: [Світло](/systems/lights.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

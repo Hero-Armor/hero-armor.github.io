@@ -4,12 +4,12 @@ title: "Прожектори — MR16 без стабілізатора (voltage
 description: "Головний критерій вибору лампи: при зниженні напруги вона має РЕАЛЬНО економити ватти, а не тримати ту саму яскравість."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-decided_by: "liza"
-decision_zone: "команда/фінанси"
-verified: { by: "human:liza", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md) · вирішив: **Ліза** (команда/фінанси)
+Система: [Світло](/systems/lights.md) · вирішив: **Іван** (електрика)
 
 # Чому
 
