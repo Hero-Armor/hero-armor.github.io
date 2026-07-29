@@ -13,3 +13,7 @@ generated: { by: "process:site-build" }
 # Задачі
 
 * [Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу](/tasks/vikno-v-broni-pid-radar-60-60-mm-abs-akryl-sklotkanyna-bez-m.md) — до роботи
+
+# Закупівля
+
+* [Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)](/bom/svitlovidbyvni-strichky-poz-3-4-bili-5-zhovta.md) — ~$20, купити

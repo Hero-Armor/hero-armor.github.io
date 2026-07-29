@@ -94,6 +94,9 @@
   .flag p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
   .flag .why { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
                text-transform: uppercase; color: var(--warn); }
+  .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: .9rem; }
+  .figs .fig img { width: 100%; min-width: 0; height: auto; border-radius: 4px; display: block; }
+  .figs .fig p { font-size: .8rem; color: var(--ink-2); margin: .5rem 0 0; }
 </style>
 
 
@@ -153,6 +156,8 @@
   </table>
   </div>
   <p class="fig-cap">{{WIRING_CAPTION}}</p>
+
+  {{FIGURES}}
 
   <h2>Файли проєкту</h2>
   <p class="files">У репо <code>lights/model/</code>:

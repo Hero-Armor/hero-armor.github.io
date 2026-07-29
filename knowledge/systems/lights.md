@@ -72,3 +72,5 @@ generated: { by: "process:site-build" }
 * [Кабель: Щит → коробка аварійної (Гр.3А)](/bom/kabel-shchyt-korobka-avariinoi-hr-3a.md) — —, купити
 * [Кабель: Коробка → габарити по кутах](/bom/kabel-korobka-habaryty-po-kutakh.md) — —, купити
 * [Кабель: Коробка → лампи сходів](/bom/kabel-korobka-lampy-skhodiv.md) — —, купити
+* [Блок запобіжників Blue Sea 5026 (12 кіл)](/bom/blok-zapobizhnykiv-blue-sea-5026-12-kil.md) — ~$40, купити
+* [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — ~$30, купити

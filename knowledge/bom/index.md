@@ -52,3 +52,7 @@
 * [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - —, купити
 * [Кабель: Коробка → габарити по кутах](kabel-korobka-habaryty-po-kutakh.md) - —, купити
 * [Кабель: Коробка → лампи сходів](kabel-korobka-lampy-skhodiv.md) - —, купити
+* [Блок запобіжників Blue Sea 5026 (12 кіл)](blok-zapobizhnykiv-blue-sea-5026-12-kil.md) - ~$40, купити
+* [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - ~$25, купити
+* [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - ~$30, купити
+* [Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)](svitlovidbyvni-strichky-poz-3-4-bili-5-zhovta.md) - ~$20, купити

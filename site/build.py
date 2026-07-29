@@ -99,6 +99,23 @@ def usd(price_str):
     return float(mm.group(1)) if mm else 0.0
 
 
+def figures_html(key):
+    """Креслення з картки системи — одна домівка (site/assets) для всіх сторінок.
+
+    Кастомні сторінки (звук/світло/живлення) раніше не показували `figures`
+    взагалі: їх малює лише універсальний шаблон. Через це прийняті креслення
+    лежали в assets, але на сторінку не потрапляли.
+    """
+    reg = next((c for c in SYSTEMS_REG if c["key"] == key), None)
+    figs = (reg or {}).get("figures") or []
+    if not figs:
+        return ""
+    cards = "\n".join(
+        f'    <div class="fig"><img src="{f[0]}" alt="{esc(f[1])}" loading="lazy">'
+        f'<p>{esc(f[1])}</p></div>' for f in figs)
+    return f'  <h2>Креслення</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
+
+
 def bom_rows_html():
     rows = []
     for b in BOM:
@@ -571,6 +588,7 @@ def build():
              f"{day['margin_avg']:+.0f} дБ вдень, {night['margin_avg']:+.0f} на гучній вечірці"),
         tile("Детекція", f"{sn['range_m']:.1f}", "м", "стабільно вдень/вночі/в бурю", "good"),
     ]
+    audio = audio.replace("{{FIGURES}}", figures_html("audio"))
     audio = audio.replace("{{TILES_HTML}}", "\n".join(audio_tiles))
 
     decs = "\n".join(
@@ -691,6 +709,7 @@ def build():
              + ("наявний кабель не тягне на 12 В" if bad_runs else "у нормі"),
              "crit" if bad_runs else "good"),
     ]
+    lights = lights.replace("{{FIGURES}}", figures_html("lights"))
     lights = lights.replace("{{TILES_HTML}}", "\n".join(lights_tiles))
 
     l_decs = [d for d in DECISIONS if d["system"] == "lights"]
@@ -952,6 +971,7 @@ def build():
         tile("Зарядка на базі", f"{p_chosen['recharge_h']:.1f}", "год",
              f"{esc(st_name)} від розетки — обіг швидкий, але станцій треба дві"),
     ]
+    solar_page = solar_page.replace("{{FIGURES}}", figures_html("solar"))
     solar_page = solar_page.replace("{{TILES_HTML}}", "\n".join(solar_tiles))
 
     d_rows, d_labels = [], {"lights": "Світло", "audio": "Звук",
@@ -1132,12 +1152,11 @@ def build():
         if c_bom:
             b_rows = []
             for b in c_bom:
-                cls, label = PILL[b["status"]]
-                label = PILL_OVERRIDES.get(b["item"], label)
+                cls, label = FLOW.get(b.get("flow"), PILL[b["status"]])
                 item = f'<a href="{b["url"]}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"])
                 b_rows.append(f'      <tr><td>{item}</td><td class="num">{b["qty"]}</td>'
                               f'<td class="num">{b["price"]}</td>'
-                              f'<td><span class="pill {b["status"]}">{label}</span></td>'
+                              f'<td><span class="pill {cls}">{label}</span></td>'
                               f'<td>{esc(b["note"])}</td></tr>')
             sections.append('  <h2>Закупівля</h2>\n  <div class="tbl-wrap">\n  <table>\n'
                             '    <thead><tr><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>\n'

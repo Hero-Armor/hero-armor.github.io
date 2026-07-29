@@ -7,11 +7,11 @@
       "Poly-Planar MA-3013, пара",
       "Herdio HMS60 3\", пара"
     ],
-    "status": "ordered",
+    "status": "delivered",
     "deliver_to": "la",
     "url": "https://www.amazon.com/dp/B00197V836",
-    "note": "кандидати на A/B тест звуку",
+    "note": "кандидати на A/B тест звуку · Marcel підтвердив отримання 27.07",
     "system": "audio",
-    "flow": "ordered"
+    "flow": "arrived"
   }
 ]
