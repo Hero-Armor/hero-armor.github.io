@@ -19,6 +19,9 @@ generated: { by: "process:site-build" }
 * [Скільки станцій купуємо](/decisions/skilky-stantsii-kupuiemo.md)
 * [Паспортні числа станцій треба звірити](/decisions/pasportni-chysla-stantsii-treba-zviryty.md)
 * [Станція і масив не фіксуються заздалегідь](/decisions/stantsiia-i-masyv-ne-fiksuiutsia-zazdalehid.md)
+* [12-вольтовий вихід EcoFlow тримає лише 126 Вт — це вузьке місце](/decisions/12-voltovyi-vykhid-ecoflow-trymaie-lyshe-126-vt-tse-vuzke-mi.md)
+* [Станції гріються: межа +45°C, а на плайї 40-45°C](/decisions/stantsii-hriiutsia-mezha-45-c-a-na-plaii-40-45-c.md)
+* [Нічне мале навантаження станцію не присипляє](/decisions/nichne-male-navantazhennia-stantsiiu-ne-prysypliaie.md)
 
 # Задачі
 

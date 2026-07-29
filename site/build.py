@@ -1036,6 +1036,15 @@ def build():
             f'<td class="num"{b_style}>{o["balance_wh"]:+.0f} Wh</td>'
             f'<td class="num">{o["nights_no_sun"]:.1f} діб</td>'
             f'<td class="num">{o["recharge_h"]:.1f} год</td></tr>')
+    # перевірка «чи пролізе пік по 12 В» — вузьке місце, знайдене 29.07
+    for i, o in enumerate(p_opts):
+        hr = pw.dc12_headroom(o["name"])
+        badge = (f'<span class="pill have">{hr["limit_w"]:.0f} Вт через {hr["port"]}</span>'
+                 if hr["fits"] else
+                 f'<span class="pill add">лише {hr["limit_w"]:.0f} Вт по 12 В — пік не пролізе</span>')
+        st_rows[i] = st_rows[i].replace("</tr>", f"<td>{badge}</td></tr>")
+    solar_page = solar_page.replace(
+        "<th>Зарядка на базі</th>", "<th>Зарядка на базі</th><th>12 В вихід</th>")
     solar_page = solar_page.replace("{{STATION_ROWS}}", "\n".join(st_rows))
     solar_page = solar_page.replace("{{STATION_CAPTION}}",
         f'Рахунок при орієнтовному масиві {PP["panel"]["chosen_w"]} Вт і композитній добі {p_demand["total"]:.0f} Wh. '

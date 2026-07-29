@@ -5,22 +5,46 @@
     "River 2 Pro": {
       "wh": 768,
       "solar_in_w": 220,
-      "ac_in_w": 940
+      "ac_in_w": 940,
+      "solar_in_v": "11-50V 13A",
+      "dc12_car_w": 126,
+      "dc12_car_a": 10,
+      "dc5521_w": 38,
+      "dc12_total_w": 126,
+      "anderson_w": 0
     },
     "Delta 2": {
       "wh": 1024,
       "solar_in_w": 500,
-      "ac_in_w": 1200
+      "ac_in_w": 1200,
+      "solar_in_v": "11-60V 15A",
+      "dc12_car_w": 126,
+      "dc12_car_a": 10,
+      "dc5521_w": 38,
+      "dc12_total_w": 126,
+      "anderson_w": 0
     },
     "Delta 2 Max": {
       "wh": 2048,
       "solar_in_w": 1000,
-      "ac_in_w": 1800
+      "ac_in_w": 1800,
+      "solar_in_v": "11-60V 15A ×2",
+      "dc12_car_w": 126,
+      "dc12_car_a": 10,
+      "dc5521_w": 38,
+      "dc12_total_w": 126,
+      "anderson_w": 0
     },
     "Delta Pro": {
       "wh": 3600,
       "solar_in_w": 1600,
-      "ac_in_w": 1800
+      "ac_in_w": 1800,
+      "solar_in_v": "11-150V 15A",
+      "dc12_car_w": 126,
+      "dc12_car_a": 10,
+      "dc5521_w": 38,
+      "dc12_total_w": 126,
+      "anderson_w": 378
     }
   },
   "station_chosen": "Delta 2 Max",
@@ -68,5 +92,25 @@
       "note": "вартовий говорить голосом Захара"
     }
   ],
-  "station_fixed": false
+  "station_fixed": false,
+  "stations_verified": {
+    "at": "2026-07-29",
+    "source": "офіційні PDF-мануали EcoFlow (User Manual V1.0 кожної моделі)",
+    "note": "Питання «паспортні числа звірити» закрите. Ключове відкриття: 12-вольтовий вихід у ВСІХ моделей обмежений 126 Вт / 10 А (гніздо прикурювача ділить ліміт із двома DC5521 по 38 Вт). Виняток — Delta Pro: порт Anderson 12.6В 30А = 378 Вт."
+  },
+  "temperature_limit": {
+    "discharge_c": [
+      -10,
+      45
+    ],
+    "charge_c": [
+      0,
+      45
+    ],
+    "note": "Усі чотири моделі: розряд і заряд максимум +45°C. Повітря на плайї 40-45°C, у корпусі на сонці більше. Тінь і підставка обовʼязкові, інакше станція ріже потужність або йде в захист."
+  },
+  "dc_timeout": {
+    "auto_off": false,
+    "note": "Мануали Delta 2 / 2 Max / Pro: «After the 12V DC output power button is turned on, the product will not shut off automatically». Автовимкнення через 2 год стосується лише випадку, коли ВСІ виходи вимкнені й нема навантаження. Тобто нічне мале навантаження станцію не присипляє — але кнопку DC треба тримати увімкненою."
+  }
 }

@@ -96,6 +96,27 @@ def run_case(c, panel_w=None, station_name=None):
         recharge_h=usable / min(st["ac_in_w"], P["base"]["ac_charge_w"]))
 
 
+def dc12_headroom(station_name=None, peak_w=None):
+    """Чи влізає піковий струм світла у 12-вольтовий вихід станції.
+
+    Відкрилось при звірці мануалів 29.07: у ВСІХ моделей EcoFlow 12 В обмежені
+    126 Вт / 10 А (гніздо прикурювача ділить ліміт із двома DC5521 по 38 Вт).
+    Ємність станції на це не впливає. Виняток — Delta Pro: порт Anderson
+    12.6 В 30 А = 378 Вт. Тому вибір станції тепер залежить не лише від Wh,
+    а й від того, чи пролізе пік по 12 В.
+    """
+    name, st = station(station_name)
+    limit = max(st.get("dc12_total_w", 126), st.get("anderson_w", 0))
+    if peak_w is None:
+        import lights_node_model as _lm
+        _, res = _lm.composite_night()
+        peak_w = max(r["draw_w"] for r in res.values())
+    return dict(station=name, peak_w=peak_w, limit_w=limit,
+                port="Anderson" if st.get("anderson_w") else "12V DC (прикурювач)",
+                fits=peak_w <= limit, headroom_w=limit - peak_w,
+                peak_a=peak_w / 12.0, limit_a=limit / 12.6)
+
+
 def break_even_panel_w(light_case=None):
     """Array size that exactly covers a day — before the station's input ceiling."""
     d = demand(light_case)
