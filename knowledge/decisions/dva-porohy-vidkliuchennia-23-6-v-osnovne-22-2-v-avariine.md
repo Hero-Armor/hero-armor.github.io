@@ -4,10 +4,12 @@ title: "Два пороги відключення: 23.6 В основне, 22.2
 description: "Реле ICSTATION рубають навантаження по напрузі АКБ, і не одним порогом, а двома."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "volodymyr"
+decision_zone: "конструкція/креслення"
+verified: { by: "human:volodymyr", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Володимир (конструктор)** (конструкція/креслення)
 
 # Чому
 

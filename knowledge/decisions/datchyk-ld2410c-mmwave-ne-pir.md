@@ -4,10 +4,12 @@ title: "Датчик — LD2410C mmWave, не PIR"
 description: "PIR сліпне при 35–43°C (радіус 3 м → 0.45 м): робот мовчав би весь день."
 tags: ["audio"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Аудіо](/systems/audio.md)
+Система: [Аудіо](/systems/audio.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

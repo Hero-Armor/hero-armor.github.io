@@ -4,10 +4,12 @@ title: "Світло вмикає фотореле, а не таймер"
 description: "Ілюмінацію треба бачити щойно починає темніти, тому вмикання прив'язане до реальної освітленості, а не до годинника."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

@@ -4,10 +4,12 @@ title: "Без підвищувача до 16В — 12V вистачає"
 description: "12V/4Ω BTL дає 18 Вт піків, запас над шумом плайї вдень +9 дБ."
 tags: ["audio"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Аудіо](/systems/audio.md)
+Система: [Аудіо](/systems/audio.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

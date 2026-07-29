@@ -4,10 +4,12 @@ title: "Шина 24 В, а не 12 В"
 description: "Лінії до стійок і подіуму довгі (9–14 м)."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "volodymyr"
+decision_zone: "конструкція/креслення"
+verified: { by: "human:volodymyr", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Володимир (конструктор)** (конструкція/креслення)
 
 # Чому
 

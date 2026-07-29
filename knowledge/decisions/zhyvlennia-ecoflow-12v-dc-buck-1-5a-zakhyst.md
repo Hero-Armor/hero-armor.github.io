@@ -4,10 +4,12 @@ title: "Живлення: EcoFlow 12V DC, buck ≥1.5A, захист"
 description: "Джерело — 12V DC-порт EcoFlow (готовий BMS, сонце, USB для іншого): амп напряму (запобіжник 3А + 1000 µФ поруч); ESP32/ЦАП/радар — від buck 12→5В з LC-фільтром."
 tags: ["audio"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "liza"
+decision_zone: "команда/фінанси"
+verified: { by: "human:liza", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Аудіо](/systems/audio.md)
+Система: [Аудіо](/systems/audio.md) · вирішив: **Ліза** (команда/фінанси)
 
 # Чому
 

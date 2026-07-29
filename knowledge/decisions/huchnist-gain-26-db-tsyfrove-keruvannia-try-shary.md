@@ -4,10 +4,12 @@ title: "Гучність: gain 26 дБ + цифрове керування, тр
 description: "Strap 26 дБ = кліпінг від −13.9 dBFS: DAC працює гаряче (низький шум), а прошивка керує гучністю."
 tags: ["audio"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "liza"
+decision_zone: "команда/фінанси"
+verified: { by: "human:liza", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Аудіо](/systems/audio.md)
+Система: [Аудіо](/systems/audio.md) · вирішив: **Ліза** (команда/фінанси)
 
 # Чому
 

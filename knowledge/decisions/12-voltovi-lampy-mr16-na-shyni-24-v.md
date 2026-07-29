@@ -4,10 +4,12 @@ title: "12-вольтові лампи MR16 на шині 24 В"
 description: "Прожектори живляться через ШІМ-диммер SUPERNIGHT 12-24 В: середня напруга виходить потрібна, але імпульси на лампі лишаються 24-вольтові."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

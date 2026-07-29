@@ -4,10 +4,12 @@ title: "Номінали запобіжників — з моделі, а не �
 description: "Робочий струм × півтора запасу, округлено вгору до стандартного ряду: головний 40 А, прожектори 5 А, декор 20 А, аварійна 7.5 А."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

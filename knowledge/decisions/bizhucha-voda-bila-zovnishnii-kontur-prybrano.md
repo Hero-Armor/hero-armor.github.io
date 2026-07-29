@@ -4,10 +4,12 @@ title: "«Біжуча вода» — біла, зовнішній контур 
 description: "Фінальне рішення по візуалу: тільки зірка з 8 променів по 0.95 м плюс внутрішнє коло 2.17 м, білим кольором (у кресленні було жовтим і з зовнішнім контуром)."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "liza"
+decision_zone: "команда/фінанси"
+verified: { by: "human:liza", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Ліза** (команда/фінанси)
 
 # Чому
 

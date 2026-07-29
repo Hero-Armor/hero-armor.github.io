@@ -4,10 +4,12 @@ title: "Стелю масиву задає не бюджет, а вхід ста
 description: "Скільки панелей не постав, станція візьме рівно стільки, скільки дозволяє її сонячний вхід: River 2 Pro — 220 Вт, Delta 2 — 500, Delta 2 Max — 1000."
 tags: ["solar"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "liza"
+decision_zone: "команда/фінанси"
+verified: { by: "human:liza", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Живлення](/systems/solar.md)
+Система: [Живлення](/systems/solar.md) · вирішив: **Ліза** (команда/фінанси)
 
 # Чому
 

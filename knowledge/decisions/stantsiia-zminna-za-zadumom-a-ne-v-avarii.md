@@ -4,10 +4,12 @@ title: "Станція змінна за задумом, а не в аварії
 description: "Сіла станція або стали панелі — її знімають, ставлять заряджену, а цю везуть на базу під розетку."
 tags: ["solar"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Живлення](/systems/solar.md)
+Система: [Живлення](/systems/solar.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

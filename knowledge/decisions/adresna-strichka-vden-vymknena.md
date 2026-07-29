@@ -4,10 +4,12 @@ title: "Адресна стрічка вдень вимкнена"
 description: "Чипи WS2811 перегріваються під прямим сонцем плайї (40–45 °C у повітрі, сама стрічка до +60–70 °C), а вдень анімації однаково не видно."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

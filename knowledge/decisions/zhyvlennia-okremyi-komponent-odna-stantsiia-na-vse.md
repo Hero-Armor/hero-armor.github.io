@@ -4,10 +4,12 @@ title: "Живлення — окремий компонент, одна ста�
 description: "Світло і звук — різні вузли з різними режимами, але живляться від однієї станції EcoFlow."
 tags: ["solar"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Живлення](/systems/solar.md)
+Система: [Живлення](/systems/solar.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

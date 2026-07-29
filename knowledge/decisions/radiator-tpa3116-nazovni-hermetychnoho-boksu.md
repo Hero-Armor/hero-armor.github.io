@@ -4,10 +4,12 @@ title: "Радіатор TPA3116 — назовні герметичного б�
 description: "У закритому боксі на сонці без зовнішнього радіатора кристал виходить на 150–160°C — захисне відключення в найлюдніші години."
 tags: ["audio"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Аудіо](/systems/audio.md)
+Система: [Аудіо](/systems/audio.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

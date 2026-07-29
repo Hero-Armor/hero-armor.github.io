@@ -4,10 +4,12 @@ title: "Стрічку обмежуємо по струму в прошивці"
 description: "Єдине місце, де просадка реально критична — адресна стрічка: при глибокій просадці поїде і яскравість, і колір по довжині."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md)
+Система: [Світло](/systems/lights.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

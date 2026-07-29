@@ -41,6 +41,10 @@ TASKS = json.loads((DATA / "tasks.json").read_text())
 ORDERS = json.loads((DATA / "orders.json").read_text())
 ADDR = json.loads((DATA / "addresses.json").read_text())
 SYSTEMS_REG = json.loads((DATA / "systems.json").read_text())
+
+# Хто вирішує. Єдиного «головного» немає: кожен головний у своїй зоні.
+DECIDERS = {"ivan": "Іван", "liza": "Ліза", "volodymyr": "Володимир (конструктор)",
+            "pavlo": "Павло", "team": "команда"}
 PROJ = json.loads((DATA / "project.json").read_text())
 PLAYBOOKS = json.loads((DATA / "playbooks.json").read_text())
 PRIVATE_FILE = DATA / "private" / "private.json"
@@ -374,8 +378,13 @@ def build_okf():
             "type": "Engineering Decision", "title": d["title"],
             "description": re.split(r"(?<=[.!?])\s+", md_text(d["why"]))[0][:200],
             "tags": [d["system"]], "generated": gen,
-            "verified": {"by": "human:gumanist", "at": "2026-07-27T00:00:00Z"},
-        }, f"Система: {clink(d['system'])}\n\n# Чому\n\n{md_text(d['why'])}")
+            "decided_by": d.get("decided_by", "team"),
+            "decision_zone": d.get("decision_zone", ""),
+            "verified": {"by": f"human:{d.get('decided_by', 'gumanist')}",
+                         "at": "2026-07-27T00:00:00Z"},
+        }, f"Система: {clink(d['system'])} · вирішив: **{DECIDERS.get(d.get('decided_by'), d.get('decided_by', '—'))}**"
+           f"{' (' + d['decision_zone'] + ')' if d.get('decision_zone') else ''}"
+           f"\n\n# Чому\n\n{md_text(d['why'])}")
         dec_items.append(f"[{d['title']}]({s}.md)")
     index_md("decisions/index.md", "Інженерні рішення", [("Рішення", dec_items)])
 

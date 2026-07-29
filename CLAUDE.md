@@ -14,6 +14,12 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 - `orders.json` — замовлення · `addresses.json` — логістика LA→SF
 - Кожен запис має `system`: `audio | solar | lights | armor | project`
 
+**Перед публікацією:** `python3 site/guard.py` — ловить секрети, витік приватного
+в публічне, правку build-продуктів руками і записи без системи.
+**Місток «зібране → data»:** `/root/tools/hero_armor_promote.py scan|list|accept` —
+знаходить у чатах схоже на рішення і кладе В ЧЕРГУ на підтвердження; авто нічого
+не публікується.
+
 **НІКОЛИ не редагуй HTML дашборда руками.** Правиш `data/*.json` →
 `cd site && python3 build.py` → перепублікувати артефакти (ті самі URL).
 Числа на сторінках рахують тільки моделі (`audio_node_model.py`, `lights_node_model.py`,

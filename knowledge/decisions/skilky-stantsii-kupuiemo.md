@@ -4,10 +4,12 @@ title: "Скільки станцій купуємо"
 description: "Схема з підміною має сенс тільки якщо станцій дві."
 tags: ["solar"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Живлення](/systems/solar.md)
+Система: [Живлення](/systems/solar.md) · вирішив: **Іван** (електрика)
 
 # Чому
 

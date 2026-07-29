@@ -4,10 +4,12 @@ title: "Звук — моно: один динамік, другий з пари
 description: "Простіше і надійніше: моно-плата, один кабель, а другий MA-3013 лежить готовим запасом (філософія «міняй, не паяй»)."
 tags: ["audio"]
 generated: { by: "process:site-build" }
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+decided_by: "ivan"
+decision_zone: "електрика"
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Аудіо](/systems/audio.md)
+Система: [Аудіо](/systems/audio.md) · вирішив: **Іван** (електрика)
 
 # Чому
 
