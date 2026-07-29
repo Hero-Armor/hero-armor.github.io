@@ -27,6 +27,7 @@ generated: { by: "process:site-build" }
 * [Номінали запобіжників — з моделі, а не навмання](/decisions/nominaly-zapobizhnykiv-z-modeli-a-ne-navmannia.md)
 * [Кабель, куплений під 24 В, треба доповнити під 12 В](/decisions/kabel-kuplenyi-pid-24-v-treba-dopovnyty-pid-12-v.md)
 * [Довжини кабелів — прикидки, не з креслень](/decisions/dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
+* [Реальний замір удвічі менший за модель — звірити стрічку](/decisions/realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
 
 # Задачі
 

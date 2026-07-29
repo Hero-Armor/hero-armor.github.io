@@ -32,3 +32,4 @@
 * [Кабель, куплений під 24 В, треба доповнити під 12 В](kabel-kuplenyi-pid-24-v-treba-dopovnyty-pid-12-v.md)
 * [Довжини кабелів — прикидки, не з креслень](dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
 * [Станція і масив не фіксуються заздалегідь](stantsiia-i-masyv-ne-fiksuiutsia-zazdalehid.md)
+* [Реальний замір удвічі менший за модель — звірити стрічку](realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
