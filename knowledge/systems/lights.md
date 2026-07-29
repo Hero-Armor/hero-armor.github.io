@@ -28,6 +28,8 @@ generated: { by: "process:site-build" }
 * [Кабель, куплений під 24 В, треба доповнити під 12 В](/decisions/kabel-kuplenyi-pid-24-v-treba-dopovnyty-pid-12-v.md)
 * [Довжини кабелів — прикидки, не з креслень](/decisions/dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
 * [Реальний замір удвічі менший за модель — звірити стрічку](/decisions/realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
+* [Коло чи восьмикутник — пропозиція конструктора не закрита](/decisions/kolo-chy-vosmykutnyk-propozytsiia-konstruktora-ne-zakryta.md)
+* [Стрічка мусить тримати +60°C — попередні відхилені](/decisions/strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
 
 # Задачі
 
@@ -40,6 +42,8 @@ generated: { by: "process:site-build" }
 * [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](/tasks/dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) — до роботи
 * [Заміряти реальні довжини траси після складання подіуму](/tasks/zamiriaty-realni-dovzhyny-trasy-pislia-skladannia-podiumu.md) — чекаємо
 * [Запитати конструктора про зовнішній периметр подіуму](/tasks/zapytaty-konstruktora-pro-zovnishnii-perymetr-podiumu.md) — до роботи
+* [Заміряти трубу кріплення прожектора (діаметр, довжина різьби) для Володимира](/tasks/zamiriaty-trubu-kriplennia-prozhektora-diametr-dovzhyna-rizb.md) — до роботи
+* [Відповісти Володимиру по просадці 12В — тест уже зроблено](/tasks/vidpovisty-volodymyru-po-prosadtsi-12v-test-uzhe-zrobleno.md) — до роботи
 
 # Закупівля
 

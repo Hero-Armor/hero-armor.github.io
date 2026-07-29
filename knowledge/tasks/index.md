@@ -25,3 +25,5 @@
 * [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) - до роботи
 * [Заміряти реальні довжини траси після складання подіуму](zamiriaty-realni-dovzhyny-trasy-pislia-skladannia-podiumu.md) - чекаємо
 * [Запитати конструктора про зовнішній периметр подіуму](zapytaty-konstruktora-pro-zovnishnii-perymetr-podiumu.md) - до роботи
+* [Заміряти трубу кріплення прожектора (діаметр, довжина різьби) для Володимира](zamiriaty-trubu-kriplennia-prozhektora-diametr-dovzhyna-rizb.md) - до роботи
+* [Відповісти Володимиру по просадці 12В — тест уже зроблено](vidpovisty-volodymyru-po-prosadtsi-12v-test-uzhe-zrobleno.md) - до роботи

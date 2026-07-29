@@ -33,3 +33,6 @@
 * [Довжини кабелів — прикидки, не з креслень](dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
 * [Станція і масив не фіксуються заздалегідь](stantsiia-i-masyv-ne-fiksuiutsia-zazdalehid.md)
 * [Реальний замір удвічі менший за модель — звірити стрічку](realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
+* [Коло чи восьмикутник — пропозиція конструктора не закрита](kolo-chy-vosmykutnyk-propozytsiia-konstruktora-ne-zakryta.md)
+* [Стрічка мусить тримати +60°C — попередні відхилені](strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
+* [Помітність конструкції вночі — габарити або світловідбивна стрічка](pomitnist-konstruktsii-vnochi-habaryty-abo-svitlovidbyvna-st.md)
