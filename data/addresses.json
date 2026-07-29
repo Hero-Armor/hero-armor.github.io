@@ -1,6 +1,6 @@
 {
   "current": "la",
-  "move_date": null,
+  "move_date": "2026-08-04",
   "locations": {
     "la": { "label": "Los Angeles", "period": "зараз" },
     "sf": { "label": "San Francisco", "period": "після переїзду, фінальний стейджинг перед Burn" }
