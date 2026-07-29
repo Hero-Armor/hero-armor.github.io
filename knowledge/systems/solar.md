@@ -41,7 +41,7 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [EcoFlow (12V DC-порт)](/bom/ecoflow-12v-dc-port.md) — —, є
+* [EcoFlow (12V DC-порт)](/bom/ecoflow-12v-dc-port.md) — —, купити
 * [Сонячні панелі для масиву (потужність не обрана)](/bom/soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — $149, купити
 * [Станції EcoFlow ×2 (модель не обрана)](/bom/stantsii-ecoflow-2-model-ne-obrana.md) — $1099/шт, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити

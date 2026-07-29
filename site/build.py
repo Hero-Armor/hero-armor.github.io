@@ -316,7 +316,9 @@ def build_okf():
             parts.append(f"\n# {heading}\n" if heading != title else "")
             parts.extend(f"* {it}" for it in items)
             parts.append("")
-        (okf / path).write_text("\n".join(parts).rstrip() + "\n")
+        p = okf / path
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text("\n".join(parts).rstrip() + "\n")
 
     # ---- project + event ----
     write("project.md", {

@@ -5,10 +5,10 @@ description: "Лампи на корпусі робота: голова 4, пл�
 tags: ["lights"]
 quantity: "8+2"
 price: "—"
-procurement_status: "have"
+procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Лампи на корпусі робота: голова 4, плечі 2, груди, коліно, стопа. IP65
 
-Система: [Світло](/systems/lights.md) · статус: **є** · ціна — · к-сть 8+2
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть 8+2

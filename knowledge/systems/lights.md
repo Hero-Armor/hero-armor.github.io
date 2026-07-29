@@ -50,14 +50,14 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [Gardencoin прожектор + MR16 4000K](/bom/gardencoin-prozhektor-mr16-4000k.md) — $43/уп, є
-* [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — —, є
-* [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — —, є
-* [Nilight габаритні вогні 3 Вт](/bom/nilight-habarytni-vohni-3-vt.md) — $18.50, є
-* [Landscapestation лампи сходів 1 Вт](/bom/landscapestation-lampy-skhodiv-1-vt.md) — $100/уп, є
-* [Неон WS2811 12 В силіконовий](/bom/neon-ws2811-12-v-sylikonovyi.md) — $47, є
-* [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, є
-* [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $12, є
+* [Gardencoin прожектор + MR16 4000K](/bom/gardencoin-prozhektor-mr16-4000k.md) — $43/уп, купити
+* [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — —, купити
+* [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — —, купити
+* [Nilight габаритні вогні 3 Вт](/bom/nilight-habarytni-vohni-3-vt.md) — $18.50, купити
+* [Landscapestation лампи сходів 1 Вт](/bom/landscapestation-lampy-skhodiv-1-vt.md) — $100/уп, купити
+* [Неон WS2811 12 В силіконовий](/bom/neon-ws2811-12-v-sylikonovyi.md) — $47, купити
+* [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
+* [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $12, купити
 * [Щит-бокс із тримачами запобіжників](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv.md) — —, купити
 * [Запобіжники ATO/ATC, набір](/bom/zapobizhnyky-ato-atc-nabir.md) — —, купити
 * [Фотореле (сутінкове) 12 В](/bom/fotorele-sutinkove-12-v.md) — —, купити

@@ -30,13 +30,13 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [ESP32 WROOM-32 DevKit](/bom/esp32-wroom-32-devkit.md) — $17/3шт, є
-* [PCM5102A (GY-PCM5102)](/bom/pcm5102a-gy-pcm5102.md) — $12/3шт, є
-* [microSD SPI модуль](/bom/microsd-spi-modul.md) — $7/5шт, є
-* [SanDisk 32GB Class 10](/bom/sandisk-32gb-class-10.md) — ~$10, є
-* [TPA3116D2 Mono (WINGONEER)](/bom/tpa3116d2-mono-wingoneer.md) — $14/2шт, є
-* [Poly-Planar MA-3013, пара](/bom/poly-planar-ma-3013-para.md) — $70, є
-* [Herdio HMS60 3", пара](/bom/herdio-hms60-3-para.md) — $32, є
+* [ESP32 WROOM-32 DevKit](/bom/esp32-wroom-32-devkit.md) — $17/3шт, купити
+* [PCM5102A (GY-PCM5102)](/bom/pcm5102a-gy-pcm5102.md) — $12/3шт, купити
+* [microSD SPI модуль](/bom/microsd-spi-modul.md) — $7/5шт, купити
+* [SanDisk 32GB Class 10](/bom/sandisk-32gb-class-10.md) — ~$10, купити
+* [TPA3116D2 Mono (WINGONEER)](/bom/tpa3116d2-mono-wingoneer.md) — $14/2шт, купити
+* [Poly-Planar MA-3013, пара](/bom/poly-planar-ma-3013-para.md) — $70, купити
+* [Herdio HMS60 3", пара](/bom/herdio-hms60-3-para.md) — $32, купити
 * [LD2410C](/bom/ld2410c.md) — $20/3шт, купити
 * [Buck 12→5В ≥1.5А + LC](/bom/buck-12-5v-1-5a-lc.md) — $9/5шт, купити
 * [Радіатор 50×50 мм + термопрокладка](/bom/radiator-50-50-mm-termoprokladka.md) — ~$9/4шт, купити

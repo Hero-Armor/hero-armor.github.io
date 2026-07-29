@@ -5,10 +5,10 @@ description: "Регулює прожектори Гр.1"
 tags: ["lights"]
 quantity: "1"
 price: "$12"
-procurement_status: "have"
+procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Регулює прожектори Гр.1
 
-Система: [Світло](/systems/lights.md) · статус: **є** · ціна $12 · к-сть 1
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $12 · к-сть 1

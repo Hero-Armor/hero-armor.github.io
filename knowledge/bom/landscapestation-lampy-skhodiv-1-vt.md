@@ -6,10 +6,10 @@ resource: "https://www.amazon.com/dp/B0CF565SRW"
 tags: ["lights"]
 quantity: "24 (3 уп × 10)"
 price: "$100/уп"
-procurement_status: "have"
+procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 B0CF565SRW, врізні IP67. Відкрите питання: наша лінія чи автономні сонячні
 
-Система: [Світло](/systems/lights.md) · статус: **є** · ціна $100/уп · к-сть 24 (3 уп × 10)
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $100/уп · к-сть 24 (3 уп × 10)
