@@ -22,6 +22,9 @@ generated: { by: "process:site-build" }
 * [12-вольтовий вихід EcoFlow тримає лише 126 Вт — це вузьке місце](/decisions/12-voltovyi-vykhid-ecoflow-trymaie-lyshe-126-vt-tse-vuzke-mi.md)
 * [Станції гріються: межа +45°C, а на плайї 40-45°C](/decisions/stantsii-hriiutsia-mezha-45-c-a-na-plaii-40-45-c.md)
 * [Нічне мале навантаження станцію не присипляє](/decisions/nichne-male-navantazhennia-stantsiiu-ne-prysypliaie.md)
+* [Якщо 126 Вт не вистачить — чотири станції з 30 А по 12 В](/decisions/iakshcho-126-vt-ne-vystachyt-chotyry-stantsii-z-30-a-po-12-v.md)
+* [Перехідник від порту зовнішньої батареї — шлях відхилено](/decisions/perekhidnyk-vid-portu-zovnishnoi-batarei-shliakh-vidkhyleno.md)
+* [Запасний шлях: розетка 220 В + блок живлення 12 В коштує ~20% ємності](/decisions/zapasnyi-shliakh-rozetka-220-v-blok-zhyvlennia-12-v-koshtuie.md)
 
 # Задачі
 

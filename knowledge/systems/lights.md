@@ -19,7 +19,7 @@ generated: { by: "process:site-build" }
 * [Анімація замість заливки — стрічка світить не вся одразу](/decisions/animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)
 * [Сходи подіуму — наша лінія чи автономні сонячні](/decisions/skhody-podiumu-nasha-liniia-chy-avtonomni-soniachni.md)
 * [Колір габаритних вогнів — жовтий чи червоний](/decisions/kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
-* [Неон: брати WS2815 12В із підтвердженими +60°C](/decisions/neon-braty-ws2815-12v-iz-pidtverdzhenymy-60-c.md)
+* [Неон: WS2815, а не WS2811 — три причини](/decisions/neon-ws2815-a-ne-ws2811-try-prychyny.md)
 * [Світло вмикає фотореле, а не таймер](/decisions/svitlo-vmykaie-fotorele-a-ne-taimer.md)
 * [Три групи — три реле, аварійна на своєму каналі](/decisions/try-hrupy-try-rele-avariina-na-svoiemu-kanali.md)
 * [Просадку рахуємо деревом, а не по лініях](/decisions/prosadku-rakhuiemo-derevom-a-ne-po-liniiakh.md)
@@ -30,6 +30,7 @@ generated: { by: "process:site-build" }
 * [Реальний замір удвічі менший за модель — звірити стрічку](/decisions/realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
 * [Коло чи восьмикутник — пропозиція конструктора не закрита](/decisions/kolo-chy-vosmykutnyk-propozytsiia-konstruktora-ne-zakryta.md)
 * [Стрічка мусить тримати +60°C — попередні відхилені](/decisions/strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
+* [Просадка вздовж самої стрічки — перевірити на довжині гілки](/decisions/prosadka-vzdovzh-samoi-strichky-pereviryty-na-dovzhyni-hilky.md)
 
 # Задачі
 
@@ -53,7 +54,7 @@ generated: { by: "process:site-build" }
 * [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — —, є
 * [Nilight габаритні вогні 3 Вт](/bom/nilight-habarytni-vohni-3-vt.md) — $18.50, є
 * [Landscapestation лампи сходів 1 Вт](/bom/landscapestation-lampy-skhodiv-1-vt.md) — $100/уп, є
-* [Неон WS2811/WS2815 12 В силіконовий, 10 м](/bom/neon-ws2811-ws2815-12-v-sylikonovyi-10-m.md) — $47, купити
+* [Неон WS2815 12 В силіконовий, 10 м](/bom/neon-ws2815-12-v-sylikonovyi-10-m.md) — $47, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, є
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $12, є
 * [Щит-бокс із тримачами запобіжників](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv.md) — —, купити

@@ -112,5 +112,47 @@
   "dc_timeout": {
     "auto_off": false,
     "note": "Мануали Delta 2 / 2 Max / Pro: «After the 12V DC output power button is turned on, the product will not shut off automatically». Автовимкнення через 2 год стосується лише випадку, коли ВСІ виходи вимкнені й нема навантаження. Тобто нічне мале навантаження станцію не присипляє — але кнопку DC треба тримати увімкненою."
+  },
+  "stations_30a": {
+    "_note": "Станції з ПОТУЖНИМ 12-вольтовим виходом — альтернативи, якщо тест стрічки покаже високе споживання і 126 Вт не вистачить. Дані з офіційних мануалів і сторінок виробників, звірка 29.07.2026.",
+    "EcoFlow Delta Pro": {
+      "wh": 3600,
+      "dc12_w": 378,
+      "dc12_a": 30,
+      "port": "Anderson SB50",
+      "price_usd": 1499,
+      "price_note": "flash-sale, MSRP 3699",
+      "weight_kg": 45,
+      "temp_max_c": 40
+    },
+    "Bluetti AC200MAX": {
+      "wh": 2048,
+      "dc12_w": 360,
+      "dc12_a": 30,
+      "port": "авіаційний роз'єм + кабель-перехідник на Anderson/XT60",
+      "price_usd": 1199,
+      "price_note": "знято з офіційного продажу — шукати Amazon/eBay",
+      "temp_max_c": 40
+    },
+    "Anker SOLIX F3000": {
+      "wh": 3072,
+      "dc12_w": 402,
+      "dc12_a": 30,
+      "port": "Anderson (13.4 В)",
+      "price_usd": 1900,
+      "temp_max_c": 40
+    },
+    "OUPES Mega 5": {
+      "wh": 5040,
+      "dc12_w": 360,
+      "dc12_a": 30,
+      "port": "Anderson",
+      "price_usd": 2999,
+      "price_note": "Sold Out на офіційному сайті"
+    },
+    "_rejected": {
+      "Anker SOLIX F3800": "лише 120 Вт через прикурювач, потужного Anderson нема",
+      "Jackery Explorer 2000 Plus": "12 В лише 10 А / 120 Вт; Anderson у них ВХІД для зарядки, не вихід"
+    }
   }
 }
