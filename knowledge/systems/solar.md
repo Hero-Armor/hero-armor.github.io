@@ -28,7 +28,7 @@ generated: { by: "process:site-build" }
 * [Anker F2000 має TT-30R — але це 120 В змінного, не наші 12 В](/decisions/anker-f2000-maie-tt-30r-ale-tse-120-v-zminnoho-ne-nashi-12-v.md)
 * [Перехідники на сторонні АКБ існують — але вони 48-вольтові](/decisions/perekhidnyky-na-storonni-akb-isnuiut-ale-vony-48-voltovi.md)
 * [Найпростіший шлях: окремий АКБ 12 В живить світло, станція його заряджає](/decisions/naiprostishyi-shliakh-okremyi-akb-12-v-zhyvyt-svitlo-stantsi.md)
-* [Понизити порт розширення 48→12 В — шлях робочий, але не перевірений](/decisions/ponyzyty-port-rozshyrennia-48-12-v-shliakh-robochyi-ale-ne-p.md)
+* [Понизити порт розширення 48→12 В — підтверджено, EcoFlow сам так робить](/decisions/ponyzyty-port-rozshyrennia-48-12-v-pidtverdzheno-ecoflow-sam.md)
 
 # Задачі
 
