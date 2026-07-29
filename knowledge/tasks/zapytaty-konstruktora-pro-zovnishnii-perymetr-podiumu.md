@@ -7,6 +7,6 @@ task_status: "todo"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · компонент: [Світло](/components/lights.md)
+Статус: **до роботи** · система: [Світло](/systems/lights.md)
 
 Rev 2.1 дає тільки коло R346 і раму 644 мм; периметр позначений як невизначений

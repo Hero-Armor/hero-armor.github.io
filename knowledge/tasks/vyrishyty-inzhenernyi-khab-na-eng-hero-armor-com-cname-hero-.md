@@ -7,6 +7,6 @@ task_status: "todo"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · компонент: [Проєкт](/project.md)
+Статус: **до роботи** · система: [Проєкт](/project.md)
 
 hero-armor.com живе на окремому хостингу (меморіальний сайт) — не чіпаємо; дашборд поки на github.io

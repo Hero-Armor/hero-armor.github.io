@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 HiLetgo 2pcs mono 100W — основний + запас
 
-Компонент: [Аудіо](/components/audio.md) · статус: **є** · ціна $14/2шт · к-сть 1–2
+Система: [Аудіо](/systems/audio.md) · статус: **є** · ціна $14/2шт · к-сть 1–2

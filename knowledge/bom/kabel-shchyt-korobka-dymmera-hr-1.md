@@ -11,4 +11,4 @@ generated: { by: "process:site-build" }
 
 Ancor 12/2 AWG — AWG 12. до коробки з ШІМ-диммером
 
-Компонент: [Світло](/components/lights.md) · статус: **купити** · ціна — · к-сть ~4 м
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть ~4 м

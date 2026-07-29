@@ -1,145 +1,145 @@
 [
   {
     "task": "A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)",
-    "component": "audio",
+    "system": "audio",
     "status": "waiting",
     "note": "чекає доставки; план тесту — в лабораторії"
   },
   {
     "task": "Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч",
-    "component": "solar",
+    "system": "solar",
     "status": "todo",
     "note": "критично: без цього робот засне; заодно обрати модель станції"
   },
   {
     "task": "Замовити решту BOM одним кошиком",
-    "component": "project",
+    "system": "project",
     "status": "todo",
     "note": "усі лінки — в BOM на головній; ~$95 (+$60 плати, якщо ще не куплені)"
   },
   {
     "task": "Прошивка ESP32: MP3→I2S моно, 3 шари гучності, LDR день/ніч, UART радара",
-    "component": "audio",
+    "system": "audio",
     "status": "todo",
     "note": "тригер на 2.5–3 м по відстані з LD2410C"
   },
   {
     "task": "Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+",
-    "component": "audio",
+    "system": "audio",
     "status": "todo",
     "note": "рецепт — з сигнальної моделі"
   },
   {
     "task": "Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу",
-    "component": "armor",
+    "system": "armor",
     "status": "todo",
     "note": "можна фарбувати неметалевою фарбою"
   },
   {
     "task": "Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба",
-    "component": "audio",
+    "system": "audio",
     "status": "todo",
     "note": "радіатор крізь стінку, зіркова земля"
   },
   {
     "task": "Пилозахист динаміка: гриль + тканина, мембрана вниз",
-    "component": "audio",
+    "system": "audio",
     "status": "todo",
     "note": "гриль у кошику"
   },
   {
     "task": "Створити repo hero-armor (моно-репо) + GitHub Pages",
-    "component": "project",
+    "system": "project",
     "status": "done",
     "note": "https://hero-armor.github.io/ · публічна + приватна репи, Pages через CI"
   },
   {
     "task": "Заповнити дату переїзду LA→SF і адреси в data/private/",
-    "component": "project",
+    "system": "project",
     "status": "todo",
     "note": "без дати ship-to порадник не працює"
   },
   {
     "task": "Вирішити: інженерний хаб на eng.hero-armor.com (CNAME → hero-armor.github.io)?",
-    "component": "project",
+    "system": "project",
     "status": "todo",
     "note": "hero-armor.com живе на окремому хостингу (меморіальний сайт) — не чіпаємо; дашборд поки на github.io"
   },
   {
     "task": "Звести бюджет світла: заявлені ~170–220 Вт LED проти панелі 100 Вт — перерахувати (сайт сам радить зменшити стрічки)",
-    "component": "lights",
+    "system": "lights",
     "status": "done",
     "note": "Пораховано моделлю: композитна ніч ~1350 Wh; панель 100 Вт давала б −1006 Wh щодоби, потрібно ≥390 Вт. Рішення — SunGoldPower 500 Вт + АКБ 200 Аг (баланс +370 Wh)"
   },
   {
     "task": "Узгодити Technical-розділ сайту з поточними рішеннями (tablet+JBL → ESP32+PCM5102A+TPA3116; датчик → LD2410C)",
-    "component": "project",
+    "system": "project",
     "status": "todo",
     "note": "сайт показує стару концепцію аудіо; джерело правди — інженерний хаб; можна додати лінк 'live engineering hub'"
   },
   {
     "task": "Обрати і замовити неон WS2811 під 12 В",
-    "component": "lights",
+    "system": "lights",
     "status": "todo",
     "note": "Старий підбір був під 24 В. Єдина позиція, що блокує складання подіуму"
   },
   {
     "task": "Перевірити ватметром voltage-following на Gardencoin",
-    "component": "lights",
+    "system": "lights",
     "status": "todo",
     "note": "Зняти пари напруга/ватти на 12, 11, 10, 9 В — підтвердити P ~ V². На цьому тримається весь економ-режим"
   },
   {
     "task": "Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down",
-    "component": "lights",
+    "system": "lights",
     "status": "todo",
     "note": "Найризикованіше місце схеми — імпульси на лампі лишаються 24-вольтові"
   },
   {
     "task": "Уточнити в архітектора: сходи ×24 в нашу лінію чи автономні сонячні",
-    "component": "lights",
+    "system": "lights",
     "status": "waiting",
     "note": "24 Вт — половина аварійної групи. Заодно звірити колір габаритних (жовті чи червоні)"
   },
   {
     "task": "Звірити статуси закупівлі світла з інвойсом",
-    "component": "lights",
+    "system": "lights",
     "status": "todo",
     "note": "BOM світла заповнено за чек-лістом 20.07 — підтвердити по реальних замовленнях"
   },
   {
     "task": "Вирішити скільки станцій EcoFlow і яку модель",
-    "component": "solar",
+    "system": "solar",
     "status": "todo",
     "note": "Схема підміни працює тільки з двома. Без панелей одна станція тримає рівно добу"
   },
   {
     "task": "Звірити паспорт станції: ліміт сонячного входу",
-    "component": "solar",
+    "system": "solar",
     "status": "todo",
     "note": "Саме він задає стелю масиву — усе понад нього станція просто не візьме"
   },
   {
     "task": "Спроєктувати раму сонячного масиву під вітер плайї",
-    "component": "solar",
+    "system": "solar",
     "status": "todo",
     "note": "50+ mph зриває погано закріплені панелі; кріпити намертво, скло мити щоранку"
   },
   {
     "task": "Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор",
-    "component": "lights",
+    "system": "lights",
     "status": "todo",
     "note": "Після повернення на 12 В наявний Ancor не проходить по просадці"
   },
   {
     "task": "Заміряти реальні довжини траси після складання подіуму",
-    "component": "lights",
+    "system": "lights",
     "status": "waiting",
     "note": "Зовнішній периметр подіуму на кресленні не заданий. Без цих замірів підбір перерізу — лише порядок величин. Підставляти в lights/data/params.json → topology.segments"
   },
   {
     "task": "Запитати конструктора про зовнішній периметр подіуму",
-    "component": "lights",
+    "system": "lights",
     "status": "todo",
     "note": "Rev 2.1 дає тільки коло R346 і раму 644 мм; периметр позначений як невизначений"
   }

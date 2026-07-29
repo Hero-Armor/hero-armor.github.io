@@ -7,6 +7,6 @@ task_status: "waiting"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **чекаємо** · компонент: [Аудіо](/components/audio.md)
+Статус: **чекаємо** · система: [Аудіо](/systems/audio.md)
 
 чекає доставки; план тесту — в лабораторії

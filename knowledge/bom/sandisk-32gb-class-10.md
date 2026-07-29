@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 SanDisk Ultra 32GB A1 — сотні годин голосу
 
-Компонент: [Аудіо](/components/audio.md) · статус: **є** · ціна ~$10 · к-сть 1–2
+Система: [Аудіо](/systems/audio.md) · статус: **є** · ціна ~$10 · к-сть 1–2

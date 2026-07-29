@@ -7,6 +7,6 @@ task_status: "todo"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · компонент: [Аудіо](/components/audio.md)
+Статус: **до роботи** · система: [Аудіо](/systems/audio.md)
 
 тригер на 2.5–3 м по відстані з LD2410C

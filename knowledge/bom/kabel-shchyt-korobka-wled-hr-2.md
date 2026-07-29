@@ -11,4 +11,4 @@ generated: { by: "process:site-build" }
 
 Ancor 8/2 AWG — AWG 8. найважча гілка — уся стрічка
 
-Компонент: [Світло](/components/lights.md) · статус: **купити** · ціна — · к-сть ~5 м
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть ~5 м

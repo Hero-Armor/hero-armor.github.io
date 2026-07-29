@@ -7,6 +7,6 @@ task_status: "todo"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · компонент: [Броня](/components/armor.md)
+Статус: **до роботи** · система: [Броня](/systems/armor.md)
 
 можна фарбувати неметалевою фарбою

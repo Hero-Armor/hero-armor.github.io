@@ -11,4 +11,4 @@ generated: { by: "process:site-build" }
 
 Лампи на корпусі робота, strip-line. IP65
 
-Компонент: [Світло](/components/lights.md) · статус: **є** · ціна — · к-сть 2 (уп 5)
+Система: [Світло](/systems/lights.md) · статус: **є** · ціна — · к-сть 2 (уп 5)

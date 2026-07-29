@@ -9,17 +9,17 @@ Burning Man 2026: меморіальна інсталяція памʼяті З�
 - `audio/data/params.json` — константи аудіо · `audio/data/cases.json` — кейси плайї
 - `lights/data/params.json` — константи світла · `lights/data/cases.json` — сценарії ночі
 - `solar/data/params.json` — станції і масив · `solar/data/cases.json` — сценарії генерації
-- `data/components.json` — реєстр компонентів (картки на індексі)
+- `data/systems.json` — реєстр систем (картки на індексі)
 - `bom.json` — закупівля · `decisions.json` — рішення · `tasks.json` — задачі
 - `orders.json` — замовлення · `addresses.json` — логістика LA→SF
-- Кожен запис має `component`: `audio | solar | lights | armor | project`
+- Кожен запис має `system`: `audio | solar | lights | armor | project`
 
 **НІКОЛИ не редагуй HTML дашборда руками.** Правиш `data/*.json` →
 `cd site && python3 build.py` → перепублікувати артефакти (ті самі URL).
 Числа на сторінках рахують тільки моделі (`audio_node_model.py`, `lights_node_model.py`,
 `power_node_model.py`) — руками в HTML жодної цифри. Споживачі (audio, lights) НЕ знають
 про джерело живлення; `power_node_model` сам імпортує з них споживання. Не дублюй
-автономність і сонце на сторінках споживачів — це компонент «Живлення».
+автономність і сонце на сторінках споживачів — це система «Живлення».
 
 **`knowledge/` — OKF-бандл (Open Knowledge Format v0.2, Google Cloud spec):**
 markdown-концепти з YAML frontmatter, генеруються тим самим `build.py` з
@@ -27,14 +27,14 @@ markdown-концепти з YAML frontmatter, генеруються тим с�
 для агентів/людей. Журнал проєкту — `data/project.json → log`; робочі
 процеси — `data/playbooks.json` → `knowledge/playbooks/`.
 
-## Компоненти: як ведемо
+## Системи: як ведемо
 
-Реєстр — `data/components.json` (key, label, emoji, status, summary, page,
+Реєстр — `data/systems.json` (key, label, emoji, status, summary, page,
 links, figures). Статуси: `concept → in-design → design-ready → build`.
 
-- **Сторінка компонента** (`solar.html`, `lights.html`, `armor.html`)
-  генерується автоматично з `component.tmpl.html`: рішення/задачі/BOM/замовлення
-  з відповідним `component`-тегом підтягуються самі. Додати компонент =
+- **Сторінка системи** (`solar.html`, `lights.html`, `armor.html`)
+  генерується автоматично з `system.tmpl.html`: рішення/задачі/BOM/замовлення
+  з відповідним `system`-тегом підтягуються самі. Додати систему =
   картка в реєстрі, сторінка зʼявиться після build.
 - **Інженерія починається** → створюємо `<key>/data/params.json` (+`cases.json`)
   і `<key>/model/*.py`; числа на сторінках рахує ТІЛЬКИ модель (приклад: audio;

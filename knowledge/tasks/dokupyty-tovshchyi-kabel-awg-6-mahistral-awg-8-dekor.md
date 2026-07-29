@@ -7,6 +7,6 @@ task_status: "todo"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · компонент: [Світло](/components/lights.md)
+Статус: **до роботи** · система: [Світло](/systems/lights.md)
 
 Після повернення на 12 В наявний Ancor не проходить по просадці

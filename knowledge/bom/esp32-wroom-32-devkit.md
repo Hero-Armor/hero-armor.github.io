@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 AITRIP 3PCS USB-C, CP2102 — 1 в роботі + 2 запас
 
-Компонент: [Аудіо](/components/audio.md) · статус: **є** · ціна $17/3шт · к-сть 3
+Система: [Аудіо](/systems/audio.md) · статус: **є** · ціна $17/3шт · к-сть 3

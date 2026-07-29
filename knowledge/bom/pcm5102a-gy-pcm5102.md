@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 ACEIRMC 3pcs — ЦАП + 2 запасні
 
-Компонент: [Аудіо](/components/audio.md) · статус: **є** · ціна $12/3шт · к-сть 1–2
+Система: [Аудіо](/systems/audio.md) · статус: **є** · ціна $12/3шт · к-сть 1–2

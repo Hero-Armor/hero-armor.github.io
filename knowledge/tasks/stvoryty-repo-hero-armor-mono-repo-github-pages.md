@@ -7,6 +7,6 @@ task_status: "done"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **готово** · компонент: [Проєкт](/project.md)
+Статус: **готово** · система: [Проєкт](/project.md)
 
 https://hero-armor.github.io/ · публічна + приватна репи, Pages через CI

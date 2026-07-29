@@ -7,6 +7,6 @@ task_status: "todo"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · компонент: [Аудіо](/components/audio.md)
+Статус: **до роботи** · система: [Аудіо](/systems/audio.md)
 
 радіатор крізь стінку, зіркова земля

@@ -11,4 +11,4 @@ generated: { by: "process:site-build" }
 
 AC вимкнути, «DC always on»; River 2 ≈ 2.3 доби, R2 Max ≈ 4.7, Delta 2 ≈ 9.3
 
-Компонент: [Живлення](/components/solar.md) · статус: **є** · ціна — · к-сть 1
+Система: [Живлення](/systems/solar.md) · статус: **є** · ціна — · к-сть 1

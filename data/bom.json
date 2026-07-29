@@ -6,7 +6,7 @@
     "status": "have",
     "note": "AITRIP 3PCS USB-C, CP2102 — 1 в роботі + 2 запас",
     "url": "https://www.amazon.com/dp/B0CR5Y2JVD",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "PCM5102A (GY-PCM5102)",
@@ -15,7 +15,7 @@
     "status": "have",
     "note": "ACEIRMC 3pcs — ЦАП + 2 запасні",
     "url": "https://www.amazon.com/dp/B08YNJGSN4",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "microSD SPI модуль",
@@ -24,7 +24,7 @@
     "status": "have",
     "note": "HiLetgo 5pcs з рівнями — живити 5В (LDO на платі)",
     "url": "https://www.amazon.com/dp/B07BJ2P6X6",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "SanDisk 32GB Class 10",
@@ -33,7 +33,7 @@
     "status": "have",
     "note": "SanDisk Ultra 32GB A1 — сотні годин голосу",
     "url": "https://www.amazon.com/dp/B08L5HMJVW",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "TPA3116D2 Mono (WINGONEER)",
@@ -42,7 +42,7 @@
     "status": "have",
     "note": "HiLetgo 2pcs mono 100W — основний + запас",
     "url": "https://www.amazon.com/dp/B082F7P184",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Poly-Planar MA-3013, пара",
@@ -50,7 +50,7 @@
     "price": "$70",
     "status": "have",
     "note": "83 дБ/Вт/м, 4Ω, 30 Вт RMS, 70 Гц+; фаворит тесту — 1 в роботу (моно), 1 запас",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Herdio HMS60 3\", пара",
@@ -58,7 +58,7 @@
     "price": "$32",
     "status": "have",
     "note": "80 дБ/Вт/м, 4Ω, 20 Вт RMS, 120 Гц+; запасний варіант, готовий IP44 бокс",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "LD2410C",
@@ -67,7 +67,7 @@
     "status": "add",
     "note": "3-pack — рівно план запасів; вікно без металу",
     "url": "https://www.amazon.com/dp/B0F1F97422",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Buck 12→5В ≥1.5А + LC",
@@ -76,7 +76,7 @@
     "status": "add",
     "note": "MP1584 фіксовані 5В (без крутилки = нічого не зіб'ється); LC-фільтр досипати",
     "url": "https://www.amazon.com/dp/B0B779ZYN1",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Радіатор 50×50 мм + термопрокладка",
@@ -85,7 +85,7 @@
     "status": "add",
     "note": "Easycargo 50×50×20 + термоскотч 3M; крізь стінку, тіньовий бік",
     "url": "https://www.amazon.com/dp/B0BC15L51H",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Запобіжник 3А + тримач, 1000 µФ 25В",
@@ -94,7 +94,7 @@
     "status": "add",
     "note": "VANSIHO 6 тримачів 18AWG + 6×3А — запаси; обовʼязковий (пожежна безпека)",
     "url": "https://www.amazon.com/dp/B0C15H3F9M",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Конденсатор 1000 µФ 25В low-ESR",
@@ -103,7 +103,7 @@
     "status": "add",
     "url": "https://www.amazon.com/dp/B0D78R727K",
     "note": "страховка від просадок на запиленому контакті (на платі ампа свої вже є)",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Захист динаміка від пилу",
@@ -112,7 +112,7 @@
     "status": "add",
     "note": "3\" гриль ABS + металева сітка, 2 шт; мембрана вниз",
     "url": "https://www.amazon.com/dp/B0CGH4D68B",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "EcoFlow (12V DC-порт)",
@@ -120,7 +120,7 @@
     "price": "—",
     "status": "have",
     "note": "AC вимкнути, «DC always on»; River 2 ≈ 2.3 доби, R2 Max ≈ 4.7, Delta 2 ≈ 9.3",
-    "component": "solar"
+    "system": "solar"
   },
   {
     "item": "Фоторезистор LDR + 10к",
@@ -129,7 +129,7 @@
     "status": "add",
     "note": "Chanzon GL5528 20 шт — авто день/ніч (GPIO34)",
     "url": "https://www.amazon.com/dp/B08QRYD4GR",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Штекер-прикурювач з клемами",
@@ -138,7 +138,7 @@
     "status": "add",
     "note": "YONHAN 2-pack з запобіжником — другий = запас",
     "url": "https://www.amazon.com/dp/B07L9HQ25S",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "XT60 пара + пігтейли",
@@ -147,7 +147,7 @@
     "status": "add",
     "note": "XT60 з корпусами, 14AWG пігтейли — переплюсовка неможлива",
     "url": "https://www.amazon.com/dp/B07BF8154S",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Кабель 18AWG силікон, 2×2 м",
@@ -156,7 +156,7 @@
     "status": "add",
     "note": "силікон 2-жильний 30ft+30ft — вистачить на все",
     "url": "https://www.amazon.com/dp/B07FMRDP87",
-    "component": "audio"
+    "system": "audio"
   },
   {
     "item": "Gardencoin прожектор + MR16 4000K",
@@ -164,7 +164,7 @@
     "price": "$43/уп",
     "status": "have",
     "note": "B0F43C2H3R, IP66, 60°. Заливка фігури, Гр.1 — за чек-лістом 20.07 в інвойсі",
-    "component": "lights",
+    "system": "lights",
     "url": "https://www.amazon.com/dp/B0F43C2H3R"
   },
   {
@@ -173,7 +173,7 @@
     "price": "—",
     "status": "have",
     "note": "Лампи на корпусі робота: голова 4, плечі 2, груди, коліно, стопа. IP65",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Gebildet LED 8 мм, металеві",
@@ -181,7 +181,7 @@
     "price": "—",
     "status": "have",
     "note": "Лампи на корпусі робота, strip-line. IP65",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Nilight габаритні вогні 3 Вт",
@@ -189,7 +189,7 @@
     "price": "$18.50",
     "status": "have",
     "note": "IP67, 10-30 В, на 8 кутів октагона. Колір під звірку: креслення жовті, рішення 16.07 червоні",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Landscapestation лампи сходів 1 Вт",
@@ -197,7 +197,7 @@
     "price": "$100/уп",
     "status": "have",
     "note": "B0CF565SRW, врізні IP67. Відкрите питання: наша лінія чи автономні сонячні",
-    "component": "lights",
+    "system": "lights",
     "url": "https://www.amazon.com/dp/B0CF565SRW"
   },
   {
@@ -206,7 +206,7 @@
     "price": "$47",
     "status": "add",
     "note": "Під шину 12 В потрібен інший артикул, ніж підбирали під 24 В. BTF-LIGHTING і ALITOVE відхилено по температурі (треба −20…+60 °C). НЕ замовлено — блокує складання подіуму",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "GLEDOPTO ESP32 WLED, IP65",
@@ -214,7 +214,7 @@
     "price": "$23",
     "status": "have",
     "note": "Керує «біжучою водою» по WiFi; другий — запас",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "SUPERNIGHT ШІМ-диммер 12-24 В 30 А",
@@ -222,7 +222,7 @@
     "price": "$12",
     "status": "have",
     "note": "Регулює прожектори Гр.1",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Сонячні панелі для масиву (потужність не обрана)",
@@ -230,7 +230,7 @@
     "price": "$149",
     "status": "tbd",
     "note": "Масив збираємо самі. Потужність підбираємо повзунком у лабораторії живлення разом зі станцією — вони обираються парою, бо станція має ліміт сонячного входу",
-    "component": "solar"
+    "system": "solar"
   },
   {
     "item": "Станції EcoFlow ×2 (модель не обрана)",
@@ -238,7 +238,7 @@
     "price": "$1099/шт",
     "status": "tbd",
     "note": "Дві, а не одна: схема тримається на підміні. Модель підбирається в лабораторії під фактичне споживання; паспортні числа звірити по даташиту",
-    "component": "solar"
+    "system": "solar"
   },
   {
     "item": "Рама під сонячний масив",
@@ -246,7 +246,7 @@
     "price": "—",
     "status": "tbd",
     "note": "Робимо самі під кут і вітер плайї. Кріпити намертво — 50+ mph зриває панелі",
-    "component": "solar"
+    "system": "solar"
   },
   {
     "item": "Кабель MC4 + роз'єми для масиву",
@@ -254,7 +254,7 @@
     "price": "—",
     "status": "add",
     "note": "Від масиву до сонячного входу станції",
-    "component": "solar"
+    "system": "solar"
   },
   {
     "item": "Щит-бокс із тримачами запобіжників",
@@ -262,7 +262,7 @@
     "price": "—",
     "status": "add",
     "note": "Блок на 4 позиції: головний 40 A + Гр.1 5 A, Гр.2 20 A, Гр.3А 7.5 A. Автомобільні ножові ATO/ATC",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Запобіжники ATO/ATC, набір",
@@ -270,7 +270,7 @@
     "price": "—",
     "status": "add",
     "note": "Номінали з моделі: 40 / 5 / 20 / 7.5 A. Брати з запасом — перегорають саме вночі",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Фотореле (сутінкове) 12 В",
@@ -278,7 +278,7 @@
     "price": "—",
     "status": "add",
     "note": "Вмикає світло щойно починає темніти. Поріг ~50 лк, гасне на ~200 лк, затримка 60 с проти миготіння",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Реле на групи 12 В, 30 А",
@@ -286,7 +286,7 @@
     "price": "—",
     "status": "add",
     "note": "По одному на групу: фотореле керує ними, аварійна на своєму каналі — щоб її можна було лишити окремо",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Гермокоробка IP66 для щита і реле",
@@ -294,7 +294,7 @@
     "price": "—",
     "status": "add",
     "note": "Головна коробка: запобіжники, фотореле, реле груп. З вентиляцією і фільтром — глухо закривати не можна, перегріється",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Гермокоробки IP65 під диммер і WLED",
@@ -302,7 +302,7 @@
     "price": "—",
     "status": "add",
     "note": "Окремо коробка ШІМ-диммера (Гр.1) і коробка контролера WLED (Гр.2), ближче до навантаження",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Гермороз'єми IP68 (швидкознімні)",
@@ -310,7 +310,7 @@
     "price": "—",
     "status": "add",
     "note": "На кожен стик, який доведеться роз'єднувати при збиранні-розбиранні: стійки, промені, сходи",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Гель-конектори / вологозахищені клеми",
@@ -318,7 +318,7 @@
     "price": "—",
     "status": "add",
     "note": "Глухі з'єднання всередині коробок. Пил плайї лужний — звичайні скрутки окислюються",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Гофра/кабель-канал для відводів",
@@ -326,7 +326,7 @@
     "price": "—",
     "status": "add",
     "note": "Захист відводів на стійках і в настилі; алюмінієвий канал під стрічку вже в конструкції подіуму",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Станція → щит запобіжників",
@@ -334,7 +334,7 @@
     "price": "—",
     "status": "add",
     "note": "Ancor 6/2 AWG дуплекс — AWG 6. магістраль, несе все",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Щит → коробка диммера (Гр.1)",
@@ -342,7 +342,7 @@
     "price": "—",
     "status": "add",
     "note": "Ancor 12/2 AWG — AWG 12. до коробки з ШІМ-диммером",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Диммер → кільце прожекторів",
@@ -350,7 +350,7 @@
     "price": "—",
     "status": "add",
     "note": "Ancor 12/2 AWG — AWG 12. по периметру октагона до стійок",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Відвід на прожектор (найдальший)",
@@ -358,7 +358,7 @@
     "price": "—",
     "status": "add",
     "note": "16/2 AWG у гофрі — AWG 16. штатний хвіст Gardencoin + подовження; несе ОДИН світильник",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Щит → коробка WLED (Гр.2)",
@@ -366,7 +366,7 @@
     "price": "—",
     "status": "add",
     "note": "Ancor 8/2 AWG — AWG 8. найважча гілка — уся стрічка",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: WLED → точки живлення стрічки",
@@ -374,7 +374,7 @@
     "price": "—",
     "status": "add",
     "note": "14/2 AWG — AWG 14. power injection кожні 2.5–3 м, струм ділиться на 3 вводи",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Коробка → лампи робота",
@@ -382,7 +382,7 @@
     "price": "—",
     "status": "add",
     "note": "18/2 AWG тонкий, у броні — AWG 18. всередині костюма; несе всі лампи робота",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Щит → коробка аварійної (Гр.3А)",
@@ -390,7 +390,7 @@
     "price": "—",
     "status": "add",
     "note": "Ancor 12/2 AWG — AWG 12. окрема лінія, гасне останньою",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Коробка → габарити по кутах",
@@ -398,7 +398,7 @@
     "price": "—",
     "status": "add",
     "note": "14/2 AWG — AWG 14. 8 кутів октагона",
-    "component": "lights"
+    "system": "lights"
   },
   {
     "item": "Кабель: Коробка → лампи сходів",
@@ -406,6 +406,6 @@
     "price": "—",
     "status": "add",
     "note": "16/2 AWG у каналі настилу — AWG 16. 24 врізні лампи по периметру сходів",
-    "component": "lights"
+    "system": "lights"
   }
 ]

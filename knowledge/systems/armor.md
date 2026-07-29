@@ -4,7 +4,7 @@ title: "Броня"
 description: "Воїн-захисник у синьо-жовтому за 3D-концептом Захара Захарова, на світному октагональному подіумі-коріннях. Інженерні вимоги від аудіо: діелектричне вікно ~60×6"
 resource: "https://hero-armor.github.io/armor.html"
 tags: ["armor"]
-component_status: "concept"
+system_status: "concept"
 generated: { by: "process:site-build" }
 ---
 

@@ -4,7 +4,7 @@ title: "Аудіо"
 description: "Дизайн готовий: LD2410C радар → ESP32 → PCM5102A → TPA3116D2 Mono → MA-3013. 39 Wh/добу, радіатор назовні, 3 шари гучності. Чекаємо динаміки на A/B тест."
 resource: "https://hero-armor.github.io/audio.html"
 tags: ["audio"]
-component_status: "design-ready"
+system_status: "design-ready"
 generated: { by: "process:site-build" }
 ---
 

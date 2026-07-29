@@ -24,7 +24,7 @@ sources:
 | Гучність @3 м, день | 86 dB пік / ~74 dB сер. (+9 дБ до шуму) |
 | Гучність @3 м, гучна ніч | запас -1 дБ |
 
-Компонент: [Аудіо](/components/audio.md).
+Система: [Аудіо](/systems/audio.md).
 
 [^params]: audio/data/params.json — константи моделі
 [^cases]: audio/data/cases.json — кейси плайї

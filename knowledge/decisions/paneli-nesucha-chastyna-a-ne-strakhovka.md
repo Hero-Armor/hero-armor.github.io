@@ -7,7 +7,7 @@ generated: { by: "process:site-build" }
 verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
 ---
 
-Компонент: [Живлення](/components/solar.md)
+Система: [Живлення](/systems/solar.md)
 
 # Чому
 

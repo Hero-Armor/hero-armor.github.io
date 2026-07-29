@@ -7,6 +7,6 @@ task_status: "waiting"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **чекаємо** · компонент: [Світло](/components/lights.md)
+Статус: **чекаємо** · система: [Світло](/systems/lights.md)
 
 Зовнішній периметр подіуму на кресленні не заданий. Без цих замірів підбір перерізу — лише порядок величин. Підставляти в lights/data/params.json → topology.segments

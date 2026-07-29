@@ -4,7 +4,7 @@ title: "Живлення"
 description: "Одна станція EcoFlow годує і світло, і звук: разом 1516 Wh на добу. Панелі збираємо самі — у нуль виходить ~418 Вт, беремо 600 Вт із запасом. Станція змінна: сі"
 resource: "https://hero-armor.github.io/solar.html"
 tags: ["solar"]
-component_status: "in-design"
+system_status: "in-design"
 generated: { by: "process:site-build" }
 ---
 

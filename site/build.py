@@ -2,14 +2,14 @@
 """
 Hero Armor — project-level site builder.
 
-  data/*.json (shared) + <component>/data + <component>/model  ->  docs/ site
+  data/*.json (shared) + <system>/data + <system>/model  ->  docs/ site
 
-Pages: index (project overview: hero image, components, shared BOM, team),
+Pages: index (project overview: hero image, systems, shared BOM, team),
 audio (decisions + schematic), lab (interactive simulator), ops (tasks/orders),
 plus knowledge.jsonld (schema.org JSON-LD graph of everything).
 
-Adding a component: rows in shared data with its `component` tag + a card in
-data/components.json; its own data/ + model/ folder when engineering starts.
+Adding a system: rows in shared data with its `system` tag + a card in
+data/systems.json; its own data/ + model/ folder when engineering starts.
 
 Usage:  python3 build.py [--copy-to DIR] [--docs]
         --copy-to DIR   copy artifact mirrors (Claude artifact publish paths)
@@ -40,7 +40,7 @@ DECISIONS = json.loads((DATA / "decisions.json").read_text())
 TASKS = json.loads((DATA / "tasks.json").read_text())
 ORDERS = json.loads((DATA / "orders.json").read_text())
 ADDR = json.loads((DATA / "addresses.json").read_text())
-COMPONENTS_REG = json.loads((DATA / "components.json").read_text())
+SYSTEMS_REG = json.loads((DATA / "systems.json").read_text())
 PROJ = json.loads((DATA / "project.json").read_text())
 PLAYBOOKS = json.loads((DATA / "playbooks.json").read_text())
 PRIVATE_FILE = DATA / "private" / "private.json"
@@ -57,8 +57,8 @@ ART_TASKS = "https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec
 LIGHTS_LAB_URL = SITE_URL + "lights_lab.html"
 SOLAR_LAB_URL = SITE_URL + "solar_lab.html"
 
-COMPONENTS = ["project", "audio", "solar", "lights", "armor"]
-COMP_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Живлення",
+SYSTEMS = ["project", "audio", "solar", "lights", "armor"]
+SYS_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Живлення",
               "lights": "Світло", "armor": "Броня"}
 COMP_STATUS_LABEL = {"design-ready": "дизайн готовий", "in-design": "проєктується",
                      "build": "збірка", "concept": "концепт"}
@@ -102,7 +102,7 @@ def bom_rows_html():
             item = f'<a href="{b["url"]}">{item}</a>'
         rows.append(
             f'      <tr data-status="{b["status"]}"><td>{item}</td>'
-            f'<td><span class="chip {b["component"]}">{b["component"]}</span></td>'
+            f'<td><span class="chip {b["system"]}">{b["system"]}</span></td>'
             f'<td class="num">{b["qty"]}</td>'
             f'<td class="num">{b["price"]}</td><td><span class="pill {cls}">{label}</span></td>'
             f'<td>{esc(b["note"])}</td></tr>')
@@ -112,7 +112,7 @@ def bom_rows_html():
 def build_knowledge():
     """Everything in data/ as a schema.org JSON-LD @graph. Public by design:
     city-level addresses only, never tracking numbers."""
-    reg = {c["key"]: c for c in COMPONENTS_REG}
+    reg = {c["key"]: c for c in SYSTEMS_REG}
     graph = [{
         "@id": "#project", "@type": "Project", "name": "Hero Armor",
         "description": "Memorial art installation for Burning Man 2026 honoring "
@@ -122,18 +122,18 @@ def build_knowledge():
         "url": "https://hero-armor.com/",
         "sameAs": [SITE_URL, "https://github.com/Hero-Armor/hero-armor.github.io"],
         "image": "https://hero-armor.com/images/hero-render.jpg",
-        "hasPart": [{"@id": f"#sub-{c}"} for c in COMPONENTS if c != "project"],
+        "hasPart": [{"@id": f"#sub-{c}"} for c in SYSTEMS if c != "project"],
     }, {
         "@id": "#event", "@type": "Event", "name": PROJ["event"]["name"],
         "startDate": PROJ["event"]["gate_open"], "endDate": PROJ["event"]["end"],
         "location": {"@type": "Place", "name": PROJ["event"]["location"]},
         "workFeatured": {"@id": "#project"},
     }]
-    for c in COMPONENTS:
+    for c in SYSTEMS:
         if c == "project":
             continue
         node = {"@id": f"#sub-{c}", "@type": "Project",
-                "name": f"Hero Armor — {COMP_LABEL[c]}",
+                "name": f"Hero Armor — {SYS_LABEL[c]}",
                 "parentOrganization": {"@id": "#project"}}
         if c in reg:
             node["description"] = reg[c]["summary"]
@@ -141,7 +141,7 @@ def build_knowledge():
                                            "name": "status", "value": reg[c]["status"]}]
         graph.append(node)
 
-    def comp_ref(c):
+    def sys_ref(c):
         return {"@id": "#project" if c == "project" else f"#sub-{c}"}
 
     bom_ids = {}
@@ -149,7 +149,7 @@ def build_knowledge():
         bid = f"#bom-{slug(b['item'])}"
         bom_ids[b["item"]] = bid
         node = {"@id": bid, "@type": "Product", "name": b["item"],
-                "description": b["note"], "isRelatedTo": comp_ref(b["component"]),
+                "description": b["note"], "isRelatedTo": sys_ref(b["system"]),
                 "additionalProperty": [
                     {"@type": "PropertyValue", "name": "procurement-status", "value": b["status"]},
                     {"@type": "PropertyValue", "name": "quantity", "value": b["qty"]}]}
@@ -176,17 +176,17 @@ def build_knowledge():
             "@id": f"#task-{slug(t['task'])}", "@type": "Action",
             "name": t["task"], "description": t.get("note", ""),
             "actionStatus": f"https://schema.org/{ACTION_STATUS_LD[t['status']]}",
-            "object": comp_ref(t["component"])})
+            "object": sys_ref(t["system"])})
 
     for d in DECISIONS:
         graph.append({
             "@id": f"#decision-{slug(d['title'])}", "@type": "CreativeWork",
             "genre": "engineering-decision", "name": d["title"],
-            "text": re.sub(r"<[^>]+>", "", d["why"]), "about": comp_ref(d["component"])})
+            "text": re.sub(r"<[^>]+>", "", d["why"]), "about": sys_ref(d["system"])})
 
     for fname, desc in [("data/project.json", "Project metadata, event dates, change log"),
                         ("data/playbooks.json", "Working-process playbooks"),
-                        ("data/components.json", "Component registry with status"),
+                        ("data/systems.json", "Component registry with status"),
                         ("data/bom.json", "Bill of materials with sourcing status"),
                         ("data/decisions.json", "Engineering decision log"),
                         ("data/tasks.json", "Task board by sub-project"),
@@ -267,13 +267,13 @@ def build_okf():
     day, night = results["day"], results["night"]
     tj_worst = max(r["t_j_worst"] for r in results.values())
 
-    comp_slug = {c["key"]: c["key"] for c in COMPONENTS_REG}
-    comp_link = {k: f"/components/{k}.md" for k in comp_slug}
-    comp_link["project"] = "/project.md"
+    sys_slug = {c["key"]: c["key"] for c in SYSTEMS_REG}
+    sys_link = {k: f"/systems/{k}.md" for k in sys_slug}
+    sys_link["project"] = "/project.md"
 
     def clink(k):
-        label = COMP_LABEL.get(k, k)
-        return f"[{label}]({comp_link.get(k, '/project.md')})"
+        label = SYS_LABEL.get(k, k)
+        return f"[{label}]({sys_link.get(k, '/project.md')})"
 
     def write(path, fields, body):
         p = okf / path
@@ -304,9 +304,9 @@ def build_okf():
 
 # Складові
 
-* [Компоненти](/components/index.md) — аудіо, сонце/живлення, світло, броня
+* [Системи](/systems/index.md) — аудіо, сонце/живлення, світло, броня
 * [Рішення](/decisions/index.md) — інженерний лог рішень з «чому»
-* [Задачі](/tasks/index.md) — дошка по компонентах
+* [Задачі](/tasks/index.md) — дошка по системих
 * [Закупівля](/bom/index.md) — BOM з лінками й статусами
 * [Замовлення](/orders/index.md) — що їде і куди
 * [Модель](/model/index.md) — розраховані цифри аудіо-вузла
@@ -333,13 +333,13 @@ def build_okf():
 
 Місце: {ev["location"]}. Інсталяція: [Hero Armor](/project.md).""")
 
-    # ---- components ----
-    comp_items = []
-    for c in COMPONENTS_REG:
+    # ---- systems ----
+    sys_items = []
+    for c in SYSTEMS_REG:
         k = c["key"]
-        c_dec = [d for d in DECISIONS if d["component"] == k]
-        c_tasks = [t for t in TASKS if t["component"] == k]
-        c_bom = [b for b in BOM if b["component"] == k]
+        c_dec = [d for d in DECISIONS if d["system"] == k]
+        c_tasks = [t for t in TASKS if t["system"] == k]
+        c_bom = [b for b in BOM if b["system"] == k]
         body = [c["summary"], ""]
         if c_dec:
             body.append("# Рішення\n")
@@ -358,13 +358,13 @@ def build_okf():
         if k == "audio":
             body.append("# Розраховані цифри\n\nДив. [модель аудіо-вузла](/model/audio-node.md) — "
                         "числа рахує тільки [санкціонована модель](/computations/audio-node-model.md).\n")
-        write(f"components/{k}.md", {
+        write(f"systems/{k}.md", {
             "type": "Component", "title": c["label"], "description": c["summary"][:160],
             "resource": SITE_URL + c["page"], "tags": [k],
-            "component_status": c["status"], "generated": gen,
+            "system_status": c["status"], "generated": gen,
         }, "\n".join(body))
-        comp_items.append(f"[{c['label']}]({k}.md) - {COMP_STATUS_LABEL[c['status']]}")
-    index_md("components/index.md", "Компоненти", [("Компоненти", comp_items)])
+        sys_items.append(f"[{c['label']}]({k}.md) - {COMP_STATUS_LABEL[c['status']]}")
+    index_md("systems/index.md", "Системи", [("Системи", sys_items)])
 
     # ---- decisions (human-confirmed => verified: human) ----
     dec_items = []
@@ -373,9 +373,9 @@ def build_okf():
         write(f"decisions/{s}.md", {
             "type": "Engineering Decision", "title": d["title"],
             "description": re.split(r"(?<=[.!?])\s+", md_text(d["why"]))[0][:200],
-            "tags": [d["component"]], "generated": gen,
+            "tags": [d["system"]], "generated": gen,
             "verified": {"by": "human:gumanist", "at": "2026-07-27T00:00:00Z"},
-        }, f"Компонент: {clink(d['component'])}\n\n# Чому\n\n{md_text(d['why'])}")
+        }, f"Система: {clink(d['system'])}\n\n# Чому\n\n{md_text(d['why'])}")
         dec_items.append(f"[{d['title']}]({s}.md)")
     index_md("decisions/index.md", "Інженерні рішення", [("Рішення", dec_items)])
 
@@ -386,8 +386,8 @@ def build_okf():
         note = t.get("note", "")
         write(f"tasks/{s}.md", {
             "type": "Task", "title": t["task"], "description": note[:160] or None,
-            "tags": [t["component"]], "task_status": t["status"], "generated": gen,
-        }, f"Статус: **{TASK_STATUS[t['status']]}** · компонент: {clink(t['component'])}"
+            "tags": [t["system"]], "task_status": t["status"], "generated": gen,
+        }, f"Статус: **{TASK_STATUS[t['status']]}** · система: {clink(t['system'])}"
            + (f"\n\n{note}" if note else ""))
         t_items.append(f"[{t['task']}]({s}.md) - {TASK_STATUS[t['status']]}")
     index_md("tasks/index.md", "Задачі", [("Задачі", t_items)])
@@ -398,10 +398,10 @@ def build_okf():
         s = uslug(b["item"])
         write(f"bom/{s}.md", {
             "type": "Part", "title": b["item"], "description": b["note"][:160],
-            "resource": b.get("url"), "tags": [b["component"]],
+            "resource": b.get("url"), "tags": [b["system"]],
             "quantity": b["qty"], "price": b["price"],
             "procurement_status": b["status"], "generated": gen,
-        }, f"{b['note']}\n\nКомпонент: {clink(b['component'])} · статус: "
+        }, f"{b['note']}\n\nСистема: {clink(b['system'])} · статус: "
            f"**{'є' if b['status'] == 'have' else 'купити'}** · ціна {b['price']} · к-сть {b['qty']}")
         b_items.append(f"[{b['item']}]({s}.md) - {b['price']}, "
                        f"{'є' if b['status'] == 'have' else 'купити'}")
@@ -415,7 +415,7 @@ def build_okf():
         write(f"orders/{s}.md", {
             "type": "Order", "title": f"{o['id']} — {o['vendor']}",
             "description": o.get("note", ""), "resource": o.get("url"),
-            "tags": [o["component"]], "order_status": o["status"],
+            "tags": [o["system"]], "order_status": o["status"],
             "order_date": o["date"],
             "deliver_to": ADDR["locations"][o["deliver_to"]]["label"],
             "generated": gen,
@@ -452,7 +452,7 @@ def build_okf():
 | Гучність @3 м, день | {day["spl_peak"]:.0f} dB пік / ~{day["spl_avg"]:.0f} dB сер. ({day["margin_avg"]:+.0f} дБ до шуму) |
 | Гучність @3 м, гучна ніч | запас {night["margin_avg"]:+.0f} дБ |
 
-Компонент: [Аудіо](/components/audio.md).
+Система: [Аудіо](/systems/audio.md).
 
 [^params]: audio/data/params.json — константи моделі
 [^cases]: audio/data/cases.json — кейси плайї""")
@@ -511,7 +511,7 @@ def build_okf():
             f"[{ev['name']}](event.md) - ворота {ev['gate_open']}, Man горить {ev['burn_night']}",
             "[Журнал](log.md) - хронологія проєкту"]),
         ("Розділи", [
-            f"[Компоненти](components/index.md) - {len(COMPONENTS_REG)} підсистеми",
+            f"[Системи](systems/index.md) - {len(SYSTEMS_REG)} підсистеми",
             f"[Рішення](decisions/index.md) - {len(DECISIONS)} інженерних рішень з «чому»",
             f"[Задачі](tasks/index.md) - {len(TASKS)} задач, відкрито {open_n}",
             f"[Закупівля](bom/index.md) - {len(BOM)} позицій, докупити {tobuy_n}",
@@ -552,7 +552,7 @@ def build():
              f"мова (крест {P['crest_db']:.0f} дБ), композитна доба", "good"),
         tile("Частка в системі", f"{100*wh_node/pw.demand()['total']:.0f}", "%",
              "звук — найдешевший вузол; запас і підміна станції рахуються "
-             "в компоненті «Живлення»"),
+             "в системі «Живлення»"),
         tile("Tj ампа, найгірший кейс", f"{tj_worst:.0f}", "°C",
              f"межа {P['thermal']['tj_max']:.0f}°C; радіатор {P['thermal']['heatsink_rth']}°C/W назовні", "good"),
         tile("Гучність @3 м", f"{day['spl_peak']:.0f}", "dB пік",
@@ -565,7 +565,7 @@ def build():
     decs = "\n".join(
         f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
         f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
-        for d in DECISIONS if d["component"] == "audio")
+        for d in DECISIONS if d["system"] == "audio")
     audio = audio.replace("{{DECISIONS_HTML}}", decs)
 
     # ================= lab page =================
@@ -682,7 +682,7 @@ def build():
     ]
     lights = lights.replace("{{TILES_HTML}}", "\n".join(lights_tiles))
 
-    l_decs = [d for d in DECISIONS if d["component"] == "lights"]
+    l_decs = [d for d in DECISIONS if d["system"] == "lights"]
     lights = lights.replace("{{DECISIONS_HTML}}", "\n".join(
         f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
         f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
@@ -885,7 +885,7 @@ def build():
             f'      <p>{esc(c["via"])} — {esc(c["note"])}</p>\n    </div>')
     cables = cables.replace("{{AUTOMATION_HTML}}", "\n".join(auto_html))
 
-    kit_items = [b for b in BOM if b["component"] == "lights"
+    kit_items = [b for b in BOM if b["system"] == "lights"
                  and not b["item"].startswith("Кабель:")
                  and any(w in b["item"] for w in ("Щит", "Запобіжники", "Фотореле", "Реле",
                                                   "Гермокоробка", "Гермокоробки", "Гермороз",
@@ -901,7 +901,7 @@ def build():
         "вентиляція важливіша за герметичність. Глухо закритий бокс на сонці плайї перегріється "
         "швидше, ніж у нього набʼється пил.")
 
-    cab_decs = [d for d in DECISIONS if d["component"] == "lights"]
+    cab_decs = [d for d in DECISIONS if d["system"] == "lights"]
     cables = cables.replace("{{DECISIONS_HTML}}", "\n".join(
         f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
         f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
@@ -959,7 +959,7 @@ def build():
         f'Змінив режим світла — тут переїде саме. Світло з\'їдає '
         f'{100*p_demand["lights"]/p_demand["total"]:.0f}% усього, звук — менше трьох відсотків.')
 
-    s_decs = [d for d in DECISIONS if d["component"] == "solar"]
+    s_decs = [d for d in DECISIONS if d["system"] == "solar"]
     solar_page = solar_page.replace("{{DECISIONS_HTML}}", "\n".join(
         f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
         f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
@@ -1077,13 +1077,13 @@ def build():
     ops = ops.replace("{{GEN_DATE}}", today.isoformat())
 
 
-    # ================= generic component pages (solar/lights/armor) =================
-    comp_pages = {}
-    for reg in COMPONENTS_REG:
+    # ================= generic system pages (solar/lights/armor) =================
+    sys_pages = {}
+    for reg in SYSTEMS_REG:
         k = reg["key"]
         if k in ("audio", "lights", "solar"):
             continue
-        page = tmpl("component.tmpl.html")
+        page = tmpl("system.tmpl.html")
         page = page.replace("{{PAGE_TITLE}}", f"Hero Armor — {reg['label']}")
         page = page.replace("{{KEY}}", k).replace("{{EMOJI}}", reg["emoji"])
         page = page.replace("{{LABEL}}", esc(reg["label"]))
@@ -1099,7 +1099,7 @@ def build():
                 for src_, cap in figs)
             sections.append(f'  <h2>Креслення</h2>\n  <div class="figs">\n{f_html}\n  </div>')
 
-        c_decs = [d for d in DECISIONS if d["component"] == k]
+        c_decs = [d for d in DECISIONS if d["system"] == k]
         if c_decs:
             d_html = "\n".join(
                 f'  <div class="decision">\n    <h3>{esc(d["title"])}</h3>\n'
@@ -1107,7 +1107,7 @@ def build():
                 for d in c_decs)
             sections.append(f'  <h2>Рішення</h2>\n{d_html}')
 
-        c_tasks = [t for t in TASKS if t["component"] == k]
+        c_tasks = [t for t in TASKS if t["system"] == k]
         if c_tasks:
             t_rows = "\n".join(
                 f'      <tr><td><span class="pill {t["status"]}">{TASK_STATUS[t["status"]]}</span></td>'
@@ -1117,7 +1117,7 @@ def build():
                             '    <thead><tr><th>Статус</th><th>Задача</th><th>Нотатка</th></tr></thead>\n'
                             f'    <tbody>\n{t_rows}\n    </tbody>\n  </table>\n  </div>')
 
-        c_bom = [b for b in BOM if b["component"] == k]
+        c_bom = [b for b in BOM if b["system"] == k]
         if c_bom:
             b_rows = []
             for b in c_bom:
@@ -1132,7 +1132,7 @@ def build():
                             '    <thead><tr><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>\n'
                             f'    <tbody>\n{chr(10).join(b_rows)}\n    </tbody>\n  </table>\n  </div>')
 
-        c_orders = [o for o in ORDERS if o["component"] == k]
+        c_orders = [o for o in ORDERS if o["system"] == k]
         if c_orders:
             o_rows = "\n".join(
                 f'      <tr><td class="num">{o["id"]}</td><td class="num">{o["date"]}</td>'
@@ -1146,29 +1146,29 @@ def build():
 
         if not sections:
             sections.append('  <div class="empty">Тут поки порожньо. Додай задачі/BOM/рішення з тегом '
-                            f'<span style="font-family:var(--mono)">component: "{k}"</span> у data/ — '
+                            f'<span style="font-family:var(--mono)">system: "{k}"</span> у data/ — '
                             'і вони зʼявляться тут автоматично.</div>')
 
         page = page.replace("{{SECTIONS}}", "\n\n".join(sections))
         page = page.replace("{{GEN_DATE}}", today.isoformat())
-        comp_pages[reg["page"]] = page
+        sys_pages[reg["page"]] = page
 
     # ================= tasks page (kanban board) =================
     tasks_page = tmpl("tasks.tmpl.html")
     kan_status = [("doing", "в роботі"), ("waiting", "чекаємо"),
                   ("todo", "до роботи"), ("done", "готово")]
-    comp_order = {c: i for i, c in enumerate(COMPONENTS)}
+    comp_order = {c: i for i, c in enumerate(SYSTEMS)}
     cols = []
     for st, st_label in kan_status:
         cards_k = []
         for t in sorted((t for t in TASKS if t["status"] == st),
-                        key=lambda x: comp_order.get(x["component"], 9)):
+                        key=lambda x: comp_order.get(x["system"], 9)):
             note = f'<p class="kn">{esc(t["note"])}</p>' if t.get("note") else ""
             done_cls = " done-card" if st == "done" else ""
             cards_k.append(
-                f'      <div class="kcard{done_cls}" data-comp="{t["component"]}">\n'
+                f'      <div class="kcard{done_cls}" data-comp="{t["system"]}">\n'
                 f'        <p class="kt">{esc(t["task"])}</p>\n{("        " + note + chr(10)) if note else ""}'
-                f'        <span class="chip {t["component"]}">{COMP_LABEL[t["component"]].lower()}</span>\n'
+                f'        <span class="chip {t["system"]}">{SYS_LABEL[t["system"]].lower()}</span>\n'
                 f'      </div>')
         body = "\n".join(cards_k) if cards_k else '      <p class="kempty">порожньо</p>'
         cols.append(
@@ -1178,11 +1178,11 @@ def build():
     tasks_page = tasks_page.replace("{{KANBAN_COLUMNS}}", "\n".join(cols))
 
     chips = [f'      <button class="fchip active" data-f="all">всі · {len(TASKS)}</button>']
-    for k in COMPONENTS:
-        n = sum(1 for t in TASKS if t["component"] == k)
+    for k in SYSTEMS:
+        n = sum(1 for t in TASKS if t["system"] == k)
         if n:
             chips.append(f'      <button class="fchip" data-f="{k}">'
-                         f'{COMP_LABEL[k].lower()} · {n}</button>')
+                         f'{SYS_LABEL[k].lower()} · {n}</button>')
     tasks_page = tasks_page.replace("{{TASK_FILTER_CHIPS}}", "\n".join(chips))
     tasks_page = tasks_page.replace("{{GEN_DATE}}", today.isoformat())
 
@@ -1223,15 +1223,15 @@ def build():
              "кошик лінками в BOM нижче"),
     ]))
 
-    comp_hue = {"audio": "var(--comp-audio)", "solar": "var(--comp-solar)",
+    sys_hue = {"audio": "var(--comp-audio)", "solar": "var(--comp-solar)",
                 "lights": "var(--comp-lights)", "armor": "var(--comp-armor)",
                 "project": "var(--comp-project)"}
     cards = []
-    for c in COMPONENTS_REG:
+    for c in SYSTEMS_REG:
         k = c["key"]
-        c_tasks = [t for t in TASKS if t["component"] == k]
+        c_tasks = [t for t in TASKS if t["system"] == k]
         c_done = sum(1 for t in c_tasks if t["status"] == "done")
-        c_bom = [b for b in BOM if b["component"] == k]
+        c_bom = [b for b in BOM if b["system"] == k]
         c_have = sum(1 for b in c_bom if b["status"] == "have")
         tot = len(c_tasks) + len(c_bom)
         pct = round(100 * (c_done + c_have) / tot) if tot else 0
@@ -1247,7 +1247,7 @@ def build():
         if c_bom:
             meta.append(f"купити: {len(c_bom) - c_have}")
         cards.append(
-            f'    <div class="card" id="card-{k}" style="--cc:{comp_hue[k]}">\n'
+            f'    <div class="card" id="card-{k}" style="--cc:{sys_hue[k]}">\n'
             f'      <div class="row"><h3><a href="{SITE_URL}{c["page"]}">{c["emoji"]} {esc(c["label"])}</a></h3>'
             f'<span class="pill {c["status"]}">{COMP_STATUS_LABEL[c["status"]]}</span></div>\n'
             f'      <p>{esc(c["summary"])}</p>\n'
@@ -1263,10 +1263,10 @@ def build():
     for st, st_label in kan_status:
         n = sum(1 for t in TASKS if t["status"] == st)
         summary.append(f'        <span class="pill {st}">{st_label} · {n}</span>')
-    for k in COMPONENTS:
-        n = sum(1 for t in TASKS if t["component"] == k and t["status"] != "done")
+    for k in SYSTEMS:
+        n = sum(1 for t in TASKS if t["system"] == k and t["status"] != "done")
         if n:
-            summary.append(f'        <span class="chip {k}">{COMP_LABEL[k].lower()} · {n}</span>')
+            summary.append(f'        <span class="chip {k}">{SYS_LABEL[k].lower()} · {n}</span>')
     index = index.replace("{{TASK_SUMMARY}}", "\n".join(summary))
 
     # BOM + budget
@@ -1310,7 +1310,7 @@ def build():
              "tasks.html": tasks_page, "lights.html": lights,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
-             "solar_lab.html": slab, **comp_pages}
+             "solar_lab.html": slab, **sys_pages}
     for name, html in pages.items():
         (OUT / name).write_text(html)
     (OUT / "knowledge.jsonld").write_text(json.dumps(kg, ensure_ascii=False, indent=1))

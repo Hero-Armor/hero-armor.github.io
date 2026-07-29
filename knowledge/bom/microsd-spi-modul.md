@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 HiLetgo 5pcs з рівнями — живити 5В (LDO на платі)
 
-Компонент: [Аудіо](/components/audio.md) · статус: **є** · ціна $7/5шт · к-сть 3
+Система: [Аудіо](/systems/audio.md) · статус: **є** · ціна $7/5шт · к-сть 3

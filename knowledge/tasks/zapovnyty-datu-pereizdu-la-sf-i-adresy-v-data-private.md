@@ -7,6 +7,6 @@ task_status: "todo"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · компонент: [Проєкт](/project.md)
+Статус: **до роботи** · система: [Проєкт](/project.md)
 
 без дати ship-to порадник не працює

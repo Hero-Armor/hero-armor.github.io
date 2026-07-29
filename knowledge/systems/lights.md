@@ -4,7 +4,7 @@ title: "Світло"
 description: "Шина 12 В, три групи: прожектори заливки, декор («біжуча вода» + лампи робота) і аварійна лінія, яка тримається найдовше. Композитна ніч 1416 Wh — дві третини з"
 resource: "https://hero-armor.github.io/lights.html"
 tags: ["lights"]
-component_status: "in-design"
+system_status: "in-design"
 generated: { by: "process:site-build" }
 ---
 
