@@ -29,3 +29,4 @@
 * [Відповісти Володимиру по просадці 12В — тест уже зроблено](vidpovisty-volodymyru-po-prosadtsi-12v-test-uzhe-zrobleno.md) - чекаємо
 * [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) - в роботі
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) - в роботі
+* [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) - до роботи

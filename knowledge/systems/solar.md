@@ -28,6 +28,7 @@ generated: { by: "process:site-build" }
 * [Anker F2000 має TT-30R — але це 120 В змінного, не наші 12 В](/decisions/anker-f2000-maie-tt-30r-ale-tse-120-v-zminnoho-ne-nashi-12-v.md)
 * [Перехідники на сторонні АКБ існують — але вони 48-вольтові](/decisions/perekhidnyky-na-storonni-akb-isnuiut-ale-vony-48-voltovi.md)
 * [Найпростіший шлях: окремий АКБ 12 В живить світло, станція його заряджає](/decisions/naiprostishyi-shliakh-okremyi-akb-12-v-zhyvyt-svitlo-stantsi.md)
+* [Понизити порт розширення 48→12 В — шлях робочий, але не перевірений](/decisions/ponyzyty-port-rozshyrennia-48-12-v-shliakh-robochyi-ale-ne-p.md)
 
 # Задачі
 
@@ -36,6 +37,7 @@ generated: { by: "process:site-build" }
 * [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — чекаємо
 * [Спроєктувати раму сонячного масиву під вітер плайї](/tasks/sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) — чекаємо
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) — в роботі
+* [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](/tasks/pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) — до роботи
 
 # Закупівля
 
@@ -46,3 +48,5 @@ generated: { by: "process:site-build" }
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — —, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](/bom/lifepo4-12-v-100-ah-bufer-pid-svitlo.md) — ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити
+* [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](/bom/victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) — $201, купити
+* [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](/bom/victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) — $114, купити

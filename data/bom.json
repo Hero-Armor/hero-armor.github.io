@@ -511,5 +511,25 @@
     "system": "solar",
     "flow": "to_order",
     "note": "КАНДИДАТ у пару до АКБ: станція через розетку тримає акумулятор зарядженим. Bioenno BPC-1520A або аналог"
+  },
+  {
+    "item": "Victron Orion-Tr 48/12-30A (360 Вт), ізольований",
+    "qty": "1",
+    "price": "$201",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "https://signaturesolar.com/victron-energy-orion-tr-48-12-20a-240w-isolated-dc-dc-converter/",
+    "note": "КАНДИДАТ під ідею «понизити порт розширення». Вхід 32-70 В покриває весь діапазон порту (40-58.4 В), вихід 12 В / 30 А = 360 Вт при 40°C, ізольований (відділяє 12 В від 48 В), IP43, до +55°C. Купувати ТІЛЬКИ після перевірки резистором, що порт узагалі віддає струм"
+  },
+  {
+    "item": "Victron Orion-Tr 48/12-20A (240 Вт), ізольований",
+    "qty": "1",
+    "price": "$114",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "https://signaturesolar.com/orion-tr-48-12-20a-240w-isolated-dc-dc-converter-voltage-regulator/",
+    "note": "дешевший варіант того самого: 20А=240Вт. Впритул до піку 243 Вт — брати лише якщо тест стрічки покаже низьке споживання"
   }
 ]

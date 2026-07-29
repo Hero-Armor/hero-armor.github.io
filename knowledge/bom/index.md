@@ -58,3 +58,5 @@
 * [Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)](svitlovidbyvni-strichky-poz-3-4-bili-5-zhovta.md) - ~$20, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](lifepo4-12-v-100-ah-bufer-pid-svitlo.md) - ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](zariadnyk-14-6-v-20-30-a-z-anderson.md) - ~$60, купити
+* [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) - $201, купити
+* [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) - $114, купити
