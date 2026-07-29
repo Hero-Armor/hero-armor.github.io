@@ -25,10 +25,11 @@ generated: { by: "process:site-build" }
 
 # Задачі
 
-* [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](/tasks/test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) — до роботи
-* [Вирішити скільки станцій EcoFlow і яку модель](/tasks/vyrishyty-skilky-stantsii-ecoflow-i-iaku-model.md) — до роботи
-* [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — до роботи
-* [Спроєктувати раму сонячного масиву під вітер плайї](/tasks/sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) — до роботи
+* [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](/tasks/test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) — чекаємо
+* [Вирішити скільки станцій EcoFlow і яку модель](/tasks/vyrishyty-skilky-stantsii-ecoflow-i-iaku-model.md) — чекаємо
+* [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — чекаємо
+* [Спроєктувати раму сонячного масиву під вітер плайї](/tasks/sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) — чекаємо
+* [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) — в роботі
 
 # Закупівля
 

@@ -23,10 +23,10 @@ generated: { by: "process:site-build" }
 # Задачі
 
 * [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](/tasks/a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) — чекаємо
-* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, LDR день/ніч, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-ldr-den-nich-.md) — до роботи
-* [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — до роботи
-* [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](/tasks/zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) — до роботи
-* [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — до роботи
+* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, LDR день/ніч, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-ldr-den-nich-.md) — чекаємо
+* [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — чекаємо
+* [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](/tasks/zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) — чекаємо
+* [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — чекаємо
 
 # Закупівля
 

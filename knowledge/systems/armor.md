@@ -16,7 +16,7 @@ generated: { by: "process:site-build" }
 
 # Задачі
 
-* [Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу](/tasks/vikno-v-broni-pid-radar-60-60-mm-abs-akryl-sklotkanyna-bez-m.md) — до роботи
+* [Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу](/tasks/vikno-v-broni-pid-radar-60-60-mm-abs-akryl-sklotkanyna-bez-m.md) — чекаємо
 
 # Закупівля
 
