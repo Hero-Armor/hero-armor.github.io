@@ -70,8 +70,11 @@ TASK_STATUS = {"doing": "в роботі", "waiting": "чекаємо", "todo": 
 ORDER_STATUS = {"ordered": "замовлено", "shipped": "їде", "delivered": "доставлено",
                 "received": "отримано"}
 PILL = {"have": ("have", "у списку"), "add": ("add", "додати"), "tbd": ("tbd", "обрати")}
-PILL_OVERRIDES = {"EcoFlow (12V DC-порт)": "є", "Poly-Planar MA-3013, пара": "замовлено",
-                  "Herdio HMS60 3\", пара": "замовлено"}
+# Ланцюг статусів Івана: замовити -> їде -> приїхало. Виводиться з даних
+# (bom.status + активні замовлення), руками ніде не дублюється.
+FLOW = {"to_order": ("add", "замовити"), "ordered": ("tbd", "їде"),
+        "arrived": ("have", "приїхало")}
+FLOW_LABEL = {"to_order": "Замовити", "ordered": "Їде", "arrived": "Приїхало"}
 ORDER_STATUS_LD = {"ordered": "OrderProcessing", "shipped": "OrderInTransit",
                    "delivered": "OrderDelivered", "received": "OrderDelivered"}
 ACTION_STATUS_LD = {"todo": "PotentialActionStatus", "doing": "ActiveActionStatus",
@@ -99,13 +102,12 @@ def usd(price_str):
 def bom_rows_html():
     rows = []
     for b in BOM:
-        cls, label = PILL[b["status"]]
-        label = PILL_OVERRIDES.get(b["item"], label)
+        cls, label = FLOW.get(b.get("flow"), PILL[b["status"]])
         item = esc(b["item"])
         if b.get("url"):
             item = f'<a href="{b["url"]}">{item}</a>'
         rows.append(
-            f'      <tr data-status="{b["status"]}"><td>{item}</td>'
+            f'      <tr data-status="{b.get("flow", b["status"])}"><td>{item}</td>'
             f'<td><span class="chip {b["system"]}">{b["system"]}</span></td>'
             f'<td class="num">{b["qty"]}</td>'
             f'<td class="num">{b["price"]}</td><td><span class="pill {cls}">{label}</span></td>'
@@ -1286,11 +1288,15 @@ def build():
         f'<i class="seg-add" style="--w:{100 - seg_have}%"></i>')
     index = index.replace("{{BUDGET_HAVE}}", f"{budget_have:.0f}")
     index = index.replace("{{BUDGET_TOBUY}}", f"{budget_tobuy:.0f}")
-    n_add = sum(1 for b in BOM if b["status"] != "have")
-    index = index.replace("{{BOM_FILTER_CHIPS}}", "\n".join([
-        f'      <button class="fchip active" data-f="all">всі · {len(BOM)}</button>',
-        f'      <button class="fchip" data-f="add">купити · {n_add}</button>',
-        f'      <button class="fchip" data-f="have">є · {have_n}</button>']))
+    # фільтри по ланцюгу «замовити → їде → приїхало»
+    n_flow = {k: sum(1 for b in BOM if b.get("flow") == k)
+              for k in ("to_order", "ordered", "arrived")}
+    chips_bom = [f'      <button class="fchip active" data-f="all">всі · {len(BOM)}</button>']
+    for k in ("to_order", "ordered", "arrived"):
+        if n_flow[k]:
+            chips_bom.append(f'      <button class="fchip" data-f="{k}">'
+                             f'{FLOW_LABEL[k]} · {n_flow[k]}</button>')
+    index = index.replace("{{BOM_FILTER_CHIPS}}", "\n".join(chips_bom))
     index = index.replace("{{BOM_ROWS}}", bom_rows_html())
 
     # orders

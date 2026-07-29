@@ -11,6 +11,7 @@
     "deliver_to": "la",
     "url": "https://www.amazon.com/dp/B00197V836",
     "note": "кандидати на A/B тест звуку",
-    "system": "audio"
+    "system": "audio",
+    "flow": "ordered"
   }
 ]

@@ -37,7 +37,10 @@ SECRET = re.compile(
     r"ghp_[A-Za-z0-9]{20,}|github_pat_|BEGIN [A-Z ]*PRIVATE KEY|"
     r"sk-ant-|AKIA[0-9A-Z]{16}|\d{8,10}:[\w-]{35}")
 tracked = [l for l in git("ls-files").splitlines() if l]
+SELF = "site/guard.py"  # у самому гардрейлі шаблони пошуку — це не секрети
 for rel in tracked:
+    if rel == SELF:
+        continue
     f = ROOT / rel
     if not f.is_file() or f.stat().st_size > 2_000_000:
         continue
