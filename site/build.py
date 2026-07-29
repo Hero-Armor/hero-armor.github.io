@@ -37,6 +37,10 @@ import power_node_model as pw  # noqa: E402  (pulls demand from lights + audio)
 
 BOM = json.loads((DATA / "bom.json").read_text())
 DECISIONS = json.loads((DATA / "decisions.json").read_text())
+# Архівні рішення (закриті теми) не показуємо серед чинних — лише в історії,
+# щоб база не суперечила сама собі й закрите питання не спливало як живе.
+ARCHIVED = [d for d in DECISIONS if d.get("archived")]
+DECISIONS = [d for d in DECISIONS if not d.get("archived")]
 TASKS = json.loads((DATA / "tasks.json").read_text())
 ORDERS = json.loads((DATA / "orders.json").read_text())
 ADDR = json.loads((DATA / "addresses.json").read_text())

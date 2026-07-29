@@ -12,14 +12,11 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
-* [Шина 24 В, а не 12 В](/decisions/shyna-24-v-a-ne-12-v.md)
 * [Прожектори — MR16 без стабілізатора (voltage-following)](/decisions/prozhektory-mr16-bez-stabilizatora-voltage-following.md)
-* [Два пороги відключення: 23.6 В основне, 22.2 В аварійне](/decisions/dva-porohy-vidkliuchennia-23-6-v-osnovne-22-2-v-avariine.md)
 * [Адресна стрічка вдень вимкнена](/decisions/adresna-strichka-vden-vymknena.md)
 * [«Біжуча вода» — біла, зовнішній контур прибрано](/decisions/bizhucha-voda-bila-zovnishnii-kontur-prybrano.md)
 * [Панель 500 Вт замість попередніх 100 Вт](/decisions/panel-500-vt-zamist-poperednikh-100-vt.md)
 * [Анімація замість заливки — стрічка світить не вся одразу](/decisions/animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)
-* [12-вольтові лампи MR16 на шині 24 В](/decisions/12-voltovi-lampy-mr16-na-shyni-24-v.md)
 * [Сходи подіуму — наша лінія чи автономні сонячні](/decisions/skhody-podiumu-nasha-liniia-chy-avtonomni-soniachni.md)
 * [Колір габаритних вогнів — жовтий чи червоний](/decisions/kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
 * [Неон WS2811 ще не замовлено](/decisions/neon-ws2811-shche-ne-zamovleno.md)
@@ -28,7 +25,7 @@ generated: { by: "process:site-build" }
 * [Просадку рахуємо деревом, а не по лініях](/decisions/prosadku-rakhuiemo-derevom-a-ne-po-liniiakh.md)
 * [Стрічку обмежуємо по струму в прошивці](/decisions/strichku-obmezhuiemo-po-strumu-v-proshyvtsi.md)
 * [Номінали запобіжників — з моделі, а не навмання](/decisions/nominaly-zapobizhnykiv-z-modeli-a-ne-navmannia.md)
-* [Наявний кабель під 24 В треба доповнити](/decisions/naiavnyi-kabel-pid-24-v-treba-dopovnyty.md)
+* [Кабель, куплений під 24 В, треба доповнити під 12 В](/decisions/kabel-kuplenyi-pid-24-v-treba-dopovnyty-pid-12-v.md)
 * [Довжини кабелів — прикидки, не з креслень](/decisions/dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
 
 # Задачі
@@ -36,7 +33,7 @@ generated: { by: "process:site-build" }
 * [Звести бюджет світла: заявлені ~170–220 Вт LED проти панелі 100 Вт — перерахувати (сайт сам радить зменшити стрічки)](/tasks/zvesty-biudzhet-svitla-zaiavleni-170-220-vt-led-proty-paneli.md) — готово
 * [Обрати і замовити неон WS2811 під 12 В](/tasks/obraty-i-zamovyty-neon-ws2811-pid-12-v.md) — до роботи
 * [Перевірити ватметром voltage-following на Gardencoin](/tasks/pereviryty-vatmetrom-voltage-following-na-gardencoin.md) — до роботи
-* [Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down](/tasks/vyrishyty-12-v-mr16-na-shyni-24-v-cherez-shim-chy-step-down.md) — до роботи
+* [Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down](/tasks/vyrishyty-12-v-mr16-na-shyni-24-v-cherez-shim-chy-step-down.md) — готово
 * [Уточнити в архітектора: сходи ×24 в нашу лінію чи автономні сонячні](/tasks/utochnyty-v-arkhitektora-skhody-24-v-nashu-liniiu-chy-avtono.md) — чекаємо
 * [Звірити статуси закупівлі світла з інвойсом](/tasks/zviryty-statusy-zakupivli-svitla-z-invoisom.md) — до роботи
 * [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](/tasks/dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) — до роботи

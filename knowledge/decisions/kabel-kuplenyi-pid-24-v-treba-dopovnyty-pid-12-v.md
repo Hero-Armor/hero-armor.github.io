@@ -1,6 +1,6 @@
 ---
 type: "Engineering Decision"
-title: "Наявний кабель під 24 В треба доповнити"
+title: "Кабель, куплений під 24 В, треба доповнити під 12 В"
 description: "Ancor 8/2 і 12/2 купувались під шину 24 В."
 tags: ["lights"]
 generated: { by: "process:site-build" }
