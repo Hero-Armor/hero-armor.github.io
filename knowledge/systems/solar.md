@@ -23,8 +23,11 @@ generated: { by: "process:site-build" }
 * [Станції гріються: межа +45°C, а на плайї 40-45°C](/decisions/stantsii-hriiutsia-mezha-45-c-a-na-plaii-40-45-c.md)
 * [Нічне мале навантаження станцію не присипляє](/decisions/nichne-male-navantazhennia-stantsiiu-ne-prysypliaie.md)
 * [Якщо 126 Вт не вистачить — чотири станції з 30 А по 12 В](/decisions/iakshcho-126-vt-ne-vystachyt-chotyry-stantsii-z-30-a-po-12-v.md)
-* [Перехідник від порту зовнішньої батареї — шлях відхилено](/decisions/perekhidnyk-vid-portu-zovnishnoi-batarei-shliakh-vidkhyleno.md)
+* [Перехідник від порту зовнішньої батареї — уточнено (див. нижче)](/decisions/perekhidnyk-vid-portu-zovnishnoi-batarei-utochneno-dyv-nyzhc.md)
 * [Запасний шлях: розетка 220 В + блок живлення 12 В коштує ~20% ємності](/decisions/zapasnyi-shliakh-rozetka-220-v-blok-zhyvlennia-12-v-koshtuie.md)
+* [Anker F2000 має TT-30R — але це 120 В змінного, не наші 12 В](/decisions/anker-f2000-maie-tt-30r-ale-tse-120-v-zminnoho-ne-nashi-12-v.md)
+* [Перехідники на сторонні АКБ існують — але вони 48-вольтові](/decisions/perekhidnyky-na-storonni-akb-isnuiut-ale-vony-48-voltovi.md)
+* [Найпростіший шлях: окремий АКБ 12 В живить світло, станція його заряджає](/decisions/naiprostishyi-shliakh-okremyi-akb-12-v-zhyvyt-svitlo-stantsi.md)
 
 # Задачі
 
@@ -41,3 +44,5 @@ generated: { by: "process:site-build" }
 * [Станції EcoFlow ×2 (модель не обрана)](/bom/stantsii-ecoflow-2-model-ne-obrana.md) — $1099/шт, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — —, купити
+* [LiFePO4 12 В 100 Ah (буфер під світло)](/bom/lifepo4-12-v-100-ah-bufer-pid-svitlo.md) — ~$250, купити
+* [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити

@@ -56,3 +56,5 @@
 * [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - ~$25, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - ~$30, купити
 * [Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)](svitlovidbyvni-strichky-poz-3-4-bili-5-zhovta.md) - ~$20, купити
+* [LiFePO4 12 В 100 Ah (буфер під світло)](lifepo4-12-v-100-ah-bufer-pid-svitlo.md) - ~$250, купити
+* [Зарядник 14.6 В 20-30 А з Anderson](zariadnyk-14-6-v-20-30-a-z-anderson.md) - ~$60, купити
