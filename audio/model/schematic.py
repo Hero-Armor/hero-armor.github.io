@@ -3,8 +3,8 @@
 Hero Armor audio node — wiring schematic (module-to-module, pin-to-pin).
 Generates schematic.svg + schematic.png next to this file.
 
-  12V (EcoFlow DC port) --fuse--> TPA3116D2 MONO amp + buck 12->5V
-  5V  --> ESP32 VIN, PCM5102A VIN, LD2410C VCC;  3V3 (from ESP32 LDO) --> SD, XSMT
+  12V (auto/cigarette port of the station, OWN cable) --fuse--> TPA3116D2 MONO amp + buck 12->5V
+  5V  --> ESP32 VIN, PCM5102A VIN, LD2410C VCC, microSD;  3V3 (from ESP32 LDO) --> XSMT
   ESP32: I2S -> PCM5102A -> L analog -> mono amp -> 1x MA-3013 speaker
          (second speaker of the pair = ready spare)
          SPI -> microSD;  GPIO27/UART2 <-> LD2410C

@@ -1,10 +1,81 @@
 {
   "cases": [
-    { "key": "night",  "name": "Ніч, натовп",      "t_ambient": 15, "solar_load": 0,  "noise_db": 75, "triggers_per_hr": 45, "clip_s": 25, "cooldown_s": 30, "vol_dbfs": -14, "night_mode": false, "listener_m": 3.0, "dashboard": true },
-    { "key": "day",    "name": "День, звичайний",  "t_ambient": 35, "solar_load": 0,  "noise_db": 65, "triggers_per_hr": 30, "clip_s": 25, "cooldown_s": 30, "vol_dbfs": -14, "night_mode": false, "listener_m": 3.0, "dashboard": true },
-    { "key": "heat",   "name": "Спека + сонце",    "t_ambient": 43, "solar_load": 15, "noise_db": 65, "triggers_per_hr": 60, "clip_s": 25, "cooldown_s": 30, "vol_dbfs": -14, "night_mode": false, "listener_m": 3.0, "dashboard": true },
-    { "key": "storm",  "name": "Пилова буря",      "t_ambient": 40, "solar_load": 0,  "noise_db": 80, "triggers_per_hr": 5,  "clip_s": 25, "cooldown_s": 30, "vol_dbfs": -12, "night_mode": false, "listener_m": 3.0, "dashboard": true },
-    { "key": "quiet",  "name": "Глибока ніч",      "t_ambient": 10, "solar_load": 0,  "noise_db": 50, "triggers_per_hr": 3,  "clip_s": 25, "cooldown_s": 30, "vol_dbfs": -14, "night_mode": true,  "listener_m": 3.0, "dashboard": true }
+    {
+      "key": "night",
+      "name": "Ніч, натовп",
+      "t_ambient": 15,
+      "solar_load": 0,
+      "noise_db": 75,
+      "triggers_per_hr": 45,
+      "clip_s": 25,
+      "cooldown_s": 30,
+      "vol_dbfs": -14,
+      "night_mode": false,
+      "listener_m": 3.0,
+      "dashboard": true
+    },
+    {
+      "key": "day",
+      "name": "День, звичайний",
+      "t_ambient": 35,
+      "solar_load": 0,
+      "noise_db": 65,
+      "triggers_per_hr": 30,
+      "clip_s": 25,
+      "cooldown_s": 30,
+      "vol_dbfs": -14,
+      "night_mode": false,
+      "listener_m": 3.0,
+      "dashboard": true
+    },
+    {
+      "key": "heat",
+      "name": "Спека + сонце",
+      "t_ambient": 43,
+      "solar_load": 15,
+      "noise_db": 65,
+      "triggers_per_hr": 60,
+      "clip_s": 25,
+      "cooldown_s": 30,
+      "vol_dbfs": -14,
+      "night_mode": false,
+      "listener_m": 3.0,
+      "dashboard": true
+    },
+    {
+      "key": "storm",
+      "name": "Пилова буря",
+      "t_ambient": 40,
+      "solar_load": 0,
+      "noise_db": 80,
+      "triggers_per_hr": 5,
+      "clip_s": 25,
+      "cooldown_s": 30,
+      "vol_dbfs": -12,
+      "night_mode": false,
+      "listener_m": 3.0,
+      "dashboard": true,
+      "note": "Гучність −12 dBFS — це на 1.4 дБ у кліпінг (межа −13.4): у бурю розбірливість важливіша за чистоту піків. Якщо кліпати не хочемо — ставити −14"
+    },
+    {
+      "key": "quiet",
+      "name": "Глибока ніч",
+      "t_ambient": 10,
+      "solar_load": 0,
+      "noise_db": 50,
+      "triggers_per_hr": 3,
+      "clip_s": 25,
+      "cooldown_s": 30,
+      "vol_dbfs": -14,
+      "night_mode": true,
+      "listener_m": 3.0,
+      "dashboard": true
+    }
   ],
-  "composite_day_hours": { "day": 8, "heat": 4, "night": 6, "quiet": 6 }
+  "composite_day_hours": {
+    "day": 8,
+    "heat": 4,
+    "night": 6,
+    "quiet": 6
+  }
 }

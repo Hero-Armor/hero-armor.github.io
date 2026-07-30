@@ -35,8 +35,8 @@ generated: { by: "process:site-build" }
 # Задачі
 
 * [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](/tasks/test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) — чекаємо
-* [Вирішити скільки станцій EcoFlow і яку модель](/tasks/vyrishyty-skilky-stantsii-ecoflow-i-iaku-model.md) — чекаємо
-* [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — чекаємо
+* [Вирішити скільки станцій і яку модель](/tasks/vyrishyty-skilky-stantsii-i-iaku-model.md) — чекаємо
+* [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — готово
 * [Спроєктувати раму сонячного масиву під вітер плайї](/tasks/sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) — чекаємо
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) — в роботі
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](/tasks/pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) — до роботи
@@ -44,7 +44,6 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [EcoFlow (12V DC-порт)](/bom/ecoflow-12v-dc-port.md) — —, купити
 * [Сонячні панелі для масиву (потужність не обрана)](/bom/soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — $149, купити
 * [Станції EcoFlow ×2 (модель не обрана)](/bom/stantsii-ecoflow-2-model-ne-obrana.md) — $1099/шт, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити

@@ -18,14 +18,16 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-# ---- electrical constants ----
-VCC = 12.0
-R_LOAD = 4.0
+# ---- electrical constants (з audio/data/params.json — руками не вписуємо) ----
+import json as _json, pathlib as _pl
+_P = _json.loads((_pl.Path(__file__).resolve().parents[1] / "data" / "params.json").read_text())
+VCC = _P["rail_v"]
+R_LOAD = _P["speaker"]["candidates"][_P["speaker"]["chosen"]]["ohms"]
 V_CLIP_RMS = VCC / np.sqrt(2)        # BTL max sine ~8.49 Vrms -> 18 W
 P_CLIP = V_CLIP_RMS**2 / R_LOAD
-DAC_FS_VRMS = 2.1                     # PCM5102A full scale
-GAINS_DB = [20, 26, 32, 36]           # TPA3116 gain select
-SPEECH_CREST_DB = 12.0                # typical speech crest factor
+DAC_FS_VRMS = _P["dac_fs_vrms"]        # PCM5102A full scale
+GAINS_DB = _P["gain_options"]          # TPA3116 gain select
+SPEECH_CREST_DB = _P["crest_db"]       # typical speech crest factor
 
 # ---- palette (dataviz reference, light mode) ----
 SURFACE = "#fcfcfb"

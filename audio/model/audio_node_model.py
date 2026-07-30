@@ -85,11 +85,19 @@ def composite_day():
     return wh, results
 
 
+def _stations():
+    """Станції беремо з системи «Живлення» — тут свого списку не тримаємо."""
+    import json as _json, pathlib as _pl
+    sp = _pl.Path(__file__).resolve().parents[2] / "solar" / "data" / "params.json"
+    st = _json.loads(sp.read_text())["stations"]
+    return {name: v["wh"] for name, v in st.items()}
+
+
 def autonomy(wh_node_day):
-    """Days per power-source model incl. station standby; plus solar break-even W."""
+    """Days per station incl. station standby; plus solar break-even W."""
     ps, sol = P["power_source"], P["solar"]
     total = wh_node_day + ps["standby_w"] * 24
-    days = {name: wh * ps["usable_frac"] / total for name, wh in ps["models"].items()}
+    days = {name: wh * ps["usable_frac"] / total for name, wh in _stations().items()}
     return dict(total_wh_day=total, days=days,
                 solar_w=total / (sol["sun_hours"] * sol["system_eff"]))
 

@@ -1,6 +1,6 @@
 ---
 type: "Part"
-title: "TPA3116D2 Mono (WINGONEER)"
+title: "TPA3116D2 Mono (HiLetgo)"
 description: "HiLetgo 2pcs mono 100W — основний + запас"
 resource: "https://www.amazon.com/dp/B082F7P184"
 tags: ["audio"]

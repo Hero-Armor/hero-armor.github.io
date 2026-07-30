@@ -4,7 +4,7 @@ title: "Захист динаміка від пилу"
 description: "3\" гриль ABS + металева сітка, 2 шт; мембрана вниз"
 resource: "https://www.amazon.com/dp/B0CGH4D68B"
 tags: ["audio"]
-quantity: "—"
+quantity: "2"
 price: "$10/2шт"
 procurement_status: "add"
 generated: { by: "process:site-build" }
@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 3" гриль ABS + металева сітка, 2 шт; мембрана вниз
 
-Система: [Аудіо](/systems/audio.md) · статус: **купити** · ціна $10/2шт · к-сть —
+Система: [Аудіо](/systems/audio.md) · статус: **купити** · ціна $10/2шт · к-сть 2

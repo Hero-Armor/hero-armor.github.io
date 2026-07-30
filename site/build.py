@@ -638,6 +638,11 @@ def build():
         f'const DACFS={P["dac_fs_vrms"]}, VCLIP=V/Math.sqrt(2), R={spk["ohms"]}, '
         f'CREST=Math.pow(10,{P["crest_db"]}/10);')
     lab = lab.replace("{{ECOFLOW_STANDBY}}", str(P["power_source"]["standby_w"]))
+    lab = lab.replace("{{NIGHT_DELTA}}", str(P["volume"]["night_delta_db"]))
+    lab = lab.replace("{{RADAR_RANGE}}", str(P["sensor"]["range_m"]))
+    lab = lab.replace("{{USABLE_FRAC}}", str(P["power_source"]["usable_frac"]))
+    lab = lab.replace("{{SUN_HOURS}}", str(P["solar"]["sun_hours"]))
+    lab = lab.replace("{{SYS_EFF}}", str(P["solar"]["system_eff"]))
     lab = lab.replace("{{A33_PLAY}}", f'{c33["esp32_play"]}+{c33["dac"]}+{c33["sd_read"]}')
     lab = lab.replace("{{A33_IDLE}}", f'{c33["esp32_idle"]}+{c33["dac"]}')
     lab = lab.replace("{{RADAR_W}}", f'{sn["a_5v"]}*5.0')
@@ -750,7 +755,7 @@ def build():
             f'<td>{esc(f.get("model", "—"))}</td></tr>')
     lights = lights.replace("{{FIXTURES_ROWS}}", "\n".join(f_rows))
     lights = lights.replace("{{FIXTURES_CAPTION}}",
-        f'Паспортний пік — усе на повну, анімація не врахована: {sum(l_peak.values()):.0f} Вт '
+        f'Паспортний пік — усе світло на повну, з урахуванням анімації (світиться біжучий фронт, не вся стрічка): {sum(l_peak.values()):.0f} Вт '
         f'проти {ref["architect_peak_w"]} Вт у розрахунку архітектора (у його Гр.2 сидів ще аудіоплеєр, '
         f'а сходи в кресленні були 0.48 Вт замість наших 1 Вт). У реальних режимах система бере '
         f'{l_eco["draw_w"]:.0f}–{l_burn["draw_w"]:.0f} Вт.')
@@ -908,9 +913,8 @@ def build():
     cables = cables.replace("{{TREE_PEAK_CAPTION}}",
         f'Межі різні навмисно: {budget["strict_pct"]:.0f}% для адресної стрічки і '
         f'{budget["relaxed_pct"]:.0f}% для звичайних ламп. {esc(budget["note"])} '
-        + (f'На піку вилітає лише {len(bad_pk)} ділянка — лінія стрічки. Але «пік» тут означає '
-           f'усю стрічку білим на повну довжину, чого в анімації «біжуча вода» не буває: '
-           f'простіше поставити ліміт струму в WLED, ніж тягнути мідь під режим, який не увімкнеться.'
+        + (f'На піку не проходить {len(bad_pk)} ділянка — лінія стрічки. Лікується лімітом струму '
+           f'у WLED, а не товщою міддю.'
            if bad_pk else "На піку проходить усе."))
 
     f_rows = "\n".join(
@@ -936,9 +940,9 @@ def build():
 
     kit_items = [b for b in BOM if b["system"] == "lights"
                  and not b["item"].startswith("Кабель:")
-                 and any(w in b["item"] for w in ("Щит", "Запобіжники", "Фотореле", "Реле",
-                                                  "Гермокоробка", "Гермокоробки", "Гермороз",
-                                                  "Гель-конектори", "Гофра"))]
+                 and any(w in b["item"].lower() for w in ("щит", "запобіжник", "реле",
+                                                          "гермокоробка", "гермокоробки", "гермороз",
+                                                          "гель-конектори", "гофра", "вимикач"))]
     k_rows = "\n".join(
         f'      <tr><td>{esc(b["item"])}</td><td class="num">{esc(b["qty"])}</td>'
         f'<td><span class="pill {b["status"]}">{PILL[b["status"]][1]}</span></td>'
@@ -1089,7 +1093,9 @@ def build():
         f'<button data-c="{esc(k)}"{" class=\'active\'" if k == "composite" else ""}>'
         f'{esc(v["label"])}</button>' for k, v in light_cases.items()))
     # гіпотези живлення: чи пролізе пік кожним шляхом (рахуємо, не вписуємо)
-    pk = max(r["draw_w"] for r in l_res_for_lab.values()) + p_demand["audio"]
+    # звук живиться окремим кабелем від авто-виходу (рішення Івана 29.07),
+    # тому в ліміт силового шляху до світла він не входить
+    pk = max(r["draw_w"] for r in l_res_for_lab.values())
     path_rows = []
     for pp in PP.get("power_paths", {}).get("paths", []):
         fits = pk <= pp["limit_w"]

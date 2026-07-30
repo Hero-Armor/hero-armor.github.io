@@ -9,7 +9,7 @@
 
 ## 2026-07-27
 * **Update**: Головна перебудована в дашборд: countdown до воріт, готовність, бюджет закупівлі, фільтри.
-* **Creation**: Замовлено динаміки на A/B тест (ORD-001): Poly-Planar MA-3013 і Herdio HMS60.
+* **Creation**: Домовились про A/B тест динаміків: Poly-Planar MA-3013 і Herdio HMS60 — пари у Marcel, для білда ще не куплені.
 * **Creation**: GitHub org Hero-Armor, монорепо + приватна репа адрес, Pages через CI; хаб live на hero-armor.github.io.
 
 ## 2026-07-26

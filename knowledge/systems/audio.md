@@ -16,7 +16,7 @@ generated: { by: "process:site-build" }
 * [Радіатор TPA3116 — назовні герметичного боксу](/decisions/radiator-tpa3116-nazovni-hermetychnoho-boksu.md)
 * [Без підвищувача до 16В — 12V вистачає](/decisions/bez-pidvyshchuvacha-do-16v-12v-vystachaie.md)
 * [Гучність: gain 26 дБ + цифрове керування, три шари](/decisions/huchnist-gain-26-db-tsyfrove-keruvannia-try-shary.md)
-* [Живлення: EcoFlow 12V DC, buck ≥1.5A, захист](/decisions/zhyvlennia-ecoflow-12v-dc-buck-1-5a-zakhyst.md)
+* [Живлення звуку: свій кабель від авто-виходу 12 В, без реле](/decisions/zhyvlennia-zvuku-svii-kabel-vid-avto-vykhodu-12-v-bez-rele.md)
 * [Звук — моно: один динамік, другий з пари — запас](/decisions/zvuk-mono-odyn-dynamik-druhyi-z-pary-zapas.md)
 * [Запас плат ×2–3 — на плайї не паяємо](/decisions/zapas-plat-2-3-na-plaii-ne-paiaiemo.md)
 
@@ -34,13 +34,13 @@ generated: { by: "process:site-build" }
 * [PCM5102A (GY-PCM5102)](/bom/pcm5102a-gy-pcm5102.md) — $12/3шт, купити
 * [microSD SPI модуль](/bom/microsd-spi-modul.md) — $7/5шт, купити
 * [SanDisk 32GB Class 10](/bom/sandisk-32gb-class-10.md) — ~$10, купити
-* [TPA3116D2 Mono (WINGONEER)](/bom/tpa3116d2-mono-wingoneer.md) — $14/2шт, купити
+* [TPA3116D2 Mono (HiLetgo)](/bom/tpa3116d2-mono-hiletgo.md) — $14/2шт, купити
 * [Poly-Planar MA-3013, пара](/bom/poly-planar-ma-3013-para.md) — $70, купити
 * [Herdio HMS60 3", пара](/bom/herdio-hms60-3-para.md) — $32, купити
 * [LD2410C](/bom/ld2410c.md) — $20/3шт, купити
 * [Buck 12→5В ≥1.5А + LC](/bom/buck-12-5v-1-5a-lc.md) — $9/5шт, купити
 * [Радіатор 50×50 мм + термопрокладка](/bom/radiator-50-50-mm-termoprokladka.md) — ~$9/4шт, купити
-* [Запобіжник 3А + тримач, 1000 µФ 25В](/bom/zapobizhnyk-3a-trymach-1000-f-25v.md) — $9/6шт, купити
+* [Запобіжник 3А + тримач](/bom/zapobizhnyk-3a-trymach.md) — $9/6шт, купити
 * [Конденсатор 1000 µФ 25В low-ESR](/bom/kondensator-1000-f-25v-low-esr.md) — $5/10шт, купити
 * [Захист динаміка від пилу](/bom/zakhyst-dynamika-vid-pylu.md) — $10/2шт, купити
 * [Штекер-прикурювач з клемами](/bom/shteker-prykuriuvach-z-klemamy.md) — $6/2шт, купити
@@ -50,6 +50,8 @@ generated: { by: "process:site-build" }
 * [Набір нейлонових стійок M2.5/M3/M4](/bom/nabir-neilonovykh-stiiok-m2-5-m3-m4.md) — $17, купити
 * [Клемники гвинтові 5.08мм 2-pin](/bom/klemnyky-hvyntovi-5-08mm-2-pin.md) — $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](/bom/hnizda-khedery-2-54mm-mama-kyt.md) — $8, купити
+* [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — —, купити
+* [Екранований кабель ЦАП → амп (короткий)](/bom/ekranovanyi-kabel-tsap-amp-korotkyi.md) — ~$7, купити
 
 # Розраховані цифри
 

@@ -1,6 +1,6 @@
 ---
 type: "Part"
-title: "Запобіжник 3А + тримач, 1000 µФ 25В"
+title: "Запобіжник 3А + тримач"
 description: "VANSIHO 6 тримачів 18AWG + 6×3А — запаси; обовʼязковий (пожежна безпека)"
 resource: "https://www.amazon.com/dp/B0C15H3F9M"
 tags: ["audio"]

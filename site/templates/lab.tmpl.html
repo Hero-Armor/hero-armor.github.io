@@ -128,7 +128,7 @@
       </div>
       <div class="ctrl"><label>Цифрова гучність DAC <b id="v-vol"></b></label>
         <input type="range" id="vol" min="-30" max="0" step="0.5" value="-14" aria-label="Цифрова гучність"></div>
-      <label class="check"><input type="checkbox" id="night"> Нічний режим (−8 дБ після 02:00)</label>
+      <label class="check"><input type="checkbox" id="night"> Нічний профіль ({{NIGHT_DELTA}} дБ, вмикається по BLE)</label>
 
       <div class="ctrl-group">Датчик</div>
       <div class="seg" id="sensor-toggle">
@@ -188,7 +188,7 @@
   <div class="fig">
     <img src="{{SIGNAL_PNG}}" alt="Три панелі: gain staging і кліпінг; АЧХ каскадів тракту; мова у часі проти межі 12V рейки">
   </div>
-  <p class="fig-cap">A: де DAC починає кліпувати для кожного strap-гейну (на 26 дБ — від −13.9 dBFS).
+  <p class="fig-cap">A: де DAC починає кліпувати для кожного strap-гейну (на 26 дБ — від −13.4 dBFS).
   B: АЧХ всіх каскадів — мовний діапазон 300–3400 Гц проходить без втрат.
   C: мова з крестом 12 дБ — на нормальній гучності кліпує лише ~1% семплів (нечутно),
   перекручена — 12% (чутна каша).</p>
@@ -198,7 +198,7 @@
     <div class="layer">
       <h3>1 · Цифрова гучність у прошивці — основне керування</h3>
       <p>ESP32 множить семпли перед I2S. Робочий діапазон −30…−14 dBFS (на gain 26 дБ вище
-      −13.9 почнеться кліпінг рейки). Профілі: день −14, ніч −22. Годинника в ESP32 нема, а
+      −13.4 почнеться кліпінг рейки). Профілі: день −14, ніч −22. Годинника в ESP32 нема, а
       фоторезистор прибрано 29.07 разом із фотореле — профіль перемикається командою по BLE
       з телефону; при старті вмикається нічний (тихіший), щоб робот не кричав, якщо перемкнути забули. Файли нормалізуємо до піків −1 dBFS, HPF 120 Гц при експорті з ElevenLabs.</p>
     </div>
@@ -268,6 +268,10 @@
   const ids = ["vol","tamb","solar","noise","trig","clip","cool","dist","rth","sens","bat"];
   const units = { vol:" dBFS", tamb:"°C", solar:"+°C", noise:" dB", trig:"/год",
                   clip:" с", cool:" с", dist:" м", rth:" °C/W", sens:" dB/W/m", bat:" Wh" };
+  const NIGHT_DELTA_DB = {{NIGHT_DELTA}};             // нічний профіль гучності, з params
+  const RADAR_RANGE_M = {{RADAR_RANGE}};             // тригер радара, з params
+  const USABLE_FRAC = {{USABLE_FRAC}};               // скільки ємності станція реально віддає
+  const SUN_HOURS = {{SUN_HOURS}}, SYS_EFF = {{SYS_EFF}};
   const ECOFLOW_STANDBY_W = {{ECOFLOW_STANDBY}};   // DC-port-on standby draw of the station
 
   function rail33(playing){
@@ -278,7 +282,7 @@
 
   function compute(p){
     // --- volume stage: DAC level + amp gain -> peak power, clip headroom
-    const volEff = p.vol + (p.night ? -8 : 0);
+    const volEff = p.vol + (p.night ? NIGHT_DELTA_DB : 0);
     const vReq = DACFS * Math.pow(10, volEff/20) * Math.pow(10, gainDb/20);
     const vRms = Math.min(vReq, VCLIP);
     const pPeak = vRms*vRms/R;               // sine-equivalent peak power
@@ -303,10 +307,11 @@
     const margin = splAvg - p.noise;
 
     const contrast = Math.max(SKIN - p.tamb, 0);
-    const pirM = sensor === "radar" ? 3.0 : 3*Math.min(1, Math.max(0.15, contrast/13.5));
+    const pirM = sensor === "radar" ? RADAR_RANGE_M
+      : RADAR_RANGE_M*Math.min(1, Math.max(0.15, contrast/(SKIN-20)));
     const whTotal = whDay + ECOFLOW_STANDBY_W*24;
-    const days = p.bat*0.9/whTotal;
-    const solarW = whTotal/(5*0.7);
+    const days = p.bat*USABLE_FRAC/whTotal;
+    const solarW = whTotal/(SUN_HOURS*SYS_EFF);
     return { volEff, pPeak, pAvg, headroom, duty, iAvg, whDay, pDis, tjW,
              splAvg, splPeak, margin, pirM, days, solarW, trig };
   }
@@ -347,7 +352,7 @@
       tile("SPL сер./пік", `${r.splAvg.toFixed(0)} / ${r.splPeak.toFixed(0)}`, "dB",
            `запас над шумом ${r.margin>=0?"+":""}${r.margin.toFixed(1)} дБ`, splCls) +
       tile("Радіус детекції", r.pirM.toFixed(2), "м",
-        sensor==="radar" ? "LD2410C: стабільно, до 6 м" :
+        sensor==="radar" ? `LD2410C: тригер на ${RADAR_RANGE_M} м, стабільно` :
         (pirCls==="crit"?"PIR сліпне вдень!":(pirCls==="warn"?"контраст падає":"повний радіус")),
         sensor==="radar" ? "good" : pirCls);
 

@@ -16,7 +16,6 @@ generated: { by: "process:site-build" }
 * [Прожектори — MR16 без стабілізатора (voltage-following)](/decisions/prozhektory-mr16-bez-stabilizatora-voltage-following.md)
 * [Адресна стрічка вдень вимкнена](/decisions/adresna-strichka-vden-vymknena.md)
 * [«Біжуча вода» — біла, зовнішній контур прибрано](/decisions/bizhucha-voda-bila-zovnishnii-kontur-prybrano.md)
-* [Панель 500 Вт замість попередніх 100 Вт](/decisions/panel-500-vt-zamist-poperednikh-100-vt.md)
 * [Анімація замість заливки — стрічка світить не вся одразу](/decisions/animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)
 * [Сходи подіуму — наша лінія чи автономні сонячні](/decisions/skhody-podiumu-nasha-liniia-chy-avtonomni-soniachni.md)
 * [Колір габаритних вогнів — жовтий чи червоний](/decisions/kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
@@ -27,7 +26,7 @@ generated: { by: "process:site-build" }
 * [Просадку рахуємо деревом, а не по лініях](/decisions/prosadku-rakhuiemo-derevom-a-ne-po-liniiakh.md)
 * [Стрічку обмежуємо по струму в прошивці](/decisions/strichku-obmezhuiemo-po-strumu-v-proshyvtsi.md)
 * [Номінали запобіжників — з моделі, а не навмання](/decisions/nominaly-zapobizhnykiv-z-modeli-a-ne-navmannia.md)
-* [Кабель, куплений під 24 В, треба доповнити під 12 В](/decisions/kabel-kuplenyi-pid-24-v-treba-dopovnyty-pid-12-v.md)
+* [Наявного кабелю вистачає — AWG 6 не купуємо](/decisions/naiavnoho-kabeliu-vystachaie-awg-6-ne-kupuiemo.md)
 * [Довжини кабелів — прикидки, не з креслень](/decisions/dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
 * [Реальний замір удвічі менший за модель — звірити стрічку](/decisions/realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
 * [Коло, а не восьмикутник — фінально](/decisions/kolo-a-ne-vosmykutnyk-finalno.md)
@@ -35,16 +34,17 @@ generated: { by: "process:site-build" }
 * [Просадка вздовж самої стрічки — перевірити на довжині гілки](/decisions/prosadka-vzdovzh-samoi-strichky-pereviryty-na-dovzhyni-hilky.md)
 * [Як герметизувати різи стрічки: нейтральний силікон, не оцтовий і не термоклей](/decisions/iak-hermetyzuvaty-rizy-strichky-neitralnyi-sylikon-ne-otstov.md)
 * [Чим вмикати прожектори і аварійну без фотореле](/decisions/chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md)
+* [Звук і світло — два окремі кабелі від станції](/decisions/zvuk-i-svitlo-dva-okremi-kabeli-vid-stantsii.md)
 
 # Задачі
 
 * [Звести бюджет світла: заявлені ~170–220 Вт LED проти панелі 100 Вт — перерахувати (сайт сам радить зменшити стрічки)](/tasks/zvesty-biudzhet-svitla-zaiavleni-170-220-vt-led-proty-paneli.md) — готово
-* [Обрати і замовити неон WS2811 під 12 В](/tasks/obraty-i-zamovyty-neon-ws2811-pid-12-v.md) — чекаємо
+* [Обрати і замовити неон WS2811 під 12 В](/tasks/obraty-i-zamovyty-neon-ws2811-pid-12-v.md) — готово
 * [Перевірити ватметром voltage-following на Gardencoin](/tasks/pereviryty-vatmetrom-voltage-following-na-gardencoin.md) — чекаємо
 * [Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down](/tasks/vyrishyty-12-v-mr16-na-shyni-24-v-cherez-shim-chy-step-down.md) — готово
 * [Уточнити в архітектора: сходи ×24 в нашу лінію чи автономні сонячні](/tasks/utochnyty-v-arkhitektora-skhody-24-v-nashu-liniiu-chy-avtono.md) — чекаємо
 * [Звірити статуси закупівлі світла з інвойсом](/tasks/zviryty-statusy-zakupivli-svitla-z-invoisom.md) — чекаємо
-* [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](/tasks/dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) — чекаємо
+* [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](/tasks/dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) — готово
 * [Заміряти реальні довжини траси після складання подіуму](/tasks/zamiriaty-realni-dovzhyny-trasy-pislia-skladannia-podiumu.md) — чекаємо
 * [Запитати конструктора про зовнішній периметр подіуму](/tasks/zapytaty-konstruktora-pro-zovnishnii-perymetr-podiumu.md) — чекаємо
 * [Marcel: заміряти трубу кріплення прожектора (діаметр, різьба)](/tasks/marcel-zamiriaty-trubu-kriplennia-prozhektora-diametr-rizba.md) — чекаємо
@@ -52,10 +52,10 @@ generated: { by: "process:site-build" }
 * [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](/tasks/zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) — в роботі
 * [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](/tasks/dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) — готово
 * [Перевірити, на яку адресу йде стрічка (LA чи SF)](/tasks/pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) — до роботи
-* [Написати Marcel: заміряти трубу кріплення прожектора](/tasks/napysaty-marcel-zamiriaty-trubu-kriplennia-prozhektora.md) — до роботи
 * [Написати Володимиру: коло лишається + цифри просадки](/tasks/napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) — готово
 * [Заміряти переріз стрічки, коли прийде (під заглушки)](/tasks/zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) — до роботи
 * [Замовити заглушки ВСІХ ходових перерізів (зайве повернути)](/tasks/zamovyty-zahlushky-vsikh-khodovykh-pereriziv-zaive-povernuty.md) — до роботи
+* [Обрати, чим вмикати прожектори і аварійну без фотореле](/tasks/obraty-chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md) — чекаємо
 
 # Закупівля
 
@@ -75,7 +75,7 @@ generated: { by: "process:site-build" }
 * [Гермороз'єми IP68 (швидкознімні)](/bom/hermoroziemy-ip68-shvydkoznimni.md) — —, купити
 * [Гель-конектори / вологозахищені клеми](/bom/hel-konektory-volohozakhyshcheni-klemy.md) — —, купити
 * [Гофра/кабель-канал для відводів](/bom/hofra-kabel-kanal-dlia-vidvodiv.md) — —, купити
-* [Кабель: Станція → щит запобіжників](/bom/kabel-stantsiia-shchyt-zapobizhnykiv.md) — —, купити
+* [Кабель: Станція (30 А вихід) → щит запобіжників](/bom/kabel-stantsiia-30-a-vykhid-shchyt-zapobizhnykiv.md) — —, купити
 * [Кабель: Щит → коробка диммера (Гр.1)](/bom/kabel-shchyt-korobka-dymmera-hr-1.md) — —, купити
 * [Кабель: Диммер → кільце прожекторів](/bom/kabel-dymmer-kiltse-prozhektoriv.md) — —, купити
 * [Кабель: Відвід на прожектор (найдальший)](/bom/kabel-vidvid-na-prozhektor-naidalshyi.md) — —, купити
@@ -85,7 +85,6 @@ generated: { by: "process:site-build" }
 * [Кабель: Щит → коробка аварійної (Гр.3А)](/bom/kabel-shchyt-korobka-avariinoi-hr-3a.md) — —, купити
 * [Кабель: Коробка → габарити по кутах](/bom/kabel-korobka-habaryty-po-kutakh.md) — —, купити
 * [Кабель: Коробка → лампи сходів](/bom/kabel-korobka-lampy-skhodiv.md) — —, купити
-* [Блок запобіжників Blue Sea 5026 (12 кіл)](/bom/blok-zapobizhnykiv-blue-sea-5026-12-kil.md) — ~$40, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — ~$30, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](/bom/asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) — $10, купити
 * [Заглушки неон 6×12 мм — набір (глухі + з отвором)](/bom/zahlushky-neon-6-12-mm-nabir-hlukhi-z-otvorom.md) — $13.59, купити
