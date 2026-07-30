@@ -59,9 +59,15 @@ def fixture_power(f, case):
 
 
 def fixture_peak(f):
-    """Nameplate watts — everything on, animation ignored (architect's basis)."""
+    """Worst-case instantaneous watts at full brightness (no dimming).
+
+    Для адресної стрічки «біжуча вода» пік — це НЕ вся лінія на 100% (так світло не
+    працює: одночасно горить лише біжучий фронт), а максимальна миттєва частка стрічки
+    × повна потужність. Архітектор колись сайзив по повній лінії — прибрано (Іван 29.07).
+    Звичайні (не адресні) світильники можуть горіти повністю, тому в них пік = вся потужність.
+    """
     if f.get("addressable"):
-        return f["qty"] * f["length_m"] * f["w_per_m"]
+        return f["qty"] * f["length_m"] * f["w_per_m"] * ADDR["duty_peak"]
     return f["qty"] * f["w_unit"]
 
 
