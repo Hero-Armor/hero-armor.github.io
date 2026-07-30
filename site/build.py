@@ -1111,8 +1111,11 @@ def build():
             f'{st["dc12_w"]} Вт</span></td>'
             f'<td class="num">{st["solar_w"]} Вт</td>'
             f'<td class="num">${st["new_usd"]}</td>'
-            f'<td class="num">{used}</td>'
-            f'<td><span class="pill {vcls}">{vlab}</span><br>'
+            f'<td class="num">{used}'
+            + (f'<br><span style="font-size:.7rem;color:var(--ink-2);white-space:normal">'
+               f'{esc(st["used_note"])}</span>'
+               if st.get("used_usd") and st.get("used_note") else "") + '</td>'
+            + f'<td><span class="pill {vcls}">{vlab}</span><br>'
             f'<span style="font-size:.74rem;color:var(--ink-2)">{esc(st["why"])}</span></td></tr>')
     slab = slab.replace("{{STATION_CATALOG}}", "\n".join(cat_rows))
     slab = slab.replace("{{POWER_PATHS}}", "\n".join(path_rows))
@@ -1460,7 +1463,7 @@ def build():
             parts.append(f'      <tr><td>{esc(it["name"])}</td>'
                          f'<td class="num">{it["qty"]}</td>'
                          f'<td class="num">${it["price_usd"]}</td>'
-                         f'<td>{esc(ENC[grp]["note"][:150])}…</td></tr>')
+                         f'<td style="white-space:normal">{esc(it.get("why", ""))}</td></tr>')
     for f in ENC["fans"]:
         parts.append(f'      <tr><td>Вентилятор {esc(f["name"])}</td>'
                      f'<td class="num">1</td><td class="num">${f["price_usd"]}</td>'
