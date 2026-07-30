@@ -52,9 +52,9 @@ generated: { by: "process:site-build" }
 * [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](/tasks/dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) — готово
 * [Перевірити, на яку адресу йде стрічка (LA чи SF)](/tasks/pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) — до роботи
 * [Написати Marcel: заміряти трубу кріплення прожектора](/tasks/napysaty-marcel-zamiriaty-trubu-kriplennia-prozhektora.md) — до роботи
-* [Написати Володимиру: коло лишається + цифри просадки](/tasks/napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) — до роботи
+* [Написати Володимиру: коло лишається + цифри просадки](/tasks/napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) — готово
 * [Заміряти переріз стрічки, коли прийде (під заглушки)](/tasks/zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) — чекаємо
-* [Замовити заглушки (глухі + з отвором) і нейтральний силікон](/tasks/zamovyty-zahlushky-hlukhi-z-otvorom-i-neitralnyi-sylikon.md) — чекаємо
+* [Замовити заглушки (глухі + з отвором) і нейтральний силікон](/tasks/zamovyty-zahlushky-hlukhi-z-otvorom-i-neitralnyi-sylikon.md) — в роботі
 
 # Закупівля
 
