@@ -35,5 +35,5 @@
 * [Перевірити, на яку адресу йде стрічка (LA чи SF)](pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) - до роботи
 * [Написати Marcel: заміряти трубу кріплення прожектора](napysaty-marcel-zamiriaty-trubu-kriplennia-prozhektora.md) - до роботи
 * [Написати Володимиру: коло лишається + цифри просадки](napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) - готово
-* [Заміряти переріз стрічки, коли прийде (під заглушки)](zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) - чекаємо
-* [Замовити заглушки (глухі + з отвором) і нейтральний силікон](zamovyty-zahlushky-hlukhi-z-otvorom-i-neitralnyi-sylikon.md) - в роботі
+* [Заміряти переріз стрічки, коли прийде (під заглушки)](zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) - до роботи
+* [Замовити заглушки ВСІХ ходових перерізів (зайве повернути)](zamovyty-zahlushky-vsikh-khodovykh-pereriziv-zaive-povernuty.md) - до роботи
