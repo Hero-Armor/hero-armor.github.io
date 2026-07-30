@@ -51,6 +51,10 @@ generated: { by: "process:site-build" }
 * [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](/tasks/zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) — в роботі
 * [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](/tasks/dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) — готово
 * [Перевірити, на яку адресу йде стрічка (LA чи SF)](/tasks/pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) — до роботи
+* [Написати Marcel: заміряти трубу кріплення прожектора](/tasks/napysaty-marcel-zamiriaty-trubu-kriplennia-prozhektora.md) — до роботи
+* [Написати Володимиру: коло лишається + цифри просадки](/tasks/napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) — до роботи
+* [Заміряти переріз стрічки, коли прийде (під заглушки)](/tasks/zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) — чекаємо
+* [Замовити заглушки (глухі + з отвором) і нейтральний силікон](/tasks/zamovyty-zahlushky-hlukhi-z-otvorom-i-neitralnyi-sylikon.md) — чекаємо
 
 # Закупівля
 
@@ -84,4 +88,4 @@ generated: { by: "process:site-build" }
 * [Блок запобіжників Blue Sea 5026 (12 кіл)](/bom/blok-zapobizhnykiv-blue-sea-5026-12-kil.md) — ~$40, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — ~$30, купити
 * [Заглушки для силіконового неону (глухі + з отвором під дріт)](/bom/zahlushky-dlia-sylikonovoho-neonu-hlukhi-z-otvorom-pid-drit.md) — ~$12, купити
-* [Нейтральний силіконовий герметик (neutral cure, electronics-grade)](/bom/neitralnyi-sylikonovyi-hermetyk-neutral-cure-electronics-gra.md) — ~$12, купити
+* [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](/bom/asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) — $10, купити

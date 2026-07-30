@@ -1276,6 +1276,42 @@ def build():
 
     # ================= tasks page (kanban board) =================
     tasks_page = tmpl("tasks.tmpl.html")
+    # Дошка перебудована так, щоб відповідати на питання «що робити зараз» і
+    # «хто кого тримає». Раніше 25 задач лежали купою в «чекаємо», і з неї не
+    # було видно ні терміновості, ні того, від кого саме чекаємо.
+    OWNER = {"ivan": "Іван", "marcel": "Marcel", "volodymyr": "Володимир",
+             "liza": "Ліза", "team": "команда"}
+    urgent = [t for t in TASKS if t.get("urgent") and t["status"] in ("todo", "doing")]
+    mine = [t for t in TASKS if t["status"] in ("todo", "doing")
+            and t.get("owner", "ivan") == "ivan" and not t.get("urgent")]
+    by_people = {}
+    for t in TASKS:
+        if t["status"] == "waiting" and t.get("owner", "ivan") != "ivan":
+            by_people.setdefault(t["owner"], []).append(t)
+
+    def card(t):
+        note = f'<p class="kn">{esc(t["note"])}</p>' if t.get("note") else ""
+        return (f'      <div class="kcard" data-comp="{t["system"]}">\n'
+                f'        <p class="kt">{esc(t["task"])}</p>\n{("        " + note + chr(10)) if note else ""}'
+                f'        <span class="chip {t["system"]}">{SYS_LABEL[t["system"]].lower()}</span>\n'
+                f'      </div>')
+
+    focus = []
+    if urgent:
+        focus.append('    <div class="kcol" data-status="doing">\n'
+                     f'      <h3>🔥 Зараз <span class="count">{len(urgent)}</span></h3>\n'
+                     + "\n".join(card(t) for t in urgent) + '\n    </div>')
+    for who, lst in sorted(by_people.items(), key=lambda x: -len(x[1])):
+        focus.append('    <div class="kcol" data-status="waiting">\n'
+                     f'      <h3>чекаємо: {OWNER.get(who, who)} '
+                     f'<span class="count">{len(lst)}</span></h3>\n'
+                     + "\n".join(card(t) for t in lst) + '\n    </div>')
+    if mine:
+        focus.append('    <div class="kcol" data-status="todo">\n'
+                     f'      <h3>черга Івана <span class="count">{len(mine)}</span></h3>\n'
+                     + "\n".join(card(t) for t in mine[:8]) + '\n    </div>')
+    tasks_page = tasks_page.replace("{{FOCUS_COLUMNS}}", "\n".join(focus))
+
     kan_status = [("doing", "в роботі"), ("waiting", "чекаємо"),
                   ("todo", "до роботи"), ("done", "готово")]
     comp_order = {c: i for i, c in enumerate(SYSTEMS)}

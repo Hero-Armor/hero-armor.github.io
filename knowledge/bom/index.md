@@ -67,4 +67,4 @@
 * [Клемники гвинтові 5.08мм 2-pin](klemnyky-hvyntovi-5-08mm-2-pin.md) - $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](hnizda-khedery-2-54mm-mama-kyt.md) - $8, купити
 * [Заглушки для силіконового неону (глухі + з отвором під дріт)](zahlushky-dlia-sylikonovoho-neonu-hlukhi-z-otvorom-pid-drit.md) - ~$12, купити
-* [Нейтральний силіконовий герметик (neutral cure, electronics-grade)](neitralnyi-sylikonovyi-hermetyk-neutral-cure-electronics-gra.md) - ~$12, купити
+* [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) - $10, купити
