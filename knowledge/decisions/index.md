@@ -3,6 +3,7 @@
 
 # Рішення
 
+* [Адресну стрічку рахуємо по біжучому фронту, не по повній лінії](adresnu-strichku-rakhuiemo-po-bizhuchomu-frontu-ne-po-povnii.md)
 * [Датчик — LD2410C mmWave, не PIR](datchyk-ld2410c-mmwave-ne-pir.md)
 * [Радіатор TPA3116 — назовні герметичного боксу](radiator-tpa3116-nazovni-hermetychnoho-boksu.md)
 * [Без підвищувача до 16В — 12V вистачає](bez-pidvyshchuvacha-do-16v-12v-vystachaie.md)
@@ -17,7 +18,7 @@
 * [Анімація замість заливки — стрічка світить не вся одразу](animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)
 * [Сходи подіуму — наша лінія чи автономні сонячні](skhody-podiumu-nasha-liniia-chy-avtonomni-soniachni.md)
 * [Колір габаритних вогнів — жовтий чи червоний](kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
-* [Неон: WS2815, а не WS2811 — три причини](neon-ws2815-a-ne-ws2811-try-prychyny.md)
+* [Стрічка обрана — WS2811 (мій розбір WS2815 перекрито)](strichka-obrana-ws2811-mii-rozbir-ws2815-perekryto.md)
 * [Стрічку ріжемо і міняємо модулями, а не латаємо на плайї](strichku-rizhemo-i-miniaiemo-moduliamy-a-ne-lataiemo-na-plai.md)
 * [Живлення — окремий компонент, одна станція на все](zhyvlennia-okremyi-komponent-odna-stantsiia-na-vse.md)
 * [Станція змінна за задумом, а не в аварії](stantsiia-zminna-za-zadumom-a-ne-v-avarii.md)
@@ -34,7 +35,7 @@
 * [Довжини кабелів — прикидки, не з креслень](dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
 * [Станція і масив не фіксуються заздалегідь](stantsiia-i-masyv-ne-fiksuiutsia-zazdalehid.md)
 * [Реальний замір удвічі менший за модель — звірити стрічку](realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
-* [Коло чи восьмикутник — пропозиція конструктора не закрита](kolo-chy-vosmykutnyk-propozytsiia-konstruktora-ne-zakryta.md)
+* [Коло, а не восьмикутник — фінально](kolo-a-ne-vosmykutnyk-finalno.md)
 * [Стрічка мусить тримати +60°C — попередні відхилені](strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
 * [Помітність конструкції вночі — габарити або світловідбивна стрічка](pomitnist-konstruktsii-vnochi-habaryty-abo-svitlovidbyvna-st.md)
 * [12-вольтовий вихід EcoFlow тримає лише 126 Вт — це вузьке місце](12-voltovyi-vykhid-ecoflow-trymaie-lyshe-126-vt-tse-vuzke-mi.md)

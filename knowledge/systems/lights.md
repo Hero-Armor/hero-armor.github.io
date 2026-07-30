@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Адресну стрічку рахуємо по біжучому фронту, не по повній лінії](/decisions/adresnu-strichku-rakhuiemo-po-bizhuchomu-frontu-ne-po-povnii.md)
 * [Прожектори — MR16 без стабілізатора (voltage-following)](/decisions/prozhektory-mr16-bez-stabilizatora-voltage-following.md)
 * [Адресна стрічка вдень вимкнена](/decisions/adresna-strichka-vden-vymknena.md)
 * [«Біжуча вода» — біла, зовнішній контур прибрано](/decisions/bizhucha-voda-bila-zovnishnii-kontur-prybrano.md)
@@ -19,7 +20,7 @@ generated: { by: "process:site-build" }
 * [Анімація замість заливки — стрічка світить не вся одразу](/decisions/animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)
 * [Сходи подіуму — наша лінія чи автономні сонячні](/decisions/skhody-podiumu-nasha-liniia-chy-avtonomni-soniachni.md)
 * [Колір габаритних вогнів — жовтий чи червоний](/decisions/kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
-* [Неон: WS2815, а не WS2811 — три причини](/decisions/neon-ws2815-a-ne-ws2811-try-prychyny.md)
+* [Стрічка обрана — WS2811 (мій розбір WS2815 перекрито)](/decisions/strichka-obrana-ws2811-mii-rozbir-ws2815-perekryto.md)
 * [Стрічку ріжемо і міняємо модулями, а не латаємо на плайї](/decisions/strichku-rizhemo-i-miniaiemo-moduliamy-a-ne-lataiemo-na-plai.md)
 * [Світло вмикає фотореле, а не таймер](/decisions/svitlo-vmykaie-fotorele-a-ne-taimer.md)
 * [Три групи — три реле, аварійна на своєму каналі](/decisions/try-hrupy-try-rele-avariina-na-svoiemu-kanali.md)
@@ -29,7 +30,7 @@ generated: { by: "process:site-build" }
 * [Кабель, куплений під 24 В, треба доповнити під 12 В](/decisions/kabel-kuplenyi-pid-24-v-treba-dopovnyty-pid-12-v.md)
 * [Довжини кабелів — прикидки, не з креслень](/decisions/dovzhyny-kabeliv-prykydky-ne-z-kreslen.md)
 * [Реальний замір удвічі менший за модель — звірити стрічку](/decisions/realnyi-zamir-udvichi-menshyi-za-model-zviryty-strichku.md)
-* [Коло чи восьмикутник — пропозиція конструктора не закрита](/decisions/kolo-chy-vosmykutnyk-propozytsiia-konstruktora-ne-zakryta.md)
+* [Коло, а не восьмикутник — фінально](/decisions/kolo-a-ne-vosmykutnyk-finalno.md)
 * [Стрічка мусить тримати +60°C — попередні відхилені](/decisions/strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
 * [Просадка вздовж самої стрічки — перевірити на довжині гілки](/decisions/prosadka-vzdovzh-samoi-strichky-pereviryty-na-dovzhyni-hilky.md)
 
@@ -44,9 +45,10 @@ generated: { by: "process:site-build" }
 * [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](/tasks/dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) — чекаємо
 * [Заміряти реальні довжини траси після складання подіуму](/tasks/zamiriaty-realni-dovzhyny-trasy-pislia-skladannia-podiumu.md) — чекаємо
 * [Запитати конструктора про зовнішній периметр подіуму](/tasks/zapytaty-konstruktora-pro-zovnishnii-perymetr-podiumu.md) — чекаємо
-* [Заміряти трубу кріплення прожектора (діаметр, довжина різьби) для Володимира](/tasks/zamiriaty-trubu-kriplennia-prozhektora-diametr-dovzhyna-rizb.md) — чекаємо
+* [Marcel: заміряти трубу кріплення прожектора (діаметр, різьба)](/tasks/marcel-zamiriaty-trubu-kriplennia-prozhektora-diametr-rizba.md) — чекаємо
 * [Відповісти Володимиру по просадці 12В — тест уже зроблено](/tasks/vidpovisty-volodymyru-po-prosadtsi-12v-test-uzhe-zrobleno.md) — чекаємо
 * [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](/tasks/zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) — в роботі
+* [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](/tasks/dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) — до роботи
 
 # Закупівля
 
@@ -55,7 +57,7 @@ generated: { by: "process:site-build" }
 * [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — —, купити
 * [Nilight габаритні вогні 3 Вт](/bom/nilight-habarytni-vohni-3-vt.md) — $18.50, купити
 * [Landscapestation лампи сходів 1 Вт](/bom/landscapestation-lampy-skhodiv-1-vt.md) — $100/уп, купити
-* [Неон WS2811 12 В силіконовий](/bom/neon-ws2811-12-v-sylikonovyi.md) — $47, купити
+* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $47, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $12, купити
 * [Щит-бокс із тримачами запобіжників](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv.md) — —, купити

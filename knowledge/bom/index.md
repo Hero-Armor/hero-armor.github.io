@@ -26,7 +26,7 @@
 * [Gebildet LED 8 мм, металеві](gebildet-led-8-mm-metalevi.md) - —, купити
 * [Nilight габаритні вогні 3 Вт](nilight-habarytni-vohni-3-vt.md) - $18.50, купити
 * [Landscapestation лампи сходів 1 Вт](landscapestation-lampy-skhodiv-1-vt.md) - $100/уп, купити
-* [Неон WS2811 12 В силіконовий](neon-ws2811-12-v-sylikonovyi.md) - $47, купити
+* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $47, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $12, купити
 * [Сонячні панелі для масиву (потужність не обрана)](soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - $149, купити
