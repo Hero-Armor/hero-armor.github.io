@@ -124,6 +124,65 @@ def figures_html(key):
     return f'  <h2>Креслення</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
 
 
+def assembly_html():
+    """Монтаж вузла: план панелі, вимоги до коробки, конектори, всі з'єднання.
+
+    Дані — audio/data/assembly.json (габарити і дроти), малюнок —
+    audio/model/assembly.py. Тут тільки розкладка по HTML, жодної цифри руками.
+    """
+    a = json.loads((AUDIO / "data" / "assembly.json").read_text())
+    svg = (AUDIO / "model" / "assembly.svg").read_text()
+    svg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*|<!--.*?-->\s*", "", svg, flags=re.S)
+
+    enc, mi = a["enclosure"], a["enclosure"]["min_inner_mm"]
+    reqs = "\n".join(f"      <li>{esc(r['text'])}</li>" for r in enc["requirements"])
+    conns = "\n".join(
+        f'      <tr><td>{esc(c["iface"])}</td><td>{esc(c["conn"])}</td>'
+        f'<td>{esc(c.get("note", ""))}</td></tr>' for c in a["connectors"])
+    wires = "\n".join(
+        f'      <tr><td class="num">{w["n"]}</td><td>{esc(w["from"])}</td><td>{esc(w["to"])}</td>'
+        f'<td class="num">{esc(str(w["awg"]))}</td><td class="num">{esc(w["len"])}</td>'
+        f'<td>{esc(w["color"])}</td><td>{esc(w.get("note", ""))}</td></tr>'
+        for w in a["wires"])
+    steps = "\n".join(f"      <li>{esc(s)}</li>" for s in a["steps"])
+    tests = "\n".join(f"      <li>{esc(t)}</li>" for t in a["tests"])
+
+    return f"""  <div class="fig">{svg}</div>
+  <p class="fig-cap">План панелі-основи в масштабі. Джерело:
+  <span style="font-family:var(--mono)">audio/data/assembly.json</span> →
+  <span style="font-family:var(--mono)">audio/model/assembly.py</span>.</p>
+
+  <h3>Коробка — сім вимог</h3>
+  <p class="files">Мінімум усередині {mi['l']}×{mi['w']}×{mi['h']} мм,
+  матеріал — {esc(enc['material'])}, захист {esc(enc['ip'])}. {esc(enc['note'])}</p>
+  <ul class="files">
+{reqs}
+  </ul>
+
+  <h3>Конектори — де вузол розбирається</h3>
+  <div class="tbl-wrap"><table>
+    <tr><th>Місце</th><th>Конектор</th><th>Чому так</th></tr>
+{conns}
+  </table></div>
+
+  <h3>Усі з'єднання</h3>
+  <div class="tbl-wrap"><table>
+    <tr><th>№</th><th>Звідки</th><th>Куди</th><th>AWG</th><th>Довжина</th><th>Колір</th><th>Примітка</th></tr>
+{wires}
+  </table></div>
+
+  <h3>Порядок збірки</h3>
+  <ol class="files">
+{steps}
+  </ol>
+
+  <h3>Перевірка після збірки</h3>
+  <ol class="files">
+{tests}
+  </ol>
+"""
+
+
 def dest_label(o):
     """Куди їде замовлення. Адреса може бути ще не з'ясована (щойно замовили і
     не подивились у підтвердженні) — тоді кажемо про це прямо, а не падаємо."""
@@ -604,6 +663,7 @@ def build():
              f"{day['margin_avg']:+.0f} дБ вдень, {night['margin_avg']:+.0f} на гучній вечірці"),
         tile("Детекція", f"{sn['range_m']:.1f}", "м", "стабільно вдень/вночі/в бурю", "good"),
     ]
+    audio = audio.replace("{{ASSEMBLY_HTML}}", assembly_html())
     audio = audio.replace("{{FIGURES}}", figures_html("audio"))
     audio = audio.replace("{{TILES_HTML}}", "\n".join(audio_tiles))
 

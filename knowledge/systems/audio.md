@@ -19,6 +19,9 @@ generated: { by: "process:site-build" }
 * [Живлення звуку: свій кабель від авто-виходу 12 В, без реле](/decisions/zhyvlennia-zvuku-svii-kabel-vid-avto-vykhodu-12-v-bez-rele.md)
 * [Звук — моно: один динамік, другий з пари — запас](/decisions/zvuk-mono-odyn-dynamik-druhyi-z-pary-zapas.md)
 * [Запас плат ×2–3 — на плайї не паяємо](/decisions/zapas-plat-2-3-na-plaii-ne-paiaiemo.md)
+* [Основа вузла — перфоборд 150×90, не 3D-друк і не «насипом у коробку»](/decisions/osnova-vuzla-perfobord-150-90-ne-3d-druk-i-ne-nasypom-u-koro.md)
+* [Роз'ємні місця: XT60 на вході, клемники на платі, лопатки на динаміку](/decisions/roziemni-mistsia-xt60-na-vkhodi-klemnyky-na-plati-lopatky-na.md)
+* [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](/decisions/korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
 
 # Задачі
 
@@ -27,6 +30,10 @@ generated: { by: "process:site-build" }
 * [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — чекаємо
 * [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](/tasks/zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) — чекаємо
 * [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — чекаємо
+* [Звірити замовлену коробку по семи вимогах (пластик, 165×105×55, вводи, радіатор, вентиляція, доступ до USB)](/tasks/zviryty-zamovlenu-korobku-po-semy-vymohakh-plastyk-165-105-5.md) — чекаємо
+* [Зміряти лінійкою модулі й рознесення пінів ESP32, коли приїде посилка](/tasks/zmiriaty-liniikoiu-moduli-i-roznesennia-piniv-esp32-koly-pry.md) — чекаємо
+* [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](/tasks/zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) — чекаємо
+* [Докупити монтажну дрібницю: гермовводи, наконечники, термоусадка, джампери, поролон, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-nakonechnyky-termou.md) — до роботи
 
 # Закупівля
 
@@ -51,7 +58,13 @@ generated: { by: "process:site-build" }
 * [Клемники гвинтові 5.08мм 2-pin](/bom/klemnyky-hvyntovi-5-08mm-2-pin.md) — $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](/bom/hnizda-khedery-2-54mm-mama-kyt.md) — $8, купити
 * [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — —, купити
-* [Екранований кабель ЦАП → амп (короткий)](/bom/ekranovanyi-kabel-tsap-amp-korotkyi.md) — ~$7, купити
+* [Екранований кабель ЦАП → амп (короткий)](/bom/ekranovanyi-kabel-tsap-amp-korotkyi.md) — $14/25ft, купити
+* [Гермовводи PG7–PG16, набір 25 шт](/bom/hermovvody-pg7-pg16-nabir-25-sht.md) — $8, купити
+* [Наконечники з термоусадкою 22-16 AWG (виделка #10)](/bom/nakonechnyky-z-termousadkoiu-22-16-awg-vydelka-10.md) — $10, купити
+* [Термоусадка з клеєм 3:1, набір 240 шт](/bom/termousadka-z-kleiem-3-1-nabir-240-sht.md) — $14, купити
+* [Джампери Dupont мама-мама 20 см](/bom/dzhampery-dupont-mama-mama-20-sm.md) — $4, купити
+* [Поролон фільтр 40 PPI, лист](/bom/porolon-filtr-40-ppi-lyst.md) — $16, купити
+* [Стяжки нейлонові UV-стійкі, 400 шт](/bom/stiazhky-neilonovi-uv-stiiki-400-sht.md) — $7, купити
 
 # Розраховані цифри
 

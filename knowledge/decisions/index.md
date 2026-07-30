@@ -53,3 +53,6 @@
 * [Як герметизувати різи стрічки: нейтральний силікон, не оцтовий і не термоклей](iak-hermetyzuvaty-rizy-strichky-neitralnyi-sylikon-ne-otstov.md)
 * [Чим вмикати прожектори і аварійну без фотореле](chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md)
 * [Звук і світло — два окремі кабелі від станції](zvuk-i-svitlo-dva-okremi-kabeli-vid-stantsii.md)
+* [Основа вузла — перфоборд 150×90, не 3D-друк і не «насипом у коробку»](osnova-vuzla-perfobord-150-90-ne-3d-druk-i-ne-nasypom-u-koro.md)
+* [Роз'ємні місця: XT60 на вході, клемники на платі, лопатки на динаміку](roziemni-mistsia-xt60-na-vkhodi-klemnyky-na-plati-lopatky-na.md)
+* [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
