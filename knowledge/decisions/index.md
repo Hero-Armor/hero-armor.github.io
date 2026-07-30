@@ -49,3 +49,4 @@
 * [Найпростіший шлях: окремий АКБ 12 В живить світло, станція його заряджає](naiprostishyi-shliakh-okremyi-akb-12-v-zhyvyt-svitlo-stantsi.md)
 * [Понизити порт розширення 48→12 В — підтверджено, EcoFlow сам так робить](ponyzyty-port-rozshyrennia-48-12-v-pidtverdzheno-ecoflow-sam.md)
 * [Bluetti має ШТАТНИЙ 12 В / 30 А — нічого не паяти](bluetti-maie-shtatnyi-12-v-30-a-nichoho-ne-paiaty.md)
+* [AC200P на Marketplace за $700 — найдешевший робочий шлях](ac200p-na-marketplace-za-700-naideshevshyi-robochyi-shliakh.md)

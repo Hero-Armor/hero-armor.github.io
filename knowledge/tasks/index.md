@@ -30,3 +30,4 @@
 * [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) - в роботі
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) - в роботі
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) - до роботи
+* [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) - до роботи

@@ -93,6 +93,16 @@
       "verify": true
     },
     {
+      "name": "Bluetti AC200P",
+      "dims_mm": [
+        420,
+        280,
+        386
+      ],
+      "kg": 27.5,
+      "verify": true
+    },
+    {
       "name": "Anker SOLIX F2000",
       "dims_mm": [
         526,

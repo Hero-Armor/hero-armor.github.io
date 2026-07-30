@@ -30,6 +30,7 @@ generated: { by: "process:site-build" }
 * [Найпростіший шлях: окремий АКБ 12 В живить світло, станція його заряджає](/decisions/naiprostishyi-shliakh-okremyi-akb-12-v-zhyvyt-svitlo-stantsi.md)
 * [Понизити порт розширення 48→12 В — підтверджено, EcoFlow сам так робить](/decisions/ponyzyty-port-rozshyrennia-48-12-v-pidtverdzheno-ecoflow-sam.md)
 * [Bluetti має ШТАТНИЙ 12 В / 30 А — нічого не паяти](/decisions/bluetti-maie-shtatnyi-12-v-30-a-nichoho-ne-paiaty.md)
+* [AC200P на Marketplace за $700 — найдешевший робочий шлях](/decisions/ac200p-na-marketplace-za-700-naideshevshyi-robochyi-shliakh.md)
 
 # Задачі
 
@@ -39,6 +40,7 @@ generated: { by: "process:site-build" }
 * [Спроєктувати раму сонячного масиву під вітер плайї](/tasks/sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) — чекаємо
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) — в роботі
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](/tasks/pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) — до роботи
+* [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](/tasks/podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) — до роботи
 
 # Закупівля
 
