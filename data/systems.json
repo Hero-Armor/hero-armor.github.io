@@ -47,6 +47,10 @@
       [
         "Кабелі, щит і монтаж",
         "cables.html"
+      ],
+      [
+        "Підбір кабелю",
+        "cables_lab.html"
       ]
     ],
     "page": "lights.html",

@@ -67,6 +67,7 @@ ART_TASKS = "https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec
 LIGHTS_LAB_URL = SITE_URL + "lights_lab.html"
 SOLAR_LAB_URL = SITE_URL + "solar_lab.html"
 ENCLOSURE_LAB_URL = SITE_URL + "enclosure_lab.html"
+CABLES_LAB_URL = SITE_URL + "cables_lab.html"
 
 SYSTEMS = ["project", "audio", "solar", "lights", "armor"]
 SYS_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Живлення",
@@ -1126,6 +1127,31 @@ def build():
              light=c.get("light_case") or "composite")
         for c in pw.CASES_DOC["cases"] if c.get("dashboard")], ensure_ascii=False))
 
+    # ================= cable-picker lab =================
+    # Та сама фізика, що на cables.html, але інтерактивно: калібр рахує JS із
+    # опорів/меж/наявності з lights params; готові силові шляхи — ті самі
+    # path_rows, що і в лабораторії живлення (не дублюємо джерело).
+    clab = tmpl("cables_lab.tmpl.html")
+    W, FZ = lm.WIRE, lm.FUSE
+    bud = W["drop_budget"]
+    strict_ids = set(bud["strict_ids"])
+    stock = W.get("stock_awg", [])
+    clab = clab.replace("{{JS_CONST}}",
+        f'const AWG_OHM={json.dumps(W["awg_ohm_per_m"])};\n'
+        f'  const BUS_V={lm.BUS_V}, WARN={W["drop_warn_pct"]}, '
+        f'STRICT_PCT={bud["strict_pct"]}, RELAXED_PCT={bud["relaxed_pct"]};\n'
+        f'  const STOCK={json.dumps(stock)}, DERATE={FZ["derate"]}, '
+        f'FUSE_SERIES={json.dumps(FZ["standard_a"])};')
+    clab = clab.replace("{{PRESETS_JSON}}", json.dumps(
+        [dict(label=r["label"], length_m=r["length_m"], amps=round(r["amps"], 1),
+              strict=(r["id"] in strict_ids)) for r in lm.cable_tree()],
+        ensure_ascii=False))
+    clab = clab.replace("{{STRICT}}", f'{bud["strict_pct"]:g}')
+    clab = clab.replace("{{RELAXED}}", f'{bud["relaxed_pct"]:g}')
+    clab = clab.replace("{{DERATE}}", f'{FZ["derate"]:g}')
+    clab = clab.replace("{{STOCK_LABEL}}", " і ".join(str(a) for a in stock) + " AWG")
+    clab = clab.replace("{{POWER_PATHS}}", "\n".join(path_rows))
+
     # ================= ops page =================
     ops = tmpl("ops.tmpl.html")
     if ADDR.get("move_date"):
@@ -1474,7 +1500,7 @@ def build():
              "tasks.html": tasks_page, "lights.html": lights,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
-             "solar_lab.html": slab,
+             "solar_lab.html": slab, "cables_lab.html": clab,
              "enclosure_lab.html": elab, **sys_pages}
     for name, html in pages.items():
         (OUT / name).write_text(html)
@@ -1498,13 +1524,15 @@ def build_docs(out):
              (LIGHTS_LAB_URL, "lights_lab.html"),
              (SITE_URL + "cables.html", "cables.html"),
              (SOLAR_LAB_URL, "solar_lab.html"),
+             (CABLES_LAB_URL, "cables_lab.html"),
              (ENCLOSURE_LAB_URL, "enclosure_lab.html"),
              (SITE_URL + "audio.html", "audio.html"),
              (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
              ('href="' + SITE_URL + '"', 'href="index.html"')]
     for name in ("index.html", "audio.html", "lab.html", "ops.html", "tasks.html",
                  "solar.html", "solar_lab.html", "enclosure_lab.html",
-                 "lights.html", "lights_lab.html", "cables.html", "armor.html"):
+                 "lights.html", "lights_lab.html", "cables.html", "cables_lab.html",
+                 "armor.html"):
         html = (out / name).read_text()
         for url, rel in swaps:
             html = html.replace(url, rel)
