@@ -1,0 +1,197 @@
+<title>Hero Armor — лабораторія ящика для станції</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; letter-spacing: .01em; }
+  .sub { color: var(--ink-2); max-width: 64ch; margin: 0 0 1.6rem; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
+       margin: 2.6rem 0 .9rem; letter-spacing: .02em; }
+  .presets { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.2rem; }
+  .presets button, .seg button {
+    font-family: var(--mono); font-size: .78rem; padding: .45rem .8rem;
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 4px; cursor: pointer;
+  }
+  .presets button:hover, .seg button:hover { border-color: var(--accent); }
+  .presets button.active, .seg button.active {
+    background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+  .seg { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .7rem; }
+  .sim { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 1.25rem; align-items: start; }
+  @media (max-width: 760px) { .sim { grid-template-columns: 1fr; } }
+  .controls, .outputs { background: var(--panel); border: 1px solid var(--line);
+                        border-radius: 6px; padding: 1.1rem 1.2rem; }
+  .ctrl { margin-bottom: .9rem; }
+  .ctrl label { display: flex; justify-content: space-between; font-size: .82rem;
+                color: var(--ink-2); margin-bottom: .15rem; }
+  .ctrl label b { font-family: var(--mono); color: var(--ink); font-weight: 600;
+                  font-variant-numeric: tabular-nums; }
+  .ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+  .ctrl-group { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--ink-2);
+                border-top: 1px solid var(--line); padding-top: .8rem; margin: 1.1rem 0 .7rem; }
+  .ctrl-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+  .check { display: flex; align-items: center; gap: .5rem; font-size: .84rem; color: var(--ink); }
+  .check input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .7rem .8rem; background: var(--bg); }
+  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.45rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+  .tile.good { background: var(--good-bg); } .tile.good .v { color: var(--good); }
+  .tile.warn { background: var(--warn-bg); } .tile.warn .v { color: var(--warn); }
+  .tile.crit { background: var(--crit-bg); } .tile.crit .v { color: var(--crit); }
+  .bar-row { margin-top: 1rem; }
+  .bar-row .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+                text-transform: uppercase; color: var(--ink-2); margin-bottom: .3rem; }
+  .bar { position: relative; height: 14px; background: var(--bg); border: 1px solid var(--line);
+         border-radius: 3px; overflow: hidden; }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--signal); transition: width .2s; }
+  .bar .fill.heat { background: linear-gradient(90deg, var(--good), var(--warn) 60%, var(--crit)); }
+  .bar .mark { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--crit); }
+  .bar-legend { display: flex; justify-content: space-between; font-family: var(--mono);
+                font-size: .68rem; color: var(--ink-2); margin-top: .2rem;
+                font-variant-numeric: tabular-nums; }
+  .fig { background: #fcfcfb; border: 1px solid var(--line); border-radius: 6px;
+         padding: .8rem; overflow-x: auto; }
+  .fig img { display: block; min-width: 900px; width: 100%; }
+  .fig-cap { font-size: .8rem; color: var(--ink-2); margin-top: .5rem; max-width: 80ch; }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  .layers { display: grid; gap: .8rem; }
+  .layer { border-left: 3px solid var(--signal); background: var(--panel);
+           border-radius: 0 5px 5px 0; padding: .8rem 1rem; }
+  .layer h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .layer p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 78ch; }
+  .grp-split { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .8rem;
+               font-family: var(--mono); font-size: .7rem; }
+  .grp-split span { padding: .2rem .55rem; border-radius: 3px; background: var(--bg);
+                    border: 1px solid var(--line); }
+  .bar .fill.gen { background: var(--good); }
+  .bar .fill.soc { background: linear-gradient(90deg, var(--crit), var(--warn) 30%, var(--good) 60%); }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor · головна</a> · лабораторія ящика</p>
+  <h1>Ящик для станції: чи влізе і чи не звариться</h1>
+  <p class="sub">Станцію не можна ні залишити відкритою (лужний пил осідає на платах),
+  ні закрити глухо (перегріється). Тут два незалежні розрахунки: <b>геометрія</b> — чи
+  влазить станція з зазором на продув, і <b>тепло</b> — який потік повітря треба, щоб
+  усередині лишалось прохолодніше за паспортну межу.</p>
+
+  <div class="tiles" id="tiles">
+{{ENC_TILES}}
+  </div>
+
+  <h2>Головне: вентиляція не робить холодніше за вулицю</h2>
+  <p class="sub" style="margin-bottom:1rem">Це те, що легко проґавити. Межа станцій —
+  <b>+45&nbsp;°C</b>, а на плайї в тіні вже 40-45. Значить на перегрів лишаються одиниці
+  градусів, і потік треба рахувати саме під них. На сонці вентилятор не врятує взагалі.</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Зовні</th><th>Дозволений перегрів</th><th>Потрібний потік</th>
+    <th>Вхідний отвір</th><th>Що ставити</th></tr></thead>
+    <tbody>
+{{ENC_THERMAL}}
+</tbody>
+  </table>
+  </div>
+
+  <h2>Що в яку коробку влазить</h2>
+  <p class="sub" style="margin-bottom:1rem">Зазор {{CLEARANCE}}&nbsp;мм з кожного боку — не
+  «щоб не тиснуло», а щоб повітрю було куди йти. Впритул поставлена станція перетворює ящик
+  у термос. Внутрішні розміри кейсів <b>звіряти перед покупкою</b>: у Pelican їх дають по дну,
+  а стінки конічні.</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Станція</th><th>Розмір</th><th>Вага</th>{{CASE_HEADS}}</tr></thead>
+    <tbody>
+{{ENC_FIT}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{FIT_CAPTION}}</p>
+
+  <h2>Кабельні вводи і вентиляція — без цього ящик не працює</h2>
+  <div class="layers">
+    <div class="layer">
+      <h3>1 · Кабелі — через гермовводи, не через щілину</h3>
+      <p>Якщо вивести кабель під кришкою, вся герметизація і фільтрація втрачають сенс:
+      пил зайде туди ж. Потрібні гермовводи під силовий кабель і панельні роз'єми на вхід
+      сонця. Екран і кнопки станції мусять лишатись видимими — інакше не побачиш, що вона
+      пішла в захист.</p>
+    </div>
+    <div class="layer">
+      <h3>2 · Фільтр на вхід, вентилятор на витяг</h3>
+      <p>Саме так, а не навпаки. Тоді всередині тиск трохи нижчий за зовнішній, і пил не
+      лізе крізь щілини — він мусить пройти фільтр. Якщо дути всередину, надлишковий тиск
+      виганяє повітря крізь усі нещільності, а пил однаково знаходить дорогу.</p>
+    </div>
+    <div class="layer">
+      <h3>3 · Фільтр знімний, витрушувати щоранку</h3>
+      <p>Магнітна рамка — та сама логіка, що з панелями: мити щоранку дешевше, ніж
+      возити запас. Забитий фільтр ріже потік, і вентилятор перестає справлятись саме
+      в найгарячіший день.</p>
+    </div>
+    <div class="layer">
+      <h3>4 · Тінь важливіша за вентилятор</h3>
+      <p>Ящик на сонці бачить 55&nbsp;°C, у тіні — 42. Різниця в 13 градусів вирішує
+      більше, ніж будь-який вентилятор: у першому випадку станція за межею незалежно від
+      продуву, у другому ще можна витягнути потоком. Світлий або відбивний корпус і
+      підставка над розпеченою землею.</p>
+    </div>
+  </div>
+
+  <h2>Що купити</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Навіщо</th></tr></thead>
+    <tbody>
+{{ENC_PARTS}}
+</tbody>
+  </table>
+  </div>
+</div>

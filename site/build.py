@@ -33,7 +33,9 @@ sys.path.insert(0, str(LIGHTS / "model"))
 sys.path.insert(0, str(SOLAR / "model"))
 import audio_node_model as m  # noqa: E402  (reads audio/data/*)
 import lights_node_model as lm  # noqa: E402  (reads lights/data/*)
-import power_node_model as pw  # noqa: E402  (pulls demand from lights + audio)
+import power_node_model as pw
+sys.path.insert(0, str(ROOT / "enclosure" / "model"))
+import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
 
 BOM = json.loads((DATA / "bom.json").read_text())
 DECISIONS = json.loads((DATA / "decisions.json").read_text())
@@ -64,6 +66,7 @@ ART_OPS = "https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859"
 ART_TASKS = "https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1"
 LIGHTS_LAB_URL = SITE_URL + "lights_lab.html"
 SOLAR_LAB_URL = SITE_URL + "solar_lab.html"
+ENCLOSURE_LAB_URL = SITE_URL + "enclosure_lab.html"
 
 SYSTEMS = ["project", "audio", "solar", "lights", "armor"]
 SYS_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Живлення",
@@ -1393,11 +1396,83 @@ def build():
     index += f'\n<script type="application/ld+json">\n{kg_json}\n</script>\n'
 
     OUT.mkdir(exist_ok=True)
+    # ================= лабораторія ящика =================
+    ENC = enc.P
+    elab = tmpl("enclosure_lab.tmpl.html")
+    e_heat = enc.heat_w()
+    e_shade = enc.need_cfm(ENC["ambient"]["playa_shade_c"])
+    elab = elab.replace("{{CLEARANCE}}", str(ENC["fit"]["clearance_mm"]))
+    elab = elab.replace("{{ENC_TILES}}", "\n".join([
+        tile("Тепло в ящику", f"{e_heat:.0f}", "Вт",
+             f'зарядка {ENC["thermal"]["charge_w"]} + віддача {ENC["thermal"]["load_w"]} + холостий хід'),
+        tile("Межа станції", f'{ENC["ambient"]["station_limit_c"]}', "°C",
+             "паспорт усіх станцій — і на розряд, і на заряд", "warn"),
+        tile("У тіні на плайї", f'{ENC["ambient"]["playa_shade_c"]}', "°C",
+             f'лишається {e_shade["allowed_rise_c"]}°C на перегрів', "crit"),
+        tile("Треба потоку", f'{e_shade["cfm"]:.0f}' if e_shade["cfm"] else "—", "CFM",
+             e_shade["verdict"], "good" if e_shade["cfm"] else "crit"),
+    ]))
+
+    th_rows = []
+    for amb in (35, 38, ENC["ambient"]["playa_shade_c"], 45, ENC["ambient"]["playa_sun_c"]):
+        r = enc.need_cfm(amb)
+        if r["cfm"] is None:
+            th_rows.append(
+                f'      <tr><td class="num">{amb} °C</td>'
+                f'<td class="num" style="color:var(--crit)">{r["allowed_rise_c"]} °C</td>'
+                f'<td colspan="3"><span class="pill add">{esc(r["verdict"])}</span></td></tr>')
+        else:
+            th_rows.append(
+                f'      <tr><td class="num">{amb} °C</td>'
+                f'<td class="num">{r["allowed_rise_c"]} °C</td>'
+                f'<td class="num">{r["cfm"]:.0f} CFM</td>'
+                f'<td class="num">{r["inlet_cm2"]:.0f} см²</td>'
+                f'<td><span class="pill have">{esc(r["cheapest"] or "—")}</span></td></tr>')
+    elab = elab.replace("{{ENC_THERMAL}}", "\n".join(th_rows))
+
+    cases = ENC["cases"]
+    elab = elab.replace("{{CASE_HEADS}}", "".join(
+        f'<th>{esc(c["name"])}<br><span style="font-weight:400;text-transform:none">'
+        f'${c["price_usd"]} · {esc(c["seal"])}</span></th>' for c in cases))
+    fit_rows = []
+    for st in ENC["stations"]:
+        cells = []
+        for c in cases:
+            g = enc.fits(st, c)
+            if not g["fits"]:
+                cells.append('<td><span class="pill add">ні</span></td>')
+            elif g["tight"]:
+                cells.append('<td><span class="pill tbd">впритул</span></td>')
+            else:
+                cells.append(f'<td><span class="pill have">так</span>'
+                             f'<br><span style="font-size:.7rem;color:var(--ink-2)">'
+                             f'запас {min(g["slack_mm"])} мм</span></td>')
+        d = "×".join(str(x) for x in st["dims_mm"])
+        fit_rows.append(f'      <tr><td><b>{esc(st["name"])}</b></td>'
+                        f'<td class="num">{d}</td><td class="num">{st["kg"]} кг</td>'
+                        + "".join(cells) + '</tr>')
+    elab = elab.replace("{{ENC_FIT}}", "\n".join(fit_rows))
+    elab = elab.replace("{{FIT_CAPTION}}", esc(ENC["_verify"]))
+
+    parts = []
+    for grp in ("cable_entry", "filters"):
+        for it in ENC[grp]["items"]:
+            parts.append(f'      <tr><td>{esc(it["name"])}</td>'
+                         f'<td class="num">{it["qty"]}</td>'
+                         f'<td class="num">${it["price_usd"]}</td>'
+                         f'<td>{esc(ENC[grp]["note"][:150])}…</td></tr>')
+    for f in ENC["fans"]:
+        parts.append(f'      <tr><td>Вентилятор {esc(f["name"])}</td>'
+                     f'<td class="num">1</td><td class="num">${f["price_usd"]}</td>'
+                     f'<td>{f["cfm"]} CFM паспорт → {f["cfm"]*ENC["air"]["filter_derate"]:.0f} з фільтром</td></tr>')
+    elab = elab.replace("{{ENC_PARTS}}", "\n".join(parts))
+
     pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
-             "solar_lab.html": slab, **sys_pages}
+             "solar_lab.html": slab,
+             "enclosure_lab.html": elab, **sys_pages}
     for name, html in pages.items():
         (OUT / name).write_text(html)
     (OUT / "knowledge.jsonld").write_text(json.dumps(kg, ensure_ascii=False, indent=1))
@@ -1420,12 +1495,13 @@ def build_docs(out):
              (LIGHTS_LAB_URL, "lights_lab.html"),
              (SITE_URL + "cables.html", "cables.html"),
              (SOLAR_LAB_URL, "solar_lab.html"),
+             (ENCLOSURE_LAB_URL, "enclosure_lab.html"),
              (SITE_URL + "audio.html", "audio.html"),
              (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
              ('href="' + SITE_URL + '"', 'href="index.html"')]
     for name in ("index.html", "audio.html", "lab.html", "ops.html", "tasks.html",
-                 "solar.html", "solar_lab.html", "lights.html", "lights_lab.html",
-                 "cables.html", "armor.html"):
+                 "solar.html", "solar_lab.html", "enclosure_lab.html",
+                 "lights.html", "lights_lab.html", "cables.html", "armor.html"):
         html = (out / name).read_text()
         for url, rel in swaps:
             html = html.replace(url, rel)
