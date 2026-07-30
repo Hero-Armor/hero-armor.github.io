@@ -31,4 +31,5 @@
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) - в роботі
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) - до роботи
 * [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) - до роботи
-* [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) - до роботи
+* [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) - готово
+* [Перевірити, на яку адресу йде стрічка (LA чи SF)](pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) - до роботи

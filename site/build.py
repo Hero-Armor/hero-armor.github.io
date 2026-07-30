@@ -124,6 +124,12 @@ def figures_html(key):
     return f'  <h2>Креслення</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
 
 
+def dest_label(o):
+    """Куди їде замовлення. Адреса може бути ще не з'ясована (щойно замовили і
+    не подивились у підтвердженні) — тоді кажемо про це прямо, а не падаємо."""
+    return ADDR["locations"].get(o.get("deliver_to"), {}).get("label", "адресу уточнити")
+
+
 def bom_rows_html():
     rows = []
     for b in BOM:
@@ -199,7 +205,7 @@ def build_knowledge():
             "orderedItem": [{"@id": bom_ids[i]} for i in o["items"] if i in bom_ids],
             "orderDelivery": {"@type": "ParcelDelivery", "deliveryAddress": {
                 "@type": "PostalAddress",
-                "addressLocality": ADDR["locations"][o["deliver_to"]]["label"]}},
+                "addressLocality": dest_label(o)}},
             "description": o.get("note", "")})
 
     for t in TASKS:
@@ -455,10 +461,10 @@ def build_okf():
             "description": o.get("note", ""), "resource": o.get("url"),
             "tags": [o["system"]], "order_status": o["status"],
             "order_date": o["date"],
-            "deliver_to": ADDR["locations"][o["deliver_to"]]["label"],
+            "deliver_to": dest_label(o),
             "generated": gen,
         }, f"Статус: **{ORDER_STATUS[o['status']]}** · замовлено {o['date']} · "
-           f"доставка: {ADDR['locations'][o['deliver_to']]['label']}\n\n# Позиції\n\n{items_md}"
+           f"доставка: {dest_label(o)}\n\n# Позиції\n\n{items_md}"
            + (f"\n\n{o['note']}" if o.get("note") else ""))
         o_items.append(f"[{o['id']} — {o['vendor']}]({s}.md) - {ORDER_STATUS[o['status']]}")
     index_md("orders/index.md", "Замовлення", [("Замовлення", o_items)])
@@ -1180,7 +1186,7 @@ def build():
         vendor = f'<a href="{o["url"]}">{esc(o["vendor"])}</a>' if o.get("url") else esc(o["vendor"])
         trk = tracking.get(o["id"])
         trk_s = f'{esc(trk["carrier"])} {esc(trk["number"])}' if trk else '<span class="comp">private</span>'
-        dest = ADDR["locations"][o["deliver_to"]]["label"]
+        dest = dest_label(o)
         orows.append(
             f'      <tr><td class="num">{o["id"]}</td><td class="num">{o["date"]}</td>'
             f'<td class="num">{days}</td><td>{vendor}</td>'
@@ -1253,7 +1259,7 @@ def build():
                 f'      <tr><td class="num">{o["id"]}</td><td class="num">{o["date"]}</td>'
                 f'<td>{esc("; ".join(o["items"]))}</td>'
                 f'<td><span class="pill {o["status"]}">{ORDER_STATUS[o["status"]]}</span></td>'
-                f'<td>{esc(ADDR["locations"][o["deliver_to"]]["label"])}</td></tr>'
+                f'<td>{esc(dest_label(o))}</td></tr>'
                 for o in c_orders)
             sections.append('  <h2>Замовлення</h2>\n  <div class="tbl-wrap">\n  <table>\n'
                             '    <thead><tr><th>ID</th><th>Дата</th><th>Що</th><th>Статус</th><th>Куди</th></tr></thead>\n'
@@ -1413,7 +1419,7 @@ def build():
             f'<td class="num">{days}</td><td>{vendor}</td>'
             f'<td>{esc("; ".join(o["items"]))}</td>'
             f'<td><span class="pill {o["status"]}">{ORDER_STATUS[o["status"]]}</span></td>'
-            f'<td>{esc(ADDR["locations"][o["deliver_to"]]["label"])}</td></tr>')
+            f'<td>{esc(dest_label(o))}</td></tr>')
     if not orows_i:
         orows_i.append('      <tr><td colspan="7">Поки нічого не замовлено.</td></tr>')
     index = index.replace("{{ORDER_ROWS}}", "\n".join(orows_i))
