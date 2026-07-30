@@ -1092,6 +1092,26 @@ def build():
             f'<td class="num">{cost}</td><td class="num">{loss}</td>'
             f'<td class="num">{"так" if pp["solder"] else "ні"}</td>'
             f'<td>{esc(pp["note"])}</td></tr>')
+    # каталог станцій: вердикт рахуємо від нашого піку, ціни — з даних
+    VERD = {"best": ("have", "найкраща"), "ok": ("have", "підходить"),
+            "hack": ("tbd", "через хак"), "weak": ("add", "не тягне")}
+    cat_rows = []
+    for st in PP.get("station_catalog", {}).get("stations", []):
+        vcls, vlab = VERD.get(st["verdict"], ("tbd", "?"))
+        fits = pk <= st["dc12_w"]
+        used = f'${st["used_usd"]}' if st.get("used_usd") else "—"
+        cat_rows.append(
+            f'      <tr><td><b>{esc(st["name"])}</b></td>'
+            f'<td class="num">{st["wh"]} Wh</td>'
+            f'<td>{esc(st["port"])}</td>'
+            f'<td class="num"><span class="pill {"have" if fits else "add"}">'
+            f'{st["dc12_w"]} Вт</span></td>'
+            f'<td class="num">{st["solar_w"]} Вт</td>'
+            f'<td class="num">${st["new_usd"]}</td>'
+            f'<td class="num">{used}</td>'
+            f'<td><span class="pill {vcls}">{vlab}</span><br>'
+            f'<span style="font-size:.74rem;color:var(--ink-2)">{esc(st["why"])}</span></td></tr>')
+    slab = slab.replace("{{STATION_CATALOG}}", "\n".join(cat_rows))
     slab = slab.replace("{{POWER_PATHS}}", "\n".join(path_rows))
     slab = slab.replace("{{PRESETS_JSON}}", json.dumps([
         dict(name=c["name"], panel=PP["panel"]["chosen_w"],
