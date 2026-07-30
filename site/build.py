@@ -856,9 +856,12 @@ def build():
              "good" if not bad_pk else "warn"),
         tile("Головний запобіжник", f"{fuse_rows_data[0]['rating']}", "A",
              f"робочий струм {fuse_rows_data[0]['amps']:.1f} A із запасом ×{fusing['derate']}"),
-        tile("Вмикання світла", "фотореле", "",
-             f"поріг {auto['lux_on']} лк, гасне на {auto['lux_off']}, "
-             f"затримка {auto['delay_s']} с", "good"),
+        tile("Вмикання світла",
+             "фотореле" if auto["trigger"] == "photocell" else "вручну", "",
+             (f"поріг {auto['lux_on']} лк, гасне на {auto['lux_off']}, "
+              f"затримка {auto['delay_s']} с") if auto["trigger"] == "photocell"
+             else "фотореле прибрано — чим вмикати Гр.1 і Гр.3А, ще не обрано",
+             "good" if auto["trigger"] == "photocell" else "warn"),
     ]
     cables = cables.replace("{{TILES_HTML}}", "\n".join(cab_tiles))
 

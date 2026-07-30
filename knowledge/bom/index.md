@@ -35,7 +35,6 @@
 * [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - —, купити
 * [Щит-бокс із тримачами запобіжників](shchyt-boks-iz-trymachamy-zapobizhnykiv.md) - —, купити
 * [Запобіжники ATO/ATC, набір](zapobizhnyky-ato-atc-nabir.md) - —, купити
-* [Фотореле (сутінкове) 12 В](fotorele-sutinkove-12-v.md) - —, купити
 * [Реле на групи 12 В, 30 А](rele-na-hrupy-12-v-30-a.md) - —, купити
 * [Гермокоробка IP66 для щита і реле](hermokorobka-ip66-dlia-shchyta-i-rele.md) - —, купити
 * [Гермокоробки IP65 під диммер і WLED](hermokorobky-ip65-pid-dymmer-i-wled.md) - —, купити

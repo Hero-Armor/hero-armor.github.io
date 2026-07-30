@@ -26,7 +26,7 @@
 * [Стелю масиву задає не бюджет, а вхід станції](steliu-masyvu-zadaie-ne-biudzhet-a-vkhid-stantsii.md)
 * [Скільки станцій купуємо](skilky-stantsii-kupuiemo.md)
 * [Паспортні числа станцій треба звірити](pasportni-chysla-stantsii-treba-zviryty.md)
-* [Світло вмикає фотореле, а не таймер](svitlo-vmykaie-fotorele-a-ne-taimer.md)
+* [Фотореле прибрано — автовмикання по темряві скасовано](fotorele-prybrano-avtovmykannia-po-temriavi-skasovano.md)
 * [Три групи — три реле, аварійна на своєму каналі](try-hrupy-try-rele-avariina-na-svoiemu-kanali.md)
 * [Просадку рахуємо деревом, а не по лініях](prosadku-rakhuiemo-derevom-a-ne-po-liniiakh.md)
 * [Стрічку обмежуємо по струму в прошивці](strichku-obmezhuiemo-po-strumu-v-proshyvtsi.md)
@@ -52,3 +52,4 @@
 * [Bluetti має ШТАТНИЙ 12 В / 30 А — нічого не паяти](bluetti-maie-shtatnyi-12-v-30-a-nichoho-ne-paiaty.md)
 * [AC200P на Marketplace за $700 — найдешевший робочий шлях](ac200p-na-marketplace-za-700-naideshevshyi-robochyi-shliakh.md)
 * [Як герметизувати різи стрічки: нейтральний силікон, не оцтовий і не термоклей](iak-hermetyzuvaty-rizy-strichky-neitralnyi-sylikon-ne-otstov.md)
+* [Чим вмикати прожектори і аварійну без фотореле](chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md)

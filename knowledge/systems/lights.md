@@ -22,7 +22,7 @@ generated: { by: "process:site-build" }
 * [Колір габаритних вогнів — жовтий чи червоний](/decisions/kolir-habarytnykh-vohniv-zhovtyi-chy-chervonyi.md)
 * [Стрічка обрана — WS2811 (мій розбір WS2815 перекрито)](/decisions/strichka-obrana-ws2811-mii-rozbir-ws2815-perekryto.md)
 * [Стрічку ріжемо і міняємо модулями, а не латаємо на плайї](/decisions/strichku-rizhemo-i-miniaiemo-moduliamy-a-ne-lataiemo-na-plai.md)
-* [Світло вмикає фотореле, а не таймер](/decisions/svitlo-vmykaie-fotorele-a-ne-taimer.md)
+* [Фотореле прибрано — автовмикання по темряві скасовано](/decisions/fotorele-prybrano-avtovmykannia-po-temriavi-skasovano.md)
 * [Три групи — три реле, аварійна на своєму каналі](/decisions/try-hrupy-try-rele-avariina-na-svoiemu-kanali.md)
 * [Просадку рахуємо деревом, а не по лініях](/decisions/prosadku-rakhuiemo-derevom-a-ne-po-liniiakh.md)
 * [Стрічку обмежуємо по струму в прошивці](/decisions/strichku-obmezhuiemo-po-strumu-v-proshyvtsi.md)
@@ -34,6 +34,7 @@ generated: { by: "process:site-build" }
 * [Стрічка мусить тримати +60°C — попередні відхилені](/decisions/strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
 * [Просадка вздовж самої стрічки — перевірити на довжині гілки](/decisions/prosadka-vzdovzh-samoi-strichky-pereviryty-na-dovzhyni-hilky.md)
 * [Як герметизувати різи стрічки: нейтральний силікон, не оцтовий і не термоклей](/decisions/iak-hermetyzuvaty-rizy-strichky-neitralnyi-sylikon-ne-otstov.md)
+* [Чим вмикати прожектори і аварійну без фотореле](/decisions/chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md)
 
 # Задачі
 
@@ -68,7 +69,6 @@ generated: { by: "process:site-build" }
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $12, купити
 * [Щит-бокс із тримачами запобіжників](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv.md) — —, купити
 * [Запобіжники ATO/ATC, набір](/bom/zapobizhnyky-ato-atc-nabir.md) — —, купити
-* [Фотореле (сутінкове) 12 В](/bom/fotorele-sutinkove-12-v.md) — —, купити
 * [Реле на групи 12 В, 30 А](/bom/rele-na-hrupy-12-v-30-a.md) — —, купити
 * [Гермокоробка IP66 для щита і реле](/bom/hermokorobka-ip66-dlia-shchyta-i-rele.md) — —, купити
 * [Гермокоробки IP65 під диммер і WLED](/bom/hermokorobky-ip65-pid-dymmer-i-wled.md) — —, купити
