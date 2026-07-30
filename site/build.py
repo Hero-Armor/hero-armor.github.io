@@ -1075,6 +1075,24 @@ def build():
     slab = slab.replace("{{LIGHT_BTNS}}", "\n        ".join(
         f'<button data-c="{esc(k)}"{" class=\'active\'" if k == "composite" else ""}>'
         f'{esc(v["label"])}</button>' for k, v in light_cases.items()))
+    # гіпотези живлення: чи пролізе пік кожним шляхом (рахуємо, не вписуємо)
+    pk = max(r["draw_w"] for r in l_res_for_lab.values()) + p_demand["audio"]
+    path_rows = []
+    for pp in PP.get("power_paths", {}).get("paths", []):
+        fits = pk <= pp["limit_w"]
+        cls = "good" if fits else "crit"
+        verdict = ("пролізає" if fits else "не пролізає")
+        cost = "—" if not pp["cost_usd"] else f'${pp["cost_usd"]}'
+        loss = "—" if not pp["losses_pct"] else f'{pp["losses_pct"]}%'
+        path_rows.append(
+            f'      <tr><td><b>{esc(pp["name"])}</b></td>'
+            f'<td class="num">{pp["limit_w"]} Вт / {pp["limit_a"]} А</td>'
+            f'<td class="num"><span class="pill {"have" if fits else "add"}">'
+            f'{pk:.0f} Вт — {verdict}</span></td>'
+            f'<td class="num">{cost}</td><td class="num">{loss}</td>'
+            f'<td class="num">{"так" if pp["solder"] else "ні"}</td>'
+            f'<td>{esc(pp["note"])}</td></tr>')
+    slab = slab.replace("{{POWER_PATHS}}", "\n".join(path_rows))
     slab = slab.replace("{{PRESETS_JSON}}", json.dumps([
         dict(name=c["name"], panel=PP["panel"]["chosen_w"],
              sun=round(c["sun_factor"] * 100), sunh=pl["sun_hours"],

@@ -531,5 +531,24 @@
     "flow": "to_order",
     "url": "https://signaturesolar.com/orion-tr-48-12-20a-240w-isolated-dc-dc-converter-voltage-regulator/",
     "note": "дешевший варіант того самого: 20А=240Вт. Впритул до піку 243 Вт — брати лише якщо тест стрічки покаже низьке споживання"
+  },
+  {
+    "item": "BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)",
+    "qty": "1",
+    "price": "~$45",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "https://www.amazon.com/BLUETTI-Aviation-Anderson-Compatible-Portable/dp/B09X34G9MG",
+    "note": "ГОТОВИЙ офіційний кабель, нічого не паяти. Штатний вихід 12 В / 30 А = 360 Вт. Підходить до AC200MAX, AC200P, AC300, EP500/EP500 Pro"
+  },
+  {
+    "item": "Кабель XT150 для порту розширення (готовий)",
+    "qty": "1",
+    "price": "~$25",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "note": "Готових повно (Amazon/AliExpress/eBay), АЛЕ резистора 1 кОм у них нема — його все одно доведеться додати. Тому шлях Bluetti чистіший, якщо не хочемо паяти"
   }
 ]

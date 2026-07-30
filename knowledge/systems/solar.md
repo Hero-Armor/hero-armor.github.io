@@ -29,6 +29,7 @@ generated: { by: "process:site-build" }
 * [Перехідники на сторонні АКБ існують — але вони 48-вольтові](/decisions/perekhidnyky-na-storonni-akb-isnuiut-ale-vony-48-voltovi.md)
 * [Найпростіший шлях: окремий АКБ 12 В живить світло, станція його заряджає](/decisions/naiprostishyi-shliakh-okremyi-akb-12-v-zhyvyt-svitlo-stantsi.md)
 * [Понизити порт розширення 48→12 В — підтверджено, EcoFlow сам так робить](/decisions/ponyzyty-port-rozshyrennia-48-12-v-pidtverdzheno-ecoflow-sam.md)
+* [Bluetti має ШТАТНИЙ 12 В / 30 А — нічого не паяти](/decisions/bluetti-maie-shtatnyi-12-v-30-a-nichoho-ne-paiaty.md)
 
 # Задачі
 
@@ -50,3 +51,5 @@ generated: { by: "process:site-build" }
 * [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](/bom/victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) — $201, купити
 * [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](/bom/victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) — $114, купити
+* [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](/bom/bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) — ~$45, купити
+* [Кабель XT150 для порту розширення (готовий)](/bom/kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) — ~$25, купити
