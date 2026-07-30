@@ -47,6 +47,10 @@ generated: { by: "process:site-build" }
 * [Штекер-прикурювач з клемами](/bom/shteker-prykuriuvach-z-klemamy.md) — $6/2шт, купити
 * [XT60 пара + пігтейли](/bom/xt60-para-pihteily.md) — $7/2пари, купити
 * [Кабель 18AWG силікон, 2×2 м](/bom/kabel-18awg-sylikon-2-2-m.md) — $13/18м, купити
+* [Макетна плата 9×15см двостороння](/bom/maketna-plata-9-15sm-dvostoronnia.md) — $13, купити
+* [Набір нейлонових стійок M2.5/M3/M4](/bom/nabir-neilonovykh-stiiok-m2-5-m3-m4.md) — $17, купити
+* [Клемники гвинтові 5.08мм 2-pin](/bom/klemnyky-hvyntovi-5-08mm-2-pin.md) — $9, купити
+* [Гнізда-хедери 2.54мм (мама) кит](/bom/hnizda-khedery-2-54mm-mama-kyt.md) — $8, купити
 
 # Розраховані цифри
 

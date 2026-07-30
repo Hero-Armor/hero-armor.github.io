@@ -62,3 +62,7 @@
 * [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) - $114, купити
 * [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) - ~$45, купити
 * [Кабель XT150 для порту розширення (готовий)](kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) - ~$25, купити
+* [Макетна плата 9×15см двостороння](maketna-plata-9-15sm-dvostoronnia.md) - $13, купити
+* [Набір нейлонових стійок M2.5/M3/M4](nabir-neilonovykh-stiiok-m2-5-m3-m4.md) - $17, купити
+* [Клемники гвинтові 5.08мм 2-pin](klemnyky-hvyntovi-5-08mm-2-pin.md) - $9, купити
+* [Гнізда-хедери 2.54мм (мама) кит](hnizda-khedery-2-54mm-mama-kyt.md) - $8, купити

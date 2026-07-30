@@ -551,5 +551,45 @@
     "system": "solar",
     "flow": "to_order",
     "note": "Готових повно (Amazon/AliExpress/eBay), АЛЕ резистора 1 кОм у них нема — його все одно доведеться додати. Тому шлях Bluetti чистіший, якщо не хочемо паяти"
+  },
+  {
+    "item": "Макетна плата 9×15см двостороння",
+    "qty": "1 (беруть мультипак)",
+    "price": "$13",
+    "status": "add",
+    "note": "FR4 перфоборд — основа вузла; модулі на неї",
+    "url": "https://www.amazon.com/dp/B08WJBS4HK",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Набір нейлонових стійок M2.5/M3/M4",
+    "qty": "1 кит",
+    "price": "$17",
+    "status": "add",
+    "note": "432pcs — підняти модулі над платою + прикрутити плату в коробку",
+    "url": "https://www.amazon.com/dp/B09F9GMP4W",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Клемники гвинтові 5.08мм 2-pin",
+    "qty": "кілька",
+    "price": "$9",
+    "status": "add",
+    "note": "вхід 12В і вихід на динамік — без ненадійних паяних скруток",
+    "url": "https://www.amazon.com/dp/B09ZP4FWXT",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Гнізда-хедери 2.54мм (мама) кит",
+    "qty": "1 кит",
+    "price": "$8",
+    "status": "add",
+    "note": "запаяти на плату — ESP32/ЦАП/SD вставляються і знімаються",
+    "url": "https://www.amazon.com/dp/B01MQ48T2V",
+    "system": "audio",
+    "flow": "to_order"
   }
 ]
