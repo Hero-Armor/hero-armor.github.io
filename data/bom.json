@@ -56,7 +56,8 @@
     "status": "add",
     "note": "83 дБ/Вт/м, 4Ω, 30 Вт RMS, 70 Гц+; фаворит тесту (моно), 1 запас. НЕ куплено для білда — пара у Marcel на A/B тест (Іван у ЛА). Уточнити чи саме ця модель поїхала.",
     "system": "audio",
-    "flow": "to_order"
+    "flow": "to_order",
+    "url": "https://www.amazon.com/dp/B00197V836"
   },
   {
     "item": "Herdio HMS60 3\", пара",
