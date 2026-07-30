@@ -23,7 +23,7 @@ generated: { by: "process:site-build" }
 # Задачі
 
 * [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](/tasks/a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) — чекаємо
-* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, LDR день/ніч, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-ldr-den-nich-.md) — чекаємо
+* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) — чекаємо
 * [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — чекаємо
 * [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](/tasks/zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) — чекаємо
 * [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — чекаємо
@@ -43,7 +43,6 @@ generated: { by: "process:site-build" }
 * [Запобіжник 3А + тримач, 1000 µФ 25В](/bom/zapobizhnyk-3a-trymach-1000-f-25v.md) — $9/6шт, купити
 * [Конденсатор 1000 µФ 25В low-ESR](/bom/kondensator-1000-f-25v-low-esr.md) — $5/10шт, купити
 * [Захист динаміка від пилу](/bom/zakhyst-dynamika-vid-pylu.md) — $10/2шт, купити
-* [Фоторезистор LDR + 10к](/bom/fotorezystor-ldr-10k.md) — $6/20шт, купити
 * [Штекер-прикурювач з клемами](/bom/shteker-prykuriuvach-z-klemamy.md) — $6/2шт, купити
 * [XT60 пара + пігтейли](/bom/xt60-para-pihteily.md) — $7/2пари, купити
 * [Кабель 18AWG силікон, 2×2 м](/bom/kabel-18awg-sylikon-2-2-m.md) — $13/18м, купити

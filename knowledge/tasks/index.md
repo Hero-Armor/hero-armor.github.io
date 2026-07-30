@@ -4,7 +4,7 @@
 * [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) - чекаємо
 * [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) - чекаємо
 * [Замовити решту BOM одним кошиком](zamovyty-reshtu-bom-odnym-koshykom.md) - чекаємо
-* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, LDR день/ніч, UART радара](proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-ldr-den-nich-.md) - чекаємо
+* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) - чекаємо
 * [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) - чекаємо
 * [Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу](vikno-v-broni-pid-radar-60-60-mm-abs-akryl-sklotkanyna-bez-m.md) - чекаємо
 * [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) - чекаємо

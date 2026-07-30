@@ -138,16 +138,6 @@
     "flow": "to_order"
   },
   {
-    "item": "Фоторезистор LDR + 10к",
-    "qty": "2",
-    "price": "$6/20шт",
-    "status": "add",
-    "note": "Chanzon GL5528 20 шт — авто день/ніч (GPIO34)",
-    "url": "https://www.amazon.com/dp/B08QRYD4GR",
-    "system": "audio",
-    "flow": "to_order"
-  },
-  {
     "item": "Штекер-прикурювач з клемами",
     "qty": "1",
     "price": "$6/2шт",

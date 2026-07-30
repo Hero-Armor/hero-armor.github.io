@@ -17,7 +17,6 @@
 * [Конденсатор 1000 µФ 25В low-ESR](kondensator-1000-f-25v-low-esr.md) - $5/10шт, купити
 * [Захист динаміка від пилу](zakhyst-dynamika-vid-pylu.md) - $10/2шт, купити
 * [EcoFlow (12V DC-порт)](ecoflow-12v-dc-port.md) - —, купити
-* [Фоторезистор LDR + 10к](fotorezystor-ldr-10k.md) - $6/20шт, купити
 * [Штекер-прикурювач з клемами](shteker-prykuriuvach-z-klemamy.md) - $6/2шт, купити
 * [XT60 пара + пігтейли](xt60-para-pihteily.md) - $7/2пари, купити
 * [Кабель 18AWG силікон, 2×2 м](kabel-18awg-sylikon-2-2-m.md) - $13/18м, купити

@@ -8,7 +8,6 @@ Generates schematic.svg + schematic.png next to this file.
   ESP32: I2S -> PCM5102A -> L analog -> mono amp -> 1x MA-3013 speaker
          (second speaker of the pair = ready spare)
          SPI -> microSD;  GPIO27/UART2 <-> LD2410C
-  LDR divider (3V3 - LDR - GPIO34 - 10k - GND): auto day/night volume profile
 """
 
 import schemdraw
@@ -142,17 +141,6 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
     d += elm.Line().right().at(buck.V5).length(1.0)
     d += elm.Vdd().label("5V", fontsize=9)
     d += elm.Ground().at(buck.GNDO).right()
-
-    # ---------------- LDR: auto day/night sensing on GPIO34 ----------------
-    d += elm.Label().at((4.4, y0 + 4.9)).label("Авто день/ніч", fontsize=9)
-    d += elm.Vdd().at((4.2, y0 + 3.6)).label("3V3", fontsize=9)
-    ldr = elm.Photoresistor().at((4.2, y0 + 3.6)).down().length(1.4).label("LDR", fontsize=8)
-    d += ldr
-    d += elm.Dot().at(ldr.end)
-    d += elm.Line().at(ldr.end).right().length(0.8).label("→ GPIO34 (ADC)", "right", fontsize=8)
-    r10 = elm.Resistor().at(ldr.end).down().length(1.4).label("10k", fontsize=8)
-    d += r10
-    d += elm.Ground().at(r10.end)
 
     d += elm.Label().at((6.0, y0 - 0.5)).label(
         "Земля: зіркою в одній точці біля АКБ.\n"
