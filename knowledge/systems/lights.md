@@ -33,6 +33,7 @@ generated: { by: "process:site-build" }
 * [Коло, а не восьмикутник — фінально](/decisions/kolo-a-ne-vosmykutnyk-finalno.md)
 * [Стрічка мусить тримати +60°C — попередні відхилені](/decisions/strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
 * [Просадка вздовж самої стрічки — перевірити на довжині гілки](/decisions/prosadka-vzdovzh-samoi-strichky-pereviryty-na-dovzhyni-hilky.md)
+* [Як герметизувати різи стрічки: нейтральний силікон, не оцтовий і не термоклей](/decisions/iak-hermetyzuvaty-rizy-strichky-neitralnyi-sylikon-ne-otstov.md)
 
 # Задачі
 
@@ -82,3 +83,5 @@ generated: { by: "process:site-build" }
 * [Кабель: Коробка → лампи сходів](/bom/kabel-korobka-lampy-skhodiv.md) — —, купити
 * [Блок запобіжників Blue Sea 5026 (12 кіл)](/bom/blok-zapobizhnykiv-blue-sea-5026-12-kil.md) — ~$40, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — ~$30, купити
+* [Заглушки для силіконового неону (глухі + з отвором під дріт)](/bom/zahlushky-dlia-sylikonovoho-neonu-hlukhi-z-otvorom-pid-drit.md) — ~$12, купити
+* [Нейтральний силіконовий герметик (neutral cure, electronics-grade)](/bom/neitralnyi-sylikonovyi-hermetyk-neutral-cure-electronics-gra.md) — ~$12, купити
