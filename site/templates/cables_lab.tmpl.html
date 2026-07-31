@@ -41,7 +41,10 @@
   .sub { color: var(--ink-2); max-width: 66ch; margin: 0 0 1.4rem; }
   h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
        margin: 2.6rem 0 .9rem; letter-spacing: .02em; }
-  a { color: var(--signal); }
+  /* Посилання: синій на цьому фоні читався погано (Іван 31.07) —
+     переводимо на акцентний, він однаково живий і в темній темі. */
+  a { color: var(--accent); text-underline-offset: .15em; }
+  a:hover { color: var(--ink); }
   .nav { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.6rem; }
   .nav a { display: inline-block; font-family: var(--mono); font-size: .8rem;
            padding: .5rem .9rem; background: var(--panel); border: 1px solid var(--line);

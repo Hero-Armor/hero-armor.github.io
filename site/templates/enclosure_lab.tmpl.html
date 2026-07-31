@@ -112,6 +112,10 @@
                     border: 1px solid var(--line); }
   .bar .fill.gen { background: var(--good); }
   .bar .fill.soc { background: linear-gradient(90deg, var(--crit), var(--warn) 30%, var(--good) 60%); }
+  /* Посилання: синій на цьому фоні читався погано (Іван 31.07) —
+     переводимо на акцентний, він однаково живий і в темній темі. */
+  a { color: var(--accent); text-underline-offset: .15em; }
+  a:hover { color: var(--ink); }
 </style>
 
 <div class="wrap">

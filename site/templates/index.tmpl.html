@@ -73,7 +73,10 @@
   h2 { font-family: var(--disp); font-weight: 600; font-size: 1.3rem; margin: 0 0 .9rem; }
   section { margin-top: 2.6rem; }
   .sub { color: var(--ink-2); max-width: 66ch; margin: 0 0 1.6rem; }
-  a { color: var(--signal); }
+  /* Посилання: синій на цьому фоні читався погано (Іван 31.07) —
+     переводимо на акцентний, він однаково живий і в темній темі. */
+  a { color: var(--accent); text-underline-offset: .15em; }
+  a:hover { color: var(--ink); }
 
   /* ---- status strip ---- */
   .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: .7rem; }

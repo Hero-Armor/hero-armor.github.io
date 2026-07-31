@@ -51,36 +51,45 @@ def svg():
     o.append(f'<circle cx="{CX}" cy="{CY}" r="{r_out+14:.0f}" fill="none" '
              f'stroke="{line}" stroke-dasharray="4 5"/>')
 
-    # коло «біжучої води»
-    o.append(f'<circle cx="{CX}" cy="{CY}" r="{r_in:.1f}" fill="none" '
-             f'stroke="{acc}" stroke-width="6" stroke-linecap="round" opacity=".35"/>')
 
+    # Рукав = промінь + його заворот по колу вправо, рівно до основи наступного
+    # променя. Тому і малюємо його одним шляхом: фронт пробігає промінь до
+    # центру і без розриву йде дугою — так само, як побіжить у залізі.
     ang = lambda k: -pi / 2 + 2 * pi * k / N
+    arms = []
     for k in range(N):
-        a = ang(k)
+        a, b = ang(k), ang(k + 1)
         x1, y1 = CX + r_out * cos(a), CY + r_out * sin(a)
         x2, y2 = CX + r_in * cos(a), CY + r_in * sin(a)
-        o.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
-                 f'stroke="{acc}" stroke-width="6" stroke-linecap="round" opacity=".35"/>')
-        # анімований фронт: та сама частка, якою рахується споживання
+        x3, y3 = CX + r_in * cos(b), CY + r_in * sin(b)
+        arms.append((f'M {x1:.1f} {y1:.1f} L {x2:.1f} {y2:.1f} '
+                     f'A {r_in:.1f} {r_in:.1f} 0 0 1 {x3:.1f} {y3:.1f}', x1, y1))
+
+    for d, _, _ in arms:
+        o.append(f'<path d="{d}" fill="none" stroke="{acc}" stroke-width="6" '
+                 f'stroke-linecap="round" opacity=".3"/>')
+    # Усі вісім рукавів рухаються ОДНАКОВО: один і той самий момент старту і
+    # однакова довжина шляху (pathLength=100 нормує промінь+дугу), тому фронти
+    # ідуть паралельно, а не врозбій.
+    for d, _, _ in arms:
         o.append(
-            f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
-            f'stroke="#fff" stroke-width="6" stroke-linecap="round" '
-            f'stroke-dasharray="{(r_out-r_in)*DUTY:.0f} {(r_out-r_in)*(1-DUTY)+2:.0f}">'
-            f'<animate attributeName="stroke-dashoffset" '
-            f'values="{(r_out-r_in):.0f};0" dur="2.4s" repeatCount="indefinite" '
-            f'begin="{k*0.3:.1f}s"/></line>')
-        # точка входу живлення і різу — на зовнішньому кінці рукава
+            f'<path d="{d}" fill="none" stroke="#fff" stroke-width="6" '
+            f'stroke-linecap="round" pathLength="100" '
+            f'stroke-dasharray="{DUTY*100:.0f} {100-DUTY*100:.0f}">'
+            f'<animate attributeName="stroke-dashoffset" values="100;0" '
+            f'dur="2.6s" repeatCount="indefinite" begin="0s"/></path>')
+    # точка входу живлення і різу — на зовнішньому кінці кожного рукава
+    for _, x1, y1 in arms:
         o.append(f'<circle cx="{x1:.1f}" cy="{y1:.1f}" r="4.5" fill="#fff" '
                  f'stroke="{sig}" stroke-width="2"/>')
 
-    # стрілка напрямку потоку — на одному промені, щоб не рябіло
+    # стрілка напрямку — на одному промені, щоб не рябіло
     a = ang(0)
     mx, my = CX + (r_in + r_out) / 2 * cos(a), CY + (r_in + r_out) / 2 * sin(a)
     o.append(f'<polygon points="{mx-5:.0f},{my-9:.0f} {mx+5:.0f},{my-9:.0f} {mx:.0f},{my+1:.0f}" '
              f'fill="{ink}"/>')
     o.append(f'<text x="{mx+10:.0f}" y="{my-2:.0f}" font-size="10" fill="{ink}">'
-             f'потік до центру</text>')
+             f'до центру, далі заворотом</text>')
 
     o.append(f'<text x="{CX}" y="26" text-anchor="middle" font-size="13" fill="{ink}">'
              f'Зірка «біжучої води»: {N} променів по {RAY_M:.2f} м + коло {RING_M:.2f} м</text>')
@@ -93,9 +102,11 @@ def svg():
     return "\n".join(o)
 
 
-def blocked_buys():
-    """Позиції, які не можна замовити, поки чогось не заміряли."""
-    return [b for b in I["buy"] if b.get("blocked_by")]
+def blocked():
+    """Що саме стоїть через незроблений замір — щоб це було видно й тут, і на
+    сторінці, а не тільки в голові."""
+    mt = I["measure_task"]
+    return None if mt["status"] == "закрито" else f'{mt["title"]}: {mt["unblocks"]}'
 
 
 def main():
@@ -103,8 +114,8 @@ def main():
     print(f'радіус кола {R_RING_M*1000:.0f} мм · фронт {DUTY*100:.0f}%')
     for j in I["joints"]:
         print(f'  {j["where"]:32} {j["what"]}  [{j["status"]}]')
-    for b in blocked_buys():
-        print(f'  ЗАБЛОКОВАНО: {b["item"]} — {b["blocked_by"]}')
+    if blocked():
+        print(f'  ЧЕКАЄ: {blocked()}')
     (Path(__file__).resolve().parent / "strip_layout.svg").write_text(svg())
     print("креслення: strip_layout.svg")
 
