@@ -478,15 +478,53 @@ def strip_injected(html):
     return SWITCH_MARK.sub("", html)
 
 
+# Одне посилання на дві мови (Іван 31.07: «навіщо два посилання, їх треба
+# розумно обʼєднати в одне»). Тепер усім даємо ОДНУ адресу, а сторінка сама
+# приводить людину до її мови:
+#   * хто вже обирав мову — того завжди відкриває в обраній, на будь-якій
+#     сторінці й з будь-якого посилання (це і є те саме «одне посилання»);
+#   * хто не обирав і в чиєму браузері нема української чи російської —
+#     бачить угорі тонку смужку з входом в англійську. НЕ перекидаємо силою:
+#     у Івана телефон англійський, і його б жбурляло в англійську версію
+#     на власному ж хабі.
+LANG_JS = """<script>
+(function(){var KEY='ha-lang',here=%r,twin=%r,saved=null;
+function remember(v){try{localStorage.setItem(KEY,v)}catch(e){}}
+try{saved=localStorage.getItem(KEY)}catch(e){}
+if(saved&&saved!==here){location.replace(twin);return;}
+addEventListener('DOMContentLoaded',function(){
+ var sw=document.querySelectorAll('a.lang-sw');
+ for(var i=0;i<sw.length;i++)(function(a){
+   a.addEventListener('click',function(){remember(a.getAttribute('hreflang'))});})(sw[i]);
+ if(saved||here!=='uk')return;
+ var ls=(navigator.languages||[navigator.language||'']).join(',').toLowerCase();
+ if(ls.indexOf('uk')>=0||ls.indexOf('ru')>=0)return;
+ var bar=document.createElement('div');bar.className='lang-bar';
+ bar.appendChild(document.createTextNode('This engineering hub is also available in '));
+ var a=document.createElement('a');a.href=twin;a.textContent='English';
+ a.addEventListener('click',function(){remember('en')});
+ bar.appendChild(a);bar.appendChild(document.createTextNode('.'));
+ document.body.insertBefore(bar,document.body.firstChild);});})();
+</script>
+<style>
+.lang-bar{font:.82rem/1.5 system-ui,sans-serif;text-align:center;padding:.45rem .8rem;
+ background:var(--panel-2,#fdfcf7);border-bottom:1px solid var(--line,#d8d5c9);
+ color:var(--ink-2,#6b675c)}
+.lang-bar a{color:var(--accent,#b35b1e)}
+</style>"""
+
+
 def head_block(lang, name):
     if lang == "en":
         uk_href, en_href = f"../{name}", name
     else:
         uk_href, en_href = name, f"en/{name}"
+    twin = en_href if lang == "uk" else uk_href
     return (f'<!doctype html><html lang="{lang}">'
             f'<meta charset="utf-8">'
             f'<link rel="alternate" hreflang="uk" href="{uk_href}">'
-            f'<link rel="alternate" hreflang="en" href="{en_href}">\n')
+            f'<link rel="alternate" hreflang="en" href="{en_href}">'
+            + (LANG_JS % (lang, twin)) + "\n")
 
 
 def with_switch(html, lang, name):
@@ -534,6 +572,10 @@ def to_en_paths(html):
         attr, href = m.group(1), m.group(2)
         if href.startswith(("http", "data:", "mailto:", "#", "../")):
             return m.group(0)
+        # це не адреса, а склейка рядків у скрипті (src="'+r.c.img+'"):
+        # шлях там береться з даних сторінки і виправляється нижче
+        if "'+" in href or "+'" in href or '"+' in href:
+            return m.group(0)
         first = href.split("/")[0].split("#")[0]
         # сторінки мають англійського близнюка поруч, решта (креслення,
         # граф знань, стилі) лишається в корені
@@ -542,6 +584,8 @@ def to_en_paths(html):
         return f'{attr}="../{href}"'
 
     html = re.sub(r'(src|href)="([^"]+)"', fix, html)
+    # шляхи всередині скриптів і вбудованих даних (мініатюри товарів)
+    html = html.replace('"assets/', '"../assets/').replace("'assets/", "'../assets/")
     return html.replace("url(assets/", "url(../assets/")
 
 

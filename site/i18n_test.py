@@ -120,6 +120,8 @@ def test_links():
             href = m.group(1)
             if href.startswith(("http", "data:", "mailto:", "#")):
                 continue
+            if "'+" in href or '"+' in href:
+                continue          # склейка рядків у скрипті, а не адреса
             target = (EN / href).resolve()
             if not target.exists():
                 bad.append(href)

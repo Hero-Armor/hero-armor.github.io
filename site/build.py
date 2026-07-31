@@ -2057,6 +2057,8 @@ def build():
         [{"name": c["name"], "inner_mm": c["inner_mm"], "seal": c["seal"],
           "price_usd": c["price_usd"], "used": c.get("price_used_usd"),
           "kind": c.get("kind", "кейс"), "verify": bool(c.get("verify")),
+          # фото і адреса товару: збирає enclosure/model/case_media.py
+          "img": c.get("img", ""), "url": c.get("url", ""),
           "note": c.get("note", "")}
          for c in ENC["cases"]], ensure_ascii=False))
     elab = elab.replace("{{FIT_CAPTION}}", esc(ENC["_verify"]))
@@ -2268,8 +2270,12 @@ def build_docs(out):
             html = html.replace(url, rel)
         (docs / name).write_text(html)
     (docs / "assets").mkdir(exist_ok=True)
-    for a in (SITE / "assets").glob("*.jpg"):
-        (docs / "assets" / a.name).write_bytes(a.read_bytes())
+    # разом з підтеками: фото товарів лежать в assets/cases/ і без цього
+    # рядка на Pages їх просто не було б (сторінка показувала б порожні рамки)
+    for a in (SITE / "assets").rglob("*.jpg"):
+        dst = docs / "assets" / a.relative_to(SITE / "assets")
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(a.read_bytes())
     (docs / "knowledge.jsonld").write_text((out / "knowledge.jsonld").read_text())
     print("wrote docs/ (index, audio, lab, ops, knowledge.jsonld) — Pages-ready")
 
