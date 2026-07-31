@@ -1255,6 +1255,29 @@ def build():
         f'біжучий фронт масштабується разом із сегментом. '
         f'{sb.B["controller"]["estimate_note"]}'))
 
+    # Прогін по напрузі: у прожекторів заниження було способом економити,
+    # у стрічки це аварія, яку приносить кабель. Тому й таблиця інша.
+    s_vr = sb.B.get("voltage_run", {})
+    s_vt, s_vtext, s_vcls = sb.voltage_verdict()
+    llab = llab.replace("{{STRIP_V_WHY}}", esc(
+        f'{s_vr.get("_goal", "")} {s_vr.get("_why_it_matters", "")}'))
+    llab = llab.replace("{{STRIP_V_PHYS}}", esc(s_vr.get("physics", "")))
+    v_rows = []
+    for r in sb.voltage_points():
+        lim = ('<span style="color:var(--good)">так</span>' if r["within_limit"]
+               else '<span style="color:var(--ink-2)">ні</span>')
+        a_txt = f'{r["a"]:.2f} A' if r["a"] else "—"
+        v_rows.append(
+            f'      <tr><td class="num">{r["v"]:g} В</td>'
+            f'<td class="num">{r["drop_pct"]:.1f}%</td><td>{lim}</td>'
+            f'<td class="num">{a_txt}</td>'
+            f'<td>{esc(r["color"]) if r["color"] else "чекає"}</td>'
+            f'<td>{esc(r["glitches"]) if r["glitches"] else "чекає"}</td></tr>')
+    llab = llab.replace("{{STRIP_V_ROWS}}", "\n".join(v_rows))
+    llab = llab.replace("{{STRIP_V_CAPTION}}", esc(
+        f'{s_vt.capitalize()}. {s_vtext} Порядок замірів: '
+        + " ".join(f'{i}) {s}' for i, s in enumerate(s_vr.get("protocol", []), 1))))
+
     llab = llab.replace("{{STRIP_BRANCH_WHY}}", esc(sb.B["branch"]["why"]))
     b_rows = []
     for i, c in enumerate(sb.branch_checks(), 1):

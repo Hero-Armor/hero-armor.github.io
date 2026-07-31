@@ -227,6 +227,45 @@ def duty_from_profile(fx=187):
             "name": e["name"]} if e else None
 
 
+def voltage_points():
+    """Сітка напруг прогону з перерахунком у просадку — у тих самих відсотках,
+    якими оперує модель кабелю. Так видно не «9.5 вольта», а «21% просадки»:
+    саме це число потім або дозволяє тонший дріт, або вимагає товщий."""
+    vr = B.get("voltage_run")
+    if not vr:
+        return []
+    done = {m["v"]: m for m in vr["measurements"]}
+    out = []
+    for v in vr["points_v"]:
+        m = done.get(v, {})
+        out.append({"v": v, "drop_pct": 100 * (1 - v / V_NOM),
+                    "within_limit": (1 - v / V_NOM) <= vr["cable_limit_now"],
+                    "a": m.get("a"), "color": m.get("color"),
+                    "glitches": m.get("glitches")})
+    return out
+
+
+def voltage_verdict():
+    """Де стрічка ще біла, а де вже ні — і що це означає для перерізу кабелю."""
+    vr = B.get("voltage_run")
+    if not vr or not vr["measurements"]:
+        return ("чекає прогону",
+                f'Межа просадки для адресної стрічки в моделі кабелю зараз '
+                f'{vr["cable_limit_now"]*100:.0f}% — узята з практики, не з нашої '
+                f'стрічки. Прогін замінить її на власну.', "wait")
+    ok = [m for m in vr["measurements"] if m.get("color") in ("біле", "трохи тепліше")]
+    if not ok:
+        return ("біле не тримається", "Уже на першій точці колір поїхав.", "crit")
+    v_min = min(m["v"] for m in ok)
+    drop = 100 * (1 - v_min / V_NOM)
+    cls = "good" if drop >= vr["cable_limit_now"] * 100 else "crit"
+    return (f'біле тримається до {v_min:g} В',
+            f'Це {drop:.0f}% просадки. Модель кабелю дозволяє '
+            f'{vr["cable_limit_now"]*100:.0f}% — '
+            + ("запас є, переріз можна не роздувати." if cls == "good" else
+               "тобто чинна межа ЗАМАЛА, переріз треба піднімати."), cls)
+
+
 def branch_checks():
     """Чотири перевірки гілки 1.20 м з результатами, якщо вони вже є."""
     done = {r["check"]: r for r in B["branch_results"]}

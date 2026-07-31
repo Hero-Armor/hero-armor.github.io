@@ -33,6 +33,7 @@ import argparse
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -261,16 +262,25 @@ Return STRICT JSON: {"t": ["…", "…"]} — one string per input segment, same
 order, same count. No commentary."""
 
 
-def _api(messages):
+def _api(messages, tries=3):
+    """Виклик моделі з повторами: мережа інколи відвалюється на довгій пачці."""
     body = json.dumps({"model": MODEL, "temperature": 0,
                        "response_format": {"type": "json_object"},
                        "messages": messages}).encode()
-    req = urllib.request.Request(
-        API_URL, data=body,
-        headers={"Authorization": f"Bearer {KEY_FILE.read_text().strip()}",
-                 "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        return json.loads(json.loads(r.read())["choices"][0]["message"]["content"])
+    last = None
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(
+                API_URL, data=body,
+                headers={"Authorization": f"Bearer {KEY_FILE.read_text().strip()}",
+                         "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=300) as r:
+                raw = json.loads(r.read())["choices"][0]["message"]["content"]
+            return json.loads(raw)
+        except Exception as e:               # мережа, таймаут, кривий JSON
+            last = e
+            time.sleep(3 * (attempt + 1))
+    raise last
 
 
 def _glossary_block(glossary):
@@ -280,13 +290,16 @@ def _glossary_block(glossary):
     return f"\nGlossary — use these renderings consistently:\n{lines}\n"
 
 
-def translate(missing, glossary, verbose=True):
-    """Перекласти нові рядки пачками; повертає {укр: англ}."""
-    done = {}
+def translate(missing, glossary, tm, verbose=True):
+    """Перекласти нові рядки пачками, складаючи їх у памʼять по ходу.
+
+    Памʼять пишеться після кожної пачки: якщо мережа впаде на середині,
+    наступний запуск доплатить лише за залишок.
+    """
     batch, size = [], 0
     batches = []
     for s in missing:
-        if batch and (len(batch) >= 30 or size + len(s) > 5000):
+        if batch and (len(batch) >= 20 or size + len(s) > 3500):
             batches.append(batch)
             batch, size = [], 0
         batch.append(s)
@@ -299,25 +312,25 @@ def translate(missing, glossary, verbose=True):
         msgs = [{"role": "system", "content": SYSTEM + _glossary_block(glossary)},
                 {"role": "user", "content": payload}]
         try:
-            res = _api(msgs)
-            got = res.get("t") or []
-        except (urllib.error.URLError, ValueError, KeyError) as e:
+            got = _api(msgs).get("t") or []
+        except Exception as e:
             print(f"  пачка {i}: збій API ({e}) — пробую поштучно")
             got = []
         if len(got) != len(b):
             got = _one_by_one(b, glossary)
         for src, en in zip(b, got):
             if en and _placeholders_ok(src, en):
-                done[src] = en
+                tm[src] = en
             else:
                 fixed = _one_by_one([src], glossary)
                 if fixed and fixed[0] and _placeholders_ok(src, fixed[0]):
-                    done[src] = fixed[0]
+                    tm[src] = fixed[0]
                 else:
                     print(f"  ⚠ не переклалось (лишаю як є): {src[:70]}")
+        save_tm(tm)
         if verbose:
             print(f"  пачка {i}/{len(batches)}: {len(b)} шматків")
-    return done
+    return tm
 
 
 def _one_by_one(items, glossary):
@@ -402,8 +415,7 @@ def build(only=None, dry=False, verbose=True):
             print("   ", s[:100])
         return
     if missing:
-        tm.update(translate(missing, glossary, verbose))
-        save_tm(tm)
+        translate(missing, glossary, tm, verbose)
 
     EN.mkdir(parents=True, exist_ok=True)
     for name, (html, sp) in plans.items():
