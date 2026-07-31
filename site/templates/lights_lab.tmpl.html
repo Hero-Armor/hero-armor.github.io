@@ -118,8 +118,10 @@
 <div class="wrap">
   <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor · головна</a> · світлова лабораторія</p>
   <h1>Скільки жере світло і що з кабелями</h1>
-  <p class="sub">Прожектори регулюються напругою (MR16 без стабілізатора — струм слідує за
-  напругою), декоративна стрічка — ШІМ і щільністю анімації. Модель рахує потужність по групах,
+  <p class="sub">Прожектори регулюються ШІМ-диммером (заміряно живцем: від повної яскравості до
+  економного режиму лампа падає в десятки разів), декоративна стрічка — ШІМ і щільністю
+  анімації. Заниження напруги на прожекторах лишилось запасним шляхом і живе нижче окремим
+  дослідом. Модель рахує потужність по групах,
   енергію за ніч, освітленість фігури і просадку в мідних лініях. Про запас і автономність тут
   нічого нема — це справа <a href="https://hero-armor.github.io/solar_lab.html">вузла живлення</a>.</p>
 
@@ -170,11 +172,8 @@
   <h2>Регулювання світла — три рівні</h2>
   <div class="layers">
     <div class="layer">
-      <h3>1 · Напруга на прожекторах — основний регулятор</h3>
-      <p>MR16 у корпусах Gardencoin — без стабілізатора: струм іде за напругою, тому
-      потужність падає як квадрат, а світловий потік — лінійно. Це і був головний критерій
-      вибору лампи: підсадив напругу — реально економиш ватти. На 9&nbsp;В прожектор бере
-      56% потужності, але віддає 75% світла. Нижче ~8.5&nbsp;В лампа просто гасне.</p>
+      <h3>1 · ШІМ-диммер на прожекторах — основний регулятор</h3>
+      {{SPOT_DIM_LAYER}}
     </div>
     <div class="layer">
       <h3>2 · ШІМ на адресній стрічці — анімація замість заливки</h3>
@@ -225,6 +224,88 @@
   </div>
   <p class="fig-cap">{{DIMMER_CAPTION}}</p>
 
+  <h2>Скільки бере вісім прожекторів</h2>
+  <p class="sub">Заміряна одна лампа на двох крайніх положеннях крутилки. ШІМ рубає живлення
+  імпульсами, і середній струм іде за шириною імпульсу майже прямо — тому між крайніми точками
+  тягнемо пряму, а вісім ламп це те саме, помножене на вісім. Крути повзунок: побачиш, що бере
+  група, скільки з цього зʼїдає ніч і чи влазимо в диммер та в 12 В-вихід станції.</p>
+
+  <div class="sim">
+    <div class="controls">
+      <div class="ctrl-group">Диммер</div>
+      <div class="ctrl"><label>Положення крутилки <b id="v-spd"></b></label>
+        <input type="range" id="spd" min="0" max="100" step="1" value="100"
+               aria-label="Положення крутилки диммера"></div>
+      <div class="ctrl-group">Ніч</div>
+      <div class="ctrl"><label>Годин світла <b id="v-sph"></b></label>
+        <input type="range" id="sph" min="4" max="14" step="0.5" value="8"
+               aria-label="Годин світла за ніч"></div>
+      <div class="ctrl-group">Скільки прожекторів</div>
+      <div class="ctrl"><label>Штук у групі <b id="v-spn"></b></label>
+        <input type="range" id="spn" min="1" max="12" step="1" value="8"
+               aria-label="Кількість прожекторів"></div>
+    </div>
+    <div class="outputs">
+      <div class="tiles" id="spot-tiles"></div>
+      <div class="bar-row">
+        <div class="k">Навантаження на диммер проти робочої стелі</div>
+        <div class="bar"><div class="fill lux" id="bar-dim"></div><div class="mark" id="mark-dim"></div></div>
+        <div class="bar-legend"><span>0 A</span><span id="dim-label"></span><span id="dim-max"></span></div>
+      </div>
+      <div class="bar-row">
+        <div class="k">Те саме проти межі 12 В-виходу станції</div>
+        <div class="bar"><div class="fill drop" id="bar-port"></div><div class="mark" id="mark-port"></div></div>
+        <div class="bar-legend"><span>0 Вт</span><span id="port-label"></span><span id="port-max"></span></div>
+      </div>
+    </div>
+  </div>
+  <p class="fig-cap">{{SPOTS_CAPTION}}</p>
+
+  <script>
+  (function(){
+    const S = {{SPOTS_JSON}};
+    const $ = id => document.getElementById(id);
+    const tile = (k, v, u, note, cls) =>
+      `<div class="tile ${cls||''}"><div class="k">${k}</div>` +
+      `<div class="v">${v}<span class="u"> ${u}</span></div>` +
+      `<div class="note">${note}</div></div>`;
+
+    function render(){
+      const duty = +$("spd").value / 100, hours = +$("sph").value, n = +$("spn").value;
+      // Середній струм ШІМ лінійний по ширині імпульсу: на нулі крутилки лишається
+      // нижня заміряна точка, на максимумі — верхня.
+      const aLamp = S.a_min + (S.a_full - S.a_min) * duty;
+      const a = aLamp * n, w = a * S.v, wh = w * hours;
+      const safe = S.rating * S.derate;
+      const dimCls = a > safe ? "crit" : (a > safe * 0.85 ? "warn" : "good");
+      const portCls = w > S.dc_w ? "crit" : "good";
+      $("v-spd").textContent = Math.round(duty * 100) + "%";
+      $("v-sph").textContent = hours.toFixed(1) + " год";
+      $("v-spn").textContent = n + " шт";
+      $("spot-tiles").innerHTML = [
+        tile("Група бере", w.toFixed(1), "Вт", `${a.toFixed(2)} A · ${aLamp.toFixed(3)} A на лампу`, portCls),
+        tile("За ніч", wh.toFixed(0), "Wh", `${hours.toFixed(1)} год світла`),
+        tile("Від станції " + S.station_wh + " Wh", (100 * wh / S.station_wh).toFixed(0), "%",
+             "тільки прожектори, без стрічки і звуку"),
+        tile("Запас у диммері", a > safe ? "нема" : (100 * (1 - a / safe)).toFixed(0),
+             a > safe ? "" : "%", `робоча стеля ${safe.toFixed(1)} A`, dimCls),
+      ].join("");
+      const pd = Math.min(100, 100 * a / (S.rating * 1.2));
+      $("bar-dim").style.width = pd + "%";
+      $("mark-dim").style.left = (100 * safe / (S.rating * 1.2)) + "%";
+      $("dim-label").textContent = `${a.toFixed(2)} A · стеля ${safe.toFixed(1)} A`;
+      $("dim-max").textContent = (S.rating * 1.2).toFixed(1) + " A";
+      const pw = Math.min(100, 100 * w / (S.dc_w * 1.2));
+      $("bar-port").style.width = pw + "%";
+      $("mark-port").style.left = (100 / 1.2) + "%";
+      $("port-label").textContent = `${w.toFixed(0)} Вт · межа ${S.dc_w} Вт`;
+      $("port-max").textContent = (S.dc_w * 1.2).toFixed(0) + " Вт";
+    }
+    ["spd", "sph", "spn"].forEach(id => $(id).addEventListener("input", render));
+    render();
+  })();
+  </script>
+
   <div class="layers" style="margin-top:1.2rem">{{INSTALL_RULES}}</div>
 
   <h2>Дослід: вибір лампи</h2>
@@ -254,6 +335,54 @@
       <h3>Порядок замірів</h3>
       {{BENCH_PROTOCOL}}
     </div>
+  </div>
+
+  <h2>Дослід: скільки бере стрічка</h2>
+  {{STRIP_INTRO}}
+
+  <div class="tiles" style="margin-bottom:1.2rem">{{STRIP_TILES}}</div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Звідки цифра</th><th>Вт/м</th><th>Пік, вся зірка</th><th>Анімація</th>
+    <th>Wh/ніч</th><th>12 В-вихід</th></tr></thead>
+    <tbody>
+{{STRIP_SCENARIOS}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{STRIP_CAPTION}}</p>
+
+  <div class="tbl-wrap" style="margin-top:1.2rem">
+  <table>
+    <thead><tr><th>#</th><th>Режим</th><th>Що записати</th><th>Навіщо</th><th>Знято</th></tr></thead>
+    <tbody>
+{{STRIP_MODES}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{STRIP_MODES_CAPTION}}</p>
+
+  <div class="layers" style="margin-top:1.4rem">
+    <div class="layer">
+      <h3>Стенд</h3>
+      {{STRIP_RIG}}
+    </div>
+    <div class="layer">
+      <h3>Порядок замірів</h3>
+      {{STRIP_PROTOCOL}}
+    </div>
+  </div>
+
+  <h3 style="margin-top:1.4rem">Тест гілки 1.20 м — просадка всередині самої стрічки</h3>
+  <p class="sub">{{STRIP_BRANCH_WHY}}</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>#</th><th>Що зробити</th><th>На що дивитись</th><th>Результат</th></tr></thead>
+    <tbody>
+{{STRIP_BRANCH}}
+</tbody>
+  </table>
   </div>
 
   <h2>{{CASE_TABLE_TITLE}}</h2>

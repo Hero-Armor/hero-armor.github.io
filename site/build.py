@@ -35,6 +35,7 @@ import audio_node_model as m  # noqa: E402  (reads audio/data/*)
 import lights_node_model as lm  # noqa: E402  (reads lights/data/*)
 import lamp_bench as lb  # noqa: E402  (стенд ламп прожектора, lights/data/lamp_bench.json)
 import spot_ring as sr  # noqa: E402  (звʼязка 8 прожекторів: схема, диммер, запобіжник)
+import strip_bench as sb  # noqa: E402  (стенд LED-стрічки, lights/data/strip_bench.json)
 import power_node_model as pw
 sys.path.insert(0, str(ROOT / "enclosure" / "model"))
 import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
@@ -962,6 +963,34 @@ def build():
         f'паспортних {sr.DIM["a_rating"]:.0f} A, а від робочої стелі '
         f'{sr.DIM["a_rating"]*sr.DIM["derate"]:.1f} A: тривале навантаження тримають до '
         f'{sr.DIM["derate"]*100:.0f}% номіналу. {sr.DIM["placement_open"]}'))
+    # Живий підбір: скільки бере група на будь-якому положенні крутилки.
+    # Числа — заміряні крайні точки обраної лампи, між ними пряма (середній
+    # струм ШІМ іде за шириною імпульсу лінійно).
+    sp_lamp = next(r for r in lb.dimmer_runs() if r["id"] == lb.decision()["chosen"]) \
+        if lb.decision() else max(lb.dimmer_runs(), key=lambda r: r["a_full"])
+    station = pw.P["stations"][pw.P["station_chosen"]]
+    llab = llab.replace("{{SPOT_DIM_LAYER}}", "<p>" + esc(
+        f'Диммер не садить вольти — він рубає живлення імпульсами, і середній струм іде за '
+        f'шириною імпульсу. Заміряно на {sp_lamp["name"]}: {sp_lamp["a_full"]:.2f} A на повній '
+        f'({sp_lamp["w_full"]:.1f} Вт з лампи) і {sp_lamp["a_min"]:.2f} A на мінімумі крутилки '
+        f'({sp_lamp["w_min"]:.2f} Вт) — діапазон у {sp_lamp["range_x"]:.0f} разів. Уся вісімка '
+        f'на мінімумі бере {8*sp_lamp["w_min"]:.1f} Вт: це той режим, у якому світло доживає '
+        f'ніч, якщо вдень не було сонця.') + "</p>")
+    llab = llab.replace("{{SPOTS_JSON}}", json.dumps({
+        "v": 12.0, "qty": lb.CRIT["spot_qty"],
+        "a_full": sp_lamp["a_full"], "a_min": sp_lamp["a_min"],
+        "rating": lb.CRIT["dimmer_a"], "derate": lb.CRIT["dimmer_derate"],
+        "dc_w": lb.CRIT["dc_port_w"], "station_wh": station["wh"],
+        "lamp": sp_lamp["name"],
+    }, ensure_ascii=False))
+    llab = llab.replace("{{SPOTS_CAPTION}}", esc(
+        f'Рахунок іде по {sp_lamp["name"]} — заміряні {sp_lamp["a_full"]:.2f} A на повній і '
+        f'{sp_lamp["a_min"]:.2f} A на мінімумі при 12 В. Станція для відсотка — '
+        f'{pw.P["station_chosen"]} ({station["wh"]} Wh); межа її 12 В-виходу '
+        f'{lb.CRIT["dc_port_w"]} Вт. Втрати в міді сюди не входять — на цих струмах вони під 1% '
+        f'(див. схему вище). Це модель, а не замір усіх восьми разом: коли лампи приїдуть, '
+        f'вмикаємо всі вісім, міряємо і ставимо в базу реальне число.'))
+
     llab = llab.replace("{{INSTALL_RULES}}", "\n".join(
         f'    <div class="layer"><h3>{esc(r["rule"])}</h3>'
         f'<p>{esc(r["why"])} <a href="{esc(r["src"])}">джерело</a></p></div>'
@@ -1100,6 +1129,108 @@ def build():
     llab = llab.replace("{{BENCH_PROTOCOL}}", "".join(
         f'<p style="margin:0 0 .3rem">{i}. {esc(s)}</p>'
         for i, s in enumerate(lb.B["protocol"], 1)))
+
+    # ---- стенд LED-стрічки (другий дослід світлової лабораторії) ----
+    # Гейт проєкту: поки Вт/м не заміряні, сторінка чесно показує прикидку
+    # через різницю і не робить вигляд, що число відоме.
+    s_st = sb.status()
+    s_kind, s_wpm = sb.source()
+    s_prj = sb.project()
+    s_head = sb.headroom()
+    s_v_title, s_v_text, s_v_cls = sb.verdict()
+    s_done = sb.measured()
+
+    llab = llab.replace("{{STRIP_INTRO}}",
+        f'<p class="sub">Уся адресна стрічка зірки — коло подіуму плюс вісім променів, '
+        f'{sb.TOTAL_M:.2f} м разом — досі порахована по паспортних '
+        f'{sb.CRIT["w_per_m_model"]:.0f} Вт/м. Ватметр {sb.B["indirect"]["date"]} каже інше: '
+        f'коли Іван міряв вісім прожекторів разом із п\'ятьма метрами стрічки, '
+        f'усе вийшло {sb.B["indirect"]["total_w"]:.0f} Вт, і на стрічку з них лишається '
+        f'близько {sb.indirect_w_per_m():.1f} Вт/м — у п\'ять разів менше паспорта. '
+        f'Різниця не косметична: {sb.project(sb.CRIT["w_per_m_model"])["peak_w"]:.0f} Вт проти '
+        f'{sb.project(sb.indirect_w_per_m())["peak_w"]:.0f} Вт на піку, тобто «12-вольтовий '
+        f'вихід станції не тягне» проти «тягне з запасом». Тому дослід і став гейтом: від нього '
+        f'висить вибір станції, замовлення решти закупівлі і питання порту на 30 А.</p>')
+
+    llab = llab.replace("{{STRIP_TILES}}", "\n".join([
+        tile("Вт на метр", f"{s_wpm:.1f}", "Вт/м",
+             "прямий замір на стенді" if s_kind == "measured"
+             else f'прикидка через різницю · замір ще не робили',
+             "good" if s_kind == "measured" else "warn"),
+        tile("Уся стрічка на піку", f'{s_prj["peak_w"]:.0f}', "Вт",
+             f'{sb.TOTAL_M:.2f} м білим на повній · {s_prj["peak_a"]:.1f} A',
+             "good" if s_prj["fits_dc"] else "crit"),
+        tile("За ніч на анімації", f'{s_prj["night_wh"]:.0f}', "Wh",
+             f'частка світіння {s_prj["duty"]*100:.0f}%'
+             + ("" if sb.duty() is not None else " — поки прикидка"),
+             "" if sb.duty() is None else "good"),
+        tile("Лишається після прожекторів",
+             f'{s_head["left_w"]:.0f}' if s_head else "—", "Вт",
+             (f'з {sb.CRIT["dc_port_w"]} Вт виходу; прожектори взяли '
+              f'{s_head["spots_w"]:.0f} Вт') if s_head else "прожектори ще не обрані",
+             "good" if s_head and s_head["fits"] else "crit"),
+    ]))
+
+    s_rows = []
+    for s in sb.scenarios():
+        col = {"good": "var(--good)", "warn": "var(--warn)",
+               "wait": "var(--ink-2)"}[s["kind"]]
+        fit = ('<span style="color:var(--good)">влазить</span>' if s["fits_dc"]
+               else '<span style="color:var(--crit)">не влазить</span>')
+        s_rows.append(
+            f'      <tr><td style="color:{col}">{esc(s["label"])}</td>'
+            f'<td class="num">{s["w_per_m"]:.1f}</td>'
+            f'<td class="num">{s["peak_w"]:.0f} Вт · {s["peak_a"]:.1f} A</td>'
+            f'<td class="num">{s["anim_w"]:.0f} Вт</td>'
+            f'<td class="num">{s["night_wh"]:.0f}</td>'
+            f'<td class="num">{fit} ({s["dc_load_pct"]:.0f}%)</td></tr>')
+    if sb.w_per_m() is None:
+        s_rows.append(
+            '      <tr><td colspan="6" style="color:var(--ink-2)">Третій рядок — прямий '
+            'замір — зʼявиться після прогону. Поки його нема, модель світла свідомо '
+            'рахує по верхньому рядку: краще перезакласти ватти, ніж недобрати станцію.</td></tr>')
+    llab = llab.replace("{{STRIP_SCENARIOS}}", "\n".join(s_rows))
+    llab = llab.replace("{{STRIP_CAPTION}}", esc(
+        f'{s_v_title.capitalize()}. {s_v_text} '
+        + (sb.B["indirect"]["note"] if s_kind == "indirect" else
+           f'Виміряні {s_wpm:.1f} Вт/м уже стоять у моделі світла.')))
+
+    m_rows = []
+    for i, md in enumerate(sb.modes(), 1):
+        got = s_done.get(md["id"])
+        val = (f'<span style="color:var(--good)">{sb._w(got):.1f} Вт</span>' if got
+               else '<span style="color:var(--ink-2)">чекає</span>')
+        m_rows.append(
+            f'      <tr><td class="num">{i}</td><td>{esc(md["label"])}</td>'
+            f'<td>{esc(md["record"])}</td>'
+            f'<td style="white-space:normal;max-width:46ch">{esc(md["why"])}</td>'
+            f'<td class="num">{val}</td></tr>')
+    llab = llab.replace("{{STRIP_MODES}}", "\n".join(m_rows))
+    llab = llab.replace("{{STRIP_MODES_CAPTION}}", esc(
+        f'Знято {s_st["measurements"]} режимів з {s_st["expected"]}. '
+        + sb.B["rig"]["must_record"] + " " + sb.B["temperature"]["why"]))
+
+    llab = llab.replace("{{STRIP_RIG}}", "".join(
+        f'<p style="margin:0 0 .3rem"><b>{esc(k)}:</b> {esc(str(v))}</p>'
+        for k, v in (("Джерело", sb.B["rig"]["supply"]),
+                     ("Прилад", sb.B["rig"]["meter"]),
+                     ("Контролер", sb.B["rig"]["controller"]),
+                     ("Стрічка", sb.B["rig"]["strip"]),
+                     ("Де ватметр", sb.B["rig"]["note"]))))
+    llab = llab.replace("{{STRIP_PROTOCOL}}", "".join(
+        f'<p style="margin:0 0 .3rem">{i}. {esc(s)}</p>'
+        for i, s in enumerate(sb.B["protocol"], 1)))
+
+    llab = llab.replace("{{STRIP_BRANCH_WHY}}", esc(sb.B["branch"]["why"]))
+    b_rows = []
+    for i, c in enumerate(sb.branch_checks(), 1):
+        res = (f'<span style="color:var(--good)">{esc(c["result"])}</span>'
+               if c["result"] else '<span style="color:var(--ink-2)">чекає</span>')
+        b_rows.append(
+            f'      <tr><td class="num">{i}</td><td>{esc(c["label"])}</td>'
+            f'<td style="white-space:normal;max-width:52ch">{esc(c["look_for"])}</td>'
+            f'<td>{res}{" · " + esc(c["note"]) if c["note"] else ""}</td></tr>')
+    llab = llab.replace("{{STRIP_BRANCH}}", "\n".join(b_rows))
 
     # ================= cables / installation page =================
     tree_op = lm.cable_tree_operating()
