@@ -49,37 +49,40 @@ def pages():
 def test_no_ukrainian():
     print("\n1. У англійській версії нема українського тексту")
     for name in pages():
-        txt = LD.sub("", (EN / name).read_text())
-        hits = re.findall(r"[^\s<>\"]*[А-Яа-яЇїІіЄєҐґ][^\s<>\"]*", txt)
-        hits = [h for h in hits if h.strip()]
+        txt = _reader_text((EN / name).read_text())
+        hits = [h for h in re.findall(r"[^\s<>\"]*[А-Яа-яЇїІіЄєҐґ][^\s<>\"]*", txt)
+                if h.strip()]
         ok(name, not hits, f"{len(hits)} шматків, напр. {hits[:5]}")
+
+
+def _reader_text(html):
+    """Те, що бачить читач: без ld+json, без стилів, без коментарів у коді
+    (коментарі — записки самим собі, їх не перекладаємо) і без кнопки мови."""
+    html = LD.sub("", html)
+    html = STYLE.sub("", html)
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.S)
+    html = re.sub(r' · <a class="lang-sw"[^>]*>[^<]*</a>', "", html)
+    return re.sub(r"//[^\n]*", "", html)
 
 
 # --- 2. розмітка не поїхала ----------------------------------------------
 
 def test_markup_identical():
+    """Обидві мови зібрані з однієї сторінки, тож теги мають збігатись
+    один в один: якщо мітка тега загубилась при перекладі — тут і вилізе."""
     print("\n2. Розмітка збігається з українською (теги не побиті)")
     for name in pages():
         uk = TAGS.findall((DOCS / name).read_text())
         en = TAGS.findall((EN / name).read_text())
-        # у англійській зверху додається <html>/<meta>/<link> і лінк перемикача
-        extra = len(en) - len(uk)
-        ok(name, 0 <= extra <= 8 and _same_shape(uk, en),
-           f"тегів uk={len(uk)} en={len(en)}")
+        ok(name, uk == en,
+           f"тегів uk={len(uk)} en={len(en)}; перша різниця — {_tag_diff(uk, en)}")
 
 
-def _same_shape(uk, en):
-    """Послідовність тегів має збігатись з точністю до вставленої шапки."""
-    head = 4          # <html> <meta> <link> <link>
-    tail_uk = [t for t in uk]
-    tail_en = [t for t in en[head:]]
-    # прибираємо доданий <a> перемикача мови
-    if len(tail_en) - len(tail_uk) == 2:
-        for i, (a, b) in enumerate(zip(tail_uk, tail_en)):
-            if a != b:
-                tail_en = tail_en[:i] + tail_en[i + 2:]
-                break
-    return tail_uk == tail_en
+def _tag_diff(uk, en):
+    for i, (a, b) in enumerate(zip(uk, en)):
+        if a != b:
+            return f"№{i}: {a} проти {b}"
+    return "довжина"
 
 
 # --- 3. числа на місці ----------------------------------------------------
@@ -165,7 +168,9 @@ def test_browser():
             page.close()
 
             ok(f"{name}: без помилок у скриптах", not errors, str(errors[:2]))
-            ok(f"{name}: інтерактив дає ті самі числа", en_nums == uk_nums,
+            uk_d = {k: _digits(v) for k, v in uk_nums.items()}
+            en_d = {k: _digits(v) for k, v in en_nums.items()}
+            ok(f"{name}: інтерактив дає ті самі числа", uk_d == en_d,
                f"розбіжність у {_first_diff(uk_nums, en_nums)}")
         br.close()
 
@@ -179,6 +184,11 @@ def _dom_numbers(page):
                            if (/\\d/.test(t)) out[el.id || el.className] = t; });
         return out;
     }""")
+
+
+def _digits(text):
+    """Порівнюємо самі числа: одиниці ж і мають бути іншими (Вт → W)."""
+    return re.findall(r"-?\d+(?:[.,]\d+)?", text or "")
 
 
 def _first_diff(a, b):
@@ -196,11 +206,23 @@ def test_tm():
     empty = [k for k, v in tm.items() if not (v or "").strip()]
     cyr = [k for k, v in tm.items() if CYR.search(v or "")]
     ph = [k for k, v in tm.items()
-          if sorted(re.findall(r"⟦\d+⟧", k)) != sorted(re.findall(r"⟦\d+⟧", v or ""))]
+          if sorted(re.findall(r"<x\d+/>", k)) != sorted(re.findall(r"<x\d+/>", v or ""))]
     ok("нема порожніх перекладів", not empty, f"{len(empty)}")
     ok("нема українського в перекладі", not cyr, f"{len(cyr)}: {cyr[:3]}")
     ok("мітки тегів збігаються", not ph, f"{len(ph)}: {ph[:3]}")
     print(f"  (у памʼяті {len(tm)} рядків)")
+
+
+def test_idempotent():
+    """Друга збірка не має обростати другою шапкою і другим перемикачем."""
+    print("\n8. Повторна збірка нічого не дублює")
+    for name in pages():
+        for path, tag in ((DOCS / name, "uk"), (EN / name, "en")):
+            txt = path.read_text()
+            heads = len(re.findall(r"<!doctype html>", txt, re.I))
+            sw = len(re.findall(r'class="lang-sw"', txt))
+            ok(f"{tag}/{name}", heads == 1 and sw == 1,
+               f"шапок {heads}, перемикачів {sw}")
 
 
 if __name__ == "__main__":
@@ -216,6 +238,7 @@ if __name__ == "__main__":
     test_links()
     test_switch()
     test_tm()
+    test_idempotent()
     if a.browser:
         test_browser()
     print(f"\nпройдено {checks - len(fails)}/{checks}")

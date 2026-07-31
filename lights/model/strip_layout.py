@@ -32,82 +32,104 @@ RAY_M = ARM["ray_m"]                  # промінь: край подіуму 
 TURN_M = ARM["turn_m"]                # заворот: 1/8 кола до основи наступного
 ARM_M = ARM["length_m"]               # рукав цілком, одна суцільна стрічка
 RING_M = ARM["ring_m"]                # коло = сума восьми заворотів
+PIX_M = ARM["pixel_m"]                # піксель WS2811 = 3 діоди
 R_RING_M = RING_M / (2 * pi)
 TOTAL_M = N * ARM_M
 DUTY = ADDR["duty_animation"]
+PER_ARM = int(round(ARM_M / PIX_M))   # скільки пікселів у рукаві
+CYCLE_S = 3.2                         # один прохід фронту по рукаву
+
+
+def pixels():
+    """Координати кожного пікселя вздовж рукава, від зовнішнього кінця до кінця
+    заворота — у метрах відносно центру подіуму.
+
+    Спершу пікселі йдуть по прямій до центру, а після променя лягають на дугу:
+    та сама послідовність, у якій по них побіжить сигнал."""
+    out = []
+    for k in range(N):
+        a0 = -pi / 2 + 2 * pi * k / N
+        arm = []
+        for i in range(PER_ARM):
+            d = (i + 0.5) * PIX_M                 # відстань від зовнішнього кінця
+            if d <= RAY_M:
+                r, ang = R_RING_M + (RAY_M - d), a0
+            else:
+                r, ang = R_RING_M, a0 + (d - RAY_M) / R_RING_M
+            arm.append((r * cos(ang), r * sin(ang)))
+        out.append(arm)
+    return out
 
 
 def svg():
-    W = H = 520
-    CX = CY = 260
-    # масштаб: від центру до зовнішнього кінця променя плюс поле під підписи
-    scale = 190 / (R_RING_M + RAY_M)
-    r_in = R_RING_M * scale
-    r_out = (R_RING_M + RAY_M) * scale
-    ink, line, acc, sig = "#24231d", "#c9c6ba", "#b35b1e", "#3d6f96"
+    """Схема в тому вигляді, як Іван її затвердив ще в червні (podium_anim.mp4):
+    нічний фон, окремі пікселі, комета з хвостом, потік від краю до центру і
+    далі в заворот. Тут вона жива і рахується з тих самих даних, що й числа."""
+    W = H = 560
+    CX = CY = 280
+    scale = 205 / (R_RING_M + RAY_M)
+    r_out_px = (R_RING_M + RAY_M) * scale
+    bg, dim, core, glow_c = "#0b0e14", "#26436e", "#eaf1ff", "#5b9bff"
+    txt, txt2 = "#dfe4ec", "#8e97a6"
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
-         f'font-family="ui-monospace,Menlo,monospace">']
+         f'font-family="ui-monospace,Menlo,monospace">',
+         f'<defs><filter id="ng" x="-70%" y="-70%" width="240%" height="240%">'
+         f'<feGaussianBlur stdDeviation="4.5"/></filter></defs>',
+         f'<rect width="{W}" height="{H}" rx="8" fill="{bg}"/>']
 
-    # настил подіуму — тільки орієнтир, не траса
-    o.append(f'<circle cx="{CX}" cy="{CY}" r="{r_out+14:.0f}" fill="none" '
-             f'stroke="{line}" stroke-dasharray="4 5"/>')
+    # настил подіуму — орієнтир, не траса
+    o.append(f'<circle cx="{CX}" cy="{CY}" r="{r_out_px+16:.0f}" fill="none" '
+             f'stroke="#1c222c" stroke-dasharray="4 6"/>')
 
+    # Хвіст комети = та сама частка рукава, якою модель рахує споживання: що
+    # видно на схемі, те й стоїть у ваттах.
+    tail_px = max(1, round(DUTY * PER_ARM))
+    # Хвіст не має «загортатись» на початок рукава: поки фронт іде по променю,
+    # у заворотi не повинно світитись нічого (Іван, 31.07). Тому цикл ділимо на
+    # дві частини — прохід голови від краю до кінця завороту і час, за який
+    # хвіст доганяє і гасне. Без цього останні пікселі догоряли б уже тоді, коли
+    # на промені стартував наступний фронт.
+    fade = tail_px / PER_ARM
+    travel_s = CYCLE_S / (1 + fade)
+    fade_key = (fade * travel_s) / CYCLE_S
+    arms = pixels()
+    # Усі вісім рукавів у фазі: піксель з тим самим номером спалахує одночасно
+    # в кожному рукаві. Зсув по часу лише вздовж рукава — через begin.
+    for arm in arms:
+        for i, (mx, my) in enumerate(arm):
+            x, y = CX + mx * scale, CY + my * scale
+            # Піксель спалахує, коли до нього доходить голова, і гасне за час
+            # хвоста. Негативний begin означає, що анімація вже триває з моменту
+            # завантаження — так усі вісім рукавів ідуть у фазі.
+            peak_s = travel_s * i / PER_ARM
+            anim = (f'<animate attributeName="opacity" values="1;0.12;0.12" '
+                    f'keyTimes="0;{fade_key:.3f};1" dur="{CYCLE_S}s" '
+                    f'repeatCount="indefinite" begin="{peak_s - CYCLE_S:.3f}s"/>')
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.1" fill="{dim}"/>')
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="{glow_c}" '
+                     f'filter="url(#ng)" opacity="0.12">{anim}</circle>')
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.4" fill="{core}" '
+                     f'opacity="0.12">{anim}</circle>')
 
-    # Рукав = промінь + його заворот по колу вправо, рівно до основи наступного
-    # променя. Тому і малюємо його одним шляхом: фронт пробігає промінь до
-    # центру і без розриву йде дугою — так само, як побіжить у залізі.
-    ang = lambda k: -pi / 2 + 2 * pi * k / N
-    arms = []
-    for k in range(N):
-        a, b = ang(k), ang(k + 1)
-        x1, y1 = CX + r_out * cos(a), CY + r_out * sin(a)
-        x2, y2 = CX + r_in * cos(a), CY + r_in * sin(a)
-        x3, y3 = CX + r_in * cos(b), CY + r_in * sin(b)
-        arms.append((f'M {x1:.1f} {y1:.1f} L {x2:.1f} {y2:.1f} '
-                     f'A {r_in:.1f} {r_in:.1f} 0 0 1 {x3:.1f} {y3:.1f}', x1, y1))
+    # вхід живлення і місце різу — зовнішній кінець кожного рукава
+    for arm in arms:
+        mx, my = arm[0]
+        x, y = CX + mx * scale, CY + my * scale
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="none" '
+                 f'stroke="#e08b3e" stroke-width="1.6"/>')
 
-    for d, _, _ in arms:
-        o.append(f'<path d="{d}" fill="none" stroke="{acc}" stroke-width="6" '
-                 f'stroke-linecap="round" opacity=".3"/>')
-    # Усі вісім рукавів рухаються ОДНАКОВО: однакова довжина шляху
-    # (pathLength=100 нормує промінь+заворот) і один момент старту.
-    #
-    # Тонкість, яку легко зіпсувати: візерунок пунктиру повторюється вздовж
-    # шляху. Якщо період дорівнює довжині шляху, хвіст фронту виїжджає з кінця
-    # рукава рівно тоді, коли голова ще йде по променю — і заворот світиться
-    # ЩЕ ДО того, як фронт до нього дійшов (Іван це побачив 31.07). Тому період
-    # робимо довшим за шлях: на рукаві завжди рівно один фронт, і в заворот він
-    # заходить тільки після того, як пройшов увесь промінь.
-    on = DUTY * 100
-    for d, _, _ in arms:
-        o.append(
-            f'<path d="{d}" fill="none" stroke="#fff" stroke-width="6" '
-            f'stroke-linecap="round" pathLength="100" '
-            f'stroke-dasharray="{on:.0f} {100 + on:.0f}">'
-            f'<animate attributeName="stroke-dashoffset" values="{on:.0f};-100" '
-            f'dur="2.6s" repeatCount="indefinite" begin="0s"/></path>')
-    # точка входу живлення і різу — на зовнішньому кінці кожного рукава
-    for _, x1, y1 in arms:
-        o.append(f'<circle cx="{x1:.1f}" cy="{y1:.1f}" r="4.5" fill="#fff" '
-                 f'stroke="{sig}" stroke-width="2"/>')
-
-    # стрілка напрямку — на одному промені, щоб не рябіло
-    a = ang(0)
-    mx, my = CX + (r_in + r_out) / 2 * cos(a), CY + (r_in + r_out) / 2 * sin(a)
-    o.append(f'<polygon points="{mx-5:.0f},{my-9:.0f} {mx+5:.0f},{my-9:.0f} {mx:.0f},{my+1:.0f}" '
-             f'fill="{ink}"/>')
-    o.append(f'<text x="{mx+10:.0f}" y="{my-2:.0f}" font-size="10" fill="{ink}">'
-             f'до центру, далі заворотом</text>')
-
-    o.append(f'<text x="{CX}" y="24" text-anchor="middle" font-size="13" fill="{ink}">'
+    o.append(f'<text x="{CX}" y="26" text-anchor="middle" font-size="13" fill="{txt}">'
              f'{N} рукавів по {ARM_M:.2f} м: промінь {RAY_M:.2f} + заворот {TURN_M:.2f}</text>')
-    o.append(f'<text x="{CX}" y="41" text-anchor="middle" font-size="10" fill="#6b675c">'
+    o.append(f'<text x="{CX}" y="43" text-anchor="middle" font-size="10" fill="{txt2}">'
              f'окремого кільця нема: коло {RING_M:.2f} м складають вісім заворотів</text>')
-    o.append(f'<text x="{CX}" y="56" text-anchor="middle" font-size="10" fill="#6b675c">'
-             f'разом {TOTAL_M:.2f} м · світиться тільки фронт, {DUTY*100:.0f}% рукава</text>')
-    o.append(f'<circle cx="40" cy="{H-30}" r="4.5" fill="#fff" stroke="{sig}" stroke-width="2"/>')
-    o.append(f'<text x="52" y="{H-26}" font-size="10" fill="#6b675c">'
-             f'вхід живлення і місце різу — на зовнішньому кінці рукава</text>')
+    o.append(f'<text x="{CX}" y="58" text-anchor="middle" font-size="10" fill="{txt2}">'
+             f'{PER_ARM} пікселів на рукав ({PIX_M*1000:.0f} мм = 3 діоди) · '
+             f'разом {TOTAL_M:.2f} м</text>')
+    o.append(f'<circle cx="34" cy="{H-38}" r="6" fill="none" stroke="#e08b3e" stroke-width="1.6"/>')
+    o.append(f'<text x="48" y="{H-34}" font-size="10" fill="{txt2}">'
+             f'вхід живлення і місце різу</text>')
+    o.append(f'<text x="34" y="{H-16}" font-size="10" fill="{txt2}">'
+             f'хвіст комети = {DUTY*100:.0f}% рукава — з цієї ж частки рахуються ватти</text>')
     o.append("</svg>")
     return "\n".join(o)
 

@@ -11,3 +11,6 @@ __pycache__/
 
 # local tooling state (contains tokens/logs)
 .gstack/
+
+# знімки екрана з тестів англійської версії
+site/i18n/shots/

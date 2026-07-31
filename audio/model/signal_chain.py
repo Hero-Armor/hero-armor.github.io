@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Hero Armor audio node — signal-chain model.
-Generates signal_chain.png with three panels:
+Generates signal_chain.png + signal_chain.svg with three panels:
 
   A. Gain staging: output power vs DAC digital level for TPA3116 gain settings,
      clipping onset at the 12V rail.
@@ -152,6 +152,8 @@ fig.suptitle("Hero Armor · сигнальний тракт: DAC 2.1 Vrms → TP
 
 out = str(__import__("pathlib").Path(__file__).resolve().parent / "signal_chain.png")
 fig.savefig(out, dpi=170)
+# svg — щоб підписи лишались текстом і перекладались
+fig.savefig(out[:-4] + ".svg")
 print("wrote", out)
 
 # ---- console summary ----

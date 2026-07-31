@@ -28,6 +28,7 @@
     python3 site/i18n.py --only lights_lab.html   # одну сторінку (пілот)
     python3 site/i18n.py --dry          # скільки нового треба перекласти
     python3 site/i18n.py --check        # чи не лишилось українського в /en
+    python3 site/i18n.py --offline      # зібрати з памʼяті, без моделі (CI)
 """
 import argparse
 import json
@@ -115,11 +116,25 @@ def _protect(inner):
     return re.sub(r"<[^>]+>", sub, inner), tags
 
 
-def _restore(text, tags):
-    def sub(m):
-        i = int(re.search(r"\d+", m.group(0)).group(0))
-        return tags[i] if i < len(tags) else ""
-    return PH_FIND.sub(sub, text)
+ATTR_IN_TAG = re.compile(r'\b(alt|title|placeholder|aria-label)="([^"]*)"')
+
+
+def _restore(text, tags, tm=None):
+    """Повернути теги на місце — і перекласти підписи всередині них.
+
+    Підписи (`alt`, `aria-label`) сидять у тегах, які на час перекладу
+    сховані за мітки. Без цього рядка вони мовчки лишались українськими:
+    саме так на головній лишились описи гарячих зон на фото.
+    """
+    def tag(i):
+        t = tags[i] if i < len(tags) else ""
+        if tm and CYR.search(t):
+            t = ATTR_IN_TAG.sub(
+                lambda m: f'{m.group(1)}="{tm.get(m.group(2), m.group(2))}"', t)
+        return t
+
+    return PH_FIND.sub(
+        lambda m: tag(int(re.search(r"\d+", m.group(0)).group(0))), text)
 
 
 def _tidy(en):
@@ -203,14 +218,15 @@ def _skip_ranges(html):
     return out
 
 
-def _chunks(html, start, end):
+def _chunks(html, start, end, limit=None):
     """Розрізати задовгий шматок на шматки, які модель дійсно дотягує.
 
     Довгі абзаци (пам'ятка по стрічці — півтори тисячі символів і три десятки
     тегів) модель обривала на середині й губила мітки. Ріжемо по <br> і по
     кінцях речень, кожен шматок лишається цілою думкою.
     """
-    if end - start <= MAX_SEGMENT:
+    limit = limit or MAX_SEGMENT
+    if end - start <= limit:
         return [(start, end)]
     cuts = [start]
     for m in re.finditer(r"<br\s*/?>|(?<=[.;:!?])\s+(?=[^<])", html[start:end]):
@@ -218,7 +234,7 @@ def _chunks(html, start, end):
     cuts.append(end)
     out, a = [], start
     for c in cuts[1:]:
-        if c - a >= MAX_SEGMENT // 2:
+        if c - a >= limit // 2:
             out.append((a, c))
             a = c
     if a < end:
@@ -260,7 +276,7 @@ def _attr_spans(html):
                 if CYR.search(am.group(1)):
                     out.append({"start": m.start() + am.start(1),
                                 "end": m.start() + am.end(1),
-                                "src": am.group(1), "tags": []})
+                                "src": am.group(1), "tags": [], "esc": "attr"})
     return out
 
 
@@ -276,19 +292,49 @@ def _script_spans(html, offset, block):
         if CYR.search(m.group(2)):
             out.append({"start": offset + body_start + m.start(2),
                         "end": offset + body_start + m.end(2),
-                        "src": m.group(2), "tags": []})
+                        "src": m.group(2), "tags": [], "esc": "js" + m.group(1)})
     return out
 
 
 def render(html, spans, tm):
-    """Скласти сторінку назад з перекладеними ділянками."""
-    out = html
-    for sp in sorted(spans, key=lambda s: s["start"], reverse=True):
-        en = tm.get(sp["src"])
-        if not en:
+    """Скласти сторінку назад з перекладеними ділянками.
+
+    Ділянки можуть вкладатись одна в одну (підпис усередині абзацу, дрібний
+    шматок усередині завеликого). Підставляти обидві не можна: друга
+    підстановка ріже вже зміщений текст і лишає уламки тегів — саме так на
+    головній зʼявився обірваний `/span></a>`. Тому спершу відбираємо
+    несуперечливий набір: із тих, що перекладені, беремо зовнішню.
+    """
+    ready = [s for s in spans if tm.get(s["src"])]
+    ready.sort(key=lambda s: (s["start"], -(s["end"] - s["start"])))
+    chosen, last_end = [], -1
+    for s in ready:
+        if s["start"] < last_end:
             continue
-        out = out[:sp["start"]] + _restore(en, sp["tags"]) + out[sp["end"]:]
+        chosen.append(s)
+        last_end = s["end"]
+
+    out = html
+    for sp in sorted(chosen, key=lambda s: s["start"], reverse=True):
+        piece = _escape(_restore(tm[sp["src"]], sp["tags"], tm), sp.get("esc"))
+        out = out[:sp["start"]] + piece + out[sp["end"]:]
     return out
+
+
+def _escape(text, where):
+    """Англійський текст мусить пережити місце, куди його кладуть.
+
+    «біжуча вода» англійською стала "running water" — і подвійні лапки
+    розірвали рядок у скрипті: сторінка стрічки перестала рахувати. Тому
+    всередині скрипта екрануємо ту лапку, якою обгорнутий рядок, а в
+    атрибуті — подвійну.
+    """
+    if not where:
+        return text
+    if where == "attr":
+        return text.replace("&", "&amp;").replace('"', "&quot;")
+    quote = where[2:]
+    return text.replace("\\", "\\\\").replace(quote, "\\" + quote)
 
 
 # --- переклад --------------------------------------------------------------
@@ -455,13 +501,51 @@ def with_switch(html, lang, name):
     return head_block(lang, name) + html
 
 
+SVG_TAG = re.compile(r'<svg\b[^>]*viewBox="([-\d.]+) ([-\d.]+) ([\d.]+) ([\d.]+)"[^>]*>',
+                     re.I)
+
+
+def pad_svg(html):
+    """Дати схемам поля: англійський підпис ширший за український.
+
+    Полотно схеми рахує matplotlib під українську довжину слів. Англійською
+    крайні підписи («12V from EcoFlow station», «chip overheating») вилазили
+    за межу і обрізались. Розсуваємо поле малюнка — картинка трохи менша,
+    зате ціла.
+    """
+    def pad(m):
+        tag = m.group(0)
+        # у matplotlib-схемі перед першим підписом іде довгий блок
+        # метаданих, тому шукаємо <text> по всьому залишку файлу
+        if "<text" not in html[m.end():]:
+            return tag              # не схема, а іконка — не чіпаємо
+        x, y, w, h = (float(v) for v in m.groups())
+        dx, dy = w * 0.07, h * 0.03
+        return re.sub(r'viewBox="[^"]*"',
+                      f'viewBox="{x - dx:.2f} {y - dy:.2f} '
+                      f'{w + 2 * dx:.2f} {h + 2 * dy:.2f}"', tag)
+
+    return SVG_TAG.sub(pad, html)
+
+
 def to_en_paths(html):
-    """У /en/ спільні файли лежать на рівень вище."""
-    html = re.sub(r'(src|href)="(assets/|knowledge/)', r'\1="../\2', html)
+    """У /en/ лежать тільки сторінки; спільні файли — на рівень вище."""
+    def fix(m):
+        attr, href = m.group(1), m.group(2)
+        if href.startswith(("http", "data:", "mailto:", "#", "../")):
+            return m.group(0)
+        first = href.split("/")[0].split("#")[0]
+        # сторінки мають англійського близнюка поруч, решта (креслення,
+        # граф знань, стилі) лишається в корені
+        if first.endswith(".html"):
+            return m.group(0)
+        return f'{attr}="../{href}"'
+
+    html = re.sub(r'(src|href)="([^"]+)"', fix, html)
     return html.replace("url(assets/", "url(../assets/")
 
 
-def build(only=None, dry=False, verbose=True):
+def build(only=None, dry=False, verbose=True, offline=False):
     tm = load_tm()
     glossary = load_glossary()
     pages = sorted(p for p in DOCS.glob("*.html"))
@@ -485,12 +569,42 @@ def build(only=None, dry=False, verbose=True):
         for s in missing[:20]:
             print("   ", s[:100])
         return
-    if missing:
+    if offline:
+        # на GitHub ключа нема і платити нема з чого: складаємо англійську
+        # з того, що вже лежить у памʼяті. Нові українські рядки просто
+        # лишаються українськими, поки хтось не прожене переклад локально.
+        if missing:
+            print(f"офлайн: {len(missing)} нових шматків лишаться українськими "
+                  f"— прожени `python3 site/i18n.py` локально і закоміть tm.json")
+    elif missing:
         translate(missing, glossary, tm, verbose)
+
+    # деякі довгі абзаци модель віддає з загубленою міткою тега. Не лишаємо
+    # їх українськими: ріжемо на дрібніші шматки і перекладаємо ще раз.
+    retry = {}
+    for name, (html, sp) in ({} if offline else plans).items():
+        extra = []
+        for s in sp:
+            if s["src"] in tm:
+                continue
+            for a, b in _chunks(html, s["start"], s["end"], limit=250):
+                piece = html[a:b]
+                if not CYR.search(piece):
+                    continue
+                src, tags = _protect(piece)
+                if src.strip():
+                    extra.append({"start": a, "end": b, "src": src, "tags": tags})
+        if extra:
+            retry[name] = extra
+            plans[name] = (html, sp + extra)
+    again = [s["src"] for v in retry.values() for s in v if s["src"] not in tm]
+    if again:
+        print(f"другий захід дрібнішими шматками: {len(again)}")
+        translate(again, glossary, tm, verbose)
 
     EN.mkdir(parents=True, exist_ok=True)
     for name, (html, sp) in plans.items():
-        en_html = to_en_paths(render(html, sp, tm))
+        en_html = pad_svg(to_en_paths(render(html, sp, tm)))
         (EN / name).write_text(with_switch(en_html, "en", name))
         (DOCS / name).write_text(with_switch(html, "uk", name))
         left = len(CYR.findall(_visible_only((EN / name).read_text())))
@@ -502,6 +616,7 @@ def _visible_only(html):
     """Те, що бачить читач: без машинних даних і без наших коментарів у коді."""
     html = re.sub(r"<script[^>]*application/ld\+json.*?</script>", "", html,
                   flags=re.S | re.I)
+    html = re.sub(r"<style\b[^>]*>.*?</style>", "", html, flags=re.S | re.I)
     html = re.sub(r"<!--.*?-->", "", html, flags=re.S)
     html = SWITCH_MARK.sub("", html)      # «Українською» на кнопці — це навмисне
     return re.sub(r"//[^\n]*", "", html)
@@ -524,8 +639,10 @@ if __name__ == "__main__":
     ap.add_argument("--only", nargs="*", help="перекласти лише ці сторінки")
     ap.add_argument("--dry", action="store_true", help="лише порахувати нове")
     ap.add_argument("--check", action="store_true", help="перевірити /en")
+    ap.add_argument("--offline", action="store_true",
+                    help="не звертатись до моделі: зібрати з памʼяті (для CI)")
     a = ap.parse_args()
     if a.check:
         check()
     else:
-        build(only=a.only, dry=a.dry)
+        build(only=a.only, dry=a.dry, offline=a.offline)

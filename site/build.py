@@ -690,8 +690,11 @@ def build():
 
     # ================= lab page =================
     lab = tmpl("lab.tmpl.html")
-    png_b64 = base64.b64encode((AUDIO / "model" / "signal_chain.png").read_bytes()).decode()
-    lab = lab.replace("{{SIGNAL_PNG}}", "data:image/png;base64," + png_b64)
+    # схему вставляємо текстом svg, а не картинкою: інакше підписи
+    # на ній не перекладаються в англійській версії
+    ssvg = (AUDIO / "model" / "signal_chain.svg").read_text()
+    ssvg = ssvg[ssvg.index("<svg"):]
+    lab = lab.replace("{{SIGNAL_SVG}}", ssvg)
 
     presets = []
     for c in m.CASES_DOC["cases"]:
