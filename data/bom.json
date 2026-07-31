@@ -693,5 +693,105 @@
     "note": "перевірено 30.07: дешевше з UV-стійких і рейтингом не знайшлося (★4.6, 18 тис. відгуків)",
     "system": "audio",
     "flow": "to_order"
+  },
+  {
+    "item": "Кейс під станцію",
+    "qty": "1",
+    "price": "$75-485",
+    "status": "tbd",
+    "note": "Підбір у лабораторії ящика: під EcoFlow Delta 3 Max Plus проходить 17 коробок з 22. Найдешевше на вторинці — Pelican iM3075 від $75 (eBay surpluscases, FB Marketplace LA). Найдешевший новий з IP67 — Monoprice за $140",
+    "url": "https://www.ebay.com/str/surpluscases",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Канальний фільтр-бокс AC Infinity 6\"",
+    "qty": "1",
+    "price": "$70",
+    "status": "tbd",
+    "note": "Готовий сталевий корпус під фільтр 12×20×1 дюйм — фабрикувати нічого не треба",
+    "url": "https://acinfinity.com/duct-air-filter-box-6-with-high-efficacy-filter/",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Фільтр MERV 13 12×20×1\"",
+    "qty": "3",
+    "price": "$12",
+    "status": "tbd",
+    "note": "Фінішна ступінь, три штуки на тиждень",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Поролоновий передфільтр (тип Outerwears)",
+    "qty": "1",
+    "price": "$30",
+    "status": "tbd",
+    "note": "Груба ступінь, миється щоранку",
+    "url": "https://outerwears.com",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Канальний вентилятор AC Infinity 6\" на нагнітання",
+    "qty": "1",
+    "price": "$80",
+    "status": "tbd",
+    "note": "Створює надлишковий тиск. 5-15 Вт постійно",
+    "url": "https://www.amazon.com/dp/B0921XRFLX",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Пасивна жалюзі-решітка на випуск",
+    "qty": "1",
+    "price": "$15",
+    "status": "tbd",
+    "note": "Повітря виходить самопливом; інших нефільтрованих отворів бути не повинно",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Гермоввід PG13.5 IP68",
+    "qty": "4",
+    "price": "$10",
+    "status": "tbd",
+    "note": "Силова лінія 12 В. Виводити кабель під кришкою не можна — фільтрація втратить сенс",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Кулер Coleman 100-150 qt",
+    "qty": "1",
+    "price": "$100-140",
+    "status": "tbd",
+    "note": "АЛЬТЕРНАТИВА фільтрам: гіпотеза теплової маси. Внутрішні розміри ЗВІРИТИ руками — виробник їх не публікує",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Каністри під воду 5 л",
+    "qty": "8",
+    "price": "$40",
+    "status": "tbd",
+    "note": "До гіпотези кулера: 30-40 кг теплової маси, зручніше каністрами ніж наливом — виносити на ніч остигати",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Коробка ABS IP65 200×120×75 (якщо своя не підійде)",
+    "qty": "1",
+    "price": "$10",
+    "status": "tbd",
+    "url": "https://www.amazon.com/dp/B07D23BF7Y",
+    "note": "запасний варіант: беремо тільки якщо замовлена Іваном коробка менша за 165×105×55 або металева",
+    "system": "audio",
+    "flow": "to_order"
   }
 ]

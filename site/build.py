@@ -147,6 +147,16 @@ def assembly_html():
     steps = "\n".join(f"      <li>{esc(s)}</li>" for s in a["steps"])
     tests = "\n".join(f"      <li>{esc(t)}</li>" for t in a["tests"])
 
+    pick, pick_html = enc.get("pick"), ""
+    if pick:
+        alt = pick.get("alt") or {}
+        pick_html = (
+            f'  <p class="files"><b>Якщо своя не підійде — беремо цю:</b> '
+            f'<a href="{pick["url"]}">{esc(pick["item"])}</a>, {esc(pick["price"])}. '
+            f'{esc(pick["why"])} Кріплення плати: {esc(pick["mounting"])}'
+            + (f' Альтернатива — <a href="{alt["url"]}">{esc(alt["item"])}</a>, '
+               f'{esc(alt["price"])}: {esc(alt["why"])}.' if alt else "") + "</p>\n")
+
     return f"""  <div class="fig">{svg}</div>
   <p class="fig-cap">План панелі-основи в масштабі. Джерело:
   <span style="font-family:var(--mono)">audio/data/assembly.json</span> →
@@ -158,7 +168,7 @@ def assembly_html():
   <ul class="files">
 {reqs}
   </ul>
-
+{pick_html}
   <h3>Конектори — де вузол розбирається</h3>
   <div class="tbl-wrap"><table>
     <tr><th>Місце</th><th>Конектор</th><th>Чому так</th></tr>
@@ -1451,7 +1461,7 @@ def build():
 
     sys_hue = {"audio": "var(--comp-audio)", "solar": "var(--comp-solar)",
                 "lights": "var(--comp-lights)", "armor": "var(--comp-armor)",
-                "project": "var(--comp-project)"}
+                "project": "var(--comp-project)", "enclosure": "var(--comp-enclosure)"}
     cards = []
     for c in SYSTEMS_REG:
         k = c["key"]
@@ -1473,7 +1483,7 @@ def build():
         if c_bom:
             meta.append(f"купити: {len(c_bom) - c_have}")
         cards.append(
-            f'    <div class="card" id="card-{k}" style="--cc:{sys_hue[k]}">\n'
+            f'    <div class="card" id="card-{k}" style="--cc:{sys_hue.get(k, 'var(--comp-project)')}">\n'
             f'      <div class="row"><h3><a href="{SITE_URL}{c["page"]}">{c["emoji"]} {esc(c["label"])}</a></h3>'
             f'<span class="pill {c["status"]}">{COMP_STATUS_LABEL[c["status"]]}</span></div>\n'
             f'      <p>{esc(c["summary"])}</p>\n'
@@ -1658,11 +1668,12 @@ def build_docs(out):
              (SOLAR_LAB_URL, "solar_lab.html"),
              (CABLES_LAB_URL, "cables_lab.html"),
              (ENCLOSURE_LAB_URL, "enclosure_lab.html"),
+             (SITE_URL + "enclosure.html", "enclosure.html"),
              (SITE_URL + "audio.html", "audio.html"),
              (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
              ('href="' + SITE_URL + '"', 'href="index.html"')]
     for name in ("index.html", "audio.html", "lab.html", "ops.html", "tasks.html",
-                 "solar.html", "solar_lab.html", "enclosure_lab.html",
+                 "solar.html", "solar_lab.html", "enclosure_lab.html", "enclosure.html",
                  "lights.html", "lights_lab.html", "cables.html", "cables_lab.html",
                  "armor.html"):
         html = (out / name).read_text()

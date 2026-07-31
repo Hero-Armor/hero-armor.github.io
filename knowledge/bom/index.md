@@ -76,3 +76,13 @@
 * [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
 * [Джампери Dupont мама-мама 20 см](dzhampery-dupont-mama-mama-20-sm.md) - $4, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](stiazhky-neilonovi-uv-stiiki-400-sht.md) - $7, купити
+* [Кейс під станцію](keis-pid-stantsiiu.md) - $75-485, купити
+* [Канальний фільтр-бокс AC Infinity 6"](kanalnyi-filtr-boks-ac-infinity-6.md) - $70, купити
+* [Фільтр MERV 13 12×20×1"](filtr-merv-13-12-20-1.md) - $12, купити
+* [Поролоновий передфільтр (тип Outerwears)](porolonovyi-peredfiltr-typ-outerwears.md) - $30, купити
+* [Канальний вентилятор AC Infinity 6" на нагнітання](kanalnyi-ventyliator-ac-infinity-6-na-nahnitannia.md) - $80, купити
+* [Пасивна жалюзі-решітка на випуск](pasyvna-zhaliuzi-reshitka-na-vypusk.md) - $15, купити
+* [Гермоввід PG13.5 IP68](hermovvid-pg13-5-ip68.md) - $10, купити
+* [Кулер Coleman 100-150 qt](kuler-coleman-100-150-qt.md) - $100-140, купити
+* [Каністри під воду 5 л](kanistry-pid-vodu-5-l.md) - $40, купити
+* [Коробка ABS IP65 200×120×75 (якщо своя не підійде)](korobka-abs-ip65-200-120-75-iakshcho-svoia-ne-pidiide.md) - $10, купити
