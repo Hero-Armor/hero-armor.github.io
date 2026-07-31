@@ -187,7 +187,9 @@
     75,
     150
    ],
-   "note": "Найкраще на вторинці: чисті б/у від $75. Клапан вирівнювання тиску Vortex. На колесах. Розміри по дну, стінки конічні."
+   "note": "Найкраще на вторинці: чисті б/у від $75. Клапан вирівнювання тиску Vortex. На колесах. Розміри по дну, стінки конічні.",
+   "url": "https://www.pelican.com/us/en/product/cases/storm/im3075",
+   "img": "assets/cases/pelican-im3075-storm.jpg"
   },
   {
    "name": "Explorer 7745",
@@ -199,7 +201,9 @@
    "seal": "IP67",
    "price_usd": 399,
    "kind": "кейс",
-   "note": "Найдешевший НОВИЙ кейс, що вміщає геть усе. Внутрішні розміри з офіційного сайту."
+   "note": "Найдешевший НОВИЙ кейс, що вміщає геть усе. Внутрішні розміри з офіційного сайту.",
+   "url": "https://www.explorercases.com/en/products/7745/",
+   "img": "assets/cases/explorer-7745.jpg"
   },
   {
    "name": "Pelican 1660",
@@ -215,7 +219,9 @@
     125,
     160
    ],
-   "note": "Вміщає всі станції. 15.5 кг порожній."
+   "note": "Вміщає всі станції. 15.5 кг порожній.",
+   "url": "https://www.pelican.com/us/en/product/cases/protector/1660",
+   "img": "assets/cases/pelican-1660.jpg"
   },
   {
    "name": "Explorer 7641",
@@ -226,7 +232,9 @@
    ],
    "seal": "IP67",
    "price_usd": 340,
-   "kind": "кейс"
+   "kind": "кейс",
+   "url": "https://www.explorercases.com/en/products/7641/",
+   "img": "assets/cases/explorer-7641.jpg"
   },
   {
    "name": "Monoprice 30×19×15.8 на колесах",
@@ -250,7 +258,9 @@
    "seal": "IP67",
    "price_usd": 445,
    "kind": "кейс",
-   "note": "Дуже широкий. По висоті впритул для найбільших станцій."
+   "note": "Дуже широкий. По висоті впритул для найбільших станцій.",
+   "url": "https://www.skbcases.com/products/i-series-3026-15-case",
+   "img": "assets/cases/skb-iseries-3i-3026-15.jpg"
   },
   {
    "name": "Pelican 1630",
@@ -265,7 +275,9 @@
    "price_used_usd": [
     125,
     160
-   ]
+   ],
+   "url": "https://www.pelican.com/us/en/product/cases/protector/1630",
+   "img": "assets/cases/pelican-1630.jpg"
   },
   {
    "name": "B&W International Type 7800",
@@ -277,7 +289,9 @@
    "seal": "IP67",
    "price_usd": 340,
    "kind": "кейс",
-   "note": "Внутрішні розміри вказані виробником прямо (77×54×38 см)."
+   "note": "Внутрішні розміри вказані виробником прямо (77×54×38 см).",
+   "url": "https://www.b-w-international.com/en/produkt/bw-case-pp-1570/",
+   "img": "assets/cases/b-w-international-type-7800.jpg"
   },
   {
    "name": "HPRC 2780W",
@@ -292,7 +306,9 @@
    "price_used_usd": [
     125,
     200
-   ]
+   ],
+   "url": "https://www.hprc.it/en/resin-case_hprc2780w.html",
+   "img": "assets/cases/hprc-2780w.jpg"
   },
   {
    "name": "Nanuk 965",
@@ -303,7 +319,9 @@
    ],
    "seal": "IP67",
    "price_usd": 365,
-   "kind": "кейс"
+   "kind": "кейс",
+   "url": "https://nanuk.com/products/nanuk-965",
+   "img": "assets/cases/nanuk-965.jpg"
   },
   {
    "name": "Seahorse SE-1220",
@@ -327,7 +345,9 @@
    ],
    "seal": "IP67",
    "price_usd": 330,
-   "kind": "кейс"
+   "kind": "кейс",
+   "url": "https://nanuk.com/products/nanuk-960",
+   "img": "assets/cases/nanuk-960.jpg"
   },
   {
    "name": "Pelican 1620",
@@ -342,7 +362,9 @@
    "price_used_usd": [
     125,
     200
-   ]
+   ],
+   "url": "https://www.pelican.com/us/en/product/cases/protector/1620",
+   "img": "assets/cases/pelican-1620.jpg"
   },
   {
    "name": "Pelican iM2950 (Storm)",
@@ -357,7 +379,9 @@
    "price_used_usd": [
     88,
     120
-   ]
+   ],
+   "url": "https://www.pelican.com/us/en/product/cases/storm/im2950",
+   "img": "assets/cases/pelican-im2950-storm.jpg"
   },
   {
    "name": "Pelican 1650",
@@ -372,7 +396,9 @@
    "price_used_usd": [
     88,
     120
-   ]
+   ],
+   "url": "https://www.pelican.com/us/en/product/cases/protector/1650",
+   "img": "assets/cases/pelican-1650.jpg"
   },
   {
    "name": "Pelican Vault V600",
@@ -384,7 +410,9 @@
    "seal": "нема",
    "price_usd": 198,
    "kind": "кейс",
-   "note": "Без ущільнювального кільця — тільки «стійкий до погоди», для пилу плайї не годиться."
+   "note": "Без ущільнювального кільця — тільки «стійкий до погоди», для пилу плайї не годиться.",
+   "url": "https://www.pelican.com/us/en/product/cases/vault/v600",
+   "img": "assets/cases/pelican-vault-v600.jpg"
   },
   {
    "name": "Apache 4800 (Harbor Freight)",

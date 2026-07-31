@@ -46,7 +46,8 @@ SHOP = ("bhphotovideo.com", "homedepot.com", "lowes.com", "walmart.com",
         "amazon.com", "adorama.com", "cases2go.com", "midwestcasecompany.com",
         "target.com", "costco.com")
 BAD = ("ebay.", "aliexpress.", "pinterest.", "youtube.", "reddit.", "facebook.",
-       "guenstiger.de", "duckduckgo.com/y.js")
+       "guenstiger.de", "duckduckgo.com/y.js", "wikipedia.org", "quora.",
+       "tiktok.", "instagram.")
 
 # назви, з яких пошуковий запит сам собою не збирається
 QUERY = {
@@ -62,6 +63,56 @@ QUERY = {
     "Pelican iM2950 (Storm)": "Pelican Storm iM2950 case",
     "B&W International Type 7800": "B&W International outdoor case type 7800",
     "SKB iSeries 3i-3026-15": "SKB iSeries 3i-3026-15 case",
+}
+
+
+# Адреси, знайдені в ОФІЦІЙНІЙ карті сайту виробника (sitemap.xml), а не
+# вигадані: пошуковики нас ріжуть, а вгадувати шлях руками — той самий гріх,
+# через який на /press колись повисли дві биті посилання. Скрипт однаково
+# перевіряє кожну сторінку на номер моделі, перш ніж її записати.
+URL_HINTS = {
+    "Pelican 1620": "https://www.pelican.com/us/en/product/cases/protector/1620",
+    "Pelican 1650": "https://www.pelican.com/us/en/product/cases/protector/1650",
+    "Pelican 1660": "https://www.pelican.com/us/en/product/cases/protector/1660",
+    "Pelican 1630": "https://www.pelican.com/us/en/product/cases/protector/1630",
+    "Pelican Vault V600": "https://www.pelican.com/us/en/product/cases/vault/v600",
+    "Pelican iM2950 (Storm)": "https://www.pelican.com/us/en/product/cases/storm/im2950",
+    "Pelican iM3075 (Storm)": "https://www.pelican.com/us/en/product/cases/storm/im3075",
+    "Nanuk 960": "https://nanuk.com/products/nanuk-960",
+    "Nanuk 965": "https://nanuk.com/products/nanuk-965",
+}
+
+# Пошук у самого магазину: загальні пошуковики на ці позиції вперто дають
+# головні сторінки брендів («coleman.com/»), а не картку товару. Свій пошук
+# магазину знає свій же асортимент.
+SITE_SEARCH = {
+    "Monoprice 30×19×15.8 на колесах":
+        ("https://www.monoprice.com/search/index?keyword=weatherproof+hard+case+wheels", "monoprice.com"),
+    "Seahorse SE-1220": ("https://seahorsecases.com/?s=SE-1220", "seahorsecases.com"),
+    "Apache 4800 (Harbor Freight)":
+        ("https://www.harborfreight.com/catalogsearch/result?q=apache+4800", "harborfreight.com"),
+    "Rubbermaid ActionPacker 24 gal":
+        ("https://www.homedepot.com/s/rubbermaid%2520actionpacker%252024%2520gal", "homedepot.com"),
+    "Rubbermaid ActionPacker 35 gal":
+        ("https://www.homedepot.com/s/rubbermaid%2520actionpacker%252035%2520gal", "homedepot.com"),
+    "Ящик Costco 27 gal (Greenmade)":
+        ("https://www.costco.com/CatalogSearch?keyword=greenmade+27+gallon+tote", "costco.com"),
+    "Coleman 150 qt (кулер)":
+        ("https://www.coleman.com/catalogsearch/result/?q=150+quart+xtreme+cooler", "coleman.com"),
+    "Coleman 100 qt на колесах (кулер)":
+        ("https://www.coleman.com/catalogsearch/result/?q=100+quart+xtreme+wheeled", "coleman.com"),
+}
+
+# що саме має бути на сторінці, коли номера моделі в назві нема
+VERIFY = {
+    "Monoprice 30×19×15.8 на колесах": ["monoprice", "case"],
+    "Ящик Costco 27 gal (Greenmade)": ["greenmade", "27"],
+    "Coleman 150 qt (кулер)": ["150", "cooler"],
+    "Coleman 100 qt на колесах (кулер)": ["100", "cooler"],
+    "Rubbermaid ActionPacker 24 gal": ["actionpacker", "24"],
+    "Rubbermaid ActionPacker 35 gal": ["actionpacker", "35"],
+    "Apache 4800 (Harbor Freight)": ["apache", "4800"],
+    "Seahorse SE-1220": ["se-1220"],
 }
 
 
@@ -130,9 +181,32 @@ def page_image(url, tokens):
         if m:
             img = m.group(1)
             break
+    if not img:
+        img = _ld_image(html)
     if img:
         img = urllib.parse.urljoin(url, img.replace("&amp;", "&"))
     return img, title, None
+
+
+def _ld_image(html):
+    """Фото зі структурованих даних сторінки (schema.org Product)."""
+    for block in re.findall(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>',
+                            html, re.S | re.I):
+        try:
+            data = json.loads(block)
+        except Exception:
+            continue
+        for node in (data if isinstance(data, list) else [data]):
+            if not isinstance(node, dict):
+                continue
+            img = node.get("image")
+            if isinstance(img, list):
+                img = img[0] if img else None
+            if isinstance(img, dict):
+                img = img.get("url")
+            if isinstance(img, str) and img.startswith("http"):
+                return img
+    return None
 
 
 def save_thumb(img_url, referer, dest, box=520):
@@ -146,9 +220,12 @@ def save_thumb(img_url, referer, dest, box=520):
         im = bg
     else:
         im = im.convert("RGB")
+    w, h = im.size
+    if min(w, h) < 200:
+        raise ValueError(f"замала картинка {w}×{h}")
+    if not 0.4 <= w / h <= 2.5:
+        raise ValueError(f"це не фото товару, а смуга {w}×{h}")
     im.thumbnail((box, box))
-    if min(im.size) < 80:
-        raise ValueError(f"замала картинка {im.size}")
     dest.parent.mkdir(parents=True, exist_ok=True)
     im.save(dest, "JPEG", quality=82, optimize=True)
     return im.size
@@ -170,14 +247,16 @@ def main():
             continue
         if c.get("img") and c.get("url") and not a.force:
             continue
-        q = QUERY.get(name, name)
-        tokens = model_tokens(name)
-        try:
-            links = rank(search(q))
-        except Exception as e:
-            print(f"✗ {name}: пошук впав ({e})")
-            failed += 1
-            continue
+        tokens = VERIFY.get(name) or model_tokens(name)
+        if name in URL_HINTS:
+            links = [URL_HINTS[name]]
+        else:
+            try:
+                links = rank(search(QUERY.get(name, name)))
+            except Exception as e:
+                print(f"✗ {name}: пошук впав ({e})")
+                failed += 1
+                continue
         picked = None
         for link in links:
             try:
