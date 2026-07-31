@@ -1291,6 +1291,13 @@ def build():
         page = page.replace("{{STATUS}}", reg["status"])
         page = page.replace("{{STATUS_LABEL}}", COMP_STATUS_LABEL[reg["status"]])
         page = page.replace("{{SUMMARY}}", esc(reg["summary"]))
+        # Лінки системи з реєстру. Generic-шаблон їх раніше не виводив узагалі —
+        # тепер кожна нова система отримує їх без окремого шаблона.
+        sl = "".join(
+            f'<a href="{SITE_URL}{href}" style="margin-right:.9rem">{esc(label)}</a>'
+            for label, href in reg.get("links", []))
+        page = page.replace("{{LINKS}}", f'  <p class="sub" style="margin-top:-1rem">{sl}</p>'
+                            if sl else "")
 
         sections = []
         figs = reg.get("figures", [])
