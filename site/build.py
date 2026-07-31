@@ -52,6 +52,7 @@ TASKS = json.loads((DATA / "tasks.json").read_text())
 ORDERS = json.loads((DATA / "orders.json").read_text())
 ADDR = json.loads((DATA / "addresses.json").read_text())
 SYSTEMS_REG = json.loads((DATA / "systems.json").read_text())
+LABS = json.loads((DATA / "labs.json").read_text())
 
 # Хто вирішує. Єдиного «головного» немає: кожен головний у своїй зоні.
 DECIDERS = {"ivan": "Іван", "liza": "Ліза", "volodymyr": "Володимир (конструктор)",
@@ -127,6 +128,63 @@ def figures_html(key):
         f'    <div class="fig"><img src="{f[0]}" alt="{esc(f[1])}" loading="lazy">'
         f'<p>{esc(f[1])}</p></div>' for f in figs)
     return f'  <h2>Креслення</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
+
+
+LAB_CSS = """<style>
+  .labs-strip { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem;
+    margin: 0 0 1.4rem; padding: .5rem .7rem; border: 1px solid var(--line);
+    border-radius: 8px; background: var(--panel); }
+  .labs-strip .lead { font-family: var(--mono); font-size: .72rem;
+    letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2);
+    margin-right: .2rem; }
+  .labs-strip a { font-size: .84rem; text-decoration: none; color: var(--ink-2);
+    padding: .2rem .55rem; border-radius: 6px; border: 1px solid transparent; }
+  .labs-strip a:hover { color: var(--ink); background: var(--panel-2);
+    border-color: var(--line); }
+  .labs-strip a.here { color: var(--ink); background: var(--panel-2);
+    border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+    font-weight: 600; }
+</style>"""
+
+
+def labs_strip_html(active=None):
+    """Смужка переходу між лабораторіями.
+
+    Іван 31.07: «дуже тяжко знайти лабораторію, а лабораторія — найцікавіше».
+    Раніше в лабораторію вів один лінк з картки системи, і з однієї
+    лабораторії не було видно решти. Тепер вони знають одна про одну.
+    """
+    links = "".join(
+        f'<a class="lab{" here" if l["page"] == active else ""}" '
+        f'href="{SITE_URL}{l["page"]}">{l["emoji"]} {esc(l["short"])}</a>'
+        for l in LABS)
+    return (LAB_CSS + '\n  <nav class="labs-strip" aria-label="Лабораторії">'
+            '<span class="lead">Лабораторії</span>' + links + '</nav>\n')
+
+
+def _sys_label(key):
+    """Назва системи для мітки: реєстр систем ширший за старий SYS_LABEL."""
+    reg = next((c for c in SYSTEMS_REG if c["key"] == key), None)
+    return ((reg or {}).get("label") or SYS_LABEL.get(key, key)).lower()
+
+
+def labs_cards_html():
+    """Блок лабораторій на головній — з поясненням, що там можна покрутити."""
+    out = []
+    for l in LABS:
+        subs = "".join(
+            f'<a href="{SITE_URL}{href}">{esc(label)}</a>'
+            + (" · " if i < len(l["sub"]) - 1 else "")
+            for i, (label, href) in enumerate(l["sub"]))
+        sub_row = f'      <div class="row"><span class="links">{subs}</span></div>\n' if subs else ""
+        out.append(
+            f'    <div class="card lab-card">\n'
+            f'      <div class="row"><h3><a href="{SITE_URL}{l["page"]}">'
+            f'{l["emoji"]} {esc(l["title"])}</a></h3>'
+            f'<span class="pill">{esc(_sys_label(l["system"]))}</span></div>\n'
+            f'      <p>{esc(l["knob"])}</p>\n{sub_row}'
+            f'    </div>')
+    return "\n".join(out)
 
 
 def assembly_html():
@@ -1896,6 +1954,7 @@ def build():
             f'<span class="meta">{pct}% · {" · ".join(meta) or "—"}</span></div>\n'
             f'    </div>')
     index = index.replace("{{COMPONENT_CARDS}}", "\n".join(cards))
+    index = index.replace("{{LABS}}", labs_cards_html())
 
     # task summary strip (full board lives on tasks.html)
     summary = []
@@ -2165,6 +2224,17 @@ def build():
              "solar.html": solar_page,
              "solar_lab.html": slab, "cables_lab.html": clab,
              "enclosure_lab.html": elab, **sys_pages}
+    # Смужка «Лабораторії» на кожну лабораторну сторінку. Вставляємо тут, а не
+    # в кожен шаблон окремо: інакше нова лабораторія знову виявиться загубленою.
+    lab_pages = {l["page"]: l["page"] for l in LABS}
+    lab_pages.update({c["key"] + ".html": "lights_lab.html" for c in all_circ})
+    for name, active in lab_pages.items():
+        if name not in pages or "labs-strip" in pages[name]:
+            continue
+        head, sep, tail = pages[name].partition("</h1>")
+        if sep:
+            pages[name] = head + sep + "\n" + labs_strip_html(active) + tail
+
     for name, html in pages.items():
         (OUT / name).write_text(html)
     (OUT / "knowledge.jsonld").write_text(json.dumps(kg, ensure_ascii=False, indent=1))

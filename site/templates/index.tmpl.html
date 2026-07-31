@@ -221,12 +221,12 @@
 <div class="topbar"><div class="row">
   <a class="brand" href="https://hero-armor.github.io/">Hero <b>Armor</b></a>
   <nav class="topnav">
-    <a href="#systems">системаи</a>
+    <a href="#systems">системи</a>
     <a href="https://claude.ai/code/artifact/8bd7dba2-027a-472a-9bb3-3d7a495a9ec1">задачі</a>
     <a href="#bom">закупівля</a>
     <a href="#orders">замовлення</a>
     <a href="https://hero-armor.github.io/audio.html">аудіо</a>
-    <a href="https://claude.ai/code/artifact/822f630a-a99b-4f3b-98cf-bef6e216dced">лабораторія</a>
+    <a href="#labs">лабораторії</a>
     <a href="https://claude.ai/code/artifact/5ca1ebd7-1356-4457-8362-812703167859">операції</a>
   </nav>
   <button id="themeBtn" title="Тема: світла / темна" aria-label="Перемкнути тему">◐</button>
@@ -237,7 +237,7 @@
     <p class="eyebrow">Burning Man 2026 · <a href="https://hero-armor.com/">hero-armor.com</a> · інженерний хаб</p>
     <h1>Hero Armor — воїн-захисник. Памʼяті Захара Захарова</h1>
     <p class="sub">Меморіальна інсталяція для Burning Man 2026 — історія на
-    <a href="https://hero-armor.com/">hero-armor.com</a>. Тут — інженерія: чотири системаи,
+    <a href="https://hero-armor.com/">hero-armor.com</a>. Тут — інженерія: чотири системи,
     спільна закупівля, задачі й логістика. Все генерується з файлової бази
     <span style="font-family:var(--mono)">data/</span> — цифри рахує модель, руками HTML ніхто не править.</p>
   </header>
@@ -263,6 +263,15 @@
     <h2>Системи</h2>
     <div class="cards">
 {{COMPONENT_CARDS}}
+    </div>
+  </section>
+
+  <section class="reveal" id="labs">
+    <h2>Лабораторії</h2>
+    <p class="sub">Живі калькулятори: крутиш ручку — модель перераховує систему
+    при тобі. Тут перевіряють рішення до того, як щось купувати й паяти.</p>
+    <div class="cards">
+{{LABS}}
     </div>
   </section>
 
