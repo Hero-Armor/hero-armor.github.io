@@ -40,7 +40,7 @@ generated: { by: "process:site-build" }
 
 * [Звести бюджет світла: заявлені ~170–220 Вт LED проти панелі 100 Вт — перерахувати (сайт сам радить зменшити стрічки)](/tasks/zvesty-biudzhet-svitla-zaiavleni-170-220-vt-led-proty-paneli.md) — готово
 * [Обрати і замовити неон WS2811 під 12 В](/tasks/obraty-i-zamovyty-neon-ws2811-pid-12-v.md) — готово
-* [Перевірити ватметром voltage-following на Gardencoin](/tasks/pereviryty-vatmetrom-voltage-following-na-gardencoin.md) — чекаємо
+* [Стенд ламп прожектора: три лампи на заниженні напруги](/tasks/stend-lamp-prozhektora-try-lampy-na-zanyzhenni-napruhy.md) — в роботі
 * [Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down](/tasks/vyrishyty-12-v-mr16-na-shyni-24-v-cherez-shim-chy-step-down.md) — готово
 * [Уточнити в архітектора: сходи ×24 в нашу лінію чи автономні сонячні](/tasks/utochnyty-v-arkhitektora-skhody-24-v-nashu-liniiu-chy-avtono.md) — чекаємо
 * [Звірити статуси закупівлі світла з інвойсом](/tasks/zviryty-statusy-zakupivli-svitla-z-invoisom.md) — чекаємо

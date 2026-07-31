@@ -33,6 +33,7 @@ sys.path.insert(0, str(LIGHTS / "model"))
 sys.path.insert(0, str(SOLAR / "model"))
 import audio_node_model as m  # noqa: E402  (reads audio/data/*)
 import lights_node_model as lm  # noqa: E402  (reads lights/data/*)
+import lamp_bench as lb  # noqa: E402  (стенд ламп прожектора, lights/data/lamp_bench.json)
 import power_node_model as pw
 sys.path.insert(0, str(ROOT / "enclosure" / "model"))
 import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
@@ -905,6 +906,110 @@ def build():
         f'({100*by_grp["g1"]/wh_light:.0f}%), у міді згорає {by_grp["loss"]:.0f} Wh. '
         f'Просадка в таблиці порахована на наявному кабелі — посунь повзунки калібру, '
         f'щоб побачити, що дає товща мідь.')
+
+    # ---- стенд ламп прожектора (дослід усередині світлової лабораторії) ----
+    bst = lb.status()
+    b_rank = lb.ranking()
+    b_lead = next((r for r in b_rank if r["cls"] == "good"), None)
+    b_crit = lb.CRIT
+    lead_group_w = None
+    if b_lead:
+        at12 = next((c for c in lb.curve(b_lead["id"]) if abs(c["v"] - 12) < 0.6), None)
+        lead_group_w = at12["group_w"] if at12 else None
+
+    llab = llab.replace("{{BENCH_TILES}}", "\n".join([
+        tile("Заміри зроблено", f'{bst["measurements"]}', f'з {bst["expected"]}',
+             "три лампи × сім напруг" if not bst["measurements"] else
+             "решта точок ще попереду",
+             "good" if bst["measurements"] >= bst["expected"] else "warn"),
+        tile("Лідер", b_lead["name"].split()[0] if b_lead else "—",
+             f'n={b_lead["n_power"]:.2f}' if b_lead else "",
+             "лампа, що найкраще міняє світло на ватти" if b_lead
+             else "визначиться після замірів"),
+        tile("Група 8 прожекторів на 12 В",
+             f"{lead_group_w:.0f}" if lead_group_w else "—", "Вт",
+             f'ціль — тримати групу під {b_crit["target_group_w"]} Вт',
+             "good" if lead_group_w and lead_group_w <= b_crit["target_group_w"] else ""),
+        tile("Межа 12 В-виходу станції", f'{b_crit["dc_port_w"]}', "Вт",
+             "стеля EcoFlow — 10 А; усе, що вище, треба знімати заниженням", "warn"),
+    ]))
+
+    b_rows = []
+    for r in b_rank:
+        n_p = f'{r["n_power"]:.2f}' if r["n_power"] is not None else "—"
+        n_l = f'{r["n_lux"]:.2f}' if r["n_lux"] is not None else "—"
+        col = {"good": "var(--good)", "warn": "var(--warn)",
+               "crit": "var(--crit)", "wait": "var(--ink-2)"}[r["cls"]]
+        b_rows.append(
+            f'      <tr><td>{esc(r["name"])}</td><td>{esc(r["role"])}</td>'
+            f'<td class="num">{r["cct"]}K</td><td class="num">{n_p}</td>'
+            f'<td class="num">{n_l}</td>'
+            f'<td class="num">{f"{r["v_off"]:.1f} В" if r["v_off"] else "—"}</td>'
+            f'<td style="color:{col}">{esc(r["verdict"])}</td></tr>')
+    llab = llab.replace("{{BENCH_LAMPS}}", "\n".join(b_rows))
+    llab = llab.replace("{{BENCH_CAPTION}}", esc(
+        f'Показник n рахується як нахил прямої в логарифмах — по всіх точках, де лампа ще '
+        f'світила. Слідує за напругою — від {b_crit["exp_vf"]}; тримає потужність — до '
+        f'{b_crit["exp_cc"]}. ' + (
+            "Даних поки нема: лампи в Івана, стенд зібраний, чекаємо перший прогін."
+            if not bst["measurements"] else
+            f'Знято {bst["measurements"]} точок з {bst["expected"]}.')))
+
+    # Криві двома панелями: ватти і яскравість, обидві у відсотках від 12 В —
+    # так лампи різної потужності лягають в один масштаб. Поки замірів нема,
+    # замість графіка показуємо сітку напруг, які треба пройти.
+    if bst["measurements"]:
+        COLS = ["var(--accent)", "var(--signal)", "var(--good)"]
+        panels = []
+        for key, title in (("w_pct", "Скільки бере, % від 12 В"),
+                           ("lux_pct", "Скільки світить, % від 12 В")):
+            vs = [p["v"] for r in b_rank for p in lb.curve(r["id"])]
+            vmin, vmax = min(vs), max(vs)
+            W, H, PAD = 430, 240, 34
+            sx = lambda v: PAD + (v - vmin) / (vmax - vmin) * (W - 2 * PAD)
+            sy = lambda p: H - PAD - min(p, 120) / 120 * (H - 2 * PAD)
+            g = [f'<line x1="{PAD}" y1="{sy(y)}" x2="{W-PAD}" y2="{sy(y)}" '
+                 f'stroke="var(--line)"/><text x="{PAD-6}" y="{sy(y)+4}" text-anchor="end" '
+                 f'font-size="10" fill="var(--ink-2)">{y}%</text>' for y in (0, 50, 100)]
+            for i, r in enumerate(b_rank):
+                pts = [(sx(c["v"]), sy(c[key])) for c in lb.curve(r["id"])
+                       if c.get(key) is not None]
+                if not pts:
+                    continue
+                d = " ".join(f'{x:.1f},{y:.1f}' for x, y in pts)
+                g.append(f'<polyline points="{d}" fill="none" stroke="{COLS[i % 3]}" '
+                         f'stroke-width="2"/>')
+                g += [f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="{COLS[i % 3]}"/>'
+                      for x, y in pts]
+            for v in sorted({round(p, 1) for p in vs}):
+                g.append(f'<text x="{sx(v):.1f}" y="{H-PAD+16}" text-anchor="middle" '
+                         f'font-size="10" fill="var(--ink-2)">{v:g}</text>')
+            g.append(f'<text x="{PAD}" y="18" font-size="12" fill="var(--ink)">{esc(title)}</text>')
+            g.append(f'<text x="{W-PAD}" y="{H-6}" text-anchor="end" font-size="10" '
+                     f'fill="var(--ink-2)">напруга на лампі, В</text>')
+            panels.append(f'<svg viewBox="0 0 {W} {H}" style="width:100%;max-width:{W}px">'
+                          + "".join(g) + "</svg>")
+        legend = " · ".join(
+            f'<span style="color:{COLS[i % 3]}">■</span> {esc(r["name"])}'
+            for i, r in enumerate(b_rank))
+        llab = llab.replace("{{BENCH_CHART}}",
+            '<div class="fig" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.2rem">'
+            + "".join(panels) + f'</div><p class="fig-cap">{legend}</p>')
+    else:
+        grid = ", ".join(f"{v:g}" for v in lb.B["points_v"])
+        llab = llab.replace("{{BENCH_CHART}}",
+            f'<p class="fig-cap" style="margin-top:1rem">Графіки зʼявляться після першого '
+            f'прогону. Сітка напруг: {grid} В — на кожній записуємо струм і люкси.</p>')
+
+    llab = llab.replace("{{BENCH_RIG}}", "".join(
+        f'<p style="margin:0 0 .3rem"><b>{esc(k)}:</b> {esc(str(v))}</p>'
+        for k, v in (("Джерело", lb.B["rig"]["supply"]),
+                     ("Корпус", lb.B["rig"]["fixture"]),
+                     ("Яскравість", lb.B["rig"]["meter"]),
+                     ("Геометрія", lb.B["rig"]["geometry"]))))
+    llab = llab.replace("{{BENCH_PROTOCOL}}", "".join(
+        f'<p style="margin:0 0 .3rem">{i}. {esc(s)}</p>'
+        for i, s in enumerate(lb.B["protocol"], 1)))
 
     # ================= cables / installation page =================
     tree_op = lm.cable_tree_operating()
