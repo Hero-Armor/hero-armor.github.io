@@ -92,5 +92,5 @@ generated: { by: "process:site-build" }
 * [Заглушки неон 8×16 мм — набір 60 шт](/bom/zahlushky-neon-8-16-mm-nabir-60-sht.md) — $11.99, купити
 * [Заглушки неон 10 мм (SMD5050) — набір 200 шт](/bom/zahlushky-neon-10-mm-smd5050-nabir-200-sht.md) — $11.99, купити
 * [Заглушки 12 мм з герметиком — набір 50 шт](/bom/zahlushky-12-mm-z-hermetykom-nabir-50-sht.md) — $13.99, купити
-* [Термоусадка з клеєм 3:1, набір 240 шт (дрібні розміри)](/bom/termousadka-z-kleiem-3-1-nabir-240-sht-dribni-rozmiry.md) — $13.99, купити
-* [Термоусадка з клеєм, ВЕЛИКІ розміри (на саму трубку неону)](/bom/termousadka-z-kleiem-velyki-rozmiry-na-samu-trubku-neonu.md) — $17.99, купити
+* [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити
+* [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити

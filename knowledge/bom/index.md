@@ -63,17 +63,16 @@
 * [Клемники гвинтові 5.08мм 2-pin](klemnyky-hvyntovi-5-08mm-2-pin.md) - $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](hnizda-khedery-2-54mm-mama-kyt.md) - $8, купити
 * [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) - —, купити
-* [Екранований кабель ЦАП → амп (короткий)](ekranovanyi-kabel-tsap-amp-korotkyi.md) - $14/25ft, купити
+* [Екранований кабель ЦАП → амп (0.3 м)](ekranovanyi-kabel-tsap-amp-0-3-m.md) - $4 або $0, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) - $10, купити
 * [Заглушки неон 6×12 мм — набір (глухі + з отвором)](zahlushky-neon-6-12-mm-nabir-hlukhi-z-otvorom.md) - $13.59, купити
 * [Заглушки неон 6×12 мм — альтернатива iNextStation](zahlushky-neon-6-12-mm-alternatyva-inextstation.md) - $11.99, купити
 * [Заглушки неон 8×16 мм — набір 60 шт](zahlushky-neon-8-16-mm-nabir-60-sht.md) - $11.99, купити
 * [Заглушки неон 10 мм (SMD5050) — набір 200 шт](zahlushky-neon-10-mm-smd5050-nabir-200-sht.md) - $11.99, купити
 * [Заглушки 12 мм з герметиком — набір 50 шт](zahlushky-12-mm-z-hermetykom-nabir-50-sht.md) - $13.99, купити
-* [Термоусадка з клеєм 3:1, набір 240 шт (дрібні розміри)](termousadka-z-kleiem-3-1-nabir-240-sht-dribni-rozmiry.md) - $13.99, купити
-* [Термоусадка з клеєм, ВЕЛИКІ розміри (на саму трубку неону)](termousadka-z-kleiem-velyki-rozmiry-na-samu-trubku-neonu.md) - $17.99, купити
+* [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
+* [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
 * [Гермовводи PG7–PG16, набір 25 шт](hermovvody-pg7-pg16-nabir-25-sht.md) - $8, купити
-* [Наконечники з термоусадкою 22-16 AWG (виделка #10)](nakonechnyky-z-termousadkoiu-22-16-awg-vydelka-10.md) - $10, купити
-* [Термоусадка з клеєм 3:1, набір 240 шт](termousadka-z-kleiem-3-1-nabir-240-sht.md) - $14, купити
+* [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
 * [Джампери Dupont мама-мама 20 см](dzhampery-dupont-mama-mama-20-sm.md) - $4, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](stiazhky-neilonovi-uv-stiiki-400-sht.md) - $7, купити

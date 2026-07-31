@@ -23,6 +23,7 @@ generated: { by: "process:site-build" }
 * [Роз'ємні місця: XT60 на вході, клемники на платі, лопатки на динаміку](/decisions/roziemni-mistsia-xt60-na-vkhodi-klemnyky-na-plati-lopatky-na.md)
 * [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](/decisions/korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
 * [Коробку аудіо не вентилюємо — рахунок каже, що нічого не гріється](/decisions/korobku-audio-ne-ventyliuiemo-rakhunok-kazhe-shcho-nichoho-n.md)
+* [До динаміка паяємось, а не тиснемо «мами» на пелюстки](/decisions/do-dynamika-paiaiemos-a-ne-tysnemo-mamy-na-peliustky.md)
 
 # Задачі
 
@@ -33,8 +34,8 @@ generated: { by: "process:site-build" }
 * [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — чекаємо
 * [Звірити замовлену коробку по семи вимогах (пластик, 165×105×55, вводи, радіатор, вентиляція, доступ до USB)](/tasks/zviryty-zamovlenu-korobku-po-semy-vymohakh-plastyk-165-105-5.md) — чекаємо
 * [Зміряти лінійкою модулі й рознесення пінів ESP32, коли приїде посилка](/tasks/zmiriaty-liniikoiu-moduli-i-roznesennia-piniv-esp32-koly-pry.md) — чекаємо
-* [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](/tasks/zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) — чекаємо
-* [Докупити монтажну дрібницю: гермовводи, наконечники, термоусадка, джампери, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-nakonechnyky-termou.md) — до роботи
+* [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](/tasks/zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) — готово
+* [Докупити монтажну дрібницю: гермовводи, термоусадка, джампери, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-termousadka-dzhampe.md) — до роботи
 
 # Закупівля
 
@@ -59,10 +60,9 @@ generated: { by: "process:site-build" }
 * [Клемники гвинтові 5.08мм 2-pin](/bom/klemnyky-hvyntovi-5-08mm-2-pin.md) — $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](/bom/hnizda-khedery-2-54mm-mama-kyt.md) — $8, купити
 * [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — —, купити
-* [Екранований кабель ЦАП → амп (короткий)](/bom/ekranovanyi-kabel-tsap-amp-korotkyi.md) — $14/25ft, купити
+* [Екранований кабель ЦАП → амп (0.3 м)](/bom/ekranovanyi-kabel-tsap-amp-0-3-m.md) — $4 або $0, купити
 * [Гермовводи PG7–PG16, набір 25 шт](/bom/hermovvody-pg7-pg16-nabir-25-sht.md) — $8, купити
-* [Наконечники з термоусадкою 22-16 AWG (виделка #10)](/bom/nakonechnyky-z-termousadkoiu-22-16-awg-vydelka-10.md) — $10, купити
-* [Термоусадка з клеєм 3:1, набір 240 шт](/bom/termousadka-z-kleiem-3-1-nabir-240-sht.md) — $14, купити
+* [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити
 * [Джампери Dupont мама-мама 20 см](/bom/dzhampery-dupont-mama-mama-20-sm.md) — $4, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](/bom/stiazhky-neilonovi-uv-stiiki-400-sht.md) — $7, купити
 

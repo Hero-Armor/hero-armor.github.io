@@ -57,3 +57,4 @@
 * [Роз'ємні місця: XT60 на вході, клемники на платі, лопатки на динаміку](roziemni-mistsia-xt60-na-vkhodi-klemnyky-na-plati-lopatky-na.md)
 * [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
 * [Коробку аудіо не вентилюємо — рахунок каже, що нічого не гріється](korobku-audio-ne-ventyliuiemo-rakhunok-kazhe-shcho-nichoho-n.md)
+* [До динаміка паяємось, а не тиснемо «мами» на пелюстки](do-dynamika-paiaiemos-a-ne-tysnemo-mamy-na-peliustky.md)
