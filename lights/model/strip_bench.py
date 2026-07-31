@@ -196,6 +196,37 @@ def verdict():
             f'12-вольтовий вихід тримає.', "good")
 
 
+def effect_ranking():
+    """Ефекти від найощадливішого до найненажерливішого, з перерахунком у ватти.
+
+    Профіль знятий з самого контролера і дає ЧАСТКУ: скільки пікселів світиться
+    в еквіваленті повного білого. Множимо її на ватти суцільного білого — і
+    кожен режим одразу видно в тих одиницях, у яких рахується ніч. Поки Вт/м
+    беруться з прикидки, ватти тут теж прикидка; заміряємо — цифри стануть
+    твердими самі, формула не змінюється."""
+    prof = B.get("effect_profile")
+    if not prof:
+        return []
+    full_w = source()[1] * TOTAL_M
+    out = []
+    for e in prof["effects"]:
+        out.append({**e,
+                    "avg_w": full_w * e["avg_pct"] / 100,
+                    "peak_w": full_w * e["peak_pct"] / 100,
+                    "night_wh": full_w * e["avg_pct"] / 100 * CRIT["night_h"]})
+    return sorted(out, key=lambda e: e["avg_pct"])
+
+
+def duty_from_profile(fx=187):
+    """Частка світіння робочого ефекту — те, що в моделі поки стоїть як 0.45."""
+    prof = B.get("effect_profile")
+    if not prof:
+        return None
+    e = next((x for x in prof["effects"] if x["fx"] == fx), None)
+    return {"avg": e["avg_pct"] / 100, "peak": e["peak_pct"] / 100,
+            "name": e["name"]} if e else None
+
+
 def branch_checks():
     """Чотири перевірки гілки 1.20 м з результатами, якщо вони вже є."""
     done = {r["check"]: r for r in B["branch_results"]}

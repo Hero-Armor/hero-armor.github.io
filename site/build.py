@@ -1222,6 +1222,38 @@ def build():
         f'<p style="margin:0 0 .3rem">{i}. {esc(s)}</p>'
         for i, s in enumerate(sb.B["protocol"], 1)))
 
+    # Профіль режимів: контролер сам каже, яку частку стрічки палить кожен ефект.
+    s_prof = sb.B.get("effect_profile", {})
+    s_fx = sb.effect_ranking()
+    s_work = sb.duty_from_profile(187)
+    llab = llab.replace("{{STRIP_FX_WHY}}", esc(
+        f'{s_prof.get("why", "")} {s_prof.get("how", "")}'))
+    fx_rows = []
+    for i, e in enumerate(s_fx):
+        lead = ' style="color:var(--good)"' if i == 0 else (
+            ' style="color:var(--crit)"' if i == len(s_fx) - 1 else "")
+        fx_rows.append(
+            f'      <tr><td{lead}>{esc(e["name"])}'
+            + (' <span style="color:var(--ink-2)">← робочий</span>'
+               if e["fx"] == 187 else "")
+            + f'</td><td class="num">{e["avg_pct"]:.1f}%</td>'
+            f'<td class="num">{e["peak_pct"]:.1f}%</td>'
+            f'<td class="num">{e["avg_w"]:.1f} Вт</td>'
+            f'<td class="num">{e["peak_w"]:.1f} Вт</td>'
+            f'<td class="num">{e["night_wh"]:.0f}</td></tr>')
+    llab = llab.replace("{{STRIP_FX_ROWS}}", "\n".join(fx_rows))
+    llab = llab.replace("{{STRIP_FX_CAPTION}}", esc(
+        f'Відсоток — це частка стрічки, що світиться в еквіваленті повного білого; '
+        f'ватти — та сама частка, помножена на {sb.source()[1]:.1f} Вт/м × '
+        f'{sb.TOTAL_M:.2f} м. Модель світла досі закладає '
+        f'{sb.CRIT["duty_model"]*100:.0f}% на анімацію — робочий «{s_work["name"]}» '
+        f'бере {s_work["avg"]*100:.1f}%, тобто у '
+        f'{sb.CRIT["duty_model"]/s_work["avg"]:.0f} разів менше, і навіть найважчий '
+        f'з десяти лишається під закладеним. Знято на гілці '
+        f'{s_prof.get("branch_px")} пікселів; на іншій довжині частка трохи поїде — '
+        f'біжучий фронт масштабується разом із сегментом. '
+        f'{sb.B["controller"]["estimate_note"]}'))
+
     llab = llab.replace("{{STRIP_BRANCH_WHY}}", esc(sb.B["branch"]["why"]))
     b_rows = []
     for i, c in enumerate(sb.branch_checks(), 1):
