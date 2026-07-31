@@ -34,7 +34,7 @@
 * [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - —, купити
 * [Щит-бокс із тримачами запобіжників](shchyt-boks-iz-trymachamy-zapobizhnykiv.md) - —, купити
 * [Запобіжники ATO/ATC, набір](zapobizhnyky-ato-atc-nabir.md) - —, купити
-* [Реле на групи 12 В, 30 А](rele-na-hrupy-12-v-30-a.md) - —, купити
+* [Реле на групи 12 В, 30 А](rele-na-hrupy-12-v-30-a.md) - $12.15 за 5 шт, купити
 * [Гермокоробка IP66 для щита і реле](hermokorobka-ip66-dlia-shchyta-i-rele.md) - —, купити
 * [Гермокоробки IP65 під диммер і WLED](hermokorobky-ip65-pid-dymmer-i-wled.md) - —, купити
 * [Гермороз'єми IP68 (швидкознімні)](hermoroziemy-ip68-shvydkoznimni.md) - —, купити
@@ -66,10 +66,15 @@
 * [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) - —, купити
 * [Екранований кабель ЦАП → амп (0.3 м)](ekranovanyi-kabel-tsap-amp-0-3-m.md) - $4 або $0, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) - $10, купити
-* [Заглушки неон 8×16 мм — набір 60 шт](zahlushky-neon-8-16-mm-nabir-60-sht.md) - $11.99, купити
-* [Заглушки 12 мм з герметиком — набір 50 шт](zahlushky-12-mm-z-hermetykom-nabir-50-sht.md) - $13.99, купити
+* [Заглушки неон 8×16 З ОТВОРОМ під дріт — набір 60 шт](zahlushky-neon-8-16-z-otvorom-pid-drit-nabir-60-sht.md) - $11.99, купити
+* [Заглушки неон 8×16 ГЛУХІ (без отвору) — набір 60 шт](zahlushky-neon-8-16-hlukhi-bez-otvoru-nabir-60-sht.md) - $11.99, купити
+* [Кліпси кріплення неону 8×16 з саморізами, 20 шт](klipsy-kriplennia-neonu-8-16-z-samorizamy-20-sht.md) - $13.19 за набір, купити
+* [Дріт 3-жильний 22AWG, 20 м — перемички між рукавами](drit-3-zhylnyi-22awg-20-m-peremychky-mizh-rukavamy.md) - $12.58, купити
+* [Припій з каніфоллю + флюс-паста](prypii-z-kanifolliu-flius-pasta.md) - $8.99, купити
+* [Флюс-гель + обплітка для розпаювання](flius-hel-obplitka-dlia-rozpaiuvannia.md) - $8.99, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
-* [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
+* [Таймер-реле 12 В — чим рвати живлення стрічки на день](taimer-rele-12-v-chym-rvaty-zhyvlennia-strichky-na-den.md) - $13.49, купити
+* [Підсилювач сигналу SP901E (WS2811/WS2812)](pidsyliuvach-syhnalu-sp901e-ws2811-ws2812.md) - $19.99, купити
 * [Гермовводи PG7–PG16, набір 25 шт](hermovvody-pg7-pg16-nabir-25-sht.md) - $8, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
 * [Джампери Dupont мама-мама 20 см](dzhampery-dupont-mama-mama-20-sm.md) - $4, купити
