@@ -2062,23 +2062,19 @@ def build_docs(out):
     """GitHub Pages output: artifact/site URLs -> relative links."""
     docs = ROOT / "docs"
     docs.mkdir(exist_ok=True)
+    # Список сторінок беремо з того, що реально зібралось, а не руками: інакше
+    # нова сторінка живе локально, лінк на неї стоїть — а на Pages 404
+    # (саме так і сталося зі сторінками по типах світла 31.07).
+    names = sorted(p.name for p in out.glob("*.html"))
     swaps = [(ART_MAIN, "index.html"), (ART_LAB, "lab.html"), (ART_OPS, "ops.html"),
              (ART_TASKS, "tasks.html"),
-             (SITE_URL + "audio.html", "audio.html"), (SITE_URL + "tasks.html", "tasks.html"),
-             (SITE_URL + "solar.html", "solar.html"),
              (LIGHTS_LAB_URL, "lights_lab.html"),
-             (SITE_URL + "cables.html", "cables.html"),
              (SOLAR_LAB_URL, "solar_lab.html"),
              (CABLES_LAB_URL, "cables_lab.html"),
-             (ENCLOSURE_LAB_URL, "enclosure_lab.html"),
-             (SITE_URL + "enclosure.html", "enclosure.html"),
-             (SITE_URL + "audio.html", "audio.html"),
-             (SITE_URL + "lights.html", "lights.html"), (SITE_URL + "armor.html", "armor.html"),
-             ('href="' + SITE_URL + '"', 'href="index.html"')]
-    for name in ("index.html", "audio.html", "lab.html", "ops.html", "tasks.html",
-                 "solar.html", "solar_lab.html", "enclosure_lab.html", "enclosure.html",
-                 "lights.html", "lights_lab.html", "cables.html", "cables_lab.html",
-                 "armor.html"):
+             (ENCLOSURE_LAB_URL, "enclosure_lab.html")]
+    swaps += [(SITE_URL + n, n) for n in names]
+    swaps += [('href="' + SITE_URL + '"', 'href="index.html"')]
+    for name in names:
         html = (out / name).read_text()
         for url, rel in swaps:
             html = html.replace(url, rel)
