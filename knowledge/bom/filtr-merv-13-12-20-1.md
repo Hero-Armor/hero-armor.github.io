@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 Фінішна ступінь, три штуки на тиждень
 
-Система: [enclosure](/systems/enclosure.md) · статус: **купити** · ціна $12 · к-сть 3
+Система: [Ящик станції](/systems/enclosure.md) · статус: **купити** · ціна $12 · к-сть 3

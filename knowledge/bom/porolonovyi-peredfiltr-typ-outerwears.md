@@ -12,4 +12,4 @@ generated: { by: "process:site-build" }
 
 Груба ступінь, миється щоранку
 
-Система: [enclosure](/systems/enclosure.md) · статус: **купити** · ціна $30 · к-сть 1
+Система: [Ящик станції](/systems/enclosure.md) · статус: **купити** · ціна $30 · к-сть 1

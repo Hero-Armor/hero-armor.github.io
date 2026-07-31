@@ -9,7 +9,7 @@ decision_zone: "ящик"
 verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [enclosure](/systems/enclosure.md) · вирішив: **Іван** (ящик)
+Система: [Ящик станції](/systems/enclosure.md) · вирішив: **Іван** (ящик)
 
 # Чому
 

@@ -12,6 +12,8 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](/decisions/nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
+* [Габаритні вогні на стійках прожекторів — скасовано](/decisions/habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
 * [Окремі сторінки-калькулятори по типах світла](/decisions/okremi-storinky-kalkuliatory-po-typakh-svitla.md)
 * [Стрічка — це вісім рукавів, а не промені плюс окреме коло](/decisions/strichka-tse-visim-rukaviv-a-ne-promeni-plius-okreme-kolo.md)
 * [Регулюємо прожектори ШІМ-диммером, а не заниженням напруги](/decisions/rehuliuiemo-prozhektory-shim-dymmerom-a-ne-zanyzhenniam-napr.md)
@@ -45,6 +47,9 @@ generated: { by: "process:site-build" }
 
 # Задачі
 
+* [Замовити врізні вогні в торець подіуму — 24 шт класу 0.6 Вт](/tasks/zamovyty-vrizni-vohni-v-torets-podiumu-24-sht-klasu-0-6-vt.md) — до роботи
+* [Звірити з Володимиром посадковий отвір під обраний врізний вогник](/tasks/zviryty-z-volodymyrom-posadkovyi-otvir-pid-obranyi-vriznyi-v.md) — чекаємо
+* [Заміряти ватметром реальне споживання врізного вогника](/tasks/zamiriaty-vatmetrom-realne-spozhyvannia-vriznoho-vohnyka.md) — чекаємо
 * [Перевірити диммери SUPERNIGHT після приїзду: мерехтіння і нагрів](/tasks/pereviryty-dymmery-supernight-pislia-pryizdu-merekhtinnia-i-.md) — чекаємо
 * [Замовити ШІМ-диммери SUPERNIGHT 30 А — набір 2 шт](/tasks/zamovyty-shim-dymmery-supernight-30-a-nabir-2-sht.md) — готово
 * [Замовити Luxrite MR16 4000K — 10 шт у прожектори](/tasks/zamovyty-luxrite-mr16-4000k-10-sht-u-prozhektory.md) — до роботи
@@ -52,7 +57,7 @@ generated: { by: "process:site-build" }
 * [Обрати і замовити неон WS2811 під 12 В](/tasks/obraty-i-zamovyty-neon-ws2811-pid-12-v.md) — готово
 * [Стенд ламп прожектора: три лампи на заниженні напруги](/tasks/stend-lamp-prozhektora-try-lampy-na-zanyzhenni-napruhy.md) — готово
 * [Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down](/tasks/vyrishyty-12-v-mr16-na-shyni-24-v-cherez-shim-chy-step-down.md) — готово
-* [Уточнити в архітектора: сходи ×24 в нашу лінію чи автономні сонячні](/tasks/utochnyty-v-arkhitektora-skhody-24-v-nashu-liniiu-chy-avtono.md) — чекаємо
+* [Вирішити: врізні вогні торця в нашу лінію чи автономні сонячні](/tasks/vyrishyty-vrizni-vohni-tortsia-v-nashu-liniiu-chy-avtonomni-.md) — готово
 * [Звірити статуси закупівлі світла з інвойсом](/tasks/zviryty-statusy-zakupivli-svitla-z-invoisom.md) — чекаємо
 * [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](/tasks/dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) — готово
 * [Заміряти реальні довжини траси після складання подіуму](/tasks/zamiriaty-realni-dovzhyny-trasy-pislia-skladannia-podiumu.md) — чекаємо
@@ -75,8 +80,7 @@ generated: { by: "process:site-build" }
 * [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — —, купити
 * [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — —, купити
 * [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — —, купити
-* [Nilight габаритні вогні 3 Вт](/bom/nilight-habarytni-vohni-3-vt.md) — $18.50, купити
-* [Landscapestation лампи сходів 1 Вт](/bom/landscapestation-lampy-skhodiv-1-vt.md) — $100/уп, купити
+* [Врізні вогні в торець подіуму, 0.6 Вт](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt.md) — $106, купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $47, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $13.99 за 2 шт, купити
@@ -96,8 +100,7 @@ generated: { by: "process:site-build" }
 * [Кабель: WLED → точки живлення стрічки](/bom/kabel-wled-tochky-zhyvlennia-strichky.md) — $33.99 за бухту, купити
 * [Кабель: Коробка → лампи робота](/bom/kabel-korobka-lampy-robota.md) — —, купити
 * [Кабель: Щит → коробка аварійної (Гр.3А)](/bom/kabel-shchyt-korobka-avariinoi-hr-3a.md) — —, купити
-* [Кабель: Коробка → габарити по кутах](/bom/kabel-korobka-habaryty-po-kutakh.md) — —, купити
-* [Кабель: Коробка → лампи сходів](/bom/kabel-korobka-lampy-skhodiv.md) — —, купити
+* [Кабель: Коробка → врізні вогні торця](/bom/kabel-korobka-vrizni-vohni-tortsia.md) — —, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — ~$30, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](/bom/asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) — $10, купити
 * [Заглушки неон 8×16 З ОТВОРОМ під дріт — набір 60 шт](/bom/zahlushky-neon-8-16-z-otvorom-pid-drit-nabir-60-sht.md) — $11.99, купити

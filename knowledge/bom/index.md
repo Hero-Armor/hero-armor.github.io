@@ -3,6 +3,10 @@
 
 # Позиції
 
+* [3M 983-326 світлоповертальна стрічка DOT-C2, 2"×30'](3m-983-326-svitlopovertalna-strichka-dot-c2-2-30.md) - $38.39, купити
+* [3M 983-10 біла світлоповертальна стрічка, 2"×12'](3m-983-10-bila-svitlopovertalna-strichka-2-12.md) - $18.97, купити
+* [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) - $12.25, купити
+* [Маркерний вогник ящика — індикатор 12 мм 12 В](markernyi-vohnyk-iashchyka-indykator-12-mm-12-v.md) - ~$10, купити
 * [ESP32 WROOM-32 DevKit](esp32-wroom-32-devkit.md) - $17/3шт, купити
 * [PCM5102A (GY-PCM5102)](pcm5102a-gy-pcm5102.md) - $12/3шт, купити
 * [microSD SPI модуль](microsd-spi-modul.md) - $7/5шт, купити
@@ -23,8 +27,7 @@
 * [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - —, купити
 * [Gebildet LED 12 мм, металеві](gebildet-led-12-mm-metalevi.md) - —, купити
 * [Gebildet LED 8 мм, металеві](gebildet-led-8-mm-metalevi.md) - —, купити
-* [Nilight габаритні вогні 3 Вт](nilight-habarytni-vohni-3-vt.md) - $18.50, купити
-* [Landscapestation лампи сходів 1 Вт](landscapestation-lampy-skhodiv-1-vt.md) - $100/уп, купити
+* [Врізні вогні в торець подіуму, 0.6 Вт](vrizni-vohni-v-torets-podiumu-0-6-vt.md) - $106, купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $47, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
@@ -48,8 +51,7 @@
 * [Кабель: WLED → точки живлення стрічки](kabel-wled-tochky-zhyvlennia-strichky.md) - $33.99 за бухту, купити
 * [Кабель: Коробка → лампи робота](kabel-korobka-lampy-robota.md) - —, купити
 * [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - —, купити
-* [Кабель: Коробка → габарити по кутах](kabel-korobka-habaryty-po-kutakh.md) - —, купити
-* [Кабель: Коробка → лампи сходів](kabel-korobka-lampy-skhodiv.md) - —, купити
+* [Кабель: Коробка → врізні вогні торця](kabel-korobka-vrizni-vohni-tortsia.md) - —, купити
 * [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - ~$25, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - ~$30, купити
 * [Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)](svitlovidbyvni-strichky-poz-3-4-bili-5-zhovta.md) - ~$20, купити

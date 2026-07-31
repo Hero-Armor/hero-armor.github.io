@@ -1,6 +1,12 @@
 # Задачі
 
 
+* [Замовити врізні вогні в торець подіуму — 24 шт класу 0.6 Вт](zamovyty-vrizni-vohni-v-torets-podiumu-24-sht-klasu-0-6-vt.md) - до роботи
+* [Замовити катафоти і світлоповертальну стрічку на подіум і ящик](zamovyty-katafoty-i-svitlopovertalnu-strichku-na-podium-i-ia.md) - до роботи
+* [Звірити з Володимиром посадковий отвір під обраний врізний вогник](zviryty-z-volodymyrom-posadkovyi-otvir-pid-obranyi-vriznyi-v.md) - чекаємо
+* [Заміряти ватметром реальне споживання врізного вогника](zamiriaty-vatmetrom-realne-spozhyvannia-vriznoho-vohnyka.md) - чекаємо
+* [Поставити маркерний вогник у стінку ящика станції — герметично](postavyty-markernyi-vohnyk-u-stinku-iashchyka-stantsii-herme.md) - чекаємо
+* [Позначити трасу кабелю від ящика до подіуму, щоб вночі не перечепились](poznachyty-trasu-kabeliu-vid-iashchyka-do-podiumu-shchob-vno.md) - чекаємо
 * [Перевірити диммери SUPERNIGHT після приїзду: мерехтіння і нагрів](pereviryty-dymmery-supernight-pislia-pryizdu-merekhtinnia-i-.md) - чекаємо
 * [Замовити ШІМ-диммери SUPERNIGHT 30 А — набір 2 шт](zamovyty-shim-dymmery-supernight-30-a-nabir-2-sht.md) - готово
 * [Замовити Luxrite MR16 4000K — 10 шт у прожектори](zamovyty-luxrite-mr16-4000k-10-sht-u-prozhektory.md) - до роботи
@@ -20,7 +26,7 @@
 * [Обрати і замовити неон WS2811 під 12 В](obraty-i-zamovyty-neon-ws2811-pid-12-v.md) - готово
 * [Стенд ламп прожектора: три лампи на заниженні напруги](stend-lamp-prozhektora-try-lampy-na-zanyzhenni-napruhy.md) - готово
 * [Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down](vyrishyty-12-v-mr16-na-shyni-24-v-cherez-shim-chy-step-down.md) - готово
-* [Уточнити в архітектора: сходи ×24 в нашу лінію чи автономні сонячні](utochnyty-v-arkhitektora-skhody-24-v-nashu-liniiu-chy-avtono.md) - чекаємо
+* [Вирішити: врізні вогні торця в нашу лінію чи автономні сонячні](vyrishyty-vrizni-vohni-tortsia-v-nashu-liniiu-chy-avtonomni-.md) - готово
 * [Звірити статуси закупівлі світла з інвойсом](zviryty-statusy-zakupivli-svitla-z-invoisom.md) - чекаємо
 * [Вирішити скільки станцій і яку модель](vyrishyty-skilky-stantsii-i-iaku-model.md) - чекаємо
 * [Звірити паспорт станції: ліміт сонячного входу](zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) - готово

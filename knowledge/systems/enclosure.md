@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Ящик станції позначаємо: катафоти зовні плюс маркерний вогник у стінці](/decisions/iashchyk-stantsii-poznachaiemo-katafoty-zovni-plius-markerny.md)
 * [Дмемо всередину через фільтр, а не витягуємо назовні](/decisions/dmemo-vseredynu-cherez-filtr-a-ne-vytiahuiemo-nazovni.md)
 * [Фільтрація двоступенева: поролон спереду, MERV 13 фінішем](/decisions/filtratsiia-dvostupeneva-porolon-speredu-merv-13-finishem.md)
 * [Порожній кулер — найгірший варіант, ізоляція тримає тепло станції всередині](/decisions/porozhnii-kuler-naihirshyi-variant-izoliatsiia-trymaie-teplo.md)
@@ -19,8 +20,14 @@ generated: { by: "process:site-build" }
 * [Розмір коробки не відсікає станцію — просто фіксуємо факт](/decisions/rozmir-korobky-ne-vidsikaie-stantsiiu-prosto-fiksuiemo-fakt.md)
 * [Тінь важить більше за вентилятор](/decisions/tin-vazhyt-bilshe-za-ventyliator.md)
 
+# Задачі
+
+* [Поставити маркерний вогник у стінку ящика станції — герметично](/tasks/postavyty-markernyi-vohnyk-u-stinku-iashchyka-stantsii-herme.md) — чекаємо
+
 # Закупівля
 
+* [3M 983-10 біла світлоповертальна стрічка, 2"×12'](/bom/3m-983-10-bila-svitlopovertalna-strichka-2-12.md) — $18.97, купити
+* [Маркерний вогник ящика — індикатор 12 мм 12 В](/bom/markernyi-vohnyk-iashchyka-indykator-12-mm-12-v.md) — ~$10, купити
 * [Кейс під станцію](/bom/keis-pid-stantsiiu.md) — $75-485, купити
 * [Канальний фільтр-бокс AC Infinity 6"](/bom/kanalnyi-filtr-boks-ac-infinity-6.md) — $70, купити
 * [Фільтр MERV 13 12×20×1"](/bom/filtr-merv-13-12-20-1.md) — $12, купити

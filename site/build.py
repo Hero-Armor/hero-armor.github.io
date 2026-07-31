@@ -78,6 +78,10 @@ CABLES_LAB_URL = SITE_URL + "cables_lab.html"
 SYSTEMS = ["project", "audio", "solar", "lights", "armor"]
 SYS_LABEL = {"project": "Проєкт", "audio": "Аудіо", "solar": "Живлення",
               "lights": "Світло", "armor": "Броня"}
+# нові системи з реєстру підхоплюються самі — інакше запис із свіжим system
+# роняє збірку по KeyError (спіймано 31.07 на «enclosure»)
+SYS_LABEL.update({c["key"]: c["label"] for c in SYSTEMS_REG
+                  if c["key"] not in SYS_LABEL})
 COMP_STATUS_LABEL = {"design-ready": "дизайн готовий", "in-design": "проєктується",
                      "build": "збірка", "concept": "концепт"}
 TASK_STATUS = {"doing": "в роботі", "waiting": "чекаємо", "todo": "до роботи", "done": "готово"}
@@ -853,8 +857,8 @@ def build():
              f"декор — {100*by_grp['g2']/wh_light:.0f}% ночі; аварійна {by_grp['g3a']:.0f}, "
              f"прожектори лише {by_grp['g1']:.0f}"),
         tile("Аварійна лінія", f"{l_res['emergency']['g3a']:.0f}", "Вт",
-             f"не регулюється зовсім — {by_grp['g3a']:.0f} Wh за ніч, "
-             f"з них половина це 24 лампи сходів"),
+             f"не регулюється зовсім — {by_grp['g3a']:.0f} Wh за ніч; "
+             f"це 24 врізні вогні торця плюс маркер ящика"),
         tile("Пік системи", f"{sum(l_peak.values()):.0f}", "Вт",
              f"Гр.1 {l_peak['g1']:.0f} · Гр.2 {l_peak['g2']:.0f} · Гр.3А {l_peak['g3a']:.0f}; "
              f"у архітектора {ref['architect_peak_w']} Вт"),
@@ -893,7 +897,7 @@ def build():
     lights = lights.replace("{{FIXTURES_CAPTION}}",
         f'Паспортний пік — усе світло на повну, з урахуванням анімації (світиться біжучий фронт, не вся стрічка): {sum(l_peak.values()):.0f} Вт '
         f'проти {ref["architect_peak_w"]} Вт у розрахунку архітектора (у його Гр.2 сидів ще аудіоплеєр, '
-        f'а сходи в кресленні були 0.48 Вт замість наших 1 Вт). У реальних режимах система бере '
+        f'а габаритні вогні на стійках ми з неї прибрали). У реальних режимах система бере '
         f'{l_eco["draw_w"]:.0f}–{l_burn["draw_w"]:.0f} Вт.')
 
     w_rows = []

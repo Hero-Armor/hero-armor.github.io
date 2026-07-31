@@ -4,7 +4,7 @@ Hero Armor lights node — how much the light actually eats. 12V bus.
 
   g1  прожектори заливки (MR16 через ШІМ-диммер, voltage-following)
   g2  декоративне: лампи робота + адресна «біжуча вода» + контролер WLED
-  g3a аварійна лінія: габаритні вогні + сходи — не регулюється, горить рівно
+  g3a аварійна лінія: врізні вогні торця + маркер ящика — не регулюється, горить рівно
 
 This node is a pure CONSUMER: it knows nothing about batteries, panels or
 autonomy. Generation and storage live in the power node (solar/), which imports
@@ -304,7 +304,7 @@ def main():
     d = demand()
     print(f"\nКомпозитна ніч {d['hours']:.1f} год -> {d['wh_per_day']:.0f} Wh/добу "
           f"(пік споживання {d['max_draw_w']:.0f} W)")
-    for k, label in (("g2", "декор (стрічка+робот)"), ("g3a", "аварійна (габарити+сходи)"),
+    for k, label in (("g2", "декор (стрічка+робот)"), ("g3a", "аварійна (торець+ящик)"),
                      ("g1", "прожектори"), ("loss", "втрати в міді")):
         v = d["by_group"][k]
         print(f"  {label:28} {v:5.0f} Wh  {100*v/d['wh_per_day']:4.1f}%")

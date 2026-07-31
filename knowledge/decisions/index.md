@@ -3,6 +3,11 @@
 
 # Рішення
 
+* [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
+* [Габаритні вогні на стійках прожекторів — скасовано](habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
+* [Пасивна помітність: катафоти і мікропризматична стрічка на подіум](pasyvna-pomitnist-katafoty-i-mikropryzmatychna-strichka-na-p.md)
+* [Ящик станції позначаємо: катафоти зовні плюс маркерний вогник у стінці](iashchyk-stantsii-poznachaiemo-katafoty-zovni-plius-markerny.md)
+* [Правило Burning Man: арт має бути видно за 150 футів, катафоти не заміна світлу](pravylo-burning-man-art-maie-buty-vydno-za-150-futiv-katafot.md)
 * [Окремі сторінки-калькулятори по типах світла](okremi-storinky-kalkuliatory-po-typakh-svitla.md)
 * [Стрічка — це вісім рукавів, а не промені плюс окреме коло](strichka-tse-visim-rukaviv-a-ne-promeni-plius-okreme-kolo.md)
 * [Регулюємо прожектори ШІМ-диммером, а не заниженням напруги](rehuliuiemo-prozhektory-shim-dymmerom-a-ne-zanyzhenniam-napr.md)
