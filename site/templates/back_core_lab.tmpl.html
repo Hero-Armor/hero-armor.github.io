@@ -1,0 +1,367 @@
+<title>Hero Armor — лабораторія ядра на спині</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; letter-spacing: .01em; }
+  .sub { color: var(--ink-2); max-width: 66ch; margin: 0 0 1.4rem; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
+       margin: 2.6rem 0 .9rem; letter-spacing: .02em; }
+  /* Посилання: синій на цьому фоні читався погано (Іван 31.07) —
+     переводимо на акцентний, він однаково живий і в темній темі. */
+  a { color: var(--accent); text-underline-offset: .15em; }
+  a:hover { color: var(--ink); }
+  .nav { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.6rem; }
+  .nav a { display: inline-block; font-family: var(--mono); font-size: .8rem;
+           padding: .5rem .9rem; background: var(--panel); border: 1px solid var(--line);
+           border-radius: 4px; text-decoration: none; color: var(--ink); }
+  .nav a:hover { border-color: var(--accent); }
+  .nav a b { color: var(--accent); }
+  .presets { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.2rem; }
+  .seg { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .7rem; }
+  .seg button {
+    font-family: var(--mono); font-size: .76rem; padding: .45rem .7rem;
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 4px; cursor: pointer;
+  }
+  .seg button:hover { border-color: var(--accent); }
+  .seg button.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+  .sim { display: grid; grid-template-columns: minmax(280px, 360px) 1fr; gap: 1.25rem; align-items: start; }
+  @media (max-width: 820px) { .sim { grid-template-columns: 1fr; } }
+  .controls, .outputs { background: var(--panel); border: 1px solid var(--line);
+                        border-radius: 6px; padding: 1.1rem 1.2rem; }
+  .ctrl { margin-bottom: .9rem; }
+  .ctrl label { display: flex; justify-content: space-between; font-size: .82rem;
+                color: var(--ink-2); margin-bottom: .15rem; }
+  .ctrl label b { font-family: var(--mono); color: var(--ink); font-weight: 600;
+                  font-variant-numeric: tabular-nums; }
+  .ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+  .ctrl-group { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--ink-2);
+                border-top: 1px solid var(--line); padding-top: .8rem; margin: 1.1rem 0 .7rem; }
+  .ctrl-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .7rem .8rem; background: var(--bg); }
+  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.45rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+  .tile.good { background: var(--good-bg); } .tile.good .v { color: var(--good); }
+  .tile.warn { background: var(--warn-bg); } .tile.warn .v { color: var(--warn); }
+  .tile.crit { background: var(--crit-bg); } .tile.crit .v { color: var(--crit); }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line);
+              border-radius: 6px; margin-top: 1rem; }
+  th, td { text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  tr.pick td { background: var(--good-bg); }
+  tr.pick td:first-child { box-shadow: inset 3px 0 0 var(--good); }
+  .v-ok { color: var(--good); } .v-warn { color: var(--warn); } .v-crit { color: var(--crit); }
+  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
+          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
+  .pill.have { background: var(--good-bg); color: var(--good); }
+  .pill.add { background: var(--warn-bg); color: var(--warn); }
+  .layers { display: grid; gap: .8rem; }
+  .layer { border-left: 3px solid var(--signal); background: var(--panel);
+           border-radius: 0 5px 5px 0; padding: .8rem 1rem; }
+  .layer h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .layer p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 80ch; }
+  .flag { border-left: 3px solid var(--warn); background: var(--panel);
+          border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-top: 1rem; }
+  .flag p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 80ch; }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor · головна</a> · лабораторія ядра на спині</p>
+  <h1>Ядро на спині</h1>
+  <p class="sub">Велика світна лампа на спині робота — як реактор у Залізної людини, тільки ззаду.
+  Всередині корпусу модуль адресних світлодіодів зі своїм контролером, зовні — тонке біле вікно,
+  надруковане тією ж машиною, що і вся броня. Крути модуль, ліміт струму в прошивці, зазор до вікна
+  і його розмір — сторінка показує, <b>чи зіллються крапки в рівне світло</b>, скільки це бере з
+  12&nbsp;В шини і що саме диктувати друкарю.</p>
+
+  <div class="nav">
+    <a href="https://hero-armor.github.io/lights.html"><b>💡 Світло</b> — споживання і групи</a>
+    <a href="https://hero-armor.github.io/strip.html"><b>🌊 Адресна стрічка</b> — біжуча вода подіуму</a>
+    <a href="https://hero-armor.github.io/armor.html"><b>🛡️ Броня</b> — сама фігура</a>
+  </div>
+
+  <div class="sim">
+    <div class="controls">
+      <div class="ctrl-group">Що ставимо всередину</div>
+      <div class="seg" id="mod-seg">{{MOD_BUTTONS}}</div>
+
+      <div class="ctrl-group">Прошивка</div>
+      <div class="ctrl"><label>Ліміт струму в WLED <b id="v-lim"></b></label>
+        <input type="range" id="lim" min="0.5" max="4" step="0.1" value="1.5" aria-label="Ліміт струму"></div>
+      <div class="ctrl"><label>Частка світла в переливі <b id="v-duty"></b></label>
+        <input type="range" id="duty" min="5" max="60" step="5" value="25" aria-label="Частка переливу"></div>
+
+      <div class="ctrl-group">Вікно</div>
+      <div class="ctrl"><label>Діаметр світної частини <b id="v-win"></b></label>
+        <input type="range" id="win" min="60" max="260" step="5" value="180" aria-label="Розмір вікна"></div>
+      <div class="ctrl"><label>Зазор від плати до вікна <b id="v-gap"></b></label>
+        <input type="range" id="gap" min="3" max="40" step="1" value="12" aria-label="Зазор"></div>
+      <div class="ctrl"><label>Товщина вікна <b id="v-thk"></b></label>
+        <input type="range" id="thk" min="0.8" max="3" step="0.1" value="1.6" aria-label="Товщина"></div>
+    </div>
+
+    <div class="outputs">
+      <div class="tiles" id="tiles"></div>
+
+      <div class="bar-row">
+        <div class="k">Рівність світла — зазор проти кроку між діодами</div>
+        <div class="bar"><div class="fill lux" id="uni-bar" style="width:0%"></div>
+          <div class="mark" id="uni-mark" style="left:50%"></div></div>
+        <div class="bar-legend"><span>крапки видно</span><span id="uni-now"></span><span>рівне гало</span></div>
+      </div>
+
+      <p style="font-size:.78rem;color:var(--ink-2);margin:.8rem 0 0" id="verdict-text"></p>
+    </div>
+  </div>
+
+  <h2>Що можна поставити всередину</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Модуль</th><th>Діодів</th><th>Розмір</th><th>Живлення</th>
+    <th>Крок</th><th>У переливі</th><th>За ніч</th><th>Ціна</th></tr></thead>
+    <tbody id="mod-body"></tbody>
+  </table>
+  </div>
+  <p style="font-size:.78rem;color:var(--ink-2);margin:.6rem 0 0">Ватти рахуються при поточному
+  ліміті струму і частці переливу — крути повзунки і рядки поїдуть. «Живлення 5&nbsp;В» означає
+  ще й понижувач у комплект: готових адресних <b>кілець</b> на 12&nbsp;В не роблять, тільки матриці.
+  Ціни з позначкою «?» лістинг не віддав напряму — звірити перед замовленням.</p>
+
+  <h2>З чого друкувати вікно</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Матеріал</th><th>Тримає до</th><th>Вердикт</th><th>Чому</th></tr></thead>
+    <tbody>
+{{MATERIALS_ROWS}}
+</tbody>
+  </table>
+  </div>
+
+  <h2>ТЗ друкарю</h2>
+  <div class="tbl-wrap" style="margin-bottom:.6rem">
+  <table>
+    <thead><tr><th>Параметр</th><th>Значення</th><th>Чому саме так</th></tr></thead>
+    <tbody id="brief-body"></tbody>
+  </table>
+  </div>
+  <p style="font-size:.78rem;color:var(--ink-2);margin:0">{{SHELL_NOTE}}</p>
+
+  <h2>Як це працює</h2>
+  <div class="layers">
+    <div class="layer">
+      <h3>1 · Крапки зливаються від зазору, а не від товщини</h3>
+      <p>Головне число тут — <b>зазор поділити на крок між діодами</b>. Менше половини —
+      крізь вікно видно окремі діоди, і товстіший пластик лише гасить світло, не рятуючи картинку.
+      Близько одиниці — світиться рівне гало навіть крізь тонку стінку. Тому спершу відсовують
+      плату вглиб корпусу, і аж потім думають про матеріал.</p>
+    </div>
+    <div class="layer">
+      <h3>2 · Стелю ставить прошивка, а не залізо</h3>
+      <p>241 діод на суцільному білому взяв би {{FULL_W}}&nbsp;Вт — такого кадру не буде ніколи.
+      У WLED виставляється ліміт струму, і контролер сам притишує картинку, щойно вона в нього
+      впирається. Тобто великий модуль означає не велике споживання, а більшу картинку при тій
+      самій межі — рівно так само, як на подіумній стрічці ми заборонили суцільну заливку.</p>
+    </div>
+    <div class="layer">
+      <h3>3 · Вікно — це не накладка, а ділянка панелі</h3>
+      <p>Броню Марсель друкує сам: сендвіч {{SANDWICH}}&nbsp;мм з ASA, дві оболонки по
+      {{SKIN}}&nbsp;мм і порожнина між ними, ребра через {{RIBS}}&nbsp;см. Вікно — це коло в тій
+      самій панелі, надруковане наскрізь однією стінкою білого пластику. Окрему деталь клеїти не
+      треба; якщо панель уже надрукована товстою — те саме коло можна вибрати дремелем зсередини.</p>
+    </div>
+    <div class="layer">
+      <h3>4 · Свій контролер — щоб не заважати подіуму</h3>
+      <p>У спини власний контролер WLED і власна точка керування в телефоні. Подіумна «біжуча
+      вода» живе своїм життям: її анімацію можна міняти, не чіпаючи спину, і навпаки. Ціна
+      окремості — ще одна коробочка і ще один ватт у нічному балансі.</p>
+    </div>
+  </div>
+
+  <div class="flag">
+    <p><b>Що ще не перевірено.</b> Частка світла в переливі поки прикидка: на подіумній стрічці
+    ми таку частку зняли приладом (комета дала 3.6%), тут те саме треба зробити, коли модуль
+    приїде. І точних розмірів панелі спини в наших матеріалах нема — на кресленні Rev&nbsp;2.1
+    задня проєкція не розписана, тож діаметр вікна звіряємо з Марселем перед друком.</p>
+  </div>
+
+  <h2>Файли проєкту</h2>
+  <p style="font-size:.85rem;color:var(--ink-2)">Модулі, контролери, матеріали вікна і налаштування
+  друку живуть у <code style="font-family:var(--mono)">lights/data/back_core.json</code>; рахує їх
+  <code style="font-family:var(--mono)">lights/model/back_core.py</code>. У нічний баланс світла
+  ядро входить позицією <code style="font-family:var(--mono)">back_core</code> в
+  <code style="font-family:var(--mono)">lights/data/params.json</code>.</p>
+</div>
+
+<script>
+  const $ = id => document.getElementById(id);
+  const MODS = {{MODS_JSON}};
+  const CFG = {{CFG_JSON}};
+  let cur = CFG.chosen;
+
+  function pitch(m){
+    if (m.pitch_mm) return m.pitch_mm;
+    if (m.form === "ring") return Math.PI * m.size_mm / m.diodes;
+    const side = Math.round(Math.sqrt(m.diodes));
+    return side > 1 ? m.size_mm / (side - 1) : m.size_mm;
+  }
+
+  function power(m, s){
+    const full = m.diodes * m.w_diode;
+    const cap = s.lim * m.v;
+    const work = Math.min(full * s.duty, cap);
+    const buck = m.v === CFG.bus_v ? 1 : CFG.buck_eff;
+    const busWork = work / buck + CFG.ctrl_w;
+    const busPeak = Math.min(full, cap) / buck + CFG.ctrl_w;
+    return { full, cap, work, busWork, busPeak, capped: full * s.duty > cap,
+             wh: busWork * CFG.night_h, needsBuck: m.v !== CFG.bus_v };
+  }
+
+  function uniformity(m, s){
+    const p = pitch(m), ratio = s.gap / p;
+    let verdict, level;
+    if (ratio >= CFG.comfort_ratio) { verdict = "рівне світло"; level = "good"; }
+    else if (ratio >= CFG.min_ratio) { verdict = "крапки вгадуються"; level = "warn"; }
+    else { verdict = "видно окремі діоди"; level = "crit"; }
+    return { pitch: p, ratio, verdict, level };
+  }
+
+  function tile(k, v, u, note, cls){
+    return `<div class="tile ${cls || ""}"><div class="k">${k}</div>
+      <div class="v">${v}<span class="u"> ${u}</span></div>
+      <div class="note">${note}</div></div>`;
+  }
+
+  function state(){
+    return { lim: +$("lim").value, duty: +$("duty").value / 100,
+             gap: +$("gap").value, thk: +$("thk").value, win: +$("win").value };
+  }
+
+  function render(){
+    const s = state(), m = MODS.find(x => x.key === cur);
+    const p = power(m, s), u = uniformity(m, s);
+
+    $("v-lim").textContent = s.lim.toFixed(1) + " A";
+    $("v-duty").textContent = Math.round(s.duty * 100) + "%";
+    $("v-gap").textContent = s.gap + " мм";
+    $("v-thk").textContent = s.thk.toFixed(1) + " мм";
+    $("v-win").textContent = s.win + " мм";
+
+    // Плата має не просто «влізти», а заповнити вікно: якщо вікно помітно більше
+    // за модуль, світиться середина, а по краю лишається темний обід.
+    const fits = s.win >= m.size_mm;
+    const roomy = fits && s.win > m.size_mm * 1.25;
+    $("tiles").innerHTML = [
+      tile("У переливі", p.busWork.toFixed(1), "Вт",
+           `${(p.busWork / CFG.bus_v).toFixed(2)} A з шини 12 В` +
+           (p.capped ? " · ліміт ріже картинку" : " · до ліміту ще є куди рости"),
+           p.busWork <= CFG.budget_w ? "good" : "warn"),
+      tile("За ніч", p.wh.toFixed(0), "Wh",
+           `${(100 * p.wh / CFG.night_wh_lights).toFixed(1)}% від нічного світла`,
+           p.wh <= CFG.night_wh_lights * 0.1 ? "good" : "warn"),
+      tile("Рівність", u.ratio.toFixed(2), "×кроку", u.verdict, u.level),
+      tile("Понижувач", p.needsBuck ? "треба" : "не треба", "",
+           p.needsBuck ? `модуль на ${m.v} В, шина 12 В` : "модуль живиться прямо з шини",
+           p.needsBuck ? "warn" : "good"),
+      tile("Плата у вікні", !fits ? "більша" : roomy ? "губиться" : "по місцю", "",
+           `плата ${m.size_mm} мм, світна частина ${s.win} мм`
+           + (roomy ? " — по краю лишиться темний обід" : ""),
+           !fits ? "crit" : roomy ? "warn" : "good"),
+    ].join("");
+
+    const barPct = Math.max(0, Math.min(100, 100 * u.ratio / (CFG.comfort_ratio * 1.6)));
+    $("uni-bar").style.width = barPct + "%";
+    $("uni-mark").style.left = (100 * CFG.comfort_ratio / (CFG.comfort_ratio * 1.6)) + "%";
+    $("uni-now").textContent = `зазор ${s.gap} мм / крок ${u.pitch.toFixed(1)} мм = ${u.ratio.toFixed(2)}`;
+
+    $("verdict-text").innerHTML = u.ratio >= CFG.comfort_ratio
+      ? `Зазор перекриває крок між діодами — вікно світитиметься рівно, товщина тут уже справа смаку.`
+      : `Зазору замало: відсунь плату вглиб корпусу хоча б на ${(u.pitch * CFG.comfort_ratio).toFixed(0)} мм. `
+        + `Товстіше вікно приховає крапки гірше, ніж зайві кілька міліметрів повітря, і з'їсть яскравість.`;
+
+    $("mod-body").innerHTML = MODS.map(x => {
+      const px = power(x, s), ux = uniformity(x, s);
+      const price = `$${x.price_usd}${x.price_confirmed ? "" : " ?"}`;
+      return `<tr${x.key === cur ? ' style="background:var(--good-bg)"' : ""}>
+        <td>${x.name}</td><td class="num">${x.diodes}</td>
+        <td class="num">${x.form === "ring" ? "Ø" : ""}${x.size_mm} мм</td>
+        <td class="num">${x.v} В</td><td class="num">${ux.pitch.toFixed(1)} мм</td>
+        <td class="num">${px.busWork.toFixed(1)} Вт</td>
+        <td class="num">${px.wh.toFixed(0)} Wh</td>
+        <td class="num">${price}</td></tr>`;
+    }).join("");
+
+    const walls = Math.max(2, Math.round(s.thk / CFG.line_mm));
+    $("brief-body").innerHTML = [
+      ["Форма і розмір вікна", `${m.form === "ring" ? "коло Ø" : "квадрат "}${s.win} мм`,
+       `під плату ${m.size_mm} мм плюс поле по краю`],
+      ["Товщина в цьому місці", `${s.thk.toFixed(1)} мм`,
+       `замість сендвіча ${CFG.sandwich_mm} мм — одна суцільна стінка, ${walls} периметри лінією ${CFG.line_mm} мм`],
+      ["Матеріал", CFG.material_best, `не PLA: він пливе біля ${CFG.pla_hdt}°C, а на плайї +45 і сонце`],
+      ["Заповнення", `${CFG.infill_pct}%`, "стінка з самих периметрів світиться рівніше; заповнення дає смуги на просвіт"],
+      ["Висота шару", `${CFG.layer_mm} мм`, "дрібніший шар пропускає більше світла"],
+      ["Поверхня", CFG.finish, "матова розсіює краще; глянець робить світло «мокрим»"],
+      ["Полиця під плату", `${m.size_mm} мм, ${s.gap} мм углиб від вікна`,
+       `${s.gap} мм — це ${(s.gap / uniformity(m, s).pitch).toFixed(2)} кроку між діодами`],
+      ["Проводка", "отвір Ø8 мм збоку полиці", "живлення і дані від контролера всередині корпусу"],
+    ].map(r => `<tr><td>${r[0]}</td><td class="num">${r[1]}</td>
+      <td style="white-space:normal;max-width:52ch">${r[2]}</td></tr>`).join("");
+  }
+
+  document.querySelectorAll("#mod-seg button").forEach(b => {
+    b.addEventListener("click", () => {
+      cur = b.dataset.key;
+      document.querySelectorAll("#mod-seg button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      render();
+    });
+  });
+  ["lim", "duty", "gap", "thk", "win"].forEach(id =>
+    $(id).addEventListener("input", render));
+  render();
+</script>

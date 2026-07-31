@@ -3,6 +3,7 @@
 
 # Рішення
 
+* [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
 * [Габаритні вогні на стійках прожекторів — скасовано](habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
 * [Пасивна помітність: катафоти і мікропризматична стрічка на подіум](pasyvna-pomitnist-katafoty-i-mikropryzmatychna-strichka-na-p.md)

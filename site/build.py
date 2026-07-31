@@ -38,6 +38,7 @@ import spot_ring as sr  # noqa: E402  (звʼязка 8 прожекторів: 
 import strip_bench as sb  # noqa: E402  (стенд LED-стрічки, lights/data/strip_bench.json)
 import circuit_lab as cl  # noqa: E402  (окремі сторінки-калькулятори по типах світла)
 import strip_layout as stl  # noqa: E402  (план стрічки в подіумі + монтаж і закупівля)
+import back_core as bcore  # noqa: E402  (ядро на спині: модуль, вікно, ТЗ друкарю)
 import power_node_model as pw
 sys.path.insert(0, str(ROOT / "enclosure" / "model"))
 import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
@@ -2113,6 +2114,58 @@ def build():
                      f'<td>{f["cfm"]} CFM паспорт → {f["cfm"]*ENC["air"]["filter_derate"]:.0f} з фільтром</td></tr>')
     elab = elab.replace("{{ENC_PARTS}}", "\n".join(parts))
 
+    # ============ лабораторія ядра на спині ============
+    # Велика світна лампа на спині робота: модуль адресних діодів усередині
+    # корпусу, друковане біле вікно зовні. Сторінка відповідає на три питання —
+    # який модуль, який зазор до вікна (щоб не було видно крапок) і що диктувати
+    # друкарю. Числа рахує lights/model/back_core.py, руками тут нічого.
+    bclab = tmpl("back_core_lab.tmpl.html")
+    BC, bwin, bdif, bshell = bcore.D, bcore.WIN, bcore.DIF, bcore.D["shell"]
+    bc_fix = next(f for f in LP["fixtures"] if f["id"] == "back_core")
+    dc_port_w = cl.C["limits"]["dc_port_w"]
+    # Скільки ват лишається ядру на 12-вольтовому виході станції, коли решта
+    # світла вже на піку: саме цим числом і міряється «влазимо чи ні».
+    bc_budget = dc_port_w - (sum(l_peak.values()) - lm.fixture_peak(bc_fix))
+    bmat = {x["verdict"]: x for x in bdif["materials"]}
+    bclab = (bclab
+             .replace("{{MOD_BUTTONS}}", "".join(
+                 f'<button data-key="{m_["key"]}"'
+                 + (' class="active"' if m_["key"] == BC["chosen"]["module"] else "")
+                 + f'>{esc(m_["name"].split(" (")[0])}</button>'
+                 for m_ in bcore.MODS))
+             .replace("{{MATERIALS_ROWS}}", "\n".join(
+                 f'      <tr><td>{esc(x["name"])}</td>'
+                 f'<td class="num">{(str(x["hdt_c"]) + " °C") if x.get("hdt_c") else "—"}</td>'
+                 f'<td><span class="pill '
+                 + ("have" if x["verdict"] in ("best", "ok") else "add")
+                 + f'">{ {"best": "беремо", "ok": "запасний", "alt": "альтернатива", "no": "не можна"}[x["verdict"]] }</span></td>'
+                 f'<td style="white-space:normal;max-width:60ch">{esc(x["why"])}</td></tr>'
+                 for x in bcore.diffuser_pick()))
+             .replace("{{SHELL_NOTE}}", esc(bshell["open"] + " " + bshell["precedent"]))
+             .replace("{{FULL_W}}", f'{bcore.module()["diodes"] * bcore.module()["w_diode"]:.0f}')
+             .replace("{{SANDWICH}}", f'{bshell["sandwich_mm"]:g}')
+             .replace("{{SKIN}}", f'{bshell["skin_mm"]:g}')
+             .replace("{{RIBS}}", "–".join(str(x) for x in bshell["ribs_cm"]))
+             .replace("{{MODS_JSON}}", json.dumps(bcore.MODS, ensure_ascii=False))
+             .replace("{{CFG_JSON}}", json.dumps({
+                 "chosen": BC["chosen"]["module"],
+                 "bus_v": lm.BUS_V,
+                 "buck_eff": BC["buck"]["efficiency"],
+                 "ctrl_w": bcore.controller()["w_idle"],
+                 "night_h": BC["chosen"]["night_h"],
+                 "comfort_ratio": bcore.UNI["comfort_ratio"],
+                 "min_ratio": bcore.UNI["min_ratio"],
+                 "budget_w": round(bc_budget, 1),
+                 "night_wh_lights": round(wh_light),
+                 "line_mm": bdif["print_spec"]["line_mm"],
+                 "layer_mm": bdif["print_spec"]["layer_mm"],
+                 "infill_pct": bdif["print_spec"]["infill_pct"],
+                 "finish": bdif["print_spec"]["top_bottom"],
+                 "sandwich_mm": bshell["sandwich_mm"],
+                 "material_best": bmat["best"]["name"],
+                 "pla_hdt": bmat["no"]["hdt_c"],
+             }, ensure_ascii=False)))
+
     # ============ окремі сторінки-калькулятори по типах світла ============
     # Одна сторінка = один тип світильника: покрутити кількість, яскравість,
     # кабель і схему прокладки, не чіпаючи решту системи. Шаблон спільний,
@@ -2230,7 +2283,7 @@ def build():
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
              "solar_lab.html": slab, "cables_lab.html": clab,
-             "enclosure_lab.html": elab, **sys_pages}
+             "enclosure_lab.html": elab, "back_core_lab.html": bclab, **sys_pages}
     # Смужка «Лабораторії» на кожну лабораторну сторінку. Вставляємо тут, а не
     # в кожен шаблон окремо: інакше нова лабораторія знову виявиться загубленою.
     lab_pages = {l["page"]: l["page"] for l in LABS}

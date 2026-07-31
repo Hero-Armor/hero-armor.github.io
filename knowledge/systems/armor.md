@@ -19,6 +19,7 @@ generated: { by: "process:site-build" }
 
 * [Замовити катафоти і світлоповертальну стрічку на подіум і ящик](/tasks/zamovyty-katafoty-i-svitlopovertalnu-strichku-na-podium-i-ia.md) — до роботи
 * [Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу](/tasks/vikno-v-broni-pid-radar-60-60-mm-abs-akryl-sklotkanyna-bez-m.md) — чекаємо
+* [Марселю: вікно ядра на спині — коло Ø180 мм однією стінкою 1.6 мм білого ASA](/tasks/marseliu-vikno-iadra-na-spyni-kolo-180-mm-odniieiu-stinkoiu-.md) — до роботи
 
 # Закупівля
 

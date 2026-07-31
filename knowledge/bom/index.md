@@ -91,3 +91,6 @@
 * [Кулер Coleman 100-150 qt](kuler-coleman-100-150-qt.md) - $100-140, купити
 * [Каністри під воду 5 л](kanistry-pid-vodu-5-l.md) - $40, купити
 * [Коробка ABS IP65 200×120×75 (якщо своя не підійде)](korobka-abs-ip65-200-120-75-iakshcho-svoia-ne-pidiide.md) - $10, купити
+* [Набір кілець WS2812B 241 діод — ядро на спині](nabir-kilets-ws2812b-241-diod-iadro-na-spyni.md) - $25.99, купити
+* [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) - ~$22, купити
+* [Понижувач 12 В → 5 В, 10 А — під ядро на спині](ponyzhuvach-12-v-5-v-10-a-pid-iadro-na-spyni.md) - ~$10, купити

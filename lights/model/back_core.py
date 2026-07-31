@@ -42,7 +42,11 @@ def pitch_mm(m, size_mm=None):
     """Distance between neighbouring diodes on the module, in mm.
 
     Кільце: діоди сидять по колу, тому крок — це довжина кола на кількість.
-    Матриця: крок — це сторона, поділена на проміжки між рядами."""
+    Матриця: крок — це сторона, поділена на проміжки між рядами.
+    Набір вкладених кілець рахувати так не можна (241 діод сидить на девʼяти
+    колах, а не на одному) — у нього крок стоїть у базі числом."""
+    if m.get("pitch_mm"):
+        return m["pitch_mm"]
     size = size_mm or m["size_mm"]
     if m["form"] == "ring":
         return math.pi * size / m["diodes"]
@@ -65,37 +69,44 @@ def uniformity(m=None, gap_mm=None, size_mm=None):
     return dict(pitch_mm=p, gap_mm=gap, ratio=ratio, verdict=verdict, level=level)
 
 
-def watts(m=None, duty=None, brightness=1.0):
+def watts(m=None, duty=None, brightness=1.0, limit_a=None):
     """Споживання модуля: стеля на суцільному білому і робоча картинка.
 
     Адресні модулі рахуються не «скільки в паспорті», а скільки з них у цю мить
     світиться: перелив запалює частину діодів і не на повну — так само, як комета
-    на подіумній стрічці бере 3.6% від суцільної заливки."""
+    на подіумній стрічці бере 3.6% від суцільної заливки.
+
+    Ліміт струму в прошивці ріже і те, і те: WLED сам притишує картинку, щойно
+    вона намагається взяти більше дозволеного. Тому стеля модуля — це не паспорт
+    плати, а виставлене нами число ампер."""
     m = m or module()
     duty = D["chosen"]["duty_animation"] if duty is None else duty
+    limit_a = D["chosen"]["current_limit_a"] if limit_a is None else limit_a
+    cap = limit_a * m["v"] if limit_a else float("inf")
     full = m["diodes"] * m["w_diode"]
-    work = full * duty * brightness
-    eff = CTRL["_buck_eff"] if isinstance(CTRL, dict) else None
+    work = min(full * duty * brightness, cap)
     return dict(full_w=full, work_w=work, duty=duty,
+                cap_w=cap, capped=full * duty * brightness > cap,
                 full_a_module=full / m["v"], work_a_module=work / m["v"])
 
 
-def draw_from_bus(m=None, duty=None, brightness=1.0):
+def draw_from_bus(m=None, duty=None, brightness=1.0, limit_a=None, ctrl=None):
     """Скільки це коштує 12-вольтовій шині — з урахуванням понижувача і контролера.
 
     Модуль на 5 В живиться через понижувач, і той бере своє: на 12 В струм
     менший, ніж на 5 В, але ватти додаються, а не зникають."""
     m = m or module()
-    c = controller()
-    w = watts(m, duty, brightness)
+    c = ctrl or controller()
+    w = watts(m, duty, brightness, limit_a)
     buck = D["buck"]["efficiency"] if m["v"] != BUS_V else 1.0
-    bus_full = w["full_w"] / buck + c["w_idle"]
+    peak_w = min(w["full_w"], w["cap_w"])
+    bus_peak = peak_w / buck + c["w_idle"]
     bus_work = w["work_w"] / buck + c["w_idle"]
-    return dict(needs_buck=m["v"] != BUS_V, buck_eff=buck,
+    return dict(w, needs_buck=m["v"] != BUS_V, buck_eff=buck,
                 ctrl_w=c["w_idle"],
-                full_w=bus_full, work_w=bus_work,
-                full_a=bus_full / BUS_V, work_a=bus_work / BUS_V,
-                wh_night=bus_work * D["chosen"]["night_h"], **w)
+                peak_w=bus_peak, work_w=bus_work,
+                peak_a=bus_peak / BUS_V, work_a=bus_work / BUS_V,
+                wh_night=bus_work * D["chosen"]["night_h"])
 
 
 def night_wh(m=None, duty=None, brightness=1.0):
@@ -141,7 +152,8 @@ if __name__ == "__main__":
     print(f'модуль: {m["name"]} — {m["diodes"]} діодів, {m["v"]:.0f} В, Ø{m["size_mm"]} мм')
     print(f'крок {u["pitch_mm"]:.1f} мм, зазор {u["gap_mm"]:.0f} мм → '
           f'{u["ratio"]:.2f} ({u["verdict"]})')
-    print(f'суцільний білий {b["full_w"]:.1f} Вт, перелив {b["work_w"]:.1f} Вт '
-          f'({b["work_a"]:.2f} A з шини), за ніч {b["wh_night"]:.0f} Wh')
+    print(f'суцільний білий {b["full_w"]:.1f} Вт (ліміт прошивки ріже до {b["cap_w"]:.1f}), '
+          f'перелив {b["work_w"]:.1f} Вт ({b["work_a"]:.2f} A з шини), '
+          f'за ніч {b["wh_night"]:.0f} Wh')
     print(f'вікно: {s["window"]["shape"]} {s["window"]["size_mm"]} мм, '
           f'{s["thickness_mm"]} мм товщиною')

@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](/decisions/na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](/decisions/nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
 * [Габаритні вогні на стійках прожекторів — скасовано](/decisions/habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
 * [Окремі сторінки-калькулятори по типах світла](/decisions/okremi-storinky-kalkuliatory-po-typakh-svitla.md)
@@ -73,6 +74,8 @@ generated: { by: "process:site-build" }
 * [Замовити кошик дрібниці по світлу (заглушки + термоусадка) ≈ $84](/tasks/zamovyty-koshyk-dribnytsi-po-svitlu-zahlushky-termousadka-84.md) — до роботи
 * [Виставити обмежувач струму в контролері стрічки (щоб суцільний білий не поклав 12 В-вихід)](/tasks/vystavyty-obmezhuvach-strumu-v-kontroleri-strichky-shchob-su.md) — до роботи
 * [Реле на живлення стрічки — рвати на день](/tasks/rele-na-zhyvlennia-strichky-rvaty-na-den.md) — до роботи
+* [Замовити ядро на спині: кільця 241 діод + контролер GLEDOPTO + понижувач 12→5 В](/tasks/zamovyty-iadro-na-spyni-kiltsia-241-diod-kontroler-gledopto-.md) — до роботи
+* [Заміряти ватметром реальну частку світла ядра в переливі](/tasks/zamiriaty-vatmetrom-realnu-chastku-svitla-iadra-v-perelyvi.md) — чекаємо
 
 # Закупівля
 
@@ -110,3 +113,6 @@ generated: { by: "process:site-build" }
 * [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити
 * [Таймер-реле 12 В — чим рвати живлення стрічки на день](/bom/taimer-rele-12-v-chym-rvaty-zhyvlennia-strichky-na-den.md) — $13.49, купити
 * [Підсилювач сигналу SP901E (WS2811/WS2812)](/bom/pidsyliuvach-syhnalu-sp901e-ws2811-ws2812.md) — $19.99, купити
+* [Набір кілець WS2812B 241 діод — ядро на спині](/bom/nabir-kilets-ws2812b-241-diod-iadro-na-spyni.md) — $25.99, купити
+* [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](/bom/gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) — ~$22, купити
+* [Понижувач 12 В → 5 В, 10 А — під ядро на спині](/bom/ponyzhuvach-12-v-5-v-10-a-pid-iadro-na-spyni.md) — ~$10, купити

@@ -847,5 +847,35 @@
   "note": "запасний варіант: беремо тільки якщо замовлена Іваном коробка менша за 165×105×55 або металева",
   "system": "audio",
   "flow": "to_order"
+ },
+ {
+  "item": "Набір кілець WS2812B 241 діод — ядро на спині",
+  "qty": "1",
+  "price": "$25.99",
+  "status": "add",
+  "note": "B083VWVP3J, дев'ять вкладених кілець Ø172 мм (1+8+12+16+24+32+40+48+60). Світиться від центру назовні — саме ефект реактора. Живлення 5 В, тому в комплект іде понижувач",
+  "system": "lights",
+  "url": "https://www.amazon.com/WESIRI-WS2812B-Individually-Addressable-Controller/dp/B083VWVP3J",
+  "flow": "to_order"
+ },
+ {
+  "item": "GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра",
+  "qty": "1",
+  "price": "~$22",
+  "status": "add",
+  "note": "B0D9QHN8VP. ОКРЕМИЙ від подіумного: у спини своя анімація і свій пульт. Рівневий зсув і резистор на лінію даних усередині, паяти нічого. Ціну звірити — лістинг не віддавав її напряму",
+  "system": "lights",
+  "url": "https://www.amazon.com/GLEDOPTO-Controller-Dynamic-Lighting-Addressable/dp/B0D9QHN8VP",
+  "flow": "to_order"
+ },
+ {
+  "item": "Понижувач 12 В → 5 В, 10 А — під ядро на спині",
+  "qty": "1",
+  "price": "~$10",
+  "status": "add",
+  "note": "B01M03288J. Потрібен, бо адресні КІЛЬЦЯ роблять тільки на 5 В. Запас узятий подвійний: при ліміті 1.5 А в прошивці модуль бере близько 7.5 Вт. Ціну звірити",
+  "system": "lights",
+  "url": "https://www.amazon.com/HOMELYLIFE-Efficiency-Protection-Automotive-Surveillance/dp/B01M03288J",
+  "flow": "to_order"
  }
 ]

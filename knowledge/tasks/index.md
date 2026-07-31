@@ -52,3 +52,6 @@
 * [Докупити монтажну дрібницю: гермовводи, термоусадка, джампери, стяжки](dokupyty-montazhnu-dribnytsiu-hermovvody-termousadka-dzhampe.md) - до роботи
 * [Виставити обмежувач струму в контролері стрічки (щоб суцільний білий не поклав 12 В-вихід)](vystavyty-obmezhuvach-strumu-v-kontroleri-strichky-shchob-su.md) - до роботи
 * [Реле на живлення стрічки — рвати на день](rele-na-zhyvlennia-strichky-rvaty-na-den.md) - до роботи
+* [Марселю: вікно ядра на спині — коло Ø180 мм однією стінкою 1.6 мм білого ASA](marseliu-vikno-iadra-na-spyni-kolo-180-mm-odniieiu-stinkoiu-.md) - до роботи
+* [Замовити ядро на спині: кільця 241 діод + контролер GLEDOPTO + понижувач 12→5 В](zamovyty-iadro-na-spyni-kiltsia-241-diod-kontroler-gledopto-.md) - до роботи
+* [Заміряти ватметром реальну частку світла ядра в переливі](zamiriaty-vatmetrom-realnu-chastku-svitla-iadra-v-perelyvi.md) - чекаємо
