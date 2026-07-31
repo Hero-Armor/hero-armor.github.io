@@ -22,6 +22,7 @@ generated: { by: "process:site-build" }
 * [Основа вузла — перфоборд 150×90, не 3D-друк і не «насипом у коробку»](/decisions/osnova-vuzla-perfobord-150-90-ne-3d-druk-i-ne-nasypom-u-koro.md)
 * [Роз'ємні місця: XT60 на вході, клемники на платі, лопатки на динаміку](/decisions/roziemni-mistsia-xt60-na-vkhodi-klemnyky-na-plati-lopatky-na.md)
 * [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](/decisions/korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
+* [Коробку аудіо не вентилюємо — рахунок каже, що нічого не гріється](/decisions/korobku-audio-ne-ventyliuiemo-rakhunok-kazhe-shcho-nichoho-n.md)
 
 # Задачі
 
@@ -33,7 +34,7 @@ generated: { by: "process:site-build" }
 * [Звірити замовлену коробку по семи вимогах (пластик, 165×105×55, вводи, радіатор, вентиляція, доступ до USB)](/tasks/zviryty-zamovlenu-korobku-po-semy-vymohakh-plastyk-165-105-5.md) — чекаємо
 * [Зміряти лінійкою модулі й рознесення пінів ESP32, коли приїде посилка](/tasks/zmiriaty-liniikoiu-moduli-i-roznesennia-piniv-esp32-koly-pry.md) — чекаємо
 * [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](/tasks/zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) — чекаємо
-* [Докупити монтажну дрібницю: гермовводи, наконечники, термоусадка, джампери, поролон, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-nakonechnyky-termou.md) — до роботи
+* [Докупити монтажну дрібницю: гермовводи, наконечники, термоусадка, джампери, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-nakonechnyky-termou.md) — до роботи
 
 # Закупівля
 
@@ -63,7 +64,6 @@ generated: { by: "process:site-build" }
 * [Наконечники з термоусадкою 22-16 AWG (виделка #10)](/bom/nakonechnyky-z-termousadkoiu-22-16-awg-vydelka-10.md) — $10, купити
 * [Термоусадка з клеєм 3:1, набір 240 шт](/bom/termousadka-z-kleiem-3-1-nabir-240-sht.md) — $14, купити
 * [Джампери Dupont мама-мама 20 см](/bom/dzhampery-dupont-mama-mama-20-sm.md) — $4, купити
-* [Поролон фільтр 40 PPI, лист](/bom/porolon-filtr-40-ppi-lyst.md) — $16, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](/bom/stiazhky-neilonovi-uv-stiiki-400-sht.md) — $7, купити
 
 # Розраховані цифри

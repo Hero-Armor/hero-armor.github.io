@@ -76,5 +76,4 @@
 * [Наконечники з термоусадкою 22-16 AWG (виделка #10)](nakonechnyky-z-termousadkoiu-22-16-awg-vydelka-10.md) - $10, купити
 * [Термоусадка з клеєм 3:1, набір 240 шт](termousadka-z-kleiem-3-1-nabir-240-sht.md) - $14, купити
 * [Джампери Dupont мама-мама 20 см](dzhampery-dupont-mama-mama-20-sm.md) - $4, купити
-* [Поролон фільтр 40 PPI, лист](porolon-filtr-40-ppi-lyst.md) - $16, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](stiazhky-neilonovi-uv-stiiki-400-sht.md) - $7, купити

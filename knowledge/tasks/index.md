@@ -40,4 +40,4 @@
 * [Звірити замовлену коробку по семи вимогах (пластик, 165×105×55, вводи, радіатор, вентиляція, доступ до USB)](zviryty-zamovlenu-korobku-po-semy-vymohakh-plastyk-165-105-5.md) - чекаємо
 * [Зміряти лінійкою модулі й рознесення пінів ESP32, коли приїде посилка](zmiriaty-liniikoiu-moduli-i-roznesennia-piniv-esp32-koly-pry.md) - чекаємо
 * [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) - чекаємо
-* [Докупити монтажну дрібницю: гермовводи, наконечники, термоусадка, джампери, поролон, стяжки](dokupyty-montazhnu-dribnytsiu-hermovvody-nakonechnyky-termou.md) - до роботи
+* [Докупити монтажну дрібницю: гермовводи, наконечники, термоусадка, джампери, стяжки](dokupyty-montazhnu-dribnytsiu-hermovvody-nakonechnyky-termou.md) - до роботи

@@ -56,3 +56,4 @@
 * [Основа вузла — перфоборд 150×90, не 3D-друк і не «насипом у коробку»](osnova-vuzla-perfobord-150-90-ne-3d-druk-i-ne-nasypom-u-koro.md)
 * [Роз'ємні місця: XT60 на вході, клемники на платі, лопатки на динаміку](roziemni-mistsia-xt60-na-vkhodi-klemnyky-na-plati-lopatky-na.md)
 * [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
+* [Коробку аудіо не вентилюємо — рахунок каже, що нічого не гріється](korobku-audio-ne-ventyliuiemo-rakhunok-kazhe-shcho-nichoho-n.md)

@@ -1589,6 +1589,32 @@ def build():
          for c in ENC["cases"]], ensure_ascii=False))
     elab = elab.replace("{{FIT_CAPTION}}", esc(ENC["_verify"]))
 
+    KIND_COLOR = {"особистий досвід": "var(--good)", "офіційне джерело": "var(--signal)"}
+    bl = []
+    for key, b in ENC["burner_field"].items():
+        if key.startswith("_"):
+            continue
+        col = KIND_COLOR.get(b.get("kind", ""), "var(--warn)")
+        head = f'{esc(b["who"])} · <span style="color:{col}">{esc(b.get("kind",""))}</span>'
+        body = f'<p>{esc(b["claim"])}</p>'
+        if b.get("quote"):
+            body += (f'<p style="margin-top:.4rem;font-style:italic;border-left:2px solid var(--line);'
+                     f'padding-left:.7rem">«{esc(b["quote"])}»</p>')
+        for extra in ("our_math", "caveat", "action", "also", "cost_usd"):
+            if b.get(extra):
+                lbl = {"our_math": "Наш рахунок", "caveat": "Застереження",
+                       "action": "Що робимо", "also": "Там же", "cost_usd": "Ціна"}[extra]
+                body += f'<p style="margin-top:.35rem"><b>{lbl}:</b> {esc(str(b[extra]))}</p>'
+        if b.get("url"):
+            body += f'<p style="margin-top:.35rem"><a href="{esc(b["url"])}">{esc(b["url"])}</a></p>'
+        bl.append(f'    <div class="layer" style="border-left-color:{col}">'
+                  f'<h3>{head}</h3>{body}</div>')
+    elab = elab.replace("{{ENC_BURNERS}}", "\n".join(bl))
+    elab = elab.replace("{{ENC_MYTHS}}", "\n".join(
+        f'      <tr><td style="white-space:normal;max-width:26ch"><b>{esc(k)}</b></td>'
+        f'<td style="white-space:normal;max-width:60ch">{esc(v)}</td></tr>'
+        for k, v in ENC["burner_field"]["_myths"].items()))
+
     parts = []
     for grp in ("cable_entry", "filters"):
         for it in ENC[grp]["items"]:
