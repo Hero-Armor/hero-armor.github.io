@@ -74,6 +74,17 @@ def scheme(kind):
         why = ("Той самий кабель і той самий ввід, просто від щита йдемо вліво "
                "і вправо по чотири лампи. Струм у гілці вдвічі менший, а він у "
                "просадку входить лінійно — тому виграш більший за вдвічі.")
+    elif kind == "loop":
+        # кільце замкнуте, живлення заходить в одну точку: струм розтікається в
+        # обидва боки і зустрічається на протилежній стійці, тому найгірша точка
+        # живиться з двох сторін одразу
+        half = QTY // 2
+        segs = [(SEG_M, A_LAMP * (half - k - 0.5)) for k in range(half)]
+        label = "Замкнуте кільце, ввід в одній точці"
+        why = ("Те саме кільце по краю, але кінець зʼєднаний з початком. Струм "
+               "розтікається в обидва боки і найдальша стійка живиться з двох "
+               "сторін. Коштує це один зайвий відрізок дроту, а підключення "
+               "лишається одне — там, де кабель виходить до станції.")
     elif kind == "star":
         # коробка в центрі подіуму, від неї своя пара до кожної стійки —
         # довжина променя однакова для всіх, тому й просадка однакова
@@ -101,7 +112,7 @@ def scheme(kind):
 
 
 def schemes():
-    return [scheme(k) for k in ("chain", "split", "star")]
+    return [scheme(k) for k in ("chain", "loop", "split", "star")]
 
 
 def dimmer():
@@ -158,10 +169,19 @@ def svg():
         ang = -pi / 2 + 2 * pi * k / QTY
         pts.append((CX + R * cos(ang), CY + R * sin(ang)))
 
-    box = (CX, CY)
-    for x, y in pts:
-        o.append(f'<line x1="{CX}" y1="{CY}" x2="{x:.1f}" y2="{y:.1f}" '
-                 f'stroke="{acc}" stroke-width="2"/>')
+    # кабель іде по краю від стійки до стійки; ввід — знизу, у точці виходу
+    # до станції. Замикання кільця показуємо пунктиром: це та сама траса,
+    # просто останній відрізок зʼєднує кінець із початком.
+    box = (CX, CY + R + 58)
+    ring = " ".join(f'{x:.1f},{y:.1f}' for x, y in pts)
+    o.append(f'<polyline points="{ring}" fill="none" stroke="{acc}" stroke-width="2.5"/>')
+    o.append(f'<line x1="{pts[-1][0]:.1f}" y1="{pts[-1][1]:.1f}" '
+             f'x2="{pts[0][0]:.1f}" y2="{pts[0][1]:.1f}" stroke="{acc}" '
+             f'stroke-width="2.5" stroke-dasharray="6 4"/>')
+    o.append(f'<line x1="{CX}" y1="{box[1]-19:.0f}" x2="{CX}" y2="{CY+R:.0f}" '
+             f'stroke="{acc}" stroke-width="2.5"/>')
+    o.append(f'<text x="{CX+R*0.72:.0f}" y="{CY+R+30:.0f}" font-size="9" fill="{acc}">'
+             f'пунктир — замикання кільця</text>')
 
     for k, (x, y) in enumerate(pts):
         o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="#fff" stroke="{ink}" '
@@ -175,9 +195,9 @@ def svg():
     o.append(f'<rect x="{bx-52:.0f}" y="{by-19:.0f}" width="104" height="38" rx="4" '
              f'fill="#fff" stroke="{ink}" stroke-width="1.8"/>')
     o.append(f'<text x="{bx:.0f}" y="{by-4:.0f}" text-anchor="middle" font-size="11" '
-             f'fill="{ink}">коробка</text>')
+             f'fill="{ink}">ввід у кільце</text>')
     o.append(f'<text x="{bx:.0f}" y="{by+11:.0f}" text-anchor="middle" font-size="9" '
-             f'fill="#6b675c">8 пар + {fuse():g}A</text>')
+             f'fill="#6b675c">одна точка + {fuse():g}A</text>')
 
     o.append(f'<line x1="{bx-52:.0f}" y1="{by:.0f}" x2="26" y2="{by:.0f}" '
              f'stroke="{sig}" stroke-width="2.5"/>')
@@ -186,12 +206,12 @@ def svg():
     o.append(f'<text x="26" y="{by+20:.0f}" font-size="10" fill="#6b675c">'
              f'{group_a():.2f} A на повній</text>')
 
-    st = scheme("star")
+    st = scheme(SG["recommended"])
     o.append(f'<text x="{CX}" y="26" text-anchor="middle" font-size="12" fill="{ink}">'
-             f'Прожектори: своя пара до кожної стійки з однієї коробки</text>')
+             f'Прожектори: кабель по краю від стійки до стійки, ввід в одній точці</text>')
     o.append(f'<text x="{CX}" y="44" text-anchor="middle" font-size="10" fill="#6b675c">'
-             f'промінь {RING["r_post_m"]:.2f} м · кабель AWG {RING["drop_awg"]} · '
-             f'просадка {st["worst_pct"]:.1f}% і однакова в усіх · зʼєднань у полі нема</text>')
+             f'відрізок {SEG_M:.2f} м · кабель AWG {RING["ring_awg"]} · '
+             f'просадка до найдальшої {st["worst_pct"]:.1f}% · вихід до станції одразу з краю</text>')
     o.append("</svg>")
     return "\n".join(o)
 

@@ -1,0 +1,260 @@
+<title>Hero Armor — {{C_TITLE}}</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; letter-spacing: .01em; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
+       margin: 2.4rem 0 .9rem; letter-spacing: .02em; }
+  .sub { color: var(--ink-2); max-width: 68ch; margin: 0 0 1.4rem; }
+  .nav { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+  .nav a { font-family: var(--mono); font-size: .74rem; padding: .4rem .7rem;
+           border: 1px solid var(--line); border-radius: 4px; text-decoration: none;
+           color: var(--ink); background: var(--panel); }
+  .nav a.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .seg { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .8rem; }
+  .seg button { font-family: var(--mono); font-size: .76rem; padding: .42rem .75rem;
+                background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+                border-radius: 4px; cursor: pointer; }
+  .seg button.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .sim { display: grid; grid-template-columns: minmax(280px, 370px) 1fr; gap: 1.25rem;
+         align-items: start; }
+  @media (max-width: 780px) { .sim { grid-template-columns: 1fr; } }
+  .controls, .outputs { background: var(--panel); border: 1px solid var(--line);
+                        border-radius: 6px; padding: 1.1rem 1.2rem; }
+  .ctrl { margin-bottom: .9rem; }
+  .ctrl label { display: flex; justify-content: space-between; font-size: .82rem;
+                color: var(--ink-2); margin-bottom: .15rem; }
+  .ctrl label b { font-family: var(--mono); color: var(--ink); font-weight: 600;
+                  font-variant-numeric: tabular-nums; }
+  .ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+  .ctrl-group { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--ink-2);
+                border-top: 1px solid var(--line); padding-top: .8rem; margin: 1.1rem 0 .7rem; }
+  .ctrl-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .7rem .8rem; background: var(--bg); }
+  .tile .k { font-family: var(--mono); font-size: .64rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.4rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .76rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .73rem; color: var(--ink-2); margin-top: .2rem; }
+  .tile.good { background: var(--good-bg); } .tile.good .v { color: var(--good); }
+  .tile.warn { background: var(--warn-bg); } .tile.warn .v { color: var(--warn); }
+  .tile.crit { background: var(--crit-bg); } .tile.crit .v { color: var(--crit); }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line);
+              border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line);
+           white-space: nowrap; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  tr.on td { background: var(--good-bg); }
+  .fig-cap { font-size: .8rem; color: var(--ink-2); margin-top: .5rem; max-width: 82ch; }
+  .layer { border-left: 3px solid var(--signal); background: var(--panel);
+           border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-top: .8rem; }
+  .layer h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .layer p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 80ch; }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor</a> ·
+     <a href="https://hero-armor.github.io/lights_lab.html">світлова лабораторія</a> · {{C_GROUP}}</p>
+  <h1>{{C_TITLE}}</h1>
+  <div class="nav">{{C_NAV}}</div>
+  <p class="sub">{{C_SUB}}</p>
+
+  <div class="seg" id="loadPick"></div>
+
+  <div class="sim">
+    <div class="controls">
+      <div class="ctrl-group">Скільки</div>
+      <div class="ctrl"><label>Кількість <b id="v-n"></b></label>
+        <input type="range" id="n" min="1" max="16" step="1" value="8" aria-label="Кількість"></div>
+      <div class="ctrl-group" id="dim-group">{{C_DIM_LABEL}}</div>
+      <div class="ctrl" id="dim-ctrl"><label>Рівень <b id="v-dim"></b></label>
+        <input type="range" id="dim" min="0" max="100" step="1" value="100" aria-label="Рівень"></div>
+      <div class="ctrl-group">Кабель</div>
+      <div class="ctrl"><label>Калібр <b id="v-awg"></b></label>
+        <input type="range" id="awg" min="0" max="5" step="1" value="1" aria-label="Калібр кабелю"></div>
+      <div class="ctrl"><label>{{C_SEG_LABEL}} <b id="v-seg"></b></label>
+        <input type="range" id="seg" min="0.2" max="4" step="0.1" value="1" aria-label="Довжина відрізка"></div>
+      <div class="ctrl-group">Ніч</div>
+      <div class="ctrl"><label>Годин світла <b id="v-h"></b></label>
+        <input type="range" id="h" min="4" max="14" step="0.5" value="8" aria-label="Годин світла"></div>
+    </div>
+
+    <div class="outputs">
+      <div class="seg" id="topoPick"></div>
+      <div class="tiles" id="tiles"></div>
+      <div class="tbl-wrap" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>Схема прокладки</th><th>Просадка</th><th>На найдальшому</th><th>Втрати в міді</th></tr></thead>
+        <tbody id="topoBody"></tbody>
+      </table>
+      </div>
+      <p class="fig-cap" id="topoWhy"></p>
+    </div>
+  </div>
+
+  <h2>Звідки числа</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Позиція</th><th>На одиницю</th><th>Джерело</th><th>Примітка</th></tr></thead>
+    <tbody>
+{{C_SOURCES}}
+</tbody>
+  </table>
+  </div>
+  <p class="fig-cap">{{C_CAPTION}}</p>
+  {{C_NOTES}}
+</div>
+
+<script>
+(function(){
+  const C = {{C_JSON}};
+  const $ = id => document.getElementById(id);
+  let load = C.loads[0], topo = C.topologies[0].key;
+
+  // Та сама формула, що в circuit_lab.k_closed() — парність двох реалізацій
+  // перевіряється при збірці, щоб сторінка не розійшлась із моделлю.
+  function kFactor(t, n){
+    const half = Math.floor(n / 2);
+    if (t === "chain") return n * (n + 1) / 2 - 1;
+    if (t === "split") return half * (half + 1) / 2;
+    if (t === "loop")  return half * half / 2;
+    return 1;
+  }
+
+  // Втрати йдуть квадратом струму, тому в них схема прокладки важить ще більше.
+  // Формули дзеркалять circuit_lab.k2_closed().
+  function k2Factor(t, n){
+    const h = Math.floor(n / 2), sq = m => m * (m + 1) * (2 * m + 1) / 6;
+    if (t === "chain") return sq(n) - 1;
+    if (t === "split") return 2 * sq(h);
+    if (t === "loop")  return 2 * (sq(h) - h * (h + 1) / 2 + 0.25 * h);
+    return n;
+  }
+
+  function calc(t){
+    const n = +$("n").value, dim = +$("dim").value / 100;
+    const seg = +$("seg").value, awg = C.gauges[+$("awg").value];
+    const aUnit = C.dim === "pwm"
+      ? load.a_min + (load.a_full - load.a_min) * dim
+      : load.a_full * (C.dim === "duty" ? dim : 1);
+    const a = aUnit * n, w = a * C.v;
+    const r = C.ohm[String(awg)];
+    // просадка = 2 × опір метра × K × довжина відрізка × струм одиниці,
+    // плюс власний хвіст світильника на його ж струмі
+    const drop = 2 * r * kFactor(t, n) * seg * aUnit
+               + 2 * C.ohm[String(C.tail_awg)] * C.tail_m * aUnit;
+    const lossW = 2 * r * seg * Math.pow(aUnit, 2) * k2Factor(t, n);
+    return {n, a, w, aUnit, drop, pct: 100 * drop / C.v, awg, lossW};
+  }
+
+  const tile = (k, v, u, note, cls) =>
+    `<div class="tile ${cls||''}"><div class="k">${k}</div>` +
+    `<div class="v">${v}<span class="u"> ${u}</span></div>` +
+    `<div class="note">${note}</div></div>`;
+
+  function render(){
+    const r = calc(topo), hours = +$("h").value, wh = r.w * hours;
+    const lim = C.limits, safe = lim.dimmer_a * lim.dimmer_derate;
+    $("v-n").textContent = r.n + " " + C.unit;
+    $("v-dim").textContent = $("dim").value + "%";
+    $("v-awg").textContent = "AWG " + r.awg;
+    $("v-seg").textContent = (+$("seg").value).toFixed(1) + " м";
+    $("v-h").textContent = (+$("h").value).toFixed(1) + " год";
+
+    const dropCls = r.pct > lim.drop_crit_pct ? "crit"
+                  : (r.pct > lim.drop_warn_pct ? "warn" : "good");
+    const tiles = [
+      tile("Гілка бере", r.w.toFixed(1), "Вт",
+           `${r.a.toFixed(2)} A · ${r.aUnit.toFixed(3)} A на ${C.unit_one}`,
+           r.w > lim.dc_port_w ? "crit" : "good"),
+      tile("За ніч", wh.toFixed(0), "Wh",
+           `${(100 * wh / lim.station_wh).toFixed(0)}% станції ${lim.station_wh} Wh`),
+      tile("Просадка до дальнього", r.pct.toFixed(2), "%",
+           `−${r.drop.toFixed(3)} В · межа ${lim.drop_crit_pct}%`, dropCls),
+      tile("На найдальшому", (C.v - r.drop).toFixed(2), "В",
+           "решта лінії бачить більше", dropCls),
+    ];
+    if (C.dim === "pwm") {
+      tiles.push(tile("Запас у диммері",
+        r.a > safe ? "нема" : (100 * (1 - r.a / safe)).toFixed(0), r.a > safe ? "" : "%",
+        `робоча стеля ${safe.toFixed(1)} A з ${lim.dimmer_a} A`,
+        r.a > safe ? "crit" : (r.a > safe * .85 ? "warn" : "good")));
+    }
+    tiles.push(tile("Від 12 В-виходу", (100 * r.w / lim.dc_port_w).toFixed(0), "%",
+      `межа станції ${lim.dc_port_w} Вт`, r.w > lim.dc_port_w ? "crit" : "good"));
+    $("tiles").innerHTML = tiles.join("");
+
+    $("topoBody").innerHTML = C.topologies.map(t => {
+      const x = calc(t.key);
+      const col = x.pct > lim.drop_crit_pct ? "var(--crit)"
+                : (x.pct > lim.drop_warn_pct ? "var(--warn)" : "var(--good)");
+      return `<tr class="${t.key === topo ? 'on' : ''}"><td>${t.label}</td>` +
+             `<td class="num" style="color:${col}">${x.pct.toFixed(2)}%</td>` +
+             `<td class="num">${(C.v - x.drop).toFixed(2)} В</td>` +
+             `<td class="num">${x.lossW.toFixed(2)} Вт</td></tr>`;
+    }).join("");
+    $("topoWhy").textContent = C.topologies.find(t => t.key === topo).why;
+  }
+
+  function chips(box, items, cur, onPick, label){
+    $(box).innerHTML = "";
+    items.forEach(it => {
+      const b = document.createElement("button");
+      b.textContent = label(it);
+      b.className = it.key === cur ? "active" : "";
+      b.addEventListener("click", () => { onPick(it); });
+      $(box).appendChild(b);
+    });
+  }
+
+  function pickLoad(l){
+    load = l;
+    $("n").max = l.n_max; $("n").value = l.n_default;
+    chips("loadPick", C.loads, load.key, pickLoad, x => x.name);
+    render();
+  }
+  function pickTopo(t){
+    topo = t.key;
+    chips("topoPick", C.topologies, topo, pickTopo, x => x.label);
+    render();
+  }
+
+  if (C.dim === "none") { $("dim-group").style.display = "none"; $("dim-ctrl").style.display = "none"; }
+  $("awg").max = C.gauges.length - 1;
+  $("awg").value = C.gauges.indexOf(C.awg_default);
+  $("seg").value = C.seg_m;
+  ["n", "dim", "awg", "seg", "h"].forEach(id => $(id).addEventListener("input", render));
+  chips("topoPick", C.topologies, topo, pickTopo, x => x.label);
+  pickLoad(C.loads[0]);
+})();
+</script>

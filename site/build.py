@@ -36,6 +36,7 @@ import lights_node_model as lm  # noqa: E402  (reads lights/data/*)
 import lamp_bench as lb  # noqa: E402  (стенд ламп прожектора, lights/data/lamp_bench.json)
 import spot_ring as sr  # noqa: E402  (звʼязка 8 прожекторів: схема, диммер, запобіжник)
 import strip_bench as sb  # noqa: E402  (стенд LED-стрічки, lights/data/strip_bench.json)
+import circuit_lab as cl  # noqa: E402  (окремі сторінки-калькулятори по типах світла)
 import power_node_model as pw
 sys.path.insert(0, str(ROOT / "enclosure" / "model"))
 import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
@@ -1977,7 +1978,70 @@ def build():
                      f'<td>{f["cfm"]} CFM паспорт → {f["cfm"]*ENC["air"]["filter_derate"]:.0f} з фільтром</td></tr>')
     elab = elab.replace("{{ENC_PARTS}}", "\n".join(parts))
 
-    pages = {"index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
+    # ============ окремі сторінки-калькулятори по типах світла ============
+    # Одна сторінка = один тип світильника: покрутити кількість, яскравість,
+    # кабель і схему прокладки, не чіпаючи решту системи. Шаблон спільний,
+    # різняться тільки дані з lights/data/circuits.json.
+    circ_tmpl = tmpl("circuit.tmpl.html")
+    all_circ = cl.circuits()
+    circ_pages = {}
+    for c in all_circ:
+        page = circ_tmpl
+        nav = "".join(
+            f'<a href="{SITE_URL}{o["key"]}.html"'
+            + (' class="on"' if o["key"] == c["key"] else "")
+            + f'>{esc(o["title"])}</a>'
+            for o in all_circ)
+        src_rows = []
+        for ld in c["loads"]:
+            w = ld["a_full"] * c["v"]
+            src_rows.append(
+                f'      <tr><td>{esc(ld["name"])}</td>'
+                f'<td class="num">{ld["a_full"]:.3f} A · {w:.2f} Вт на {esc(c["unit_one"])}</td>'
+                f'<td>{esc(ld["source"])}</td>'
+                f'<td style="white-space:normal">{esc(ld.get("note", ""))}</td></tr>')
+        notes = [
+            ("Як рахується просадка",
+             "Кожна ділянка кабелю несе струм тих світильників, що живляться через неї, і на "
+             "кожній осідає своя частка вольтів. Сторінка складає ці частки по шляху до "
+             "найдальшого світильника і додає його власний хвіст. Опір береться туди-назад — "
+             "струм іде плюсом і повертається мінусом."),
+            ("Чому схема прокладки важливіша за калібр",
+             "Між шлейфом в один бік і замкнутим кільцем різниця в рази, а між сусідніми "
+             "калібрами — відсотки. Спершу вибирають схему, потім дотягують мідь."),
+        ]
+        if c["key"] == "spots":
+            notes.append(("Рішення по прокладці",
+                          sr.SG["_recommended_note"]))
+        if c["key"] == "strip":
+            notes.append(("Обережно з цими Вт/м", sb.status()["verdict"]
+                          if isinstance(sb.status(), dict) and "verdict" in sb.status()
+                          else "Число Вт/м поки не заміряне напряму — це прикидка."))
+        page = (page
+                .replace("{{C_TITLE}}", esc(c["title"]))
+                .replace("{{C_GROUP}}", esc(c["group"]))
+                .replace("{{C_SUB}}", esc(c["sub"]))
+                .replace("{{C_NAV}}", nav)
+                .replace("{{C_DIM_LABEL}}", esc(c["dim_label"]))
+                .replace("{{C_SEG_LABEL}}", esc(c["seg_label"]))
+                .replace("{{C_SOURCES}}", "\n".join(src_rows))
+                .replace("{{C_CAPTION}}", esc(
+                    f'Струм одиниці × кількість × рівень яскравості дає струм гілки; далі '
+                    f'просадка по обраній схемі. Межі: попередження від '
+                    f'{c["limits"]["drop_warn_pct"]}%, критично від '
+                    f'{c["limits"]["drop_crit_pct"]}%. Ніч і станція — для прикидки запасу, '
+                    f'повний баланс живлення рахується у вузлі живлення.'))
+                .replace("{{C_NOTES}}", "\n".join(
+                    f'<div class="layer"><h3>{esc(t)}</h3><p>{esc(b)}</p></div>'
+                    for t, b in notes))
+                .replace("{{C_JSON}}", json.dumps(c, ensure_ascii=False)))
+        circ_pages[f'{c["key"]}.html'] = page
+
+    llab = llab.replace("{{CIRCUIT_NAV}}", " · ".join(
+        f'<a href="{SITE_URL}{c["key"]}.html">{esc(c["title"])}</a>' for c in all_circ))
+
+    pages = {**circ_pages,
+             "index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
