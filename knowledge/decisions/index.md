@@ -3,6 +3,7 @@
 
 # Рішення
 
+* [Суцільна заливка стрічки заборонена; робочий режим — «Комета»](sutsilna-zalyvka-strichky-zaboronena-robochyi-rezhym-kometa.md)
 * [Прожектори зʼєднуємо по краю подіуму, а не через коробку в центрі](prozhektory-ziednuiemo-po-kraiu-podiumu-a-ne-cherez-korobku-.md)
 * [Лампа прожекторів — Luxrite MR16 4000K, вибір закрито](lampa-prozhektoriv-luxrite-mr16-4000k-vybir-zakryto.md)
 * [Адресну стрічку рахуємо по біжучому фронту, не по повній лінії](adresnu-strichku-rakhuiemo-po-bizhuchomu-frontu-ne-po-povnii.md)

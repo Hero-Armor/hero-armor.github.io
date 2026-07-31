@@ -29,7 +29,7 @@
 * [Запитати конструктора про зовнішній периметр подіуму](zapytaty-konstruktora-pro-zovnishnii-perymetr-podiumu.md) - чекаємо
 * [Marcel: заміряти трубу кріплення прожектора (діаметр, різьба)](marcel-zamiriaty-trubu-kriplennia-prozhektora-diametr-rizba.md) - чекаємо
 * [Відповісти Володимиру по просадці 12В — тест уже зроблено](vidpovisty-volodymyru-po-prosadtsi-12v-test-uzhe-zrobleno.md) - чекаємо
-* [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) - в роботі
+* [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) - готово
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) - в роботі
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) - до роботи
 * [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) - до роботи
@@ -43,3 +43,5 @@
 * [Зміряти лінійкою модулі й рознесення пінів ESP32, коли приїде посилка](zmiriaty-liniikoiu-moduli-i-roznesennia-piniv-esp32-koly-pry.md) - чекаємо
 * [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) - готово
 * [Докупити монтажну дрібницю: гермовводи, термоусадка, джампери, стяжки](dokupyty-montazhnu-dribnytsiu-hermovvody-termousadka-dzhampe.md) - до роботи
+* [Виставити обмежувач струму в контролері стрічки (щоб суцільний білий не поклав 12 В-вихід)](vystavyty-obmezhuvach-strumu-v-kontroleri-strichky-shchob-su.md) - до роботи
+* [Реле на живлення стрічки — рвати на день](rele-na-zhyvlennia-strichky-rvaty-na-den.md) - до роботи

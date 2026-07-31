@@ -14,6 +14,7 @@
 """
 import argparse
 import json
+import time
 import re
 import sys
 import unicodedata
@@ -97,6 +98,25 @@ def site_search(page, url, host):
     return out[:8]
 
 
+def amazon_search(page, query):
+    """Останній рубіж: побутові позиції (кулери, ящики) є в Amazon завжди.
+
+    Сайти виробників або ріжуть нас, або взагалі не тримають картку такого
+    товару, а загальний пошук віддає головні сторінки брендів.
+    """
+    page.goto("https://www.amazon.com/s?k=" + query.replace(" ", "+"),
+              wait_until="domcontentloaded", timeout=60000)
+    page.wait_for_timeout(3500)
+    links = page.eval_on_selector_all(
+        'a[href*="/dp/"]', "els => els.map(e => e.href)")
+    out = []
+    for l in links:
+        m = re.search(r"(https://www\.amazon\.com/[^/]*/?dp/[A-Z0-9]{10})", l)
+        if m and m.group(1) not in out:
+            out.append(m.group(1))
+    return out[:8]
+
+
 def product_image(page, url, tokens):
     """Перейти, переконатись що це та модель, і взяти фото товару.
 
@@ -157,6 +177,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--dry", action="store_true")
+    ap.add_argument("--amazon", action="store_true",
+                    help="шукати лише в Amazon (для побутових позицій)")
     a = ap.parse_args()
 
     data = json.loads(PARAMS.read_text())
@@ -173,11 +195,17 @@ def main():
         for c in todo:
             # окрема сесія на кожну позицію: спільна вмирала на третій-четвертій
             # («Target page, context or browser has been closed»)
-            try:
-                br = pw.chromium.connect_over_cdp(cloud_browser.build_ws_url(gov=False),
-                                                  timeout=120000)
-            except Exception as e:
-                print(f"✗ браузер не піднявся: {str(e)[:70]}")
+            br = None
+            for attempt in range(4):
+                try:
+                    br = pw.chromium.connect_over_cdp(
+                        cloud_browser.build_ws_url(gov=False), timeout=120000)
+                    break
+                except Exception as e:
+                    err = str(e)[:70]
+                    time.sleep(10 * (attempt + 1))
+            if br is None:
+                print(f"✗ {c['name']}: браузер не піднявся ({err})")
                 failed += 1
                 continue
             ctx = br.contexts[0] if br.contexts else br.new_context()
@@ -185,14 +213,16 @@ def main():
             name = c["name"]
             tokens = VERIFY.get(name) or model_tokens(name)
             try:
-                if name in URL_HINTS:
+                if a.amazon:
+                    links = amazon_search(page, QUERY.get(name, name))
+                elif name in URL_HINTS:
                     links = [URL_HINTS[name]]
                 elif name in SITE_SEARCH:
                     links = site_search(page, *SITE_SEARCH[name])
-                    if not links:
-                        links = search(page, QUERY.get(name, name))
+                    links += amazon_search(page, QUERY.get(name, name))
                 else:
                     links = search(page, QUERY.get(name, name))
+                links += amazon_search(page, QUERY.get(name, name))
             except Exception as e:
                 print(f"✗ {name}: пошук впав ({str(e)[:60]})")
                 failed += 1

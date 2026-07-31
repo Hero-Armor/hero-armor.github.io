@@ -126,8 +126,16 @@ def project(wpm=None, d=None):
     """Що ці Вт/м означають для всієї зірки: пік, анімація, ватт-години за ніч."""
     wpm = wpm if wpm is not None else source()[1]
     d = d if d is not None else (duty() if duty() is not None else CRIT["duty_model"])
-    peak = wpm * TOTAL_M + idle_w()
-    anim = wpm * TOTAL_M * d + idle_w()
+    # Холостий хід теж масштабуємо довжиною, а не додаємо як є. Він майже весь —
+    # це чипи, по одному на кожні три сантиметри, тому на зірці їх у чотири з
+    # половиною рази більше, ніж на тестовому шматку. Частина припадає на сам
+    # ESP32 і не росте, тож така оцінка йде ЗВЕРХУ — і хай іде, бо недооцінена
+    # підлога горить усю ніч і мовчки з'їдає запас.
+    lit = next((m.get("length_m") for m in B["measurements"]
+                if m["mode"] == "white100" and m.get("length_m")), None)
+    idle = idle_w() * (TOTAL_M / lit if lit else 1.0)
+    peak = wpm * TOTAL_M + idle
+    anim = wpm * TOTAL_M * d + idle
     return {
         "w_per_m": wpm,
         "duty": d,

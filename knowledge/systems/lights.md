@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Суцільна заливка стрічки заборонена; робочий режим — «Комета»](/decisions/sutsilna-zalyvka-strichky-zaboronena-robochyi-rezhym-kometa.md)
 * [Прожектори зʼєднуємо по краю подіуму, а не через коробку в центрі](/decisions/prozhektory-ziednuiemo-po-kraiu-podiumu-a-ne-cherez-korobku-.md)
 * [Лампа прожекторів — Luxrite MR16 4000K, вибір закрито](/decisions/lampa-prozhektoriv-luxrite-mr16-4000k-vybir-zakryto.md)
 * [Адресну стрічку рахуємо по біжучому фронту, не по повній лінії](/decisions/adresnu-strichku-rakhuiemo-po-bizhuchomu-frontu-ne-po-povnii.md)
@@ -53,13 +54,15 @@ generated: { by: "process:site-build" }
 * [Запитати конструктора про зовнішній периметр подіуму](/tasks/zapytaty-konstruktora-pro-zovnishnii-perymetr-podiumu.md) — чекаємо
 * [Marcel: заміряти трубу кріплення прожектора (діаметр, різьба)](/tasks/marcel-zamiriaty-trubu-kriplennia-prozhektora-diametr-rizba.md) — чекаємо
 * [Відповісти Володимиру по просадці 12В — тест уже зроблено](/tasks/vidpovisty-volodymyru-po-prosadtsi-12v-test-uzhe-zrobleno.md) — чекаємо
-* [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](/tasks/zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) — в роботі
+* [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](/tasks/zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) — готово
 * [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](/tasks/dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) — готово
 * [Перевірити, на яку адресу йде стрічка (LA чи SF)](/tasks/pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) — до роботи
 * [Написати Володимиру: коло лишається + цифри просадки](/tasks/napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) — готово
 * [Заміряти переріз стрічки, коли прийде (під заглушки)](/tasks/zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) — до роботи
 * [Обрати, чим вмикати прожектори і аварійну без фотореле](/tasks/obraty-chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md) — чекаємо
 * [Замовити кошик дрібниці по світлу (заглушки + термоусадка) ≈ $84](/tasks/zamovyty-koshyk-dribnytsi-po-svitlu-zahlushky-termousadka-84.md) — до роботи
+* [Виставити обмежувач струму в контролері стрічки (щоб суцільний білий не поклав 12 В-вихід)](/tasks/vystavyty-obmezhuvach-strumu-v-kontroleri-strichky-shchob-su.md) — до роботи
+* [Реле на живлення стрічки — рвати на день](/tasks/rele-na-zhyvlennia-strichky-rvaty-na-den.md) — до роботи
 
 # Закупівля
 

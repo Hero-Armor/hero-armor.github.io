@@ -246,7 +246,9 @@
    "seal": "IP67",
    "price_usd": 140,
    "kind": "кейс",
-   "note": "Найдешевший новий з IP67, що проходить. Внутрішні розміри прямо в назві товару на monoprice.com."
+   "note": "Найдешевший новий з IP67, що проходить. Внутрішні розміри прямо в назві товару на monoprice.com.",
+   "url": "https://www.amazon.com/Monoprice-Weatherproof-Shockproof-Hard-Wheels/dp/B00SSF9DIE?th=1",
+   "img": "assets/cases/monoprice-301915-8.jpg"
   },
   {
    "name": "SKB iSeries 3i-3026-15",
