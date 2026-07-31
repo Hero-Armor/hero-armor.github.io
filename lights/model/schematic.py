@@ -15,6 +15,11 @@ import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import lights_node_model as lm
 
+import matplotlib
+# підписи лишаються ТЕКСТОМ, а не кривими: інакше англійська
+# версія дашборда не може їх перекласти
+matplotlib.rcParams["svg.fonttype"] = "none"
+
 import schemdraw
 import schemdraw.elements as elm
 

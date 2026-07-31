@@ -9,6 +9,11 @@ Generates schematic.svg + schematic.png next to this file.
   Станція змінна: сіла -> на базу під розетку, на її місце заряджена.
 """
 
+import matplotlib
+# підписи на схемі мають лишатись ТЕКСТОМ, а не кривими: інакше
+# англійська версія дашборда не може їх перекласти
+matplotlib.rcParams["svg.fonttype"] = "none"
+
 import schemdraw
 import schemdraw.elements as elm
 

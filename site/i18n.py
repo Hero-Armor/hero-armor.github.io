@@ -12,7 +12,7 @@
 ------------
 * сторінка ріжеться на смислові шматки (абзац, комірка таблиці, підпис на
   схемі), а не на окремі слова — інакше переклад виходить рваним;
-* теги всередині шматка ховаються за мітки ⟦1⟧, тож посилання й <b> лишаються
+* теги всередині шматка ховаються за мітки <x1/>, тож посилання й <b> лишаються
   на своїх місцях і модель їх не псує;
 * усе перекладене складається в памʼять `site/i18n/tm.json`. Наступна збірка
   платить лише за нові рядки, а виправлення руками в памʼяті переживають
@@ -63,7 +63,7 @@ BLOCK = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "li", "td", "th", "caption",
 
 ATTRS = ("alt", "title", "placeholder", "aria-label")
 
-MAX_SEGMENT = 2500        # довші шматки ріжемо на текстові вузли
+MAX_SEGMENT = 900        # довші шматки ріжемо по <br> і реченнях
 SKIP_SUBTREE = ("metadata", "defs")   # службові нутрощі SVG від matplotlib
 
 TOKEN = re.compile(
@@ -173,15 +173,16 @@ def plan(html):
                 continue
             if open_name in BLOCK and not has_block:
                 inner = html[inner_start:m.start()]
-                # завеликий шматок моделі не по зубах (і це майже завжди
-                # ознака, що всередині ціла схема) — тоді беремо його текст
-                # по вузлах нижче, у `_loose_text_spans`
-                if CYR.search(inner) and len(inner) <= MAX_SEGMENT:
-                    src, tags = _protect(inner)
-                    if src.strip():
-                        spans.append({"start": inner_start, "end": m.start(),
-                                      "src": src, "tags": tags})
-                        covered.append((inner_start, m.start()))
+                if CYR.search(inner):
+                    for a, b in _chunks(html, inner_start, m.start()):
+                        piece = html[a:b]
+                        if not CYR.search(piece):
+                            continue
+                        src, tags = _protect(piece)
+                        if src.strip():
+                            spans.append({"start": a, "end": b,
+                                          "src": src, "tags": tags})
+                    covered.append((inner_start, m.start()))
             break
 
     spans.extend(_loose_text_spans(html, covered))
@@ -199,6 +200,32 @@ def _skip_ranges(html):
     for tag in SKIP_SUBTREE:
         for m in re.finditer(rf"<{tag}\b.*?</{tag}>", html, re.S | re.I):
             out.append((m.start(), m.end()))
+    return out
+
+
+def _chunks(html, start, end):
+    """Розрізати задовгий шматок на шматки, які модель дійсно дотягує.
+
+    Довгі абзаци (пам'ятка по стрічці — півтори тисячі символів і три десятки
+    тегів) модель обривала на середині й губила мітки. Ріжемо по <br> і по
+    кінцях речень, кожен шматок лишається цілою думкою.
+    """
+    if end - start <= MAX_SEGMENT:
+        return [(start, end)]
+    cuts = [start]
+    for m in re.finditer(r"<br\s*/?>|(?<=[.;:!?])\s+(?=[^<])", html[start:end]):
+        cuts.append(start + m.end())
+    cuts.append(end)
+    out, a = [], start
+    for c in cuts[1:]:
+        if c - a >= MAX_SEGMENT // 2:
+            out.append((a, c))
+            a = c
+    if a < end:
+        if out and end - a < 40:
+            out[-1] = (out[-1][0], end)
+        else:
+            out.append((a, end))
     return out
 
 
@@ -466,17 +493,24 @@ def build(only=None, dry=False, verbose=True):
         en_html = to_en_paths(render(html, sp, tm))
         (EN / name).write_text(with_switch(en_html, "en", name))
         (DOCS / name).write_text(with_switch(html, "uk", name))
-        left = len(CYR.findall(re.sub(r"<script[^>]*application/ld\+json.*?</script>",
-                                      "", (EN / name).read_text(), flags=re.S | re.I)))
+        left = len(CYR.findall(_visible_only((EN / name).read_text())))
         print(f"  en/{name:22} лишилось українських літер: {left}")
     print(f"готово: {len(plans)} сторінок у docs/en/")
+
+
+def _visible_only(html):
+    """Те, що бачить читач: без машинних даних і без наших коментарів у коді."""
+    html = re.sub(r"<script[^>]*application/ld\+json.*?</script>", "", html,
+                  flags=re.S | re.I)
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.S)
+    html = SWITCH_MARK.sub("", html)      # «Українською» на кнопці — це навмисне
+    return re.sub(r"//[^\n]*", "", html)
 
 
 def check():
     bad = 0
     for p in sorted(EN.glob("*.html")):
-        txt = re.sub(r"<script[^>]*application/ld\+json.*?</script>", "",
-                     p.read_text(), flags=re.S | re.I)
+        txt = _visible_only(p.read_text())
         hits = CYR.findall(txt)
         if hits:
             bad += 1

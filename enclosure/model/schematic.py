@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 import matplotlib
+matplotlib.rcParams["svg.fonttype"] = "none"
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, Rectangle

@@ -15,6 +15,7 @@ Chain: PCM5102A (2.1 Vrms FS) -> input RC HPF -> TPA3116D2 (BTL, 12V) ->
 
 import numpy as np
 import matplotlib
+matplotlib.rcParams["svg.fonttype"] = "none"
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 

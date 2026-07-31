@@ -10,6 +10,11 @@ Generates schematic.svg + schematic.png next to this file.
          SPI -> microSD;  GPIO27/UART2 <-> LD2410C
 """
 
+import matplotlib
+# підписи на схемі мають лишатись ТЕКСТОМ, а не кривими: інакше
+# англійська версія дашборда не може їх перекласти
+matplotlib.rcParams["svg.fonttype"] = "none"
+
 import schemdraw
 import schemdraw.elements as elm
 
