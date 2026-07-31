@@ -34,6 +34,7 @@ sys.path.insert(0, str(SOLAR / "model"))
 import audio_node_model as m  # noqa: E402  (reads audio/data/*)
 import lights_node_model as lm  # noqa: E402  (reads lights/data/*)
 import lamp_bench as lb  # noqa: E402  (стенд ламп прожектора, lights/data/lamp_bench.json)
+import spot_ring as sr  # noqa: E402  (звʼязка 8 прожекторів: схема, диммер, запобіжник)
 import power_node_model as pw
 sys.path.insert(0, str(ROOT / "enclosure" / "model"))
 import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
@@ -906,6 +907,62 @@ def build():
         f'({100*by_grp["g1"]/wh_light:.0f}%), у міді згорає {by_grp["loss"]:.0f} Wh. '
         f'Просадка в таблиці порахована на наявному кабелі — посунь повзунки калібру, '
         f'щоб побачити, що дає товща мідь.')
+
+    # ---- кільце прожекторів: чим зʼєднати і чи проходить диммер ----
+    ring_d = sr.dimmer()
+    ring_w = sr.watts()
+    llab = llab.replace("{{RING_TILES}}", "\n".join([
+        tile("Група на повній", f'{ring_d["load_a"]:.2f}', "A",
+             f'{ring_w["full"]:.0f} Вт · рахунок по найпрожерливішій лампі'),
+        tile("На мінімумі крутилки", f'{ring_w["dim_min"]:.1f}', "Вт",
+             f'{ring_d["min_a"]:.2f} A на всі вісім — діапазон ×{ring_d["range_x"]:.0f}', "good"),
+        tile("Запас у диммері", f'{ring_d["headroom_pct"]:.0f}', "%",
+             f'{ring_d["load_a"]:.1f} A проти робочої стелі {ring_d["safe_a"]:.1f} A '
+             f'(паспорт {ring_d["rating_a"]:.0f} A)',
+             "good" if ring_d["headroom_pct"] >= 30 else "warn"),
+        tile("Запобіжник групи", f"{sr.fuse():.0f}", "A",
+             "робочий струм із запасом, вгору по стандартному ряду"),
+    ]))
+    llab = llab.replace("{{RING_SVG}}", re.sub(
+        r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "",
+        (LIGHTS / "model" / "spot_ring.svg").read_text()))
+    llab = llab.replace("{{RING_CAPTION}}", esc(
+        f'Радіус розстановки стійок {sr.RING["r_post_m"]:.2f} м — {sr.RING["length_source"]}. '
+        f'Довжини уточнюємо після складання подіуму; на вибір схеми це не впливає, '
+        f'бо різниця між схемами в рази, а не у відсотках.'))
+    llab = llab.replace("{{RING_SCHEMES}}", "\n".join(
+        f'      <tr><td>{esc(s["label"])}'
+        + (' <span style="color:var(--good)">← беремо</span>'
+           if s["kind"] == sr.SG["recommended"] else "")
+        + f'</td><td class="num">{s["worst_v"]:.3f} В ({s["worst_pct"]:.2f}%)</td>'
+        f'<td class="num">{s["cable_m"]:.1f} м</td>'
+        f'<td class="num">{s["joints"]}</td>'
+        f'<td style="white-space:normal;max-width:52ch">{esc(s["why"])}</td></tr>'
+        for s in sr.schemes()))
+
+    d_rows = []
+    for r in lb.dimmer_runs():
+        cls = "" if r["dimmer_ok"] else ' style="color:var(--crit)"'
+        hcol = ("var(--good)" if r["headroom_pct"] >= 30 else
+                "var(--warn)" if r["dimmer_ok"] else "var(--crit)")
+        d_rows.append(
+            f'      <tr><td>{esc(r["name"])}</td>'
+            f'<td class="num">{r["a_full"]:.2f} A · {r["w_full"]:.1f} Вт</td>'
+            f'<td class="num">{r["a_min"]:.2f} A · {r["w_min"]:.1f} Вт</td>'
+            f'<td class="num">×{r["range_x"]:.0f}</td>'
+            f'<td class="num"{cls}>{r["group_a"]:.2f} A · {r["group_w"]:.0f} Вт</td>'
+            f'<td class="num" style="color:{hcol}">{r["headroom_pct"]:.0f}%</td></tr>')
+    llab = llab.replace("{{DIMMER_ROWS}}", "\n".join(d_rows))
+    llab = llab.replace("{{DIMMER_CAPTION}}", esc(
+        f'{lb.B["lamps"][0]["note"].split(".")[0]}. Заміри Івана на блоці живлення 31.07 — '
+        f'крайні положення крутилки ШІМ-диммера {sr.DIM["model"]}. Запас рахується не від '
+        f'паспортних {sr.DIM["a_rating"]:.0f} A, а від робочої стелі '
+        f'{sr.DIM["a_rating"]*sr.DIM["derate"]:.1f} A: тривале навантаження тримають до '
+        f'{sr.DIM["derate"]*100:.0f}% номіналу. {sr.DIM["placement_open"]}'))
+    llab = llab.replace("{{INSTALL_RULES}}", "\n".join(
+        f'    <div class="layer"><h3>{esc(r["rule"])}</h3>'
+        f'<p>{esc(r["why"])} <a href="{esc(r["src"])}">джерело</a></p></div>'
+        for r in sr.SG["install"]))
 
     # ---- стенд ламп прожектора (дослід усередині світлової лабораторії) ----
     bst = lb.status()

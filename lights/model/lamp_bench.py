@@ -137,6 +137,42 @@ def ranking():
     return sorted(out, key=lambda r: (order[r["cls"]], -(r["n_power"] or 0)))
 
 
+def dimmer_runs():
+    """Що показав блок живлення на крайніх положеннях ШІМ-диммера.
+
+    Це окрема історія від заниження напруги: диммер не садить вольти, він рубає
+    живлення імпульсами. Тому тут не показник степеня, а простий діапазон —
+    скільки лампа бере на повній і скільки на мінімумі крутилки. Для батареї
+    важливий саме нижній край: у ньому ми доживаємо ніч, якщо сонця не було."""
+    a_rating, derate = CRIT["dimmer_a"], CRIT["dimmer_derate"]
+    safe = a_rating * derate
+    out = []
+    for r in B["dimmer_runs"]:
+        l = lamp(r["lamp"])
+        grp = r["a_full"] * CRIT["spot_qty"]
+        out.append({
+            "id": r["lamp"], "name": l["name"], "role": l["role"],
+            "a_full": r["a_full"], "a_min": r["a_min"],
+            "w_full": r["v"] * r["a_full"], "w_min": r["v"] * r["a_min"],
+            "range_x": r["a_full"] / r["a_min"] if r["a_min"] else None,
+            "group_a": grp, "group_w": r["v"] * grp,
+            "group_a_min": r["a_min"] * CRIT["spot_qty"],
+            "night_wh": r["v"] * grp * CRIT["night_h"],
+            "dimmer_ok": grp <= safe,
+            "dimmer_load_pct": 100 * grp / a_rating,
+            "headroom_pct": 100 * (1 - grp / safe),
+            "fits_dc": r["v"] * grp <= CRIT["dc_port_w"],
+            "note": r.get("note", ""),
+        })
+    return sorted(out, key=lambda r: r["a_full"])
+
+
+def worst_a_full():
+    """Найпрожерливіша з заміряних ламп — по ній рахуємо кабель і диммер."""
+    runs = B["dimmer_runs"]
+    return max((r["a_full"] for r in runs), default=None)
+
+
 def status():
     """Скільки замірів уже є — сторінка з цього вирішує, що показувати."""
     done = {l["id"]: len(points(l["id"])) for l in lamps()}
@@ -151,7 +187,13 @@ def status():
 
 def main():
     st = status()
-    print(f'заміри: {st["measurements"]} з {st["expected"]}')
+    print("ШІМ-диммер, крайні положення:")
+    for r in dimmer_runs():
+        print(f'  {r["name"]:38} {r["a_full"]:.2f}→{r["a_min"]:.2f} A '
+              f'(×{r["range_x"]:.0f}) · група {r["group_a"]:.2f} A '
+              f'{r["group_w"]:.0f} Вт · запас у диммері {r["headroom_pct"]:.0f}%'
+              f'{"" if r["dimmer_ok"] else "  ⚠ НЕ ПРОХОДИТЬ"}')
+    print(f'заміри напруги: {st["measurements"]} з {st["expected"]}')
     for r in ranking():
         n = f'{r["n_power"]:.2f}' if r["n_power"] is not None else "—"
         print(f'  {r["name"]:38} n={n:>5}  {r["verdict"]}')
