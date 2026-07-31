@@ -920,7 +920,7 @@ def build():
              f'{ring_d["load_a"]:.1f} A проти робочої стелі {ring_d["safe_a"]:.1f} A '
              f'(паспорт {ring_d["rating_a"]:.0f} A)',
              "good" if ring_d["headroom_pct"] >= 30 else "warn"),
-        tile("Запобіжник групи", f"{sr.fuse():.0f}", "A",
+        tile("Запобіжник групи", f"{sr.fuse():g}", "A",
              "робочий струм із запасом, вгору по стандартному ряду"),
     ]))
     llab = llab.replace("{{RING_SVG}}", re.sub(
@@ -941,6 +941,7 @@ def build():
         for s in sr.schemes()))
 
     d_rows = []
+    FLICK = {"рівно": "var(--good)", "мерехтить": "var(--crit)"}
     for r in lb.dimmer_runs():
         cls = "" if r["dimmer_ok"] else ' style="color:var(--crit)"'
         hcol = ("var(--good)" if r["headroom_pct"] >= 30 else
@@ -950,6 +951,8 @@ def build():
             f'<td class="num">{r["a_full"]:.2f} A · {r["w_full"]:.1f} Вт</td>'
             f'<td class="num">{r["a_min"]:.2f} A · {r["w_min"]:.1f} Вт</td>'
             f'<td class="num">×{r["range_x"]:.0f}</td>'
+            f'<td style="color:{FLICK.get(r["flicker"], "var(--ink-2)")}">'
+            f'{esc(r["flicker"])}</td>'
             f'<td class="num"{cls}>{r["group_a"]:.2f} A · {r["group_w"]:.0f} Вт</td>'
             f'<td class="num" style="color:{hcol}">{r["headroom_pct"]:.0f}%</td></tr>')
     llab = llab.replace("{{DIMMER_ROWS}}", "\n".join(d_rows))

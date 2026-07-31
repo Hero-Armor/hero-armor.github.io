@@ -146,9 +146,11 @@ def dimmer_runs():
     важливий саме нижній край: у ньому ми доживаємо ніч, якщо сонця не було."""
     a_rating, derate = CRIT["dimmer_a"], CRIT["dimmer_derate"]
     safe = a_rating * derate
+    flick = {f["lamp"]: f for f in B["flicker"]}
     out = []
     for r in B["dimmer_runs"]:
         l = lamp(r["lamp"])
+        f = flick.get(r["lamp"], {})
         grp = r["a_full"] * CRIT["spot_qty"]
         out.append({
             "id": r["lamp"], "name": l["name"], "role": l["role"],
@@ -162,6 +164,8 @@ def dimmer_runs():
             "dimmer_load_pct": 100 * grp / a_rating,
             "headroom_pct": 100 * (1 - grp / safe),
             "fits_dc": r["v"] * grp <= CRIT["dc_port_w"],
+            "flicker": f.get("verdict", "не перевіряли"),
+            "flicker_note": f.get("note", ""),
             "note": r.get("note", ""),
         })
     return sorted(out, key=lambda r: r["a_full"])

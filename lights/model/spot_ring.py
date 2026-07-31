@@ -177,7 +177,7 @@ def svg():
     o.append(f'<text x="{bx:.0f}" y="{by-4:.0f}" text-anchor="middle" font-size="11" '
              f'fill="{ink}">коробка</text>')
     o.append(f'<text x="{bx:.0f}" y="{by+11:.0f}" text-anchor="middle" font-size="9" '
-             f'fill="#6b675c">8 пар + {fuse():.0f}A</text>')
+             f'fill="#6b675c">8 пар + {fuse():g}A</text>')
 
     o.append(f'<line x1="{bx-52:.0f}" y1="{by:.0f}" x2="26" y2="{by:.0f}" '
              f'stroke="{sig}" stroke-width="2.5"/>')
@@ -202,7 +202,7 @@ def main():
           f'{d["min_a"]:.2f} A ({watts()["dim_min"]} Вт), діапазон ×{d["range_x"]:.0f}')
     print(f'диммер {d["rating_a"]:.0f} A, робоча стеля {d["safe_a"]:.1f} A — '
           f'{"проходимо" if d["ok"] else "НЕ проходимо"}, запас {d["headroom_pct"]:.0f}%')
-    print(f'запобіжник групи {fuse():.0f} A · відрізок кільця {SEG_M:.2f} м')
+    print(f'запобіжник групи {fuse():g} A · відрізок кільця {SEG_M:.2f} м')
     for s in schemes():
         print(f'  {s["label"]:24} просадка {s["worst_v"]:.3f} В '
               f'({s["worst_pct"]:.2f}%) · міді {s["cable_m"]:.1f} м')
