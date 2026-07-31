@@ -3,6 +3,9 @@
 
 # Рішення
 
+* [Окремі сторінки-калькулятори по типах світла](okremi-storinky-kalkuliatory-po-typakh-svitla.md)
+* [Стрічка — це вісім рукавів, а не промені плюс окреме коло](strichka-tse-visim-rukaviv-a-ne-promeni-plius-okreme-kolo.md)
+* [Регулюємо прожектори ШІМ-диммером, а не заниженням напруги](rehuliuiemo-prozhektory-shim-dymmerom-a-ne-zanyzhenniam-napr.md)
 * [Переріз неону — 8 × 16 мм, заглушки беремо під цей розмір](pereriz-neonu-8-16-mm-zahlushky-beremo-pid-tsei-rozmir.md)
 * [Суцільна заливка стрічки заборонена; робочий режим — «Комета»](sutsilna-zalyvka-strichky-zaboronena-robochyi-rezhym-kometa.md)
 * [Прожектори зʼєднуємо по краю подіуму, а не через коробку в центрі](prozhektory-ziednuiemo-po-kraiu-podiumu-a-ne-cherez-korobku-.md)

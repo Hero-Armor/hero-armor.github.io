@@ -12,6 +12,9 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Окремі сторінки-калькулятори по типах світла](/decisions/okremi-storinky-kalkuliatory-po-typakh-svitla.md)
+* [Стрічка — це вісім рукавів, а не промені плюс окреме коло](/decisions/strichka-tse-visim-rukaviv-a-ne-promeni-plius-okreme-kolo.md)
+* [Регулюємо прожектори ШІМ-диммером, а не заниженням напруги](/decisions/rehuliuiemo-prozhektory-shim-dymmerom-a-ne-zanyzhenniam-napr.md)
 * [Переріз неону — 8 × 16 мм, заглушки беремо під цей розмір](/decisions/pereriz-neonu-8-16-mm-zahlushky-beremo-pid-tsei-rozmir.md)
 * [Суцільна заливка стрічки заборонена; робочий режим — «Комета»](/decisions/sutsilna-zalyvka-strichky-zaboronena-robochyi-rezhym-kometa.md)
 * [Прожектори зʼєднуємо по краю подіуму, а не через коробку в центрі](/decisions/prozhektory-ziednuiemo-po-kraiu-podiumu-a-ne-cherez-korobku-.md)
@@ -42,7 +45,8 @@ generated: { by: "process:site-build" }
 
 # Задачі
 
-* [Замовити ШІМ-диммери SUPERNIGHT 30 А — набір 2 шт](/tasks/zamovyty-shim-dymmery-supernight-30-a-nabir-2-sht.md) — до роботи
+* [Перевірити диммери SUPERNIGHT після приїзду: мерехтіння і нагрів](/tasks/pereviryty-dymmery-supernight-pislia-pryizdu-merekhtinnia-i-.md) — чекаємо
+* [Замовити ШІМ-диммери SUPERNIGHT 30 А — набір 2 шт](/tasks/zamovyty-shim-dymmery-supernight-30-a-nabir-2-sht.md) — готово
 * [Замовити Luxrite MR16 4000K — 10 шт у прожектори](/tasks/zamovyty-luxrite-mr16-4000k-10-sht-u-prozhektory.md) — до роботи
 * [Звести бюджет світла: заявлені ~170–220 Вт LED проти панелі 100 Вт — перерахувати (сайт сам радить зменшити стрічки)](/tasks/zvesty-biudzhet-svitla-zaiavleni-170-220-vt-led-proty-paneli.md) — готово
 * [Обрати і замовити неон WS2811 під 12 В](/tasks/obraty-i-zamovyty-neon-ws2811-pid-12-v.md) — готово

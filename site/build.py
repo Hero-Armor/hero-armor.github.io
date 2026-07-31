@@ -882,7 +882,7 @@ def build():
     grp_label = {k: v["label"] for k, v in LP["groups"].items()}
     f_rows = []
     for f in LP["fixtures"]:
-        qty = f'{f["qty"]}× {f["length_m"]} м' if f.get("addressable") else str(f["qty"])
+        qty = f'{f["qty"]}× {f["length_m"]} м' if f.get("length_m") else str(f["qty"])
         f_rows.append(
             f'      <tr><td class="num">{f["spec"]}</td><td>{esc(f["name"])}</td>'
             f'<td>{esc(f["zone"])}</td><td class="num">{qty}</td>'

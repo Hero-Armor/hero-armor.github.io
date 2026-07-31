@@ -41,6 +41,25 @@ def spot_ratios(v_spot):
     return ratio ** VF["power_exponent"], ratio
 
 
+def addr_full(f):
+    """Watts of an addressable fixture lit solid white — the ceiling it never reaches.
+
+    Стрічка рахується метрами, а модуль (кільце/матриця на спині робота) несе
+    власну паспортну цифру: у нього нема довжини, є плата з відомою кількістю діодів."""
+    if "w_full" in f:
+        return f["qty"] * f["w_full"]
+    return f["qty"] * f["length_m"] * f["w_per_m"]
+
+
+def addr_duty(f, key):
+    """Share of the module actually lit at a given moment.
+
+    Подіумна стрічка йде одним контролером і однією анімацією — її частки лежать
+    у params["addressable"]. У лампи на спині свій контролер і своя картинка, тому
+    вона несе власні частки поруч із собою і не залежить від режиму стрічки."""
+    return f.get(key, ADDR[key])
+
+
 def fixture_power(f, case):
     """Watts drawn by one fixture line under a case's dimming settings."""
     grp = f["group"]
@@ -50,8 +69,7 @@ def fixture_power(f, case):
 
     dim = case["dim_g3a"] if grp == "g3a" else case["dim_g2"]
     if f.get("addressable"):
-        full = f["qty"] * f["length_m"] * f["w_per_m"]
-        return full * ADDR["duty_animation"] * dim
+        return addr_full(f) * addr_duty(f, "duty_animation") * dim
     if f["dimming"] == "none":
         # not dimmable: it is either on or off
         return f["qty"] * f["w_unit"] * (1.0 if dim > 0 else 0.0)
@@ -67,7 +85,7 @@ def fixture_peak(f):
     Звичайні (не адресні) світильники можуть горіти повністю, тому в них пік = вся потужність.
     """
     if f.get("addressable"):
-        return f["qty"] * f["length_m"] * f["w_per_m"] * ADDR["duty_peak"]
+        return addr_full(f) * addr_duty(f, "duty_peak")
     return f["qty"] * f["w_unit"]
 
 
