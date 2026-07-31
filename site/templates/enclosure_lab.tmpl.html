@@ -141,19 +141,94 @@
   </div>
 
   <h2>Що в яку коробку влазить</h2>
-  <p class="sub" style="margin-bottom:1rem">Зазор {{CLEARANCE}}&nbsp;мм з кожного боку — не
-  «щоб не тиснуло», а щоб повітрю було куди йти. Впритул поставлена станція перетворює ящик
-  у термос. Внутрішні розміри кейсів <b>звіряти перед покупкою</b>: у Pelican їх дають по дну,
+  <p class="sub" style="margin-bottom:1rem">Тисни станцію — покаже, які коробки їй підходять,
+  від найдешевшої. Зазор рахується <b>{{CLEARANCE}}&nbsp;мм з кожного боку</b> — не «щоб не
+  тиснуло», а щоб повітрю було куди йти: впритул поставлена станція перетворює ящик у термос.
+  Станція, яка нікуди не влазить — не вирок, просто так і буде тут написано.
+  Внутрішні розміри кейсів <b>звіряти перед покупкою</b>: у Pelican їх дають по дну,
   а стінки конічні.</p>
+
+  <div class="presets" id="stPick"></div>
+  <div class="seg" id="fitFilter">
+    <button data-f="all" class="active">усі коробки</button>
+    <button data-f="fit">тільки ті, що влазять</button>
+    <button data-f="sealed">тільки герметичні</button>
+  </div>
+  <div class="tiles" id="fitTiles" style="margin-bottom:1rem"></div>
   <div class="tbl-wrap">
   <table>
-    <thead><tr><th>Станція</th><th>Розмір</th><th>Вага</th>{{CASE_HEADS}}</tr></thead>
-    <tbody>
-{{ENC_FIT}}
-</tbody>
+    <thead><tr><th>Коробка</th><th>Внутрішній</th><th>Ущільнення</th><th>Ціна</th>
+    <th>Влазить</th><th>Запас по найтіснішій осі</th></tr></thead>
+    <tbody id="fitBody"></tbody>
   </table>
   </div>
   <p class="fig-cap">{{FIT_CAPTION}}</p>
+
+<script>
+(function(){
+  const ST={{ENC_STATIONS_JSON}}, CS={{ENC_CASES_JSON}}, CL={{CLEARANCE}};
+  const pick=document.getElementById('stPick'), body=document.getElementById('fitBody'),
+        tiles=document.getElementById('fitTiles'), fbar=document.getElementById('fitFilter');
+  let cur=0, mode='all';
+  const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+  // та сама геометрія, що в enclosure_model.fits(): сортуємо обидві трійки
+  // за спаданням і кожну вісь станції з зазором звіряємо з віссю коробки
+  function fit(st,c){
+    const need=[...st.dims_mm].sort((a,b)=>b-a).map(d=>d+2*CL);
+    const have=[...c.inner_mm].sort((a,b)=>b-a);
+    const slack=need.map((n,i)=>Math.round(have[i]-n));
+    return {ok:slack.every(s=>s>=0), slack:Math.min(...slack)};
+  }
+
+  ST.forEach((s,i)=>{
+    const b=document.createElement('button');
+    b.textContent=s.name; b.onclick=()=>{cur=i;draw();};
+    pick.appendChild(b);
+  });
+  fbar.querySelectorAll('button').forEach(b=>b.onclick=()=>{mode=b.dataset.f;draw();});
+
+  function draw(){
+    [...pick.children].forEach((b,i)=>b.classList.toggle('active',i===cur));
+    [...fbar.children].forEach(b=>b.classList.toggle('active',b.dataset.f===mode));
+    const st=ST[cur];
+    const rows=CS.map(c=>({c,...fit(st,c)}))
+                 .sort((a,b)=>(b.ok-a.ok)||(a.c.price_usd-b.c.price_usd));
+    const okRows=rows.filter(r=>r.ok);
+    const sealed=okRows.filter(r=>r.c.seal&&r.c.seal!=='нема');
+    const cheapest=okRows[0], cheapSealed=sealed[0];
+
+    tiles.innerHTML=[
+      ['Станція',esc(st.name),'',st.dims_mm.join('×')+' мм · '+st.kg+' кг',''],
+      ['Треба місця',[...st.dims_mm].sort((a,b)=>b-a).map(d=>Math.round(d+2*CL)).join('×'),'мм',
+       'з зазором '+CL+' мм на бік',''],
+      ['Підходить коробок',okRows.length,'з '+CS.length,
+       okRows.length?'':'жодна — рахуємо саморобний ящик', okRows.length?'good':'crit'],
+      ['Найдешевша',cheapest?'$'+cheapest.c.price_usd:'—','',
+       cheapest?esc(cheapest.c.name):'нема варіанта', cheapest?'good':'crit'],
+      ['Найдешевша герметична',cheapSealed?'$'+cheapSealed.c.price_usd:'—','',
+       cheapSealed?esc(cheapSealed.c.name):'герметичної нема', cheapSealed?'good':'warn'],
+    ].map(([k,v,u,n,cls])=>'<div class="tile '+(cls||'')+'"><div class="k">'+k+
+      '</div><div class="v">'+v+(u?' <span class="u">'+u+'</span>':'')+
+      '</div><div class="note">'+n+'</div></div>').join('');
+
+    const show=rows.filter(r=> mode==='all' ? true
+                             : mode==='fit' ? r.ok
+                             : r.ok && r.c.seal && r.c.seal!=='нема');
+    body.innerHTML=show.map(r=>{
+      const tight=r.ok && r.slack<CL;
+      const badge=!r.ok?'<span class="pill add">ні</span>'
+                 :tight?'<span class="pill tbd">впритул</span>'
+                 :'<span class="pill have">так</span>';
+      return '<tr><td><b>'+esc(r.c.name)+'</b>'+(r.c.note?'<br><span style="font-size:.72rem;color:var(--ink-2);white-space:normal">'+esc(r.c.note)+'</span>':'')+
+        '</td><td class="num">'+r.c.inner_mm.join('×')+'</td><td>'+esc(r.c.seal)+
+        '</td><td class="num">$'+r.c.price_usd+'</td><td>'+badge+
+        '</td><td class="num">'+(r.ok?r.slack+' мм':'бракує '+(-r.slack)+' мм')+'</td></tr>';
+    }).join('') || '<tr><td colspan="6" style="color:var(--ink-2)">за цим фільтром нічого</td></tr>';
+  }
+  draw();
+})();
+</script>
 
   <h2>Кабельні вводи і вентиляція — без цього ящик не працює</h2>
   <div class="layers">

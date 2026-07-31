@@ -1570,28 +1570,21 @@ def build():
                 f'<td><span class="pill have">{esc(r["cheapest"] or "—")}</span></td></tr>')
     elab = elab.replace("{{ENC_THERMAL}}", "\n".join(th_rows))
 
-    cases = ENC["cases"]
-    elab = elab.replace("{{CASE_HEADS}}", "".join(
-        f'<th>{esc(c["name"])}<br><span style="font-weight:400;text-transform:none">'
-        f'${c["price_usd"]} · {esc(c["seal"])}</span></th>' for c in cases))
-    fit_rows = []
-    for st in ENC["stations"]:
-        cells = []
-        for c in cases:
-            g = enc.fits(st, c)
-            if not g["fits"]:
-                cells.append('<td><span class="pill add">ні</span></td>')
-            elif g["tight"]:
-                cells.append('<td><span class="pill tbd">впритул</span></td>')
-            else:
-                cells.append(f'<td><span class="pill have">так</span>'
-                             f'<br><span style="font-size:.7rem;color:var(--ink-2)">'
-                             f'запас {min(g["slack_mm"])} мм</span></td>')
-        d = "×".join(str(x) for x in st["dims_mm"])
-        fit_rows.append(f'      <tr><td><b>{esc(st["name"])}</b></td>'
-                        f'<td class="num">{d}</td><td class="num">{st["kg"]} кг</td>'
-                        + "".join(cells) + '</tr>')
-    elab = elab.replace("{{ENC_FIT}}", "\n".join(fit_rows))
+    # Підбір «станція → коробки» рахується в браузері тією самою геометрією,
+    # що й enclosure_model.fits(): звіряємо тут на одній парі, щоб розбіжність
+    # моделі й сторінки впала на build, а не тихо поїхала.
+    _st0, _c0 = ENC["stations"][0], ENC["cases"][0]
+    _need = sorted(d + 2 * ENC["fit"]["clearance_mm"] for d in _st0["dims_mm"])
+    _have = sorted(_c0["inner_mm"])
+    assert enc.fits(_st0, _c0)["fits"] == all(n <= h for n, h in zip(_need, _have)), \
+        "геометрія в enclosure_lab розійшлась з enclosure_model.fits()"
+    elab = elab.replace("{{ENC_STATIONS_JSON}}", json.dumps(
+        [{"name": s["name"], "dims_mm": s["dims_mm"], "kg": s["kg"]}
+         for s in ENC["stations"]], ensure_ascii=False))
+    elab = elab.replace("{{ENC_CASES_JSON}}", json.dumps(
+        [{"name": c["name"], "inner_mm": c["inner_mm"], "seal": c["seal"],
+          "price_usd": c["price_usd"], "note": c.get("note", "")}
+         for c in ENC["cases"]], ensure_ascii=False))
     elab = elab.replace("{{FIT_CAPTION}}", esc(ENC["_verify"]))
 
     parts = []
