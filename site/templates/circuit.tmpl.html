@@ -80,6 +80,12 @@
            border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-top: .8rem; }
   .layer h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
   .layer p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 80ch; }
+  .layer.block { border-left-color: var(--crit); background: var(--crit-bg); }
+  .fig { background: #fcfcfb; border: 1px solid var(--line); border-radius: 6px;
+         padding: .8rem; overflow-x: auto; text-align: center; }
+  .fig svg { max-width: 560px; width: 100%; height: auto; }
+  .pill { font-family: var(--mono); font-size: .68rem; padding: .12rem .45rem;
+          border-radius: 3px; background: var(--bg); border: 1px solid var(--line); }
 </style>
 
 <div class="wrap">
@@ -121,6 +127,10 @@
       <p class="fig-cap" id="topoWhy"></p>
     </div>
   </div>
+
+  {{C_FIGURE}}
+  {{C_JOINTS}}
+  {{C_BUY}}
 
   <h2>Звідки числа</h2>
   <div class="tbl-wrap">

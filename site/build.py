@@ -37,6 +37,7 @@ import lamp_bench as lb  # noqa: E402  (стенд ламп прожектора
 import spot_ring as sr  # noqa: E402  (звʼязка 8 прожекторів: схема, диммер, запобіжник)
 import strip_bench as sb  # noqa: E402  (стенд LED-стрічки, lights/data/strip_bench.json)
 import circuit_lab as cl  # noqa: E402  (окремі сторінки-калькулятори по типах світла)
+import strip_layout as stl  # noqa: E402  (план стрічки в подіумі + монтаж і закупівля)
 import power_node_model as pw
 sys.path.insert(0, str(ROOT / "enclosure" / "model"))
 import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
@@ -2049,7 +2050,56 @@ def build():
             notes.append(("Обережно з цими Вт/м", sb.status()["verdict"]
                           if isinstance(sb.status(), dict) and "verdict" in sb.status()
                           else "Число Вт/м поки не заміряне напряму — це прикидка."))
+        # Креслення, місця зʼєднань і закупівля — там, де вони є. Прохання Івана
+        # 31.07: на сторінці стрічки бракувало схеми і того, що з неї випливає
+        # для закупівлі (заглушки не замовити, поки не заміряний переріз).
+        fig, joints, buy = "", "", ""
+        if c["key"] == "strip":
+            fig = ('<h2>Як іде лінія</h2><div class="fig">'
+                   + re.sub(r"<\?xml[^>]*\?>\s*", "",
+                            (LIGHTS / "model" / "strip_layout.svg").read_text())
+                   + f'</div><p class="fig-cap">{esc(stl.I["flow"])} '
+                     f'{esc(stl.I["geometry_note"])} {esc(stl.I["cut_rule"])}</p>')
+            joints = ('<h2>Місця зʼєднань</h2><div class="tbl-wrap"><table>'
+                      '<thead><tr><th>Де</th><th>Чим</th><th>Стан</th>'
+                      '<th>Чому саме так</th></tr></thead><tbody>'
+                      + "".join(
+                          f'<tr><td>{esc(j["where"])}</td><td>{esc(j["what"])}</td>'
+                          f'<td><span class="pill">{esc(j["status"])}</span></td>'
+                          f'<td style="white-space:normal;max-width:52ch">{esc(j["why"])}'
+                          f'</td></tr>' for j in stl.I["joints"])
+                      + '</tbody></table></div>')
+            mt = stl.I["measure_task"]
+            # Позиції тягнемо з BOM, а не дублюємо руками: закупівля живе там,
+            # і сторінка не має розходитись із реєстром.
+            rows = [b for b in BOM
+                    if b.get("system") == "lights"
+                    and any(m in b["item"] + b.get("note", "") for m in stl.I["buy_match"])]
+            buy = ('<h2>Що з цього треба купити</h2><div class="tbl-wrap"><table>'
+                   '<thead><tr><th>Позиція</th><th>Скільки</th><th>Ціна</th>'
+                   '<th>Навіщо</th></tr></thead><tbody>'
+                   + "".join(
+                       f'<tr><td>' + (f'<a href="{esc(b["url"])}">{esc(b["item"])}</a>'
+                                      if b.get("url") else esc(b["item"]))
+                       + f'</td><td>{esc(str(b.get("qty", "—")))}</td>'
+                         f'<td class="num">{esc(str(b.get("price", "—")))}</td>'
+                         f'<td style="white-space:normal;max-width:56ch">'
+                         f'{esc(b.get("note", ""))}</td></tr>' for b in rows)
+                   + '</tbody></table></div>'
+                   + f'<p class="fig-cap">{esc(stl.I["buy_note"])}</p>'
+                   + f'<div class="layer block"><h3>Спершу замір: {esc(mt["title"])}</h3>'
+                     f'<p>{esc(mt["why"])} {esc(mt["how"])} '
+                     f'<b>Що це розблокує:</b> {esc(mt["unblocks"])}</p></div>')
+        elif c["key"] == "spots":
+            fig = ('<h2>Як іде кабель</h2><div class="fig">'
+                   + re.sub(r"<\?xml[^>]*\?>\s*", "",
+                            (LIGHTS / "model" / "spot_ring.svg").read_text())
+                   + '</div>')
+
         page = (page
+                .replace("{{C_FIGURE}}", fig)
+                .replace("{{C_JOINTS}}", joints)
+                .replace("{{C_BUY}}", buy)
                 .replace("{{C_TITLE}}", esc(c["title"]))
                 .replace("{{C_GROUP}}", esc(c["group"]))
                 .replace("{{C_SUB}}", esc(c["sub"]))
