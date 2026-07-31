@@ -19,7 +19,8 @@
 * [Штекер-прикурювач з клемами](shteker-prykuriuvach-z-klemamy.md) - $6/2шт, купити
 * [XT60 пара + пігтейли](xt60-para-pihteily.md) - $7/2пари, купити
 * [Кабель 18AWG силікон, 2×2 м](kabel-18awg-sylikon-2-2-m.md) - $13/18м, купити
-* [Gardencoin прожектор + MR16 4000K](gardencoin-prozhektor-mr16-4000k.md) - $43/уп, купити
+* [Gardencoin прожектор (корпус)](gardencoin-prozhektor-korpus.md) - $43/уп, купити
+* [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - —, купити
 * [Gebildet LED 12 мм, металеві](gebildet-led-12-mm-metalevi.md) - —, купити
 * [Gebildet LED 8 мм, металеві](gebildet-led-8-mm-metalevi.md) - —, купити
 * [Nilight габаритні вогні 3 Вт](nilight-habarytni-vohni-3-vt.md) - $18.50, купити

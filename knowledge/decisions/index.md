@@ -3,6 +3,7 @@
 
 # Рішення
 
+* [Лампа прожекторів — Luxrite MR16 4000K, вибір закрито](lampa-prozhektoriv-luxrite-mr16-4000k-vybir-zakryto.md)
 * [Адресну стрічку рахуємо по біжучому фронту, не по повній лінії](adresnu-strichku-rakhuiemo-po-bizhuchomu-frontu-ne-po-povnii.md)
 * [Датчик — LD2410C mmWave, не PIR](datchyk-ld2410c-mmwave-ne-pir.md)
 * [Радіатор TPA3116 — назовні герметичного боксу](radiator-tpa3116-nazovni-hermetychnoho-boksu.md)

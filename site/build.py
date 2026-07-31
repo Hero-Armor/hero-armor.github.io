@@ -972,26 +972,49 @@ def build():
     b_rank = lb.ranking()
     b_lead = next((r for r in b_rank if r["cls"] == "good"), None)
     b_crit = lb.CRIT
+    b_dec = lb.decision()
     lead_group_w = None
-    if b_lead:
+    if b_dec:
+        chosen = next(r for r in lb.dimmer_runs() if r["id"] == b_dec["chosen"])
+        lead_group_w = chosen["group_w"]
+    elif b_lead:
         at12 = next((c for c in lb.curve(b_lead["id"]) if abs(c["v"] - 12) < 0.6), None)
         lead_group_w = at12["group_w"] if at12 else None
 
+    llab = llab.replace("{{BENCH_INTRO}}",
+        '<p class="sub">Стенд збирався під інше питання: чи падає споживання лампи, коли '
+        'занизити напругу. Поки він збирався, Іван підключив лампи через ШІМ-диммер — а той '
+        'не садить вольти, він рубає живлення імпульсами, і тоді ватти падають у будь-якої '
+        'лампи, хоч що в неї за драйвер. Тому вирішило інше: <b>чи дружить лампа з диммером</b>. '
+        'Цього нема в жодній специфікації — тільки живцем. Дві з трьох на мінімумі тремтять, '
+        'одна світить рівно; вона й обрана.</p>'
+        if b_dec else
+        '<p class="sub">Уся економія прожекторів тримається на одному припущенні — що при '
+        'заниженій напрузі лампа бере менше струму. Це правда не для кожної MR16: усередині '
+        'може стояти стабілізатор, і тоді лампа тримає свої ватти до порога, а потім просто '
+        'гасне. Тому три лампи міряються на стенді однаково — струм і яскравість на кількох '
+        'напругах — і кожна зводиться до показника <b>n</b> у P&nbsp;~&nbsp;(V/12)<sup>n</sup>. '
+        'Чим більший n, тим більше ватт віддає лампа за той самий втрачений відсоток світла.</p>')
+
     llab = llab.replace("{{BENCH_TILES}}", "\n".join([
-        tile("Заміри зроблено", f'{bst["measurements"]}', f'з {bst["expected"]}',
-             "три лампи × сім напруг" if not bst["measurements"] else
-             "решта точок ще попереду",
-             "good" if bst["measurements"] >= bst["expected"] else "warn"),
-        tile("Лідер", b_lead["name"].split()[0] if b_lead else "—",
-             f'n={b_lead["n_power"]:.2f}' if b_lead else "",
-             "лампа, що найкраще міняє світло на ватти" if b_lead
-             else "визначиться після замірів"),
+        tile("Вибір лампи",
+             "закрито" if b_dec else f'{bst["measurements"]}',
+             "" if b_dec else f'з {bst["expected"]}',
+             f'{b_dec["date"]}, вирішив {b_dec["by"]}' if b_dec else "три лампи × сім напруг",
+             "good" if b_dec else "warn"),
+        tile("У роботу йде",
+             (b_dec["lamp"]["name"] if b_dec else
+              (b_lead["name"] if b_lead else "—")).split()[0],
+             f'{b_dec["lamp"]["cct"]}K' if b_dec else
+             (f'n={b_lead["n_power"]:.2f}' if b_lead else ""),
+             "єдина, що на мінімумі диммера не мерехтить" if b_dec
+             else "визначиться після замірів", "good" if b_dec else ""),
         tile("Група 8 прожекторів на 12 В",
              f"{lead_group_w:.0f}" if lead_group_w else "—", "Вт",
              f'ціль — тримати групу під {b_crit["target_group_w"]} Вт',
              "good" if lead_group_w and lead_group_w <= b_crit["target_group_w"] else ""),
         tile("Межа 12 В-виходу станції", f'{b_crit["dc_port_w"]}', "Вт",
-             "стеля EcoFlow — 10 А; усе, що вище, треба знімати заниженням", "warn"),
+             "стеля EcoFlow — 10 А; світло сюди влазить із запасом", "warn"),
     ]))
 
     b_rows = []
@@ -1008,6 +1031,7 @@ def build():
             f'<td style="color:{col}">{esc(r["verdict"])}</td></tr>')
     llab = llab.replace("{{BENCH_LAMPS}}", "\n".join(b_rows))
     llab = llab.replace("{{BENCH_CAPTION}}", esc(
+        f'{b_dec["why"]} {b_dec["not_done"]}' if b_dec else
         f'Показник n рахується як нахил прямої в логарифмах — по всіх точках, де лампа ще '
         f'світила. Слідує за напругою — від {b_crit["exp_vf"]}; тримає потужність — до '
         f'{b_crit["exp_cc"]}. ' + (
@@ -1055,6 +1079,12 @@ def build():
         llab = llab.replace("{{BENCH_CHART}}",
             '<div class="fig" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.2rem">'
             + "".join(panels) + f'</div><p class="fig-cap">{legend}</p>')
+    elif b_dec:
+        llab = llab.replace("{{BENCH_CHART}}",
+            '<p class="fig-cap" style="margin-top:1rem">Кривих по напрузі нема і не буде — '
+            'лампу обрано раніше, ніж знадобився цей прогін. Стенд і протокол лишаються '
+            'описаними нижче: якщо колись доведеться економити заниженням напруги замість '
+            'ШІМ, повертатись буде куди.</p>')
     else:
         grid = ", ".join(f"{v:g}" for v in lb.B["points_v"])
         llab = llab.replace("{{BENCH_CHART}}",

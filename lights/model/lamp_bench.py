@@ -74,10 +74,13 @@ def fit(lamp_id):
     }
 
 
-def verdict(n_power):
+def verdict(n_power, lamp_id=None):
     """Словами: чи працює на цій лампі метод «занизив напругу — зекономив»."""
+    d = B.get("decision")
+    if d and lamp_id == d["chosen"]:
+        return "обрана в роботу", "good"
     if n_power is None:
-        return "чекає заміру", "wait"
+        return ("прогін не робили" if d else "чекає заміру"), "wait"
     if n_power >= CRIT["exp_vf"]:
         return "слідує за напругою — економить", "good"
     if n_power <= CRIT["exp_cc"]:
@@ -130,7 +133,7 @@ def ranking():
     out = []
     for l in lamps():
         f = fit(l["id"])
-        v_text, v_cls = verdict(f["n_power"])
+        v_text, v_cls = verdict(f["n_power"], l["id"])
         wp = working_point(l["id"])
         out.append({**l, **f, "verdict": v_text, "cls": v_cls, "working": wp})
     order = {"good": 0, "warn": 1, "wait": 2, "crit": 3}
@@ -169,6 +172,12 @@ def dimmer_runs():
             "note": r.get("note", ""),
         })
     return sorted(out, key=lambda r: r["a_full"])
+
+
+def decision():
+    """Обрана лампа, якщо вибір уже зроблено — інакше None."""
+    d = B.get("decision")
+    return {**d, "lamp": lamp(d["chosen"])} if d else None
 
 
 def worst_a_full():
