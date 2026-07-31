@@ -45,7 +45,7 @@
 * [Кабель: Диммер → кільце прожекторів](kabel-dymmer-kiltse-prozhektoriv.md) - —, купити
 * [Кабель: Відвід на прожектор (найдальший)](kabel-vidvid-na-prozhektor-naidalshyi.md) - —, купити
 * [Кабель: Щит → коробка WLED (Гр.2)](kabel-shchyt-korobka-wled-hr-2.md) - —, купити
-* [Кабель: WLED → точки живлення стрічки](kabel-wled-tochky-zhyvlennia-strichky.md) - —, купити
+* [Кабель: WLED → точки живлення стрічки](kabel-wled-tochky-zhyvlennia-strichky.md) - $33.99 за бухту, купити
 * [Кабель: Коробка → лампи робота](kabel-korobka-lampy-robota.md) - —, купити
 * [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - —, купити
 * [Кабель: Коробка → габарити по кутах](kabel-korobka-habaryty-po-kutakh.md) - —, купити
