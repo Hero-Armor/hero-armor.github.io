@@ -1583,7 +1583,9 @@ def build():
          for s in ENC["stations"]], ensure_ascii=False))
     elab = elab.replace("{{ENC_CASES_JSON}}", json.dumps(
         [{"name": c["name"], "inner_mm": c["inner_mm"], "seal": c["seal"],
-          "price_usd": c["price_usd"], "note": c.get("note", "")}
+          "price_usd": c["price_usd"], "used": c.get("price_used_usd"),
+          "kind": c.get("kind", "кейс"), "verify": bool(c.get("verify")),
+          "note": c.get("note", "")}
          for c in ENC["cases"]], ensure_ascii=False))
     elab = elab.replace("{{FIT_CAPTION}}", esc(ENC["_verify"]))
 

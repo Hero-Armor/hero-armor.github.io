@@ -153,12 +153,14 @@
     <button data-f="all" class="active">усі коробки</button>
     <button data-f="fit">тільки ті, що влазять</button>
     <button data-f="sealed">тільки герметичні</button>
+    <button data-f="used">є на вторинці</button>
+    <button data-f="cooler">кулери (теплова маса)</button>
   </div>
   <div class="tiles" id="fitTiles" style="margin-bottom:1rem"></div>
   <div class="tbl-wrap">
   <table>
-    <thead><tr><th>Коробка</th><th>Внутрішній</th><th>Ущільнення</th><th>Ціна</th>
-    <th>Влазить</th><th>Запас по найтіснішій осі</th></tr></thead>
+    <thead><tr><th>Коробка</th><th>Тип</th><th>Внутрішній</th><th>Ущільнення</th>
+    <th>Нова</th><th>Б/у</th><th>Влазить</th><th>Запас</th></tr></thead>
     <tbody id="fitBody"></tbody>
   </table>
   </div>
@@ -195,8 +197,10 @@
     const rows=CS.map(c=>({c,...fit(st,c)}))
                  .sort((a,b)=>(b.ok-a.ok)||(a.c.price_usd-b.c.price_usd));
     const okRows=rows.filter(r=>r.ok);
-    const sealed=okRows.filter(r=>r.c.seal&&r.c.seal!=='нема');
+    const isIP=s=>/^IP/.test(s||'');
+    const sealed=okRows.filter(r=>isIP(r.c.seal));
     const cheapest=okRows[0], cheapSealed=sealed[0];
+    const cheapUsed=okRows.filter(r=>r.c.used).sort((a,b)=>a.c.used[0]-b.c.used[0])[0];
 
     tiles.innerHTML=[
       ['Станція',esc(st.name),'',st.dims_mm.join('×')+' мм · '+st.kg+' кг',''],
@@ -208,21 +212,28 @@
        cheapest?esc(cheapest.c.name):'нема варіанта', cheapest?'good':'crit'],
       ['Найдешевша герметична',cheapSealed?'$'+cheapSealed.c.price_usd:'—','',
        cheapSealed?esc(cheapSealed.c.name):'герметичної нема', cheapSealed?'good':'warn'],
+      ['Найдешевша б/у',cheapUsed?'$'+cheapUsed.c.used[0]:'—','',
+       cheapUsed?esc(cheapUsed.c.name):'на вторинці не бачив', cheapUsed?'good':''],
     ].map(([k,v,u,n,cls])=>'<div class="tile '+(cls||'')+'"><div class="k">'+k+
       '</div><div class="v">'+v+(u?' <span class="u">'+u+'</span>':'')+
       '</div><div class="note">'+n+'</div></div>').join('');
 
     const show=rows.filter(r=> mode==='all' ? true
                              : mode==='fit' ? r.ok
-                             : r.ok && r.c.seal && r.c.seal!=='нема');
+                             : mode==='used' ? (r.ok && r.c.used)
+                             : mode==='cooler' ? r.c.kind==='кулер'
+                             : r.ok && isIP(r.c.seal));
     body.innerHTML=show.map(r=>{
       const tight=r.ok && r.slack<CL;
       const badge=!r.ok?'<span class="pill add">ні</span>'
                  :tight?'<span class="pill tbd">впритул</span>'
                  :'<span class="pill have">так</span>';
-      return '<tr><td><b>'+esc(r.c.name)+'</b>'+(r.c.note?'<br><span style="font-size:.72rem;color:var(--ink-2);white-space:normal">'+esc(r.c.note)+'</span>':'')+
+      const used=r.c.used?('$'+r.c.used[0]+'-'+r.c.used[1]):'—';
+      const vf=r.c.verify?' <span class="pill tbd" style="font-size:.65rem">звірити</span>':'';
+      return '<tr><td><b>'+esc(r.c.name)+'</b>'+vf+(r.c.note?'<br><span style="font-size:.72rem;color:var(--ink-2);white-space:normal">'+esc(r.c.note)+'</span>':'')+
+        '</td><td style="font-size:.78rem;color:var(--ink-2)">'+esc(r.c.kind)+
         '</td><td class="num">'+r.c.inner_mm.join('×')+'</td><td>'+esc(r.c.seal)+
-        '</td><td class="num">$'+r.c.price_usd+'</td><td>'+badge+
+        '</td><td class="num">$'+r.c.price_usd+'</td><td class="num">'+used+'</td><td>'+badge+
         '</td><td class="num">'+(r.ok?r.slack+' мм':'бракує '+(-r.slack)+' мм')+'</td></tr>';
     }).join('') || '<tr><td colspan="6" style="color:var(--ink-2)">за цим фільтром нічого</td></tr>';
   }
