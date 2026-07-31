@@ -36,7 +36,7 @@
 * [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) - готово
 * [Перевірити, на яку адресу йде стрічка (LA чи SF)](pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) - до роботи
 * [Написати Володимиру: коло лишається + цифри просадки](napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) - готово
-* [Заміряти переріз стрічки, коли прийде (під заглушки)](zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) - до роботи
+* [Заміряти переріз стрічки, коли прийде (під заглушки)](zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) - готово
 * [Обрати, чим вмикати прожектори і аварійну без фотореле](obraty-chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md) - чекаємо
 * [Замовити кошик дрібниці по світлу (заглушки + термоусадка) ≈ $84](zamovyty-koshyk-dribnytsi-po-svitlu-zahlushky-termousadka-84.md) - до роботи
 * [Звірити замовлену коробку по семи вимогах (пластик, 165×105×55, вводи, радіатор, вентиляція, доступ до USB)](zviryty-zamovlenu-korobku-po-semy-vymohakh-plastyk-165-105-5.md) - чекаємо

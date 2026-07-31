@@ -30,7 +30,7 @@ B = json.loads((DATA / "strip_bench.json").read_text())
 
 CRIT = B["criteria"]
 V_NOM = 12.0
-TOTAL_M = CRIT["ring_m"] + CRIT["rays_m"]
+TOTAL_M = CRIT["arm_m"] * CRIT["arm_qty"]   # вісім рукавів «промінь + заворот»
 
 
 def modes():

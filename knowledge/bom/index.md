@@ -66,10 +66,7 @@
 * [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) - —, купити
 * [Екранований кабель ЦАП → амп (0.3 м)](ekranovanyi-kabel-tsap-amp-0-3-m.md) - $4 або $0, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) - $10, купити
-* [Заглушки неон 6×12 мм — набір (глухі + з отвором)](zahlushky-neon-6-12-mm-nabir-hlukhi-z-otvorom.md) - $13.59, купити
-* [Заглушки неон 6×12 мм — альтернатива iNextStation](zahlushky-neon-6-12-mm-alternatyva-inextstation.md) - $11.99, купити
 * [Заглушки неон 8×16 мм — набір 60 шт](zahlushky-neon-8-16-mm-nabir-60-sht.md) - $11.99, купити
-* [Заглушки неон 10 мм (SMD5050) — набір 200 шт](zahlushky-neon-10-mm-smd5050-nabir-200-sht.md) - $11.99, купити
 * [Заглушки 12 мм з герметиком — набір 50 шт](zahlushky-12-mm-z-hermetykom-nabir-50-sht.md) - $13.99, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити

@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Переріз неону — 8 × 16 мм, заглушки беремо під цей розмір](/decisions/pereriz-neonu-8-16-mm-zahlushky-beremo-pid-tsei-rozmir.md)
 * [Суцільна заливка стрічки заборонена; робочий режим — «Комета»](/decisions/sutsilna-zalyvka-strichky-zaboronena-robochyi-rezhym-kometa.md)
 * [Прожектори зʼєднуємо по краю подіуму, а не через коробку в центрі](/decisions/prozhektory-ziednuiemo-po-kraiu-podiumu-a-ne-cherez-korobku-.md)
 * [Лампа прожекторів — Luxrite MR16 4000K, вибір закрито](/decisions/lampa-prozhektoriv-luxrite-mr16-4000k-vybir-zakryto.md)
@@ -58,7 +59,7 @@ generated: { by: "process:site-build" }
 * [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](/tasks/dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) — готово
 * [Перевірити, на яку адресу йде стрічка (LA чи SF)](/tasks/pereviryty-na-iaku-adresu-ide-strichka-la-chy-sf.md) — до роботи
 * [Написати Володимиру: коло лишається + цифри просадки](/tasks/napysaty-volodymyru-kolo-lyshaietsia-tsyfry-prosadky.md) — готово
-* [Заміряти переріз стрічки, коли прийде (під заглушки)](/tasks/zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) — до роботи
+* [Заміряти переріз стрічки, коли прийде (під заглушки)](/tasks/zamiriaty-pereriz-strichky-koly-pryide-pid-zahlushky.md) — готово
 * [Обрати, чим вмикати прожектори і аварійну без фотореле](/tasks/obraty-chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md) — чекаємо
 * [Замовити кошик дрібниці по світлу (заглушки + термоусадка) ≈ $84](/tasks/zamovyty-koshyk-dribnytsi-po-svitlu-zahlushky-termousadka-84.md) — до роботи
 * [Виставити обмежувач струму в контролері стрічки (щоб суцільний білий не поклав 12 В-вихід)](/tasks/vystavyty-obmezhuvach-strumu-v-kontroleri-strichky-shchob-su.md) — до роботи
@@ -95,10 +96,7 @@ generated: { by: "process:site-build" }
 * [Кабель: Коробка → лампи сходів](/bom/kabel-korobka-lampy-skhodiv.md) — —, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — ~$30, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](/bom/asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) — $10, купити
-* [Заглушки неон 6×12 мм — набір (глухі + з отвором)](/bom/zahlushky-neon-6-12-mm-nabir-hlukhi-z-otvorom.md) — $13.59, купити
-* [Заглушки неон 6×12 мм — альтернатива iNextStation](/bom/zahlushky-neon-6-12-mm-alternatyva-inextstation.md) — $11.99, купити
 * [Заглушки неон 8×16 мм — набір 60 шт](/bom/zahlushky-neon-8-16-mm-nabir-60-sht.md) — $11.99, купити
-* [Заглушки неон 10 мм (SMD5050) — набір 200 шт](/bom/zahlushky-neon-10-mm-smd5050-nabir-200-sht.md) — $11.99, купити
 * [Заглушки 12 мм з герметиком — набір 50 шт](/bom/zahlushky-12-mm-z-hermetykom-nabir-50-sht.md) — $13.99, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити

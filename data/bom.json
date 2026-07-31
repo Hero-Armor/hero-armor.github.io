@@ -1,808 +1,778 @@
 [
- {
-  "item": "ESP32 WROOM-32 DevKit",
-  "qty": "3",
-  "price": "$17/3шт",
-  "status": "add",
-  "note": "AITRIP 3PCS USB-C, CP2102 — 1 в роботі + 2 запас",
-  "url": "https://www.amazon.com/dp/B0CR5Y2JVD",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "PCM5102A (GY-PCM5102)",
-  "qty": "1–2",
-  "price": "$12/3шт",
-  "status": "add",
-  "note": "ACEIRMC 3pcs — ЦАП + 2 запасні",
-  "url": "https://www.amazon.com/dp/B08YNJGSN4",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "microSD SPI модуль",
-  "qty": "3",
-  "price": "$7/5шт",
-  "status": "add",
-  "note": "HiLetgo 5pcs з рівнями — живити 5В (LDO на платі)",
-  "url": "https://www.amazon.com/dp/B07BJ2P6X6",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "SanDisk 32GB Class 10",
-  "qty": "1–2",
-  "price": "~$10",
-  "status": "add",
-  "note": "SanDisk Ultra 32GB A1 — сотні годин голосу",
-  "url": "https://www.amazon.com/dp/B08L5HMJVW",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "TPA3116D2 Mono (HiLetgo)",
-  "qty": "1–2",
-  "price": "$14/2шт",
-  "status": "add",
-  "note": "HiLetgo 2pcs mono 100W — основний + запас",
-  "url": "https://www.amazon.com/dp/B082F7P184",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Poly-Planar MA-3013, пара",
-  "qty": "1",
-  "price": "$70",
-  "status": "tbd",
-  "note": "83 дБ/Вт/м, 4Ω, 30 Вт RMS, 70 Гц+; фаворит тесту (моно), 1 запас. НЕ куплено для білда — пара у Marcel на A/B тест (Іван у ЛА). Уточнити чи саме ця модель поїхала. НЕ в кошику на закупівлю: пари вже у Marcel на A/B тест, купуємо після тесту",
-  "system": "audio",
-  "flow": "ordered",
-  "url": "https://www.amazon.com/dp/B00197V836"
- },
- {
-  "item": "Herdio HMS60 3\", пара",
-  "qty": "1",
-  "price": "$32",
-  "status": "tbd",
-  "note": "80 дБ/Вт/м, 4Ω, 20 Вт RMS, 120 Гц+; запасний варіант, готовий IP44 бокс. НЕ куплено для білда — кандидат на A/B тест у Marcel. Уточнити чи саме ця модель поїхала. НЕ в кошику на закупівлю: пари вже у Marcel на A/B тест, купуємо після тесту",
-  "system": "audio",
-  "flow": "to_order"
- },
- {
-  "item": "LD2410C",
-  "qty": "2–3",
-  "price": "$20/3шт",
-  "status": "add",
-  "note": "3-pack — рівно план запасів; вікно без металу",
-  "url": "https://www.amazon.com/dp/B0F1F97422",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Buck 12→5В ≥1.5А + LC",
-  "qty": "2",
-  "price": "$9/5шт",
-  "status": "add",
-  "note": "MP1584 фіксовані 5В (без крутилки = нічого не зіб'ється); LC-фільтр досипати",
-  "url": "https://www.amazon.com/dp/B0B779ZYN1",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Радіатор 50×50 мм + термопрокладка",
-  "qty": "1",
-  "price": "~$9/4шт",
-  "status": "add",
-  "note": "Easycargo 50×50×20 + термоскотч 3M; крізь стінку, тіньовий бік",
-  "url": "https://www.amazon.com/dp/B0BC15L51H",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Запобіжник 3А + тримач",
-  "qty": "1+1",
-  "price": "$9/6шт",
-  "status": "add",
-  "note": "VANSIHO 6 тримачів 18AWG + 6×3А — запаси; обовʼязковий (пожежна безпека)",
-  "url": "https://www.amazon.com/dp/B0C15H3F9M",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Конденсатор 1000 µФ 25В low-ESR",
-  "qty": "2 (пачка 10)",
-  "price": "$5/10шт",
-  "status": "add",
-  "url": "https://www.amazon.com/dp/B0D78R727K",
-  "note": "один біля ампа за схемою + запасний; страховка від просадок на запиленому контакті",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Захист динаміка від пилу",
-  "qty": "2",
-  "price": "$10/2шт",
-  "status": "add",
-  "note": "3\" гриль ABS + металева сітка, 2 шт; мембрана вниз",
-  "url": "https://www.amazon.com/dp/B0CGH4D68B",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Штекер-прикурювач з клемами",
-  "qty": "1",
-  "price": "$6/2шт",
-  "status": "add",
-  "note": "YONHAN 2-pack з запобіжником — другий = запас",
-  "url": "https://www.amazon.com/dp/B07L9HQ25S",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "XT60 пара + пігтейли",
-  "qty": "2",
-  "price": "$7/2пари",
-  "status": "add",
-  "note": "XT60 з корпусами, 14AWG пігтейли — переплюсовка неможлива",
-  "url": "https://www.amazon.com/dp/B07BF8154S",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Кабель 18AWG силікон, 2×2 м",
-  "qty": "1",
-  "price": "$13/18м",
-  "status": "add",
-  "note": "силікон 2-жильний 30ft+30ft — вистачить на все",
-  "url": "https://www.amazon.com/dp/B07FMRDP87",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Gardencoin прожектор (корпус)",
-  "qty": "8 (5 уп × 2)",
-  "price": "$43/уп",
-  "status": "add",
-  "note": "B0F43C2H3R, IP66. Заливка фігури, Гр.1. Рідна лампа 2700K не використовується — у корпус іде Luxrite 4000K окремою позицією",
-  "system": "lights",
-  "url": "https://www.amazon.com/dp/B0F43C2H3R",
-  "flow": "to_order"
- },
- {
-  "item": "Luxrite MR16 4000K — лампа прожекторів",
-  "qty": "10 (8 у стійки + 2 запас)",
-  "price": "—",
-  "status": "add",
-  "note": "B07M7XT66F. Обрана 31.07 за поведінкою під ШІМ-диммером: єдина не мерехтить на мінімумі. 0.52 А при 12 В. Уточнити фасовку в лістингу і звірити модель на коробці",
-  "system": "lights",
-  "url": "https://www.amazon.com/dp/B07M7XT66F",
-  "flow": "to_order"
- },
- {
-  "item": "Gebildet LED 12 мм, металеві",
-  "qty": "8+2",
-  "price": "—",
-  "status": "add",
-  "note": "Лампи на корпусі робота: голова 4, плечі 2, груди, коліно, стопа. IP65",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Gebildet LED 8 мм, металеві",
-  "qty": "2 (уп 5)",
-  "price": "—",
-  "status": "add",
-  "note": "Лампи на корпусі робота, strip-line. IP65",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Nilight габаритні вогні 3 Вт",
-  "qty": "8 (уп 10)",
-  "price": "$18.50",
-  "status": "add",
-  "note": "IP67, 10-30 В, на 8 кутів октагона. Колір під звірку: креслення жовті, рішення 16.07 червоні",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Landscapestation лампи сходів 1 Вт",
-  "qty": "24 (3 уп × 10)",
-  "price": "$100/уп",
-  "status": "add",
-  "note": "B0CF565SRW, врізні IP67. Відкрите питання: наша лінія чи автономні сонячні",
-  "system": "lights",
-  "url": "https://www.amazon.com/dp/B0CF565SRW",
-  "flow": "to_order"
- },
- {
-  "item": "Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м",
-  "qty": "2 рулони (10 м)",
-  "price": "$47",
-  "status": "add",
-  "note": "ЗАМОВЛЕНО 29.07 (ORD-001). Стрічка ОБРАНА і перевірена Іваном, 5 м тестових уже є. Треба 9.77 м (коло 2.17 + 8 променів по 0.95). Один рулон закриває впритул — беремо два, другий на ремонт (на плайї не паяємо). Піксель = 3 діоди, різати по мітках. НАЙДОВША доставка з усього BOM — замовляти першою",
-  "system": "lights",
-  "flow": "ordered",
-  "url": "https://www.amazon.com/dp/B0GJRMV57W"
- },
- {
-  "item": "GLEDOPTO ESP32 WLED, IP65",
-  "qty": "2",
-  "price": "$23",
-  "status": "add",
-  "note": "Керує «біжучою водою» по WiFi; другий — запас",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "SUPERNIGHT ШІМ-диммер 12-24 В 30 А",
-  "qty": "2 (набір)",
-  "price": "$13.99 за 2 шт",
-  "status": "add",
-  "note": "Регулює прожектори Гр.1. Набір з двох — робочий + запасний (вимога Івана 31.07). Гвинтові клеми IN V-/V+ і OUT V+/V- замість голих дротів, вушка під саморізи, алюмінієвий корпус, крутилка. Перевірено по фото лістингу. Голий, без IP — герметичність дає коробка. 30 А проти наших 4.2 А — запас сімкратний. Частота ШІМ у лістингу не вказана: перевірити повільним відео перед монтажем. ЗАМІНЮЄ Greenclick B07Y33PPYH (IP65, але з голими дротами — Іван відхилив)",
-  "system": "lights",
-  "flow": "to_order",
-  "url": "https://www.amazon.com/dp/B095M4JS31"
- },
- {
-  "item": "Сонячні панелі для масиву (потужність не обрана)",
-  "qty": "1",
-  "price": "$149",
-  "status": "tbd",
-  "note": "Масив збираємо самі. Потужність підбираємо повзунком у лабораторії живлення разом зі станцією — вони обираються парою, бо станція має ліміт сонячного входу",
-  "system": "solar",
-  "flow": "to_order"
- },
- {
-  "item": "Станції EcoFlow ×2 (модель не обрана)",
-  "qty": "2",
-  "price": "$1099/шт",
-  "status": "tbd",
-  "note": "Дві, а не одна: схема тримається на підміні. Модель підбирається в лабораторії під фактичне споживання; паспортні числа звірити по даташиту",
-  "system": "solar",
-  "flow": "to_order"
- },
- {
-  "item": "Рама під сонячний масив",
-  "qty": "1",
-  "price": "—",
-  "status": "tbd",
-  "note": "Робимо самі під кут і вітер плайї. Кріпити намертво — 50+ mph зриває панелі",
-  "system": "solar",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель MC4 + роз'єми для масиву",
-  "qty": "компл.",
-  "price": "—",
-  "status": "add",
-  "note": "Від масиву до сонячного входу станції",
-  "system": "solar",
-  "flow": "to_order"
- },
- {
-  "item": "Щит-бокс із тримачами запобіжників",
-  "qty": "1",
-  "price": "—",
-  "status": "add",
-  "note": "Блок на 4 позиції: головний 25 A + Гр.1 5 A, Гр.2 10 A, Гр.3А 7.5 A. Автомобільні ножові ATO/ATC",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Запобіжники ATO/ATC, набір",
-  "qty": "компл. + запас",
-  "price": "—",
-  "status": "add",
-  "note": "Номінали з моделі: 25 / 5 / 10 / 7.5 A. Брати з запасом — перегорають саме вночі",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Реле на групи 12 В, 30 А",
-  "qty": "3",
-  "price": "—",
-  "status": "add",
-  "note": "По одному на групу, щоб гасити групи по черзі. Аварійна на своєму каналі. Чим ними керувати — відкрите питання (фотореле прибрано 29.07)",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Гермокоробка IP66 для щита і реле",
-  "qty": "1",
-  "price": "—",
-  "status": "add",
-  "note": "Головна коробка: запобіжники і реле груп. З вентиляцією і фільтром — глухо закривати не можна, перегріється",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Гермокоробки IP65 під диммер і WLED",
-  "qty": "2",
-  "price": "—",
-  "status": "add",
-  "note": "Окремо коробка ШІМ-диммера (Гр.1) і коробка контролера WLED (Гр.2), ближче до навантаження",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Гермороз'єми IP68 (швидкознімні)",
-  "qty": "~20",
-  "price": "—",
-  "status": "add",
-  "note": "На кожен стик, який доведеться роз'єднувати при збиранні-розбиранні: стійки, промені, сходи",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Гель-конектори / вологозахищені клеми",
-  "qty": "компл.",
-  "price": "—",
-  "status": "add",
-  "note": "Глухі з'єднання всередині коробок. Пил плайї лужний — звичайні скрутки окислюються",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Гофра/кабель-канал для відводів",
-  "qty": "~40 м",
-  "price": "—",
-  "status": "add",
-  "note": "Захист відводів на стійках і в настилі; алюмінієвий канал під стрічку вже в конструкції подіуму",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Станція (30 А вихід) → щит запобіжників",
-  "qty": "~8 м",
-  "price": "—",
-  "status": "add",
-  "note": "Ancor 8/2 AWG — наявний, докуповувати не треба. Магістраль СВІТЛА: звук на ній не висить, у нього свій кабель",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Щит → коробка диммера (Гр.1)",
-  "qty": "~4 м",
-  "price": "—",
-  "status": "add",
-  "note": "Ancor 12/2 AWG — AWG 12. до коробки з ШІМ-диммером",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Диммер → кільце прожекторів",
-  "qty": "~12 м",
-  "price": "—",
-  "status": "add",
-  "note": "Ancor 12/2 AWG — AWG 12. по периметру октагона до стійок",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Відвід на прожектор (найдальший)",
-  "qty": "~2 м",
-  "price": "—",
-  "status": "add",
-  "note": "16/2 AWG у гофрі — AWG 16. штатний хвіст Gardencoin + подовження; несе ОДИН світильник",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Щит → коробка WLED (Гр.2)",
-  "qty": "~5 м",
-  "price": "—",
-  "status": "add",
-  "note": "Ancor 8/2 AWG (наявний) — AWG 8. найважча гілка — уся стрічка",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: WLED → точки живлення стрічки",
-  "qty": "~4 м",
-  "price": "—",
-  "status": "add",
-  "note": "14/2 AWG — AWG 14. power injection кожні 2.5–3 м, струм ділиться на 3 вводи",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Коробка → лампи робота",
-  "qty": "~6 м",
-  "price": "—",
-  "status": "add",
-  "note": "18/2 AWG тонкий, у броні — AWG 18. всередині костюма; несе всі лампи робота",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Щит → коробка аварійної (Гр.3А)",
-  "qty": "~6 м",
-  "price": "—",
-  "status": "add",
-  "note": "Ancor 12/2 AWG — AWG 12. окрема лінія, гасне останньою",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Коробка → габарити по кутах",
-  "qty": "~14 м",
-  "price": "—",
-  "status": "add",
-  "note": "14/2 AWG — AWG 14. 8 кутів октагона",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Кабель: Коробка → лампи сходів",
-  "qty": "~10 м",
-  "price": "—",
-  "status": "add",
-  "note": "16/2 AWG у каналі настилу — AWG 16. 24 врізні лампи по периметру сходів",
-  "system": "lights",
-  "flow": "to_order"
- },
- {
-  "item": "Захисний лак MG Chemicals 422B",
-  "qty": "1",
-  "price": "~$25",
-  "status": "add",
-  "system": "project",
-  "note": "conformal coating на всі плати — пил плайї лужний (pH 9-10), без лаку плати деградують",
-  "flow": "to_order"
- },
- {
-  "item": "Алюмінієвий U-профіль для LED у настил подіуму",
-  "qty": "за місцем",
-  "price": "~$30",
-  "status": "add",
-  "system": "lights",
-  "note": "зі старої бази (19.07): паз 20мм у настилі під стрічку",
-  "flow": "to_order"
- },
- {
-  "item": "Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)",
-  "qty": "комплект",
-  "price": "~$20",
-  "status": "add",
-  "system": "armor",
-  "note": "зі специфікації архітектора — пасивна помітність робота вночі",
-  "flow": "to_order"
- },
- {
-  "item": "LiFePO4 12 В 100 Ah (буфер під світло)",
-  "qty": "1",
-  "price": "~$250",
-  "status": "tbd",
-  "system": "solar",
-  "flow": "to_order",
-  "note": "КАНДИДАТ, рішення не прийняте. Живить світло напряму з клем — знімає 126-ватне обмеження станції. ~1200 Вт·год буфера"
- },
- {
-  "item": "Зарядник 14.6 В 20-30 А з Anderson",
-  "qty": "1",
-  "price": "~$60",
-  "status": "tbd",
-  "system": "solar",
-  "flow": "to_order",
-  "note": "КАНДИДАТ у пару до АКБ: станція через розетку тримає акумулятор зарядженим. Bioenno BPC-1520A або аналог"
- },
- {
-  "item": "Victron Orion-Tr 48/12-30A (360 Вт), ізольований",
-  "qty": "1",
-  "price": "$201",
-  "status": "tbd",
-  "system": "solar",
-  "flow": "to_order",
-  "url": "https://signaturesolar.com/victron-energy-orion-tr-48-12-20a-240w-isolated-dc-dc-converter/",
-  "note": "КАНДИДАТ під ідею «понизити порт розширення». Вхід 32-70 В покриває весь діапазон порту (40-58.4 В), вихід 12 В / 30 А = 360 Вт при 40°C, ізольований (відділяє 12 В від 48 В), IP43, до +55°C. Купувати ТІЛЬКИ після перевірки резистором, що порт узагалі віддає струм"
- },
- {
-  "item": "Victron Orion-Tr 48/12-20A (240 Вт), ізольований",
-  "qty": "1",
-  "price": "$114",
-  "status": "tbd",
-  "system": "solar",
-  "flow": "to_order",
-  "url": "https://signaturesolar.com/orion-tr-48-12-20a-240w-isolated-dc-dc-converter-voltage-regulator/",
-  "note": "дешевший варіант того самого: 20А=240Вт проти робочого піку світла 175 Вт — запас є. Брати лише якщо взагалі підемо шляхом пониження порту розширення"
- },
- {
-  "item": "BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)",
-  "qty": "1",
-  "price": "~$45",
-  "status": "tbd",
-  "system": "solar",
-  "flow": "to_order",
-  "url": "https://www.amazon.com/BLUETTI-Aviation-Anderson-Compatible-Portable/dp/B09X34G9MG",
-  "note": "ГОТОВИЙ офіційний кабель, нічого не паяти. Штатний вихід 12 В / 30 А = 360 Вт. Підходить до AC200MAX, AC200P, AC300, EP500/EP500 Pro"
- },
- {
-  "item": "Кабель XT150 для порту розширення (готовий)",
-  "qty": "1",
-  "price": "~$25",
-  "status": "tbd",
-  "system": "solar",
-  "flow": "to_order",
-  "note": "Готових повно (Amazon/AliExpress/eBay), АЛЕ резистора 1 кОм у них нема — його все одно доведеться додати. Тому шлях Bluetti чистіший, якщо не хочемо паяти"
- },
- {
-  "item": "Макетна плата 9×15см двостороння",
-  "qty": "1 (беруть мультипак)",
-  "price": "$13",
-  "status": "add",
-  "note": "FR4 перфоборд — основа вузла; модулі на неї",
-  "url": "https://www.amazon.com/dp/B08WJBS4HK",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Набір нейлонових стійок M2.5/M3/M4",
-  "qty": "1 кит",
-  "price": "$17",
-  "status": "add",
-  "note": "432pcs — підняти модулі над платою + прикрутити плату в коробку",
-  "url": "https://www.amazon.com/dp/B09F9GMP4W",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Клемники гвинтові 5.08мм 2-pin",
-  "qty": "кілька",
-  "price": "$9",
-  "status": "add",
-  "note": "вхід 12В і вихід на динамік — без ненадійних паяних скруток",
-  "url": "https://www.amazon.com/dp/B09ZP4FWXT",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Гнізда-хедери 2.54мм (мама) кит",
-  "qty": "1 кит",
-  "price": "$8",
-  "status": "add",
-  "note": "запаяти на плату — ESP32/ЦАП/SD вставляються і знімаються",
-  "url": "https://www.amazon.com/dp/B01MQ48T2V",
-  "system": "audio",
-  "flow": "ordered"
- },
- {
-  "item": "Кабель: Станція (авто-вихід 12 В) → аудіо-вузол",
-  "qty": "~8 м",
-  "price": "—",
-  "status": "add",
-  "note": "16/2 AWG — другий кабель до подіуму, тільки для звуку. Просадка ~1% при 2 А. Довжина прикидка, міряти по місцю",
-  "system": "audio",
-  "flow": "to_order"
- },
- {
-  "item": "Екранований кабель ЦАП → амп (0.3 м)",
-  "qty": "1 м",
-  "price": "$4 або $0",
-  "status": "add",
-  "note": "Треба 30 см. Купувати бухту 25 ft за $14 — марно: будь-який старий aux/навушниковий шнур це вже екранована вита пара (сигнал по жилі L, екран на AGND). Якщо вдома нема — найдешевший aux 3 ft за $4 і розрізати",
-  "system": "audio",
-  "flow": "to_order",
-  "url": "https://www.amazon.com/dp/B0B3TSDF9S"
- },
- {
-  "item": "ASI 388 Electronic Grade Silicone, тюбик 2.8 oz",
-  "qty": "1 туба",
-  "price": "$10",
-  "status": "add",
-  "system": "lights",
-  "flow": "ordered",
-  "note": "ЗАМОВЛЕНО 29.07. Маленький тюбик під видавлювання рукою — саме те, що треба для 24 різів: не треба пістолета, не сохне туба між сесіями. Electronic grade = нейтральний, не роз'їдає мідь. НЕ брати звичайний прозорий RTV із автомагазину — він зазвичай оцтовий. Альтернатива в тому ж форматі: GE Advanced Silicone 2.8 oz (~$8), теж нейтральний.",
-  "url": "https://www.amazon.com/dp/B0063U2RT8"
- },
- {
-  "item": "Заглушки неон 6×12 мм — набір (глухі + з отвором)",
-  "qty": "1 набір",
-  "price": "$13.59",
-  "url": "https://www.amazon.com/dp/B07SFVK635",
-  "status": "add",
-  "system": "lights",
-  "flow": "to_order",
-  "note": "Shine Decor: 10 з отвором + 10 глухих. Найходовіший переріз тонкого неону"
- },
- {
-  "item": "Заглушки неон 6×12 мм — альтернатива iNextStation",
-  "qty": "1 набір",
-  "price": "$11.99",
-  "url": "https://www.amazon.com/dp/B09FSR4LFP",
-  "status": "add",
-  "system": "lights",
-  "flow": "to_order",
-  "note": "той самий переріз, інший виробник — беремо як дубль, зайве повернемо"
- },
- {
-  "item": "Заглушки неон 8×16 мм — набір 60 шт",
-  "qty": "1 набір",
-  "price": "$11.99",
-  "url": "https://www.amazon.com/dp/B08R3YSCB2",
-  "status": "add",
-  "system": "lights",
-  "flow": "to_order",
-  "note": "під ширший неон 8 мм"
- },
- {
-  "item": "Заглушки неон 10 мм (SMD5050) — набір 200 шт",
-  "qty": "1 набір",
-  "price": "$11.99",
-  "url": "https://www.amazon.com/dp/B08R3YL55C",
-  "status": "add",
-  "system": "lights",
-  "flow": "to_order",
-  "note": "під трубку 10 мм"
- },
- {
-  "item": "Заглушки 12 мм з герметиком — набір 50 шт",
-  "qty": "1 набір",
-  "price": "$13.99",
-  "url": "https://www.amazon.com/dp/B07YPWK1GC",
-  "status": "add",
-  "system": "lights",
-  "flow": "to_order",
-  "note": "ковпачки під 12 мм, ідуть разом із герметиком"
- },
- {
-  "item": "Термоусадка з клеєм 3:1, набір 350 шт",
-  "qty": "1 набір",
-  "price": "$6",
-  "url": "https://www.amazon.com/dp/B0F1DJD2YC",
-  "status": "add",
-  "system": "lights",
-  "flow": "to_order",
-  "note": "marine grade adhesive-lined. Перевірено 30.07: той самий тип, що й лот за $14, але 350 шт замість 240 і вдвічі дешевше (★4.7, 346 відгуків)"
- },
- {
-  "item": "Термоусадка з клеєм 3:1, набір 350 шт",
-  "qty": "1 набір",
-  "price": "$6",
-  "url": "https://www.amazon.com/dp/B0F1DJD2YC",
-  "status": "add",
-  "system": "lights",
-  "flow": "to_order",
-  "note": "marine grade adhesive-lined. Перевірено 30.07: той самий тип, що й лот за $14, але 350 шт замість 240 і вдвічі дешевше (★4.7, 346 відгуків)"
- },
- {
-  "item": "Гермовводи PG7–PG16, набір 25 шт",
-  "qty": "3 (пак 25)",
-  "price": "$8",
-  "status": "add",
-  "url": "https://www.amazon.com/dp/B0FJFVBLJD",
-  "note": "IP68 нейлон PA66 з O-ring. Три вводи в коробку: 12 В, динамік, радар. Перевірено 30.07: окремий пак 10×PG7 коштує стільки ж ($7.69), тому беремо набір — у ньому і PG9 на запас",
-  "system": "audio",
-  "flow": "to_order"
- },
- {
-  "item": "Термоусадка з клеєм 3:1, набір 350 шт",
-  "qty": "1 кит",
-  "price": "$6",
-  "status": "add",
-  "url": "https://www.amazon.com/dp/B0F1DJD2YC",
-  "note": "marine grade adhesive-lined. Перевірено 30.07: той самий тип, що й лот за $14, але 350 шт замість 240 і вдвічі дешевше (★4.7, 346 відгуків)",
-  "system": "audio",
-  "flow": "to_order"
- },
- {
-  "item": "Джампери Dupont мама-мама 20 см",
-  "qty": "пак 40",
-  "price": "$4",
-  "status": "add",
-  "url": "https://www.amazon.com/dp/B0BRTJQGS6",
-  "note": "у LD2410C крок 2.54 (не 1.25 як у старого LD2410), у 3-паку кабелів нема — цим і підключаємо",
-  "system": "audio",
-  "flow": "to_order"
- },
- {
-  "item": "Стяжки нейлонові UV-стійкі, 400 шт",
-  "qty": "1 пак",
-  "price": "$7",
-  "status": "add",
-  "url": "https://www.amazon.com/dp/B0C2Z4L3S6",
-  "note": "перевірено 30.07: дешевше з UV-стійких і рейтингом не знайшлося (★4.6, 18 тис. відгуків)",
-  "system": "audio",
-  "flow": "to_order"
- },
- {
-  "item": "Кейс під станцію",
-  "qty": "1",
-  "price": "$75-485",
-  "status": "tbd",
-  "note": "Підбір у лабораторії ящика: під EcoFlow Delta 3 Max Plus проходить 17 коробок з 22. Найдешевше на вторинці — Pelican iM3075 від $75 (eBay surpluscases, FB Marketplace LA). Найдешевший новий з IP67 — Monoprice за $140",
-  "url": "https://www.ebay.com/str/surpluscases",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Канальний фільтр-бокс AC Infinity 6\"",
-  "qty": "1",
-  "price": "$70",
-  "status": "tbd",
-  "note": "Готовий сталевий корпус під фільтр 12×20×1 дюйм — фабрикувати нічого не треба",
-  "url": "https://acinfinity.com/duct-air-filter-box-6-with-high-efficacy-filter/",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Фільтр MERV 13 12×20×1\"",
-  "qty": "3",
-  "price": "$12",
-  "status": "tbd",
-  "note": "Фінішна ступінь, три штуки на тиждень",
-  "url": "",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Поролоновий передфільтр (тип Outerwears)",
-  "qty": "1",
-  "price": "$30",
-  "status": "tbd",
-  "note": "Груба ступінь, миється щоранку",
-  "url": "https://outerwears.com",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Канальний вентилятор AC Infinity 6\" на нагнітання",
-  "qty": "1",
-  "price": "$80",
-  "status": "tbd",
-  "note": "Створює надлишковий тиск. 5-15 Вт постійно",
-  "url": "https://www.amazon.com/dp/B0921XRFLX",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Пасивна жалюзі-решітка на випуск",
-  "qty": "1",
-  "price": "$15",
-  "status": "tbd",
-  "note": "Повітря виходить самопливом; інших нефільтрованих отворів бути не повинно",
-  "url": "",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Гермоввід PG13.5 IP68",
-  "qty": "4",
-  "price": "$10",
-  "status": "tbd",
-  "note": "Силова лінія 12 В. Виводити кабель під кришкою не можна — фільтрація втратить сенс",
-  "url": "",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Кулер Coleman 100-150 qt",
-  "qty": "1",
-  "price": "$100-140",
-  "status": "tbd",
-  "note": "АЛЬТЕРНАТИВА фільтрам: гіпотеза теплової маси. Внутрішні розміри ЗВІРИТИ руками — виробник їх не публікує",
-  "url": "",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Каністри під воду 5 л",
-  "qty": "8",
-  "price": "$40",
-  "status": "tbd",
-  "note": "До гіпотези кулера: 30-40 кг теплової маси, зручніше каністрами ніж наливом — виносити на ніч остигати",
-  "url": "",
-  "system": "enclosure",
-  "flow": ""
- },
- {
-  "item": "Коробка ABS IP65 200×120×75 (якщо своя не підійде)",
-  "qty": "1",
-  "price": "$10",
-  "status": "tbd",
-  "url": "https://www.amazon.com/dp/B07D23BF7Y",
-  "note": "запасний варіант: беремо тільки якщо замовлена Іваном коробка менша за 165×105×55 або металева",
-  "system": "audio",
-  "flow": "to_order"
- }
+  {
+    "item": "ESP32 WROOM-32 DevKit",
+    "qty": "3",
+    "price": "$17/3шт",
+    "status": "add",
+    "note": "AITRIP 3PCS USB-C, CP2102 — 1 в роботі + 2 запас",
+    "url": "https://www.amazon.com/dp/B0CR5Y2JVD",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "PCM5102A (GY-PCM5102)",
+    "qty": "1–2",
+    "price": "$12/3шт",
+    "status": "add",
+    "note": "ACEIRMC 3pcs — ЦАП + 2 запасні",
+    "url": "https://www.amazon.com/dp/B08YNJGSN4",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "microSD SPI модуль",
+    "qty": "3",
+    "price": "$7/5шт",
+    "status": "add",
+    "note": "HiLetgo 5pcs з рівнями — живити 5В (LDO на платі)",
+    "url": "https://www.amazon.com/dp/B07BJ2P6X6",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "SanDisk 32GB Class 10",
+    "qty": "1–2",
+    "price": "~$10",
+    "status": "add",
+    "note": "SanDisk Ultra 32GB A1 — сотні годин голосу",
+    "url": "https://www.amazon.com/dp/B08L5HMJVW",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "TPA3116D2 Mono (HiLetgo)",
+    "qty": "1–2",
+    "price": "$14/2шт",
+    "status": "add",
+    "note": "HiLetgo 2pcs mono 100W — основний + запас",
+    "url": "https://www.amazon.com/dp/B082F7P184",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Poly-Planar MA-3013, пара",
+    "qty": "1",
+    "price": "$70",
+    "status": "tbd",
+    "note": "83 дБ/Вт/м, 4Ω, 30 Вт RMS, 70 Гц+; фаворит тесту (моно), 1 запас. НЕ куплено для білда — пара у Marcel на A/B тест (Іван у ЛА). Уточнити чи саме ця модель поїхала. НЕ в кошику на закупівлю: пари вже у Marcel на A/B тест, купуємо після тесту",
+    "system": "audio",
+    "flow": "ordered",
+    "url": "https://www.amazon.com/dp/B00197V836"
+  },
+  {
+    "item": "Herdio HMS60 3\", пара",
+    "qty": "1",
+    "price": "$32",
+    "status": "tbd",
+    "note": "80 дБ/Вт/м, 4Ω, 20 Вт RMS, 120 Гц+; запасний варіант, готовий IP44 бокс. НЕ куплено для білда — кандидат на A/B тест у Marcel. Уточнити чи саме ця модель поїхала. НЕ в кошику на закупівлю: пари вже у Marcel на A/B тест, купуємо після тесту",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "LD2410C",
+    "qty": "2–3",
+    "price": "$20/3шт",
+    "status": "add",
+    "note": "3-pack — рівно план запасів; вікно без металу",
+    "url": "https://www.amazon.com/dp/B0F1F97422",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Buck 12→5В ≥1.5А + LC",
+    "qty": "2",
+    "price": "$9/5шт",
+    "status": "add",
+    "note": "MP1584 фіксовані 5В (без крутилки = нічого не зіб'ється); LC-фільтр досипати",
+    "url": "https://www.amazon.com/dp/B0B779ZYN1",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Радіатор 50×50 мм + термопрокладка",
+    "qty": "1",
+    "price": "~$9/4шт",
+    "status": "add",
+    "note": "Easycargo 50×50×20 + термоскотч 3M; крізь стінку, тіньовий бік",
+    "url": "https://www.amazon.com/dp/B0BC15L51H",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Запобіжник 3А + тримач",
+    "qty": "1+1",
+    "price": "$9/6шт",
+    "status": "add",
+    "note": "VANSIHO 6 тримачів 18AWG + 6×3А — запаси; обовʼязковий (пожежна безпека)",
+    "url": "https://www.amazon.com/dp/B0C15H3F9M",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Конденсатор 1000 µФ 25В low-ESR",
+    "qty": "2 (пачка 10)",
+    "price": "$5/10шт",
+    "status": "add",
+    "url": "https://www.amazon.com/dp/B0D78R727K",
+    "note": "один біля ампа за схемою + запасний; страховка від просадок на запиленому контакті",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Захист динаміка від пилу",
+    "qty": "2",
+    "price": "$10/2шт",
+    "status": "add",
+    "note": "3\" гриль ABS + металева сітка, 2 шт; мембрана вниз",
+    "url": "https://www.amazon.com/dp/B0CGH4D68B",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Штекер-прикурювач з клемами",
+    "qty": "1",
+    "price": "$6/2шт",
+    "status": "add",
+    "note": "YONHAN 2-pack з запобіжником — другий = запас",
+    "url": "https://www.amazon.com/dp/B07L9HQ25S",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "XT60 пара + пігтейли",
+    "qty": "2",
+    "price": "$7/2пари",
+    "status": "add",
+    "note": "XT60 з корпусами, 14AWG пігтейли — переплюсовка неможлива",
+    "url": "https://www.amazon.com/dp/B07BF8154S",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Кабель 18AWG силікон, 2×2 м",
+    "qty": "1",
+    "price": "$13/18м",
+    "status": "add",
+    "note": "силікон 2-жильний 30ft+30ft — вистачить на все",
+    "url": "https://www.amazon.com/dp/B07FMRDP87",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Gardencoin прожектор (корпус)",
+    "qty": "8 (5 уп × 2)",
+    "price": "$43/уп",
+    "status": "add",
+    "note": "B0F43C2H3R, IP66. Заливка фігури, Гр.1. Рідна лампа 2700K не використовується — у корпус іде Luxrite 4000K окремою позицією",
+    "system": "lights",
+    "url": "https://www.amazon.com/dp/B0F43C2H3R",
+    "flow": "to_order"
+  },
+  {
+    "item": "Luxrite MR16 4000K — лампа прожекторів",
+    "qty": "10 (8 у стійки + 2 запас)",
+    "price": "—",
+    "status": "add",
+    "note": "B07M7XT66F. Обрана 31.07 за поведінкою під ШІМ-диммером: єдина не мерехтить на мінімумі. 0.52 А при 12 В. Уточнити фасовку в лістингу і звірити модель на коробці",
+    "system": "lights",
+    "url": "https://www.amazon.com/dp/B07M7XT66F",
+    "flow": "to_order"
+  },
+  {
+    "item": "Gebildet LED 12 мм, металеві",
+    "qty": "8+2",
+    "price": "—",
+    "status": "add",
+    "note": "Лампи на корпусі робота: голова 4, плечі 2, груди, коліно, стопа. IP65",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Gebildet LED 8 мм, металеві",
+    "qty": "2 (уп 5)",
+    "price": "—",
+    "status": "add",
+    "note": "Лампи на корпусі робота, strip-line. IP65",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Nilight габаритні вогні 3 Вт",
+    "qty": "8 (уп 10)",
+    "price": "$18.50",
+    "status": "add",
+    "note": "IP67, 10-30 В, на 8 кутів октагона. Колір під звірку: креслення жовті, рішення 16.07 червоні",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Landscapestation лампи сходів 1 Вт",
+    "qty": "24 (3 уп × 10)",
+    "price": "$100/уп",
+    "status": "add",
+    "note": "B0CF565SRW, врізні IP67. Відкрите питання: наша лінія чи автономні сонячні",
+    "system": "lights",
+    "url": "https://www.amazon.com/dp/B0CF565SRW",
+    "flow": "to_order"
+  },
+  {
+    "item": "Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м",
+    "qty": "2 рулони (10 м)",
+    "price": "$47",
+    "status": "add",
+    "note": "ЗАМОВЛЕНО 29.07 (ORD-001). Стрічка ОБРАНА і перевірена Іваном, 5 м тестових уже є. Треба 9.77 м (коло 2.17 + 8 променів по 0.95). Один рулон закриває впритул — беремо два, другий на ремонт (на плайї не паяємо). Піксель = 3 діоди, різати по мітках. НАЙДОВША доставка з усього BOM — замовляти першою",
+    "system": "lights",
+    "flow": "ordered",
+    "url": "https://www.amazon.com/dp/B0GJRMV57W"
+  },
+  {
+    "item": "GLEDOPTO ESP32 WLED, IP65",
+    "qty": "2",
+    "price": "$23",
+    "status": "add",
+    "note": "Керує «біжучою водою» по WiFi; другий — запас",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "SUPERNIGHT ШІМ-диммер 12-24 В 30 А",
+    "qty": "2 (набір)",
+    "price": "$13.99 за 2 шт",
+    "status": "add",
+    "note": "Регулює прожектори Гр.1. Набір з двох — робочий + запасний (вимога Івана 31.07). Гвинтові клеми IN V-/V+ і OUT V+/V- замість голих дротів, вушка під саморізи, алюмінієвий корпус, крутилка. Перевірено по фото лістингу. Голий, без IP — герметичність дає коробка. 30 А проти наших 4.2 А — запас сімкратний. Частота ШІМ у лістингу не вказана: перевірити повільним відео перед монтажем. ЗАМІНЮЄ Greenclick B07Y33PPYH (IP65, але з голими дротами — Іван відхилив)",
+    "system": "lights",
+    "flow": "to_order",
+    "url": "https://www.amazon.com/dp/B095M4JS31"
+  },
+  {
+    "item": "Сонячні панелі для масиву (потужність не обрана)",
+    "qty": "1",
+    "price": "$149",
+    "status": "tbd",
+    "note": "Масив збираємо самі. Потужність підбираємо повзунком у лабораторії живлення разом зі станцією — вони обираються парою, бо станція має ліміт сонячного входу",
+    "system": "solar",
+    "flow": "to_order"
+  },
+  {
+    "item": "Станції EcoFlow ×2 (модель не обрана)",
+    "qty": "2",
+    "price": "$1099/шт",
+    "status": "tbd",
+    "note": "Дві, а не одна: схема тримається на підміні. Модель підбирається в лабораторії під фактичне споживання; паспортні числа звірити по даташиту",
+    "system": "solar",
+    "flow": "to_order"
+  },
+  {
+    "item": "Рама під сонячний масив",
+    "qty": "1",
+    "price": "—",
+    "status": "tbd",
+    "note": "Робимо самі під кут і вітер плайї. Кріпити намертво — 50+ mph зриває панелі",
+    "system": "solar",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель MC4 + роз'єми для масиву",
+    "qty": "компл.",
+    "price": "—",
+    "status": "add",
+    "note": "Від масиву до сонячного входу станції",
+    "system": "solar",
+    "flow": "to_order"
+  },
+  {
+    "item": "Щит-бокс із тримачами запобіжників",
+    "qty": "1",
+    "price": "—",
+    "status": "add",
+    "note": "Блок на 4 позиції: головний 25 A + Гр.1 5 A, Гр.2 10 A, Гр.3А 7.5 A. Автомобільні ножові ATO/ATC",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Запобіжники ATO/ATC, набір",
+    "qty": "компл. + запас",
+    "price": "—",
+    "status": "add",
+    "note": "Номінали з моделі: 25 / 5 / 10 / 7.5 A. Брати з запасом — перегорають саме вночі",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Реле на групи 12 В, 30 А",
+    "qty": "3",
+    "price": "—",
+    "status": "add",
+    "note": "По одному на групу, щоб гасити групи по черзі. Аварійна на своєму каналі. Чим ними керувати — відкрите питання (фотореле прибрано 29.07)",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Гермокоробка IP66 для щита і реле",
+    "qty": "1",
+    "price": "—",
+    "status": "add",
+    "note": "Головна коробка: запобіжники і реле груп. З вентиляцією і фільтром — глухо закривати не можна, перегріється",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Гермокоробки IP65 під диммер і WLED",
+    "qty": "2",
+    "price": "—",
+    "status": "add",
+    "note": "Окремо коробка ШІМ-диммера (Гр.1) і коробка контролера WLED (Гр.2), ближче до навантаження",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Гермороз'єми IP68 (швидкознімні)",
+    "qty": "~20",
+    "price": "—",
+    "status": "add",
+    "note": "На кожен стик, який доведеться роз'єднувати при збиранні-розбиранні: стійки, промені, сходи",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Гель-конектори / вологозахищені клеми",
+    "qty": "компл.",
+    "price": "—",
+    "status": "add",
+    "note": "Глухі з'єднання всередині коробок. Пил плайї лужний — звичайні скрутки окислюються",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Гофра/кабель-канал для відводів",
+    "qty": "~40 м",
+    "price": "—",
+    "status": "add",
+    "note": "Захист відводів на стійках і в настилі; алюмінієвий канал під стрічку вже в конструкції подіуму",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Станція (30 А вихід) → щит запобіжників",
+    "qty": "~8 м",
+    "price": "—",
+    "status": "add",
+    "note": "Ancor 8/2 AWG — наявний, докуповувати не треба. Магістраль СВІТЛА: звук на ній не висить, у нього свій кабель",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Щит → коробка диммера (Гр.1)",
+    "qty": "~4 м",
+    "price": "—",
+    "status": "add",
+    "note": "Ancor 12/2 AWG — AWG 12. до коробки з ШІМ-диммером",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Диммер → кільце прожекторів",
+    "qty": "~12 м",
+    "price": "—",
+    "status": "add",
+    "note": "Ancor 12/2 AWG — AWG 12. по периметру октагона до стійок",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Відвід на прожектор (найдальший)",
+    "qty": "~2 м",
+    "price": "—",
+    "status": "add",
+    "note": "16/2 AWG у гофрі — AWG 16. штатний хвіст Gardencoin + подовження; несе ОДИН світильник",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Щит → коробка WLED (Гр.2)",
+    "qty": "~5 м",
+    "price": "—",
+    "status": "add",
+    "note": "Ancor 8/2 AWG (наявний) — AWG 8. найважча гілка — уся стрічка",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: WLED → точки живлення стрічки",
+    "qty": "~4 м",
+    "price": "—",
+    "status": "add",
+    "note": "14/2 AWG — AWG 14. power injection кожні 2.5–3 м, струм ділиться на 3 вводи",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Коробка → лампи робота",
+    "qty": "~6 м",
+    "price": "—",
+    "status": "add",
+    "note": "18/2 AWG тонкий, у броні — AWG 18. всередині костюма; несе всі лампи робота",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Щит → коробка аварійної (Гр.3А)",
+    "qty": "~6 м",
+    "price": "—",
+    "status": "add",
+    "note": "Ancor 12/2 AWG — AWG 12. окрема лінія, гасне останньою",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Коробка → габарити по кутах",
+    "qty": "~14 м",
+    "price": "—",
+    "status": "add",
+    "note": "14/2 AWG — AWG 14. 8 кутів октагона",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кабель: Коробка → лампи сходів",
+    "qty": "~10 м",
+    "price": "—",
+    "status": "add",
+    "note": "16/2 AWG у каналі настилу — AWG 16. 24 врізні лампи по периметру сходів",
+    "system": "lights",
+    "flow": "to_order"
+  },
+  {
+    "item": "Захисний лак MG Chemicals 422B",
+    "qty": "1",
+    "price": "~$25",
+    "status": "add",
+    "system": "project",
+    "note": "conformal coating на всі плати — пил плайї лужний (pH 9-10), без лаку плати деградують",
+    "flow": "to_order"
+  },
+  {
+    "item": "Алюмінієвий U-профіль для LED у настил подіуму",
+    "qty": "за місцем",
+    "price": "~$30",
+    "status": "add",
+    "system": "lights",
+    "note": "зі старої бази (19.07): паз 20мм у настилі під стрічку",
+    "flow": "to_order"
+  },
+  {
+    "item": "Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)",
+    "qty": "комплект",
+    "price": "~$20",
+    "status": "add",
+    "system": "armor",
+    "note": "зі специфікації архітектора — пасивна помітність робота вночі",
+    "flow": "to_order"
+  },
+  {
+    "item": "LiFePO4 12 В 100 Ah (буфер під світло)",
+    "qty": "1",
+    "price": "~$250",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "note": "КАНДИДАТ, рішення не прийняте. Живить світло напряму з клем — знімає 126-ватне обмеження станції. ~1200 Вт·год буфера"
+  },
+  {
+    "item": "Зарядник 14.6 В 20-30 А з Anderson",
+    "qty": "1",
+    "price": "~$60",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "note": "КАНДИДАТ у пару до АКБ: станція через розетку тримає акумулятор зарядженим. Bioenno BPC-1520A або аналог"
+  },
+  {
+    "item": "Victron Orion-Tr 48/12-30A (360 Вт), ізольований",
+    "qty": "1",
+    "price": "$201",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "https://signaturesolar.com/victron-energy-orion-tr-48-12-20a-240w-isolated-dc-dc-converter/",
+    "note": "КАНДИДАТ під ідею «понизити порт розширення». Вхід 32-70 В покриває весь діапазон порту (40-58.4 В), вихід 12 В / 30 А = 360 Вт при 40°C, ізольований (відділяє 12 В від 48 В), IP43, до +55°C. Купувати ТІЛЬКИ після перевірки резистором, що порт узагалі віддає струм"
+  },
+  {
+    "item": "Victron Orion-Tr 48/12-20A (240 Вт), ізольований",
+    "qty": "1",
+    "price": "$114",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "https://signaturesolar.com/orion-tr-48-12-20a-240w-isolated-dc-dc-converter-voltage-regulator/",
+    "note": "дешевший варіант того самого: 20А=240Вт проти робочого піку світла 175 Вт — запас є. Брати лише якщо взагалі підемо шляхом пониження порту розширення"
+  },
+  {
+    "item": "BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)",
+    "qty": "1",
+    "price": "~$45",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "https://www.amazon.com/BLUETTI-Aviation-Anderson-Compatible-Portable/dp/B09X34G9MG",
+    "note": "ГОТОВИЙ офіційний кабель, нічого не паяти. Штатний вихід 12 В / 30 А = 360 Вт. Підходить до AC200MAX, AC200P, AC300, EP500/EP500 Pro"
+  },
+  {
+    "item": "Кабель XT150 для порту розширення (готовий)",
+    "qty": "1",
+    "price": "~$25",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "note": "Готових повно (Amazon/AliExpress/eBay), АЛЕ резистора 1 кОм у них нема — його все одно доведеться додати. Тому шлях Bluetti чистіший, якщо не хочемо паяти"
+  },
+  {
+    "item": "Макетна плата 9×15см двостороння",
+    "qty": "1 (беруть мультипак)",
+    "price": "$13",
+    "status": "add",
+    "note": "FR4 перфоборд — основа вузла; модулі на неї",
+    "url": "https://www.amazon.com/dp/B08WJBS4HK",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Набір нейлонових стійок M2.5/M3/M4",
+    "qty": "1 кит",
+    "price": "$17",
+    "status": "add",
+    "note": "432pcs — підняти модулі над платою + прикрутити плату в коробку",
+    "url": "https://www.amazon.com/dp/B09F9GMP4W",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Клемники гвинтові 5.08мм 2-pin",
+    "qty": "кілька",
+    "price": "$9",
+    "status": "add",
+    "note": "вхід 12В і вихід на динамік — без ненадійних паяних скруток",
+    "url": "https://www.amazon.com/dp/B09ZP4FWXT",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Гнізда-хедери 2.54мм (мама) кит",
+    "qty": "1 кит",
+    "price": "$8",
+    "status": "add",
+    "note": "запаяти на плату — ESP32/ЦАП/SD вставляються і знімаються",
+    "url": "https://www.amazon.com/dp/B01MQ48T2V",
+    "system": "audio",
+    "flow": "ordered"
+  },
+  {
+    "item": "Кабель: Станція (авто-вихід 12 В) → аудіо-вузол",
+    "qty": "~8 м",
+    "price": "—",
+    "status": "add",
+    "note": "16/2 AWG — другий кабель до подіуму, тільки для звуку. Просадка ~1% при 2 А. Довжина прикидка, міряти по місцю",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Екранований кабель ЦАП → амп (0.3 м)",
+    "qty": "1 м",
+    "price": "$4 або $0",
+    "status": "add",
+    "note": "Треба 30 см. Купувати бухту 25 ft за $14 — марно: будь-який старий aux/навушниковий шнур це вже екранована вита пара (сигнал по жилі L, екран на AGND). Якщо вдома нема — найдешевший aux 3 ft за $4 і розрізати",
+    "system": "audio",
+    "flow": "to_order",
+    "url": "https://www.amazon.com/dp/B0B3TSDF9S"
+  },
+  {
+    "item": "ASI 388 Electronic Grade Silicone, тюбик 2.8 oz",
+    "qty": "1 туба",
+    "price": "$10",
+    "status": "add",
+    "system": "lights",
+    "flow": "ordered",
+    "note": "ЗАМОВЛЕНО 29.07. Маленький тюбик під видавлювання рукою — саме те, що треба для 24 різів: не треба пістолета, не сохне туба між сесіями. Electronic grade = нейтральний, не роз'їдає мідь. НЕ брати звичайний прозорий RTV із автомагазину — він зазвичай оцтовий. Альтернатива в тому ж форматі: GE Advanced Silicone 2.8 oz (~$8), теж нейтральний.",
+    "url": "https://www.amazon.com/dp/B0063U2RT8"
+  },
+  {
+    "item": "Заглушки неон 8×16 мм — набір 60 шт",
+    "qty": "1 набір",
+    "price": "$11.99",
+    "url": "https://www.amazon.com/dp/B08R3YSCB2",
+    "status": "add",
+    "system": "lights",
+    "flow": "to_order",
+    "note": "Shine Decor / аналог, 60 шт. ✅ НАШ РОЗМІР: 31.07 Іван приклав торець стрічки до контуру в натуральну величину на друкованому аркуші-калібрі — стрічка 8×16. Решту розмірів (6×12 два набори і круглі 10 мм) знято із закупівлі."
+  },
+  {
+    "item": "Заглушки 12 мм з герметиком — набір 50 шт",
+    "qty": "1 набір",
+    "price": "$13.99",
+    "url": "https://www.amazon.com/dp/B07YPWK1GC",
+    "status": "add",
+    "system": "lights",
+    "flow": "to_order",
+    "note": "ковпачки під 12 мм, ідуть разом із герметиком"
+  },
+  {
+    "item": "Термоусадка з клеєм 3:1, набір 350 шт",
+    "qty": "1 набір",
+    "price": "$6",
+    "url": "https://www.amazon.com/dp/B0F1DJD2YC",
+    "status": "add",
+    "system": "lights",
+    "flow": "to_order",
+    "note": "marine grade adhesive-lined. Перевірено 30.07: той самий тип, що й лот за $14, але 350 шт замість 240 і вдвічі дешевше (★4.7, 346 відгуків)"
+  },
+  {
+    "item": "Термоусадка з клеєм 3:1, набір 350 шт",
+    "qty": "1 набір",
+    "price": "$6",
+    "url": "https://www.amazon.com/dp/B0F1DJD2YC",
+    "status": "add",
+    "system": "lights",
+    "flow": "to_order",
+    "note": "marine grade adhesive-lined. Перевірено 30.07: той самий тип, що й лот за $14, але 350 шт замість 240 і вдвічі дешевше (★4.7, 346 відгуків)"
+  },
+  {
+    "item": "Гермовводи PG7–PG16, набір 25 шт",
+    "qty": "3 (пак 25)",
+    "price": "$8",
+    "status": "add",
+    "url": "https://www.amazon.com/dp/B0FJFVBLJD",
+    "note": "IP68 нейлон PA66 з O-ring. Три вводи в коробку: 12 В, динамік, радар. Перевірено 30.07: окремий пак 10×PG7 коштує стільки ж ($7.69), тому беремо набір — у ньому і PG9 на запас",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Термоусадка з клеєм 3:1, набір 350 шт",
+    "qty": "1 кит",
+    "price": "$6",
+    "status": "add",
+    "url": "https://www.amazon.com/dp/B0F1DJD2YC",
+    "note": "marine grade adhesive-lined. Перевірено 30.07: той самий тип, що й лот за $14, але 350 шт замість 240 і вдвічі дешевше (★4.7, 346 відгуків)",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Джампери Dupont мама-мама 20 см",
+    "qty": "пак 40",
+    "price": "$4",
+    "status": "add",
+    "url": "https://www.amazon.com/dp/B0BRTJQGS6",
+    "note": "у LD2410C крок 2.54 (не 1.25 як у старого LD2410), у 3-паку кабелів нема — цим і підключаємо",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Стяжки нейлонові UV-стійкі, 400 шт",
+    "qty": "1 пак",
+    "price": "$7",
+    "status": "add",
+    "url": "https://www.amazon.com/dp/B0C2Z4L3S6",
+    "note": "перевірено 30.07: дешевше з UV-стійких і рейтингом не знайшлося (★4.6, 18 тис. відгуків)",
+    "system": "audio",
+    "flow": "to_order"
+  },
+  {
+    "item": "Кейс під станцію",
+    "qty": "1",
+    "price": "$75-485",
+    "status": "tbd",
+    "note": "Підбір у лабораторії ящика: під EcoFlow Delta 3 Max Plus проходить 17 коробок з 22. Найдешевше на вторинці — Pelican iM3075 від $75 (eBay surpluscases, FB Marketplace LA). Найдешевший новий з IP67 — Monoprice за $140",
+    "url": "https://www.ebay.com/str/surpluscases",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Канальний фільтр-бокс AC Infinity 6\"",
+    "qty": "1",
+    "price": "$70",
+    "status": "tbd",
+    "note": "Готовий сталевий корпус під фільтр 12×20×1 дюйм — фабрикувати нічого не треба",
+    "url": "https://acinfinity.com/duct-air-filter-box-6-with-high-efficacy-filter/",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Фільтр MERV 13 12×20×1\"",
+    "qty": "3",
+    "price": "$12",
+    "status": "tbd",
+    "note": "Фінішна ступінь, три штуки на тиждень",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Поролоновий передфільтр (тип Outerwears)",
+    "qty": "1",
+    "price": "$30",
+    "status": "tbd",
+    "note": "Груба ступінь, миється щоранку",
+    "url": "https://outerwears.com",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Канальний вентилятор AC Infinity 6\" на нагнітання",
+    "qty": "1",
+    "price": "$80",
+    "status": "tbd",
+    "note": "Створює надлишковий тиск. 5-15 Вт постійно",
+    "url": "https://www.amazon.com/dp/B0921XRFLX",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Пасивна жалюзі-решітка на випуск",
+    "qty": "1",
+    "price": "$15",
+    "status": "tbd",
+    "note": "Повітря виходить самопливом; інших нефільтрованих отворів бути не повинно",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Гермоввід PG13.5 IP68",
+    "qty": "4",
+    "price": "$10",
+    "status": "tbd",
+    "note": "Силова лінія 12 В. Виводити кабель під кришкою не можна — фільтрація втратить сенс",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Кулер Coleman 100-150 qt",
+    "qty": "1",
+    "price": "$100-140",
+    "status": "tbd",
+    "note": "АЛЬТЕРНАТИВА фільтрам: гіпотеза теплової маси. Внутрішні розміри ЗВІРИТИ руками — виробник їх не публікує",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Каністри під воду 5 л",
+    "qty": "8",
+    "price": "$40",
+    "status": "tbd",
+    "note": "До гіпотези кулера: 30-40 кг теплової маси, зручніше каністрами ніж наливом — виносити на ніч остигати",
+    "url": "",
+    "system": "enclosure",
+    "flow": ""
+  },
+  {
+    "item": "Коробка ABS IP65 200×120×75 (якщо своя не підійде)",
+    "qty": "1",
+    "price": "$10",
+    "status": "tbd",
+    "url": "https://www.amazon.com/dp/B07D23BF7Y",
+    "note": "запасний варіант: беремо тільки якщо замовлена Іваном коробка менша за 165×105×55 або металева",
+    "system": "audio",
+    "flow": "to_order"
+  }
 ]
