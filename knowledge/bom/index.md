@@ -27,7 +27,7 @@
 * [Landscapestation лампи сходів 1 Вт](landscapestation-lampy-skhodiv-1-vt.md) - $100/уп, купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $47, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
-* [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $12, купити
+* [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
 * [Сонячні панелі для масиву (потужність не обрана)](soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - $149, купити
 * [Станції EcoFlow ×2 (модель не обрана)](stantsii-ecoflow-2-model-ne-obrana.md) - $1099/шт, купити
 * [Рама під сонячний масив](rama-pid-soniachnyi-masyv.md) - —, купити

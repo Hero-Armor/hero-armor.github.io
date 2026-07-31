@@ -1,6 +1,7 @@
 # Задачі
 
 
+* [Замовити ШІМ-диммери SUPERNIGHT 30 А — набір 2 шт](zamovyty-shim-dymmery-supernight-30-a-nabir-2-sht.md) - до роботи
 * [Замовити Luxrite MR16 4000K — 10 шт у прожектори](zamovyty-luxrite-mr16-4000k-10-sht-u-prozhektory.md) - до роботи
 * [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) - чекаємо
 * [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) - чекаємо
