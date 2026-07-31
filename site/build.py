@@ -931,7 +931,8 @@ def build():
     llab = llab.replace("{{GAUGES_JSON}}", json.dumps(GAUGES))
     llab = llab.replace("{{FIXTURES_JSON}}", json.dumps([
         {k: f[k] for k in ("group", "qty", "dimming") if k in f}
-        | {k: f[k] for k in ("w_unit", "length_m", "w_per_m", "addressable") if k in f}
+        | {k: f[k] for k in ("w_unit", "length_m", "w_per_m", "addressable",
+                             "w_full", "duty_animation") if k in f}
         for f in LP["fixtures"]], ensure_ascii=False))
     llab = llab.replace("{{RUNS_JSON}}", json.dumps(
         [{"id": r["id"], "awg": str(r["awg"]), "length_m": r["length_m"], "groups": r["groups"]}
