@@ -1606,6 +1606,12 @@ def build():
          for c in ENC["cases"]], ensure_ascii=False))
     elab = elab.replace("{{FIT_CAPTION}}", esc(ENC["_verify"]))
 
+    for ph, fn in (("{{ENC_SVG_SECTION}}", "schematic"), ("{{ENC_SVG_THERMAL}}", "thermal"),
+                   ("{{ENC_SVG_COOLER}}", "cooler")):
+        fsvg = (ROOT / "enclosure" / "model" / f"{fn}.svg").read_text()
+        fsvg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", fsvg)
+        elab = elab.replace(ph, fsvg)
+
     KIND_COLOR = {"особистий досвід": "var(--good)", "офіційне джерело": "var(--signal)"}
     bl = []
     for key, b in ENC["burner_field"].items():

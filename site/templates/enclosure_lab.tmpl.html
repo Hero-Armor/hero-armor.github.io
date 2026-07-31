@@ -126,6 +126,13 @@
 {{ENC_TILES}}
   </div>
 
+  <h2>Як це влаштовано</h2>
+  <div class="fig">{{ENC_SVG_SECTION}}</div>
+  <p class="fig-cap">Розріз. Дві ступені фільтра на вході, вентилятор дме <b>всередину</b> —
+  тоді витік іде назовні і пил не заходить проти градієнта. Кабелі — тільки через гермовводи:
+  виведеш під кришкою, і вся фільтрація втрачає сенс. Тінь і підставка над розпеченою землею
+  дають більше, ніж будь-який вентилятор.</p>
+
   <h2>Головне: вентиляція не робить холодніше за вулицю</h2>
   <p class="sub" style="margin-bottom:1rem">Це те, що легко проґавити. Межа станцій —
   <b>+45&nbsp;°C</b>, а на плайї в тіні вже 40-45. Значить на перегрів лишаються одиниці
@@ -139,6 +146,12 @@
 </tbody>
   </table>
   </div>
+
+  <div class="fig">{{ENC_SVG_THERMAL}}</div>
+  <p class="fig-cap">Крива задирається вертикально біля межі: що ближче температура надворі
+  до паспортних 45 °C, то більше потоку треба на ті самі ватти, а за межею вентилятор не
+  рятує взагалі — повітря вже гарячіше за станцію. Горизонталі — реальні вентилятори з
+  урахуванням того, що фільтр ріже потік.</p>
 
   <h2>Що в яку коробку влазить</h2>
   <p class="sub" style="margin-bottom:1rem">Тисни станцію — покаже, які коробки їй підходять,
@@ -157,6 +170,9 @@
     <button data-f="cooler">кулери (теплова маса)</button>
   </div>
   <div class="tiles" id="fitTiles" style="margin-bottom:1rem"></div>
+  <div class="fig" style="margin-bottom:.6rem"><svg id="fitSvg" viewBox="0 0 940 300"
+       style="display:block;width:100%;min-width:620px"></svg></div>
+  <p class="fig-cap" id="fitCap"></p>
   <div class="tbl-wrap">
   <table>
     <thead><tr><th>Коробка</th><th>Тип</th><th>Внутрішній</th><th>Ущільнення</th>
@@ -189,6 +205,47 @@
     pick.appendChild(b);
   });
   fbar.querySelectorAll('button').forEach(b=>b.onclick=()=>{mode=b.dataset.f;draw();});
+
+  // Масштабний малюнок: станція в коробці, вид зверху і збоку.
+  // Малюємо ту коробку, на яку навели/клікнули, інакше найдешевшу, що підходить.
+  let picked=null;
+  function drawSvg(st, r){
+    const svg=document.getElementById('fitSvg'), cap=document.getElementById('fitCap');
+    if(!r){ svg.innerHTML=''; cap.textContent=''; return; }
+    const c=r.c;
+    const sd=[...st.dims_mm].sort((a,b)=>b-a), cd=[...c.inner_mm].sort((a,b)=>b-a);
+    const scale=Math.min(400/cd[0], 210/cd[1], 210/cd[2]);
+    const S=v=>v*scale;
+    const box=(x,y,w,h,fill,stroke,dash)=>
+      `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}" stroke="${stroke}"`+
+      (dash?` stroke-dasharray="${dash}"`:'')+` stroke-width="2"/>`;
+    const txt=(x,y,s,anchor,size,col)=>
+      `<text x="${x}" y="${y}" text-anchor="${anchor||'start'}" font-size="${size||12}" `+
+      `font-family="ui-monospace,Menlo,monospace" fill="${col||'#6b675c'}">${s}</text>`;
+    let o='';
+    let x0=40, y0=60;
+    [[0,1,'вид зверху',cd[0],cd[1],sd[0],sd[1]],
+     [0,2,'вид збоку',cd[0],cd[2],sd[0],sd[2]]].forEach(([,,title,cw,ch,sw,sh],i)=>{
+      const X=x0+i*470, Y=y0;
+      o+=txt(X, Y-24, title, 'start', 13, '#24231d');
+      o+=box(X, Y, S(cw), S(ch), '#fcfcfb', '#24231d');
+      const ox=X+(S(cw)-S(sw))/2, oy=Y+(S(ch)-S(sh))/2;
+      const over = sw+2*CL>cw || sh+2*CL>ch;
+      o+=box(ox, oy, S(sw), S(sh), over?'#f3ded9':'#efeee7', over?'#b23a2e':'#24231d');
+      o+=txt(ox+S(sw)/2, oy+S(sh)/2+4, 'станція', 'middle', 12, '#24231d');
+      // зазор
+      o+=box(ox-S(CL), oy-S(CL), S(sw+2*CL), S(sh+2*CL), 'none', '#3d6f96', '4 3');
+      const base=Y+Math.max(S(ch), (S(ch)-S(sh))/2+S(sh+2*CL))+20;
+      o+=txt(X, base, `коробка ${Math.round(cw)}×${Math.round(ch)} мм`, 'start', 11);
+      o+=txt(X, base+15, `станція ${Math.round(sw)}×${Math.round(sh)} + зазор ${CL}`, 'start', 11);
+    });
+    svg.setAttribute('viewBox', `0 0 940 ${Math.max(300, y0+S(Math.max(cd[1], sd[1]+2*CL))+95)}`);
+    svg.innerHTML=o;
+    cap.innerHTML='Пунктиром — потрібний зазор на продув. '+
+      (r.ok? `<b>${esc(c.name)}</b> підходить, найтісніша вісь лишає ${r.slack} мм.`
+           : `<b>${esc(c.name)}</b> не підходить: бракує ${-r.slack} мм по найтіснішій осі.`)+
+      ' Тисни рядок у таблиці, щоб подивитись іншу коробку.';
+  }
 
   function draw(){
     [...pick.children].forEach((b,i)=>b.classList.toggle('active',i===cur));
@@ -235,7 +292,17 @@
         '</td><td class="num">'+r.c.inner_mm.join('×')+'</td><td>'+esc(r.c.seal)+
         '</td><td class="num">$'+r.c.price_usd+'</td><td class="num">'+used+'</td><td>'+badge+
         '</td><td class="num">'+(r.ok?r.slack+' мм':'бракує '+(-r.slack)+' мм')+'</td></tr>';
-    }).join('') || '<tr><td colspan="6" style="color:var(--ink-2)">за цим фільтром нічого</td></tr>';
+    }).join('') || '<tr><td colspan="8" style="color:var(--ink-2)">за цим фільтром нічого</td></tr>';
+
+    [...body.children].forEach((tr,i)=>{
+      if(!show[i]) return;
+      tr.style.cursor='pointer';
+      tr.onclick=()=>{ picked=show[i].c.name; drawSvg(st, show[i]);
+                       [...body.children].forEach(x=>x.style.background='');
+                       tr.style.background='var(--bg)'; };
+    });
+    const keep = show.find(r=>r.c.name===picked);
+    drawSvg(st, keep || okRows[0] || rows[0]);
   }
   draw();
 })();
@@ -288,6 +355,7 @@
       при 42 надворі. З товщою ізоляцією ще гірше. Звичайний тонкий ящик у сім разів кращий,
       бо тепло з нього йде. Це не теорія: рівно так згорів єдиний задокументований шатдаун на
       плайї — людина закрила ящик інвертора наглухо, щоб не пускати пил.</p>
+      <div class="fig" style="margin:.7rem 0">{{ENC_SVG_COOLER}}</div>
       <p style="margin-top:.5rem">Якщо кулер провітрювати — ізоляція просто перестає щось
       вирішувати, бо вентиляція однаково не зробить усередині холодніше за вулицю.
       <b>Але є третій варіант.</b> Кулер, закритий наглухо, з <b>тепловою масою</b>: 30-40&nbsp;кг
