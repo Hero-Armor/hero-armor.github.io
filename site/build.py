@@ -1233,11 +1233,21 @@ def build():
     for i, e in enumerate(s_fx):
         lead = ' style="color:var(--good)"' if i == 0 else (
             ' style="color:var(--crit)"' if i == len(s_fx) - 1 else "")
+        # Назва режиму — у підписі показуємо Ukrainian name якщо є
+        uk = e.get("uk_name", "")
+        display_name = f'{esc(uk)} <span style="color:var(--ink-2);font-size:.78em">{esc(e["name"])}</span>' if uk else esc(e["name"])
+        uk_desc = f'<br><span style="color:var(--ink-2);font-size:.8em">{esc(e.get("uk_desc", ""))}</span>' if e.get("uk_desc") else ""
+        working_mark = ' <span style="color:var(--ink-2)">← робочий</span>' if e["fx"] == 187 else ""
+        # Превʼю: один основний клас + опційні додаткові через preview_extra
+        p_cls = e.get("preview_class", "")
+        p_extra = e.get("preview_extra", "")
+        extra_divs = "".join(f'<div class="{c}"></div>' for c in p_extra.split() if c)
+        preview_td = (f'<td><div class="fx-track"><div class="{p_cls}"></div>{extra_divs}</div></td>'
+                      if p_cls else "<td></td>")
         fx_rows.append(
-            f'      <tr><td{lead}>{esc(e["name"])}'
-            + (' <span style="color:var(--ink-2)">← робочий</span>'
-               if e["fx"] == 187 else "")
-            + f'</td><td class="num">{e["avg_pct"]:.1f}%</td>'
+            f'      <tr><td{lead}>{display_name}{uk_desc}{working_mark}'
+            + f'</td>{preview_td}'
+            + f'<td class="num">{e["avg_pct"]:.1f}%</td>'
             f'<td class="num">{e["peak_pct"]:.1f}%</td>'
             f'<td class="num">{e["avg_w"]:.1f} Вт</td>'
             f'<td class="num">{e["peak_w"]:.1f} Вт</td>'

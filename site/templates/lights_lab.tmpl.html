@@ -112,6 +112,170 @@
                     border: 1px solid var(--line); }
   .bar .fill.lux { background: linear-gradient(90deg, var(--crit), var(--warn) 35%, var(--good)); }
   .bar .fill.drop { background: linear-gradient(90deg, var(--good), var(--warn) 55%, var(--crit)); }
+
+  /* ── LED-ефект превʼю (мініатюрна доріжка у таблиці режимів) ── */
+  .fx-track {
+    position: relative; height: 10px; border-radius: 5px;
+    background: #14161a;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.6), 0 0 0 1px #1e2127;
+    overflow: hidden; width: 120px; min-width: 80px;
+  }
+  .fx-track > div { position: absolute; top: 0; bottom: 0; will-change: transform; }
+
+  /* Комета — рівний хід */
+  .comet {
+    width: 90px; left: 0; border-radius: 5px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.05) 25%, rgba(255,255,255,.35) 70%, #fff 96%);
+    animation: fxsweep 3s linear infinite;
+  }
+  /* Комета з диханням */
+  .comet-ease {
+    width: 90px; left: 0; border-radius: 5px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.05) 25%, rgba(255,255,255,.35) 70%, #fff 96%);
+    animation: fxsweep 3.4s cubic-bezier(.45,0,.55,1) infinite;
+  }
+  @keyframes fxsweep {
+    from { transform: translateX(-100px); }
+    to   { transform: translateX(200px); }
+  }
+  /* Повна хвиля */
+  .fx-fill {
+    width: 100%; left: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,.55), #fff);
+    animation: fxfillsweep 4s linear infinite;
+  }
+  @keyframes fxfillsweep {
+    0%   { transform: translateX(-100%); }
+    46%  { transform: translateX(0); }
+    54%  { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
+  /* Конвеєр */
+  .fx-conveyor {
+    left: 0; right: 0;
+    background: repeating-linear-gradient(90deg,
+      transparent 0px, rgba(255,255,255,.9) 20px, rgba(255,255,255,.9) 38px, transparent 58px, transparent 80px);
+    animation: fxbeltmove 1.4s linear infinite;
+  }
+  @keyframes fxbeltmove {
+    from { background-position: 0 0; }
+    to   { background-position: 80px 0; }
+  }
+  /* М'які хвилі */
+  .fx-softwave {
+    width: 200%; left: 0;
+    background:
+      radial-gradient(closest-side, rgba(255,255,255,.85), transparent) 0 0 / 25% 100% no-repeat,
+      radial-gradient(closest-side, rgba(255,255,255,.85), transparent) 50% 0 / 25% 100% no-repeat;
+    animation: fxwavemove 3.2s linear infinite;
+  }
+  @keyframes fxwavemove {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+  }
+  /* Пульс */
+  .fx-pulse {
+    width: 45%; left: 0; border-radius: 5px;
+    background: linear-gradient(90deg, rgba(255,255,255,.09), rgba(255,255,255,.20) 15%, rgba(255,255,255,.45) 27%, rgba(255,255,255,.85) 40%, #fff 50%, rgba(255,255,255,.85) 60%, rgba(255,255,255,.45) 73%, rgba(255,255,255,.20) 85%, rgba(255,255,255,.09));
+    animation: fxpulsemove 2.6s linear infinite;
+  }
+  @keyframes fxpulsemove {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(222%); }
+  }
+  /* Сканер */
+  .fx-scanner {
+    width: 60px; left: 0; border-radius: 5px;
+    background: radial-gradient(closest-side, #fff 30%, rgba(255,255,255,.25) 70%, transparent);
+    animation: fxscanmove 2.3s ease-in-out infinite alternate;
+  }
+  @keyframes fxscanmove {
+    from { transform: translateX(0); }
+    to   { transform: translateX(60px); }
+  }
+  /* Дві назустріч */
+  .fx-duo-l, .duo-r { width: 55px; border-radius: 5px; }
+  .fx-duo-l {
+    left: -55px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.3) 60%, #fff);
+    animation: fxduoleft 3.2s ease-in-out infinite;
+  }
+  .duo-r {
+    left: 100%;
+    background: linear-gradient(270deg, transparent, rgba(255,255,255,.3) 60%, #fff);
+    animation: fxduoright 3.2s ease-in-out infinite;
+  }
+  .duo-flash {
+    left: 50%; width: 30px; margin-left: -15px; border-radius: 50%;
+    background: radial-gradient(closest-side, #fff, transparent);
+    opacity: 0;
+    animation: fxduoflash 3.2s linear infinite;
+  }
+  @keyframes fxduoleft {
+    0%   { transform: translateX(0); opacity: 1; }
+    52%  { transform: translateX(75px); opacity: 1; }
+    62%  { transform: translateX(75px); opacity: 0; }
+    100% { transform: translateX(75px); opacity: 0; }
+  }
+  @keyframes fxduoright {
+    0%   { transform: translateX(0); opacity: 1; }
+    52%  { transform: translateX(-75px); opacity: 1; }
+    62%  { transform: translateX(-75px); opacity: 0; }
+    100% { transform: translateX(-75px); opacity: 0; }
+  }
+  @keyframes fxduoflash {
+    0%, 48%  { opacity: 0; transform: scale(.6); }
+    56%      { opacity: 1; transform: scale(1.4); }
+    72%      { opacity: 0; transform: scale(2); }
+    100%     { opacity: 0; }
+  }
+  /* Крапля */
+  .fx-drop {
+    width: 20px; left: 0; border-radius: 50%;
+    background: radial-gradient(closest-side, #fff 40%, rgba(255,255,255,.3) 75%, transparent);
+    animation: fxdropfall 2.5s cubic-bezier(.55,0,.85,.35) infinite;
+  }
+  .drop-splash {
+    right: 2px; width: 18px; border-radius: 50%;
+    background: radial-gradient(closest-side, #fff, transparent);
+    opacity: 0;
+    animation: fxdropsplash 2.5s linear infinite;
+  }
+  @keyframes fxdropfall {
+    0%   { transform: translateX(-24px); opacity: .9; }
+    82%  { transform: translateX(140px); opacity: 1; }
+    86%, 100% { transform: translateX(140px); opacity: 0; }
+  }
+  @keyframes fxdropsplash {
+    0%, 80% { opacity: 0; transform: scale(.5); }
+    86%  { opacity: 1; transform: scale(1.7); }
+    100% { opacity: 0; transform: scale(2.6); }
+  }
+  /* Потік води */
+  .fx-flow-base {
+    left: 0; right: 0; opacity: .16;
+    background: repeating-linear-gradient(90deg,
+      transparent 0px, rgba(255,255,255,.9) 36px, transparent 80px, transparent 104px);
+    animation: fxbeltmove2 2.4s linear infinite;
+  }
+  @keyframes fxbeltmove2 {
+    from { background-position: 0 0; }
+    to   { background-position: 104px 0; }
+  }
+  .flow-s1 {
+    width: 76px; left: 0; border-radius: 5px; opacity: .9;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.25) 55%, #fff 95%);
+    animation: fxsweep 3.1s linear infinite;
+  }
+  .flow-s2 {
+    width: 48px; left: 0; border-radius: 5px; opacity: .5;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.2) 55%, rgba(255,255,255,.85) 95%);
+    animation: fxsweep 4.7s linear infinite;
+    animation-delay: -2.2s;
+  }
+  @media (max-width: 600px) {
+    .fx-track { width: 72px; min-width: 56px; }
+  }
 </style>
 
 
@@ -381,7 +545,7 @@
   <p class="sub">{{STRIP_FX_WHY}}</p>
   <div class="tbl-wrap">
   <table>
-    <thead><tr><th>Режим</th><th>Світиться, середнє</th><th>Світиться, пік</th>
+    <thead><tr><th>Режим</th><th style="min-width:130px">Превʼю</th><th>Світиться, середнє</th><th>Світиться, пік</th>
     <th>Вся зірка, середнє</th><th>Вся зірка, пік</th><th>Wh/ніч</th></tr></thead>
     <tbody>
 {{STRIP_FX_ROWS}}
