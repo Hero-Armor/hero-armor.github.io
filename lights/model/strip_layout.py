@@ -24,15 +24,16 @@ DATA = Path(__file__).resolve().parent.parent / "data"
 P = json.loads((DATA / "params.json").read_text())
 I = json.loads((DATA / "strip_install.json").read_text())
 
-RAYS = next(f for f in P["fixtures"] if f["id"] == "water_rays")
-RING = next(f for f in P["fixtures"] if f["id"] == "water_ring")
+ARM = next(f for f in P["fixtures"] if f["id"] == "water_arms")
 ADDR = P["addressable"]
 
-N = RAYS["qty"]
-RAY_M = RAYS["length_m"]
-RING_M = RING["length_m"]
-R_RING_M = RING_M / (2 * pi)          # радіус кола з його ж довжини
-TOTAL_M = RING_M + N * RAY_M
+N = ARM["qty"]
+RAY_M = ARM["ray_m"]                  # промінь: край подіуму → центр
+TURN_M = ARM["turn_m"]                # заворот: 1/8 кола до основи наступного
+ARM_M = ARM["length_m"]               # рукав цілком, одна суцільна стрічка
+RING_M = ARM["ring_m"]                # коло = сума восьми заворотів
+R_RING_M = RING_M / (2 * pi)
+TOTAL_M = N * ARM_M
 DUTY = ADDR["duty_animation"]
 
 
@@ -91,10 +92,12 @@ def svg():
     o.append(f'<text x="{mx+10:.0f}" y="{my-2:.0f}" font-size="10" fill="{ink}">'
              f'до центру, далі заворотом</text>')
 
-    o.append(f'<text x="{CX}" y="26" text-anchor="middle" font-size="13" fill="{ink}">'
-             f'Зірка «біжучої води»: {N} променів по {RAY_M:.2f} м + коло {RING_M:.2f} м</text>')
-    o.append(f'<text x="{CX}" y="44" text-anchor="middle" font-size="10" fill="#6b675c">'
-             f'разом {TOTAL_M:.2f} м · світиться тільки фронт, {DUTY*100:.0f}% довжини</text>')
+    o.append(f'<text x="{CX}" y="24" text-anchor="middle" font-size="13" fill="{ink}">'
+             f'{N} рукавів по {ARM_M:.2f} м: промінь {RAY_M:.2f} + заворот {TURN_M:.2f}</text>')
+    o.append(f'<text x="{CX}" y="41" text-anchor="middle" font-size="10" fill="#6b675c">'
+             f'окремого кільця нема: коло {RING_M:.2f} м складають вісім заворотів</text>')
+    o.append(f'<text x="{CX}" y="56" text-anchor="middle" font-size="10" fill="#6b675c">'
+             f'разом {TOTAL_M:.2f} м · світиться тільки фронт, {DUTY*100:.0f}% рукава</text>')
     o.append(f'<circle cx="40" cy="{H-30}" r="4.5" fill="#fff" stroke="{sig}" stroke-width="2"/>')
     o.append(f'<text x="52" y="{H-26}" font-size="10" fill="#6b675c">'
              f'вхід живлення і місце різу — на зовнішньому кінці рукава</text>')
@@ -110,8 +113,9 @@ def blocked():
 
 
 def main():
-    print(f'{N} променів × {RAY_M} м + коло {RING_M} м = {TOTAL_M:.2f} м')
-    print(f'радіус кола {R_RING_M*1000:.0f} мм · фронт {DUTY*100:.0f}%')
+    print(f'{N} рукавів × {ARM_M} м (промінь {RAY_M} + заворот {TURN_M}) = {TOTAL_M:.2f} м')
+    print(f'коло {RING_M} м = {N} × {TURN_M} м заворотів · радіус {R_RING_M*1000:.0f} мм '
+          f'· фронт {DUTY*100:.0f}%')
     for j in I["joints"]:
         print(f'  {j["where"]:32} {j["what"]}  [{j["status"]}]')
     if blocked():

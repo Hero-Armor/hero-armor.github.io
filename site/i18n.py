@@ -63,6 +63,9 @@ BLOCK = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "li", "td", "th", "caption",
 
 ATTRS = ("alt", "title", "placeholder", "aria-label")
 
+MAX_SEGMENT = 2500        # довші шматки ріжемо на текстові вузли
+SKIP_SUBTREE = ("metadata", "defs")   # службові нутрощі SVG від matplotlib
+
 TOKEN = re.compile(
     r"(?P<comment><!--.*?-->)"
     r"|(?P<script><script\b[^>]*>.*?</script>)"
@@ -71,8 +74,12 @@ TOKEN = re.compile(
     r"|(?P<text>[^<]+)", re.S | re.I)
 
 TAG_NAME = re.compile(r"</?\s*([a-zA-Z][\w:-]*)")
-PH = "⟦%d⟧"
-PH_FIND = re.compile(r"⟦\d+⟧")
+# мітка тега: схожа на розмітку, тому модель її не переписує.
+# Пробував ⟦n⟧ — на довгих абзацах модель губила дужку («⟧5⟧») і шматок
+# доводилось лишати неперекладеним.
+PH = "<x%d/>"
+PH_FIND = re.compile(r"<x\d+/>")
+PH_LOOSE = re.compile(r"<\s*/?\s*x\s*(\d+)\s*/?\s*>")
 
 
 # --- памʼять перекладу -----------------------------------------------------
@@ -110,9 +117,14 @@ def _protect(inner):
 
 def _restore(text, tags):
     def sub(m):
-        i = int(m.group(0)[1:-1])
+        i = int(re.search(r"\d+", m.group(0)).group(0))
         return tags[i] if i < len(tags) else ""
     return PH_FIND.sub(sub, text)
+
+
+def _tidy(en):
+    """Підрівняти мітки, якщо модель загубила дужку чи слеш."""
+    return PH_LOOSE.sub(lambda m: PH % int(m.group(1)), en)
 
 
 def plan(html):
@@ -143,13 +155,15 @@ def plan(html):
         selfclose = tag.rstrip().endswith("/>") or name in VOID
 
         if not closing and not selfclose:
-            if name in BLOCK and stack:
-                stack[-1][2] = True
+            if name in BLOCK:
+                for fr in stack:             # «листком» не є жоден предок
+                    fr[2] = True
             stack.append([name, m.end(), False])
             continue
         if not closing:                      # <br/>, <img …>
-            if name in BLOCK and stack:
-                stack[-1][2] = True
+            if name in BLOCK:
+                for fr in stack:
+                    fr[2] = True
             continue
 
         # закриття: розкручуємо стек до свого імені (розмітка буває неохайна)
@@ -159,7 +173,10 @@ def plan(html):
                 continue
             if open_name in BLOCK and not has_block:
                 inner = html[inner_start:m.start()]
-                if CYR.search(inner):
+                # завеликий шматок моделі не по зубах (і це майже завжди
+                # ознака, що всередині ціла схема) — тоді беремо його текст
+                # по вузлах нижче, у `_loose_text_spans`
+                if CYR.search(inner) and len(inner) <= MAX_SEGMENT:
                     src, tags = _protect(inner)
                     if src.strip():
                         spans.append({"start": inner_start, "end": m.start(),
@@ -169,8 +186,20 @@ def plan(html):
 
     spans.extend(_loose_text_spans(html, covered))
     spans.extend(_attr_spans(html))
+    skip = _skip_ranges(html)
+    spans = [s for s in spans
+             if not any(a <= s["start"] and s["end"] <= b for a, b in skip)]
     spans.sort(key=lambda s: s["start"])
     return spans
+
+
+def _skip_ranges(html):
+    """Службові нутрощі SVG (RDF-метадані matplotlib) перекладати нема чого."""
+    out = []
+    for tag in SKIP_SUBTREE:
+        for m in re.finditer(rf"<{tag}\b.*?</{tag}>", html, re.S | re.I):
+            out.append((m.start(), m.end()))
+    return out
 
 
 def _loose_text_spans(html, covered):
@@ -251,8 +280,9 @@ not add or drop information, do not explain.
 - Preserve EXACTLY: numbers, units, part numbers, model names, currency, \
 percentages, URLs, HTML entities (&nbsp; &mdash; …), emoji, punctuation marks \
 like · ← →.
-- Preserve EVERY placeholder ⟦0⟧ ⟦1⟧ … exactly as written, same count, in the \
-position that keeps the sentence natural. They stand for HTML tags.
+- Preserve EVERY placeholder <x0/> <x1/> … byte for byte, same count, each \
+exactly once, in the position that keeps the sentence natural. They stand for \
+HTML tags — never renumber, merge, drop or reformat them.
 - Do not translate proper names of people, brands, or file names.
 - Some segments are labels on wiring diagrams or table headers: keep them as \
 short as the original, abbreviate the way an electrician would.
@@ -319,14 +349,15 @@ def translate(missing, glossary, tm, verbose=True):
         if len(got) != len(b):
             got = _one_by_one(b, glossary)
         for src, en in zip(b, got):
+            en = _tidy(en or "")
             if en and _placeholders_ok(src, en):
                 tm[src] = en
+                continue
+            fixed = _tidy((_one_by_one([src], glossary) or [""])[0] or "")
+            if fixed and _placeholders_ok(src, fixed):
+                tm[src] = fixed
             else:
-                fixed = _one_by_one([src], glossary)
-                if fixed and fixed[0] and _placeholders_ok(src, fixed[0]):
-                    tm[src] = fixed[0]
-                else:
-                    print(f"  ⚠ не переклалось (лишаю як є): {src[:70]}")
+                print(f"  ⚠ не переклалось (лишаю як є): {src[:70]}")
         save_tm(tm)
         if verbose:
             print(f"  пачка {i}/{len(batches)}: {len(b)} шматків")
@@ -360,8 +391,21 @@ SWITCH_EN = ' · <a class="lang-sw" href="../{name}" hreflang="uk">Україн�
 EYEBROW = re.compile(r'(<p class="eyebrow"[^>]*>)(.*?)(</p>)', re.S)
 
 
+HEAD_MARK = re.compile(r'^<!doctype html><html lang="\w+">.*?\n', re.S | re.I)
+SWITCH_MARK = re.compile(r' · <a class="lang-sw"[^>]*>[^<]*</a>')
+
+
+def strip_injected(html):
+    """Прибрати шапку й перемикач, дописані минулою збіркою.
+
+    Без цього друга збірка перекладала б власний перемикач і клеїла другу
+    шапку — сторінка з кожним разом обростала б сміттям.
+    """
+    html = HEAD_MARK.sub("", html)
+    return SWITCH_MARK.sub("", html)
+
+
 def head_block(lang, name):
-    alt_uk = name if lang == "en" else f"../{name}" if False else name
     if lang == "en":
         uk_href, en_href = f"../{name}", name
     else:
@@ -401,7 +445,7 @@ def build(only=None, dry=False, verbose=True):
 
     plans, missing = {}, []
     for p in pages:
-        html = p.read_text()
+        html = strip_injected(p.read_text())
         sp = plan(html)
         plans[p.name] = (html, sp)
         for s in sp:
