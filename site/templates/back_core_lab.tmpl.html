@@ -126,6 +126,10 @@
     <a href="https://hero-armor.github.io/armor.html"><b>🛡️ Броня</b> — сама фігура</a>
   </div>
 
+  <h2>Як воно виглядатиме</h2>
+  <div class="fig">{{SVG_FACE}}</div>
+  <p class="fig-cap">{{FACE_CAP}}</p>
+
   <div class="sim">
     <div class="controls">
       <div class="ctrl-group">Що ставимо всередину</div>
@@ -160,6 +164,13 @@
     </div>
   </div>
 
+  <h2>Чому плата стоїть углиб, а не впритул</h2>
+  <div class="fig">{{SVG_SECTION}}</div>
+  <p class="fig-cap">{{SECTION_CAP}}</p>
+
+  <h2>Як воно переливатиметься</h2>
+{{FX_BLOCK}}
+
   <h2>Що можна поставити всередину</h2>
   <div class="tbl-wrap">
   <table>
@@ -183,6 +194,18 @@
   </table>
   </div>
 
+  <h2>Чим живиться і що тримає стелю</h2>
+  <div class="fig">{{SVG_WIRING}}</div>
+  <p class="fig-cap">{{WIRING_CAP}}</p>
+
+  <h2>Де воно на фігурі</h2>
+  <div class="fig">{{SVG_PLACE}}</div>
+  <p class="fig-cap">{{PLACE_CAP}}</p>
+
+  <h2>Креслення для друкаря</h2>
+  <div class="fig">{{SVG_DRAWING}}</div>
+  <p class="fig-cap">{{DRAWING_CAP}}</p>
+
   <h2>ТЗ друкарю</h2>
   <div class="tbl-wrap" style="margin-bottom:.6rem">
   <table>
@@ -191,6 +214,25 @@
   </table>
   </div>
   <p style="font-size:.78rem;color:var(--ink-2);margin:0">{{SHELL_NOTE}}</p>
+
+  <h2>План робіт — від «нічого нема» до «світить на плайї»</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>#</th><th>Етап</th><th>Хто</th><th>Що робиться</th>
+    <th>Готово, коли</th></tr></thead>
+    <tbody>
+{{INSTALL_STAGES}}
+</tbody>
+  </table>
+  </div>
+  <p style="font-size:.78rem;color:var(--ink-2);margin:.6rem 0 0">Порядок не випадковий: поки не
+  звірені розміри панелі спини, друкувати нема сенсу, а поки не заміряна реальна частка світіння —
+  нічний баланс тримається на прикидці.</p>
+
+  <h2>Що перевірити перед виїздом</h2>
+  <div class="layers">
+{{INSTALL_CHECKS}}
+  </div>
 
   <h2>Як це працює</h2>
   <div class="layers">

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 740" font-family="ui-monospace,Menlo,monospace">
+<defs><marker id="wir_pw" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#5b9bff"/></marker><marker id="wir_dt" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#8e97a6"/></marker></defs>
+<rect width="900" height="740" rx="8" fill="#0b0e14"/>
+<text x="60" y="34" font-size="13" fill="#eaf1ff">Живлення ядра на спині: шина 12 В → 241 діод WS2812B</text>
+<text x="60" y="52" font-size="10" fill="#8e97a6">на кожній ділянці — напруга, струм і ватти в тій самій точці ланцюга</text>
+<rect x="60" y="78" width="380" height="62" rx="8" fill="#0f141d" stroke="#26436e" stroke-width="1.4"/>
+<text x="76" y="101" font-size="12" fill="#eaf1ff">Шина 12 В · щит подіуму</text>
+<text x="76" y="118" font-size="9" fill="#8e97a6">гілка Гр.2 (br_g2) · AWG 8 · 5.0 м · 30.9 Вт</text>
+<text x="76" y="131" font-size="9" fill="#8e97a6">та сама гілка годує подіумну стрічку</text>
+<line x1="250" y1="144" x2="250" y2="184" stroke="#5b9bff" stroke-width="2.4" marker-end="url(#wir_pw)"/>
+<text x="264" y="158" font-size="9" fill="#5b9bff">12 В · 2.58 А · 30.9 Вт</text>
+<text x="264" y="171" font-size="9" fill="#8e97a6">уся гілка через запобіжник</text>
+<rect x="60" y="188" width="380" height="62" rx="8" fill="#0f141d" stroke="#26436e" stroke-width="1.4"/>
+<text x="76" y="211" font-size="12" fill="#eaf1ff">Запобіжник Гр.2 · 5 А</text>
+<text x="76" y="228" font-size="9" fill="#8e97a6">2.58 А × запас 1.5 → 5 А зі стандартного ряду</text>
+<text x="76" y="241" font-size="9" fill="#8e97a6">свого ядро не має: йому треба 1.2 А, а ряд починається з 5 А</text>
+<line x1="250" y1="254" x2="250" y2="294" stroke="#5b9bff" stroke-width="2.4" marker-end="url(#wir_pw)"/>
+<text x="264" y="268" font-size="9" fill="#5b9bff">12 В · 0.78 А · 9.3 Вт</text>
+<text x="264" y="281" font-size="9" fill="#8e97a6">стільки ядро бере з шини</text>
+<rect x="60" y="298" width="380" height="62" rx="8" fill="#0f141d" stroke="#26436e" stroke-width="1.4"/>
+<text x="76" y="321" font-size="12" fill="#eaf1ff">Кабель у костюм · 18 AWG · 7.0 м</text>
+<text x="76" y="338" font-size="9" fill="#8e97a6">drop_back_core · −0.23 В у міді, 0.18 Вт на нагрів</text>
+<text x="76" y="351" font-size="9" fill="#8e97a6">на кінці 11.5 В · просадка від повних 0.78 А — контролер тут же</text>
+<line x1="250" y1="364" x2="250" y2="404" stroke="#5b9bff" stroke-width="2.4" marker-end="url(#wir_pw)"/>
+<text x="264" y="378" font-size="9" fill="#5b9bff">11.5 В · 0.72 А · 8.3 Вт</text>
+<text x="264" y="391" font-size="9" fill="#8e97a6">на вході понижувача, вже після просадки</text>
+<rect x="60" y="408" width="380" height="62" rx="8" fill="#0f141d" stroke="#26436e" stroke-width="1.4"/>
+<text x="76" y="431" font-size="12" fill="#eaf1ff">Понижувач 12→5 В · ККД 0.9</text>
+<text x="76" y="448" font-size="9" fill="#8e97a6">HOMELYLIFE 12/24 В → 5 В, 10 А / 50 Вт · 0.83 Вт іде в тепло</text>
+<text x="76" y="461" font-size="9" fill="#8e97a6">1.0 Вт контролера модель лічить прямо на шині</text>
+<line x1="250" y1="474" x2="250" y2="514" stroke="#5b9bff" stroke-width="2.4" marker-end="url(#wir_pw)"/>
+<text x="264" y="488" font-size="9" fill="#5b9bff">5 В · 1.5 А · 7.5 Вт</text>
+<text x="264" y="501" font-size="9" fill="#8e97a6">стеля, яку тримає кран</text>
+<rect x="60" y="518" width="380" height="62" rx="8" fill="#0f141d" stroke="#e08b3e" stroke-width="1.4"/>
+<text x="76" y="541" font-size="12" fill="#eaf1ff">Контролер GLEDOPTO ESP32 Mini WLED</text>
+<text x="76" y="558" font-size="9" fill="#8e97a6">вхід 5-24 В · живлення йде крізь нього на модуль</text>
+<text x="76" y="571" font-size="9" fill="#8e97a6">ТУТ КРАН: ліміт струму 1.5 А в прошивці</text>
+<line x1="200" y1="584" x2="200" y2="624" stroke="#5b9bff" stroke-width="2.4" marker-end="url(#wir_pw)"/>
+<text x="188" y="598" font-size="9" fill="#5b9bff" text-anchor="end">5 В · 1.5 А</text>
+<line x1="310" y1="584" x2="310" y2="624" stroke="#8e97a6" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#wir_dt)"/>
+<text x="322" y="598" font-size="9" fill="#8e97a6">DATA 5 В · ~300 мм</text>
+<text x="322" y="611" font-size="9" fill="#8e97a6">рівневий зсув усередині</text>
+<rect x="60" y="628" width="380" height="62" rx="8" fill="#0f141d" stroke="#26436e" stroke-width="1.4"/>
+<text x="76" y="651" font-size="12" fill="#eaf1ff">Модуль 241 діод WS2812B · Ø172 мм</text>
+<text x="76" y="668" font-size="9" fill="#8e97a6">9 вкладених кілець · робоча картинка 7.5 Вт</text>
+<text x="76" y="681" font-size="9" fill="#8e97a6">суцільний білий узяв би 72.3 Вт (14.5 А) — кран не пускає</text>
+<rect x="480" y="78" width="380" height="222" rx="8" fill="#0f141d" stroke="#26436e" stroke-width="1.4"/>
+<text x="496" y="102" font-size="12" fill="#e08b3e">Кран: ліміт 1.5 А в прошивці WLED</text>
+<text x="496" y="124" font-size="9" fill="#8e97a6">модуль, суцільний білий</text>
+<text x="844" y="124" font-size="9" fill="#eaf1ff" text-anchor="end">72.3 Вт · 14.5 А на 5 В</text>
+<rect x="496" y="130" width="309" height="11" rx="3" fill="#e08b3e"/>
+<text x="496" y="158" font-size="9" fill="#8e97a6">модуль під краном</text>
+<text x="844" y="158" font-size="9" fill="#eaf1ff" text-anchor="end">7.5 Вт · 1.5 А на 5 В</text>
+<rect x="496" y="164" width="32" height="11" rx="3" fill="#5b9bff"/>
+<text x="496" y="192" font-size="9" fill="#8e97a6">з шини без крана</text>
+<text x="844" y="192" font-size="9" fill="#eaf1ff" text-anchor="end">81.3 Вт · 6.78 А на 12 В</text>
+<rect x="496" y="198" width="348" height="11" rx="3" fill="#e08b3e"/>
+<text x="496" y="226" font-size="9" fill="#8e97a6">з шини під краном</text>
+<text x="844" y="226" font-size="9" fill="#eaf1ff" text-anchor="end">9.3 Вт · 0.78 А на 12 В</text>
+<rect x="496" y="232" width="40" height="11" rx="3" fill="#5b9bff"/>
+<text x="496" y="274" font-size="9" fill="#eaf1ff">без крана ядро одне взяло б 6.78 А — більше</text>
+<text x="496" y="287" font-size="9" fill="#eaf1ff">за груповий запобіжник 5 А на всю Гр.2</text>
+<rect x="480" y="320" width="380" height="370" rx="8" fill="#0f141d" stroke="#26436e" stroke-width="1.4"/>
+<text x="496" y="344" font-size="12" fill="#eaf1ff">Що з цього випливає</text>
+<text x="496" y="368" font-size="9" fill="#8e97a6">· Три дроти від контролера до плати: +5 В, GND і DATA.</text>
+<text x="504" y="381" font-size="9" fill="#8e97a6">Рівневий зсув і резистор — усередині GLEDOPTO, паяти нічого.</text>
+<text x="496" y="404" font-size="9" fill="#8e97a6">· Кабель у броні 18 AWG × 7 м зʼїдає 0.23 В — на понижувач</text>
+<text x="504" y="417" font-size="9" fill="#8e97a6">приходить 11.5 В, і це для нього ще з запасом.</text>
+<text x="496" y="440" font-size="9" fill="#8e97a6">· Сторінка кабелів дає тут 0.20 В (4.0%): у дереві на сегменті</text>
+<text x="504" y="453" font-size="9" fill="#8e97a6">висить лише модуль, а контролер — окремою позицією без кабелю.</text>
+<text x="496" y="476" font-size="9" fill="#8e97a6">· Понижувач гріється на 0.83 Вт — це ті 10%, що не дійшли</text>
+<text x="504" y="489" font-size="9" fill="#8e97a6">до плати. Ставити в продув, а не в глухий кут корпусу.</text>
+<text x="496" y="512" font-size="9" fill="#8e97a6">· Свого запобіжника ядро не має: розрахунково 1.2 А, а ряд</text>
+<text x="504" y="525" font-size="9" fill="#8e97a6">починається з 5 А — це вже груповий Гр.2.</text>
+<text x="496" y="548" font-size="9" fill="#8e97a6">· За ніч 8 год ядро бере 75 Вт·год з шини —</text>
+<text x="504" y="561" font-size="9" fill="#8e97a6">стільки тримає кран, а не стільки може плата.</text>
+<text x="496" y="584" font-size="9" fill="#8e97a6">· У гілці Гр.2 ядро — 30% ват: воно і стрічка сидять на</text>
+<text x="504" y="597" font-size="9" fill="#8e97a6">одному кабелі AWG 8, і запобіжник у них спільний.</text>
+<text x="496" y="620" font-size="9" fill="#8e97a6">· Від станції до понижувача просідає 0.51 В (4.2%)</text>
+<text x="504" y="633" font-size="9" fill="#8e97a6">при межі 10% для неадресних ділянок — з запасом.</text>
+<text x="496" y="656" font-size="9" fill="#8e97a6">· Вдень адресне світло вимкнене: усередині броні на сонці</text>
+<text x="504" y="669" font-size="9" fill="#8e97a6">ще гарячіше, ніж на подіумі.</text>
+<text x="60" y="718" font-size="9" fill="#8e97a6">числа: lights/data/back_core.json через back_core.py · гілка, кабель і запобіжник — lights/data/params.json</text>
+</svg>

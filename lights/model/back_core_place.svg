@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 700" font-family="ui-monospace,Menlo,monospace">
+<defs><filter id="cglow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7"/></filter><filter id="sglow" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="2"/></filter></defs>
+<rect width="830" height="700" rx="8" fill="#0b0e14"/>
+<polygon points="530.3,530.5 386.6,573.6 183.4,573.6 39.7,530.5 39.7,469.5 183.4,426.4 386.6,426.4 530.3,469.5" fill="#0a0f18" stroke="#1c2836"/>
+<polygon points="530.3,520.5 386.6,563.6 183.4,563.6 39.7,520.5 39.7,459.5 183.4,416.4 386.6,416.4 530.3,459.5" fill="#0e131d" stroke="#26436e"/>
+<polygon points="213.2,153.8 356.8,153.8 337.5,194.8 322.7,244.0 330.9,285.0 239.1,285.0 247.3,244.0 232.5,194.8" fill="#121826" stroke="#26436e" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="235.4,285.0 281.3,285.0 278.0,373.1 273.9,471.6 242.8,471.6 238.7,373.1" fill="#121826" stroke="#26436e" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="232.9,471.6 283.8,471.6 283.8,490.0 232.9,490.0" fill="#121826" stroke="#26436e" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="288.7,285.0 334.6,285.0 331.3,373.1 327.2,471.6 296.1,471.6 292.0,373.1" fill="#121826" stroke="#26436e" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="286.2,471.6 337.1,471.6 337.1,490.0 286.2,490.0" fill="#121826" stroke="#26436e" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="272.7" y="134.5" width="24.6" height="19.3" fill="#121826" stroke="#26436e" stroke-width="1.4"/>
+<rect x="265.3" y="80.0" width="39.4" height="54.5" rx="9.8" fill="#121826" stroke="#26436e" stroke-width="1.4"/>
+<line x1="285.0" y1="179.4" x2="225.3" y2="179.4" stroke="#e08b3e" stroke-width="1.8" stroke-dasharray="6 5" opacity="1"/>
+<line x1="285.0" y1="210.2" x2="237.1" y2="210.2" stroke="#e08b3e" stroke-width="1.8" stroke-dasharray="6 5" opacity="1"/>
+<line x1="285.0" y1="240.9" x2="246.4" y2="240.9" stroke="#26436e" stroke-width="1.2" stroke-dasharray="6 5" opacity="0.6"/>
+<line x1="285.0" y1="271.7" x2="241.7" y2="271.7" stroke="#26436e" stroke-width="1.2" stroke-dasharray="6 5" opacity="0.6"/>
+<text x="208" y="146" text-anchor="end" font-size="9" fill="#8e97a6">ребра 15 см</text>
+<line x1="285.0" y1="174.3" x2="347.1" y2="174.3" stroke="#26436e" stroke-width="1.2" stroke-dasharray="2 6" opacity="0.6"/>
+<line x1="285.0" y1="215.3" x2="331.3" y2="215.3" stroke="#26436e" stroke-width="1.2" stroke-dasharray="2 6" opacity="0.6"/>
+<line x1="285.0" y1="256.3" x2="325.2" y2="256.3" stroke="#26436e" stroke-width="1.2" stroke-dasharray="2 6" opacity="0.6"/>
+<text x="362" y="146" text-anchor="start" font-size="9" fill="#8e97a6">ребра 20 см</text>
+<polygon points="209.6,153.8 237.4,153.8 234.2,285.0 212.8,285.0" fill="#121826" stroke="#26436e" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="332.6,153.8 360.4,153.8 357.2,285.0 335.8,285.0" fill="#121826" stroke="#26436e" stroke-width="1.4" stroke-linejoin="round"/>
+<circle cx="285.0" cy="194.8" r="20.1" fill="none" stroke="#8e97a6" stroke-width="1" stroke-dasharray="3 4" opacity="0.7"/>
+<circle cx="285.0" cy="194.8" r="21.4" fill="#5b9bff" filter="url(#cglow)" opacity="0.35"><animate attributeName="opacity" values="0.28;0.6;0.28" dur="3.6s" repeatCount="indefinite"/></circle>
+<circle cx="285.0" cy="194.8" r="18.4" fill="#16294a" stroke="#5b9bff" stroke-width="1.5"/>
+<circle cx="285.0" cy="194.8" r="1.6" fill="#eaf1ff"/>
+<circle cx="285.0" cy="194.8" r="2.3" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.52"/>
+<circle cx="285.0" cy="194.8" r="3.5" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.49"/>
+<circle cx="285.0" cy="194.8" r="4.7" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.46"/>
+<circle cx="285.0" cy="194.8" r="7.0" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.43"/>
+<circle cx="285.0" cy="194.8" r="9.4" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.40"/>
+<circle cx="285.0" cy="194.8" r="11.7" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.37"/>
+<circle cx="285.0" cy="194.8" r="14.1" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.34"/>
+<circle cx="285.0" cy="194.8" r="17.6" fill="none" stroke="#5b9bff" stroke-width="0.7" opacity="0.31"/>
+<circle cx="270.6" cy="110.8" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="270.6" cy="110.8" r="1.2" fill="#eaf1ff"/>
+<circle cx="280.1" cy="110.8" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="280.1" cy="110.8" r="1.2" fill="#eaf1ff"/>
+<circle cx="289.9" cy="110.8" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="289.9" cy="110.8" r="1.2" fill="#eaf1ff"/>
+<circle cx="299.4" cy="110.8" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="299.4" cy="110.8" r="1.2" fill="#eaf1ff"/>
+<circle cx="218.6" cy="157.1" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="218.6" cy="157.1" r="1.2" fill="#eaf1ff"/>
+<circle cx="351.4" cy="157.1" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="351.4" cy="157.1" r="1.2" fill="#eaf1ff"/>
+<circle cx="259.6" cy="373.1" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="259.6" cy="373.1" r="1.2" fill="#eaf1ff"/>
+<circle cx="310.4" cy="473.6" r="3.6" fill="#5b9bff" filter="url(#sglow)" opacity="0.5"/>
+<circle cx="310.4" cy="473.6" r="1.2" fill="#eaf1ff"/>
+<circle cx="223.5" cy="260.4" r="2.4" fill="none" stroke="#8e97a6" stroke-width="0.8" stroke-dasharray="1.5 1.5"/>
+<circle cx="346.5" cy="260.4" r="2.4" fill="none" stroke="#8e97a6" stroke-width="0.8" stroke-dasharray="1.5 1.5"/>
+<line x1="130" y1="490" x2="130" y2="80.0" stroke="#26436e" stroke-width="1.2"/>
+<line x1="125" y1="490.0" x2="135" y2="490.0" stroke="#26436e" stroke-width="1.2"/>
+<text x="120" y="494" text-anchor="end" font-size="9" fill="#8e97a6">0.0 м</text>
+<line x1="125" y1="387.5" x2="135" y2="387.5" stroke="#26436e" stroke-width="1.2"/>
+<text x="120" y="391" text-anchor="end" font-size="9" fill="#8e97a6">0.5 м</text>
+<line x1="125" y1="285.0" x2="135" y2="285.0" stroke="#26436e" stroke-width="1.2"/>
+<text x="120" y="288" text-anchor="end" font-size="9" fill="#8e97a6">1.0 м</text>
+<line x1="125" y1="182.5" x2="135" y2="182.5" stroke="#26436e" stroke-width="1.2"/>
+<text x="120" y="186" text-anchor="end" font-size="9" fill="#8e97a6">1.5 м</text>
+<line x1="125" y1="80.0" x2="135" y2="80.0" stroke="#26436e" stroke-width="1.2"/>
+<text x="120" y="84" text-anchor="end" font-size="9" fill="#8e97a6">2.0 м</text>
+<line x1="130" y1="490" x2="130" y2="387.5" stroke="#eaf1ff" stroke-width="2.6"/>
+<text x="139" y="442" text-anchor="start" font-size="10" fill="#eaf1ff">0.5 м</text>
+<line x1="130" y1="194.8" x2="285.0" y2="194.8" stroke="#8e97a6" stroke-width="1" stroke-dasharray="4 4" opacity="0.7"/>
+<text x="138" y="190" text-anchor="start" font-size="10" fill="#eaf1ff">1.44 м — центр ядра</text>
+<polyline points="299.3,180.5 315.3,164.5 462,164.5" fill="none" stroke="#26436e" stroke-width="1"/>
+<text x="470" y="155" text-anchor="start" font-size="12" fill="#eaf1ff">ядро Ø180 мм на рівні лопаток</text>
+<text x="470" y="170" text-anchor="start" font-size="10" fill="#8e97a6">модуль 241 діод Ø172 мм, 9 кілець</text>
+<text x="470" y="185" text-anchor="start" font-size="10" fill="#8e97a6">вікно 1.6 мм, плата на 12 мм углиб</text>
+<text x="470" y="200" text-anchor="start" font-size="10" fill="#8e97a6">рівного місця під посадку — Ø196 мм (вікно + поле 8 мм)</text>
+<line x1="326.7" y1="235.8" x2="462" y2="235.8" stroke="#26436e" stroke-width="1"/>
+<text x="470" y="242" text-anchor="start" font-size="12" fill="#eaf1ff">ребра панелі, крок 15-20 см</text>
+<text x="470" y="257" text-anchor="start" font-size="10" fill="#8e97a6">зліва сітка 15 см, справа 20 см</text>
+<text x="470" y="272" text-anchor="start" font-size="10" fill="#e08b3e">15 см — посадка не влазить у просвіт (-46 мм):</text>
+<text x="470" y="287" text-anchor="start" font-size="10" fill="#e08b3e">ребро під ядром при будь-якому зсуві сітки</text>
+<text x="470" y="302" text-anchor="start" font-size="10" fill="#8e97a6">20 см — вільних 4 мм: пролізе тільки якщо</text>
+<text x="470" y="317" text-anchor="start" font-size="10" fill="#8e97a6">коло стане рівно між двома ребрами</text>
+<text x="470" y="332" text-anchor="start" font-size="10" fill="#e08b3e">де саме ребра на спині — питання до Марселя</text>
+<text x="470" y="347" text-anchor="start" font-size="10" fill="#8e97a6">фаза сітки невідома: задньої проєкції на Rev 2.1</text>
+<text x="470" y="362" text-anchor="start" font-size="10" fill="#8e97a6">нема. Тому обидві сітки намальовані в найкращій</text>
+<text x="470" y="377" text-anchor="start" font-size="10" fill="#8e97a6">для ядра фазі — рівно між ребрами; помаранчеве</text>
+<text x="470" y="392" text-anchor="start" font-size="10" fill="#e08b3e">ребро тоді значить: не рятує і найвдаліший зсув</text>
+<text x="415" y="26" text-anchor="middle" font-size="13" fill="#eaf1ff">Вигляд ззаду: ядро Ø180 мм на фігурі 2.0 м</text>
+<text x="415" y="44" text-anchor="middle" font-size="10" fill="#8e97a6">центр на 1.44 м від настилу · крапки — лампи корпусу Ø12 і Ø8 мм у тому ж масштабі</text>
+<text x="24" y="604" text-anchor="start" font-size="10" fill="#8e97a6">ядро ширше за лампу Ø12 мм у 15 разів у поперечнику і в 225 разів за площею</text>
+<text x="24" y="621" text-anchor="start" font-size="10" fill="#8e97a6">силует умовний — пропорції людини в броні, а не креслення панелей спини</text>
+<text x="24" y="638" text-anchor="start" font-size="10" fill="#8e97a6">подіум-октагон Ø2.59 м — прикидка: промінь стрічки плюс радіус центрального кола, зовнішній периметр у кресленні не заданий</text>
+<text x="24" y="655" text-anchor="start" font-size="10" fill="#8e97a6">лампа на місці «груди» у цей вигляд не потрапляє — вона з іншого боку фігури; у базі вона є</text>
+<text x="24" y="672" text-anchor="start" font-size="10" fill="#8e97a6">пунктирні крапки — 2 лампи Ø8 мм: база каже скільки їх, але не каже де</text>
+<text x="24" y="689" text-anchor="start" font-size="10" fill="#8e97a6">у базі 8 ламп Ø12 мм, а місць в описі 9 — розбіжність показуємо, а не ховаємо</text>
+</svg>

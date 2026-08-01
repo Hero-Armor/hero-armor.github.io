@@ -181,6 +181,13 @@
   td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
   tr:last-child td { border-bottom: 0; }
   tr.off { display: none; }
+  /* мініатюра товару — щоб було видно, про що позиція, без відкривання лінка */
+  td.pic { width: 62px; padding: .35rem .4rem .35rem .8rem; }
+  td.pic a { display: block; }
+  td.pic img { width: 54px; height: 54px; object-fit: contain; border-radius: 6px;
+               background: #fff; border: 1px solid var(--line); display: block; }
+  td.pic .nopic { width: 54px; height: 54px; border-radius: 6px; border: 1px dashed var(--line);
+                  display: block; }
 
   /* ---- budget bar ---- */
   .bwrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin: .3rem 0 .9rem; }
@@ -259,6 +266,14 @@
     Клікабельно: груди воїна → аудіо, постать → броня, світний подіум → світло; сонце/живлення — у картках нижче.</p>
   </section>
 
+  <section class="reveal" id="plan">
+    <h2>Як воно стоїть насправді</h2>
+    <p class="sub">Дві схеми замість опису словами: що де змонтовано на подіумі і
+    як усе розкладено на місці. Обидві малює модель із тих самих даних, що й числа
+    на сторінках, — тому вони не розходяться з рештою хабу.</p>
+{{INDEX_DIAGRAMS}}
+  </section>
+
   <section class="reveal" id="systems">
     <h2>Системи</h2>
     <div class="cards">
@@ -297,7 +312,7 @@
     </div>
     <div class="tbl-wrap">
     <table id="bomTable">
-      <thead><tr><th>Позиція</th><th>Компонент</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>
+      <thead><tr><th></th><th>Позиція</th><th>Компонент</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>
       <tbody>
 {{BOM_ROWS}}
       </tbody>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 668" width="100%" font-family="ui-monospace,Menlo,monospace">
+<defs><marker id="pod-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d6f96"/></marker><marker id="pod-beam" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b07c14"/></marker></defs>
+<text x="480" y="24" text-anchor="middle" font-size="14" fill="#24231d">План подіуму згори: що де стоїть</text>
+<text x="480" y="42" text-anchor="middle" font-size="11" fill="#6b675c">октагон 2438 мм через вершини, 8 кутів · стійки з прожекторами в кутах · ящик станції за 7.6 м</text>
+<text x="480" y="58" text-anchor="middle" font-size="11" fill="#6b675c">грань 933 мм · по 3 врізні вогні на грань через 233 мм · коло стрічки R 345 мм · торець 179 мм заввишки</text>
+<line x1="105" y1="294" x2="105" y2="92" stroke="#d8d5c9" stroke-width="0.8"/>
+<line x1="435" y1="294" x2="435" y2="92" stroke="#d8d5c9" stroke-width="0.8"/>
+<line x1="105" y1="96" x2="435" y2="96" stroke="#3d6f96" stroke-width="1.5" marker-start="url(#pod-dim)" marker-end="url(#pod-dim)"/>
+<text x="270" y="88" text-anchor="middle" font-size="11" fill="#3d6f96">2438 мм через вершини · R 1219 мм</text>
+<polygon points="270.0,126.0 393.0,177.0 444.0,300.0 393.0,423.0 270.0,474.0 147.0,423.0 96.0,300.0 147.0,177.0" fill="none" stroke="#b23a2e" stroke-width="2.2" stroke-dasharray="7 5"/>
+<rect x="266.0" y="111.0" width="8" height="8" fill="#b23a2e"/>
+<rect x="396.8" y="165.2" width="8" height="8" fill="#b23a2e"/>
+<rect x="451.0" y="296.0" width="8" height="8" fill="#b23a2e"/>
+<rect x="396.8" y="426.8" width="8" height="8" fill="#b23a2e"/>
+<rect x="266.0" y="481.0" width="8" height="8" fill="#b23a2e"/>
+<rect x="135.2" y="426.8" width="8" height="8" fill="#b23a2e"/>
+<rect x="81.0" y="296.0" width="8" height="8" fill="#b23a2e"/>
+<rect x="135.2" y="165.2" width="8" height="8" fill="#b23a2e"/>
+<polygon points="270.0,135.0 386.7,183.3 435.0,300.0 386.7,416.7 270.0,465.0 153.3,416.7 105.0,300.0 153.3,183.3" fill="#ffffff" stroke="#24231d" stroke-width="1.8"/>
+<circle cx="270" cy="300" r="79.8" fill="none" stroke="#c9c6ba" stroke-width="1.5" stroke-dasharray="4 6"/>
+<polygon points="270.0,135.0 220.8,220.2 319.2,220.2" fill="#b07c14" opacity="0.09"/>
+<line x1="270.0" y1="144.0" x2="270.0" y2="220.2" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<polygon points="386.7,183.3 291.7,208.8 361.2,278.3" fill="#b07c14" opacity="0.09"/>
+<line x1="380.3" y1="189.7" x2="326.5" y2="243.5" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<polygon points="435.0,300.0 349.8,250.8 349.8,349.2" fill="#b07c14" opacity="0.09"/>
+<line x1="426.0" y1="300.0" x2="349.8" y2="300.0" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<polygon points="386.7,416.7 361.2,321.7 291.7,391.2" fill="#b07c14" opacity="0.09"/>
+<line x1="380.3" y1="410.3" x2="326.5" y2="356.5" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<polygon points="270.0,465.0 319.2,379.8 220.8,379.8" fill="#b07c14" opacity="0.09"/>
+<line x1="270.0" y1="456.0" x2="270.0" y2="379.8" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<polygon points="153.3,416.7 248.3,391.2 178.8,321.7" fill="#b07c14" opacity="0.09"/>
+<line x1="159.7" y1="410.3" x2="213.5" y2="356.5" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<polygon points="105.0,300.0 190.2,349.2 190.2,250.8" fill="#b07c14" opacity="0.09"/>
+<line x1="114.0" y1="300.0" x2="190.2" y2="300.0" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<polygon points="153.3,183.3 178.8,278.3 248.3,208.8" fill="#b07c14" opacity="0.09"/>
+<line x1="159.7" y1="189.7" x2="213.5" y2="243.5" stroke="#b07c14" stroke-width="1.5" marker-end="url(#pod-beam)"/>
+<path d="M270.0,135.0 L270.0,253.3 A46.7,46.7 0 0 1 303.1,266.9" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<path d="M386.7,183.3 L303.1,266.9 A46.7,46.7 0 0 1 316.7,300.0" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<path d="M435.0,300.0 L316.7,300.0 A46.7,46.7 0 0 1 303.1,333.1" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<path d="M386.7,416.7 L303.1,333.1 A46.7,46.7 0 0 1 270.0,346.7" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<path d="M270.0,465.0 L270.0,346.7 A46.7,46.7 0 0 1 236.9,333.1" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<path d="M153.3,416.7 L236.9,333.1 A46.7,46.7 0 0 1 223.3,300.0" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<path d="M105.0,300.0 L223.3,300.0 A46.7,46.7 0 0 1 236.9,266.9" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<path d="M153.3,183.3 L236.9,266.9 A46.7,46.7 0 0 1 270.0,253.3" fill="none" stroke="#3d6f96" stroke-width="2.2"/>
+<circle cx="239.3" cy="300.0" r="2.9" fill="#24231d"/>
+<circle cx="300.7" cy="300.0" r="2.9" fill="#24231d"/>
+<text x="270" y="318" text-anchor="middle" font-size="11" fill="#24231d">фігура</text>
+<circle cx="299.2" cy="147.1" r="3.4" fill="#3d7a4f"/>
+<circle cx="328.3" cy="159.2" r="3.4" fill="#3d7a4f"/>
+<circle cx="357.5" cy="171.2" r="3.4" fill="#3d7a4f"/>
+<circle cx="398.8" cy="212.5" r="3.4" fill="#3d7a4f"/>
+<circle cx="410.8" cy="241.7" r="3.4" fill="#3d7a4f"/>
+<circle cx="422.9" cy="270.8" r="3.4" fill="#3d7a4f"/>
+<circle cx="422.9" cy="329.2" r="3.4" fill="#3d7a4f"/>
+<circle cx="410.8" cy="358.3" r="3.4" fill="#3d7a4f"/>
+<circle cx="398.8" cy="387.5" r="3.4" fill="#3d7a4f"/>
+<circle cx="357.5" cy="428.8" r="3.4" fill="#3d7a4f"/>
+<circle cx="328.3" cy="440.8" r="3.4" fill="#3d7a4f"/>
+<circle cx="299.2" cy="452.9" r="3.4" fill="#3d7a4f"/>
+<circle cx="240.8" cy="452.9" r="3.4" fill="#3d7a4f"/>
+<circle cx="211.7" cy="440.8" r="3.4" fill="#3d7a4f"/>
+<circle cx="182.5" cy="428.8" r="3.4" fill="#3d7a4f"/>
+<circle cx="141.2" cy="387.5" r="3.4" fill="#3d7a4f"/>
+<circle cx="129.2" cy="358.3" r="3.4" fill="#3d7a4f"/>
+<circle cx="117.1" cy="329.2" r="3.4" fill="#3d7a4f"/>
+<circle cx="117.1" cy="270.8" r="3.4" fill="#3d7a4f"/>
+<circle cx="129.2" cy="241.7" r="3.4" fill="#3d7a4f"/>
+<circle cx="141.2" cy="212.5" r="3.4" fill="#3d7a4f"/>
+<circle cx="182.5" cy="171.2" r="3.4" fill="#3d7a4f"/>
+<circle cx="211.7" cy="159.2" r="3.4" fill="#3d7a4f"/>
+<circle cx="240.8" cy="147.1" r="3.4" fill="#3d7a4f"/>
+<circle cx="270.0" cy="135.0" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="270.0" cy="135.0" r="3" fill="#b07c14"/>
+<circle cx="386.7" cy="183.3" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="386.7" cy="183.3" r="3" fill="#b07c14"/>
+<circle cx="435.0" cy="300.0" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="435.0" cy="300.0" r="3" fill="#b07c14"/>
+<circle cx="386.7" cy="416.7" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="386.7" cy="416.7" r="3" fill="#b07c14"/>
+<circle cx="270.0" cy="465.0" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="270.0" cy="465.0" r="3" fill="#b07c14"/>
+<circle cx="153.3" cy="416.7" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="153.3" cy="416.7" r="3" fill="#b07c14"/>
+<circle cx="105.0" cy="300.0" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="105.0" cy="300.0" r="3" fill="#b07c14"/>
+<circle cx="153.3" cy="183.3" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="153.3" cy="183.3" r="3" fill="#b07c14"/>
+<polyline points="386.7,176.8 386.7,150 446,150" fill="none" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="452" y="162" text-anchor="start" font-size="12" fill="#24231d">Прожектор заливки на стійці</text>
+<text x="452" y="179" text-anchor="start" font-size="11" fill="#6b675c">8 стійок у кутах октагона, труба 38 мм, висота 610 мм</text>
+<text x="452" y="196" text-anchor="start" font-size="11" fill="#6b675c">розкрив 60°, приціл угору 16° на фігуру</text>
+<text x="452" y="213" text-anchor="start" font-size="11" fill="#6b675c">5 Вт × 8 = 40 Вт, запобіжник 5 А</text>
+<line x1="429.0" y1="314" x2="470" y2="314" stroke="#b35b1e" stroke-width="2.5"/>
+<line x1="548" y1="314" x2="680" y2="314" stroke="#b35b1e" stroke-width="2.5"/>
+<line x1="600" y1="322" x2="608" y2="306" stroke="#b35b1e" stroke-width="1.5"/>
+<line x1="608" y1="322" x2="616" y2="306" stroke="#b35b1e" stroke-width="1.5"/>
+<text x="616" y="300" text-anchor="middle" font-size="11" fill="#3d6f96">7.6 м</text>
+<text x="616" y="334" text-anchor="middle" font-size="11" fill="#6b675c">кабель у рукаві</text>
+<rect x="470" y="296" width="78" height="36" rx="3" fill="#ffffff" stroke="#24231d" stroke-width="1.8"/>
+<text x="470" y="288" text-anchor="start" font-size="11" fill="#24231d">щит подіуму</text>
+<rect x="479" y="306" width="9" height="16" rx="2" fill="#b35b1e"/>
+<rect x="495" y="306" width="9" height="16" rx="2" fill="#b07c14"/>
+<rect x="511" y="306" width="9" height="16" rx="2" fill="#3d6f96"/>
+<rect x="527" y="306" width="9" height="16" rx="2" fill="#3d7a4f"/>
+<text x="470" y="348" text-anchor="start" font-size="11" fill="#6b675c">головний 15 А</text>
+<text x="470" y="365" text-anchor="start" font-size="11" fill="#6b675c">три групи по 5 А</text>
+<rect x="676.0" y="276.2" width="102.7" height="75.7" fill="none" stroke="#b23a2e" stroke-width="2.2" stroke-dasharray="7 5"/>
+<rect x="680.0" y="280.2" width="94.7" height="67.7" rx="3" fill="#ffffff" stroke="#24231d" stroke-width="1.8"/>
+<rect x="676.0" y="276.2" width="8" height="8" fill="#b23a2e"/>
+<rect x="676.0" y="343.8" width="8" height="8" fill="#b23a2e"/>
+<rect x="770.7" y="276.2" width="8" height="8" fill="#b23a2e"/>
+<rect x="770.7" y="343.8" width="8" height="8" fill="#b23a2e"/>
+<rect x="693.7" y="297.6" width="67.3" height="32.8" fill="#efeee7" stroke="#c9c6ba" stroke-width="1.5"/>
+<text x="727" y="318" text-anchor="middle" font-size="11" fill="#6b675c">станція</text>
+<circle cx="727.4" cy="280.2" r="3.4" fill="#3d7a4f"/>
+<line x1="727.4" y1="274.2" x2="727.4" y2="267.2" stroke="#3d7a4f" stroke-width="1.5"/>
+<circle cx="727.4" cy="347.8" r="3.4" fill="#3d7a4f"/>
+<line x1="727.4" y1="353.8" x2="727.4" y2="360.8" stroke="#3d7a4f" stroke-width="1.5"/>
+<text x="727" y="258" text-anchor="middle" font-size="12" fill="#24231d">ящик станції</text>
+<text x="632" y="380" text-anchor="start" font-size="11" fill="#6b675c">габарит ≈0.7 × 0.5 м — розмір ще не обраний</text>
+<text x="632" y="397" text-anchor="start" font-size="11" fill="#6b675c">станція 497 × 242 мм у плані</text>
+<text x="632" y="414" text-anchor="start" font-size="11" fill="#6b675c">2 маркерні вогники по 0.24 Вт у стінках</text>
+<text x="632" y="431" text-anchor="start" font-size="11" fill="#6b675c">катафоти на 4 кути, стрічка по боках</text>
+<circle cx="34" cy="510" r="6.5" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="34" cy="510" r="3" fill="#b07c14"/>
+<text x="52" y="514" text-anchor="start" font-size="11" fill="#6b675c">Гр.1 · прожектори заливки: 8 шт у кутах, конус — напрямок на фігуру</text>
+<line x1="26" y1="532" x2="44" y2="532" stroke="#3d6f96" stroke-width="2.2"/>
+<text x="52" y="536" text-anchor="start" font-size="11" fill="#6b675c">Гр.2 · декоративне (робот, вода): 8 рукавів стрічки у швах настилу</text>
+<circle cx="34" cy="554" r="3.4" fill="#3d7a4f"/>
+<text x="52" y="558" text-anchor="start" font-size="11" fill="#6b675c">Гр.3А · аварійна лінія: 24 врізні вогні в торець + 2 маркери ящика</text>
+<line x1="26" y1="576" x2="44" y2="576" stroke="#b35b1e" stroke-width="2.5"/>
+<text x="52" y="580" text-anchor="start" font-size="11" fill="#6b675c">силова траса 12 В і щит із запобіжниками</text>
+<rect x="516" y="506" width="8" height="8" fill="#b23a2e"/>
+<text x="538" y="514" text-anchor="start" font-size="11" fill="#6b675c">катафоти 50×75 мм — 8 кутів подіуму, 4 кути ящика</text>
+<line x1="512" y1="532" x2="530" y2="532" stroke="#b23a2e" stroke-width="2.2" stroke-dasharray="7 5"/>
+<text x="538" y="536" text-anchor="start" font-size="11" fill="#6b675c">світлоповертальна стрічка 50 мм по торцю і по боках ящика</text>
+<line x1="512" y1="554" x2="530" y2="554" stroke="#c9c6ba" stroke-width="1.5" stroke-dasharray="4 6"/>
+<text x="538" y="558" text-anchor="start" font-size="11" fill="#6b675c">штрихове коло — габарит фігури по розмаху рук 1.18 м</text>
+<line x1="508" y1="580" x2="516" y2="570" stroke="#b35b1e" stroke-width="1.5"/>
+<line x1="516" y1="580" x2="524" y2="570" stroke="#b35b1e" stroke-width="1.5"/>
+<text x="538" y="580" text-anchor="start" font-size="11" fill="#6b675c">подвійна риска — розрив траси: 7.6 м у масштабі не влазять</text>
+<text x="24" y="624" text-anchor="start" font-size="11" fill="#6b675c">торець подіуму 179 мм заввишки: у плані врізні вогні видно як точки по грані, вісь кожного на 73 мм нижче настилу</text>
+<text x="24" y="641" text-anchor="start" font-size="11" fill="#6b675c">розміри подіуму — з конструкторського комплекту, редакція 3.1 (вісім футів через вершини); ящик і його точне місце ще не обрані</text>
+</svg>

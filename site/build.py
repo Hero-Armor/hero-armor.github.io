@@ -135,6 +135,91 @@ def figures_html(key):
     return f'  <h2>Креслення</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
 
 
+def diagrams_html(key, heading="Схеми"):
+    """Схеми системи, вставлені ТЕКСТОМ SVG, а не картинкою.
+
+    Так підписи на схемі лишаються справжнім текстом — англійська версія сайту
+    їх перекладає, а пошук їх бачить. Реєструються в data/systems.json полем
+    `diagrams`: [["lights/model/podium_plan.svg", "підпис"], ...].
+    Файл, якого ще нема, просто пропускається з попередженням — щоб не валити
+    збірку, поки схему домальовують.
+    """
+    if key == "index":
+        dias = [["lights/model/podium_plan.svg",
+                 "Подіум згори: вісім стійок із прожекторами, рукави стрічки, "
+                 "24 врізних вогні по торцю, катафоти на кутах і кабель до ящика станції"],
+                ["solar/model/site_plan.svg",
+                 "Те саме на місці: подіум, ящик станції за 7.6 м, сонячний масив, "
+                 "траса кабелю і бік, з якого вночі підʼїжджають"]]
+    else:
+        reg = next((c for c in SYSTEMS_REG if c["key"] == key), None)
+        dias = (reg or {}).get("diagrams") or []
+    cards = []
+    for path_, cap in dias:
+        f = ROOT / path_
+        if not f.exists():
+            print(f"warn: нема схеми {path_} — прожени її генератор")
+            continue
+        svg = f.read_text()
+        svg = svg[svg.index("<svg"):]
+        cards.append(f'    <figure class="dia">\n{svg}\n'
+                     f'      <p class="zoomhint">торкнись схеми, щоб розгорнути на весь екран</p>\n'
+                     f'      <figcaption>{esc(cap)}</figcaption>\n    </figure>')
+    if not cards:
+        return ""
+    css = ("  <style>\n"
+           "    .dias { display: grid; gap: 1.2rem; margin-bottom: 1.4rem; }\n"
+           "    .dia { margin: 0; border: 1px solid var(--line); border-radius: 8px;\n"
+           "           background: var(--panel); padding: 1rem 1rem .8rem; }\n"
+           "    /* Схеми малюються тушшю по світлому — у темній темі даємо їм\n"
+           "       світлу підкладку, як аркушу креслення, інакше темні підписи\n"
+           "       зникають (спіймано на сторінці броні 01.08). */\n"
+           "    @media (prefers-color-scheme: dark) {\n"
+           "      :root:not([data-theme=\'light\']) .dia,\n"
+           "      :root:not([data-theme=\'light\']) .diazoom { background: #f4f1e6; }\n"
+           "      :root:not([data-theme=\'light\']) .dia figcaption,\n"
+           "      :root:not([data-theme=\'light\']) .dia .zoomhint { color: #6b675c; }\n"
+           "    }\n"
+           "    :root[data-theme=\'dark\'] .dia,\n"
+           "    :root[data-theme=\'dark\'] .diazoom { background: #f4f1e6; }\n"
+           "    :root[data-theme=\'dark\'] .dia figcaption,\n"
+           "    :root[data-theme=\'dark\'] .dia .zoomhint { color: #6b675c; }\n"
+           "    .dia svg { width: 100%; height: auto; display: block; cursor: zoom-in; }\n"
+           "    .dia figcaption { font-size: .8rem; color: var(--ink-2); margin-top: .7rem;\n"
+           "                      max-width: 70ch; }\n"
+           "    .dia .zoomhint { display: none; font-size: .72rem; color: var(--ink-2);\n"
+           "                     font-family: var(--mono); margin-top: .5rem; }\n"
+           "    @media (max-width: 780px) { .dia .zoomhint { display: block; } }\n"
+           "    .diazoom { position: fixed; inset: 0; z-index: 200; background: var(--bg);\n"
+           "               overflow: auto; padding: 3rem .5rem 2rem; }\n"
+           "    .diazoom svg { width: 260%; max-width: none; height: auto; }\n"
+           "    @media (min-width: 781px) { .diazoom svg { width: 100%; } }\n"
+           "    .diazoom .x { position: fixed; top: .6rem; right: .8rem; z-index: 201;\n"
+           "                  border: 1px solid var(--line); background: var(--panel);\n"
+           "                  color: var(--ink); border-radius: 999px; width: 2.2rem;\n"
+           "                  height: 2.2rem; font-size: 1.1rem; cursor: pointer; }\n"
+           "  </style>\n"
+           "  <script>\n"
+           "  // Схему на телефоні не роздивишся — тап відкриває її на весь екран\n"
+           "  // з горизонтальною прокруткою (Іван читає хаб з айфона).\n"
+           "  document.addEventListener('click', function (e) {\n"
+           "    const svg = e.target.closest('.dia svg');\n"
+           "    if (!svg) return;\n"
+           "    const box = document.createElement('div');\n"
+           "    box.className = 'diazoom';\n"
+           "    box.innerHTML = '<button class=\\'x\\' aria-label=\\'закрити\\'>&times;</button>';\n"
+           "    box.appendChild(svg.cloneNode(true));\n"
+           "    box.addEventListener('click', function (ev) {\n"
+           "      if (ev.target.classList.contains('x') || ev.target === box) box.remove();\n"
+           "    });\n"
+           "    document.body.appendChild(box);\n"
+           "  });\n"
+           "  </script>\n")
+    head = f'  <h2>{esc(heading)}</h2>\n' if heading else ""
+    return (head + f'{css}  <div class="dias">\n'
+            + "\n".join(cards) + "\n  </div>\n")
+
+
 LAB_CSS = """<style>
   .labs-strip { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem;
     margin: 0 0 1.4rem; padding: .5rem .7rem; border: 1px solid var(--line);
@@ -267,6 +352,81 @@ def dest_label(o):
     return ADDR["locations"].get(o.get("deliver_to"), {}).get("label", "адресу уточнити")
 
 
+def photo_wall_html(rows, heading="Що це фізично"):
+    """Смужка справжніх фото товарів — «щоб було видно, про що мова».
+
+    Іван 01.08: «додай всюди більше картинок про що йде мова». На сторінках
+    типів світла це відповідає на найпростіше питання: як воно виглядає в руках.
+    Фото тягне site/bom_media.py, підпис — назва позиції з BOM.
+    """
+    cards = []
+    for b in rows:
+        if not b.get("img"):
+            continue
+        inner = (f'<img src="{b["img"]}" alt="{esc(b["item"])}" loading="lazy">'
+                 f'<span>{esc(b["item"])}</span>')
+        cards.append(f'      <a class="pw-item" href="{esc(b["url"])}">{inner}</a>'
+                     if b.get("url") else f'      <div class="pw-item">{inner}</div>')
+    if not cards:
+        return ""
+    css = ("  <style>\n"
+           "    .pw { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));\n"
+           "          gap: .8rem; margin: .2rem 0 1.4rem; }\n"
+           "    .pw-item { display: block; text-decoration: none; color: inherit;\n"
+           "               border: 1px solid var(--line); border-radius: 8px;\n"
+           "               background: var(--panel); padding: .6rem; }\n"
+           "    .pw-item img { width: 100%; aspect-ratio: 1/1; object-fit: contain;\n"
+           "                   background: #fff; border-radius: 6px; display: block; }\n"
+           "    .pw-item span { display: block; font-size: .74rem; color: var(--ink-2);\n"
+           "                    margin-top: .45rem; line-height: 1.35; }\n"
+           "  </style>\n")
+    return f'  <h2>{esc(heading)}</h2>\n{css}  <div class="pw">\n' + "\n".join(cards) + "\n  </div>\n"
+
+
+def buy_table_html(rows, note=""):
+    """Таблиця «що з цього купити» — з мініатюрою товару в першій колонці."""
+    if not rows:
+        return ""
+    body = "".join(
+        f'<tr>{bom_thumb(b)}<td>'
+        + (f'<a href="{esc(b["url"])}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"]))
+        + f'</td><td>{esc(str(b.get("qty", "—")))}</td>'
+          f'<td class="num">{esc(str(b.get("price", "—")))}</td>'
+          f'<td style="white-space:normal;max-width:56ch">{esc(b.get("note", ""))}</td></tr>'
+        for b in rows)
+    tail = f'<p class="fig-cap">{esc(note)}</p>' if note else ""
+    # стилі мініатюри тримаємо тут, а не в шаблоні: таблиця вставляється на
+    # різні сторінки, і кожна має показати фото однаково маленьким
+    css = ("<style>\n"
+           "  td.pic { width: 62px; padding: .35rem .4rem .35rem .8rem; }\n"
+           "  td.pic img { width: 54px; height: 54px; object-fit: contain; border-radius: 6px;\n"
+           "               background: #fff; border: 1px solid var(--line); display: block; }\n"
+           "  td.pic .nopic { width: 54px; height: 54px; border-radius: 6px;\n"
+           "                  border: 1px dashed var(--line); display: block; }\n"
+           "</style>")
+    return (css + '<h2>Що з цього треба купити</h2><div class="tbl-wrap"><table>'
+            '<thead><tr><th></th><th>Позиція</th><th>Скільки</th><th>Ціна</th>'
+            '<th>Навіщо</th></tr></thead><tbody>' + body
+            + '</tbody></table></div>' + tail)
+
+
+def bom_thumb(b):
+    """Мініатюра товару для таблиці закупівлі.
+
+    Фото тягне site/bom_media.py зі сторінки товару (через свій Firecrawl) і
+    кладе в site/assets/bom/. Сенс простий: у таблиці має бути видно, ПРО ЩО
+    позиція, без відкривання лінка (прохання Івана). Нема фото — лишається
+    пунктирна рамка, щоб рядки не стрибали.
+    """
+    img = b.get("img")
+    if not img:
+        return '<td class="pic"><span class="nopic"></span></td>'
+    tag = f'<img src="{img}" alt="{esc(b["item"])}" loading="lazy">'
+    if b.get("url"):
+        tag = f'<a href="{b["url"]}" title="{esc(b["item"])}">{tag}</a>'
+    return f'<td class="pic">{tag}</td>'
+
+
 def bom_rows_html():
     rows = []
     for b in BOM:
@@ -275,7 +435,7 @@ def bom_rows_html():
         if b.get("url"):
             item = f'<a href="{b["url"]}">{item}</a>'
         rows.append(
-            f'      <tr data-status="{b.get("flow", b["status"])}"><td>{item}</td>'
+            f'      <tr data-status="{b.get("flow", b["status"])}">{bom_thumb(b)}<td>{item}</td>'
             f'<td><span class="chip {b["system"]}">{b["system"]}</span></td>'
             f'<td class="num">{b["qty"]}</td>'
             f'<td class="num">{b["price"]}</td><td><span class="pill {cls}">{label}</span></td>'
@@ -742,6 +902,7 @@ def build():
         tile("Детекція", f"{sn['range_m']:.1f}", "м", "стабільно вдень/вночі/в бурю", "good"),
     ]
     audio = audio.replace("{{ASSEMBLY_HTML}}", assembly_html())
+    audio = audio.replace("{{DIAGRAMS}}", diagrams_html("audio"))
     audio = audio.replace("{{FIGURES}}", figures_html("audio"))
     audio = audio.replace("{{TILES_HTML}}", "\n".join(audio_tiles))
 
@@ -871,6 +1032,7 @@ def build():
              + ("наявний кабель не тягне на 12 В" if bad_runs else "у нормі"),
              "crit" if bad_runs else "good"),
     ]
+    lights = lights.replace("{{DIAGRAMS}}", diagrams_html("lights"))
     lights = lights.replace("{{FIGURES}}", figures_html("lights"))
     lights = lights.replace("{{TILES_HTML}}", "\n".join(lights_tiles))
 
@@ -1524,6 +1686,7 @@ def build():
         tile("Зарядка на базі", f"{p_chosen['recharge_h']:.1f}", "год",
              f"{esc(st_name)} від розетки — обіг швидкий, але станцій треба дві"),
     ]
+    solar_page = solar_page.replace("{{DIAGRAMS}}", diagrams_html("solar"))
     solar_page = solar_page.replace("{{FIGURES}}", figures_html("solar"))
     solar_page = solar_page.replace("{{TILES_HTML}}", "\n".join(solar_tiles))
 
@@ -1760,6 +1923,9 @@ def build():
                             if sl else "")
 
         sections = []
+        dia = diagrams_html(k)
+        if dia:
+            sections.append(dia)
         figs = reg.get("figures", [])
         if figs:
             f_html = "\n".join(
@@ -1791,12 +1957,12 @@ def build():
             for b in c_bom:
                 cls, label = FLOW.get(b.get("flow"), PILL[b["status"]])
                 item = f'<a href="{b["url"]}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"])
-                b_rows.append(f'      <tr><td>{item}</td><td class="num">{b["qty"]}</td>'
+                b_rows.append(f'      <tr>{bom_thumb(b)}<td>{item}</td><td class="num">{b["qty"]}</td>'
                               f'<td class="num">{b["price"]}</td>'
                               f'<td><span class="pill {cls}">{label}</span></td>'
                               f'<td>{esc(b["note"])}</td></tr>')
             sections.append('  <h2>Закупівля</h2>\n  <div class="tbl-wrap">\n  <table>\n'
-                            '    <thead><tr><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>\n'
+                            '    <thead><tr><th></th><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>\n'
                             f'    <tbody>\n{chr(10).join(b_rows)}\n    </tbody>\n  </table>\n  </div>')
 
         c_orders = [o for o in ORDERS if o["system"] == k]
@@ -1960,6 +2126,9 @@ def build():
             f'<span class="meta">{pct}% · {" · ".join(meta) or "—"}</span></div>\n'
             f'    </div>')
     index = index.replace("{{COMPONENT_CARDS}}", "\n".join(cards))
+    # Дві головні схеми на першому екрані: «що де стоїть» і «як розкладено на місці».
+    # Іван 01.08: «додай всюди більше картинок про що йде мова».
+    index = index.replace("{{INDEX_DIAGRAMS}}", diagrams_html("index", heading="") or "")
     index = index.replace("{{LABS}}", labs_cards_html())
 
     # task summary strip (full board lives on tasks.html)
@@ -2166,6 +2335,73 @@ def build():
                  "pla_hdt": bmat["no"]["hdt_c"],
              }, ensure_ascii=False)))
 
+    # Схеми ядра. Кожну малює свій генератор у lights/model/back_core_*.py і кладе
+    # .svg поруч; сюди вони приходять інлайном, щоб підписи всередині лишались
+    # текстом — інакше їх не перекласти англійською.
+    def bc_svg(name):
+        f = LIGHTS / "model" / f"back_core_{name}.svg"
+        if not f.exists():
+            print(f"warn: нема {f.name} — прожени lights/model/back_core_{name}.py")
+            return ""
+        return re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", f.read_text())
+
+    bc_u = bcore.uniformity()
+    bc_mod = bcore.module()
+    bc_draw = bcore.draw_from_bus()
+    for name in ("face", "section", "wiring", "place", "drawing"):
+        bclab = bclab.replace("{{SVG_" + name.upper() + "}}", bc_svg(name))
+    # Креслення ще й окремим файлом поруч зі сторінкою: друкарю його показують
+    # з телефона, і відкрити одну картинку зручніше, ніж гортати лабораторію.
+    bc_dwg = LIGHTS / "model" / "back_core_drawing.svg"
+    if bc_dwg.exists():
+        (OUT / "back_core_drawing.svg").write_text(bc_dwg.read_text())
+    bclab = (bclab
+             .replace("{{FACE_CAP}}", esc(
+                 f'Модуль {bc_mod["diodes"]} діодів Ø{bc_mod["size_mm"]} мм за вікном '
+                 f'Ø{bwin["size_mm"]} мм. Зліва — що всередині, справа — що бачить глядач крізь '
+                 f'{bdif["thickness_mm"]} мм білого пластику: крапки зникають, лишається рівне гало.'))
+             .replace("{{SECTION_CAP}}", esc(
+                 f'Крок між діодами {bc_u["pitch_mm"]:.1f} мм, зазор {bc_u["gap_mm"]:.0f} мм — '
+                 f'{bc_u["ratio"]:.2f} кроку, тобто «{bc_u["verdict"]}». {bcore.UNI["why"]}'))
+             .replace("{{WIRING_CAP}}", esc(
+                 f'З 12 В шини ядро бере {bc_draw["work_w"]:.1f} Вт '
+                 f'({bc_draw["work_a"]:.2f} A) і {bc_draw["wh_night"]:.0f} Wh за ніч. '
+                 f'Суцільний білий на всі {bc_mod["diodes"]} діодів був би '
+                 f'{bc_draw["full_w"]:.0f} Вт — до нього не доходить, бо ліміт '
+                 f'{BC["chosen"]["current_limit_a"]} А в прошивці ріже раніше.'))
+             .replace("{{PLACE_CAP}}", esc(
+                 f'Фігура {bshell["figure_h_m"]:.0f} м заввишки, ядро Ø{bwin["size_mm"]} мм на '
+                 f'рівні лопаток. {bshell["open"]}'))
+             .replace("{{DRAWING_CAP}}",
+                 f'Аркуш для Марселя: дві проєкції, розміри, посадка і примітки. '
+                 f'Окремим файлом — <a href="{SITE_URL}back_core_drawing.svg">'
+                 f'back_core_drawing.svg</a>, його зручно відкрити з телефона. '
+                 + esc('Головне на аркуші не геометрія, а заборона PLA: усе інше '
+                       'друкар зробить і так, а матеріал він обирає сам.')))
+
+    # Анімовані превʼю режимів — окремий самодостатній фрагмент із власним CSS і JS.
+    fx_file = SITE / "templates" / "_back_core_fx.html"
+    bclab = bclab.replace("{{FX_BLOCK}}",
+                          fx_file.read_text() if fx_file.exists() else "")
+
+    # План робіт по ядру — етапи і перевірки з lights/data/back_core_install.json.
+    inst_file = LIGHTS / "data" / "back_core_install.json"
+    INST = json.loads(inst_file.read_text()) if inst_file.exists() else {"stages": [], "checks": []}
+    who_label = {"ivan": "Іван", "marcel": "Марсель", "team": "команда",
+                 "volodymyr": "Володимир", "liza": "Ліза"}
+    bclab = bclab.replace("{{INSTALL_STAGES}}", "\n".join(
+        f'      <tr><td class="num">{s["n"]}</td><td>{esc(s["title"])}</td>'
+        f'<td>{esc(who_label.get(s.get("who", ""), s.get("who", "—")))}</td>'
+        f'<td style="white-space:normal;max-width:46ch">{esc(s["what"])}'
+        + (f'<br><span style="color:var(--warn)">ризик: {esc(s["risk"])}</span>'
+           if s.get("risk") else "")
+        + f'</td><td style="white-space:normal;max-width:34ch">{esc(s["done_when"])}</td></tr>'
+        for s in INST["stages"]))
+    bclab = bclab.replace("{{INSTALL_CHECKS}}", "\n".join(
+        f'    <div class="layer"><h3>{esc(c["title"])}</h3>'
+        f'<p>{esc(c["how"])} <b>Навіщо:</b> {esc(c["why"])}</p></div>'
+        for c in INST["checks"]))
+
     # ============ окремі сторінки-калькулятори по типах світла ============
     # Одна сторінка = один тип світильника: покрутити кількість, яскравість,
     # кабель і схему прокладки, не чіпаючи решту системи. Шаблон спільний,
@@ -2230,26 +2466,31 @@ def build():
             rows = [b for b in BOM
                     if b.get("system") == "lights"
                     and any(m in b["item"] + b.get("note", "") for m in stl.I["buy_match"])]
-            buy = ('<h2>Що з цього треба купити</h2><div class="tbl-wrap"><table>'
-                   '<thead><tr><th>Позиція</th><th>Скільки</th><th>Ціна</th>'
-                   '<th>Навіщо</th></tr></thead><tbody>'
-                   + "".join(
-                       f'<tr><td>' + (f'<a href="{esc(b["url"])}">{esc(b["item"])}</a>'
-                                      if b.get("url") else esc(b["item"]))
-                       + f'</td><td>{esc(str(b.get("qty", "—")))}</td>'
-                         f'<td class="num">{esc(str(b.get("price", "—")))}</td>'
-                         f'<td style="white-space:normal;max-width:56ch">'
-                         f'{esc(b.get("note", ""))}</td></tr>' for b in rows)
-                   + '</tbody></table></div>'
-                   + f'<p class="fig-cap">{esc(stl.I["buy_note"])}</p>'
+            buy = (photo_wall_html(rows)
+                   + buy_table_html(rows, stl.I["buy_note"])
                    + f'<div class="layer block"><h3>Спершу замір: {esc(mt["title"])}</h3>'
                      f'<p>{esc(mt["why"])} {esc(mt["how"])} '
                      f'<b>Що це розблокує:</b> {esc(mt["unblocks"])}</p></div>')
+        elif c["key"] == "fixtures":
+            # розріз вузла врізного вогника — головне питання цієї сторінки
+            fig = ('<h2>Як вогонь сидить у торці</h2><div class="fig">'
+                   + re.sub(r"<\?xml[^>]*\?>\s*", "",
+                            (LIGHTS / "model" / "edge_section.svg").read_text())
+                   + '</div>')
         elif c["key"] == "spots":
             fig = ('<h2>Як іде кабель</h2><div class="fig">'
                    + re.sub(r"<\?xml[^>]*\?>\s*", "",
                             (LIGHTS / "model" / "spot_ring.svg").read_text())
                    + '</div>')
+
+        # Для решти цепей закупівля збирається з BOM за списком `buy_match`
+        # у circuits.json — щоб на сторінці типу світла було видно і фото
+        # товару, і що саме з нього треба купити (прохання Івана 01.08).
+        if not buy and c.get("buy_match"):
+            rows = [b for b in BOM
+                    if b.get("system") in ("lights", "enclosure")
+                    and any(m in b["item"] + b.get("note", "") for m in c["buy_match"])]
+            buy = photo_wall_html(rows) + buy_table_html(rows)
 
         page = (page
                 .replace("{{C_FIGURE}}", fig)
@@ -2334,6 +2575,10 @@ def build_docs(out):
         dst = docs / "assets" / a.relative_to(SITE / "assets")
         dst.parent.mkdir(parents=True, exist_ok=True)
         dst.write_bytes(a.read_bytes())
+    # Окремі креслення, на які сторінки дають пряме посилання (їх відкривають з
+    # телефона і показують фабрикатору) — без цього на Pages була б 404.
+    for s in out.glob("*.svg"):
+        (docs / s.name).write_text(s.read_text())
     (docs / "knowledge.jsonld").write_text((out / "knowledge.jsonld").read_text())
     print("wrote docs/ (index, audio, lab, ops, knowledge.jsonld) — Pages-ready")
 

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 800" width="100%" font-family="ui-monospace,Menlo,monospace">
+<defs><marker id="rf-down" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d7a4f"/></marker><marker id="rf-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d6f96"/></marker></defs>
+<text x="480" y="24" text-anchor="middle" font-size="14" fill="#24231d">Що змонтовано на самій фігурі вартового</text>
+<text x="480" y="42" text-anchor="middle" font-size="11" fill="#6b675c">8 ламп Ø12 мм і 2 лампи Ø8 мм по 0.4 Вт · динамік · вікно радара · ядро на спині</text>
+<text x="480" y="60" text-anchor="middle" font-size="11" fill="#6b675c">фігура 2.0 м над настилом · обидва види в одному масштабі · разом точкове світло корпусу 4.0 Вт</text>
+<text x="250" y="148" text-anchor="middle" font-size="12" fill="#24231d" font-weight="600">СПЕРЕДУ</text>
+<rect x="110" y="630" width="280" height="6" fill="#e8e4d6" stroke="#c9c6ba" stroke-width="1.5"/>
+<line x1="110" y1="630" x2="390" y2="630" stroke="#24231d" stroke-width="1.5"/>
+<polygon points="167.8,244.6 332.2,244.6 310.2,291.6 293.2,348.0 302.6,395.0 197.4,395.0 206.8,348.0 189.8,291.6" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="193.1,395.0 245.8,395.0 242.0,496.1 237.3,608.9 201.6,608.9 196.9,496.1" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="190.3,608.9 248.6,608.9 248.6,630.0 190.3,630.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="254.2,395.0 306.9,395.0 303.1,496.1 298.4,608.9 262.7,608.9 258.0,496.1" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="251.4,608.9 309.7,608.9 309.7,630.0 251.4,630.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<rect x="235.9" y="222.5" width="28.2" height="22.1" fill="#efeee7" stroke="#24231d" stroke-width="1.6"/>
+<rect x="227.4" y="160.0" width="45.1" height="62.5" rx="11.3" fill="#efeee7" stroke="#24231d" stroke-width="1.6"/>
+<rect x="235.9" y="190.1" width="28.2" height="19.3" rx="3" fill="#e8e4d6" stroke="#24231d" stroke-width="1.2"/>
+<polygon points="163.5,244.6 195.5,244.6 191.7,395.0 167.3,395.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="304.5,244.6 336.5,244.6 332.7,395.0 308.3,395.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<rect x="199.7" y="551.0" width="39.4" height="13.2" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="260.8" y="551.0" width="39.4" height="13.2" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="167.0" y="372.9" width="24.9" height="12.7" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="308.0" y="372.9" width="24.9" height="12.7" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="164.3" y="261.1" width="30.5" height="13.2" fill="#f2e9d2" stroke="#b07c14" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="305.3" y="261.1" width="30.5" height="13.2" fill="#f2e9d2" stroke="#b07c14" stroke-width="1.5" stroke-dasharray="4 6"/>
+<circle cx="242.5" cy="177.9" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="242.5" cy="177.9" r="1.3" fill="#b35b1e"/>
+<circle cx="257.5" cy="177.9" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="257.5" cy="177.9" r="1.3" fill="#b35b1e"/>
+<circle cx="233.1" cy="198.5" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="233.1" cy="198.5" r="1.3" fill="#b35b1e"/>
+<circle cx="266.9" cy="198.5" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="266.9" cy="198.5" r="1.3" fill="#b35b1e"/>
+<circle cx="179.5" cy="251.2" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="179.5" cy="251.2" r="1.3" fill="#b35b1e"/>
+<circle cx="320.5" cy="251.2" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="320.5" cy="251.2" r="1.3" fill="#b35b1e"/>
+<circle cx="221.8" cy="270.4" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="221.8" cy="270.4" r="1.3" fill="#b35b1e"/>
+<circle cx="219.4" cy="496.1" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="219.4" cy="496.1" r="1.3" fill="#b35b1e"/>
+<circle cx="219.4" cy="619.7" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="219.4" cy="619.7" r="1.3" fill="#b35b1e"/>
+<circle cx="179.5" cy="364.5" r="7.6" fill="none" stroke="#6b675c" stroke-width="1" stroke-dasharray="2 2"/>
+<circle cx="179.5" cy="364.5" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="179.5" cy="364.5" r="1.3" fill="#b35b1e"/>
+<circle cx="320.5" cy="364.5" r="7.6" fill="none" stroke="#6b675c" stroke-width="1" stroke-dasharray="2 2"/>
+<circle cx="320.5" cy="364.5" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="320.5" cy="364.5" r="1.3" fill="#b35b1e"/>
+<rect x="271.1" y="263.4" width="14.1" height="14.1" fill="#ffffff" stroke="#3d6f96" stroke-width="1.8" stroke-dasharray="4 6"/>
+<circle cx="278.2" cy="270.4" r="2.2" fill="#3d6f96"/>
+<circle cx="250.0" cy="326.8" r="7.0" fill="#ffffff" stroke="#3d7a4f" stroke-width="1.8"/>
+<circle cx="250.0" cy="326.8" r="5.1" fill="none" stroke="#3d7a4f" stroke-width="0.9"/>
+<circle cx="250.0" cy="326.8" r="3.2" fill="none" stroke="#3d7a4f" stroke-width="0.9"/>
+<circle cx="250.0" cy="326.8" r="1.4" fill="none" stroke="#3d7a4f" stroke-width="0.9"/>
+<line x1="250.0" y1="336.9" x2="250.0" y2="353.9" stroke="#3d7a4f" stroke-width="1.8" marker-end="url(#rf-down)"/>
+<text x="660" y="148" text-anchor="middle" font-size="12" fill="#24231d" font-weight="600">ЗЗАДУ</text>
+<rect x="520" y="630" width="280" height="6" fill="#e8e4d6" stroke="#c9c6ba" stroke-width="1.5"/>
+<line x1="520" y1="630" x2="800" y2="630" stroke="#24231d" stroke-width="1.5"/>
+<polygon points="577.8,244.6 742.2,244.6 720.2,291.6 703.2,348.0 712.6,395.0 607.4,395.0 616.8,348.0 599.8,291.6" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="603.1,395.0 655.8,395.0 652.0,496.1 647.3,608.9 611.6,608.9 606.9,496.1" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="600.3,608.9 658.6,608.9 658.6,630.0 600.3,630.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="664.2,395.0 716.9,395.0 713.1,496.1 708.4,608.9 672.7,608.9 668.0,496.1" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="661.4,608.9 719.7,608.9 719.7,630.0 661.4,630.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<rect x="645.9" y="222.5" width="28.2" height="22.1" fill="#efeee7" stroke="#24231d" stroke-width="1.6"/>
+<rect x="637.4" y="160.0" width="45.1" height="62.5" rx="11.3" fill="#efeee7" stroke="#24231d" stroke-width="1.6"/>
+<polygon points="573.5,244.6 605.5,244.6 601.7,395.0 577.3,395.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="714.5,244.6 746.5,244.6 742.7,395.0 718.3,395.0" fill="#efeee7" stroke="#24231d" stroke-width="1.6" stroke-linejoin="round"/>
+<rect x="609.7" y="551.0" width="39.4" height="13.2" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="670.8" y="551.0" width="39.4" height="13.2" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="577.0" y="372.9" width="24.9" height="12.7" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="718.0" y="372.9" width="24.9" height="12.7" fill="#ffffff" stroke="#24231d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="574.3" y="261.1" width="30.5" height="13.2" fill="#f2e9d2" stroke="#b07c14" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect x="715.3" y="261.1" width="30.5" height="13.2" fill="#f2e9d2" stroke="#b07c14" stroke-width="1.5" stroke-dasharray="4 6"/>
+<circle cx="660.0" cy="291.6" r="21.1" fill="#f6f2e9" stroke="#b35b1e" stroke-width="1.8"/>
+<circle cx="660.0" cy="291.6" r="5.3" fill="none" stroke="#b35b1e" stroke-width="0.9"/>
+<circle cx="660.0" cy="291.6" r="10.6" fill="none" stroke="#b35b1e" stroke-width="0.9"/>
+<circle cx="660.0" cy="291.6" r="15.9" fill="none" stroke="#b35b1e" stroke-width="0.9"/>
+<text x="250" y="656" text-anchor="middle" font-size="11" fill="#6b675c">настил подіуму</text>
+<line x1="396.2" y1="660" x2="513.8" y2="660" stroke="#3d6f96" stroke-width="1.8" marker-start="url(#rf-dim)" marker-end="url(#rf-dim)"/>
+<text x="455" y="653" text-anchor="middle" font-size="11" fill="#3d6f96">0.5 м</text>
+<polyline points="238.3,177.9 180,177.9 162,174" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="150" y="178" text-anchor="end" font-size="12" fill="#24231d" font-weight="600">верх шолома</text>
+<text x="150" y="193" text-anchor="end" font-size="11" fill="#6b675c">2 × Ø12 мм</text>
+<polyline points="228.9,198.5 180,198.5 162,202" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="150" y="206" text-anchor="end" font-size="12" fill="#24231d" font-weight="600">скроні</text>
+<text x="150" y="221" text-anchor="end" font-size="11" fill="#6b675c">2 × Ø12 мм</text>
+<polyline points="175.3,251.2 180,251.2 162,247" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="150" y="251" text-anchor="end" font-size="12" fill="#24231d" font-weight="600">плечі</text>
+<text x="150" y="266" text-anchor="end" font-size="11" fill="#6b675c">2 × Ø12 мм</text>
+<polyline points="217.6,270.4 180,270.4 162,275" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="150" y="279" text-anchor="end" font-size="12" fill="#24231d" font-weight="600">груди</text>
+<text x="150" y="294" text-anchor="end" font-size="11" fill="#6b675c">1 × Ø12 мм</text>
+<polyline points="175.3,364.5 180,364.5 162,360" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="150" y="364" text-anchor="end" font-size="12" fill="#24231d" font-weight="600">передпліччя</text>
+<text x="150" y="379" text-anchor="end" font-size="11" fill="#6b675c">2 × Ø8 мм</text>
+<polyline points="215.2,496.1 180,496.1 162,492" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="150" y="496" text-anchor="end" font-size="12" fill="#24231d" font-weight="600">коліно</text>
+<text x="150" y="511" text-anchor="end" font-size="11" fill="#6b675c">1 × Ø12 мм</text>
+<polyline points="215.2,619.7 180,619.7 162,601" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="150" y="605" text-anchor="end" font-size="12" fill="#24231d" font-weight="600">стопа</text>
+<text x="150" y="620" text-anchor="end" font-size="11" fill="#6b675c">1 × Ø12 мм</text>
+<polyline points="285.2,263.4 332,263.4 350,266" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="362" y="270" text-anchor="start" font-size="12" fill="#24231d" font-weight="600">вікно радара</text>
+<text x="362" y="285" text-anchor="start" font-size="11" fill="#3d6f96">60 × 60 мм</text>
+<text x="362" y="300" text-anchor="start" font-size="11" fill="#6b675c">діелектрик, без металу</text>
+<polyline points="255.0,321.8 332,321.8 350,323" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="362" y="327" text-anchor="start" font-size="12" fill="#24231d" font-weight="600">динамік</text>
+<text x="362" y="342" text-anchor="start" font-size="11" fill="#3d7a4f">Ø60 мм, мембраною вниз</text>
+<text x="362" y="357" text-anchor="start" font-size="11" fill="#6b675c">гриль і тканина від пилу</text>
+<polyline points="300.5,557.6 332,557.6 350,554" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="362" y="558" text-anchor="start" font-size="12" fill="#24231d" font-weight="600">стрічка №3, біла</text>
+<text x="362" y="573" text-anchor="start" font-size="11" fill="#6b675c">гомілки</text>
+<polyline points="745.9,267.6 746,267.6 764,264" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="776" y="268" text-anchor="start" font-size="12" fill="#24231d" font-weight="600">стрічка №5, жовта</text>
+<text x="776" y="283" text-anchor="start" font-size="11" fill="#6b675c">плечі</text>
+<polyline points="675.0,276.6 746,276.6 764,292" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="776" y="296" text-anchor="start" font-size="12" fill="#24231d" font-weight="600">ядро на спині</text>
+<text x="776" y="311" text-anchor="start" font-size="11" fill="#b35b1e">Ø180 мм, 241 діод</text>
+<polyline points="743.1,379.3 746,379.3 764,375" fill="none" stroke="#c9c6ba" stroke-width="0.9"/>
+<text x="776" y="379" text-anchor="start" font-size="12" fill="#24231d" font-weight="600">стрічка №4, біла</text>
+<text x="776" y="394" text-anchor="start" font-size="11" fill="#6b675c">передпліччя</text>
+<circle cx="34" cy="678" r="4.2" fill="#ffffff" stroke="#b35b1e" stroke-width="1.8"/>
+<text x="52" y="682" text-anchor="start" font-size="11" fill="#6b675c">активне світло: лампи на корпусі і ядро на спині</text>
+<rect x="28" y="690" width="12" height="12" fill="#ffffff" stroke="#3d6f96" stroke-width="1.8" stroke-dasharray="4 6"/>
+<text x="52" y="700" text-anchor="start" font-size="11" fill="#6b675c">вікно радара — тільки діелектрик, крізь метал не бачить</text>
+<circle cx="34" cy="714" r="6" fill="#ffffff" stroke="#3d7a4f" stroke-width="1.8"/>
+<circle cx="34" cy="714" r="2.8" fill="none" stroke="#3d7a4f" stroke-width="0.9"/>
+<text x="52" y="718" text-anchor="start" font-size="11" fill="#6b675c">динамік мембраною вниз, гриль і протипилова тканина</text>
+<rect x="26" y="727" width="16" height="10" fill="#ffffff" stroke="#24231d" stroke-width="1.5"/>
+<rect x="26" y="745" width="16" height="10" fill="#f2e9d2" stroke="#b07c14" stroke-width="1.5"/>
+<text x="52" y="736" text-anchor="start" font-size="11" fill="#6b675c">світловідбивна стрічка: №3 і №4 білі,</text>
+<text x="52" y="754" text-anchor="start" font-size="11" fill="#6b675c">№5 жовта — ріжеться по формі місця</text>
+<line x1="26" y1="768" x2="42" y2="768" stroke="#6b675c" stroke-width="1.8" stroke-dasharray="4 6"/>
+<text x="52" y="772" text-anchor="start" font-size="11" fill="#6b675c">пунктир — місце припущене, у кресленні його нема</text>
+<text x="470" y="682" text-anchor="start" font-size="11" fill="#6b675c">у базі 8 ламп Ø12 мм, а місць в описі 9 — розбіжність показуємо</text>
+<text x="470" y="700" text-anchor="start" font-size="11" fill="#6b675c">лампи стоять у передній стінці оболонки — ззаду їх не видно</text>
+<text x="470" y="718" text-anchor="start" font-size="11" fill="#6b675c">позначка лампи збільшена: у масштабі схеми Ø12 мм — це 2.8 точки</text>
+<text x="470" y="736" text-anchor="start" font-size="11" fill="#6b675c">місця стрічки і вікна радара умовні — у кресленні їх нема</text>
+<text x="470" y="754" text-anchor="start" font-size="11" fill="#6b675c">ядро на спині — своя схема і свої числа, тут воно для масштабу</text>
+</svg>

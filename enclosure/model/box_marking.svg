@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 670" width="100%" font-family="ui-monospace,Menlo,monospace">
+<defs><marker id="bxm-sig" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d6f96"/></marker><marker id="bxm-sun" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b07c14"/></marker></defs>
+<text x="480" y="24" text-anchor="middle" font-size="14" fill="#24231d">Ящик станції вночі: чим його видно і як сидить вогник</text>
+<text x="480" y="42" text-anchor="middle" font-size="11" fill="#6b675c">2 маркерні вогники по 0.24 Вт · 4 катафоти на кути · стрічка DOT-C2 по периметру</text>
+<text x="480" y="58" text-anchor="middle" font-size="11" fill="#6b675c">ящик за 7.6 м від подіуму · правило Burning Man: обʼєкт має читатись за 45 м</text>
+<text x="48" y="86" font-size="12" fill="#24231d" font-weight="600">Вигляд збоку</text>
+<line x1="160" y1="92" x2="160" y2="110" stroke="#b07c14" stroke-width="1.5" marker-end="url(#bxm-sun)"/>
+<line x1="200" y1="92" x2="200" y2="110" stroke="#b07c14" stroke-width="1.5" marker-end="url(#bxm-sun)"/>
+<line x1="240" y1="92" x2="240" y2="110" stroke="#b07c14" stroke-width="1.5" marker-end="url(#bxm-sun)"/>
+<text x="110" y="100" font-size="11" fill="#b07c14">сонце</text>
+<line x1="100" y1="120" x2="350" y2="120" stroke="#6b675c" stroke-width="2"/>
+<line x1="100" y1="120" x2="100" y2="130" stroke="#6b675c" stroke-width="2"/>
+<line x1="350" y1="120" x2="350" y2="130" stroke="#6b675c" stroke-width="2"/>
+<text x="356" y="124" font-size="11" fill="#6b675c">навіс — тінь</text>
+<text x="356" y="140" font-size="11" fill="#6b675c">42°C у тіні</text>
+<text x="356" y="156" font-size="11" fill="#6b675c">55°C на сонці</text>
+<line x1="44" y1="330" x2="500" y2="330" stroke="#c9c5b6" stroke-width="1.8"/>
+<rect x="140" y="294" width="30" height="36" fill="#c9c5b6" stroke="#c9c5b6" stroke-width="1.5"/>
+<rect x="280" y="294" width="30" height="36" fill="#c9c5b6" stroke="#c9c5b6" stroke-width="1.5"/>
+<text x="176" y="322" font-size="11" fill="#6b675c">підставка</text>
+<text x="350" y="348" font-size="11" fill="#6b675c">розпечена земля</text>
+<rect x="120" y="159" width="210" height="135" fill="#efeee7" stroke="#24231d" stroke-width="1.6"/>
+<rect x="150" y="195" width="149" height="92" fill="none" stroke="#c9c6ba" stroke-width="1.5" stroke-dasharray="4 6"/>
+<text x="225" y="240" text-anchor="middle" font-size="11" fill="#6b675c">станція</text>
+<rect x="120" y="175" width="15" height="22" fill="#f6f2e9" stroke="#24231d" stroke-width="1.5"/>
+<rect x="315" y="175" width="15" height="22" fill="#f6f2e9" stroke="#24231d" stroke-width="1.5"/>
+<line x1="330" y1="180" x2="352" y2="172" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="356" y="176" font-size="11" fill="#6b675c">катафот</text>
+<rect x="120" y="262" width="210" height="15" fill="#ffffff" stroke="#24231d" stroke-width="1.5"/>
+<line x1="104" y1="262" x2="104" y2="277" stroke="#3d6f96" stroke-width="1.5" marker-start="url(#bxm-sig)" marker-end="url(#bxm-sig)"/>
+<text x="56" y="274" font-size="11" fill="#3d6f96">50 мм</text>
+<polygon points="120,225 56,205 56,245" fill="#b07c14" opacity="0.18"/>
+<polygon points="330,225 404,203 404,247" fill="#b07c14" opacity="0.18"/>
+<circle cx="120" cy="225" r="5" fill="#b07c14" stroke="#24231d" stroke-width="1.5"/>
+<circle cx="330" cy="225" r="5" fill="#b07c14" stroke="#24231d" stroke-width="1.5"/>
+<text x="410" y="214" font-size="11" fill="#24231d">маркерний</text>
+<text x="410" y="230" font-size="11" fill="#24231d">вогник 12 мм</text>
+<rect x="115" y="280" width="10" height="10" fill="#ffffff" stroke="#24231d" stroke-width="1.5"/>
+<line x1="115" y1="291" x2="174" y2="303" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="176" y="306" font-size="11" fill="#6b675c">гермоввід</text>
+<polyline points="115,285 92,285 92,330" fill="none" stroke="#3d6f96" stroke-width="2.5"/>
+<polyline points="92,330 92,342 50,342" fill="none" stroke="#3d6f96" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#bxm-sig)"/>
+<text x="48" y="360" font-size="11" fill="#3d6f96">кабель у рукаві під землею</text>
+<text x="44" y="378" font-size="11" fill="#6b675c">габарит ящика умовний — кейс ще не обраний</text>
+<text x="552" y="86" font-size="12" fill="#24231d" font-weight="600">Вигляд згори</text>
+<text x="552" y="104" font-size="11" fill="#6b675c">стрічка по периметру, катафоти на кутах</text>
+<rect x="593" y="158" width="224" height="164" fill="#efeee7" stroke="#c9c6ba" stroke-width="1.5"/>
+<rect x="600" y="165" width="210" height="150" fill="#ffffff" stroke="#24231d" stroke-width="1.8"/>
+<rect x="600" y="165" width="12" height="12" fill="#f6f2e9" stroke="#24231d" stroke-width="1.5"/>
+<rect x="798" y="165" width="12" height="12" fill="#f6f2e9" stroke="#24231d" stroke-width="1.5"/>
+<rect x="600" y="303" width="12" height="12" fill="#f6f2e9" stroke="#24231d" stroke-width="1.5"/>
+<rect x="798" y="303" width="12" height="12" fill="#f6f2e9" stroke="#24231d" stroke-width="1.5"/>
+<text x="705" y="244" text-anchor="middle" font-size="12" fill="#24231d">ящик станції</text>
+<polygon points="770.0,165 736.0,120 804.0,120" fill="#b07c14" opacity="0.18"/>
+<polygon points="650,315.0 616,360.0 684,360.0" fill="#b07c14" opacity="0.18"/>
+<circle cx="770" cy="165" r="5" fill="#b07c14" stroke="#24231d" stroke-width="1.5"/>
+<circle cx="650" cy="315" r="5" fill="#b07c14" stroke="#24231d" stroke-width="1.5"/>
+<text x="556" y="140" font-size="11" fill="#6b675c">вогник світить назовні</text>
+<text x="700" y="344" font-size="11" fill="#6b675c">0.24 Вт кожен</text>
+<text x="552" y="372" font-size="11" fill="#6b675c">два вогники — на протилежні стінки</text>
+<rect x="806" y="279" width="8" height="12" fill="#ffffff" stroke="#24231d" stroke-width="1.5"/>
+<line x1="814.0" y1="285.0" x2="892" y2="285.0" stroke="#3d6f96" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#bxm-sig)"/>
+<text x="820" y="273" font-size="11" fill="#3d6f96">до подіуму 7.6 м</text>
+<text x="48" y="418" font-size="12" fill="#24231d" font-weight="600">Розріз: як вогник сидить у стінці</text>
+<rect x="300" y="440" width="20" height="46" fill="#efeee7" stroke="#24231d" stroke-width="1.6"/>
+<rect x="300" y="506" width="20" height="62" fill="#efeee7" stroke="#24231d" stroke-width="1.6"/>
+<polygon points="276,496 212,472 212,520" fill="#b07c14" opacity="0.18"/>
+<text x="108" y="496" font-size="11" fill="#6b675c">світить назовні</text>
+<rect x="276" y="485" width="24" height="22" fill="#f6f2e9" stroke="#24231d" stroke-width="1.6"/>
+<circle cx="288" cy="496" r="7" fill="#b07c14" opacity="0.5"/>
+<polygon points="300,485 300,477 291,485" fill="#b35b1e"/>
+<polygon points="300,507 300,515 291,507" fill="#b35b1e"/>
+<line x1="258" y1="461" x2="297" y2="481" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="108" y="458" font-size="11" fill="#b35b1e">силікон зовні по стику</text>
+<rect x="300" y="489" width="56" height="14" fill="#efeee7" stroke="#24231d" stroke-width="1.5"/>
+<line x1="305" y1="489" x2="305" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<line x1="312" y1="489" x2="312" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<line x1="319" y1="489" x2="319" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<line x1="326" y1="489" x2="326" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<line x1="333" y1="489" x2="333" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<line x1="340" y1="489" x2="340" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<line x1="347" y1="489" x2="347" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<line x1="354" y1="489" x2="354" y2="503" stroke="#24231d" stroke-width="1.5"/>
+<rect x="320" y="484" width="9" height="24" fill="#dfe7ee" stroke="#3d6f96" stroke-width="1.5"/>
+<rect x="331" y="481" width="16" height="30" fill="#ffffff" stroke="#24231d" stroke-width="1.6"/>
+<line x1="370" y1="451" x2="312" y2="485" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="372" y="448" font-size="11" fill="#6b675c">отвір Ø12 мм у стінці</text>
+<line x1="370" y1="469" x2="339" y2="480" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="372" y="466" font-size="11" fill="#6b675c">гайка з прокладкою зсередини</text>
+<line x1="374" y1="525" x2="354" y2="506" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="372" y="528" font-size="11" fill="#6b675c">гвинтова ніжка з різьбою</text>
+<line x1="192" y1="537" x2="298" y2="545" stroke="#d8d5c9" stroke-width="0.8"/>
+<text x="108" y="540" font-size="11" fill="#6b675c">стінка ящика</text>
+<line x1="356" y1="493" x2="432" y2="493" stroke="#24231d" stroke-width="1.5"/>
+<line x1="356" y1="499" x2="432" y2="499" stroke="#24231d" stroke-width="1.5"/>
+<text x="440" y="487" font-size="11" fill="#6b675c">18 AWG до щита ящика</text>
+<text x="600" y="440" font-size="12" fill="#24231d" font-weight="600">Чому саме так</text>
+<text x="600" y="464" font-size="11" fill="#6b675c">отвір Ø12 мм — найтонше місце ящика</text>
+<text x="600" y="482" font-size="11" fill="#6b675c">гайка з прокладкою зсередини притискає корпус,</text>
+<text x="600" y="500" font-size="11" fill="#6b675c">силікон зовні закриває стик по колу</text>
+<text x="600" y="518" font-size="11" fill="#6b675c">без цього отвір стає входом для пилу 1-10 мкм,</text>
+<text x="600" y="536" font-size="11" fill="#6b675c">а він провідний і сідає просто на станцію</text>
+<text x="600" y="554" font-size="11" fill="#6b675c">надлишковий тиск усередині 20-50 Па працює</text>
+<text x="600" y="572" font-size="11" fill="#6b675c">тільки поки корпус щільний</text>
+<circle cx="52" cy="594" r="5" fill="#b07c14" stroke="#24231d" stroke-width="1.5"/>
+<text x="64" y="598" font-size="11" fill="#6b675c">маркерний вогник 12 мм · 0.24 Вт · 2 шт, аварійна група</text>
+<rect x="46" y="608" width="12" height="16" fill="#f6f2e9" stroke="#24231d" stroke-width="1.5"/>
+<text x="64" y="620" font-size="11" fill="#6b675c">катафот 50×75 мм · 4 кути ящика</text>
+<rect x="44" y="632" width="16" height="10" fill="#ffffff" stroke="#24231d" stroke-width="1.5"/>
+<text x="64" y="642" font-size="11" fill="#6b675c">стрічка DOT-C2, смуга 50 мм по периметру</text>
+<line x1="500" y1="594" x2="512" y2="594" stroke="#3d6f96" stroke-width="2.5" stroke-dasharray="5 4"/>
+<text x="518" y="598" font-size="11" fill="#6b675c">пунктир синій — кабель під землею, до подіуму 7.6 м</text>
+<line x1="500" y1="616" x2="512" y2="616" stroke="#c9c6ba" stroke-width="1.5" stroke-dasharray="4 6"/>
+<text x="518" y="620" font-size="11" fill="#6b675c">пунктир сірий — станція всередині ящика, орієнтир</text>
+<text x="500" y="642" font-size="11" fill="#6b675c">катафоти не заміняють активне світло — воно обовʼязкове</text>
+</svg>

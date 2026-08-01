@@ -58,6 +58,11 @@
        text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
   td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
   tr:last-child td { border-bottom: 0; }
+  td.pic { width: 62px; padding: .35rem .4rem .35rem .8rem; }
+  td.pic img { width: 54px; height: 54px; object-fit: contain; border-radius: 6px;
+               background: #fff; border: 1px solid var(--line); display: block; }
+  td.pic .nopic { width: 54px; height: 54px; border-radius: 6px; border: 1px dashed var(--line);
+                  display: block; }
   .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: .9rem; }
   .fig { background: #fcfcfb; border: 1px solid var(--line); border-radius: 6px; padding: .7rem; }
   .fig img { display: block; width: 100%; height: auto; border-radius: 3px; }
