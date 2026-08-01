@@ -1544,7 +1544,7 @@ def build():
     cables = tmpl("cables.tmpl.html")
     # схема щита і груп — та сама, що на сторінці світла; сторінка кабелів була
     # без жодної картинки (Іван 01.08: «додай всюди більше картинок»)
-    _csvg = (LIGHTS / "model" / "schematic.svg").read_text()
+    _csvg = (LIGHTS / "model" / "panel_tree.svg").read_text()
     _csvg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", _csvg)
     cables = cables.replace("{{SCHEMATIC_SVG}}", _csvg)
     cab_tiles = [
