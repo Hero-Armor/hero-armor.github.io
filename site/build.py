@@ -143,6 +143,11 @@ def diagrams_html(key, heading="Схеми"):
     `diagrams`: [["lights/model/podium_plan.svg", "підпис"], ...].
     Файл, якого ще нема, просто пропускається з попередженням — щоб не валити
     збірку, поки схему домальовують.
+
+    У темній темі схема лишається на світлій підкладці, як аркуш креслення:
+    малюють їх тушшю по світлому, і на темному фоні темні підписи зникали
+    (спіймано на сторінці броні 01.08). Пояснення тримаємо тут, а не коментарем
+    у CSS: український коментар усередині <style> протікав в англійську версію.
     """
     if key == "index":
         dias = [["lights/model/podium_plan.svg",
@@ -171,9 +176,6 @@ def diagrams_html(key, heading="Схеми"):
            "    .dias { display: grid; gap: 1.2rem; margin-bottom: 1.4rem; }\n"
            "    .dia { margin: 0; border: 1px solid var(--line); border-radius: 8px;\n"
            "           background: var(--panel); padding: 1rem 1rem .8rem; }\n"
-           "    /* Схеми малюються тушшю по світлому — у темній темі даємо їм\n"
-           "       світлу підкладку, як аркушу креслення, інакше темні підписи\n"
-           "       зникають (спіймано на сторінці броні 01.08). */\n"
            "    @media (prefers-color-scheme: dark) {\n"
            "      :root:not([data-theme=\'light\']) .dia,\n"
            "      :root:not([data-theme=\'light\']) .diazoom { background: #f4f1e6; }\n"
@@ -1540,6 +1542,11 @@ def build():
     total_cable_m = sum(x["length_m"] for x in LP["topology"]["segments"])
 
     cables = tmpl("cables.tmpl.html")
+    # схема щита і груп — та сама, що на сторінці світла; сторінка кабелів була
+    # без жодної картинки (Іван 01.08: «додай всюди більше картинок»)
+    _csvg = (LIGHTS / "model" / "schematic.svg").read_text()
+    _csvg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", _csvg)
+    cables = cables.replace("{{SCHEMATIC_SVG}}", _csvg)
     cab_tiles = [
         tile("Ділянок у дереві", f"{len(tree_op)}", "",
              f"від станції до кожного пристрою · ~{total_cable_m:.0f} м кабелю разом"),

@@ -1,0 +1,27 @@
+{
+  "_source": "Числа з lights_node_model.cable_tree() і fuses() — не вигадані. Довжини estimate:true (прикидки, не з креслення). Рішення по групах і запобіжниках — lights/data/params.json розділи topology.segments, fusing, groups.",
+  "_note": "Цей файл містить тільки те, чого нема в params.json: метадані для відображення схеми (підписи вузлів, вказівки про позиціонування). Числа беруться з моделі.",
+  "station": {
+    "label": "Станція EcoFlow",
+    "note": "12 В вихід 30 А"
+  },
+  "panel": {
+    "label": "Щит подіуму",
+    "note": "головний запобіжник + реле + три групових"
+  },
+  "groups": {
+    "g1": {
+      "icon": "dimmer",
+      "dimmer_label": "ШІМ-диммер 30 А"
+    },
+    "g2": {
+      "icon": "controller",
+      "controller_label": "Контролер WLED"
+    },
+    "g3a": {
+      "icon": "relay",
+      "relay_label": "реле аварійної"
+    }
+  },
+  "warning_note": "довжини — прикидки (estimate: true), не з креслення"
+}
