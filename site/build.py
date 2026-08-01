@@ -1772,6 +1772,9 @@ def build():
 
     # ---- power lab ----
     slab = tmpl("solar_lab.tmpl.html")
+    _spsvg = (SOLAR / "model" / "site_plan.svg").read_text()
+    _spsvg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", _spsvg)
+    slab = slab.replace("{{SITE_PLAN_SVG}}", _spsvg)
     pl, base = PP["playa"], PP["base"]
     _, l_res_for_lab = lm.composite_night()
     light_cases = {"composite": {"wh": wh_light, "label": "композитна ніч"}}
