@@ -69,7 +69,7 @@
 <polyline points="299.3,180.5 315.3,164.5 462,164.5" fill="none" stroke="#26436e" stroke-width="1"/>
 <text x="470" y="155" text-anchor="start" font-size="12" fill="#eaf1ff">ядро Ø180 мм на рівні лопаток</text>
 <text x="470" y="170" text-anchor="start" font-size="10" fill="#8e97a6">модуль 241 діод Ø172 мм, 9 кілець</text>
-<text x="470" y="185" text-anchor="start" font-size="10" fill="#8e97a6">вікно 1.6 мм, плата на 12 мм углиб</text>
+<text x="470" y="185" text-anchor="start" font-size="10" fill="#8e97a6">вікно 1.6 мм, плата на 18 мм углиб</text>
 <text x="470" y="200" text-anchor="start" font-size="10" fill="#8e97a6">рівного місця під посадку — Ø196 мм (вікно + поле 8 мм)</text>
 <line x1="326.7" y1="235.8" x2="462" y2="235.8" stroke="#26436e" stroke-width="1"/>
 <text x="470" y="242" text-anchor="start" font-size="12" fill="#eaf1ff">ребра панелі, крок 15-20 см</text>

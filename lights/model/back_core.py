@@ -143,19 +143,41 @@ def pitch_mm(m, size_mm=None):
     return size / (side - 1) if side > 1 else size
 
 
+def ring_gap_mm(m=None):
+    """Найбільший проміжок МІЖ сусідніми кільцями, мм.
+
+    Це другий крок модуля, і він більший за той, що вздовж кільця: діоди на колі
+    сидять густо (9 мм), а самі кола розходяться нерівно, і між двома зовнішніми
+    проміжок 17.2 мм. Правило «зазор проти кроку» діє в обох напрямках, тому
+    рівність картинки визначає ГІРШИЙ із двох — інакше край вікна виявиться
+    плямистішим за центр, а сторінка про це промовчить (uniformity.radial_note).
+    Для матриці і одинарного кільця такого другого кроку нема."""
+    rs = [x["r_mm"] for x in rings(m)] if (m or module()).get("rings_layout") else []
+    return max((b - a for a, b in zip(rs, rs[1:])), default=0.0)
+
+
 def uniformity(m=None, gap_mm=None, size_mm=None):
-    """Чи зіллються крапки в рівне світло при цьому зазорі."""
+    """Чи зіллються крапки в рівне світло при цьому зазорі.
+
+    Вердикт ставиться по ГІРШОМУ з двох кроків — уздовж кільця і впоперек кілець.
+    Число вздовж (ratio) лишається поруч, бо саме воно описує центр картинки;
+    але людині, яка дивиться на вікно, впадає в око найгірша ділянка, а не середня."""
     m = m or module()
     gap = DIF["gap_mm"] if gap_mm is None else gap_mm
     p = pitch_mm(m, size_mm)
+    p_ring = ring_gap_mm(m)
+    p_worst = max(p, p_ring)
     ratio = gap / p if p else 0
-    if ratio >= UNI["comfort_ratio"]:
+    ratio_worst = gap / p_worst if p_worst else 0
+    if ratio_worst >= UNI["comfort_ratio"]:
         verdict, level = "рівне світло", "good"
-    elif ratio >= UNI["min_ratio"]:
-        verdict, level = "крапки вгадуються — рятує товще вікно", "warn"
+    elif ratio_worst >= UNI["min_ratio"]:
+        verdict, level = "по краю крапки вгадуються", "warn"
     else:
         verdict, level = "видно окремі діоди", "crit"
-    return dict(pitch_mm=p, gap_mm=gap, ratio=ratio, verdict=verdict, level=level)
+    return dict(pitch_mm=p, ring_gap_mm=p_ring, pitch_worst_mm=p_worst,
+                gap_mm=gap, ratio=ratio, ratio_worst=ratio_worst,
+                verdict=verdict, level=level)
 
 
 def watts(m=None, duty=None, brightness=1.0, limit_a=None):

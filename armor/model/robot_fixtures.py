@@ -478,6 +478,8 @@ def legend():
     y += FOOT_STEP
     o.append(_text(52, y, "№5 жовта — ріжеться по формі місця"))
     y += FOOT_STEP
+    o.append(_text(52, y, "№ — номер позиції у специфікації конструктора", TXT2, 11))
+    y += FOOT_STEP
     o.append(f'<line x1="26" y1="{y - 4}" x2="42" y2="{y - 4}" stroke="{TXT2}" '
              f'stroke-width="1.8" stroke-dasharray="{GHOST}"/>')
     o.append(_text(52, y, "пунктир — місце припущене, у кресленні його нема"))

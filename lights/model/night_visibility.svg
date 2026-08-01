@@ -128,7 +128,7 @@
 <circle cx="362" cy="641" r="3.2" fill="#b35b1e"/>
 <text x="382.0" y="645.0" font-size="11" fill="#6b675c" text-anchor="start">катафот 2×3": 8 + 4 на ящик</text>
 <line x1="350.0" y1="663.0" x2="374.0" y2="663.0" stroke="#b35b1e" stroke-width="2.5"/>
-<text x="382.0" y="667.0" font-size="11" fill="#6b675c" text-anchor="start">стрічка DOT-C2, смуга 2", по торцю</text>
+<text x="382.0" y="667.0" font-size="11" fill="#6b675c" text-anchor="start">стрічка DOT-C2, смуга 50 мм (2"), по торцю</text>
 <line x1="672.0" y1="633.0" x2="672.0" y2="647.0" stroke="#3d6f96" stroke-width="1.8"/>
 <text x="692.0" y="645.0" font-size="11" fill="#6b675c" text-anchor="start">правило Burning Man: 45 м</text>
 <line x1="660.0" y1="663.0" x2="684.0" y2="663.0" stroke="#b07c14" stroke-width="2.0" stroke-dasharray="5 4"/>

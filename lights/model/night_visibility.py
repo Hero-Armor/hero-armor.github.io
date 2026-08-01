@@ -415,7 +415,7 @@ def legend(o):
                f'{PASSIVE["reflectors_box"]} на ящик', 11, DIM))
     o.append(line(c2, y2 - 4, c2 + 24, y2 - 4, ACC, 2.5))
     o.append(t(c2 + 32, y2,
-               f'стрічка DOT-C2, смуга {PASSIVE["tape_width_in"]:g}", по торцю',
+               f'стрічка DOT-C2, смуга 50 мм ({PASSIVE["tape_width_in"]:g}"), по торцю',
                11, DIM))
 
     o.append(line(c3 + 12, y1 - 12, c3 + 12, y1 + 2, SIG, 1.8))

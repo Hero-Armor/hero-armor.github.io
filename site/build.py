@@ -2325,7 +2325,13 @@ def build():
              .replace("{{SANDWICH}}", f'{bshell["sandwich_mm"]:g}')
              .replace("{{SKIN}}", f'{bshell["skin_mm"]:g}')
              .replace("{{RIBS}}", "–".join(str(x) for x in bshell["ribs_cm"]))
-             .replace("{{MODS_JSON}}", json.dumps(bcore.MODS, ensure_ascii=False))
+             # Кожному модулю додаємо ГІРШИЙ крок: у набору вкладених кілець він не
+             # уздовж кільця (9 мм), а між кільцями (17.2), і саме він вирішує, чи
+             # рівний буде КРАЙ вікна. Рахує модель — сторінка не повторює формулу.
+             .replace("{{MODS_JSON}}", json.dumps(
+                 [dict(m_, pitch_worst_mm=round(bcore.uniformity(m_)["pitch_worst_mm"], 2),
+                       ring_gap_mm=round(bcore.ring_gap_mm(m_), 2))
+                  for m_ in bcore.MODS], ensure_ascii=False))
              .replace("{{CFG_JSON}}", json.dumps({
                  "chosen": BC["chosen"]["module"],
                  "bus_v": lm.BUS_V,

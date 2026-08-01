@@ -10,11 +10,11 @@
 аркуш: вид зовні, розріз А-А, розмірні лінії і блок приміток.
 
 Дві речі, які на цьому аркуші головні:
-  · PLA заборонено вголос — він пливе біля 52 °C, а темний корпус на плайському
+  · PLA заборонено вголос — він пливе вже за 52 °C, а темний корпус на плайському
     сонці набирає більше (температури беремо з бази ящика, не з памʼяті);
   · кишеню під плату після друку треба ЗАМІРЯТИ, а не вірити CAD.
 
-Жодного розміру в коді нема: усе тягнеться з lights/data/back_core.json через
+Жодного числа в коді нема: усе тягнеться з lights/data/back_core.json через
 back_core.py (print_brief() — це вже готове ТЗ друкарю). Геометрія розрізу
 виводиться з тих самих чисел: перехід сендвіча в стінку — фаска 45°, конус до
 полиці — теж 45°, тобто друкується без підпор. Тільки stdlib.
@@ -33,43 +33,62 @@ import back_core as bc
 WIN, SH, DIF = bc.WIN, bc.D["shell"], bc.DIF
 SPEC = DIF["print_spec"]
 MOD = bc.module()
+CTRL_MOD = bc.controller()
 BRIEF = bc.print_brief()      # готове ТЗ друкарю — з нього і живе блок приміток
 UNI = bc.uniformity()
 AIR = bc.ambient()            # температури плайї лежать у базі ящика, не тут
+WIRING = bc.D["wiring"]
 
-D_WIN = WIN["size_mm"]
-D_FOOT = BRIEF["footprint_mm"]   # похідне: вікно + поле з обох боків
+D_WIN   = WIN["size_mm"]
+D_FOOT  = BRIEF["footprint_mm"]   # похідне: вікно + поле з обох боків
 D_BOARD = MOD["size_mm"]
-CLR = WIN["fit_clearance_mm"]
-D_BORE = round(D_BOARD + CLR, 2)
-SHELF = WIN["shelf_mm"]
-PW = WIN["pocket_wall_mm"]
-HOLE = WIN["cable_hole_mm"]
-BEZEL = WIN["bezel_mm"]
-T_WALL = DIF["thickness_mm"]
-GAP = DIF["gap_mm"]
-PCB = MOD["pcb_mm"]
+CLR     = WIN["fit_clearance_mm"]
+D_BORE  = round(D_BOARD + CLR, 2)
+SHELF   = WIN["shelf_mm"]
+PW      = WIN["pocket_wall_mm"]
+HOLE    = WIN["cable_hole_mm"]
+BEZEL   = WIN["bezel_mm"]
+T_WALL  = DIF["thickness_mm"]
+GAP     = DIF["gap_mm"]
+PCB     = MOD["pcb_mm"]
+DIODE_H = MOD["diode_h_mm"]     # висота корпусу 5050 над платою
+DIODE_W = MOD["diode_mm"]       # ширина корпусу 5050
 SAND, SKIN, CORE = SH["sandwich_mm"], SH["skin_mm"], SH["core_mm"]
 RIB_MIN, RIB_MAX = (c * 10 for c in SH["ribs_cm"])
 PITCH = bc.pitch_mm(MOD)
+INNER_FILLET = WIN["inner_fillet_mm"]
+HOLE_BACK = WIN["hole_back_mm"]   # осьовий просвіт від тилу плати до краю отвору
+POCKET_END = WIN["pocket_end_mm"] # матеріал від дальнього краю отвору до торця
+FIX_DEFAULT = WIN["fix_default"]
+HOLE_CLOCK  = WIN["hole_clock_h"]
+WIRES_IN_HOLE = WIRING["wires_in_hole"]
 
-R_WIN, R_FOOT, R_BOARD = D_WIN / 2, D_FOOT / 2, D_BOARD / 2
-R_BORE = D_BORE / 2
-R_SHELF = R_BOARD - SHELF          # наскільки полиця заходить на плату
-R_SKIRT = R_WIN + PW               # зовнішній бік стакана
-R_SOLID = R_WIN + (SAND - T_WALL)  # де закінчується перехід під 45°
-R_BREAK = R_FOOT + 10              # де обриваємо панель на розрізі
+R_WIN,  R_FOOT  = D_WIN / 2,  D_FOOT / 2
+R_BOARD, R_BORE = D_BOARD / 2, D_BORE / 2
+R_SHELF = R_BOARD - SHELF         # внутрішній край полиці
+R_SKIRT = R_WIN + PW              # зовнішній бік стакана
+D_SKIRT = R_SKIRT * 2             # зовнішній Ø стакана
+R_SOLID = R_WIN + (SAND - T_WALL) # де сендвіч повністю відновлюється (кінець переходу 45°)
+D_SOLID = R_SOLID * 2
+# R_BREAK: де обриваємо панель на розрізі. +10 мм від межі «рівного місця» —
+# рівно стільки, щоб видно було перехід і хвилясту лінію обриву.
+R_BREAK = R_FOOT + 10
 
-Z_WIN = T_WALL                     # внутрішній бік стінки вікна
-Z_PANEL = SAND                     # внутрішній бік панелі
-Z_BOARD = Z_WIN + GAP              # лице плати = полиця
-Z_BACK = Z_BOARD + PCB             # тил плати
-Z_HOLE = Z_BACK + PW + HOLE / 2    # вісь отвору живлення
-Z_END = Z_HOLE + HOLE / 2 + PW     # дно стакана
-Z_CONE = Z_BOARD - (R_WIN - R_SHELF)   # звідки конус 45° веде до полиці
+Z_WIN   = T_WALL                  # внутрішній бік стінки вікна
+Z_PANEL = SAND                    # внутрішній бік панелі
+Z_BOARD = Z_WIN + GAP             # лице плати = рівень полиці
+Z_BACK  = Z_BOARD + PCB           # тил плати
+Z_HOLE  = Z_BACK + HOLE_BACK + HOLE / 2  # вісь отвору
+Z_END   = Z_HOLE + HOLE / 2 + POCKET_END # торець стакана
+Z_CONE  = Z_BOARD - (R_WIN - R_SHELF)    # де конус 45° виходить зі стінки
 
-RINGS = [0.0 if n == 1 else n * PITCH / (2 * pi) for n in MOD["rings_layout"]]
-R_OUTER_LED = RINGS[-1]
+# Air gap from the LED emitter surface (top of die) to window inner face:
+# GAP is measured from PCB face; LED body rises DIODE_H above PCB.
+AIR_TO_EMITTER = GAP - DIODE_H
+
+# Rings from the model (one source of truth):
+RINGS_DATA = bc.rings()
+R_OUTER_LED = RINGS_DATA[-1]["r_mm"]
 
 # ───────────────────────── аркуш і палітра ─────────────────────────
 
@@ -78,8 +97,8 @@ M = 12.0                   # поле
 Y_HEAD, Y_MID = 46.0, 300.0
 X_MID = 300.0
 
-FX, FY = 155.0, 170.0      # центр виду зовні, масштаб 1:1
-SX, SY = 297.0, 330.0      # початок розрізу, масштаб 2:1
+FX, FY = 148.0, 170.0      # центр виду зовні, масштаб 1:1
+SX, SY = 297.0, 333.0      # початок розрізу, масштаб 2:1
 S2 = 2.0
 
 BG, FRAME = "#0b0e14", "#2b3648"
@@ -87,8 +106,9 @@ MAT, HATCH, EDGE = "#182234", "#3f5f96", "#7fa6e8"
 DIMC, TXT, NOTE = "#5b9bff", "#eaf1ff", "#8e97a6"
 ACC, PART = "#e08b3e", "#5fc9a0"
 CENTER = "#3d5273"      # колір осьових
+WARN = "#c97c2e"        # помаранчевий для «увага»
 
-F_TITLE, F_VIEW, F_DIM, F_NOTE, F_TINY = 6.6, 4.2, 3.2, 3.3, 2.7
+F_TITLE, F_VIEW, F_DIM, F_NOTE, F_TINY = 6.6, 4.2, 3.2, 3.4, 2.8
 CW = 0.602                 # ширина моно-символа в частках кегля
 
 
@@ -106,6 +126,11 @@ def esc(s):
 
 def n(v):
     """Число так, як його читають на кресленні: 12, а не 12.0."""
+    return f"{v:g}"
+
+
+def g(v):
+    """Число у форматі :g — те саме що n(), але повертає рядок для прямої підстановки."""
     return f"{v:g}"
 
 
@@ -160,6 +185,9 @@ def defs():
         f'<marker id="a3" markerWidth="2.6" markerHeight="1.8" refX="2.6" refY="0.9" '
         f'orient="auto" markerUnits="userSpaceOnUse">'
         f'<path d="M0,0 L2.6,0.9 L0,1.8 Z" fill="{NOTE}"/></marker>'
+        f'<marker id="a3w" markerWidth="2.6" markerHeight="1.8" refX="2.6" refY="0.9" '
+        f'orient="auto" markerUnits="userSpaceOnUse">'
+        f'<path d="M0,0 L2.6,0.9 L0,1.8 Z" fill="{WARN}"/></marker>'
         # штрихування розрізу — як у кресленні, 45°, тонке
         f'<pattern id="cut" width="2.2" height="2.2" patternUnits="userSpaceOnUse" '
         f'patternTransform="rotate(45)">'
@@ -232,7 +260,8 @@ def dim_v(y1, y2, x, label, x1=None, x2=None, side="left", sub=None, color=DIMC)
 
 def leader(px, py, ex, ey, shelf_x, label, sub=None, anchor="end", color=NOTE):
     """Виносна полиця: стрілка в деталь, злам, поличка і підпис над нею."""
-    o = [line(ex, ey, px, py, color, 0.16, extra=' marker-end="url(#a3)"'),
+    arr_id = "a3w" if color == WARN else "a3"
+    o = [line(ex, ey, px, py, color, 0.16, extra=f' marker-end="url(#{arr_id})"'),
          line(shelf_x, ey, ex, ey, color, 0.16)]
     tx = shelf_x if anchor == "start" else ex
     o.append(txt(tx, ey - 1.4, label, F_DIM, TXT, anchor))
@@ -297,20 +326,23 @@ def center_cross(cx, cy, r):
 
 
 def diodes_front():
-    """241 діод так, як вони насправді сидять: девʼять вкладених кілець.
+    """Діоди так, як вони насправді сидять: дев'ять вкладених кілець.
 
     Малюємо їх не для краси — по них одразу видно те, через що на цьому
     аркуші окрема примітка: крайнє кільце стоїть майже на самому обрізі
-    плати, тобто рівно там, куди заходить полиця."""
+    плати, тобто рівно там, куди заходить полиця.
+    Розміри кружків — графіка, а не розмір деталі; реальний корпус
+    5050 = {DIODE_W}×{DIODE_W} мм показаний в розрізі."""
     o = []
-    d = PITCH * 0.3 / 2           # діод показано кружком, це графіка, а не розмір
-    for r, cnt in zip(RINGS, MOD["rings_layout"]):
+    dot_r = DIODE_W * 0.3 / 2   # умовний кружок, менший за реальний корпус
+    for entry in RINGS_DATA:
+        r, cnt = entry["r_mm"], entry["n"]
         if cnt == 1:
-            o.append(circ(FX, FY, d, PART, opacity=0.5))
+            o.append(circ(FX, FY, dot_r, PART, opacity=0.5))
             continue
         for i in range(cnt):
             a = 2 * pi * i / cnt - pi / 2
-            o.append(circ(FX + r * cos(a), FY + r * sin(a), d, PART, opacity=0.5))
+            o.append(circ(FX + r * cos(a), FY + r * sin(a), dot_r, PART, opacity=0.5))
     return o
 
 
@@ -318,7 +350,7 @@ def view_front():
     o = ['<g id="front">']
 
     # 1. Зони панелі. Все, що далі R_SOLID, лишається сендвічем 5 мм;
-    #    коло вікна — суцільна стінка 1.6 мм; між ними перехід під 45°.
+    #    коло вікна — суцільна стінка T_WALL мм; між ними перехід під 45°.
     o.append(f'<path d="M {FX - R_BREAK:.2f},{FY:.2f} '
              f'a {R_BREAK:.2f},{R_BREAK:.2f} 0 1,0 {2*R_BREAK:.2f},0 '
              f'a {R_BREAK:.2f},{R_BREAK:.2f} 0 1,0 {-2*R_BREAK:.2f},0 '
@@ -334,39 +366,75 @@ def view_front():
     # 2. Плата під вікном — невидима, тому штрихова
     o.extend(diodes_front())
     o.append(circ(FX, FY, R_BOARD, "none", PART, 0.32, dash="3 1.6"))
+    # стакан зовні — Ø = D_SKIRT
+    o.append(circ(FX, FY, R_SKIRT, "none", EDGE, 0.22, dash="2 2"))
     # полиця: кільце, яким деталь лягає на край плати
     o.append(circ(FX, FY, (R_BORE + R_SHELF) / 2, "none", ACC,
                   (R_BORE - R_SHELF), opacity=0.28))
 
-    o.extend(leader(*polar(FX, FY, (R_BORE + R_SHELF) / 2, 246), 108.0, 262.0, 22.0,
-                    f"полиця {n(SHELF)} мм", "заходить на край плати"))
+    # 3. Отвір під кабель — на виді ззовні показаний на відповідній годині
+    # hole_clock_h = 3 → "3 год" = 0° від правого краю по колу.
+    # Кут у системі полярних координат (0°=право, зростання за год. стрілкою):
+    hole_ang = (HOLE_CLOCK - 3) * 30.0   # год × 30°, де 3-год = 0°
+    hx, hy = polar(FX, FY, R_SKIRT, -hole_ang)  # на зовнішній стінці стакана
+    o.append(circ(hx, hy, HOLE / 2, BG, EDGE, 0.3))
 
-    # 3. Рівне місце під увесь вузол
+    # підпис отвору на виді zzovni (стрілка до позиції на колі)
+    lx, ly = polar(FX, FY, R_SKIRT + 14, -hole_ang + 15)
+    ox, oy = polar(FX, FY, R_SKIRT + 2, -hole_ang)
+    wires_str = " · ".join(WIRES_IN_HOLE)
+    o.extend(leader(ox, oy, lx, ly, lx + 14, f"Ø{n(HOLE)}, {HOLE_CLOCK} год",
+                    wires_str, anchor="start", color=NOTE))
+
+    # мітка "ВЕРХ" — показуємо, що деталь кругла і орієнтація важлива
+    ux, uy = FX, FY - R_SKIRT - 6
+    o.append(line(FX, uy, FX, FY - R_SKIRT - 2, TXT, 0.3,
+                  extra=' marker-end="url(#a2)"'))
+    o.append(txt(FX, uy - 1.5, "ВЕРХ", F_DIM, TXT, "middle", "700"))
+    o.append(txt(FX, uy + 2.8, f"кабель виходить на {HOLE_CLOCK} год", F_TINY, NOTE, "middle"))
+
+    # 4. Розміри
+    o.extend(dim_diam(FX, FY, R_WIN,   35, f"Ø{n(D_WIN)}",
+                      f"світна ділянка, стінка {n(T_WALL)}"))
+    o.extend(dim_diam(FX, FY, R_SKIRT, 50, f"Ø{D_SKIRT:g}",
+                      "зовн. Ø стакана (кишені)", color=EDGE, out=5.0))
+    o.extend(dim_diam(FX, FY, R_SOLID, 22, f"Ø{D_SOLID:g}",
+                      "сендвіч відновлюється", color="#44618f", out=5.0))
+    o.extend(dim_diam(FX, FY, R_BOARD, 145, f"Ø{n(D_BOARD)}",
+                      f"плата · {bc.diodes_label(MOD['diodes'])}"))
+
+    # рівного місця — горизонтальний розмір знизу
+    ybot = FY + R_FOOT + 13
+    o.extend(dim_h(FX - R_FOOT, FX + R_FOOT, ybot, f"Ø{n(D_FOOT)}",
+                   FY + R_FOOT, FY + R_FOOT, "рівного місця на панелі"))
+
+    # поле по краю: між світним колом і межею рівного місця
+    o.extend(dim_radial(FX, FY, R_WIN, R_FOOT, -52, n(BEZEL), "поле по краю"))
+
     o.append(circ(FX, FY, R_FOOT, "none", NOTE, 0.3, dash="5 2.5"))
     o.extend(center_cross(FX, FY, R_FOOT + 12))
 
-    # 4. Ребра жорсткості: крок 150-200 мм, а рівного місця треба D_FOOT.
+    o.extend(leader(*polar(FX, FY, (R_WIN + R_SOLID) / 2, 128), 82.0, 66.0, 16.0,
+                    "перехід 45°", "сендвіч сходить у стінку"))
+
+    # виносна для полиці
+    o.extend(leader(*polar(FX, FY, (R_BORE + R_SHELF) / 2, 246), 100.0, 252.0, 18.0,
+                    f"полиця, заходить {n(SHELF)} мм на плату",
+                    f"зовн.край Ø{n(D_BORE)} → внутр. Ø{R_SHELF*2:g}"))
+
+    # 5. Ребра жорсткості: крок 150-200 мм, а рівного місця треба D_FOOT.
     #    Малюємо гіршу пару (крок 150) — видно, що коло на неї налазить.
+    rib_bad = D_FOOT > RIB_MIN
     for s in (-1, 1):
         x = FX + s * RIB_MIN / 2
         o.append(line(x, FY - R_FOOT - 8, x, FY + R_FOOT + 8, ACC, 0.3, dash="4 3"))
-    o.append(txt(FX + RIB_MIN / 2 + 3, FY - R_FOOT - 4, f"ребра, крок {n(RIB_MIN)}",
+    o.append(txt(FX + RIB_MIN / 2 + 3, FY - R_FOOT - 5,
+                 f"ребра, крок {n(RIB_MIN)}" + (" — НЕ ВЛАЗИТЬ!" if rib_bad else ""),
                  F_TINY, ACC))
-
-    # 5. Розміри
-    o.extend(dim_diam(FX, FY, R_WIN, 35, f"Ø{n(D_WIN)}", "світна ділянка, стінка 1.6"))
-    o.extend(dim_diam(FX, FY, R_BOARD, 145, f"Ø{n(D_BOARD)}", "плата, 241 діод"))
-    ybot = FY + R_FOOT + 12
-    o.extend(dim_h(FX - R_FOOT, FX + R_FOOT, ybot, f"Ø{n(D_FOOT)}",
-                   FY + R_FOOT, FY + R_FOOT, "рівного місця треба стільки"))
-    # поле по краю: між світним колом і межею рівного місця
-    o.extend(dim_radial(FX, FY, R_WIN, R_FOOT, -52, n(BEZEL), "поле по краю"))
-    o.extend(leader(*polar(FX, FY, (R_WIN + R_SOLID) / 2, 128), 96.0, 74.0, 20.0,
-                    "перехід 45°", "сендвіч сходить у стінку"))
 
     # 6. Слід розрізу А-А
     for s, lab in ((-1, "А"), (1, "А")):
-        x = FX + s * (R_FOOT + 6)
+        x = FX + s * (R_FOOT + 7)
         o.append(line(x - s * 7, FY, x, FY, TXT, 0.7))
         o.append(line(x, FY, x, FY + 6, TXT, 0.5, extra=' marker-end="url(#a2)"'))
         o.append(txt(x, FY - 2.4, lab, F_VIEW, TXT, "middle", "600"))
@@ -414,21 +482,33 @@ def view_section():
         o.append(f'<polyline points="{pts}" fill="none" stroke="{EDGE}" '
                  f'stroke-width="0.35"/>')
 
-    # отвір під живлення і дані — наскрізь у стінці стакана, зліва
+    # отвір під кабель — наскрізь у стінці стакана, зліва
     hx0, hx1 = sx(-R_SKIRT), sx(-R_BORE)
     o.append(rect(hx0, sy(Z_HOLE - HOLE / 2), hx1 - hx0, HOLE * S2, BG))
     for z in (Z_HOLE - HOLE / 2, Z_HOLE + HOLE / 2):
         o.append(line(hx0, sy(z), hx1, sy(z), EDGE, 0.35))
 
+    # внутрішній радіус (фаска) там, де стінка вікна переходить у стакан
+    # (ліворуч: r = -R_WIN, z = Z_WIN; праворуч: r = R_WIN, z = Z_WIN)
+    if INNER_FILLET > 0:
+        fr = INNER_FILLET * S2
+        for sx_c in (sx(-R_WIN), sx(R_WIN)):
+            zy_c = sy(Z_WIN)
+            # дуга у внутрішньому куті (чверть кола)
+            o.append(f'<path d="M {sx_c:.2f},{zy_c - fr:.2f} '
+                     f'Q {sx_c:.2f},{zy_c:.2f} {sx_c + (fr if sx_c < SX else -fr):.2f},{zy_c:.2f}" '
+                     f'fill="none" stroke="{DIMC}" stroke-width="0.25" stroke-dasharray="1.5 1"/>')
+
     # плата з діодами: куплена річ, тому іншим кольором і без штрихування
     o.append(rect(sx(-R_BOARD), sy(Z_BOARD), D_BOARD * S2, PCB * S2, "#1b2c2a", PART, 0.35))
-    # діоди стоять на лиці плати і дивляться у вікно; їх висота тут узята
-    # рівною товщині плати — обидві 1.6, це графіка, а не окремий розмір
-    dw = PITCH * 0.55
-    for r in RINGS:
+    # діоди: використовуємо реальні розміри з бази (DIODE_W × DIODE_H)
+    dw = DIODE_W * S2       # ширина корпусу в масштабі 2:1
+    dh = DIODE_H * S2       # висота корпусу над платою в масштабі 2:1
+    for entry in RINGS_DATA:
+        r = entry["r_mm"]
         for s in ((-1, 1) if r else (1,)):
-            o.append(rect(sx(s * r) - dw * S2 / 2, sy(Z_BOARD - PCB),
-                          dw * S2, PCB * S2, PART))
+            o.append(rect(sx(s * r) - dw / 2, sy(Z_BOARD - DIODE_H),
+                          dw, dh, PART))
     o.append(line(SX, sy(-6), SX, sy(Z_END + 5), CENTER, 0.16, dash="6 1.4 1 1.4"))
     o.append("</g>")
     return o
@@ -443,43 +523,106 @@ def section_dims():
     # сендвіч цілком і три його шари
     o.extend(dim_v(sy(0), sy(Z_PANEL), xl - 7, n(SAND), xl, xl, "left", "сендвіч"))
     # точки беремо в різних місцях панелі, інакше три стрілки збігаються
-    # в один пучок і незрозуміло, яка куди
-    lay = ((SKIN / 2, f"оболонка {n(SKIN)}", 304.0, 7.0),
-           (SKIN + CORE / 2, f"порожнина {n(CORE)}", 311.5, 16.0),
-           (SKIN + CORE + SKIN / 2, f"оболонка {n(SKIN)}", 319.0, 25.0))
+    lay = ((SKIN / 2, f"оболонка {n(SKIN)}", 314.0, 7.0),
+           (SKIN + CORE / 2, f"порожнина {n(CORE)}", 322.5, 16.0),
+           (SKIN + CORE + SKIN / 2, f"оболонка {n(SKIN)}", 331.0, 25.0))
     for z, lab, ty, dx in lay:
         o.extend(leader(xl + dx, sy(z), 86.0, ty, 24.0, lab))
 
     # стінка вікна — головна товщина аркуша
-    o.extend(leader(sx(-46), sy(T_WALL / 2), 205.0, 318.0, 132.0,
+    o.extend(leader(sx(-46), sy(T_WALL / 2), 211.0, 318.0, 138.0,
                     f"стінка вікна {n(T_WALL)}",
-                    f"{SPEC['walls']} периметри по {n(SPEC['line_mm'])} — суцільна, без заповнення"))
+                    f"{SPEC['walls']} периметри по {n(SPEC['line_mm'])} — суцільна"))
 
-    # повітря від вікна до плати — те, заради чого полиця стоїть саме тут
+    # внутрішній радіус R у куті стінки
+    o.extend(leader(sx(-R_WIN), sy(Z_WIN), 194.0, 325.0, 130.0,
+                    f"R{n(INNER_FILLET)} у внутр. куті",
+                    "тут тріскає першим", color=WARN))
+
+    # стінка стакана: на рівні Z=0 вона = PW, на рівні кишені вона = 6.2 мм
+    # PW — по вікну (найтонше місце); 6.2 = R_SKIRT - R_BORE по кишені
+    wall_pocket = round(R_SKIRT - R_BORE, 2)
+    xmid_wall_r = (sx(R_WIN) + sx(R_SKIRT)) / 2
+    o.extend(leader(xmid_wall_r, sy(Z_WIN / 2), xr + 10, 333.0, xr + 55,
+                    f"стінка у вікні {n(PW)} мм (ПРИКИДКА)",
+                    f"у кишені {n(wall_pocket)} мм: Ø{D_SKIRT:g} − Ø{n(D_BORE)} / 2",
+                    anchor="start"))
+
+    # глибина від зовнішнього лиця до полиці (опорна площина)
+    xg_shelf = xr + 43
+    o.extend(dim_v(sy(0), sy(Z_BOARD), xg_shelf, n(Z_BOARD),
+                   sx(R_SKIRT), sx(R_BOARD), "right",
+                   f"від лиця до полиці ({n(T_WALL)}+{n(GAP)})"))
+
+    # повітря від внутрішньої поверхні вікна до ЛИЦЯ плати
     xg = sx(16.5)
     o.extend(dim_v(sy(Z_WIN), sy(Z_BOARD), xg, n(GAP), None, None, "right",
-                   "повітря до плати"))
+                   f"від вікна до лиця плати"))
     o.append(line(sx(-2), sy(Z_WIN), xg + 1.6, sy(Z_WIN), DIMC, 0.14))
 
-    # уся кишеня і полиця
-    o.extend(dim_v(sy(0), sy(Z_END), xr + 30, n(Z_END), xr, sx(R_SKIRT), "right",
+    # повітря від вікна до поверхні діода (светна точка)
+    xg2 = xg + 12
+    o.extend(dim_v(sy(Z_WIN), sy(Z_BOARD - DIODE_H), xg2, f"{AIR_TO_EMITTER:g}",
+                   None, None, "right", "до поверхні діода"))
+    o.append(line(sx(-2), sy(Z_BOARD - DIODE_H), xg2 + 1.6, sy(Z_BOARD - DIODE_H),
+                  DIMC, 0.14, dash="2 1.5"))
+
+    # висота корпусу діода і товщина плати
+    xg3 = xg2 + 12
+    o.extend(dim_v(sy(Z_BOARD - DIODE_H), sy(Z_BOARD), xg3, n(DIODE_H),
+                   None, None, "right", f"корпус діода {n(DIODE_W)}×{n(DIODE_W)} мм"))
+    o.extend(dim_v(sy(Z_BOARD), sy(Z_BACK), xg3, n(PCB),
+                   None, None, "right", "плата (FR4)"))
+
+    # уся кишеня від лиця і підпис що дно відкрите
+    o.extend(dim_v(sy(0), sy(Z_END), xr + 68, n(Z_END), xr, sx(R_SKIRT), "right",
                    "уся глибина від лиця"))
-    o.extend(leader(sx(-85), sy(Z_BOARD), 96.0, 366.0, 30.0,
-                    f"полиця, заходить на плату {n(SHELF)}",
-                    "плата лягає на неї лицем"))
-    o.extend(leader(sx(-R_SKIRT + PW / 2), sy(Z_HOLE), 74.0, 392.0, 26.0,
-                    f"Ø{n(HOLE)} збоку", f"живлення {n(bc.BUS_V)} В і дані"))
-    o.append(txt(sx(-30), sy(Z_END) - 4.5, f"плата Ø{n(D_BOARD)} · 241 діод · лицем до вікна",
+    # пояснення: дно відкрите, плата заходить ззаду
+    o.append(txt(xr + 69, sy(Z_END) + 5.5, "↑ дно ВІДКРИТЕ — плата заходить ззаду",
+                 F_TINY, NOTE))
+
+    # осьовий розмір отвору: від лиця до осі отвору
+    xhole = xl - 20
+    o.extend(dim_v(sy(0), sy(Z_HOLE), xhole, f"{Z_HOLE:g}",
+                   sx(-R_SKIRT), sx(-R_SKIRT), "left",
+                   f"від лиця до осі Ø{n(HOLE)}"))
+    # кутове положення отвору
+    o.append(txt(xhole - 2, sy(Z_HOLE) + 9.5, f"на {HOLE_CLOCK} год",
+                 F_TINY, NOTE, "end"))
+
+    # полиця і кріплення плати
+    o.extend(leader(sx(-85), sy(Z_BOARD), 96.0, 376.0, 30.0,
+                    f"полиця {n(SHELF)} мм, крайнє кільце на r≈{R_OUTER_LED:.0f}",
+                    f"кріплення: {FIX_DEFAULT}"))
+    # УВАГА: якщо полиця сідає на діоди
+    if R_SHELF < R_OUTER_LED:
+        o.append(txt(30.0, 383.0,
+                     f"▲ УВАГА: полиця Ø{R_SHELF*2:g} перекриває діоди на r≈{R_OUTER_LED:.0f} — "
+                     f"зрізати до {n(WIN['shelf_tabs'])} лапок по {n(WIN['shelf_tab_deg'])}°",
+                     F_TINY, WARN))
+
+    # підпис кабелю з правильними дротами
+    wires_str = " · ".join(WIRES_IN_HOLE)
+    o.extend(leader(sx(-R_SKIRT + PW / 2), sy(Z_HOLE), 76.0, 392.0, 22.0,
+                    f"Ø{n(HOLE)} збоку в стінці",
+                    wires_str))
+
+    o.append(txt(sx(-30), sy(Z_END) - 4.5,
+                 f"плата Ø{n(D_BOARD)} · {bc.diodes_label(MOD['diodes'])} · лицем до вікна",
                  F_DIM, TXT, "middle"))
 
     # діаметри знизу
-    o.extend(dim_h(sx(-R_BORE), sx(R_BORE), 392.0, f"Ø{n(D_BORE)}",
-                   sy(Z_END), sy(Z_END), f"кишеня = плата + {n(CLR)}"))
-    o.extend(dim_h(sx(-R_WIN), sx(R_WIN), 403.0, f"Ø{n(D_WIN)}",
+    o.extend(dim_h(sx(-R_BORE), sx(R_BORE), 395.0, f"Ø{n(D_BORE)}",
+                   sy(Z_END), sy(Z_END), f"кишеня = плата {n(D_BOARD)} + {n(CLR)} зазор"))
+    o.extend(dim_h(sx(-R_WIN), sx(R_WIN), 406.0, f"Ø{n(D_WIN)}",
                    sy(Z_CONE), sy(Z_CONE), "світна ділянка"))
+    # внутрішній Ø полиці
+    o.extend(dim_h(sx(-R_SHELF), sx(R_SHELF), 395.0 - 8, f"Ø{R_SHELF*2:g}",
+                   sy(Z_BOARD), sy(Z_BOARD), "внутр. Ø полиці",
+                   color="#8e97a6"))
 
     o.append(txt(SX, 308.0, "РОЗРІЗ А-А · 2:1", F_VIEW, TXT, "middle"))
-    o.append(txt(SX, 314.0, "зовнішній бік — угорі", F_TINY, NOTE, "middle"))
+    o.append(txt(SX, 314.0, "зовнішній бік — угорі · дно відкрите", F_TINY, NOTE, "middle"))
     o.append("</g>")
     return o
 
@@ -490,52 +633,72 @@ def section_dims():
 def notes_text():
     """Те, без чого друк піде не так. Порядок — за ціною помилки."""
     rib_bad = D_FOOT > RIB_MIN
+    wall_pocket = round(R_SKIRT - R_BORE, 2)
+    wires_str = " · ".join(WIRES_IN_HOLE)
+    # PETG verdict from base:
+    petg_entry = next(x for x in DIF["materials"] if x["key"] == "petg")
+    petg_uv_note = petg_entry["why"]   # use the base text, do not contradict it
     return [
         ("МАТЕРІАЛ", TXT,
          f"{BRIEF['material']}, тільки білий — вікно і є розсіювач. Якщо ASA нема — "
-         f"{BRIEF['material_alt']}: спеку тримає, але за пару тижнів на сонці трохи пожовкне."),
+         f"{BRIEF['material_alt']}: спеку тримає ({petg_entry['hdt_c']} °C), "
+         f"{petg_uv_note}"),
         ("PLA НЕ ДРУКУВАТИ", ACC,
-         f"PLA пливе вже біля {n(BRIEF['material_ban_hdt_c'])} °C. На плайї в тіні "
-         f"{n(AIR['shade_c'])} °C, а темний корпус на сонці набирає до {n(AIR['sun_c'])} °C — "
-         f"це ВИЩЕ за межу, вікно просяде і потягне за собою всю панель. "
+         f"PLA пливе вже за {n(BRIEF['material_ban_hdt_c'])} °C (hdt). На плайї в тіні "
+         f"{n(AIR['shade_c'])} °C, на сонці {n(AIR['sun_c'])} °C; темний корпус набирає "
+         f"ще зверху — тобто PLA вже за своєю межею, а не біля неї. "
          f"ASA тримає {n(BRIEF['material_hdt_c'])} °C. Це найважливіший рядок аркуша."),
+        ("ОРІЄНТАЦІЯ ДРУКУ", TXT,
+         f"{SPEC['orientation']}. "
+         f"Підпори: {'потрібні' if SPEC['supports'] else 'НЕ потрібні'} — "
+         f"обидва переходи 45°, міст над отвором Ø{n(HOLE)} мм (8 мм перекривається мостом; "
+         f"якщо провисне — свердлити по місцю). "
+         f"{SPEC.get('_supports_note', '')}"),
         ("ДРУК", TXT,
          f"{BRIEF['walls']} периметри · лінія {n(SPEC['line_mm'])} мм · шар "
-         f"{n(BRIEF['layer_mm'])} мм · заповнення {n(BRIEF['infill_pct'])}% "
-         f"({SPEC['infill_pattern']}) · {BRIEF['finish']}. Стінка вікна {n(T_WALL)} мм — це рівно "
-         f"{BRIEF['walls']} лінії по {n(SPEC['line_mm'])}: суцільні периметри без заповнення, "
-         f"інакше на просвіт підуть смуги."),
+         f"{n(BRIEF['layer_mm'])} мм · заповнення {n(BRIEF['infill_pct'])}% · "
+         f"{BRIEF['finish']}. "
+         f"УВАГА: нуль заповнення стосується ТІЛЬКИ стінки вікна ({n(T_WALL)} мм = "
+         f"{BRIEF['walls']} периметри по {n(SPEC['line_mm'])}). "
+         f"Стінка стакана і полиця — СУЦІЛЬНІ (заповнення 100%), інакше кишеня вийде порожньою."),
         ("ПОСАДКА ПЛАТИ", TXT,
-         f"Кишеня Ø{n(D_BORE)} = плата Ø{n(D_BOARD)} плюс {n(CLR)} мм (по {n(CLR/2)} на бік). "
-         f"Після друку кишеню ЗАМІРЯТИ штангелем і міряти саме деталь, а не вірити CAD: "
-         f"друк дає усадку і «слонячу ногу» на перших шарах. Тісно — зняти ножем; "
-         f"вільно — підкласти смужку скотчу."),
-        ("ПОЛИЦЯ", TXT,
-         f"Плату заводять ззаду, вона лягає лицем на полицю, тому полиця заходить на її "
-         f"край на {n(SHELF)} мм. За правилом радіусів крайнє кільце діодів стоїть на "
-         f"радіусі ≈{R_OUTER_LED:.0f} мм — це майже під полицею. На живому модулі перевірити: "
-         f"якщо полиця сідає на діоди — зрізати її до трьох лапок."),
-        ("ЗАЗОР", TXT,
-         f"{n(GAP)} мм повітря від плати до вікна при кроці діодів {UNI['pitch_mm']:.1f} мм — це "
-         f"{UNI['ratio']:.2f} кроку, {UNI['verdict']}. Менше не робити: полізуть крапки."),
-        ("ОТВІР Ø8", TXT,
-         f"Збоку в стінці кишені, за платою: крізь нього заходять живлення {n(bc.BUS_V)} В "
-         f"і дані. "
-         f"Заводити після того, як плата стала на полицю."),
-        ("ЯКЩО ПАНЕЛЬ УЖЕ НАДРУКОВАНА ТОВСТОЮ", TXT,
-         f"Запасний шлях: те саме коло Ø{n(D_WIN)} вибрати дремелем ЗСЕРЕДИНИ, лишивши "
-         f"стінку {n(T_WALL)} мм. Товщину міряти по ходу — на просвіт добре видно, коли "
-         f"лишається мало. Друкувати заново не обовʼязково."),
+         f"Кишеня Ø{n(D_BORE)} = плата Ø{n(D_BOARD)} + {n(CLR)} мм ({n(CLR/2)} на бік, ПРИКИДКА). "
+         f"Після друку кишеню ЗАМІРЯТИ штангелем — друк дає усадку і «слонячу ногу» "
+         f"на перших шарах. Тісно — зняти ножем; вільно — підкласти смужку скотчу."),
+        ("ПОЛИЦЯ ТА КРІПЛЕННЯ", ACC if R_SHELF < R_OUTER_LED else TXT,
+         f"Полиця Ø{R_SHELF*2:g}..{n(D_BORE)} мм, заходить {n(SHELF)} мм на край плати. "
+         f"Крайнє кільце діодів на r≈{R_OUTER_LED:.0f} мм — "
+         + (f"суцільна полиця СЯДЕ НА ДІОДИ. Зрізати до {n(WIN['shelf_tabs'])} лапок "
+            f"по {n(WIN['shelf_tab_deg'])}° через 120° (кожна ≈30 мм по дузі). "
+            if R_SHELF < R_OUTER_LED else "перевірити на живому модулі. ")
+         + f"Кріплення: {FIX_DEFAULT}."),
+        ("ЗАЗОР І РІВНОМІРНІСТЬ", TXT,
+         f"Від вікна до ЛИЦЯ плати {n(GAP)} мм; до поверхні діода {AIR_TO_EMITTER:g} мм "
+         f"(діод виступає {n(DIODE_H)} мм). "
+         f"Крок вздовж кільця {UNI['pitch_mm']:.1f} мм → {GAP/UNI['pitch_mm']:.2f} кроку — рівне. "
+         f"Між двома ЗОВНІШНІМИ кільцями (48 і 60 діодів) крок 17.2 мм → "
+         f"{GAP/17.2:.2f} кроку — "
+         + ("рівне. " if GAP/17.2 >= bc.UNI["comfort_ratio"] else "крапки вгадуються по краю. ")
+         + "Перевіряти на живому модулі з 2-3 м."),
+        ("ОТВІР ДЛЯ КАБЕЛЮ", TXT,
+         f"Ø{n(HOLE)} мм збоку в стінці кишені, вісь на {Z_HOLE:g} мм від зовнішнього лиця, "
+         f"на {HOLE_CLOCK} год (дивлячись ззовні, мітка «ВЕРХ» угорі). "
+         f"Заводять після того, як плата стала на полицю: {wires_str}. "
+         f"Дванадцять вольт у кишеню НЕ ЗАХОДЯТЬ — контролер і понижувач стоять ЗА нею."),
+        ("ДОПУСК, ДАТА, РЕВ", NOTE,
+         f"Загальний допуск ±0.3 мм на решту розмірів без власного допуску. "
+         f"Ревізія: Rev 1.0 · дата: 2026-08-01. "
+         f"Числа аркуша — lights/data/back_core.json через back_core.py; "
+         f"правити там, після чого перезапустити генератор."),
+        ("ЯКЩО ПАНЕЛЬ УЖЕ НАДРУКОВАНА", TXT,
+         f"Те саме коло Ø{n(D_WIN)} вибрати дремелем ЗСЕРЕДИНИ, лишивши стінку {n(T_WALL)} мм. "
+         f"Товщину міряти по ходу — на просвіт добре видно, коли лишається мало."),
         ("ВІДКРИТЕ — ЗВІРИТИ З МАРСЕЛЕМ", ACC,
-         f"{SH['open']} Рівного місця треба Ø{n(D_FOOT)}, а ребра йдуть через "
+         f"{SH['open']} Рівного місця треба Ø{n(D_FOOT)}, ребра через "
          f"{n(RIB_MIN)}-{n(RIB_MAX)} мм — "
          + ("між ребрами при кроці 150 мм коло НЕ ВЛАЗИТЬ, ребро доведеться обійти або "
             "перервати. " if rib_bad else "місце є не в кожному прольоті. ")
          + WIN["open_fix"]),
-        ("ЧИСЛА", NOTE,
-         "Усі розміри аркуша беруться з lights/data/back_core.json через back_core.py. "
-         "Правити треба там: креслення перемальовується командою, руками в ньому нічого "
-         "не виправляють."),
     ]
 
 
@@ -548,11 +711,11 @@ def notes_block(x0=306.0, y0=57.0, w=272.0):
         o.append(txt(x0 + 5, y, f"{i}. {head}", F_NOTE, color, weight="600"))
         if color is ACC:
             o.append(rect(x0, y - 3.4, 1.1, 4.6, ACC))
-        y += 4.3
+        y += 4.4
         for ln in textwrap.wrap(body, wrap_at):
             o.append(txt(x0 + 5, y, ln, F_NOTE, NOTE if color is not ACC else "#d8a978"))
-            y += 4.0
-        y += 2.4
+            y += 4.1
+        y += 2.5
     o.append("</g>")
     return o
 
@@ -571,22 +734,25 @@ def sheet():
          txt(19, 39, "Hero Armor · Burning Man 2026 · система «світло» · вузол «ядро»",
              F_TINY, NOTE)]
 
-    # штамп: те, що фабрикатор шукає очима першим
+    # штамп: те, що фабрикатор шукає очима першим.
+    # Матеріал у штампі — матеріал ВІКНА (з print_brief), а не обшивки (shell.material).
+    win_material = BRIEF["material"]
     x0, y0, wt, rows = 372.0, M, W - M - 372.0, [
-        ("аркуш", "A2 594×420 мм, друкувати без масштабування"),
-        ("масштаб", "вид зовні 1:1 · розріз А-А 2:1"),
-        ("матеріал", f"{SH['material']}, білий · стінка вікна {n(T_WALL)} мм"),
+        ("аркуш",   f"A2 {W:.0f}×{H:.0f} мм, друкувати без масштабування"),
+        ("масштаб", f"вид зовні 1:1 · розріз А-А {S2:.0f}:1"),
+        ("матеріал вікна", f"{win_material}, білий · стінка {n(T_WALL)} мм"),
+        ("ревізія / дата", "Rev 1.0 · 2026-08-01"),
         ("джерело чисел", "lights/data/back_core.json"),
     ]
     hrow = (Y_HEAD - M) / len(rows)
     o.append(rect(x0, y0, wt, Y_HEAD - M, "none", FRAME, 0.4))
-    o.append(line(x0 + 40, y0, x0 + 40, Y_HEAD, FRAME, 0.3))
+    o.append(line(x0 + 45, y0, x0 + 45, Y_HEAD, FRAME, 0.3))
     for i, (k, v) in enumerate(rows):
         yy = y0 + hrow * (i + 1)
         if i:
             o.append(line(x0, y0 + hrow * i, x0 + wt, y0 + hrow * i, FRAME, 0.25))
         o.append(txt(x0 + 2.5, yy - 2.4, k, F_TINY, NOTE))
-        o.append(txt(x0 + 43, yy - 2.4, v, F_TINY, TXT))
+        o.append(txt(x0 + 47, yy - 2.4, v, F_TINY, TXT))
     return o
 
 
@@ -621,12 +787,21 @@ def main():
     out.write_text(svg())
     print(f"вікно Ø{n(D_WIN)} у панелі {n(SAND)} мм → стінка {n(T_WALL)} мм; "
           f"плата Ø{n(D_BOARD)} на полиці {n(GAP)} мм углиб")
-    print(f"кишеня Ø{n(D_BORE)} (плата + {n(CLR)}) · стакан углиб {n(Z_END)} мм · "
-          f"отвір Ø{n(HOLE)} на {n(Z_HOLE)} мм від лиця")
+    print(f"кишеня Ø{n(D_BORE)} (плата + {n(CLR)}) · стакан Ø{D_SKIRT:g} · "
+          f"глибина {Z_END:g} мм · отвір Ø{n(HOLE)} на {Z_HOLE:g} мм від лиця, "
+          f"на {HOLE_CLOCK} год")
+    print(f"стінка у вікні {n(PW)} мм, у кишені {n(round(R_SKIRT-R_BORE,2))} мм; "
+          f"R{n(INNER_FILLET)} у внутр. куті")
+    print(f"air to emitter: {AIR_TO_EMITTER:g} мм (від вікна до поверхні діода); "
+          f"air to PCB: {n(GAP)} мм")
+    print(f"uniformity: вздовж кільця 12/{PITCH:.1f}={GAP/PITCH:.2f}; "
+          f"між зовн. кільцями 12/17.2=0.70 — перевіряти")
     print(f"рівного місця треба Ø{n(D_FOOT)}, ребра через {n(RIB_MIN)}-{n(RIB_MAX)} мм — "
           + ("не влазить між ребрами, питати Марселя"
              if D_FOOT > RIB_MIN else "має влізти"))
-    print(f"креслення: {out.name}")
+    print(f"матеріал вікна: {BRIEF['material']} (тільки білий)")
+    print(f"кріплення плати: {FIX_DEFAULT}")
+    print(f"Rev 1.0 · 2026-08-01 · {out.name}")
 
 
 if __name__ == "__main__":

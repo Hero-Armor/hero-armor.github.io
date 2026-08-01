@@ -145,7 +145,7 @@
       <div class="ctrl"><label>Діаметр світної частини <b id="v-win"></b></label>
         <input type="range" id="win" min="60" max="260" step="5" value="180" aria-label="Розмір вікна"></div>
       <div class="ctrl"><label>Зазор від плати до вікна <b id="v-gap"></b></label>
-        <input type="range" id="gap" min="3" max="40" step="1" value="12" aria-label="Зазор"></div>
+        <input type="range" id="gap" min="3" max="40" step="1" value="18" aria-label="Зазор"></div>
       <div class="ctrl"><label>Товщина вікна <b id="v-thk"></b></label>
         <input type="range" id="thk" min="0.8" max="3" step="0.1" value="1.6" aria-label="Товщина"></div>
     </div>
@@ -154,7 +154,7 @@
       <div class="tiles" id="tiles"></div>
 
       <div class="bar-row">
-        <div class="k">Рівність світла — зазор проти кроку між діодами</div>
+        <div class="k">Рівність світла — зазор проти ГІРШОГО кроку (між кільцями, не вздовж)</div>
         <div class="bar"><div class="fill lux" id="uni-bar" style="width:0%"></div>
           <div class="mark" id="uni-mark" style="left:50%"></div></div>
         <div class="bar-legend"><span>крапки видно</span><span id="uni-now"></span><span>рівне гало</span></div>
@@ -287,6 +287,9 @@
   let cur = CFG.chosen;
 
   function pitch(m){
+    // Гірший із двох кроків: у набору вкладених кілець проміжок МІЖ кільцями
+    // більший за крок уздовж кільця, і саме він вирішує, чи рівний буде край.
+    if (m.pitch_worst_mm) return m.pitch_worst_mm;
     if (m.pitch_mm) return m.pitch_mm;
     if (m.form === "ring") return Math.PI * m.size_mm / m.diodes;
     const side = Math.round(Math.sqrt(m.diodes));

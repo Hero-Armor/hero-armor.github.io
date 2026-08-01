@@ -31,7 +31,7 @@
 <text x="52" y="486" font-size="11" fill="#b07c14">вітер і пил</text>
 <text x="52" y="502" font-size="11" fill="#b07c14">напрямок: південний захід</text>
 <line x1="278" y1="300" x2="795" y2="300" stroke="#b35b1e" stroke-width="2.5"/>
-<text x="507" y="276" text-anchor="middle" font-size="11" fill="#b35b1e">магістраль світла AWG 8 · звук іде своїм кабелем</text>
+<text x="507" y="276" text-anchor="middle" font-size="11" fill="#b35b1e">магістраль світла — товстий кабель AWG 8 · звук іде своїм кабелем</text>
 <line x1="278" y1="306" x2="278" y2="336" stroke="#d8d5c9" stroke-width="0.8"/>
 <line x1="795" y1="321" x2="795" y2="336" stroke="#d8d5c9" stroke-width="0.8"/>
 <line x1="278" y1="330" x2="795" y2="330" stroke="#3d6f96" stroke-width="1.5" marker-start="url(#site-dim)" marker-end="url(#site-dim)"/>
