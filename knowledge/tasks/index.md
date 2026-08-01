@@ -55,3 +55,4 @@
 * [Марселю: вікно ядра на спині — коло Ø180 мм однією стінкою 1.6 мм білого ASA](marseliu-vikno-iadra-na-spyni-kolo-180-mm-odniieiu-stinkoiu-.md) - до роботи
 * [Замовити ядро на спині: кільця 241 діод + контролер GLEDOPTO + понижувач 12→5 В](zamovyty-iadro-na-spyni-kiltsia-241-diod-kontroler-gledopto-.md) - до роботи
 * [Заміряти ватметром реальну частку світла ядра в переливі](zamiriaty-vatmetrom-realnu-chastku-svitla-iadra-v-perelyvi.md) - чекаємо
+* [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) - до роботи

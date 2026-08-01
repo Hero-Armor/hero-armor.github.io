@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель: Щит → коробка WLED (Гр.2)"
 description: "Ancor 8/2 AWG (наявний) — AWG 8. найважча гілка — уся стрічка"
+resource: "https://www.amazon.com/dp/B000NV2ATU"
 tags: ["lights"]
 quantity: "~5 м"
 price: "—"

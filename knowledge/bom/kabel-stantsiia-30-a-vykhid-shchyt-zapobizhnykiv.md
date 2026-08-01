@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель: Станція (30 А вихід) → щит запобіжників"
 description: "Ancor 8/2 AWG — наявний, докуповувати не треба. Магістраль СВІТЛА: звук на ній не висить, у нього свій кабель"
+resource: "https://www.amazon.com/dp/B000NV2ATU"
 tags: ["lights"]
 quantity: "~8 м"
 price: "—"

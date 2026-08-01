@@ -54,7 +54,8 @@
 * [Кабель: Коробка → врізні вогні торця](kabel-korobka-vrizni-vohni-tortsia.md) - —, купити
 * [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - ~$25, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - ~$30, купити
-* [Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)](svitlovidbyvni-strichky-poz-3-4-bili-5-zhovta.md) - ~$20, купити
+* [Світловідбивна стрічка на корпус — БІЛА (поз. №3,4)](svitlovidbyvna-strichka-na-korpus-bila-poz-3-4.md) - ~$10, купити
+* [Світловідбивна стрічка на корпус — ЖОВТА (поз. №5)](svitlovidbyvna-strichka-na-korpus-zhovta-poz-5.md) - ~$11, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](lifepo4-12-v-100-ah-bufer-pid-svitlo.md) - ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](zariadnyk-14-6-v-20-30-a-z-anderson.md) - ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) - $201, купити

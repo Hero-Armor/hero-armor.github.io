@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель XT150 для порту розширення (готовий)"
 description: "Готових повно (Amazon/AliExpress/eBay), АЛЕ резистора 1 кОм у них нема — його все одно доведеться додати. Тому шлях Bluetti чистіший, якщо не хочемо паяти"
+resource: "https://www.amazon.com/dp/B0GRZNP8LC"
 tags: ["solar"]
 quantity: "1"
 price: "~$25"

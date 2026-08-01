@@ -25,4 +25,5 @@ generated: { by: "process:site-build" }
 
 * [3M 983-326 світлоповертальна стрічка DOT-C2, 2"×30'](/bom/3m-983-326-svitlopovertalna-strichka-dot-c2-2-30.md) — $38.39, купити
 * [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](/bom/katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) — $12.25, купити
-* [Світловідбивні стрічки (поз. №3,4 білі + №5 жовта)](/bom/svitlovidbyvni-strichky-poz-3-4-bili-5-zhovta.md) — ~$20, купити
+* [Світловідбивна стрічка на корпус — БІЛА (поз. №3,4)](/bom/svitlovidbyvna-strichka-na-korpus-bila-poz-3-4.md) — ~$10, купити
+* [Світловідбивна стрічка на корпус — ЖОВТА (поз. №5)](/bom/svitlovidbyvna-strichka-na-korpus-zhovta-poz-5.md) — ~$11, купити

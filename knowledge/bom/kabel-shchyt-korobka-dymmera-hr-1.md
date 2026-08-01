@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель: Щит → коробка диммера (Гр.1)"
 description: "Ancor 12/2 AWG — AWG 12. до коробки з ШІМ-диммером"
+resource: "https://www.amazon.com/dp/B000NV0APG"
 tags: ["lights"]
 quantity: "~4 м"
 price: "—"

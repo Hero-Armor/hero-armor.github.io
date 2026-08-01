@@ -2,6 +2,7 @@
 type: "Part"
 title: "Gebildet LED 12 мм, металеві"
 description: "Лампи на корпусі робота: голова 4, плечі 2, груди, коліно, стопа. IP65"
+resource: "https://www.amazon.com/dp/B09PFMXBNW"
 tags: ["lights"]
 quantity: "8+2"
 price: "—"

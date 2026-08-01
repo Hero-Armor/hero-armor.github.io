@@ -106,6 +106,43 @@ def image_from_engine(asin, title):
     return None
 
 
+def slug_of(url):
+    """Ім'я файлу для товару не з Amazon — за доменом і хвостом адреси."""
+    tail = re.sub(r"^https?://(www\.)?", "", url or "")
+    return re.sub(r"[^a-z0-9]+", "-", tail.lower()).strip("-")[:60] or None
+
+
+def image_from_page(url):
+    """Фото зі сторінки товару поза Amazon: og:image і найбільша картинка.
+
+    Правило Івана 01.08: посилання без фото — це половина позиції, і не всі
+    товари живуть на Amazon (Victron, AC Infinity, кейси). Тут не з чим звіряти
+    ASIN, тому беремо тільки те, що сама сторінка оголосила своїм зображенням.
+    """
+    body = json.dumps({"url": url, "formats": ["rawHtml"]}).encode()
+    req = urllib.request.Request(FIRECRAWL, data=body,
+                                 headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            html = (json.loads(r.read().decode("utf-8", "ignore"))
+                    .get("data") or {}).get("rawHtml") or ""
+    except Exception as e:
+        print(f"    firecrawl: {e}")
+        return None
+    for p in (r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"',
+              r'<meta[^>]+name="twitter:image"[^>]+content="([^"]+)"',
+              r'<link[^>]+rel="image_src"[^>]+href="([^"]+)"'):
+        m = re.search(p, html)
+        if m:
+            src = m.group(1).replace("&amp;", "&")
+            if src.startswith("//"):
+                src = "https:" + src
+            if src.startswith("/"):
+                src = re.match(r"^https?://[^/]+", url).group(0) + src
+            return src
+    return None
+
+
 def save_thumb(url, dest):
     from PIL import Image
     req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -132,9 +169,9 @@ def main():
     bom = json.loads(BOM_FILE.read_text())
     todo = []
     for b in bom:
-        asin = asin_of(b.get("url", ""))
-        if not asin:
+        if not b.get("url"):
             continue
+        asin = asin_of(b["url"])
         if a.only and a.only.lower() not in b["item"].lower():
             continue
         have = b.get("img") and (ROOT / "site" / b["img"]).exists()
@@ -147,22 +184,26 @@ def main():
     print(f"позицій до роботи: {len(todo)}")
     got = 0
     for b, asin in todo:
-        print(f"  · {b['item'][:60]} [{asin}]")
+        name = asin or slug_of(b["url"])
+        print(f"  · {b['item'][:60]} [{name}]")
         if a.dry:
             continue
-        # Amazon час від часу віддає капчу — пробуємо тричі, потім рушій
         src = None
-        for attempt in range(3):
-            src = image_from_html(scrape(asin), asin)
-            if src:
-                break
-            time.sleep(2.0 * (attempt + 1))
-        src = src or image_from_engine(asin, b["item"])
+        if asin:
+            # Amazon час від часу віддає капчу — пробуємо тричі, потім рушій
+            for attempt in range(3):
+                src = image_from_html(scrape(asin), asin)
+                if src:
+                    break
+                time.sleep(2.0 * (attempt + 1))
+            src = src or image_from_engine(asin, b["item"])
+        else:
+            src = image_from_page(b["url"])
         if not src:
             print("    фото не знайшлось — лишаю без картинки")
             continue
         try:
-            size = save_thumb(src, IMG_DIR / f"{asin}.jpg")
+            size = save_thumb(src, IMG_DIR / f"{name}.jpg")
         except Exception as e:
             print(f"    завантаження: {e}")
             continue
@@ -170,7 +211,7 @@ def main():
         cur = json.loads(BOM_FILE.read_text())
         for x in cur:
             if x.get("url") == b.get("url") and x["item"] == b["item"]:
-                x["img"] = f"assets/bom/{asin}.jpg"
+                x["img"] = f"assets/bom/{name}.jpg"
         BOM_FILE.write_text(json.dumps(cur, ensure_ascii=False, indent=1) + "\n")
         got += 1
         print(f"    ok — {size // 1024} КБ")

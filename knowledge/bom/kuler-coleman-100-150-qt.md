@@ -2,7 +2,7 @@
 type: "Part"
 title: "Кулер Coleman 100-150 qt"
 description: "АЛЬТЕРНАТИВА фільтрам: гіпотеза теплової маси. Внутрішні розміри ЗВІРИТИ руками — виробник їх не публікує"
-resource: ""
+resource: "https://www.amazon.com/dp/B0D2VSY4PZ"
 tags: ["enclosure"]
 quantity: "1"
 price: "$100-140"

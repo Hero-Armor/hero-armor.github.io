@@ -2,6 +2,7 @@
 type: "Part"
 title: "LiFePO4 12 В 100 Ah (буфер під світло)"
 description: "КАНДИДАТ, рішення не прийняте. Живить світло напряму з клем — знімає 126-ватне обмеження станції. ~1200 Вт·год буфера"
+resource: "https://www.amazon.com/dp/B094NN5KWY"
 tags: ["solar"]
 quantity: "1"
 price: "~$250"

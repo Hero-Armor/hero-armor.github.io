@@ -76,6 +76,7 @@ generated: { by: "process:site-build" }
 * [Реле на живлення стрічки — рвати на день](/tasks/rele-na-zhyvlennia-strichky-rvaty-na-den.md) — до роботи
 * [Замовити ядро на спині: кільця 241 діод + контролер GLEDOPTO + понижувач 12→5 В](/tasks/zamovyty-iadro-na-spyni-kiltsia-241-diod-kontroler-gledopto-.md) — до роботи
 * [Заміряти ватметром реальну частку світла ядра в переливі](/tasks/zamiriaty-vatmetrom-realnu-chastku-svitla-iadra-v-perelyvi.md) — чекаємо
+* [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](/tasks/vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) — до роботи
 
 # Закупівля
 

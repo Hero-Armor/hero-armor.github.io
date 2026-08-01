@@ -121,6 +121,30 @@ for name in ("bom", "decisions", "tasks", "orders"):
         elif keys and s not in keys:
             problems.append(f"{name}.json[{i}] система «{s}» нема в systems.json")
 
+# --- 4б. закупівля без лінка або фото --------------------------------------
+# Правило Івана 01.08.2026: позиція, яку можна купити, несе посилання на
+# КОНКРЕТНУ сторінку товару і його фото. Ще не обрали — так і пишемо словами
+# в нотатці («обираємо», «робимо самі», «за місцем»), а не лишаємо порожньо.
+# Тут не падаємо, а попереджаємо: список живе і завжди має свіжі дірки.
+UNDECIDED = ("обира", "не обран", "робимо самі", "за місцем", "кандидат",
+             "уточнити", "не купуємо")
+try:
+    gaps = []
+    for it in json.loads((DATA / "bom.json").read_text()):
+        text = (it.get("item", "") + it.get("note", "") + it.get("qty", "")).lower()
+        if any(w in text for w in UNDECIDED):
+            continue
+        miss = [w for w, ok in (("лінка", it.get("url")), ("фото", it.get("img"))) if not ok]
+        if miss:
+            gaps.append(f"{it['item'][:44]} — нема {' і '.join(miss)}")
+    if gaps:
+        print(f"закупівля: {len(gaps)} позицій без лінка/фото (правило Івана 01.08):")
+        for g in gaps[:40]:
+            print("   ·", g)
+        print()
+except Exception:
+    pass
+
 # --- 5. картки систем із битими файлами ------------------------------------
 try:
     for c in json.loads((DATA / "systems.json").read_text()):

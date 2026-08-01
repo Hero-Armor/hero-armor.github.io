@@ -2,6 +2,7 @@
 type: "Part"
 title: "Алюмінієвий U-профіль для LED у настил подіуму"
 description: "зі старої бази (19.07): паз 20мм у настилі під стрічку"
+resource: "https://www.amazon.com/dp/B08ZK84GCB"
 tags: ["lights"]
 quantity: "за місцем"
 price: "~$30"

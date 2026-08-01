@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель MC4 + роз'єми для масиву"
 description: "Від масиву до сонячного входу станції"
+resource: "https://www.amazon.com/dp/B0973W86JD"
 tags: ["solar"]
 quantity: "компл."
 price: "—"

@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель: Станція (авто-вихід 12 В) → аудіо-вузол"
 description: "16/2 AWG — другий кабель до подіуму, тільки для звуку. Просадка ~1% при 2 А. Довжина прикидка, міряти по місцю"
+resource: "https://www.amazon.com/dp/B07321KYP9"
 tags: ["audio"]
 quantity: "~8 м"
 price: "—"

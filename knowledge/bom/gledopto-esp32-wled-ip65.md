@@ -2,6 +2,7 @@
 type: "Part"
 title: "GLEDOPTO ESP32 WLED, IP65"
 description: "Керує «біжучою водою» по WiFi; другий — запас"
+resource: "https://www.amazon.com/dp/B0DDXL24CX"
 tags: ["lights"]
 quantity: "2"
 price: "$23"

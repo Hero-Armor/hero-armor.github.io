@@ -2,7 +2,7 @@
 type: "Part"
 title: "Пасивна жалюзі-решітка на випуск"
 description: "Повітря виходить самопливом; інших нефільтрованих отворів бути не повинно"
-resource: ""
+resource: "https://www.amazon.com/dp/B08L4M94LM"
 tags: ["enclosure"]
 quantity: "1"
 price: "$15"

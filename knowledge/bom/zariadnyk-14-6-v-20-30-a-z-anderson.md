@@ -2,6 +2,7 @@
 type: "Part"
 title: "Зарядник 14.6 В 20-30 А з Anderson"
 description: "КАНДИДАТ у пару до АКБ: станція через розетку тримає акумулятор зарядженим. Bioenno BPC-1520A або аналог"
+resource: "https://www.amazon.com/dp/B08PZ7LBT6"
 tags: ["solar"]
 quantity: "1"
 price: "~$60"

@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель: Щит → коробка аварійної (Гр.3А)"
 description: "Ancor 12/2 AWG — AWG 12. окрема лінія, гасне останньою"
+resource: "https://www.amazon.com/dp/B000NV0APG"
 tags: ["lights"]
 quantity: "~6 м"
 price: "—"

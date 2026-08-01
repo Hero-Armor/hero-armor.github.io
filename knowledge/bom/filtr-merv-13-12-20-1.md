@@ -2,7 +2,7 @@
 type: "Part"
 title: "Фільтр MERV 13 12×20×1\""
 description: "Фінішна ступінь, три штуки на тиждень"
-resource: ""
+resource: "https://www.amazon.com/dp/B0CN3XS4SF"
 tags: ["enclosure"]
 quantity: "3"
 price: "$12"

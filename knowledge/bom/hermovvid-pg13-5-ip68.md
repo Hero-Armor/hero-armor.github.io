@@ -2,7 +2,7 @@
 type: "Part"
 title: "Гермоввід PG13.5 IP68"
 description: "Силова лінія 12 В. Виводити кабель під кришкою не можна — фільтрація втратить сенс"
-resource: ""
+resource: "https://www.amazon.com/dp/B0FC2ZZDP3"
 tags: ["enclosure"]
 quantity: "4"
 price: "$10"

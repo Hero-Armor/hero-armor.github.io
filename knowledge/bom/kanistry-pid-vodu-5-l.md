@@ -2,7 +2,7 @@
 type: "Part"
 title: "Каністри під воду 5 л"
 description: "До гіпотези кулера: 30-40 кг теплової маси, зручніше каністрами ніж наливом — виносити на ніч остигати"
-resource: ""
+resource: "https://www.amazon.com/dp/B0B1MJX8MX"
 tags: ["enclosure"]
 quantity: "8"
 price: "$40"

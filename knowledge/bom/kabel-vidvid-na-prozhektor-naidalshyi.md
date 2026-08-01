@@ -2,6 +2,7 @@
 type: "Part"
 title: "Кабель: Відвід на прожектор (найдальший)"
 description: "16/2 AWG у гофрі — AWG 16. штатний хвіст Gardencoin + подовження; несе ОДИН світильник"
+resource: "https://www.amazon.com/dp/B07321KYP9"
 tags: ["lights"]
 quantity: "~2 м"
 price: "—"
