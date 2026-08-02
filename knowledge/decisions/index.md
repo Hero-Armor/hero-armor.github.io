@@ -3,6 +3,15 @@
 
 # Рішення
 
+* [Пост контролю в щиті: видно вольти і ватти по кожній лінії, і є чим вимкнути](post-kontroliu-v-shchyti-vydno-volty-i-vatty-po-kozhnii-lini.md)
+* [Контрольні точки на кінцях ліній — щоб бачити просадку, а не рахувати її](kontrolni-tochky-na-kintsiakh-linii-shchob-bachyty-prosadku-.md)
+* [Захисний лак на всі плати — MG Chemicals 422B, два шари до виїзду](zakhysnyi-lak-na-vsi-platy-mg-chemicals-422b-dva-shary-do-vy.md)
+* [Металева рама і труби подіуму — заземлити на мінус системи](metaleva-rama-i-truby-podiumu-zazemlyty-na-minus-systemy.md)
+* [Буфер-конденсатор на вхід адресної стрічки — від пускового струму](bufer-kondensator-na-vkhid-adresnoi-strichky-vid-puskovoho-s.md)
+* [Підставка під станцію — мінімум 5 см від поверхні плайї](pidstavka-pid-stantsiiu-minimum-5-sm-vid-poverkhni-plaii.md)
+* [Чистити панелі щоранку — водою, не в полуденний пік](chystyty-paneli-shchoranku-vodoiu-ne-v-poludennyi-pik.md)
+* [Геометрія зірки підтверджена кресленням Rev 2.1: коло R 346 мм (2.17 м), рукав 1.22 м](heometriia-zirky-pidtverdzhena-kreslenniam-rev-2-1-kolo-r-34.md)
+* [Кнопки взаємодії на прототипі голови — вирішити 1 чи 3 (Франк)](knopky-vzaiemodii-na-prototypi-holovy-vyrishyty-1-chy-3-fran.md)
 * [Рама з дерева 2×4 Douglas Fir під кутом 20°](rama-z-dereva-2-4-douglas-fir-pid-kutom-20.md)
 * [Анкери lag screws 3/8"×10" замість арматури](ankery-lag-screws-3-8-10-zamist-armatury.md)
 * [Такелаж рами на сталевих талрепах](takelazh-ramy-na-stalevykh-talrepakh.md)

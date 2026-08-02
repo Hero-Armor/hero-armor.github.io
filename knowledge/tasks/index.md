@@ -1,6 +1,9 @@
 # Задачі
 
 
+* [Перевірити ватметри на малому струмі до виїзду](pereviryty-vatmetry-na-malomu-strumi-do-vyizdu.md) - чекаємо
+* [Вивести контрольні точки на кінцях трьох ліній під щуп](vyvesty-kontrolni-tochky-na-kintsiakh-trokh-linii-pid-shchup.md) - чекаємо
+* [Зібрати пост контролю в щиті: три ватметри груп, ватметр вводу, три тумблери](zibraty-post-kontroliu-v-shchyti-try-vatmetry-hrup-vatmetr-v.md) - до роботи
 * [Перерахувати раму під фактичний масив після вибору панелей](pererakhuvaty-ramu-pid-faktychnyi-masyv-pislia-vyboru-panele.md) - чекаємо
 * [Відповісти Володимиру пакетом: помітність, отвір під вогник, труба прожектора, канал під стрічку](vidpovisty-volodymyru-paketom-pomitnist-otvir-pid-vohnyk-tru.md) - до роботи
 * [Замовити врізні вогні в торець подіуму — 24 шт класу 0.6 Вт](zamovyty-vrizni-vohni-v-torets-podiumu-24-sht-klasu-0-6-vt.md) - до роботи
@@ -60,3 +63,6 @@
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) - до роботи
 * [Прошити ESP32 і пройти пʼять перевірок на столі (картка, звук, радар, BLE, потенціометр ампа)](proshyty-esp32-i-proity-piat-perevirok-na-stoli-kartka-zvuk-.md) - до роботи
 * [Звірити склад коробок: у листі Amazon 18 позицій, у нашому списку 19](zviryty-sklad-korobok-u-lysti-amazon-18-pozytsii-u-nashomu-s.md) - до роботи
+* [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду](nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) - до роботи
+* [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) - чекаємо
+* [Заземлити металеву раму подіуму на мінус шини](zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) - чекаємо

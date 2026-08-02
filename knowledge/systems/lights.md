@@ -12,6 +12,11 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Пост контролю в щиті: видно вольти і ватти по кожній лінії, і є чим вимкнути](/decisions/post-kontroliu-v-shchyti-vydno-volty-i-vatty-po-kozhnii-lini.md)
+* [Контрольні точки на кінцях ліній — щоб бачити просадку, а не рахувати її](/decisions/kontrolni-tochky-na-kintsiakh-linii-shchob-bachyty-prosadku-.md)
+* [Металева рама і труби подіуму — заземлити на мінус системи](/decisions/metaleva-rama-i-truby-podiumu-zazemlyty-na-minus-systemy.md)
+* [Буфер-конденсатор на вхід адресної стрічки — від пускового струму](/decisions/bufer-kondensator-na-vkhid-adresnoi-strichky-vid-puskovoho-s.md)
+* [Геометрія зірки підтверджена кресленням Rev 2.1: коло R 346 мм (2.17 м), рукав 1.22 м](/decisions/heometriia-zirky-pidtverdzhena-kreslenniam-rev-2-1-kolo-r-34.md)
 * [Запасний варіант Володимира — світло без стрічки і без нижніх вогнів](/decisions/zapasnyi-variant-volodymyra-svitlo-bez-strichky-i-bez-nyzhni.md)
 * [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](/decisions/na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](/decisions/nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
@@ -49,6 +54,9 @@ generated: { by: "process:site-build" }
 
 # Задачі
 
+* [Перевірити ватметри на малому струмі до виїзду](/tasks/pereviryty-vatmetry-na-malomu-strumi-do-vyizdu.md) — чекаємо
+* [Вивести контрольні точки на кінцях трьох ліній під щуп](/tasks/vyvesty-kontrolni-tochky-na-kintsiakh-trokh-linii-pid-shchup.md) — чекаємо
+* [Зібрати пост контролю в щиті: три ватметри груп, ватметр вводу, три тумблери](/tasks/zibraty-post-kontroliu-v-shchyti-try-vatmetry-hrup-vatmetr-v.md) — до роботи
 * [Відповісти Володимиру пакетом: помітність, отвір під вогник, труба прожектора, канал під стрічку](/tasks/vidpovisty-volodymyru-paketom-pomitnist-otvir-pid-vohnyk-tru.md) — до роботи
 * [Замовити врізні вогні в торець подіуму — 24 шт класу 0.6 Вт](/tasks/zamovyty-vrizni-vohni-v-torets-podiumu-24-sht-klasu-0-6-vt.md) — до роботи
 * [Звірити з Володимиром посадковий отвір під обраний врізний вогник](/tasks/zviryty-z-volodymyrom-posadkovyi-otvir-pid-obranyi-vriznyi-v.md) — чекаємо
@@ -79,6 +87,7 @@ generated: { by: "process:site-build" }
 * [Замовити ядро на спині: кільця 241 діод + контролер GLEDOPTO + понижувач 12→5 В](/tasks/zamovyty-iadro-na-spyni-kiltsia-241-diod-kontroler-gledopto-.md) — до роботи
 * [Заміряти ватметром реальну частку світла ядра в переливі](/tasks/zamiriaty-vatmetrom-realnu-chastku-svitla-iadra-v-perelyvi.md) — чекаємо
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](/tasks/vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) — до роботи
+* [Заземлити металеву раму подіуму на мінус шини](/tasks/zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) — чекаємо
 
 # Закупівля
 
@@ -119,3 +128,7 @@ generated: { by: "process:site-build" }
 * [Набір кілець WS2812B 241 діод — ядро на спині](/bom/nabir-kilets-ws2812b-241-diod-iadro-na-spyni.md) — $25.99, купити
 * [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](/bom/gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) — $19.07, купити
 * [Понижувач 12 В → 5 В, 10 А — під ядро на спині](/bom/ponyzhuvach-12-v-5-v-10-a-pid-iadro-na-spyni.md) — ~$10, купити
+* [Ватметр Гр.1+Гр.2+Гр.3А — DROK DC 4.5–100 В / 0–50 А, LED-дисплей з шунтом](/bom/vatmetr-hr-1-hr-2-hr-3a-drok-dc-4-5-100-v-0-50-a-led-dysplei.md) — $13.43/шт (~$40 разом), купити
+* [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](/bom/vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) — $16.12, купити
+* [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](/bom/tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) — $7.79, купити
+* [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](/bom/klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) — $29.47, купити

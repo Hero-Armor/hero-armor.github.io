@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Підставка під станцію — мінімум 5 см від поверхні плайї](/decisions/pidstavka-pid-stantsiiu-minimum-5-sm-vid-poverkhni-plaii.md)
 * [Ящик станції позначаємо: катафоти зовні плюс маркерний вогник у стінці](/decisions/iashchyk-stantsii-poznachaiemo-katafoty-zovni-plius-markerny.md)
 * [Дмемо всередину через фільтр, а не витягуємо назовні](/decisions/dmemo-vseredynu-cherez-filtr-a-ne-vytiahuiemo-nazovni.md)
 * [Фільтрація двоступенева: поролон спереду, MERV 13 фінішем](/decisions/filtratsiia-dvostupeneva-porolon-speredu-merv-13-finishem.md)

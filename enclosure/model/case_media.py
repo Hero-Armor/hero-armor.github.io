@@ -107,12 +107,12 @@ SITE_SEARCH = {
 VERIFY = {
     "Monoprice 30×19×15.8 на колесах": ["monoprice", "case"],
     "Ящик Costco 27 gal (Greenmade)": ["greenmade", "27"],
-    "Coleman 150 qt (кулер)": ["150", "cooler"],
-    "Coleman 100 qt на колесах (кулер)": ["100", "cooler"],
-    "Rubbermaid ActionPacker 24 gal": ["actionpacker", "24"],
-    "Rubbermaid ActionPacker 35 gal": ["actionpacker", "35"],
+    "Coleman 150 qt (кулер)": ["coleman", "150"],
+    "Coleman 100 qt на колесах (кулер)": ["coleman", "100", "wheel"],
+    "Rubbermaid ActionPacker 24 gal": ["action", "24"],
+    "Rubbermaid ActionPacker 35 gal": ["action", "35"],
     "Apache 4800 (Harbor Freight)": ["apache", "4800"],
-    "Seahorse SE-1220": ["se-1220"],
+    "Seahorse SE-1220": ["seahorse", "1220"],
 }
 
 
@@ -231,16 +231,96 @@ def save_thumb(img_url, referer, dest, box=520):
     return im.size
 
 
+def amazon_search(query):
+    """Пошук в Amazon напряму.
+
+    Сайти виробників і пошуковики ріжуть наш серверний IP, а Amazon —
+    ні (перевірено), і побутові позиції на кшталт кулерів чи ящиків там є всі.
+    Фото беремо з `data-a-dynamic-image` картки: og:image в Amazon — це значок
+    Prime, а не товар (одного разу він так і приїхав у таблицю).
+    """
+    html = get("https://www.amazon.com/s?k=" + urllib.parse.quote_plus(query)).decode("utf-8", "ignore")
+    out = []
+    for href in re.findall(r'href="(/[^"]*?/dp/[A-Z0-9]{10})', html):
+        link = "https://www.amazon.com" + href.split("?")[0]
+        if link not in out:
+            out.append(link)
+    return out[:10]
+
+
+def amazon_image(url, tokens):
+    html = get(url).decode("utf-8", "ignore")
+    title = re.search(r"<title[^>]*>(.*?)</title>", html, re.S | re.I)
+    title = re.sub(r"\s+", " ", title.group(1)).strip() if title else ""
+    low = title.lower()
+    for t in tokens:
+        if t.lower() not in low:
+            return None, title, f"у назві товару нема «{t}»"
+    m = re.search(r'data-a-dynamic-image="([^"]+)"', html)
+    if not m:
+        return None, title, "на картці нема фото товару"
+    sizes = json.loads(m.group(1).replace("&quot;", '"'))
+    best = max(sizes.items(), key=lambda kv: kv[1][0] * kv[1][1])[0]
+    return best, title, None
+
+
+def amazon_pass(data, only=None, dry=False):
+    done = failed = 0
+    for c in data["cases"]:
+        name = c["name"]
+        if c.get("img") or (only and name not in only):
+            continue
+        tokens = VERIFY.get(name) or model_tokens(name)
+        picked = None
+        for link in amazon_search(QUERY.get(name, name)):
+            try:
+                img, title, why = amazon_image(link, tokens)
+            except Exception:
+                continue
+            if why or not img:
+                continue
+            picked = (link, img, title)
+            break
+        if not picked:
+            print(f"✗ {name}: в Amazon картки з такою назвою нема")
+            failed += 1
+            continue
+        link, img, title = picked
+        print(f"• {name}\n    → {title[:70]}\n    {link}")
+        if dry:
+            continue
+        dest = IMG_DIR / f"{slug(name)}.jpg"
+        try:
+            size = save_thumb(img, link, dest)
+        except Exception as e:
+            print(f"    ✗ фото: {str(e)[:60]}")
+            failed += 1
+            continue
+        c["url"], c["img"] = link, f"assets/cases/{dest.name}"
+        print(f"    збережено {dest.name} {size[0]}×{size[1]}")
+        done += 1
+        time.sleep(1.5)
+    return done, failed
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*", help="лише ці назви")
     ap.add_argument("--dry", action="store_true")
     ap.add_argument("--force", action="store_true", help="перезібрати вже знайдене")
+    ap.add_argument("--amazon", action="store_true",
+                    help="добрати те, чого нема, через Amazon")
     a = ap.parse_args()
 
     data = json.loads(PARAMS.read_text())
     cases = data["cases"]
     done = failed = 0
+    if a.amazon:
+        done, failed = amazon_pass(data, a.only, a.dry)
+        if not a.dry:
+            PARAMS.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
+        print(f"\nготово: {done} з фото, {failed} без")
+        return 1 if failed else 0
     for c in cases:
         name = c["name"]
         if a.only and name not in a.only:

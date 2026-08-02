@@ -12,6 +12,8 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Захисний лак на всі плати — MG Chemicals 422B, два шари до виїзду](/decisions/zakhysnyi-lak-na-vsi-platy-mg-chemicals-422b-dva-shary-do-vy.md)
+* [Кнопки взаємодії на прототипі голови — вирішити 1 чи 3 (Франк)](/decisions/knopky-vzaiemodii-na-prototypi-holovy-vyrishyty-1-chy-3-fran.md)
 * [Датчик — LD2410C mmWave, не PIR](/decisions/datchyk-ld2410c-mmwave-ne-pir.md)
 * [Радіатор TPA3116 — назовні герметичного боксу](/decisions/radiator-tpa3116-nazovni-hermetychnoho-boksu.md)
 * [Без підвищувача до 16В — 12V вистачає](/decisions/bez-pidvyshchuvacha-do-16v-12v-vystachaie.md)
@@ -41,6 +43,8 @@ generated: { by: "process:site-build" }
 * [Докупити монтажну дрібницю: гермовводи, термоусадка, джампери, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-termousadka-dzhampe.md) — до роботи
 * [Прошити ESP32 і пройти пʼять перевірок на столі (картка, звук, радар, BLE, потенціометр ампа)](/tasks/proshyty-esp32-i-proity-piat-perevirok-na-stoli-kartka-zvuk-.md) — до роботи
 * [Звірити склад коробок: у листі Amazon 18 позицій, у нашому списку 19](/tasks/zviryty-sklad-korobok-u-lysti-amazon-18-pozytsii-u-nashomu-s.md) — до роботи
+* [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду](/tasks/nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) — до роботи
+* [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](/tasks/vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) — чекаємо
 
 # Закупівля
 

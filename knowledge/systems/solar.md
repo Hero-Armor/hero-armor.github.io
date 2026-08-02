@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Чистити панелі щоранку — водою, не в полуденний пік](/decisions/chystyty-paneli-shchoranku-vodoiu-ne-v-poludennyi-pik.md)
 * [Рама з дерева 2×4 Douglas Fir під кутом 20°](/decisions/rama-z-dereva-2-4-douglas-fir-pid-kutom-20.md)
 * [Анкери lag screws 3/8"×10" замість арматури](/decisions/ankery-lag-screws-3-8-10-zamist-armatury.md)
 * [Такелаж рами на сталевих талрепах](/decisions/takelazh-ramy-na-stalevykh-talrepakh.md)
@@ -61,12 +62,18 @@ generated: { by: "process:site-build" }
 * [Дошки 2×4×8ft Douglas Fir](/bom/doshky-2-4-8ft-douglas-fir.md) — $36–45, купити
 * [Lag screws 3/8"×10" hex head, оцинковані](/bom/lag-screws-3-8-10-hex-head-otsynkovani.md) — $17, купити
 * [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](/bom/simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) — $12, купити
-* [Carriage bolts 5/16"×3" + гайки + шайби, оцинковані](/bom/carriage-bolts-5-16-3-haiky-shaiby-otsynkovani.md) — $25, купити
+* [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](/bom/carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) — $15, купити
 * [Fender washers 3/8"×1.5", оцинковані](/bom/fender-washers-3-8-1-5-otsynkovani.md) — $9, купити
-* [Eye bolts 3/8"×3" (рим-болти) для такелажу](/bom/eye-bolts-3-8-3-rym-bolty-dlia-takelazhu.md) — $13, купити
+* [Eye bolts 1/4"×3" (рим-болти) для такелажу](/bom/eye-bolts-1-4-3-rym-bolty-dlia-takelazhu.md) — $19, купити
 * [Wire rope 1/8" PVC coated, сталевий трос у ПВХ](/bom/wire-rope-1-8-pvc-coated-stalevyi-tros-u-pvkh.md) — $28, купити
 * [Turnbuckles 1/4" eye-to-eye, нержавіюча сталь](/bom/turnbuckles-1-4-eye-to-eye-nerzhaviiucha-stal.md) — $16, купити
 * [Wire rope thimbles 1/8"](/bom/wire-rope-thimbles-1-8.md) — $12, купити
 * [Wire rope clips 1/8" (затискачі троса)](/bom/wire-rope-clips-1-8-zatyskachi-trosa.md) — $11, купити
 * [Z-brackets для кріплення сонячних панелей до рами (алюмінієві)](/bom/z-brackets-dlia-kriplennia-soniachnykh-panelei-do-ramy-alium.md) — ~$15, купити
 * [Болти M8×30 + гайки M8 нержавіюча сталь (кріплення панелей)](/bom/bolty-m8-30-haiky-m8-nerzhaviiucha-stal-kriplennia-panelei.md) — $12, купити
+* [Deck screws GRK RSS #10 × 3" (для бази рами)](/bom/deck-screws-grk-rss-10-3-dlia-bazy-ramy.md) — $15, купити
+* [Deck screws 1-5/8" (для укосин і вузлів)](/bom/deck-screws-1-5-8-dlia-ukosyn-i-vuzliv.md) — $19, купити
+* [Simpson SD #9 × 1-1/2" connector screws (для кутиків A21)](/bom/simpson-sd-9-1-1-2-connector-screws-dlia-kutykiv-a21.md) — $27, купити
+* [Наждачний папір 80 grit (для торців дощок)](/bom/nazhdachnyi-papir-80-grit-dlia-tortsiv-doshchok.md) — $15, купити
+* [Impact socket 9/16" 3/8" drive (для lag screws)](/bom/impact-socket-9-16-3-8-drive-dlia-lag-screws.md) — $4, купити
+* [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $13, купити
