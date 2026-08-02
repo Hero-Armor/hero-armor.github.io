@@ -12,6 +12,7 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Запасний варіант Володимира — світло без стрічки і без нижніх вогнів](/decisions/zapasnyi-variant-volodymyra-svitlo-bez-strichky-i-bez-nyzhni.md)
 * [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](/decisions/na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](/decisions/nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
 * [Габаритні вогні на стійках прожекторів — скасовано](/decisions/habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
@@ -48,6 +49,7 @@ generated: { by: "process:site-build" }
 
 # Задачі
 
+* [Відповісти Володимиру пакетом: помітність, отвір під вогник, труба прожектора, канал під стрічку](/tasks/vidpovisty-volodymyru-paketom-pomitnist-otvir-pid-vohnyk-tru.md) — до роботи
 * [Замовити врізні вогні в торець подіуму — 24 шт класу 0.6 Вт](/tasks/zamovyty-vrizni-vohni-v-torets-podiumu-24-sht-klasu-0-6-vt.md) — до роботи
 * [Звірити з Володимиром посадковий отвір під обраний врізний вогник](/tasks/zviryty-z-volodymyrom-posadkovyi-otvir-pid-obranyi-vriznyi-v.md) — чекаємо
 * [Заміряти ватметром реальне споживання врізного вогника](/tasks/zamiriaty-vatmetrom-realne-spozhyvannia-vriznoho-vohnyka.md) — чекаємо

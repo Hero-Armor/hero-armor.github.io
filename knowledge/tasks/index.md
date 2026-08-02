@@ -1,6 +1,8 @@
 # Задачі
 
 
+* [Перерахувати раму під фактичний масив після вибору панелей](pererakhuvaty-ramu-pid-faktychnyi-masyv-pislia-vyboru-panele.md) - чекаємо
+* [Відповісти Володимиру пакетом: помітність, отвір під вогник, труба прожектора, канал під стрічку](vidpovisty-volodymyru-paketom-pomitnist-otvir-pid-vohnyk-tru.md) - до роботи
 * [Замовити врізні вогні в торець подіуму — 24 шт класу 0.6 Вт](zamovyty-vrizni-vohni-v-torets-podiumu-24-sht-klasu-0-6-vt.md) - до роботи
 * [Замовити катафоти і світлоповертальну стрічку на подіум і ящик](zamovyty-katafoty-i-svitlopovertalnu-strichku-na-podium-i-ia.md) - до роботи
 * [Звірити з Володимиром посадковий отвір під обраний врізний вогник](zviryty-z-volodymyrom-posadkovyi-otvir-pid-obranyi-vriznyi-v.md) - чекаємо

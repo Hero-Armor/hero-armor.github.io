@@ -96,3 +96,15 @@
 * [Набір кілець WS2812B 241 діод — ядро на спині](nabir-kilets-ws2812b-241-diod-iadro-na-spyni.md) - $25.99, купити
 * [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) - $19.07, купити
 * [Понижувач 12 В → 5 В, 10 А — під ядро на спині](ponyzhuvach-12-v-5-v-10-a-pid-iadro-na-spyni.md) - ~$10, купити
+* [Дошки 2×4×8ft Douglas Fir](doshky-2-4-8ft-douglas-fir.md) - $36–45, купити
+* [Lag screws 3/8"×10" hex head, оцинковані](lag-screws-3-8-10-hex-head-otsynkovani.md) - $17, купити
+* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) - $12, купити
+* [Carriage bolts 5/16"×3" + гайки + шайби, оцинковані](carriage-bolts-5-16-3-haiky-shaiby-otsynkovani.md) - $25, купити
+* [Fender washers 3/8"×1.5", оцинковані](fender-washers-3-8-1-5-otsynkovani.md) - $9, купити
+* [Eye bolts 3/8"×3" (рим-болти) для такелажу](eye-bolts-3-8-3-rym-bolty-dlia-takelazhu.md) - $13, купити
+* [Wire rope 1/8" PVC coated, сталевий трос у ПВХ](wire-rope-1-8-pvc-coated-stalevyi-tros-u-pvkh.md) - $28, купити
+* [Turnbuckles 1/4" eye-to-eye, нержавіюча сталь](turnbuckles-1-4-eye-to-eye-nerzhaviiucha-stal.md) - $16, купити
+* [Wire rope thimbles 1/8"](wire-rope-thimbles-1-8.md) - $12, купити
+* [Wire rope clips 1/8" (затискачі троса)](wire-rope-clips-1-8-zatyskachi-trosa.md) - $11, купити
+* [Z-brackets для кріплення сонячних панелей до рами (алюмінієві)](z-brackets-dlia-kriplennia-soniachnykh-panelei-do-ramy-alium.md) - ~$15, купити
+* [Болти M8×30 + гайки M8 нержавіюча сталь (кріплення панелей)](bolty-m8-30-haiky-m8-nerzhaviiucha-stal-kriplennia-panelei.md) - $12, купити

@@ -12,6 +12,9 @@ generated: { by: "process:site-build" }
 
 # Рішення
 
+* [Рама з дерева 2×4 Douglas Fir під кутом 20°](/decisions/rama-z-dereva-2-4-douglas-fir-pid-kutom-20.md)
+* [Анкери lag screws 3/8"×10" замість арматури](/decisions/ankery-lag-screws-3-8-10-zamist-armatury.md)
+* [Такелаж рами на сталевих талрепах](/decisions/takelazh-ramy-na-stalevykh-talrepakh.md)
 * [Живлення — окремий компонент, одна станція на все](/decisions/zhyvlennia-okremyi-komponent-odna-stantsiia-na-vse.md)
 * [Станція змінна за задумом, а не в аварії](/decisions/stantsiia-zminna-za-zadumom-a-ne-v-avarii.md)
 * [Панелі — несуча частина, а не страховка](/decisions/paneli-nesucha-chastyna-a-ne-strakhovka.md)
@@ -34,6 +37,7 @@ generated: { by: "process:site-build" }
 
 # Задачі
 
+* [Перерахувати раму під фактичний масив після вибору панелей](/tasks/pererakhuvaty-ramu-pid-faktychnyi-masyv-pislia-vyboru-panele.md) — чекаємо
 * [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](/tasks/test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) — чекаємо
 * [Вирішити скільки станцій і яку модель](/tasks/vyrishyty-skilky-stantsii-i-iaku-model.md) — чекаємо
 * [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — готово
@@ -54,3 +58,15 @@ generated: { by: "process:site-build" }
 * [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](/bom/victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) — $114, купити
 * [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](/bom/bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) — ~$45, купити
 * [Кабель XT150 для порту розширення (готовий)](/bom/kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) — ~$25, купити
+* [Дошки 2×4×8ft Douglas Fir](/bom/doshky-2-4-8ft-douglas-fir.md) — $36–45, купити
+* [Lag screws 3/8"×10" hex head, оцинковані](/bom/lag-screws-3-8-10-hex-head-otsynkovani.md) — $17, купити
+* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](/bom/simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) — $12, купити
+* [Carriage bolts 5/16"×3" + гайки + шайби, оцинковані](/bom/carriage-bolts-5-16-3-haiky-shaiby-otsynkovani.md) — $25, купити
+* [Fender washers 3/8"×1.5", оцинковані](/bom/fender-washers-3-8-1-5-otsynkovani.md) — $9, купити
+* [Eye bolts 3/8"×3" (рим-болти) для такелажу](/bom/eye-bolts-3-8-3-rym-bolty-dlia-takelazhu.md) — $13, купити
+* [Wire rope 1/8" PVC coated, сталевий трос у ПВХ](/bom/wire-rope-1-8-pvc-coated-stalevyi-tros-u-pvkh.md) — $28, купити
+* [Turnbuckles 1/4" eye-to-eye, нержавіюча сталь](/bom/turnbuckles-1-4-eye-to-eye-nerzhaviiucha-stal.md) — $16, купити
+* [Wire rope thimbles 1/8"](/bom/wire-rope-thimbles-1-8.md) — $12, купити
+* [Wire rope clips 1/8" (затискачі троса)](/bom/wire-rope-clips-1-8-zatyskachi-trosa.md) — $11, купити
+* [Z-brackets для кріплення сонячних панелей до рами (алюмінієві)](/bom/z-brackets-dlia-kriplennia-soniachnykh-panelei-do-ramy-alium.md) — ~$15, купити
+* [Болти M8×30 + гайки M8 нержавіюча сталь (кріплення панелей)](/bom/bolty-m8-30-haiky-m8-nerzhaviiucha-stal-kriplennia-panelei.md) — $12, купити

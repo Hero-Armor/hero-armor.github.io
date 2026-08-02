@@ -3,6 +3,10 @@
 
 # Рішення
 
+* [Рама з дерева 2×4 Douglas Fir під кутом 20°](rama-z-dereva-2-4-douglas-fir-pid-kutom-20.md)
+* [Анкери lag screws 3/8"×10" замість арматури](ankery-lag-screws-3-8-10-zamist-armatury.md)
+* [Такелаж рами на сталевих талрепах](takelazh-ramy-na-stalevykh-talrepakh.md)
+* [Запасний варіант Володимира — світло без стрічки і без нижніх вогнів](zapasnyi-variant-volodymyra-svitlo-bez-strichky-i-bez-nyzhni.md)
 * [Трасу кабелю до ящика треба позначити — чим саме, ще обираємо](trasu-kabeliu-do-iashchyka-treba-poznachyty-chym-same-shche-.md)
 * [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
