@@ -108,8 +108,15 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
     d += elm.Wire("|-").at(esp.ROUT).to(radar.OUT)
     d += elm.Wire("|-").at(esp.RX2).to(radar.TX)
     d += elm.Wire("|-").at(esp.TX2).to(radar.RX)
-    d += elm.Vdd().at(radar.VCC).left().label("5V", fontsize=9)
-    d += elm.Ground().at(radar.GND).left()
+    # 5 В і земля розводяться в РІЗНІ боки: коли значок живлення і значок землі
+    # стоять поруч, вони читаються як деталь між VCC і GND (Іван, 02.08 — «діод?»)
+    rv = elm.Line().at(radar.VCC).left().length(0.7)
+    d += rv
+    d += elm.Vdd().at(rv.end).label("5 В", fontsize=9)
+    rg = elm.Line().at(radar.GND).left().length(0.7)
+    d += rg
+    d += elm.Line().at(rg.end).down().length(1.0)
+    d += elm.Ground()
 
     # ---------------- TPA3116D2 mono amp, single MA-3013 ----------------
     # Підписи — як на клемниках плати HiLetgo: «IN + −», «VCC + −», «+ OUT −»,
@@ -172,8 +179,12 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
         "Buck 12→5V ≥1.5A\nMP1584 + LC фільтр", "top", fontsize=10)
     d += elm.Wire("-|").at(node12).to(buck.VIN12)
     d += elm.Ground().at(buck.GNDI).left()
-    d += elm.Line().right().at(buck.V5).length(1.0)
-    d += elm.Vdd().label("5V", fontsize=9)
+    # вихід 5 В ведемо ВНИЗ і вже там ставимо значок шини: праворуч упритул
+    # стоїть радар, і два значки зливались в один незрозумілий елемент
+    # без значка живлення: поруч радар і земля, три символи зливались.
+    # Просто підписана лінія — куди йде вихід понижайки.
+    d += elm.Line().right().at(buck.V5).length(1.3).label(
+        "→ шина 5 В", "bottom", fontsize=9)
     d += elm.Ground().at(buck.GNDO).right()
 
     d += elm.Label().at((6.0, y0 - 0.5)).label(

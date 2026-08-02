@@ -340,6 +340,13 @@ def assembly_html():
             f'  </table></div>\n'
             f'  <p class="files">{esc(brd["note"])}</p>\n')
 
+        bench = brd.get("bench")
+        if bench:
+            board_html += (
+                f'  <h3>{esc(bench["title"])}</h3>\n'
+                f'  <p class="files">{esc(bench["text"])}</p>\n'
+                f'  <p class="files"><b>⚠ {esc(bench["watch"])}</b></p>\n')
+
         amp = brd.get("amp")
         if amp:
             t_rows = "\n".join(
