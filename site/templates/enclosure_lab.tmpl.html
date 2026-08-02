@@ -121,7 +121,8 @@
   .thumb { width: 64px; height: 64px; object-fit: contain; flex: none;
     border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 2px; }
   .thumb.none { display: flex; align-items: center; justify-content: center;
-    color: var(--ink-2); font-size: .8rem; background: var(--panel-2); }
+    color: var(--ink-2); font-size: .62rem; line-height: 1.2; text-align: center;
+    background: var(--panel-2); }
   .prod a { text-decoration: none; }
   .prod a:hover b { text-decoration: underline; }
 </style>
@@ -300,10 +301,11 @@
       const used=r.c.used?('$'+r.c.used[0]+'-'+r.c.used[1]):'—';
       const vf=r.c.verify?' <span class="pill tbd" style="font-size:.65rem">звірити</span>':'';
       const pic=r.c.img?'<img class="thumb" src="'+r.c.img+'" alt="'+esc(r.c.name)+'" loading="lazy">'
-                       :'<span class="thumb none" aria-hidden="true">—</span>';
+                       :'<span class="thumb none" title="'+esc(r.c.no_photo||'фото ще нема')+'">фото<br>нема</span>';
       const nm=r.c.url?'<a href="'+r.c.url+'" target="_blank" rel="noopener"><b>'+esc(r.c.name)+'</b></a>'
                       :'<b>'+esc(r.c.name)+'</b>';
-      return '<tr><td><div class="prod">'+pic+'<div>'+nm+vf+(r.c.note?'<br><span style="font-size:.72rem;color:var(--ink-2);white-space:normal">'+esc(r.c.note)+'</span>':'')+'</div></div>'+
+      return '<tr><td><div class="prod">'+pic+'<div>'+nm+vf+(r.c.note?'<br><span style="font-size:.72rem;color:var(--ink-2);white-space:normal">'+esc(r.c.note)+'</span>':'')+
+        (r.c.no_photo?'<br><span style="font-size:.72rem;color:var(--warn);white-space:normal">'+esc(r.c.no_photo)+'</span>':'')+'</div></div>'+
         '</td><td style="font-size:.78rem;color:var(--ink-2)">'+esc(r.c.kind)+
         '</td><td class="num">'+r.c.inner_mm.join('×')+'</td><td>'+esc(r.c.seal)+
         '</td><td class="num">$'+r.c.price_usd+'</td><td class="num">'+used+'</td><td>'+badge+

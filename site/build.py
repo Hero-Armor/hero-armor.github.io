@@ -2253,6 +2253,8 @@ def build():
           "kind": c.get("kind", "кейс"), "verify": bool(c.get("verify")),
           # фото і адреса товару: збирає enclosure/model/case_media.py
           "img": c.get("img", ""), "url": c.get("url", ""),
+          # чому фото нема — щоб у таблиці не було німої порожньої клітинки
+          "no_photo": c.get("no_photo", ""),
           "note": c.get("note", "")}
          for c in ENC["cases"]], ensure_ascii=False))
     elab = elab.replace("{{FIT_CAPTION}}", esc(ENC["_verify"]))

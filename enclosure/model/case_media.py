@@ -239,7 +239,14 @@ def amazon_search(query):
     Фото беремо з `data-a-dynamic-image` картки: og:image в Amazon — це значок
     Prime, а не товар (одного разу він так і приїхав у таблицю).
     """
-    html = get("https://www.amazon.com/s?k=" + urllib.parse.quote_plus(query)).decode("utf-8", "ignore")
+    html = ""
+    for attempt in range(3):
+        # Amazon глушить чергу запитів підряд: віддає порожню сторінку без
+        # капчі. Лікується паузою, а не зміною заголовків.
+        time.sleep(6 * (attempt + 1))
+        html = get("https://www.amazon.com/s?k=" + urllib.parse.quote_plus(query)).decode("utf-8", "ignore")
+        if "/dp/" in html:
+            break
     out = []
     for href in re.findall(r'href="(/[^"]*?/dp/[A-Z0-9]{10})', html):
         link = "https://www.amazon.com" + href.split("?")[0]
@@ -274,6 +281,7 @@ def amazon_pass(data, only=None, dry=False):
         picked = None
         for link in amazon_search(QUERY.get(name, name)):
             try:
+                time.sleep(3)
                 img, title, why = amazon_image(link, tokens)
             except Exception:
                 continue
