@@ -3,6 +3,7 @@
 
 # Позиції
 
+* [Позначення траси кабелю ящик → подіум](poznachennia-trasy-kabeliu-iashchyk-podium.md) - —, купити
 * [3M 983-326 світлоповертальна стрічка DOT-C2, 2"×30'](3m-983-326-svitlopovertalna-strichka-dot-c2-2-30.md) - $38.39, купити
 * [3M 983-10 біла світлоповертальна стрічка, 2"×12'](3m-983-10-bila-svitlopovertalna-strichka-2-12.md) - $18.97, купити
 * [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) - $12.25, купити
