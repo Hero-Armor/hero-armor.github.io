@@ -303,6 +303,26 @@ def assembly_html():
     steps = "\n".join(f"      <li>{esc(s)}</li>" for s in a["steps"])
     tests = "\n".join(f"      <li>{esc(t)}</li>" for t in a["tests"])
 
+    # Плата підписує піни іменами, а не номерами GPIO — без цієї таблиці людина
+    # з паяльником шукає на шовкографії «16» і не знаходить (Іван, 02.08.2026).
+    board_html = ""
+    brd = a.get("board")
+    if brd:
+        silk_rows = "\n".join(
+            f'      <tr><td>{esc(g)}</td><td><b>{esc(mark)}</b></td></tr>'
+            for g, mark in brd["silk"].items())
+        rows_html = "\n".join(
+            f'      <li><b>{esc(name)}:</b> {esc(" · ".join(pins))}</li>'
+            for name, pins in brd["rows"].items())
+        board_html = (
+            f'  <h3>Плата ESP32 — як підписані піни</h3>\n'
+            f'  <p class="files"><a href="{brd["url"]}">{esc(brd["name"])}</a>. {esc(brd["why"])}</p>\n'
+            f'  <ul class="files">\n{rows_html}\n  </ul>\n'
+            f'  <div class="tbl-wrap"><table>\n'
+            f'    <tr><th>У схемі</th><th>Шукати на платі</th></tr>\n{silk_rows}\n'
+            f'  </table></div>\n'
+            f'  <p class="files">{esc(brd["note"])}</p>\n')
+
     pick, pick_html = enc.get("pick"), ""
     if pick:
         alt = pick.get("alt") or {}
@@ -331,6 +351,7 @@ def assembly_html():
 {conns}
   </table></div>
 
+{board_html}
   <h3>Усі з'єднання</h3>
   <div class="tbl-wrap"><table>
     <tr><th>№</th><th>Звідки</th><th>Куди</th><th>AWG</th><th>Довжина</th><th>Колір</th><th>Примітка</th></tr>
