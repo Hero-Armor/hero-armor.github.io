@@ -7,7 +7,7 @@ Generates schematic.svg + schematic.png next to this file.
   5V  --> ESP32 VIN, PCM5102A VIN, LD2410C VCC, microSD;  3V3 (from ESP32 LDO) --> XSMT
   ESP32: I2S -> PCM5102A -> L analog -> mono amp -> 1x MA-3013 speaker
          (second speaker of the pair = ready spare)
-         SPI -> microSD;  GPIO27/UART2 <-> LD2410C
+         SPI -> microSD;  D27/UART2 (RX2,TX2) <-> LD2410C
 """
 
 import matplotlib
@@ -24,29 +24,42 @@ PIN_SP = 0.6
 OUT = str(__import__("pathlib").Path(__file__).resolve().parent / "schematic")
 
 
-def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0.45):
+def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0.45,
+       side_spacing=None):
     """Sides listed bottom-up (left/right) or in listed order (top/bottom)."""
     pins = []
     for side, plist in (("left", left), ("right", right), ("top", top), ("bottom", bottom)):
-        for pname, pinlabel, anchor in plist:
+        for spec in plist:
+            # (ім'я, номер ніжки, якір) або з п'ятим значенням — позиція вздовж
+            # сторони 0..1, коли підписи довгі і злипаються (низ ESP32)
+            pname, pinlabel, anchor = spec[0], spec[1], spec[2]
+            pos = spec[3] if len(spec) > 3 else None
+            kw = {"pos": pos} if pos is not None else {}
             pins.append(elm.IcPin(name=pname, pin=pinlabel, side=side,
-                                  anchorname=anchor or pname))
-    return elm.Ic(pins=pins, w=w, pinspacing=pinspacing, edgepadH=edgepad, leadlen=0.5)
+                                  anchorname=anchor or pname, **kw))
+    e = elm.Ic(pins=pins, w=w, pinspacing=pinspacing, edgepadH=edgepad, leadlen=0.5)
+    for side, sp in (side_spacing or {}).items():
+        # свій крок для однієї сторони: коли підписи довгі, вони злипаються
+        e.side(side, spacing=sp, pad=0.9, leadlen=0.5)
+    return e
 
 
 with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
 
     # ---------------- ESP32 ----------------
     esp = ic(
+        # Підписи — ЯК НА ПЛАТІ (шовкографія DevKit V1), а не номери GPIO:
+        # їх шукає людина з паяльником. Де ім'я не збігається з номером —
+        # номер у дужках (Іван, 02.08.2026).
         left=[("GND", "", "GND"), ("VIN", "", "VIN"),
-              ("GPIO5", "CS", "CS"), ("GPIO18", "SCK", "SCK"),
-              ("GPIO23", "MOSI", "MOSI"), ("GPIO19", "MISO", "MISO")],
-        right=[("GPIO26", "BCK", "BCK"), ("GPIO25", "LRCK", "LRCK"),
-               ("GPIO22", "DIN", "DIN")],
-        bottom=[("27", "", "ROUT"), ("16", "", "RX2"), ("17", "", "TX2")],
-        w=3.6, edgepad=0.8)
+              ("D5", "CS", "CS"), ("D18", "SCK", "SCK"),
+              ("D23", "MOSI", "MOSI"), ("D19", "MISO", "MISO")],
+        right=[("D26", "BCK", "BCK"), ("D25", "LRCK", "LRCK"),
+               ("D22", "DIN", "DIN")],
+        bottom=[("D27", "", "ROUT"), ("RX2 (16)", "", "RX2"), ("TX2 (17)", "", "TX2")],
+        w=3.6, edgepad=0.8, side_spacing={"B": 2.2})
     d += esp.right().anchor("center").at((0, 0)).label(
-        "ESP32 WROOM-32 DevKit", "top", fontsize=10)
+        "ESP32 WROOM-32 DevKit V1 — підписи як на платі", "top", fontsize=10)
 
     d += elm.Vdd().at(esp.VIN).left().label("5V", fontsize=9)
     d += elm.Ground().at(esp.GND).left()
