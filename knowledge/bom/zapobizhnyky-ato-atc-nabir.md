@@ -5,11 +5,11 @@ description: "Номінали з моделі: 25 / 5 / 10 / 7.5 A. Брати 
 resource: "https://www.amazon.com/dp/B07VWRK2VD"
 tags: ["lights"]
 quantity: "компл. + запас"
-price: "—"
+price: "$8.66"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Номінали з моделі: 25 / 5 / 10 / 7.5 A. Брати з запасом — перегорають саме вночі
 
-Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть компл. + запас
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $8.66 · к-сть компл. + запас

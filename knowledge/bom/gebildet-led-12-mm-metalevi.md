@@ -5,11 +5,11 @@ description: "Лампи на корпусі робота: голова 4, пл�
 resource: "https://www.amazon.com/dp/B09PFMXBNW"
 tags: ["lights"]
 quantity: "8+2"
-price: "—"
+price: "$7.79"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Лампи на корпусі робота: голова 4, плечі 2, груди, коліно, стопа. IP65
 
-Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть 8+2
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $7.79 · к-сть 8+2

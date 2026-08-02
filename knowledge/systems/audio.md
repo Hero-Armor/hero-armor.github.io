@@ -24,11 +24,14 @@ generated: { by: "process:site-build" }
 * [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](/decisions/korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
 * [Коробку аудіо не вентилюємо — рахунок каже, що нічого не гріється](/decisions/korobku-audio-ne-ventyliuiemo-rakhunok-kazhe-shcho-nichoho-n.md)
 * [До динаміка паяємось, а не тиснемо «мами» на пелюстки](/decisions/do-dynamika-paiaiemos-a-ne-tysnemo-mamy-na-peliustky.md)
+* [Читач радара — свій, не стороння бібліотека](/decisions/chytach-radara-svii-ne-storonnia-biblioteka.md)
+* [Якщо радар замовк по UART — працюємо по піну OUT](/decisions/iakshcho-radar-zamovk-po-uart-pratsiuiemo-po-pinu-out.md)
+* [Налаштування живуть у памʼяті ESP32, а не в прошивці](/decisions/nalashtuvannia-zhyvut-u-pamiati-esp32-a-ne-v-proshyvtsi.md)
 
 # Задачі
 
 * [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](/tasks/a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) — чекаємо
-* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) — чекаємо
+* [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) — готово
 * [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — чекаємо
 * [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](/tasks/zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) — чекаємо
 * [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — чекаємо
@@ -36,6 +39,7 @@ generated: { by: "process:site-build" }
 * [Зміряти лінійкою модулі й рознесення пінів ESP32, коли приїде посилка](/tasks/zmiriaty-liniikoiu-moduli-i-roznesennia-piniv-esp32-koly-pry.md) — чекаємо
 * [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](/tasks/zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) — готово
 * [Докупити монтажну дрібницю: гермовводи, термоусадка, джампери, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-termousadka-dzhampe.md) — до роботи
+* [Прошити ESP32 і пройти пʼять перевірок на столі (картка, звук, радар, BLE, потенціометр ампа)](/tasks/proshyty-esp32-i-proity-piat-perevirok-na-stoli-kartka-zvuk-.md) — до роботи
 
 # Закупівля
 
@@ -59,7 +63,7 @@ generated: { by: "process:site-build" }
 * [Набір нейлонових стійок M2.5/M3/M4](/bom/nabir-neilonovykh-stiiok-m2-5-m3-m4.md) — $17, купити
 * [Клемники гвинтові 5.08мм 2-pin](/bom/klemnyky-hvyntovi-5-08mm-2-pin.md) — $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](/bom/hnizda-khedery-2-54mm-mama-kyt.md) — $8, купити
-* [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — —, купити
+* [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — $47.00, купити
 * [Екранований кабель ЦАП → амп (0.3 м)](/bom/ekranovanyi-kabel-tsap-amp-0-3-m.md) — $4 або $0, купити
 * [Гермовводи PG7–PG16, набір 25 шт](/bom/hermovvody-pg7-pg16-nabir-25-sht.md) — $8, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити

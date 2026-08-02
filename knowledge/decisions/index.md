@@ -3,6 +3,7 @@
 
 # Рішення
 
+* [Трасу кабелю до ящика треба позначити — чим саме, ще обираємо](trasu-kabeliu-do-iashchyka-treba-poznachyty-chym-same-shche-.md)
 * [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
 * [Габаритні вогні на стійках прожекторів — скасовано](habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
@@ -77,3 +78,6 @@
 * [Гіпотеза: кулер із 30-40 кг води замість фільтрів і вентилятора](hipoteza-kuler-iz-30-40-kh-vody-zamist-filtriv-i-ventyliator.md)
 * [Розмір коробки не відсікає станцію — просто фіксуємо факт](rozmir-korobky-ne-vidsikaie-stantsiiu-prosto-fiksuiemo-fakt.md)
 * [Тінь важить більше за вентилятор](tin-vazhyt-bilshe-za-ventyliator.md)
+* [Читач радара — свій, не стороння бібліотека](chytach-radara-svii-ne-storonnia-biblioteka.md)
+* [Якщо радар замовк по UART — працюємо по піну OUT](iakshcho-radar-zamovk-po-uart-pratsiuiemo-po-pinu-out.md)
+* [Налаштування живуть у памʼяті ESP32, а не в прошивці](nalashtuvannia-zhyvut-u-pamiati-esp32-a-ne-v-proshyvtsi.md)

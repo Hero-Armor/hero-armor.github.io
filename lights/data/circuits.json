@@ -9,13 +9,14 @@
   8
  ],
  "limits": {
-  "dimmer_a": 6.0,
+  "dimmer_a": 30.0,
   "dimmer_derate": 0.8,
   "dc_port_w": 126,
   "station_wh": 2048,
   "night_h": 8.0,
   "drop_warn_pct": 3.0,
-  "drop_crit_pct": 5.0
+  "drop_crit_pct": 5.0,
+  "_dimmer_source": "SUPERNIGHT ШІМ-диммер 12-24 В 30 А (B095M4JS31), замовлений 31.07 (ORD-004) замість Greenclick на 6 А — той мав голі дроти з корпусу. Число 6.0 лишалось від старого диммера і фальшиво обмежувало калькулятор прожекторів. Виправлено 02.08."
  },
  "topologies": [
   {

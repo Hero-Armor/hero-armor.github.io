@@ -5,11 +5,11 @@ description: "На кожен стик, який доведеться роз'є�
 resource: "https://www.amazon.com/dp/B01G9V42E8"
 tags: ["lights"]
 quantity: "~20"
-price: "—"
+price: "$8.00"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 На кожен стик, який доведеться роз'єднувати при збиранні-розбиранні: стійки, промені, сходи
 
-Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть ~20
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $8.00 · к-сть ~20

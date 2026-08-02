@@ -406,6 +406,9 @@ def buy_table_html(rows, note=""):
            "               background: #fff; border: 1px solid var(--line); display: block; }\n"
            "  td.pic .nopic { width: 54px; height: 54px; border-radius: 6px;\n"
            "                  border: 1px dashed var(--line); display: block; }\n"
+           "  td.pic .nopic-t { display: flex; align-items: center; justify-content: center;\n"
+           "                    text-align: center; font-family: var(--mono); font-size: .58rem;\n"
+           "                    line-height: 1.15; color: var(--ink-2); padding: .2rem; }\n"
            "</style>")
     return (css + '<h2>Що з цього треба купити</h2><div class="tbl-wrap"><table>'
             '<thead><tr><th></th><th>Позиція</th><th>Скільки</th><th>Ціна</th>'
@@ -423,7 +426,12 @@ def bom_thumb(b):
     """
     img = b.get("img")
     if not img:
-        return '<td class="pic"><span class="nopic"></span></td>'
+        # Порожня клітинка читається як «забув». Якщо товар свідомо ще не
+        # обраний або робиться самотужки — так і пишемо словом (Іван 01.08).
+        note = esc(b.get("img_note", ""))
+        inner = (f'<span class="nopic nopic-t">{note}</span>' if note
+                 else '<span class="nopic"></span>')
+        return f'<td class="pic">{inner}</td>'
     tag = f'<img src="{img}" alt="{esc(b["item"])}" loading="lazy">'
     if b.get("url"):
         tag = f'<a href="{b["url"]}" title="{esc(b["item"])}">{tag}</a>'

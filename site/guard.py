@@ -134,6 +134,10 @@ try:
         text = (it.get("item", "") + it.get("note", "") + it.get("qty", "")).lower()
         if any(w in text for w in UNDECIDED):
             continue
+        # свідомо позначена клітинка («обираємо», «робимо самі», «лінк помер»)
+        # — це не дірка, а чесна відповідь; порожня клітинка читається як «забув»
+        if it.get("img_note"):
+            continue
         miss = [w for w, ok in (("лінка", it.get("url")), ("фото", it.get("img"))) if not ok]
         if miss:
             gaps.append(f"{it['item'][:44]} — нема {' і '.join(miss)}")

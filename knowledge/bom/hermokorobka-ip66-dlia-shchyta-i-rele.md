@@ -5,11 +5,11 @@ description: "Головна коробка: запобіжники і реле 
 resource: "https://www.amazon.com/dp/B0D5ZDQLKN"
 tags: ["lights"]
 quantity: "1"
-price: "—"
+price: "$45.00"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Головна коробка: запобіжники і реле груп. З вентиляцією і фільтром — глухо закривати не можна, перегріється
 
-Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть 1
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $45.00 · к-сть 1

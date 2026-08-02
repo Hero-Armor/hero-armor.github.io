@@ -5,11 +5,11 @@ description: "Глухі з'єднання всередині коробок. П
 resource: "https://www.amazon.com/dp/B09H7DQN1V"
 tags: ["lights"]
 quantity: "компл."
-price: "—"
+price: "$9.99"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Глухі з'єднання всередині коробок. Пил плайї лужний — звичайні скрутки окислюються
 
-Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть компл.
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $9.99 · к-сть компл.

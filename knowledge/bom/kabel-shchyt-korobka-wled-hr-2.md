@@ -5,11 +5,11 @@ description: "Ancor 8/2 AWG (наявний) — AWG 8. найважча гіл�
 resource: "https://www.amazon.com/dp/B000NV2ATU"
 tags: ["lights"]
 quantity: "~5 м"
-price: "—"
+price: "$106.40"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Ancor 8/2 AWG (наявний) — AWG 8. найважча гілка — уся стрічка
 
-Система: [Світло](/systems/lights.md) · статус: **купити** · ціна — · к-сть ~5 м
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $106.40 · к-сть ~5 м
