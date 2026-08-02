@@ -10,7 +10,7 @@
 * [Перевірити диммери SUPERNIGHT після приїзду: мерехтіння і нагрів](pereviryty-dymmery-supernight-pislia-pryizdu-merekhtinnia-i-.md) - чекаємо
 * [Замовити ШІМ-диммери SUPERNIGHT 30 А — набір 2 шт](zamovyty-shim-dymmery-supernight-30-a-nabir-2-sht.md) - готово
 * [Замовити Luxrite MR16 4000K — 10 шт у прожектори](zamovyty-luxrite-mr16-4000k-10-sht-u-prozhektory.md) - до роботи
-* [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) - чекаємо
+* [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) - до роботи
 * [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) - чекаємо
 * [Замовити решту BOM одним кошиком](zamovyty-reshtu-bom-odnym-koshykom.md) - чекаємо
 * [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) - готово
@@ -57,3 +57,4 @@
 * [Заміряти ватметром реальну частку світла ядра в переливі](zamiriaty-vatmetrom-realnu-chastku-svitla-iadra-v-perelyvi.md) - чекаємо
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) - до роботи
 * [Прошити ESP32 і пройти пʼять перевірок на столі (картка, звук, радар, BLE, потенціометр ампа)](proshyty-esp32-i-proity-piat-perevirok-na-stoli-kartka-zvuk-.md) - до роботи
+* [Звірити склад коробок: у листі Amazon 18 позицій, у нашому списку 19](zviryty-sklad-korobok-u-lysti-amazon-18-pozytsii-u-nashomu-s.md) - до роботи
