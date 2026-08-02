@@ -45,6 +45,23 @@ def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0
     return e
 
 
+
+def power_in(d, elem, vcc_anchor, gnd_anchor, label, lead=0.7):
+    """Живлення і земля модуля — рознесені, а не двома значками впритул.
+
+    Коли elm.Vdd() і elm.Ground() стоять на сусідніх пінах, вони зливаються
+    в одну картинку і читаються як деталь між VCC і GND (Іван 02.08: «діод?»).
+    Тому земля йде вбік і ВНИЗ, живлення — вбік і вгору.
+    """
+    v = elm.Line().at(elem.absanchors[vcc_anchor]).left().length(lead)
+    d += v
+    d += elm.Vdd().at(v.end).label(label, fontsize=9)
+    g = elm.Line().at(elem.absanchors[gnd_anchor]).left().length(lead)
+    d += g
+    d += elm.Line().at(g.end).down().length(0.9)
+    d += elm.Ground()
+
+
 with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
 
     # ---------------- ESP32 ----------------
@@ -61,9 +78,15 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
         w=3.6, edgepad=0.8, side_spacing={"B": 2.2})
     d += esp.right().anchor("center").at((0, 0)).label(
         "ESP32 WROOM-32 DevKit V1 — підписи як на платі", "top", fontsize=10)
+    # USB-C плати навмисно НЕ є частиною бойової схеми: у роботі він не
+    # підключений, живлення йде на VIN. Але без цього підпису людина з
+    # паяльником питає «а чому роз'єму нема на схемі» (Іван, 02.08).
+    d += elm.Label().at((esp.absanchors["center"][0], esp.absanchors["center"][1] + 4.3)).label(
+        "USB-C збоку плати — тільки прошивка і консоль.\n"
+        "У роботі не підключений: живлення приходить на VIN.\n"
+        "Одночасно USB і VIN не тримати — щось одне.", fontsize=8)
 
-    d += elm.Vdd().at(esp.VIN).left().label("5V", fontsize=9)
-    d += elm.Ground().at(esp.GND).left()
+    power_in(d, esp, "VIN", "GND", "5 В")
 
     # ---------------- microSD (left, SPI) ----------------
     sd = ic(
@@ -73,8 +96,7 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
         w=2.6)
     d += sd.right().anchor("CS").at((-7.5, esp.absanchors["CS"][1])).label(
         "microSD SPI\nSanDisk 32GB, MP3", "top", fontsize=10)
-    d += elm.Vdd().at(sd.VCC).left().label("5V", fontsize=9)  # HiLetgo-type module: LDO + level shifter onboard
-    d += elm.Ground().at(sd.GND).left()
+    power_in(d, sd, "VCC", "GND", "5 В")  # на модулі свій LDO і рівні
     for p in ("CS", "SCK", "MOSI", "MISO"):
         d += elm.Line().at(sd.absanchors[p]).to(esp.absanchors[p])
 
@@ -94,8 +116,7 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
     d += elm.Ground().at(dac.PSCK).left()
     d += elm.Ground().at(dac.FMT).left()
     d += elm.Vdd().at(dac.XSMT).left().label("3V3", fontsize=9)
-    d += elm.Vdd().at(dac.VIN).left().label("5V", fontsize=9)
-    d += elm.Ground().at(dac.GND).left()
+    power_in(d, dac, "VIN", "GND", "5 В")
 
     # ---------------- LD2410C radar (below ESP32) ----------------
     radar = ic(
