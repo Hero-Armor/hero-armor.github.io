@@ -340,6 +340,14 @@ def assembly_html():
             f'  </table></div>\n'
             f'  <p class="files">{esc(brd["note"])}</p>\n')
 
+        fp = brd.get("first_power")
+        if fp:
+            st = "\n".join(f'      <li>{esc(x)}</li>' for x in fp["steps"])
+            board_html += (
+                f'  <h3>{esc(fp["title"])}</h3>\n'
+                f'  <ol class="files">\n{st}\n  </ol>\n'
+                f'  <p class="files">{esc(fp["note"])}</p>\n')
+
         usb = brd.get("usb")
         if usb:
             board_html += (
