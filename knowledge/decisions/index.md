@@ -94,3 +94,4 @@
 * [Читач радара — свій, не стороння бібліотека](chytach-radara-svii-ne-storonnia-biblioteka.md)
 * [Якщо радар замовк по UART — працюємо по піну OUT](iakshcho-radar-zamovk-po-uart-pratsiuiemo-po-pinu-out.md)
 * [Налаштування живуть у памʼяті ESP32, а не в прошивці](nalashtuvannia-zhyvut-u-pamiati-esp32-a-ne-v-proshyvtsi.md)
+* [Динамік ставимо ЗА бронею, отвору в ній не робимо](dynamik-stavymo-za-broneiu-otvoru-v-nii-ne-robymo.md)

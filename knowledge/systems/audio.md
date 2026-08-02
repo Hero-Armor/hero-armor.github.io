@@ -29,6 +29,7 @@ generated: { by: "process:site-build" }
 * [Читач радара — свій, не стороння бібліотека](/decisions/chytach-radara-svii-ne-storonnia-biblioteka.md)
 * [Якщо радар замовк по UART — працюємо по піну OUT](/decisions/iakshcho-radar-zamovk-po-uart-pratsiuiemo-po-pinu-out.md)
 * [Налаштування живуть у памʼяті ESP32, а не в прошивці](/decisions/nalashtuvannia-zhyvut-u-pamiati-esp32-a-ne-v-proshyvtsi.md)
+* [Динамік ставимо ЗА бронею, отвору в ній не робимо](/decisions/dynamik-stavymo-za-broneiu-otvoru-v-nii-ne-robymo.md)
 
 # Задачі
 
@@ -36,7 +37,7 @@ generated: { by: "process:site-build" }
 * [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) — готово
 * [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — чекаємо
 * [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](/tasks/zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) — чекаємо
-* [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — чекаємо
+* [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — готово
 * [Звірити замовлену коробку по семи вимогах (пластик, 165×105×55, вводи, радіатор, вентиляція, доступ до USB)](/tasks/zviryty-zamovlenu-korobku-po-semy-vymohakh-plastyk-165-105-5.md) — чекаємо
 * [Зміряти лінійкою модулі й рознесення пінів ESP32, коли приїде посилка](/tasks/zmiriaty-liniikoiu-moduli-i-roznesennia-piniv-esp32-koly-pry.md) — чекаємо
 * [Звірити тип клем динаміка MA-3013 (гвинт чи push-on) — від цього наконечники](/tasks/zviryty-typ-klem-dynamika-ma-3013-hvynt-chy-push-on-vid-tsoh.md) — готово
@@ -45,7 +46,8 @@ generated: { by: "process:site-build" }
 * [Звірити склад коробок: у листі Amazon 18 позицій, у нашому списку 19](/tasks/zviryty-sklad-korobok-u-lysti-amazon-18-pozytsii-u-nashomu-s.md) — до роботи
 * [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду](/tasks/nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) — до роботи
 * [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](/tasks/vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) — чекаємо
-* [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](/tasks/diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) — чекаємо
+* [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](/tasks/diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) — готово
+* [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](/tasks/prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) — до роботи
 
 # Закупівля
 

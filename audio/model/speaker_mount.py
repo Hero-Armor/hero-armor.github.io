@@ -92,7 +92,7 @@ svg += dim_h(cx - px(front["cut_d"] / 2), cx + px(front["cut_d"] / 2),
              cy + px(front["flange_d"] / 2) + 34, front["cut_label"])
 svg += dim_h(cx - px(front["flange_d"] / 2), cx + px(front["flange_d"] / 2),
              cy + px(front["flange_d"] / 2) + 66, front["flange_label"])
-svg.append(text(cx, cy + px(front["flange_d"] / 2) + 96, front["note"], 11))
+svg.append(text(cx + 95, cy + px(front["flange_d"] / 2) + 96, front["note"], 11))
 
 # ─────────────────────────── розріз ───────────────────────────
 sx0, sy0 = m["section_origin"]
@@ -102,22 +102,23 @@ skin_t = px(cut["skin_mm"])
 svg.append(rect(sx0, sy0, skin_t, px(cut["skin_h_mm"]), fill="#e8e8e8"))   # обшивка броні
 svg.append(text(sx0 + skin_t / 2, sy0 - 10, cut["skin_label"], 11))
 
-# отвір в обшивці — розрив у прямокутнику показуємо світлим блоком
+# панель СУЦІЛЬНА: отвору наскрізь нема (рішення 25.07 — динамік за бронею)
 hole_h = px(cut["cut_d"])
 hole_y = sy0 + (px(cut["skin_h_mm"]) - hole_h) / 2
-svg.append(rect(sx0 - 1, hole_y, skin_t + 2, hole_h, sw=0, fill="#fff"))
-svg.append(line(sx0, hole_y, sx0 + skin_t, hole_y, 1.4))
-svg.append(line(sx0, hole_y + hole_h, sx0 + skin_t, hole_y + hole_h, 1.4))
 
-# корпус динаміка — за обшивкою
-bx = sx0 + skin_t
+# фланець динаміка притиснутий до ВНУТРІШНЬОГО боку панелі
+fx = sx0 + skin_t
+svg.append(rect(fx, hole_y - px(cut["flange_lip_mm"]), px(cut["flange_t_mm"]),
+                hole_h + 2 * px(cut["flange_lip_mm"]), fill="#d0d0d0"))
+svg.append(text(fx + px(cut["flange_t_mm"]) + 8,
+                hole_y + hole_h + px(cut["flange_lip_mm"]) + 20,
+                cut["flange_label"], 11, anchor="start"))
+
+# корпус динаміка — далі всередину робота
+bx = fx + px(cut["flange_t_mm"])
 svg.append(rect(bx, hole_y, px(cut["depth_mm"]), hole_h))
 svg.append(text(bx + px(cut["depth_mm"]) / 2, hole_y + hole_h / 2 + 4, cut["body_label"], 11))
-# фланець притискає обшивку зовні
-svg.append(rect(sx0 - px(cut["flange_t_mm"]), hole_y - px(cut["flange_lip_mm"]),
-                px(cut["flange_t_mm"]), hole_h + 2 * px(cut["flange_lip_mm"]), fill="#d0d0d0"))
-svg.append(text(sx0 - px(cut["flange_t_mm"]) - 8, hole_y - px(cut["flange_lip_mm"]) - 8,
-                cut["flange_label"], 11, anchor="end"))
+svg.append(text(sx0 - 12, sy0 + px(cut["skin_h_mm"]) / 2, cut["outside_label"], 11, anchor="end"))
 
 svg += dim_h(bx, bx + px(cut["depth_mm"]), hole_y - 26, cut["depth_label"])
 svg += dim_v(bx + px(cut["depth_mm"]) + 30, hole_y, hole_y + hole_h, cut["cut_label"])
