@@ -957,6 +957,23 @@ def build():
         for d in DECISIONS if d["system"] == "audio")
     audio = audio.replace("{{DECISIONS_HTML}}", decs)
 
+    # Закупівля прямо на сторінці системи: Іван 02.08 шукав список саме тут,
+    # а він жив тільки на головній — зі сторінки, де паяють, він не видно.
+    a_bom = [b for b in BOM if b["system"] == "audio"]
+    b_rows = []
+    for b in a_bom:
+        cls, label = FLOW.get(b.get("flow"), PILL[b["status"]])
+        item = f'<a href="{b["url"]}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"])
+        b_rows.append(f'      <tr>{bom_thumb(b)}<td>{item}</td><td class="num">{b["qty"]}</td>'
+                      f'<td class="num">{b["price"]}</td>'
+                      f'<td><span class="pill {cls}">{label}</span></td>'
+                      f'<td>{esc(b["note"])}</td></tr>')
+    audio = audio.replace("{{BOM_HTML}}",
+                          '  <div class="tbl-wrap">\n  <table>\n'
+                          '    <thead><tr><th></th><th>Позиція</th><th>К-сть</th><th>~Ціна</th>'
+                          '<th>Статус</th><th>Нотатка</th></tr></thead>\n'
+                          f'    <tbody>\n{chr(10).join(b_rows)}\n    </tbody>\n  </table>\n  </div>')
+
     # ================= lab page =================
     lab = tmpl("lab.tmpl.html")
     # схему вставляємо текстом svg, а не картинкою: інакше підписи

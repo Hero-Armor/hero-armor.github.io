@@ -120,9 +120,18 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
         w=3.2, size=(4.4, 2.6))
     d += amp.right().anchor("INM").at((13.5, dac.absanchors["AGND"][1])).label(
         "TPA3116D2 Mono (підписи як на платі)\nрадіатор назовні · VOL = стеля гучності", "top", fontsize=10)
-    d += elm.Line().at(dac.AGND).to(amp.INM)
-    d += elm.Line().at(dac.L).to(amp.INP).label("екранований кабель", "top", fontsize=8)
-    d += elm.Vdd().at(amp.VCC).left().label("12V", fontsize=9)
+    # Дві сигнальні лінії з ЦАПа — це ОДИН екранований кабель ~30 см:
+    # центральна жила несе звук, обплетення-екран є зворотним проводом.
+    # Підписи ставимо ПІД лініями, щоб вони не читались як частина живлення.
+    d += elm.Line().at(dac.AGND).to(amp.INM).label(
+        "екран кабелю", "bottom", fontsize=8, ofst=0.12)
+    d += elm.Line().at(dac.L).to(amp.INP).label(
+        "жила кабелю — звук", "bottom", fontsize=8, ofst=0.12)
+    d += elm.Vdd().at(amp.VCC).left().label("12 В — свій провід", fontsize=8)
+    d += elm.Label().at(((dac.absanchors["L"][0] + amp.absanchors["INP"][0]) / 2 + 1.0,
+                         dac.absanchors["AGND"][1] - 0.95)).label(
+        "обидві лінії — це ОДИН екранований кабель ~30 см (відрізок аукс-шнура)",
+        fontsize=8)
     # земля мінуса живлення веде праворуч і ВНИЗ — щоб не лізти на підпис динаміка
     gline = elm.Line().at(amp.PGND).right().length(0.8)
     d += gline

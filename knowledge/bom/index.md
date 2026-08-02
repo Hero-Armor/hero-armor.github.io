@@ -68,7 +68,7 @@
 * [Клемники гвинтові 5.08мм 2-pin](klemnyky-hvyntovi-5-08mm-2-pin.md) - $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](hnizda-khedery-2-54mm-mama-kyt.md) - $8, купити
 * [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) - $47.00, купити
-* [Екранований кабель ЦАП → амп (0.3 м)](ekranovanyi-kabel-tsap-amp-0-3-m.md) - $4 або $0, купити
+* [Екранований кабель ЦАП → амп (аукс-шнур, 30 см)](ekranovanyi-kabel-tsap-amp-auks-shnur-30-sm.md) - $4 або $0, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) - $10, купити
 * [Заглушки неон 8×16 З ОТВОРОМ під дріт — набір 60 шт](zahlushky-neon-8-16-z-otvorom-pid-drit-nabir-60-sht.md) - $11.99, купити
 * [Заглушки неон 8×16 ГЛУХІ (без отвору) — набір 60 шт](zahlushky-neon-8-16-hlukhi-bez-otvoru-nabir-60-sht.md) - $11.99, купити
