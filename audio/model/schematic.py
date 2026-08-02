@@ -25,7 +25,7 @@ OUT = str(__import__("pathlib").Path(__file__).resolve().parent / "schematic")
 
 
 def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0.45,
-       side_spacing=None):
+       side_spacing=None, size=None):
     """Sides listed bottom-up (left/right) or in listed order (top/bottom)."""
     pins = []
     for side, plist in (("left", left), ("right", right), ("top", top), ("bottom", bottom)):
@@ -37,7 +37,8 @@ def ic(left=(), right=(), top=(), bottom=(), w=3.2, pinspacing=PIN_SP, edgepad=0
             kw = {"pos": pos} if pos is not None else {}
             pins.append(elm.IcPin(name=pname, pin=pinlabel, side=side,
                                   anchorname=anchor or pname, **kw))
-    e = elm.Ic(pins=pins, w=w, pinspacing=pinspacing, edgepadH=edgepad, leadlen=0.5)
+    kw = {"size": size} if size else {}
+    e = elm.Ic(pins=pins, w=w, pinspacing=pinspacing, edgepadH=edgepad, leadlen=0.5, **kw)
     for side, sp in (side_spacing or {}).items():
         # свій крок для однієї сторони: коли підписи довгі, вони злипаються
         e.side(side, spacing=sp, pad=0.9, leadlen=0.5)
@@ -111,16 +112,22 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
     d += elm.Ground().at(radar.GND).left()
 
     # ---------------- TPA3116D2 mono amp, single MA-3013 ----------------
+    # Підписи — як на клемниках плати HiLetgo: «IN + −», «VCC + −», «+ OUT −»,
+    # плюс підстроєчник «VOL». Ніяких INP/INM, яких на платі нема.
     amp = ic(
-        left=[("INM", "IN-", "INM"), ("INP", "IN+", "INP"), ("VCC", "", "VCC")],
-        right=[("GND", "", "PGND"), ("OUTM", "OUT-", "OUTM"), ("OUTP", "OUT+", "OUTP")],
-        w=3.2)
+        left=[("IN −", "", "INM"), ("IN +", "", "INP"), ("VCC +", "", "VCC")],
+        right=[("VCC −", "", "PGND"), ("OUT −", "", "OUTM"), ("OUT +", "", "OUTP")],
+        w=3.2, size=(4.4, 2.6))
     d += amp.right().anchor("INM").at((13.5, dac.absanchors["AGND"][1])).label(
-        "TPA3116D2 Mono — радіатор назовні!", "top", fontsize=10)
+        "TPA3116D2 Mono (підписи як на платі)\nрадіатор назовні · VOL = стеля гучності", "top", fontsize=10)
     d += elm.Line().at(dac.AGND).to(amp.INM)
     d += elm.Line().at(dac.L).to(amp.INP).label("екранований кабель", "top", fontsize=8)
     d += elm.Vdd().at(amp.VCC).left().label("12V", fontsize=9)
-    d += elm.Ground().at(amp.PGND).right()
+    # земля мінуса живлення веде праворуч і ВНИЗ — щоб не лізти на підпис динаміка
+    gline = elm.Line().at(amp.PGND).right().length(0.8)
+    d += gline
+    d += elm.Line().at(gline.end).down().length(1.1)
+    d += elm.Ground()
 
     # one speaker; second MA-3013 of the pair is kept as a ready spare
     spk = elm.Speaker().right().at(
@@ -128,7 +135,7 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
     d += spk
     d += elm.Line().at(amp.OUTP).to(spk.in1)
     d += elm.Wire("-|").at(amp.OUTM).to(spk.in2)
-    d += elm.Label().at((19.9, amp.absanchors["OUTP"][1] - 1.6)).label(
+    d += elm.Label().at((21.6, amp.absanchors["OUTP"][1] - 1.2)).label(
         "MA-3013 4Ω, мембрана вниз\n(другий з пари — запас)", fontsize=8)
 
     # ---------------- power section (bottom left) ----------------

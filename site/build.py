@@ -323,6 +323,19 @@ def assembly_html():
             f'  </table></div>\n'
             f'  <p class="files">{esc(brd["note"])}</p>\n')
 
+        amp = brd.get("amp")
+        if amp:
+            t_rows = "\n".join(
+                f'      <tr><td><b>{esc(t)}</b></td><td>{esc(txt)}</td></tr>'
+                for t, txt in amp["terminals"])
+            board_html += (
+                f'  <h3>Підсилювач — що на які клеми</h3>\n'
+                f'  <p class="files"><a href="{amp["url"]}">{esc(amp["name"])}</a>. {esc(amp["note"])}</p>\n'
+                f'  <div class="tbl-wrap"><table>\n'
+                f'    <tr><th>Клема</th><th>Що туди йде</th></tr>\n{t_rows}\n'
+                f'  </table></div>\n'
+                f'  <p class="files"><b>⚠ {esc(amp["warning"])}</b></p>\n')
+
     pick, pick_html = enc.get("pick"), ""
     if pick:
         alt = pick.get("alt") or {}
