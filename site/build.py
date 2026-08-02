@@ -135,6 +135,23 @@ def figures_html(key):
     return f'  <h2>Креслення</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
 
 
+def photos_html(key):
+    """Фото з місця — окремо від креслень.
+
+    Іван 02.08 знайшов у «Кресленнях» фото коробок з динаміками: фотографія
+    з чату — це не креслення, і в тому розділі вона бреше. Фото цінні (видно,
+    що фактично лежить у людей на руках), тому не викидаємо, а виносимо сюди.
+    """
+    reg = next((c for c in SYSTEMS_REG if c["key"] == key), None)
+    pics = (reg or {}).get("photos") or []
+    if not pics:
+        return ""
+    cards = "\n".join(
+        f'    <div class="fig"><img src="{p[0]}" alt="{esc(p[1])}" loading="lazy">'
+        f'<p>{esc(p[1])}</p></div>' for p in pics)
+    return f'  <h2>Фото з місця</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
+
+
 def diagrams_html(key, heading="Схеми"):
     """Схеми системи, вставлені ТЕКСТОМ SVG, а не картинкою.
 
@@ -947,8 +964,9 @@ def build():
         tile("Детекція", f"{sn['range_m']:.1f}", "м", "стабільно вдень/вночі/в бурю", "good"),
     ]
     audio = audio.replace("{{ASSEMBLY_HTML}}", assembly_html())
-    audio = audio.replace("{{DIAGRAMS}}", diagrams_html("audio"))
+    audio = audio.replace("{{DIAGRAMS}}", diagrams_html("audio", heading="Схеми і креслення"))
     audio = audio.replace("{{FIGURES}}", figures_html("audio"))
+    audio = audio.replace("{{PHOTOS}}", photos_html("audio"))
     audio = audio.replace("{{TILES_HTML}}", "\n".join(audio_tiles))
 
     decs = "\n".join(
@@ -1096,6 +1114,7 @@ def build():
     ]
     lights = lights.replace("{{DIAGRAMS}}", diagrams_html("lights"))
     lights = lights.replace("{{FIGURES}}", figures_html("lights"))
+    lights = lights.replace("{{PHOTOS}}", photos_html("lights"))
     lights = lights.replace("{{TILES_HTML}}", "\n".join(lights_tiles))
 
     l_decs = [d for d in DECISIONS if d["system"] == "lights"]
@@ -1755,6 +1774,7 @@ def build():
     ]
     solar_page = solar_page.replace("{{DIAGRAMS}}", diagrams_html("solar"))
     solar_page = solar_page.replace("{{FIGURES}}", figures_html("solar"))
+    solar_page = solar_page.replace("{{PHOTOS}}", photos_html("solar"))
     solar_page = solar_page.replace("{{TILES_HTML}}", "\n".join(solar_tiles))
 
     d_rows, d_labels = [], {"lights": "Світло", "audio": "Звук",
@@ -2002,6 +2022,10 @@ def build():
                 f'    <div class="fig"><img src="{src_}" alt="{esc(cap)}" loading="lazy"><p>{esc(cap)}</p></div>'
                 for src_, cap in figs)
             sections.append(f'  <h2>Креслення</h2>\n  <div class="figs">\n{f_html}\n  </div>')
+
+        pics_html = photos_html(k)
+        if pics_html:
+            sections.append(pics_html)
 
         c_decs = [d for d in DECISIONS if d["system"] == k]
         if c_decs:

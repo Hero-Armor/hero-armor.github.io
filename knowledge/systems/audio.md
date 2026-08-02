@@ -45,6 +45,7 @@ generated: { by: "process:site-build" }
 * [Звірити склад коробок: у листі Amazon 18 позицій, у нашому списку 19](/tasks/zviryty-sklad-korobok-u-lysti-amazon-18-pozytsii-u-nashomu-s.md) — до роботи
 * [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду](/tasks/nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) — до роботи
 * [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](/tasks/vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) — чекаємо
+* [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](/tasks/diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) — чекаємо
 
 # Закупівля
 
