@@ -4,7 +4,7 @@ Hero Armor audio node — wiring schematic (module-to-module, pin-to-pin).
 Generates schematic.svg + schematic.png next to this file.
 
   12V (auto/cigarette port of the station, OWN cable) --fuse--> TPA3116D2 MONO amp + buck 12->5V
-  5V  --> ESP32 VIN, PCM5102A VIN, LD2410C VCC, microSD;  3V3 (from ESP32 LDO) --> XSMT
+  5V  --> ESP32 VIN, PCM5102A VIN, LD2410C VCC, microSD.  DAC SCK -> GND (internal PLL)
   ESP32: I2S -> PCM5102A -> L analog -> mono amp -> 1x MA-3013 speaker
          (second speaker of the pair = ready spare)
          SPI -> microSD;  D27/UART2 (RX2,TX2) <-> LD2410C
@@ -101,21 +101,28 @@ with schemdraw.Drawing(file=OUT + ".svg", show=False) as d:
         d += elm.Line().at(sd.absanchors[p]).to(esp.absanchors[p])
 
     # ---------------- PCM5102A DAC (right, I2S) ----------------
+    # Блок малюємо РІВНО як реальна плата GY-PCM5102A: шість контактів по
+    # лівому краю в тому самому порядку, що на шовкографії (SCK, BCK, DIN,
+    # LCK, GND, VIN), і вихід L/G праворуч. Раніше тут був вигаданий пін XSMT
+    # і зайвий FMT — через це Іван 02.08 паяв плату тричі й не бачив головного:
+    # SCK ОБОВʼЯЗКОВО на мінус, інакше ЦАП мовчить.
     dac = ic(
-        left=[("BCK", "", "BCK"), ("LCK", "", "LCK"), ("DIN", "", "DIN"),
-              ("SCK", "", "PSCK"), ("FMT", "", "FMT"), ("XSMT", "", "XSMT"),
-              ("VIN", "", "VIN"), ("GND", "", "GND")],
-        right=[("AGND", "", "AGND"), ("L", "", "L")],
-        w=2.8)
-    d += dac.right().anchor("BCK").at((7.0, esp.absanchors["BCK"][1])).label(
-        "PCM5102A (GY-PCM5102)", "top", fontsize=10)
+        # порядок знизу вгору, щоб НА СХЕМІ згори вниз читалось так само,
+        # як на шовкографії плати: SCK, BCK, DIN, LCK, GND, VIN
+        left=[("VIN", "", "VIN"), ("GND", "", "GND"), ("LCK", "", "LCK"),
+              ("DIN", "", "DIN"), ("BCK", "", "BCK"), ("SCK → на мінус!", "", "PSCK")],
+        right=[("G (AGND)", "", "AGND"), ("L", "", "L")],
+        w=2.8, size=(4.6, 4.4))
+    d += dac.right().anchor("BCK").at((7.6, esp.absanchors["BCK"][1])).label(
+        "ЦАП GY-PCM5102A — підписи як на платі", "top", fontsize=10)
     d += elm.Line().at(esp.BCK).to(dac.BCK)
     d += elm.Line().at(esp.LRCK).to(dac.LCK)
     d += elm.Line().at(esp.DIN).to(dac.DIN)
-    # config: SCK->GND (internal PLL), FMT->GND (I2S), XSMT->3V3 (unmute)
-    d += elm.Ground().at(dac.PSCK).left()
-    d += elm.Ground().at(dac.FMT).left()
-    d += elm.Vdd().at(dac.XSMT).left().label("3V3", fontsize=9)
+    # SCK на землю — це вмикає власний генератор ЦАПа. Без нього тиша.
+    gsck = elm.Line().at(dac.PSCK).left().length(1.1)
+    d += gsck
+    d += elm.Line().at(gsck.end).down().length(0.7)
+    d += elm.Ground()
     power_in(d, dac, "VIN", "GND", "5 В")
 
     # ---------------- LD2410C radar (below ESP32) ----------------
