@@ -68,3 +68,4 @@
 * [Заземлити металеву раму подіуму на мінус шини](zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) - чекаємо
 * [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) - готово
 * [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) - до роботи
+* [Зняти справжні довжини кабельних трас із креслення (зараз прикидка)](zniaty-spravzhni-dovzhyny-kabelnykh-tras-iz-kreslennia-zaraz.md) - до роботи
