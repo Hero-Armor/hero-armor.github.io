@@ -353,8 +353,12 @@ def assembly_html():
             board_html += (
                 f'  <h3>ЦАП — що куди і як швидко перевірити</h3>\n'
                 f'  <p class="files"><a href="{dac["url"]}">{esc(dac["name"])}</a>. {esc(dac["pins"])}</p>\n'
+                f'  <p class="files">{esc(dac.get("what_is", ""))}</p>\n'
                 f'  <p class="files"><b>Підключення:</b> {esc(dac["wire"])}</p>\n'
                 f'  <p class="files"><b>💡 {esc(dac["trick"])}</b></p>\n')
+            if dac.get("check"):
+                items = "\n".join(f'      <li>{esc(x)}</li>' for x in dac["check"])
+                board_html += f'  <ol class="files">\n{items}\n  </ol>\n'
 
         usb = brd.get("usb")
         if usb:
@@ -381,6 +385,7 @@ def assembly_html():
                 f'  <div class="tbl-wrap"><table>\n'
                 f'    <tr><th>Клема</th><th>Що туди йде</th></tr>\n{t_rows}\n'
                 f'  </table></div>\n'
+                f'  <p class="files">{esc(amp.get("mono_note", ""))}</p>\n'
                 f'  <p class="files"><b>⚠ {esc(amp["warning"])}</b></p>\n')
 
     pick, pick_html = enc.get("pick"), ""
