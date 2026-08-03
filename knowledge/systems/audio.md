@@ -32,6 +32,8 @@ generated: { by: "process:site-build" }
 * [Динамік ставимо ЗА бронею, отвору в ній не робимо](/decisions/dynamik-stavymo-za-broneiu-otvoru-v-nii-ne-robymo.md)
 * [Робот рахує, скільки разів заговорив — журнал на картці](/decisions/robot-rakhuie-skilky-raziv-zahovoryv-zhurnal-na-karttsi.md)
 * [Фраза лунає на ПОЯВУ людини, а не по таймеру](/decisions/fraza-lunaie-na-poiavu-liudyny-a-ne-po-taimeru.md)
+* [Журнал пише і пропуски: коли радар бачив, а робот промовчав](/decisions/zhurnal-pyshe-i-propusky-koly-radar-bachyv-a-robot-promovcha.md)
+* [XSMT на ЦАПі — обовʼязковий дріт на 3.3 В](/decisions/xsmt-na-tsapi-oboviazkovyi-drit-na-3-3-v.md)
 
 # Задачі
 
