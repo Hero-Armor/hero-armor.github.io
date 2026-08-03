@@ -99,3 +99,4 @@
 * [Фраза лунає на ПОЯВУ людини, а не по таймеру](fraza-lunaie-na-poiavu-liudyny-a-ne-po-taimeru.md)
 * [Журнал пише і пропуски: коли радар бачив, а робот промовчав](zhurnal-pyshe-i-propusky-koly-radar-bachyv-a-robot-promovcha.md)
 * [XSMT на ЦАПі — обовʼязковий дріт на 3.3 В](xsmt-na-tsapi-oboviazkovyi-drit-na-3-3-v.md)
+* [Заміряно на живому вузлі: 1.5 Вт, працює від 10 В, радар бачить крізь пластик](zamiriano-na-zhyvomu-vuzli-1-5-vt-pratsiuie-vid-10-v-radar-b.md)
