@@ -2521,6 +2521,19 @@ def build():
     bclab = bclab.replace("{{FX_BLOCK}}",
                           fx_file.read_text() if fx_file.exists() else "")
 
+    # Закупівля ядра: фото товару + таблиця з лінками на картки. Позиції тягнемо
+    # з BOM за словами back_core.json → buy.match, а не переписуємо руками —
+    # реєстр закупівлі один, сторінка показує свій шматок. Правило Івана 01.08:
+    # усе, що можна купити, стоїть із фото і посиланням на КОНКРЕТНИЙ товар.
+    # Сторінка ядра була першою, де воно не виконувалось (Іван помітив 02.08).
+    bc_buy = BC.get("buy", {})
+    bc_rows = [b for b in BOM
+               if any(mm in b["item"] + b.get("note", "") for mm in bc_buy.get("match", []))]
+    if not bc_rows:
+        print("warn: закупівля ядра порожня — перевір back_core.json → buy.match")
+    bclab = bclab.replace("{{BUY_BLOCK}}",
+                          photo_wall_html(bc_rows) + buy_table_html(bc_rows, bc_buy.get("note", "")))
+
     # План робіт по ядру — етапи і перевірки з lights/data/back_core_install.json.
     inst_file = LIGHTS / "data" / "back_core_install.json"
     INST = json.loads(inst_file.read_text()) if inst_file.exists() else {"stages": [], "checks": []}

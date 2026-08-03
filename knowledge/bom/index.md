@@ -95,7 +95,7 @@
 * [Коробка ABS IP65 200×120×75 (якщо своя не підійде)](korobka-abs-ip65-200-120-75-iakshcho-svoia-ne-pidiide.md) - $10, купити
 * [Набір кілець WS2812B 241 діод — ядро на спині](nabir-kilets-ws2812b-241-diod-iadro-na-spyni.md) - $25.99, купити
 * [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) - $19.07, купити
-* [Понижувач 12 В → 5 В, 10 А — під ядро на спині](ponyzhuvach-12-v-5-v-10-a-pid-iadro-na-spyni.md) - ~$10, купити
+* [Понижувач 12 В → 5 В, 10 А (2 шт) — під ядро на спині](ponyzhuvach-12-v-5-v-10-a-2-sht-pid-iadro-na-spyni.md) - ~$13/2шт, купити
 * [Дошки 2×4×8ft Douglas Fir](doshky-2-4-8ft-douglas-fir.md) - $36–45, купити
 * [Lag screws 3/8"×10" hex head, оцинковані](lag-screws-3-8-10-hex-head-otsynkovani.md) - $17, купити
 * [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) - $12, купити

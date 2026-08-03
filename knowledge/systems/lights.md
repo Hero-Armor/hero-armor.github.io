@@ -129,7 +129,7 @@ generated: { by: "process:site-build" }
 * [Підсилювач сигналу SP901E (WS2811/WS2812)](/bom/pidsyliuvach-syhnalu-sp901e-ws2811-ws2812.md) — $19.99, купити
 * [Набір кілець WS2812B 241 діод — ядро на спині](/bom/nabir-kilets-ws2812b-241-diod-iadro-na-spyni.md) — $25.99, купити
 * [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](/bom/gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) — $19.07, купити
-* [Понижувач 12 В → 5 В, 10 А — під ядро на спині](/bom/ponyzhuvach-12-v-5-v-10-a-pid-iadro-na-spyni.md) — ~$10, купити
+* [Понижувач 12 В → 5 В, 10 А (2 шт) — під ядро на спині](/bom/ponyzhuvach-12-v-5-v-10-a-2-sht-pid-iadro-na-spyni.md) — ~$13/2шт, купити
 * [Ватметр Гр.1+Гр.2+Гр.3А — DROK DC 4.5–100 В / 0–50 А, LED-дисплей з шунтом](/bom/vatmetr-hr-1-hr-2-hr-3a-drok-dc-4-5-100-v-0-50-a-led-dysplei.md) — $13.43/шт (~$40 разом), купити
 * [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](/bom/vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) — $16.12, купити
 * [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](/bom/tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) — $7.79, купити

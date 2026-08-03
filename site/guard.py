@@ -149,6 +149,35 @@ try:
 except Exception:
     pass
 
+# --- 4в. сторінка підсистеми без блоку закупівлі ----------------------------
+# Те саме правило Івана, але на рівень вище: мало мати лінк у реєстрі — його
+# треба ПОКАЗАТИ там, де людина читає про річ. 02.08 Іван відкрив сторінку
+# «Ядро на спині» (схеми, план, креслення на місці) і не знайшов, що по ній
+# купувати — саме ця дірка тут і ловиться. Сторінці, якій купувати справді
+# нема чого, ставимо `"no_buy": true` у її картці: тоді це свідоме рішення,
+# а не забудькуватість. Попереджаємо, не падаємо — блок буває в роботі.
+try:
+    pages, naked = [], []
+    for fname in ("labs.json", "systems.json"):
+        for c in json.loads((DATA / fname).read_text()):
+            if c.get("page") and not c.get("no_buy"):
+                pages.append((c["page"], c.get("title") or c.get("label") or c["page"]))
+    for page, title in pages:
+        built = ROOT / "dashboard" / page
+        if not built.exists():
+            continue
+        html = built.read_text()
+        if 'class="pw-item"' not in html and 'class="pic"' not in html:
+            naked.append(f"{title} ({page})")
+    if naked:
+        print(f"закупівля: {len(naked)} сторінок без блоку «що з цього купити»:")
+        for n in naked:
+            print("   ·", n)
+        print("   → завести buy.match у даних підсистеми і зібрати блок у build.py,")
+        print("     або поставити no_buy: true, якщо купувати справді нема чого\n")
+except Exception:
+    pass
+
 # --- 5. картки систем із битими файлами ------------------------------------
 try:
     for c in json.loads((DATA / "systems.json").read_text()):
