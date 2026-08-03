@@ -348,6 +348,14 @@ def assembly_html():
                 f'  <ol class="files">\n{st}\n  </ol>\n'
                 f'  <p class="files">{esc(fp["note"])}</p>\n')
 
+        dac = brd.get("dac")
+        if dac:
+            board_html += (
+                f'  <h3>ЦАП — що куди і як швидко перевірити</h3>\n'
+                f'  <p class="files"><a href="{dac["url"]}">{esc(dac["name"])}</a>. {esc(dac["pins"])}</p>\n'
+                f'  <p class="files"><b>Підключення:</b> {esc(dac["wire"])}</p>\n'
+                f'  <p class="files"><b>💡 {esc(dac["trick"])}</b></p>\n')
+
         usb = brd.get("usb")
         if usb:
             board_html += (
