@@ -95,3 +95,5 @@
 * [Якщо радар замовк по UART — працюємо по піну OUT](iakshcho-radar-zamovk-po-uart-pratsiuiemo-po-pinu-out.md)
 * [Налаштування живуть у памʼяті ESP32, а не в прошивці](nalashtuvannia-zhyvut-u-pamiati-esp32-a-ne-v-proshyvtsi.md)
 * [Динамік ставимо ЗА бронею, отвору в ній не робимо](dynamik-stavymo-za-broneiu-otvoru-v-nii-ne-robymo.md)
+* [Робот рахує, скільки разів заговорив — журнал на картці](robot-rakhuie-skilky-raziv-zahovoryv-zhurnal-na-karttsi.md)
+* [Фраза лунає на ПОЯВУ людини, а не по таймеру](fraza-lunaie-na-poiavu-liudyny-a-ne-po-taimeru.md)
