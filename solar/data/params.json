@@ -183,10 +183,11 @@
       "dc12_w": 378,
       "dc12_a": 30,
       "port": "Anderson SB50",
-      "price_usd": 1499,
-      "price_note": "flash-sale, MSRP 3699",
+      "price_usd": 999.97,
+      "price_note": "Costco, серпень 2026, є в 37 складах. Було $1999.99.",
       "weight_kg": 45,
-      "temp_max_c": 40
+      "temp_max_c": 45,
+      "temp_note": "Звірено 06.08.2026 по офіційному мануалу V1.0: розряд -10…+45 °C. Раніше стояло 40 — помилка."
     },
     "Bluetti AC200MAX": {
       "wh": 2048,
