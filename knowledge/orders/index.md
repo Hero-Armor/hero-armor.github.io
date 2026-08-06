@@ -14,3 +14,6 @@
 * [ORD-009 — Amazon](ord-009.md) - замовлено
 * [ORD-010 — Amazon](ord-010.md) - повернуто
 * [ORD-011 — Amazon](ord-011.md) - доставлено
+* [ORD-012 — Amazon](ord-012.md) - доставлено
+* [ORD-013 — Amazon](ord-013.md) - доставлено
+* [ORD-014 — Amazon](ord-014.md) - доставлено
