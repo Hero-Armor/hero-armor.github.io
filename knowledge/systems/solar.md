@@ -83,7 +83,8 @@ generated: { by: "process:site-build" }
 * [Deck screws 1-5/8" (для укосин і вузлів)](/bom/deck-screws-1-5-8-dlia-ukosyn-i-vuzliv.md) — $19, купити
 * [Simpson SD #9 × 1-1/2" connector screws (для кутиків A21)](/bom/simpson-sd-9-1-1-2-connector-screws-dlia-kutykiv-a21.md) — $27, купити
 * [Наждачний папір 80 grit (для торців дощок)](/bom/nazhdachnyi-papir-80-grit-dlia-tortsiv-doshchok.md) — $15, купити
-* [Impact socket 9/16" 3/8" drive (для lag screws)](/bom/impact-socket-9-16-3-8-drive-dlia-lag-screws.md) — $4, купити
+* [Impact socket 9/16" під гайковерт 3/8" drive (запасний варіант)](/bom/impact-socket-9-16-pid-haikovert-3-8-drive-zapasnyi-variant.md) — $4, купити
+* [Магнітна головка 9/16" × 6" під шуруповерт (Milwaukee SHOCKWAVE 49-66-4588)](/bom/mahnitna-holovka-9-16-6-pid-shurupovert-milwaukee-shockwave-.md) — $12.73/шт, купити
 * [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $13, купити
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $93.01, купити
 * [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](/bom/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) — $1,599.00, купити

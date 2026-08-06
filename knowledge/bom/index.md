@@ -112,7 +112,8 @@
 * [Deck screws 1-5/8" (для укосин і вузлів)](deck-screws-1-5-8-dlia-ukosyn-i-vuzliv.md) - $19, купити
 * [Simpson SD #9 × 1-1/2" connector screws (для кутиків A21)](simpson-sd-9-1-1-2-connector-screws-dlia-kutykiv-a21.md) - $27, купити
 * [Наждачний папір 80 grit (для торців дощок)](nazhdachnyi-papir-80-grit-dlia-tortsiv-doshchok.md) - $15, купити
-* [Impact socket 9/16" 3/8" drive (для lag screws)](impact-socket-9-16-3-8-drive-dlia-lag-screws.md) - $4, купити
+* [Impact socket 9/16" під гайковерт 3/8" drive (запасний варіант)](impact-socket-9-16-pid-haikovert-3-8-drive-zapasnyi-variant.md) - $4, купити
+* [Магнітна головка 9/16" × 6" під шуруповерт (Milwaukee SHOCKWAVE 49-66-4588)](mahnitna-holovka-9-16-6-pid-shurupovert-milwaukee-shockwave-.md) - $12.73/шт, купити
 * [Velcro кабельні стяжки (для проводки від панелі)](velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) - $13, купити
 * [Ватметр Гр.1+Гр.2+Гр.3А — DROK DC 4.5–100 В / 0–50 А, LED-дисплей з шунтом](vatmetr-hr-1-hr-2-hr-3a-drok-dc-4-5-100-v-0-50-a-led-dysplei.md) - $13.43/шт (~$40 разом), купити
 * [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) - $16.12, купити
