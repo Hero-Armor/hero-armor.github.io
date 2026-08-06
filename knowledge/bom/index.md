@@ -119,3 +119,4 @@
 * [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) - $7.79, купити
 * [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) - $29.47, купити
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) - $93.01, купити
+* [Обдувач компресорний WOLFBOX MF100 (турбіна 150 000 об/хв)](obduvach-kompresornyi-wolfbox-mf100-turbina-150-000-ob-khv.md) - $69.75, купити
