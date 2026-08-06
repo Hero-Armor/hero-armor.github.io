@@ -525,6 +525,38 @@ def bom_thumb(b):
     return f'<td class="pic">{tag}</td>'
 
 
+def buy_block_html(systems, match=None, note="", heading="Що це фізично"):
+    """Блок закупівлі для сторінки: смужка фото + таблиця «що з цього купити».
+
+    Правило Івана 01.08 і повторно 02.08: сторінка, де згадана річ, яку можна
+    купити, зобовʼязана показати, ЩО САМЕ купувати і по якому лінку — інакше
+    вона не готова. Реєстр закупівлі один (data/bom.json), тут лише зріз:
+    по системі, а за потреби ще й по словах `match` із даних підсистеми.
+    Порожній зріз — це майже завжди помилка в match, тому кажемо про це вголос.
+    """
+    if isinstance(systems, str):
+        systems = (systems,)
+    rows = [b for b in BOM if b.get("system") in systems]
+    if match:
+        rows = [b for b in rows
+                if any(m.lower() in (b["item"] + b.get("note", "")).lower() for m in match)]
+    if not rows:
+        print(f"warn: закупівля порожня для {systems} — перевір buy.match")
+        return ""
+    return photo_wall_html(rows, heading) + buy_table_html(rows, note)
+
+
+def _cables_buy_block():
+    """Зріз закупівлі під кабельну лабораторію.
+
+    Тут, на відміну від сторінок систем, потрібен саме вузький зріз: сторінка
+    про переріз і просадку, отже показуємо кабель, запобіжники, клеми і гофру,
+    а не всю систему. Слова живуть у lights/data/params.json -> wiring.buy.
+    """
+    cfg = lm.P["wiring"].get("buy") or {}
+    return buy_block_html(("lights", "solar"), cfg.get("match"), cfg.get("note", ""))
+
+
 def bom_rows_html():
     rows = []
     for b in BOM:
@@ -1097,6 +1129,9 @@ def build():
         f'<td class="num">~{i_comp*1000:.0f} mA</td><td class="num"><b>{wh_node:.0f}</b></td>'
         f'<td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>')
     lab = lab.replace("{{CASE_ROWS}}", "\n".join(rows))
+    lab = lab.replace("{{BUY_BLOCK}}", buy_block_html(
+        "audio",
+        note="Уся закупівля по аудіо-вузлу: динаміки, підсилювач, джерело, комутація і кріплення. Зріз єдиного реєстру за системою."))
 
     days_txt = ", ".join(f"{n} ≈ {d:.1f}" for n, d in auto["days"].items())
     lab = lab.replace("{{LAB_CAPTION}}",
@@ -1151,6 +1186,11 @@ def build():
     lights = lights.replace("{{DIAGRAMS}}", diagrams_html("lights"))
     lights = lights.replace("{{FIGURES}}", figures_html("lights"))
     lights = lights.replace("{{PHOTOS}}", photos_html("lights"))
+    lights = lights.replace("{{BUY_BLOCK}}", buy_block_html(
+        "lights",
+        note="Уся закупівля по світлу: прожектори, стрічка і неон, контролери, "
+             "щит із запобіжниками, кабель і дрібні кріплення. Зріз єдиного реєстру "
+             "за системою."))
     lights = lights.replace("{{TILES_HTML}}", "\n".join(lights_tiles))
 
     l_decs = [d for d in DECISIONS if d["system"] == "lights"]
@@ -1644,6 +1684,9 @@ def build():
             f'<td style="white-space:normal;max-width:52ch">{esc(c["look_for"])}</td>'
             f'<td>{res}{" · " + esc(c["note"]) if c["note"] else ""}</td></tr>')
     llab = llab.replace("{{STRIP_BRANCH}}", "\n".join(b_rows))
+    llab = llab.replace("{{BUY_BLOCK}}", buy_block_html(
+        "lights",
+        note="Те саме світло, але списком на закупівлю: усе, що симулятор вище ганяє по ватах, тут стоїть із фото, лінком і ціною."))
 
     # ================= cables / installation page =================
     tree_op = lm.cable_tree_operating()
@@ -1811,6 +1854,13 @@ def build():
     solar_page = solar_page.replace("{{DIAGRAMS}}", diagrams_html("solar"))
     solar_page = solar_page.replace("{{FIGURES}}", figures_html("solar"))
     solar_page = solar_page.replace("{{PHOTOS}}", photos_html("solar"))
+    # Сторінка системи показує ВЕСЬ свій зріз реєстру закупівлі, без слів-фільтрів:
+    # тут людина читає про живлення цілком, отже й купувати має бачити цілком.
+    solar_page = solar_page.replace("{{BUY_BLOCK}}", buy_block_html(
+        "solar",
+        note="Уся закупівля по живленню: станція, сонячний масив, рама під нього, "
+             "кабелі, прилади контролю та інструмент. Зріз єдиного реєстру за "
+             "системою — вужчі підбірки є в лабораторії живлення і на сторінці кабелю."))
     solar_page = solar_page.replace("{{TILES_HTML}}", "\n".join(solar_tiles))
 
     d_rows, d_labels = [], {"lights": "Світло", "audio": "Звук",
@@ -1985,6 +2035,7 @@ def build():
     clab = clab.replace("{{DERATE}}", f'{FZ["derate"]:g}')
     clab = clab.replace("{{STOCK_LABEL}}", " і ".join(str(a) for a in stock) + " AWG")
     clab = clab.replace("{{POWER_PATHS}}", "\n".join(path_rows))
+    clab = clab.replace("{{BUY_BLOCK}}", _cables_buy_block())
 
     # ================= ops page =================
     ops = tmpl("ops.tmpl.html")
@@ -2423,14 +2474,7 @@ def build():
     def _buy_block(cfg, systems):
         if not cfg:
             return ""
-        rows = [b for b in BOM
-                if b.get("system") in systems
-                and any(m.lower() in (b["item"] + b.get("note", "")).lower()
-                        for m in cfg.get("match", []))]
-        if not rows:
-            print(f"warn: закупівля порожня для {systems} — перевір buy.match")
-            return ""
-        return photo_wall_html(rows) + buy_table_html(rows, cfg.get("note", ""))
+        return buy_block_html(systems, cfg.get("match"), cfg.get("note", ""))
 
     elab = elab.replace("{{BUY_BLOCK}}", _buy_block(ENC.get("buy"), ("enclosure",)))
     slab = slab.replace("{{BUY_BLOCK}}", _buy_block(PP.get("buy"), ("solar",)))
