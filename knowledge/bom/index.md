@@ -120,3 +120,6 @@
 * [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) - $29.47, купити
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) - $93.01, купити
 * [Обдувач компресорний WOLFBOX MF100 (турбіна 150 000 об/хв)](obduvach-kompresornyi-wolfbox-mf100-turbina-150-000-ob-khv.md) - $69.75, купити
+* [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) - $1,599.00, купити
+* [Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)](iashchyk-sterilite-40-gal-wheeled-industrial-tote-para-stant.md) - $176.99, купити
+* [Кабель від станції до щита під Anderson, переріз на 30 А](kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) - —, купити

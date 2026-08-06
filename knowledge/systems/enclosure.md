@@ -20,10 +20,14 @@ generated: { by: "process:site-build" }
 * [Гіпотеза: кулер із 30-40 кг води замість фільтрів і вентилятора](/decisions/hipoteza-kuler-iz-30-40-kh-vody-zamist-filtriv-i-ventyliator.md)
 * [Розмір коробки не відсікає станцію — просто фіксуємо факт](/decisions/rozmir-korobky-ne-vidsikaie-stantsiiu-prosto-fiksuiemo-fakt.md)
 * [Тінь важить більше за вентилятор](/decisions/tin-vazhyt-bilshe-za-ventyliator.md)
+* [Ящик під станцію — Sterilite 40 gal Wheeled, пара за $176.99 у Target](/decisions/iashchyk-pid-stantsiiu-sterilite-40-gal-wheeled-para-za-176-.md)
+* [Рековий кейс з Facebook Marketplace за $175 — відмова](/decisions/rekovyi-keis-z-facebook-marketplace-za-175-vidmova.md)
 
 # Задачі
 
 * [Поставити маркерний вогник у стінку ящика станції — герметично](/tasks/postavyty-markernyi-vohnyk-u-stinku-iashchyka-stantsii-herme.md) — чекаємо
+* [Замовити пару ящиків Sterilite 40 gal у Target ($176.99, доставка наступного дня)](/tasks/zamovyty-paru-iashchykiv-sterilite-40-gal-u-target-176-99-do.md) — до роботи
+* [Виміряти реальну висоту ящика Sterilite — 457 мм це з колесами чи без](/tasks/vymiriaty-realnu-vysotu-iashchyka-sterilite-457-mm-tse-z-kol.md) — чекаємо
 
 # Закупівля
 
@@ -38,3 +42,4 @@ generated: { by: "process:site-build" }
 * [Гермоввід PG13.5 IP68](/bom/hermovvid-pg13-5-ip68.md) — $10, купити
 * [Кулер Coleman 100-150 qt](/bom/kuler-coleman-100-150-qt.md) — $100-140, купити
 * [Каністри під воду 5 л](/bom/kanistry-pid-vodu-5-l.md) — $40, купити
+* [Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)](/bom/iashchyk-sterilite-40-gal-wheeled-industrial-tote-para-stant.md) — $176.99, купити

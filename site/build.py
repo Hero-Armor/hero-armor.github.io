@@ -2415,6 +2415,26 @@ def build():
                      f'<td>{f["cfm"]} CFM паспорт → {f["cfm"]*ENC["air"]["filter_derate"]:.0f} з фільтром</td></tr>')
     elab = elab.replace("{{ENC_PARTS}}", "\n".join(parts))
 
+    # Блок «що з цього треба купити» на лабораторіях живлення і ящика.
+    # Джерело одне — реєстр закупівлі BOM; сторінка показує свій зріз за
+    # словами з <підсистема>/data/params.json → buy.match. Правило Івана:
+    # усе, що можна купити, стоїть із фото, посиланням на конкретний товар
+    # і перевіреною наявністю (06.08.2026 — наявність стала третьою вимогою).
+    def _buy_block(cfg, systems):
+        if not cfg:
+            return ""
+        rows = [b for b in BOM
+                if b.get("system") in systems
+                and any(m.lower() in (b["item"] + b.get("note", "")).lower()
+                        for m in cfg.get("match", []))]
+        if not rows:
+            print(f"warn: закупівля порожня для {systems} — перевір buy.match")
+            return ""
+        return photo_wall_html(rows) + buy_table_html(rows, cfg.get("note", ""))
+
+    elab = elab.replace("{{BUY_BLOCK}}", _buy_block(ENC.get("buy"), ("enclosure",)))
+    slab = slab.replace("{{BUY_BLOCK}}", _buy_block(PP.get("buy"), ("solar",)))
+
     # ============ лабораторія ядра на спині ============
     # Велика світна лампа на спині робота: модуль адресних діодів усередині
     # корпусу, друковане біле вікно зовні. Сторінка відповідає на три питання —

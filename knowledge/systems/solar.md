@@ -36,6 +36,8 @@ generated: { by: "process:site-build" }
 * [Bluetti має ШТАТНИЙ 12 В / 30 А — нічого не паяти](/decisions/bluetti-maie-shtatnyi-12-v-30-a-nichoho-ne-paiaty.md)
 * [AC200P на Marketplace за $700 — найдешевший робочий шлях](/decisions/ac200p-na-marketplace-za-700-naideshevshyi-robochyi-shliakh.md)
 * [Резервне живлення шини 12 В — блок 110 В → 12 В](/decisions/rezervne-zhyvlennia-shyny-12-v-blok-110-v-12-v.md)
+* [Станція живлення — EcoFlow DELTA 3 Ultra Plus 3072 Вт·год, $1599 у Home Depot](/decisions/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md)
+* [Рама: просвіт під ящик 460 → 540 мм, передня стійка 500 → 580](/decisions/rama-prosvit-pid-iashchyk-460-540-mm-perednia-stiika-500-580.md)
 
 # Задачі
 
@@ -48,6 +50,10 @@ generated: { by: "process:site-build" }
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](/tasks/pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) — до роботи
 * [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](/tasks/podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) — до роботи
 * [Замовити резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/tasks/zamovyty-rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-.md) — до роботи
+* [Замовити станцію EcoFlow DELTA 3 Ultra Plus у Home Depot ($1599, доставка 12-14.08)](/tasks/zamovyty-stantsiiu-ecoflow-delta-3-ultra-plus-u-home-depot-1.md) — до роботи
+* [Заміряти ватметром холостий хід станції в перший же день після отримання](/tasks/zamiriaty-vatmetrom-kholostyi-khid-stantsii-v-pershyi-zhe-de.md) — чекаємо
+* [Тест станції під навантаженням до виїзду (виїзд 28-29.08, Burn 30.08-07.09)](/tasks/test-stantsii-pid-navantazhenniam-do-vyizdu-vyizd-28-29-08-b.md) — чекаємо
+* [Обрати кабель від станції до щита під Anderson на 30 А](/tasks/obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) — до роботи
 
 # Закупівля
 
@@ -80,3 +86,5 @@ generated: { by: "process:site-build" }
 * [Impact socket 9/16" 3/8" drive (для lag screws)](/bom/impact-socket-9-16-3-8-drive-dlia-lag-screws.md) — $4, купити
 * [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $13, купити
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $93.01, купити
+* [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](/bom/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) — $1,599.00, купити
+* [Кабель від станції до щита під Anderson, переріз на 30 А](/bom/kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) — —, купити

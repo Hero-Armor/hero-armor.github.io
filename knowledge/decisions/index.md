@@ -103,3 +103,7 @@
 * [Обидва кабелі лишаються — ні 8/2, ні 12/2 не повертаємо [ЧАСТКОВО СКАСОВАНО 05.08]](obydva-kabeli-lyshaiutsia-ni-8-2-ni-12-2-ne-povertaiemo-chas.md)
 * [Резервне живлення шини 12 В — блок 110 В → 12 В](rezervne-zhyvlennia-shyny-12-v-blok-110-v-12-v.md)
 * [Корпусів прожекторів лишаємо рівно 12 — надлишок повернути](korpusiv-prozhektoriv-lyshaiemo-rivno-12-nadlyshok-povernuty.md)
+* [Станція живлення — EcoFlow DELTA 3 Ultra Plus 3072 Вт·год, $1599 у Home Depot](stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md)
+* [Ящик під станцію — Sterilite 40 gal Wheeled, пара за $176.99 у Target](iashchyk-pid-stantsiiu-sterilite-40-gal-wheeled-para-za-176-.md)
+* [Рама: просвіт під ящик 460 → 540 мм, передня стійка 500 → 580](rama-prosvit-pid-iashchyk-460-540-mm-perednia-stiika-500-580.md)
+* [Рековий кейс з Facebook Marketplace за $175 — відмова](rekovyi-keis-z-facebook-marketplace-za-175-vidmova.md)

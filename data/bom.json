@@ -1282,5 +1282,38 @@
     "url": "https://www.amazon.com/dp/B0DHNG4DL8",
     "note": "Рішення Івана 05.08.2026: беремо як проєктний інструмент. Обслуговування на плайї — здувати пил із сонячних панелей (без чистки −21% віддачі за тиждень), із плат, роз'ємів і радіаторів. Без витратного балона, працює від акумулятора. Замовлення 114-7203183-2588266 від 30.07, $69.75.",
     "img": "assets/bom/B0DHNG4DL8.jpg"
+  },
+  {
+    "item": "Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А",
+    "qty": "1",
+    "price": "$1,599.00",
+    "status": "add",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "https://www.homedepot.com/p/EcoFlow-3600-Watt-Delta-3-Ultra-Plus-3072Wh-Capacity-Push-Button-Start-Battery-Generator-LFP-Power-Station-Home-Backup-Camping-EFDELTA3UPLUS-US/338669716",
+    "note": "Артикул EFDELTA3UPLUS-US. Перевірено живою карткою 06.08 з домашнього IP: 18 шт готові до відправки, доставка 12-14 серпня, повернення 90 днів, продає сам Home Depot (рядка «Sold by» нема). 613×328×395 мм, 33.7 кг, розряд -10…+45 °C, сонячний вхід 1600 Вт, гарантія 3+2 роки за реєстрацію в застосунку. ⚠ Не переплутати з DELTA 3 Max Plus (нема в наявності) і з «Smart Extra Battery» EFD3MP-EB за $899 — то додаткова батарея без портів.",
+    "img": "assets/gear/ecoflow_delta3ultraplus.jpg"
+  },
+  {
+    "item": "Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)",
+    "qty": "2",
+    "price": "$176.99",
+    "status": "add",
+    "system": "enclosure",
+    "flow": "to_order",
+    "url": "https://www.target.com/p/sterilite-40-gal-wheeled-industrial-tote-stackable-storage-bin-with-latch-lid-plastic-container-with-heavy-duty-latches-black-base-and-lid-2-pack/-/A-89587851",
+    "note": "Внутрішні 775×406×435, зовнішні 933×543×457, поліпропілен, колеса і клямри. Під станцію лишається 162 мм вільної довжини під фільтр-бокс, по 39 мм з боків. Target, 2-pack, «Order by 9:30pm, get it tomorrow» — перевірено 06.08. ⚠ На Walmart той самий ящик Out of stock. Запасний варіант — IRIS WeatherPro 156 Qt $59.99 у Tractor Supply.",
+    "img": "assets/gear/sterilite_40gal_wheeled.jpg"
+  },
+  {
+    "item": "Кабель від станції до щита під Anderson, переріз на 30 А",
+    "qty": "1",
+    "price": "—",
+    "status": "tbd",
+    "system": "solar",
+    "flow": "to_order",
+    "url": "",
+    "note": "Модель ще обираємо. Потрібен роз'єм Anderson (PP45 або SB50) під вихід станції 12.6 В/30 А і переріз під 30 А на довжину від ящика до щита подіуму.",
+    "img": ""
   }
 ]
