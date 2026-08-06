@@ -25,11 +25,11 @@
 * [XT60 пара + пігтейли](xt60-para-pihteily.md) - $7/2пари, купити
 * [Кабель 18AWG силікон, 2×2 м](kabel-18awg-sylikon-2-2-m.md) - $13/18м, купити
 * [Gardencoin прожектор (корпус)](gardencoin-prozhektor-korpus.md) - $43/уп, купити
-* [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - $34.64, купити
+* [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - $96.34, купити
 * [Gebildet LED 12 мм, металеві](gebildet-led-12-mm-metalevi.md) - $7.79, купити
 * [Gebildet LED 8 мм, металеві](gebildet-led-8-mm-metalevi.md) - $6.06, купити
 * [Врізні вогні в торець подіуму, 0.6 Вт](vrizni-vohni-v-torets-podiumu-0-6-vt.md) - $106, купити
-* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $47, купити
+* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $93.00, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
 * [Сонячні панелі для масиву (потужність не обрана)](soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - $149, купити
@@ -118,4 +118,4 @@
 * [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) - $16.12, купити
 * [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) - $7.79, купити
 * [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) - $29.47, купити
-* [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) - $85 (орієнтовно — сторінка віддає EUR 76.72, звірити при замовленні), купити
+* [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) - $93.01, купити

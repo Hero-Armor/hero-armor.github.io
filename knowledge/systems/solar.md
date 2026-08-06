@@ -79,4 +79,4 @@ generated: { by: "process:site-build" }
 * [Наждачний папір 80 grit (для торців дощок)](/bom/nazhdachnyi-papir-80-grit-dlia-tortsiv-doshchok.md) — $15, купити
 * [Impact socket 9/16" 3/8" drive (для lag screws)](/bom/impact-socket-9-16-3-8-drive-dlia-lag-screws.md) — $4, купити
 * [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $13, купити
-* [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $85 (орієнтовно — сторінка віддає EUR 76.72, звірити при замовленні), купити
+* [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $93.01, купити

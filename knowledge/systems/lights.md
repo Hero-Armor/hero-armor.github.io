@@ -96,11 +96,11 @@ generated: { by: "process:site-build" }
 # Закупівля
 
 * [Gardencoin прожектор (корпус)](/bom/gardencoin-prozhektor-korpus.md) — $43/уп, купити
-* [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — $34.64, купити
+* [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — $96.34, купити
 * [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — $7.79, купити
 * [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — $6.06, купити
 * [Врізні вогні в торець подіуму, 0.6 Вт](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt.md) — $106, купити
-* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $47, купити
+* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $93.00, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $13.99 за 2 шт, купити
 * [Щит-бокс із тримачами запобіжників](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv.md) — $19.07, купити

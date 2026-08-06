@@ -1,7 +1,7 @@
 ---
 type: "Part"
 title: "Gebildet LED 8 мм, металеві"
-description: "Лампи на корпусі робота, strip-line. IP65"
+description: "Лампи на корпусі робота, strip-line. IP65 Підтверджено по історії замовлень Amazon 05.08.2026 — куплено. Фактично взяті DMWD 8 мм, у тих самих замовленнях 20.07"
 resource: "https://www.amazon.com/dp/B09PFNXG5H"
 tags: ["lights"]
 quantity: "2 (уп 5)"
@@ -10,6 +10,6 @@ procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
-Лампи на корпусі робота, strip-line. IP65
+Лампи на корпусі робота, strip-line. IP65 Підтверджено по історії замовлень Amazon 05.08.2026 — куплено. Фактично взяті DMWD 8 мм, у тих самих замовленнях 20.07.
 
 Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $6.06 · к-сть 2 (уп 5)
