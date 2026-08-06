@@ -72,3 +72,4 @@
 * [Замовити резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](zamovyty-rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-.md) - до роботи
 * [Коли буде доступ до історії Amazon — залити реальну закупівлю в базу і перезібрати портал та лабораторії](koly-bude-dostup-do-istorii-amazon-zalyty-realnu-zakupivliu-.md) - чекаємо
 * [Фільтр: замовлення на Наталію Багінську — не наші, у звіти не включати](filtr-zamovlennia-na-nataliiu-bahinsku-ne-nashi-u-zvity-ne-v.md) - готово
+* [Перевірити другу картку SanDisk 32GB — $23.95 за штуку, взято дві](pereviryty-druhu-kartku-sandisk-32gb-23-95-za-shtuku-vziato-.md) - до роботи

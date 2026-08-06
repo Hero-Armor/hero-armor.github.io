@@ -59,7 +59,7 @@ generated: { by: "process:site-build" }
 * [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](/bom/victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) — $201, купити
 * [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](/bom/victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) — $114, купити
-* [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](/bom/bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) — ~$45, купити
+* [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](/bom/bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) — $6.99 за 2 пари, купити
 * [Кабель XT150 для порту розширення (готовий)](/bom/kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) — ~$25, купити
 * [Дошки 2×4×8ft Douglas Fir](/bom/doshky-2-4-8ft-douglas-fir.md) — $36–45, купити
 * [Lag screws 3/8"×10" hex head, оцинковані](/bom/lag-screws-3-8-10-hex-head-otsynkovani.md) — $17, купити

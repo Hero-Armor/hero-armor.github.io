@@ -8,21 +8,21 @@
 * [3M 983-10 біла світлоповертальна стрічка, 2"×12'](3m-983-10-bila-svitlopovertalna-strichka-2-12.md) - $18.97, купити
 * [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) - $12.25, купити
 * [Маркерний вогник ящика — індикатор 12 мм 12 В](markernyi-vohnyk-iashchyka-indykator-12-mm-12-v.md) - ~$10, купити
-* [ESP32 WROOM-32 DevKit](esp32-wroom-32-devkit.md) - $17/3шт, купити
-* [PCM5102A (GY-PCM5102)](pcm5102a-gy-pcm5102.md) - $12/3шт, купити
-* [microSD SPI модуль](microsd-spi-modul.md) - $7/5шт, купити
-* [SanDisk 32GB Class 10](sandisk-32gb-class-10.md) - ~$10, купити
-* [TPA3116D2 Mono (HiLetgo)](tpa3116d2-mono-hiletgo.md) - $14/2шт, купити
+* [ESP32 WROOM-32 DevKit](esp32-wroom-32-devkit.md) - $16.59 за 3 плати, купити
+* [PCM5102A (GY-PCM5102)](pcm5102a-gy-pcm5102.md) - $11.99 за набір 3 шт (взято 2 набори = 6 ЦАПів), купити
+* [microSD SPI модуль](microsd-spi-modul.md) - $6.99 за 5 шт, купити
+* [SanDisk 32GB Class 10](sandisk-32gb-class-10.md) - $23.95/шт — ВЗЯТО ДВІ, $47.90 разом, купити
+* [TPA3116D2 Mono (HiLetgo)](tpa3116d2-mono-hiletgo.md) - $13.99 за 2 плати, купити
 * [Poly-Planar MA-3013, пара](poly-planar-ma-3013-para.md) - $70, купити
 * [Herdio HMS60 3", пара](herdio-hms60-3-para.md) - $32, купити
-* [LD2410C](ld2410c.md) - $20/3шт, купити
-* [Buck 12→5В ≥1.5А + LC](buck-12-5v-1-5a-lc.md) - $9/5шт, купити
+* [LD2410C](ld2410c.md) - $20.48 за 3 шт, купити
+* [Buck 12→5В ≥1.5А + LC](buck-12-5v-1-5a-lc.md) - $8.99 за 5 шт, купити
 * [Радіатор 50×50 мм + термопрокладка](radiator-50-50-mm-termoprokladka.md) - ~$9/4шт, купити
-* [Запобіжник 3А + тримач](zapobizhnyk-3a-trymach.md) - $9/6шт, купити
-* [Конденсатор 1000 µФ 25В low-ESR](kondensator-1000-f-25v-low-esr.md) - $5/10шт, купити
+* [Запобіжник 3А + тримач](zapobizhnyk-3a-trymach.md) - $8.99 за набір 6 шт, купити
+* [Конденсатор 1000 µФ 25В low-ESR](kondensator-1000-f-25v-low-esr.md) - $4.99 за 10 шт, купити
 * [Захист динаміка від пилу](zakhyst-dynamika-vid-pylu.md) - $10/2шт, купити
 * [Штекер-прикурювач з клемами](shteker-prykuriuvach-z-klemamy.md) - $6/2шт, купити
-* [XT60 пара + пігтейли](xt60-para-pihteily.md) - $7/2пари, купити
+* [XT60 пара + пігтейли](xt60-para-pihteily.md) - $6.99 за 2 пари, купити
 * [Кабель 18AWG силікон, 2×2 м](kabel-18awg-sylikon-2-2-m.md) - $13/18м, купити
 * [Gardencoin прожектор (корпус)](gardencoin-prozhektor-korpus.md) - $43/уп, купити
 * [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - $96.34, купити
@@ -61,7 +61,7 @@
 * [Зарядник 14.6 В 20-30 А з Anderson](zariadnyk-14-6-v-20-30-a-z-anderson.md) - ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) - $201, купити
 * [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) - $114, купити
-* [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) - ~$45, купити
+* [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) - $6.99 за 2 пари, купити
 * [Кабель XT150 для порту розширення (готовий)](kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) - ~$25, купити
 * [Макетна плата 9×15см двостороння](maketna-plata-9-15sm-dvostoronnia.md) - $13, купити
 * [Набір нейлонових стійок M2.5/M3/M4](nabir-neilonovykh-stiiok-m2-5-m3-m4.md) - $17, купити
