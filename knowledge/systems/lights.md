@@ -95,11 +95,11 @@ generated: { by: "process:site-build" }
 # Закупівля
 
 * [Gardencoin прожектор (корпус)](/bom/gardencoin-prozhektor-korpus.md) — $43/уп, купити
-* [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — $96.34, купити
-* [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — $7.79, купити
-* [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — $6.06, купити
+* [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — $96.34 за 12-пак (Luxrite) · Diodesy $42.20/6-пак ×2 до Марселя, купити
+* [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — $10.99 за 5 шт (фактично DMWD), купити
+* [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — $8.99 за 5 шт (фактично DMWD), купити
 * [Врізні вогні в торець подіуму, 0.6 Вт](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt.md) — $106, купити
-* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $93.00, купити
+* [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $13.99 за 2 шт, купити
 * [Щит-бокс із тримачами запобіжників](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv.md) — $19.07, купити
@@ -112,7 +112,7 @@ generated: { by: "process:site-build" }
 * [Гофра/кабель-канал для відводів](/bom/hofra-kabel-kanal-dlia-vidvodiv.md) — $26.87, купити
 * [Кабель: Станція (30 А вихід) → щит запобіжників](/bom/kabel-stantsiia-30-a-vykhid-shchyt-zapobizhnykiv.md) — $106.40, купити
 * [Кабель: Щит → коробка диммера (Гр.1)](/bom/kabel-shchyt-korobka-dymmera-hr-1.md) — $181.31, купити
-* [Кабель: Диммер → кільце прожекторів](/bom/kabel-dymmer-kiltse-prozhektoriv.md) — $181.31, купити
+* [Кабель: Диммер → кільце прожекторів](/bom/kabel-dymmer-kiltse-prozhektoriv.md) — $100.88 за бухту 100 ft, купити
 * [Кабель: Відвід на прожектор (найдальший)](/bom/kabel-vidvid-na-prozhektor-naidalshyi.md) — $47.00, купити
 * [Кабель: Щит → коробка WLED (Гр.2)](/bom/kabel-shchyt-korobka-wled-hr-2.md) — $106.40, купити
 * [Кабель: WLED → точки живлення стрічки](/bom/kabel-wled-tochky-zhyvlennia-strichky.md) — $33.99 за бухту, купити
