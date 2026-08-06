@@ -69,6 +69,7 @@
 * [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) - готово
 * [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) - до роботи
 * [Зняти справжні довжини кабельних трас із креслення (зараз прикидка)](zniaty-spravzhni-dovzhyny-kabelnykh-tras-iz-kreslennia-zaraz.md) - до роботи
-* [Порахувати корпуси Gardencoin на руках і повернути зайві понад 12](porakhuvaty-korpusy-gardencoin-na-rukakh-i-povernuty-zaivi-p.md) - до роботи
 * [Замовити резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](zamovyty-rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-.md) - до роботи
 * [Коли буде доступ до історії Amazon — залити реальну закупівлю в базу і перезібрати портал та лабораторії](koly-bude-dostup-do-istorii-amazon-zalyty-realnu-zakupivliu-.md) - чекаємо
+* [Докупити 2 корпуси прожекторів Gardencoin — на руках 10, треба 12](dokupyty-2-korpusy-prozhektoriv-gardencoin-na-rukakh-10-treb.md) - до роботи
+* [Фільтр: замовлення на Наталію Багінську — не наші, у звіти не включати](filtr-zamovlennia-na-nataliiu-bahinsku-ne-nashi-u-zvity-ne-v.md) - готово

@@ -91,7 +91,7 @@ generated: { by: "process:site-build" }
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](/tasks/vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) — до роботи
 * [Заземлити металеву раму подіуму на мінус шини](/tasks/zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) — чекаємо
 * [Зняти справжні довжини кабельних трас із креслення (зараз прикидка)](/tasks/zniaty-spravzhni-dovzhyny-kabelnykh-tras-iz-kreslennia-zaraz.md) — до роботи
-* [Порахувати корпуси Gardencoin на руках і повернути зайві понад 12](/tasks/porakhuvaty-korpusy-gardencoin-na-rukakh-i-povernuty-zaivi-p.md) — до роботи
+* [Докупити 2 корпуси прожекторів Gardencoin — на руках 10, треба 12](/tasks/dokupyty-2-korpusy-prozhektoriv-gardencoin-na-rukakh-10-treb.md) — до роботи
 
 # Закупівля
 
