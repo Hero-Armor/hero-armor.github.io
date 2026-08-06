@@ -4,27 +4,27 @@
 <text x="480.0" y="40.0" text-anchor="middle" font-size="11" fill="#6b675c">2×4 Douglas Fir · нахил 20° · панель 1956×1134 мм 600 Вт (прикидка — reference_panel)</text>
 <line x1="24" y1="52" x2="936" y2="52" stroke="#d8d5c9" stroke-width="1"/>
 <line x1="269.4" y1="348.0" x2="690.6" y2="348.0" stroke="#d8d5c9" stroke-width="1.5" stroke-dasharray="6 4"/>
-<rect x="284.4" y="241.6" width="8.1" height="106.4" fill="#f5f4ef" stroke="#24231d" stroke-width="1.5"/>
-<rect x="667.5" y="99.3" width="8.1" height="248.7" fill="#f5f4ef" stroke="#24231d" stroke-width="1.5"/>
-<line x1="288.5" y1="241.6" x2="671.5" y2="99.3" stroke="#b35b1e" stroke-width="3.5"/>
-<polygon points="288.5,241.6 671.5,99.3 674.3,106.8 291.3,249.1" fill="#d4e8f8" opacity="0.6" stroke="none"/>
+<rect x="284.4" y="224.6" width="8.1" height="123.4" fill="#f5f4ef" stroke="#24231d" stroke-width="1.5"/>
+<rect x="667.5" y="82.2" width="8.1" height="265.8" fill="#f5f4ef" stroke="#24231d" stroke-width="1.5"/>
+<line x1="288.5" y1="224.6" x2="671.5" y2="82.2" stroke="#b35b1e" stroke-width="3.5"/>
+<polygon points="288.5,224.6 671.5,82.2 674.3,89.7 291.3,232.1" fill="#d4e8f8" opacity="0.6" stroke="none"/>
 <rect x="284.4" y="348.0" width="391.1" height="9.7" fill="#f5f4ef" stroke="#24231d" stroke-width="1.5"/>
-<path d="M 320.5,241.6 A 32,32 0 0 1 318.6,230.7" fill="none" stroke="#b07c14" stroke-width="1.2"/>
-<text x="324.5" y="235.6" text-anchor="start" font-size="11" fill="#b07c14">20°</text>
+<path d="M 320.5,224.6 A 32,32 0 0 1 318.6,213.6" fill="none" stroke="#b07c14" stroke-width="1.2"/>
+<text x="324.5" y="218.6" text-anchor="start" font-size="11" fill="#b07c14">20°</text>
 <line x1="284.4" y1="379.7" x2="675.6" y2="379.7" stroke="#3d6f96" stroke-width="1.2" marker-start="url(#fr-dim)" marker-end="url(#fr-dim)"/>
 <text x="480.0" y="375.7" text-anchor="middle" font-size="10" fill="#3d6f96">проекція 1838 мм</text>
-<line x1="709.6" y1="99.3" x2="709.6" y2="241.6" stroke="#3d6f96" stroke-width="1.2" marker-start="url(#fr-dim)" marker-end="url(#fr-dim)"/>
-<text x="723.6" y="170.4" text-anchor="start" font-size="10" fill="#3d6f96">підйом
+<line x1="709.6" y1="82.2" x2="709.6" y2="224.6" stroke="#3d6f96" stroke-width="1.2" marker-start="url(#fr-dim)" marker-end="url(#fr-dim)"/>
+<text x="723.6" y="153.4" text-anchor="start" font-size="10" fill="#3d6f96">підйом
 669 мм</text>
-<line x1="675.6" y1="99.3" x2="709.6" y2="99.3" stroke="#d8d5c9" stroke-width="0.8"/>
-<line x1="675.6" y1="241.6" x2="709.6" y2="241.6" stroke="#d8d5c9" stroke-width="0.8"/>
-<line x1="256.4" y1="241.6" x2="256.4" y2="348.0" stroke="#3d6f96" stroke-width="1.2" marker-start="url(#fr-dim)" marker-end="url(#fr-dim)"/>
-<text x="186.4" y="294.8" text-anchor="start" font-size="10" fill="#3d6f96">перед 500 мм</text>
-<line x1="284.4" y1="241.6" x2="256.4" y2="241.6" stroke="#d8d5c9" stroke-width="0.8"/>
+<line x1="675.6" y1="82.2" x2="709.6" y2="82.2" stroke="#d8d5c9" stroke-width="0.8"/>
+<line x1="675.6" y1="224.6" x2="709.6" y2="224.6" stroke="#d8d5c9" stroke-width="0.8"/>
+<line x1="256.4" y1="224.6" x2="256.4" y2="348.0" stroke="#3d6f96" stroke-width="1.2" marker-start="url(#fr-dim)" marker-end="url(#fr-dim)"/>
+<text x="186.4" y="286.3" text-anchor="start" font-size="10" fill="#3d6f96">перед 580 мм</text>
+<line x1="284.4" y1="224.6" x2="256.4" y2="224.6" stroke="#d8d5c9" stroke-width="0.8"/>
 <line x1="284.4" y1="348.0" x2="256.4" y2="348.0" stroke="#d8d5c9" stroke-width="0.8"/>
-<text x="288.5" y="235.6" text-anchor="middle" font-size="9" fill="#6b675c">↓ пд</text>
-<text x="671.5" y="93.3" text-anchor="middle" font-size="9" fill="#6b675c">↓ пн</text>
-<text x="481.4" y="168.2" text-anchor="middle" font-size="9" fill="#b35b1e">рейка 1956 мм</text>
+<text x="288.5" y="218.6" text-anchor="middle" font-size="9" fill="#6b675c">↓ пд</text>
+<text x="671.5" y="76.2" text-anchor="middle" font-size="9" fill="#6b675c">↓ пн</text>
+<text x="481.4" y="151.2" text-anchor="middle" font-size="9" fill="#b35b1e">рейка 1956 мм</text>
 <text x="480.0" y="78.0" text-anchor="middle" font-size="13" fill="#24231d" font-weight="bold">Вигляд збоку</text>
 <text x="691.6" y="352.0" text-anchor="start" font-size="9" fill="#6b675c">підлога</text>
 <text x="480.0" y="418.0" text-anchor="middle" font-size="13" fill="#24231d" font-weight="bold">Розкрій: дошки 8 ft (2438 мм)</text>
@@ -43,34 +43,34 @@
 <rect x="196.6" y="510.0" width="566.8" height="28.0" fill="#f9f8f5" stroke="#24231d" stroke-width="1.2" rx="2"/>
 <rect x="196.6" y="510.0" width="427.3" height="28.0" fill="#b35b1e" opacity="0.75" stroke="none" rx="2"/>
 <text x="410.3" y="528.0" text-anchor="middle" font-size="8" fill="#ffffff">База</text>
-<rect x="623.9" y="510.0" width="116.2" height="28.0" fill="#3d6f96" opacity="0.75" stroke="none" rx="2"/>
-<text x="682.0" y="528.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
-<rect x="740.2" y="510.0" width="23.2" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
-<text x="751.8" y="528.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~100</text>
+<rect x="623.9" y="510.0" width="134.8" height="28.0" fill="#3d6f96" opacity="0.75" stroke="none" rx="2"/>
+<text x="691.3" y="528.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
+<rect x="758.8" y="510.0" width="4.6" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
+<text x="761.1" y="528.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~20</text>
 <text x="192.6" y="528.0" text-anchor="end" font-size="9" fill="#6b675c">#3</text>
 <rect x="196.6" y="548.0" width="566.8" height="28.0" fill="#f9f8f5" stroke="#24231d" stroke-width="1.2" rx="2"/>
 <rect x="196.6" y="548.0" width="427.3" height="28.0" fill="#b35b1e" opacity="0.75" stroke="none" rx="2"/>
 <text x="410.3" y="566.0" text-anchor="middle" font-size="8" fill="#ffffff">База</text>
-<rect x="623.9" y="548.0" width="116.2" height="28.0" fill="#3d6f96" opacity="0.75" stroke="none" rx="2"/>
-<text x="682.0" y="566.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
-<rect x="740.2" y="548.0" width="23.2" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
-<text x="751.8" y="566.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~100</text>
+<rect x="623.9" y="548.0" width="134.8" height="28.0" fill="#3d6f96" opacity="0.75" stroke="none" rx="2"/>
+<text x="691.3" y="566.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
+<rect x="758.8" y="548.0" width="4.6" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
+<text x="761.1" y="566.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~20</text>
 <text x="192.6" y="566.0" text-anchor="end" font-size="9" fill="#6b675c">#4</text>
 <rect x="196.6" y="586.0" width="566.8" height="28.0" fill="#f9f8f5" stroke="#24231d" stroke-width="1.2" rx="2"/>
-<rect x="196.6" y="586.0" width="271.8" height="28.0" fill="#2d5477" opacity="0.75" stroke="none" rx="2"/>
-<text x="332.5" y="604.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
-<rect x="468.4" y="586.0" width="271.8" height="28.0" fill="#2d5477" opacity="0.75" stroke="none" rx="2"/>
-<text x="604.3" y="604.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
-<rect x="740.1" y="586.0" width="23.3" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
-<text x="751.8" y="604.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~100</text>
+<rect x="196.6" y="586.0" width="290.4" height="28.0" fill="#2d5477" opacity="0.75" stroke="none" rx="2"/>
+<text x="341.8" y="604.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
+<rect x="487.0" y="586.0" width="246.0" height="28.0" fill="#8b4513" opacity="0.75" stroke="none" rx="2"/>
+<text x="610.0" y="604.0" text-anchor="middle" font-size="8" fill="#ffffff">База</text>
+<rect x="732.9" y="586.0" width="30.5" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
+<text x="748.2" y="604.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~131</text>
 <text x="192.6" y="604.0" text-anchor="end" font-size="9" fill="#6b675c">#5</text>
 <rect x="196.6" y="624.0" width="566.8" height="28.0" fill="#f9f8f5" stroke="#24231d" stroke-width="1.2" rx="2"/>
-<rect x="196.6" y="624.0" width="246.0" height="28.0" fill="#8b4513" opacity="0.75" stroke="none" rx="2"/>
-<text x="319.6" y="642.0" text-anchor="middle" font-size="8" fill="#ffffff">База</text>
-<rect x="442.6" y="624.0" width="246.0" height="28.0" fill="#8b4513" opacity="0.75" stroke="none" rx="2"/>
-<text x="565.6" y="642.0" text-anchor="middle" font-size="8" fill="#ffffff">База</text>
-<rect x="688.5" y="624.0" width="74.9" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
-<text x="726.0" y="642.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~322</text>
+<rect x="196.6" y="624.0" width="290.4" height="28.0" fill="#2d5477" opacity="0.75" stroke="none" rx="2"/>
+<text x="341.8" y="642.0" text-anchor="middle" font-size="8" fill="#ffffff">Стійка</text>
+<rect x="487.0" y="624.0" width="246.0" height="28.0" fill="#8b4513" opacity="0.75" stroke="none" rx="2"/>
+<text x="610.0" y="642.0" text-anchor="middle" font-size="8" fill="#ffffff">База</text>
+<rect x="732.9" y="624.0" width="30.5" height="28.0" fill="#3d7a4f" opacity="0.3" stroke="#3d7a4f" stroke-width="0.8" rx="2"/>
+<text x="748.2" y="642.0" text-anchor="middle" font-size="8" fill="#3d7a4f">~131</text>
 <text x="192.6" y="642.0" text-anchor="end" font-size="9" fill="#6b675c">#6</text>
 <rect x="196.6" y="662.0" width="566.8" height="28.0" fill="#f9f8f5" stroke="#24231d" stroke-width="1.2" rx="2"/>
 <rect x="196.6" y="662.0" width="246.0" height="28.0" fill="#5b8a6f" opacity="0.75" stroke="none" rx="2"/>
