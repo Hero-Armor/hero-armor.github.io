@@ -13,8 +13,8 @@
 * [microSD SPI модуль](microsd-spi-modul.md) - $6.99 за 5 шт, купити
 * [SanDisk 32GB Class 10](sandisk-32gb-class-10.md) - $23.95, купити
 * [TPA3116D2 Mono (HiLetgo)](tpa3116d2-mono-hiletgo.md) - $13.99 за 2 плати, купити
-* [Poly-Planar MA-3013, пара](poly-planar-ma-3013-para.md) - $70, купити
-* [Herdio HMS60 3", пара](herdio-hms60-3-para.md) - $32, купити
+* [Динамік Poly-Planar MA-3013 3", пара — морський](dynamik-poly-planar-ma-3013-3-para-morskyi.md) - $69.99, купити
+* [Динамік Poly-Planar MA-3013 3", пара — морський](dynamik-poly-planar-ma-3013-3-para-morskyi.md) - $69.99, купити
 * [LD2410C](ld2410c.md) - $20.48 за 3 шт, купити
 * [Buck 12→5В ≥1.5А + LC](buck-12-5v-1-5a-lc.md) - $8.99 за 5 шт, купити
 * [Радіатор 50×50 мм + термопрокладка](radiator-50-50-mm-termoprokladka.md) - ~$9/4шт, купити
