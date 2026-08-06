@@ -27,11 +27,11 @@
   },
   "clearance": {
     "box_mm": [
-      934,
+      933,
       543,
       457
     ],
-    "box_name": "Sterilite 40 gal Wheeled Industrial Tote (внутр 775×406×435) — кандидат під DELTA 3 Ultra Plus, ПЕРЕВІРИТИ чи 457 мм це з колесами",
+    "box_name": "Sterilite 40 gal Wheeled Industrial Tote (14699002)",
     "front_post_mm": 580,
     "gap_under_beam_mm": 540,
     "_note": "Просвіт 540 мм при ящику 457 мм дає запас 83 мм. ⚠ 460 мм у старій версії — це НЕ константа конструкції, а число, підігнане під старий ящик 368 мм. Рама ще не збудована (задача «Перерахувати раму під фактичний масив» у статусі waiting), тому дешевше підняти стійку, ніж шукати ящик з вікном у 2 мм: 4 стійки по 580 мм = 2320 мм, виходять з однієї дошки 2438 мм. Станція DELTA 3 Ultra Plus: 613×328×395 мм, 33.7 кг; з зазором 20 мм на продув треба внутрішні від 653×368×435.",
@@ -52,7 +52,37 @@
       395
     ],
     "station_name": "EcoFlow DELTA 3 Ultra Plus (EFDELTA3UPLUS-US)",
-    "air_gap_mm": 20
+    "air_gap_mm": 20,
+    "box_inner_mm": [
+      775,
+      406,
+      435
+    ],
+    "box_price_usd": 176.99,
+    "box_price_note": "Target, 2-pack $176.99 (~$88.5/шт), «Order by 9:30pm, get it tomorrow» — перевірено 06.08.2026. Пара якраз під план «два ящики поряд»: один під станцію, другий під щит і проводку.",
+    "box_url": "https://www.target.com/p/sterilite-40-gal-wheeled-industrial-tote-stackable-storage-bin-with-latch-lid-plastic-container-with-heavy-duty-latches-black-base-and-lid-2-pack/-/A-89587851",
+    "box_alt": {
+      "name": "IRIS WeatherPro 156 Qt (500231)",
+      "inner_mm": [
+        686,
+        419,
+        432
+      ],
+      "outer_mm": [
+        810,
+        505,
+        460
+      ],
+      "price_usd": 59.99,
+      "url": "https://www.tractorsupply.com/tsc/product/iris-usa-156-qt-weatherpro-plastic-storage-bin-with-durable-lid-seal-and-latching-buckles",
+      "why": "Удвічі дешевший і має ущільнення кришки — це плюс для наддуву з фільтром. Але всередині лишається лише 73 мм вільної довжини (у Sterilite 160), колес нема, і по висоті зазор виходить 18.5 мм замість 20."
+    },
+    "box_rejected": [
+      "Commander 75 gal (Lowe's) — зовнішня висота 572 > 520",
+      "HDX 77 gal Wheeled — внутрішня ширина 340 < 368",
+      "Rubbermaid ActionPacker 48 gal — внутрішня висота 356, замало",
+      "HDX 55 gal — внутр 991×375×438 проходить, але ширина з запасом 7 мм і наявність не підтверджена"
+    ]
   },
   "parts_pattern": [
     {
