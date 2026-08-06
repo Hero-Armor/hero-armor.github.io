@@ -105,6 +105,18 @@
       "dc12_total_w": 360,
       "anderson_w": 360,
       "_note": "Звірено 06.08.2026 по bluettipower.com: 12В/30А RV Outlet. У ящик Costco не сідає по висоті."
+    },
+    "Delta 3 Ultra Plus": {
+      "wh": 3072,
+      "solar_in_w": 1600,
+      "ac_in_w": 1800,
+      "solar_in_v": "уточнити",
+      "dc12_car_w": 126,
+      "dc12_car_a": 10,
+      "dc5521_w": 0,
+      "dc12_total_w": 378,
+      "anderson_w": 378,
+      "_note": "Звірено 06.08.2026 по офіційних специфікаціях ecoflow.com: Anderson 12.6В/30А 378 Вт, розряд -10…+45 °C, 613.1×327.7×395 мм, 33.7 кг, гарантія 5 років (3+2)."
     }
   },
   "station_chosen": "Delta 2 Max",

@@ -53,14 +53,13 @@ generated: { by: "process:site-build" }
 * [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](/tasks/vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) — чекаємо
 * [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](/tasks/diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) — готово
 * [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](/tasks/prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) — до роботи
-* [Перевірити другу картку SanDisk 32GB — $23.95 за штуку, взято дві](/tasks/pereviryty-druhu-kartku-sandisk-32gb-23-95-za-shtuku-vziato-.md) — до роботи
 
 # Закупівля
 
 * [ESP32 WROOM-32 DevKit](/bom/esp32-wroom-32-devkit.md) — $16.59 за 3 плати, купити
 * [PCM5102A (GY-PCM5102)](/bom/pcm5102a-gy-pcm5102.md) — $11.99 за набір 3 шт (взято 2 набори = 6 ЦАПів), купити
 * [microSD SPI модуль](/bom/microsd-spi-modul.md) — $6.99 за 5 шт, купити
-* [SanDisk 32GB Class 10](/bom/sandisk-32gb-class-10.md) — $23.95/шт — ВЗЯТО ДВІ, $47.90 разом, купити
+* [SanDisk 32GB Class 10](/bom/sandisk-32gb-class-10.md) — $23.95, купити
 * [TPA3116D2 Mono (HiLetgo)](/bom/tpa3116d2-mono-hiletgo.md) — $13.99 за 2 плати, купити
 * [Poly-Planar MA-3013, пара](/bom/poly-planar-ma-3013-para.md) — $70, купити
 * [Herdio HMS60 3", пара](/bom/herdio-hms60-3-para.md) — $32, купити

@@ -11,7 +11,7 @@
 * [ESP32 WROOM-32 DevKit](esp32-wroom-32-devkit.md) - $16.59 за 3 плати, купити
 * [PCM5102A (GY-PCM5102)](pcm5102a-gy-pcm5102.md) - $11.99 за набір 3 шт (взято 2 набори = 6 ЦАПів), купити
 * [microSD SPI модуль](microsd-spi-modul.md) - $6.99 за 5 шт, купити
-* [SanDisk 32GB Class 10](sandisk-32gb-class-10.md) - $23.95/шт — ВЗЯТО ДВІ, $47.90 разом, купити
+* [SanDisk 32GB Class 10](sandisk-32gb-class-10.md) - $23.95, купити
 * [TPA3116D2 Mono (HiLetgo)](tpa3116d2-mono-hiletgo.md) - $13.99 за 2 плати, купити
 * [Poly-Planar MA-3013, пара](poly-planar-ma-3013-para.md) - $70, купити
 * [Herdio HMS60 3", пара](herdio-hms60-3-para.md) - $32, купити
@@ -25,7 +25,7 @@
 * [XT60 пара + пігтейли](xt60-para-pihteily.md) - $6.99 за 2 пари, купити
 * [Кабель 18AWG силікон, 2×2 м](kabel-18awg-sylikon-2-2-m.md) - $13/18м, купити
 * [Gardencoin прожектор (корпус)](gardencoin-prozhektor-korpus.md) - $43/уп, купити
-* [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - $96.34 за 12-пак (Luxrite) · Diodesy $42.20/6-пак ×2 до Марселя, купити
+* [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - $96.34 за 12-пак, купити
 * [Gebildet LED 12 мм, металеві](gebildet-led-12-mm-metalevi.md) - $10.99 за 5 шт (фактично DMWD), купити
 * [Gebildet LED 8 мм, металеві](gebildet-led-8-mm-metalevi.md) - $8.99 за 5 шт (фактично DMWD), купити
 * [Врізні вогні в торець подіуму, 0.6 Вт](vrizni-vohni-v-torets-podiumu-0-6-vt.md) - $106, купити
