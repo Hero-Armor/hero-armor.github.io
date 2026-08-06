@@ -38,6 +38,7 @@ generated: { by: "process:site-build" }
 * [Резервне живлення шини 12 В — блок 110 В → 12 В](/decisions/rezervne-zhyvlennia-shyny-12-v-blok-110-v-12-v.md)
 * [Станція живлення — EcoFlow DELTA 3 Ultra Plus 3072 Вт·год, $1599 у Home Depot](/decisions/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md)
 * [Рама: просвіт під ящик 460 → 540 мм, передня стійка 500 → 580](/decisions/rama-prosvit-pid-iashchyk-460-540-mm-perednia-stiika-500-580.md)
+* [Прочіс ринку LA + Bay Area (новий і б/у) — вибір станції не змінюється](/decisions/prochis-rynku-la-bay-area-novyi-i-b-u-vybir-stantsii-ne-zmin.md)
 
 # Задачі
 
