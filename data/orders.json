@@ -68,5 +68,99 @@
     "deliver_to": "?",
     "system": "lights",
     "note": "Замовив Іван 31.07 після заміни Greenclick (голі дроти) на варіант з гвинтовими клемами. Робочий + запасний. Після приїзду: перевірити мерехтіння повільним відео і нагрів під навантаженням. Звірити адресу — переїзд у SF 4 серпня"
+  },
+  {
+    "id": "ORD-005",
+    "date": "2026-07-19",
+    "vendor": "Amazon",
+    "system": "lights",
+    "status": "delivered",
+    "flow": "arrived",
+    "deliver_to": "la",
+    "items": [
+      "Ancor 120905 Duplex 8/2 AWG 50 ft (лишилась)",
+      "Ancor 121310 Duplex 12/2 AWG 100 ft",
+      "Gardencoin прожектор, корпус, 6-пак",
+      "Solar Wall Light Outdoor + TECKNET солярні (ПОВЕРНУТО)"
+    ],
+    "note": "Замовлення 112-6091708-1068201, валово $396.76. Повернуто 31.07–03.08 на $307.38 (Solar Wall Light + ще 1 позиція $260.24, TECKNET $24.80, часткове по Ancor 12/2 $22.34). ЧИСТО $89.38."
+  },
+  {
+    "id": "ORD-006",
+    "date": "2026-07-20",
+    "vendor": "Amazon",
+    "system": "lights",
+    "status": "delivered",
+    "flow": "arrived",
+    "deliver_to": "marcel",
+    "items": [
+      "Gardencoin прожектор, корпус, 2-пак"
+    ],
+    "note": "Замовлення 111-5436620-2700262, $42.32. Доставлено Марселю в Hillsborough 23.07."
+  },
+  {
+    "id": "ORD-007",
+    "date": "2026-07-27",
+    "vendor": "Amazon",
+    "system": "lights",
+    "status": "delivered",
+    "flow": "arrived",
+    "deliver_to": "la",
+    "items": [
+      "Диммер Greenclick 12V PWM IP65"
+    ],
+    "note": "Замовлення 112-1881768-1470636, $22.14. Відхилений на користь SUPERNIGHT (голі дроти), лишився як запасний."
+  },
+  {
+    "id": "ORD-008",
+    "date": "2026-07-31",
+    "vendor": "Amazon",
+    "system": "audio",
+    "status": "delivered",
+    "flow": "arrived",
+    "deliver_to": "la",
+    "items": [
+      "Дрібниця до аудіо-вузла: гермовводи, термоусадка, джампери, стяжки, кабель"
+    ],
+    "note": "Замовлення 114-2699328-1540233, $70.49, 6 позицій. Склад за нашими записами, листом не підтверджений."
+  },
+  {
+    "id": "RET-001",
+    "date": "2026-07-31",
+    "vendor": "Amazon",
+    "system": "lights",
+    "status": "returned",
+    "flow": "returned",
+    "deliver_to": "—",
+    "items": [
+      "REEGOLD Landscape Lights $88.59",
+      "ALITOVE Neon Rope WS2811 $37.20",
+      "TECKNET солярні $24.80",
+      "Solar Wall Light + 1 поз. $260.24",
+      "DiCUNO MR16 ×2 $55.36",
+      "Gardencoin MR16 ×2 $59.78"
+    ],
+    "note": "Перша хвиля повернень, здано 31.07. Разом $525.97."
+  },
+  {
+    "id": "RET-002",
+    "date": "2026-08-03",
+    "vendor": "Amazon",
+    "system": "project",
+    "status": "returned",
+    "flow": "returned",
+    "deliver_to": "—",
+    "items": [
+      "Ancor 8/2 50ft $136.81",
+      "Ancor 8/2 50ft $136.81",
+      "Ancor 12/2 часткове $22.34",
+      "NICE-POWER лабораторний блок $232.56",
+      "Herdio 3\" динаміки $43.74",
+      "SPARKING штекер 12V $15.49",
+      "Haerkn 18AWG силікон $14.38",
+      "Easycargo радіатор + фоторезистори $23.23",
+      "Gratury Junction Box IP67 $27.68"
+    ],
+    "note": "Друга хвиля повернень, здано 03–04.08. Разом $653.04. ⚠️ Дві бухти Ancor 8/2 таки повернуто — це СКАСОВУЄ рішення від 03.08 «нічого не повертаємо»; лишилась одна бухта 8/2 і одна 12/2."
   }
 ]

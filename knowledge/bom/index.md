@@ -118,3 +118,4 @@
 * [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) - $16.12, купити
 * [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) - $7.79, купити
 * [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) - $29.47, купити
+* [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) - $85 (орієнтовно — сторінка віддає EUR 76.72, звірити при замовленні), купити

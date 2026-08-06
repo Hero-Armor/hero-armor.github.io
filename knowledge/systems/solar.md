@@ -35,6 +35,7 @@ generated: { by: "process:site-build" }
 * [Понизити порт розширення 48→12 В — підтверджено, EcoFlow сам так робить](/decisions/ponyzyty-port-rozshyrennia-48-12-v-pidtverdzheno-ecoflow-sam.md)
 * [Bluetti має ШТАТНИЙ 12 В / 30 А — нічого не паяти](/decisions/bluetti-maie-shtatnyi-12-v-30-a-nichoho-ne-paiaty.md)
 * [AC200P на Marketplace за $700 — найдешевший робочий шлях](/decisions/ac200p-na-marketplace-za-700-naideshevshyi-robochyi-shliakh.md)
+* [Резервне живлення шини 12 В — блок 110 В → 12 В](/decisions/rezervne-zhyvlennia-shyny-12-v-blok-110-v-12-v.md)
 
 # Задачі
 
@@ -46,6 +47,7 @@ generated: { by: "process:site-build" }
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) — в роботі
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](/tasks/pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) — до роботи
 * [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](/tasks/podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) — до роботи
+* [Замовити резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/tasks/zamovyty-rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-.md) — до роботи
 
 # Закупівля
 
@@ -77,3 +79,4 @@ generated: { by: "process:site-build" }
 * [Наждачний папір 80 grit (для торців дощок)](/bom/nazhdachnyi-papir-80-grit-dlia-tortsiv-doshchok.md) — $15, купити
 * [Impact socket 9/16" 3/8" drive (для lag screws)](/bom/impact-socket-9-16-3-8-drive-dlia-lag-screws.md) — $4, купити
 * [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $13, купити
+* [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $85 (орієнтовно — сторінка віддає EUR 76.72, звірити при замовленні), купити

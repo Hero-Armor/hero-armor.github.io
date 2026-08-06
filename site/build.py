@@ -87,7 +87,7 @@ COMP_STATUS_LABEL = {"design-ready": "дизайн готовий", "in-design":
                      "build": "збірка", "concept": "концепт"}
 TASK_STATUS = {"doing": "в роботі", "waiting": "чекаємо", "todo": "до роботи", "done": "готово"}
 ORDER_STATUS = {"ordered": "замовлено", "shipped": "їде", "delivered": "доставлено",
-                "received": "отримано"}
+                "received": "отримано", "returned": "повернуто"}
 PILL = {"have": ("have", "у списку"), "add": ("add", "додати"), "tbd": ("tbd", "обрати")}
 # Ланцюг статусів Івана: замовити -> їде -> приїхало. Виводиться з даних
 # (bom.status + активні замовлення), руками ніде не дублюється.
@@ -95,7 +95,8 @@ FLOW = {"to_order": ("add", "замовити"), "ordered": ("tbd", "їде"),
         "arrived": ("have", "приїхало")}
 FLOW_LABEL = {"to_order": "Замовити", "ordered": "Їде", "arrived": "Приїхало"}
 ORDER_STATUS_LD = {"ordered": "OrderProcessing", "shipped": "OrderInTransit",
-                   "delivered": "OrderDelivered", "received": "OrderDelivered"}
+                   "delivered": "OrderDelivered", "received": "OrderDelivered",
+                   "returned": "OrderReturned"}
 ACTION_STATUS_LD = {"todo": "PotentialActionStatus", "doing": "ActiveActionStatus",
                     "waiting": "PotentialActionStatus", "done": "CompletedActionStatus"}
 
