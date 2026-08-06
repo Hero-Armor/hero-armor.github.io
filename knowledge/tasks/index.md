@@ -71,3 +71,4 @@
 * [Зняти справжні довжини кабельних трас із креслення (зараз прикидка)](zniaty-spravzhni-dovzhyny-kabelnykh-tras-iz-kreslennia-zaraz.md) - до роботи
 * [Порахувати корпуси Gardencoin на руках і повернути зайві понад 12](porakhuvaty-korpusy-gardencoin-na-rukakh-i-povernuty-zaivi-p.md) - до роботи
 * [Замовити резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](zamovyty-rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-.md) - до роботи
+* [Коли буде доступ до історії Amazon — залити реальну закупівлю в базу і перезібрати портал та лабораторії](koly-bude-dostup-do-istorii-amazon-zalyty-realnu-zakupivliu-.md) - чекаємо
