@@ -12,5 +12,5 @@
 * [RET-001 — Amazon](ret-001.md) - повернуто
 * [RET-002 — Amazon](ret-002.md) - повернуто
 * [ORD-009 — Amazon](ord-009.md) - замовлено
-* [ORD-010 — Amazon](ord-010.md) - доставлено
+* [ORD-010 — Amazon](ord-010.md) - повернуто
 * [ORD-011 — Amazon](ord-011.md) - доставлено
