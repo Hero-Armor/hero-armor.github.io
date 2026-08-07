@@ -91,9 +91,15 @@ ORDER_STATUS = {"ordered": "замовлено", "shipped": "їде", "delivered
 PILL = {"have": ("have", "у списку"), "add": ("add", "додати"), "tbd": ("tbd", "обрати")}
 # Ланцюг статусів Івана: замовити -> їде -> приїхало. Виводиться з даних
 # (bom.status + активні замовлення), руками ніде не дублюється.
-FLOW = {"to_order": ("add", "замовити"), "ordered": ("tbd", "їде"),
-        "arrived": ("have", "приїхало")}
-FLOW_LABEL = {"to_order": "Замовити", "ordered": "Їде", "arrived": "Приїхало"}
+FLOW = {"to_order": ("add", "замовити"), "in_cart": ("add", "у кошику"),
+        "ordered": ("tbd", "їде"), "arrived": ("have", "приїхало"),
+        "returned": ("tbd", "повернуто"), "dropped": ("tbd", "знято")}
+FLOW_LABEL = {"to_order": "Замовити", "in_cart": "У кошику", "ordered": "Їде",
+              "arrived": "Приїхало", "returned": "Повернуто", "dropped": "Знято"}
+# Стани, за які ще треба заплатити. «Знято» і «повернуто» у бюджет не йдуть:
+# перше — відхилений варіант, друге — гроші вже повернулись.
+FLOW_TOBUY = ("to_order", "in_cart")
+FLOW_HAVE = ("arrived", "ordered")
 ORDER_STATUS_LD = {"ordered": "OrderProcessing", "shipped": "OrderInTransit",
                    "delivered": "OrderDelivered", "received": "OrderDelivered",
                    "returned": "OrderReturned"}
@@ -114,9 +120,13 @@ def tmpl(name):
 
 
 def usd(price_str):
-    """First $-amount in a BOM price string ('$17/3шт' -> 17.0), 0 if none."""
-    mm = re.search(r"\$(\d+(?:\.\d+)?)", price_str or "")
-    return float(mm.group(1)) if mm else 0.0
+    """First $-amount in a BOM price string ('$17/3шт' -> 17.0), 0 if none.
+
+    Кому-роздільник тисяч теж рахуємо: «$1,599.00» раніше давало 0 — станція
+    за півтори тисячі мовчки випадала з бюджету (спіймано 07.08.2026).
+    """
+    mm = re.search(r"\$(\d[\d,]*(?:\.\d+)?)", price_str or "")
+    return float(mm.group(1).replace(",", "")) if mm else 0.0
 
 
 def figures_html(key):
@@ -484,6 +494,9 @@ def buy_table_html(rows, note=""):
         + (f'<a href="{esc(b["url"])}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"]))
         + f'</td><td>{esc(str(b.get("qty", "—")))}</td>'
           f'<td class="num">{esc(str(b.get("price", "—")))}</td>'
+          f'<td><span class="pill {FLOW.get(b.get("flow"), PILL[b["status"]])[0]}">'
+          f'{FLOW.get(b.get("flow"), PILL[b["status"]])[1]}</span></td>'
+          f'<td>{esc(b.get("where", "—"))}</td>'
           f'<td style="white-space:normal;max-width:56ch">{esc(b.get("note", ""))}</td></tr>'
         for b in rows)
     tail = f'<p class="fig-cap">{esc(note)}</p>' if note else ""
@@ -501,7 +514,7 @@ def buy_table_html(rows, note=""):
            "</style>")
     return (css + '<h2>Що з цього треба купити</h2><div class="tbl-wrap"><table>'
             '<thead><tr><th></th><th>Позиція</th><th>Скільки</th><th>Ціна</th>'
-            '<th>Навіщо</th></tr></thead><tbody>' + body
+            '<th>Стан</th><th>Де купуємо</th><th>Навіщо</th></tr></thead><tbody>' + body
             + '</tbody></table></div>' + tail)
 
 
@@ -571,6 +584,7 @@ def bom_rows_html():
             f'<td><span class="chip {b["system"]}">{b["system"]}</span></td>'
             f'<td class="num">{b["qty"]}</td>'
             f'<td class="num">{b["price"]}</td><td><span class="pill {cls}">{label}</span></td>'
+            f'<td>{esc(b.get("where", "—"))}</td>'
             f'<td>{esc(b["note"])}</td></tr>')
     return "\n".join(rows)
 
@@ -2197,9 +2211,11 @@ def build():
                 b_rows.append(f'      <tr>{bom_thumb(b)}<td>{item}</td><td class="num">{b["qty"]}</td>'
                               f'<td class="num">{b["price"]}</td>'
                               f'<td><span class="pill {cls}">{label}</span></td>'
+                              f'<td>{esc(b.get("where", "—"))}</td>'
                               f'<td>{esc(b["note"])}</td></tr>')
             sections.append('  <h2>Закупівля</h2>\n  <div class="tbl-wrap">\n  <table>\n'
-                            '    <thead><tr><th></th><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th><th>Нотатка</th></tr></thead>\n'
+                            '    <thead><tr><th></th><th>Позиція</th><th>К-сть</th><th>~Ціна</th><th>Статус</th>'
+                            '<th>Де купуємо</th><th>Нотатка</th></tr></thead>\n'
                             f'    <tbody>\n{chr(10).join(b_rows)}\n    </tbody>\n  </table>\n  </div>')
 
         c_orders = [o for o in ORDERS if o["system"] == k]
@@ -2303,9 +2319,25 @@ def build():
     doing_n = sum(1 for t in TASKS if t["status"] == "doing")
     done_tasks = len(TASKS) - open_tasks
     in_transit = [o for o in ORDERS if o["status"] in ("ordered", "shipped")]
-    have_n = sum(1 for b in BOM if b["status"] == "have")
-    budget_have = sum(usd(b["price"]) for b in BOM if b["status"] == "have")
-    budget_tobuy = sum(usd(b["price"]) for b in BOM if b["status"] != "have")
+    # Стан позиції — це flow («приїхало / у кошику / замовити»), а не status:
+    # status каже лише, чи позиція взагалі в списку. Рахуємо по flow, з фолбеком
+    # на status для рядків, у яких flow ще не проставлений.
+    def _st(b):
+        f = b.get("flow")
+        if f:
+            return f
+        return "arrived" if b["status"] == "have" else "to_order"
+    have_n = sum(1 for b in BOM if _st(b) in FLOW_HAVE)
+    budget_have = sum(usd(b["price"]) for b in BOM if _st(b) in FLOW_HAVE)
+    budget_tobuy = sum(usd(b["price"]) for b in BOM if _st(b) in FLOW_TOBUY)
+    # де саме ці гроші треба витратити — розбивка по майданчиках
+    by_where = {}
+    for b in BOM:
+        if _st(b) in FLOW_TOBUY:
+            w = b.get("where", "—")
+            by_where[w] = by_where.get(w, 0) + usd(b["price"])
+    where_note = " · ".join(f"{w} ${v:.0f}" for w, v in
+                            sorted(by_where.items(), key=lambda x: -x[1]) if v)
     ready_pct = round(100 * (done_tasks + have_n) / (len(TASKS) + len(BOM)))
 
     def stat(k, v, note, extra="", cls=""):
@@ -2326,7 +2358,7 @@ def build():
         stat("у дорозі", str(len(in_transit)),
              esc(in_transit[0]["note"]) if in_transit else "нічого не їде"),
         stat("докупити", f'~${budget_tobuy:.0f}',
-             "кошик лінками в BOM нижче"),
+             esc(where_note) or "кошик лінками в BOM нижче"),
     ]))
 
     sys_hue = {"audio": "var(--comp-audio)", "solar": "var(--comp-solar)",
@@ -2388,14 +2420,37 @@ def build():
     index = index.replace("{{BUDGET_HAVE}}", f"{budget_have:.0f}")
     index = index.replace("{{BUDGET_TOBUY}}", f"{budget_tobuy:.0f}")
     # фільтри по ланцюгу «замовити → їде → приїхало»
-    n_flow = {k: sum(1 for b in BOM if b.get("flow") == k)
-              for k in ("to_order", "ordered", "arrived")}
+    n_flow = {k: sum(1 for b in BOM if b.get("flow") == k) for k in FLOW_LABEL}
     chips_bom = [f'      <button class="fchip active" data-f="all">всі · {len(BOM)}</button>']
-    for k in ("to_order", "ordered", "arrived"):
+    for k in ("to_order", "in_cart", "ordered", "arrived", "returned", "dropped"):
         if n_flow[k]:
             chips_bom.append(f'      <button class="fchip" data-f="{k}">'
                              f'{FLOW_LABEL[k]} · {n_flow[k]}</button>')
     index = index.replace("{{BOM_FILTER_CHIPS}}", "\n".join(chips_bom))
+
+    # Де що купуємо. Прохання Івана 07.08: одна закупівля живе на кількох
+    # майданчиках (Amazon, eBay, Home Depot, Target, RSP Supply), і з таблиці
+    # це не видно — потрібен зріз «куди йти і на скільки».
+    src = {}
+    for b in BOM:
+        st = _st(b)
+        w = b.get("where", "—")
+        d = src.setdefault(w, {"tobuy_n": 0, "tobuy": 0.0, "have_n": 0})
+        if st in FLOW_TOBUY:
+            d["tobuy_n"] += 1
+            d["tobuy"] += usd(b["price"])
+        elif st in FLOW_HAVE:
+            d["have_n"] += 1
+    src_rows = "".join(
+        f'<tr><td>{esc(w)}</td><td class="num">{d["tobuy_n"]}</td>'
+        f'<td class="num">${d["tobuy"]:.0f}</td><td class="num">{d["have_n"]}</td></tr>'
+        for w, d in sorted(src.items(), key=lambda x: (-x[1]["tobuy"], -x[1]["have_n"]))
+        if d["tobuy_n"] or d["have_n"])
+    index = index.replace("{{BOM_SOURCING}}",
+                          '    <div class="tbl-wrap" style="margin:.6rem 0 1rem">\n'
+                          '    <table><thead><tr><th>Де купуємо</th><th>Ще купити</th>'
+                          '<th>Сума</th><th>Уже взяли</th></tr></thead><tbody>'
+                          + src_rows + '</tbody></table></div>')
     index = index.replace("{{BOM_ROWS}}", bom_rows_html())
 
     # orders

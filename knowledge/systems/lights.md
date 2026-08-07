@@ -55,6 +55,8 @@ generated: { by: "process:site-build" }
 * [Корпусів прожекторів лишаємо рівно 12 — надлишок повернути](/decisions/korpusiv-prozhektoriv-lyshaiemo-rivno-12-nadlyshok-povernuty.md)
 * [Лампи на корпусі робота — паралельно від клемного вузла, не шлейфом](/decisions/lampy-na-korpusi-robota-paralelno-vid-klemnoho-vuzla-ne-shle.md)
 * [Стрічка подіуму: усі вісім рукавів зводяться в центр, живлення одним кабелем](/decisions/strichka-podiumu-usi-visim-rukaviv-zvodiatsia-v-tsentr-zhyvl.md)
+* [Кабель 12/2 перезамовляємо: у реєстрі стояв круглий Ancor за $208 замість плоского за $103](/decisions/kabel-12-2-perezamovliaiemo-u-reiestri-stoiav-kruhlyi-ancor-.md)
+* [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](/decisions/mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
 
 # Задачі
 
@@ -93,7 +95,9 @@ generated: { by: "process:site-build" }
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](/tasks/vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) — до роботи
 * [Заземлити металеву раму подіуму на мінус шини](/tasks/zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) — чекаємо
 * [Зняти справжні довжини кабельних трас із креслення (зараз прикидка)](/tasks/zniaty-spravzhni-dovzhyny-kabelnykh-tras-iz-kreslennia-zaraz.md) — до роботи
-* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](/tasks/dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) — до роботи
+* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](/tasks/dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) — в роботі
+* [Обрати кабель магістралі станція → щит під Anderson 30 А](/tasks/obraty-kabel-mahistrali-stantsiia-shchyt-pid-anderson-30-a.md) — до роботи
+* [Звірити руками, скільки рулонів неону фізично лежить у Марселя](/tasks/zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) — до роботи
 
 # Закупівля
 
@@ -101,41 +105,42 @@ generated: { by: "process:site-build" }
 * [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — $96.34 за 12-пак, купити
 * [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — $10.99 за 5 шт (фактично DMWD), купити
 * [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — $8.99 за 5 шт (фактично DMWD), купити
-* [Врізні вогні в торець подіуму, 0.6 Вт](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt.md) — $106, купити
+* [Врізні вогні в торець подіуму, 0.6 Вт](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt.md) — $55.99, купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $13.99 за 2 шт, купити
-* [Щит-бокс із тримачами запобіжників](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv.md) — $19.07, купити
-* [Запобіжники ATO/ATC, набір](/bom/zapobizhnyky-ato-atc-nabir.md) — $8.66, купити
-* [Реле на групи 12 В, 30 А](/bom/rele-na-hrupy-12-v-30-a.md) — $12.15 за 5 шт, купити
-* [Гермокоробка IP66 для щита і реле](/bom/hermokorobka-ip66-dlia-shchyta-i-rele.md) — $45.00, купити
-* [Гермокоробки IP65 під диммер і WLED](/bom/hermokorobky-ip65-pid-dymmer-i-wled.md) — $7.79, купити
-* [Гермороз'єми IP68 (швидкознімні)](/bom/hermoroziemy-ip68-shvydkoznimni.md) — $8.00, купити
+* [Щит-бокс із тримачами запобіжників — Cyrico 12 Circuits](/bom/shchyt-boks-iz-trymachamy-zapobizhnykiv-cyrico-12-circuits.md) — $15.99, купити
+* [Запобіжники ATO/ATC, набір](/bom/zapobizhnyky-ato-atc-nabir.md) — $9.99, купити
+* [Реле на групи 12 В, 30 А](/bom/rele-na-hrupy-12-v-30-a.md) — $12.15, купити
+* [Гермокоробка IP66 для щита і реле](/bom/hermokorobka-ip66-dlia-shchyta-i-rele.md) — $49.59, купити
+* [Гермокоробки IP65 під диммер і WLED](/bom/hermokorobky-ip65-pid-dymmer-i-wled.md) — $8.99, купити
+* [Гермороз'єми IP68 (швидкознімні)](/bom/hermoroziemy-ip68-shvydkoznimni.md) — $14.95, купити
 * [Гель-конектори / вологозахищені клеми](/bom/hel-konektory-volohozakhyshcheni-klemy.md) — $9.99, купити
-* [Гофра/кабель-канал для відводів](/bom/hofra-kabel-kanal-dlia-vidvodiv.md) — $26.87, купити
+* [Гофра/кабель-канал для відводів](/bom/hofra-kabel-kanal-dlia-vidvodiv.md) — $30.99, купити
 * [Кабель: Станція (30 А вихід) → щит запобіжників](/bom/kabel-stantsiia-30-a-vykhid-shchyt-zapobizhnykiv.md) — $106.40, купити
-* [Кабель: Щит → коробка диммера (Гр.1)](/bom/kabel-shchyt-korobka-dymmera-hr-1.md) — $181.31, купити
-* [Кабель: Диммер → кільце прожекторів](/bom/kabel-dymmer-kiltse-prozhektoriv.md) — $100.88 за бухту 100 ft, купити
-* [Кабель: Відвід на прожектор (найдальший)](/bom/kabel-vidvid-na-prozhektor-naidalshyi.md) — $47.00, купити
+* [Кабель: Щит → коробка диммера (Гр.1)](/bom/kabel-shchyt-korobka-dymmera-hr-1.md) — $102.99, купити
+* [Кабель: Диммер → кільце прожекторів](/bom/kabel-dymmer-kiltse-prozhektoriv.md) — $102.99, купити
+* [Кабель: Відвід на прожектор (найдальший)](/bom/kabel-vidvid-na-prozhektor-naidalshyi.md) — $71.12, купити
 * [Кабель: Щит → коробка WLED (Гр.2)](/bom/kabel-shchyt-korobka-wled-hr-2.md) — $106.40, купити
-* [Кабель: WLED → точки живлення стрічки](/bom/kabel-wled-tochky-zhyvlennia-strichky.md) — $33.99 за бухту, купити
+* [Кабель: WLED → точки живлення стрічки](/bom/kabel-wled-tochky-zhyvlennia-strichky.md) — $33.99, купити
 * [Кабель: Коробка → лампи робота](/bom/kabel-korobka-lampy-robota.md) — $11.26, купити
-* [Кабель: Щит → коробка аварійної (Гр.3А)](/bom/kabel-shchyt-korobka-avariinoi-hr-3a.md) — $181.31, купити
-* [Кабель: Коробка → врізні вогні торця](/bom/kabel-korobka-vrizni-vohni-tortsia.md) — $47.00, купити
-* [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — ~$30, купити
+* [Кабель: Щит → коробка аварійної (Гр.3А)](/bom/kabel-shchyt-korobka-avariinoi-hr-3a.md) — $102.99, купити
+* [Кабель: Коробка → врізні вогні торця](/bom/kabel-korobka-vrizni-vohni-tortsia.md) — $71.12, купити
+* [Алюмінієвий U-профіль для LED у настил подіуму](/bom/aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) — $29.39, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](/bom/asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) — $10, купити
 * [Заглушки неон 8×16 З ОТВОРОМ під дріт — набір 60 шт](/bom/zahlushky-neon-8-16-z-otvorom-pid-drit-nabir-60-sht.md) — $11.99, купити
 * [Заглушки неон 8×16 ГЛУХІ (без отвору) — набір 60 шт](/bom/zahlushky-neon-8-16-hlukhi-bez-otvoru-nabir-60-sht.md) — $11.99, купити
-* [Кліпси кріплення неону 8×16 з саморізами, 20 шт](/bom/klipsy-kriplennia-neonu-8-16-z-samorizamy-20-sht.md) — $13.19 за набір, купити
+* [Кліпси кріплення неону 8×16 з саморізами, 20 шт](/bom/klipsy-kriplennia-neonu-8-16-z-samorizamy-20-sht.md) — $13.19, купити
 * [Дріт 3-жильний 22AWG, 20 м — перемички між рукавами](/bom/drit-3-zhylnyi-22awg-20-m-peremychky-mizh-rukavamy.md) — $12.58, купити
 * [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити
 * [Таймер-реле 12 В — чим рвати живлення стрічки на день](/bom/taimer-rele-12-v-chym-rvaty-zhyvlennia-strichky-na-den.md) — $13.49, купити
 * [Підсилювач сигналу SP901E (WS2811/WS2812)](/bom/pidsyliuvach-syhnalu-sp901e-ws2811-ws2812.md) — $19.99, купити
 * [Набір кілець WS2812B 241 діод — ядро на спині](/bom/nabir-kilets-ws2812b-241-diod-iadro-na-spyni.md) — $25.99, купити
 * [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](/bom/gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) — $19.07, купити
-* [Понижувач 12 В → 5 В, 10 А (2 шт) — під ядро на спині](/bom/ponyzhuvach-12-v-5-v-10-a-2-sht-pid-iadro-na-spyni.md) — ~$13/2шт, купити
-* [Ватметр Гр.1+Гр.2+Гр.3А — DROK DC 4.5–100 В / 0–50 А, LED-дисплей з шунтом](/bom/vatmetr-hr-1-hr-2-hr-3a-drok-dc-4-5-100-v-0-50-a-led-dysplei.md) — $13.43/шт (~$40 разом), купити
-* [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](/bom/vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) — $16.12, купити
-* [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](/bom/tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) — $7.79, купити
-* [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](/bom/klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) — $29.47, купити
+* [Понижувач 12 В → 5 В, 10 А (2 шт) — під ядро на спині](/bom/ponyzhuvach-12-v-5-v-10-a-2-sht-pid-iadro-na-spyni.md) — $14.99, купити
+* [Ватметр Гр.1+Гр.2+Гр.3А — DROK DC 4.5–100 В / 0–50 А, LED-дисплей з шунтом](/bom/vatmetr-hr-1-hr-2-hr-3a-drok-dc-4-5-100-v-0-50-a-led-dysplei.md) — $15.49, купити
+* [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](/bom/vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) — $18.59, купити
+* [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](/bom/tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) — $8.99, купити
+* [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](/bom/klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) — $33.99, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](/bom/dmwd-12mm-led-dozamovyty-1-upakovku.md) — $10.99, купити
+* [Шини розподільчі 150 А — Avelis, 2 шт в наборі](/bom/shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) — $11.99 за набір, купити

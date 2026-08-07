@@ -5,11 +5,11 @@ description: "16/2 AWG — другий кабель до подіуму, тіл
 resource: "https://www.amazon.com/dp/B07321KYP9"
 tags: ["audio"]
 quantity: "~8 м"
-price: "$47.00"
+price: "$71.12"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 16/2 AWG — другий кабель до подіуму, тільки для звуку. Просадка ~1% при 2 А. Довжина прикидка, міряти по місцю
 
-Система: [Аудіо](/systems/audio.md) · статус: **купити** · ціна $47.00 · к-сть ~8 м
+Система: [Аудіо](/systems/audio.md) · статус: **купити** · ціна $71.12 · к-сть ~8 м

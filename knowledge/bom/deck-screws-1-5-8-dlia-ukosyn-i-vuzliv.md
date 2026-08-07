@@ -5,11 +5,11 @@ description: "Deck Plus #8 × 1-5/8\", 305 шт — укосини і дрібн
 resource: "https://www.amazon.com/dp/B07RQ9YGKD"
 tags: ["solar"]
 quantity: "1 уп."
-price: "$19"
+price: "$21.98"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 Deck Plus #8 × 1-5/8", 305 шт — укосини і дрібні вузли рами. FastenMaster Deck Plus, антикорозійне покриття, star-drive.
 
-Система: [Живлення](/systems/solar.md) · статус: **купити** · ціна $19 · к-сть 1 уп.
+Система: [Живлення](/systems/solar.md) · статус: **купити** · ціна $21.98 · к-сть 1 уп.

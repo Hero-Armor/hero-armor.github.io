@@ -31,7 +31,7 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [3M 983-10 біла світлоповертальна стрічка, 2"×12'](/bom/3m-983-10-bila-svitlopovertalna-strichka-2-12.md) — $18.97, купити
+* [3M 983-10 біла світлоповертальна стрічка, 2"×12'](/bom/3m-983-10-bila-svitlopovertalna-strichka-2-12.md) — $29.95 / 30 ft, купити
 * [Маркерний вогник ящика — індикатор 12 мм 12 В](/bom/markernyi-vohnyk-iashchyka-indykator-12-mm-12-v.md) — ~$10, купити
 * [Кейс під станцію](/bom/keis-pid-stantsiiu.md) — $75-485, купити
 * [Канальний фільтр-бокс AC Infinity 6"](/bom/kanalnyi-filtr-boks-ac-infinity-6.md) — $70, купити

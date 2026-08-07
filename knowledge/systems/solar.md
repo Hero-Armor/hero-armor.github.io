@@ -39,6 +39,7 @@ generated: { by: "process:site-build" }
 * [Станція живлення — EcoFlow DELTA 3 Ultra Plus 3072 Вт·год, $1599 у Home Depot](/decisions/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md)
 * [Рама: просвіт під ящик 460 → 540 мм, передня стійка 500 → 580](/decisions/rama-prosvit-pid-iashchyk-460-540-mm-perednia-stiika-500-580.md)
 * [Прочіс ринку LA + Bay Area (новий і б/у) — вибір станції не змінюється](/decisions/prochis-rynku-la-bay-area-novyi-i-b-u-vybir-stantsii-ne-zmin.md)
+* [Кутики рами беремо в Home Depot поштучно, а не на Amazon](/decisions/kutyky-ramy-beremo-v-home-depot-poshtuchno-a-ne-na-amazon.md)
 
 # Задачі
 
@@ -61,7 +62,7 @@ generated: { by: "process:site-build" }
 * [Сонячні панелі для масиву (потужність не обрана)](/bom/soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — $149, купити
 * [Станції EcoFlow ×2 (модель не обрана)](/bom/stantsii-ecoflow-2-model-ne-obrana.md) — $1099/шт, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
-* [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $34.00, купити
+* [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $29.99, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](/bom/lifepo4-12-v-100-ah-bufer-pid-svitlo.md) — ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](/bom/victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) — $201, купити
@@ -69,24 +70,24 @@ generated: { by: "process:site-build" }
 * [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](/bom/bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) — $6.99 за 2 пари, купити
 * [Кабель XT150 для порту розширення (готовий)](/bom/kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) — ~$25, купити
 * [Дошки 2×4×8ft Douglas Fir](/bom/doshky-2-4-8ft-douglas-fir.md) — $36–45, купити
-* [Lag screws 3/8"×10" hex head, оцинковані](/bom/lag-screws-3-8-10-hex-head-otsynkovani.md) — $17, купити
-* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](/bom/simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) — $12, купити
-* [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](/bom/carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) — $15, купити
-* [Fender washers 3/8"×1.5", оцинковані](/bom/fender-washers-3-8-1-5-otsynkovani.md) — $9, купити
-* [Eye bolts 1/4"×3" (рим-болти) для такелажу](/bom/eye-bolts-1-4-3-rym-bolty-dlia-takelazhu.md) — $19, купити
-* [Wire rope 1/8" PVC coated, сталевий трос у ПВХ](/bom/wire-rope-1-8-pvc-coated-stalevyi-tros-u-pvkh.md) — $28, купити
-* [Turnbuckles 1/4" eye-to-eye, нержавіюча сталь](/bom/turnbuckles-1-4-eye-to-eye-nerzhaviiucha-stal.md) — $16, купити
-* [Wire rope thimbles 1/8"](/bom/wire-rope-thimbles-1-8.md) — $12, купити
-* [Wire rope clips 1/8" (затискачі троса)](/bom/wire-rope-clips-1-8-zatyskachi-trosa.md) — $11, купити
-* [Z-brackets для кріплення сонячних панелей до рами (алюмінієві)](/bom/z-brackets-dlia-kriplennia-soniachnykh-panelei-do-ramy-alium.md) — ~$15, купити
-* [Болти M8×30 + гайки M8 нержавіюча сталь (кріплення панелей)](/bom/bolty-m8-30-haiky-m8-nerzhaviiucha-stal-kriplennia-panelei.md) — $12, купити
+* [Lag screws 3/8"×10" hex head, оцинковані](/bom/lag-screws-3-8-10-hex-head-otsynkovani.md) — $19.99, купити
+* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](/bom/simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) — ~$1.50/шт, купити
+* [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](/bom/carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) — $17.62, купити
+* [Fender washers 3/8"×1.5", оцинковані](/bom/fender-washers-3-8-1-5-otsynkovani.md) — $12.97, купити
+* [Eye bolts 1/4"×3" (рим-болти) для такелажу](/bom/eye-bolts-1-4-3-rym-bolty-dlia-takelazhu.md) — $22.69, купити
+* [Wire rope 1/8" PVC coated, сталевий трос у ПВХ](/bom/wire-rope-1-8-pvc-coated-stalevyi-tros-u-pvkh.md) — $17.99, купити
+* [Turnbuckles 1/4" eye-to-eye, нержавіюча сталь](/bom/turnbuckles-1-4-eye-to-eye-nerzhaviiucha-stal.md) — $29.99, купити
+* [Wire rope thimbles 1/8"](/bom/wire-rope-thimbles-1-8.md) — $8.99, купити
+* [Wire rope clips 1/8" (затискачі троса)](/bom/wire-rope-clips-1-8-zatyskachi-trosa.md) — $5.99, купити
+* [Z-brackets для кріплення сонячних панелей до рами (алюмінієві)](/bom/z-brackets-dlia-kriplennia-soniachnykh-panelei-do-ramy-alium.md) — $11.99, купити
+* [Болти M8×30 + гайки M8 нержавіюча сталь (кріплення панелей)](/bom/bolty-m8-30-haiky-m8-nerzhaviiucha-stal-kriplennia-panelei.md) — $9.99, купити
 * [Deck screws GRK RSS #10 × 3" (для бази рами)](/bom/deck-screws-grk-rss-10-3-dlia-bazy-ramy.md) — $15, купити
-* [Deck screws 1-5/8" (для укосин і вузлів)](/bom/deck-screws-1-5-8-dlia-ukosyn-i-vuzliv.md) — $19, купити
-* [Simpson SD #9 × 1-1/2" connector screws (для кутиків A21)](/bom/simpson-sd-9-1-1-2-connector-screws-dlia-kutykiv-a21.md) — $27, купити
-* [Наждачний папір 80 grit (для торців дощок)](/bom/nazhdachnyi-papir-80-grit-dlia-tortsiv-doshchok.md) — $15, купити
-* [Impact socket 9/16" під гайковерт 3/8" drive (запасний варіант)](/bom/impact-socket-9-16-pid-haikovert-3-8-drive-zapasnyi-variant.md) — $4, купити
+* [Deck screws 1-5/8" (для укосин і вузлів)](/bom/deck-screws-1-5-8-dlia-ukosyn-i-vuzliv.md) — $21.98, купити
+* [Simpson SD #9 × 1-1/2" connector screws (для кутиків A21)](/bom/simpson-sd-9-1-1-2-connector-screws-dlia-kutykiv-a21.md) — $30.75, купити
+* [Наждачний папір 80 grit (для торців дощок)](/bom/nazhdachnyi-papir-80-grit-dlia-tortsiv-doshchok.md) — $7.38, купити
+* [Impact socket 9/16" під гайковерт 3/8" drive (запасний варіант)](/bom/impact-socket-9-16-pid-haikovert-3-8-drive-zapasnyi-variant.md) — $4.94, купити
 * [Магнітна головка 9/16" × 6" під шуруповерт (Milwaukee SHOCKWAVE 49-66-4588)](/bom/mahnitna-holovka-9-16-6-pid-shurupovert-milwaukee-shockwave-.md) — $12.73/шт, купити
-* [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $13, купити
+* [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $15.89, купити
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $93.01, купити
 * [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](/bom/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) — $1,599.00, купити
 * [Кабель від станції до щита під Anderson, переріз на 30 А](/bom/kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) — —, купити

@@ -5,11 +5,11 @@ description: "3/8\"×4\" оцинковані, 25 шт у пачці — крі�
 resource: "https://www.amazon.com/dp/B074ZZCTCB"
 tags: ["solar"]
 quantity: "4 шт"
-price: "$15"
+price: "$17.62"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 3/8"×4" оцинковані, 25 шт у пачці — кріплення похилих рейок до верху задніх стійок (4 болти). Prime-Line 9011981, 3/8-16 × 4", zinc carriage bolt.
 
-Система: [Живлення](/systems/solar.md) · статус: **купити** · ціна $15 · к-сть 4 шт
+Система: [Живлення](/systems/solar.md) · статус: **купити** · ціна $17.62 · к-сть 4 шт

@@ -5,11 +5,11 @@ description: "16/2 AWG у каналі настилу — AWG 16. 24 врізн�
 resource: "https://www.amazon.com/dp/B07321KYP9"
 tags: ["lights"]
 quantity: "~10 м"
-price: "$47.00"
+price: "$71.12"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
 16/2 AWG у каналі настилу — AWG 16. 24 врізні вогні по колу торця подіуму
 
-Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $47.00 · к-сть ~10 м
+Система: [Світло](/systems/lights.md) · статус: **купити** · ціна $71.12 · к-сть ~10 м

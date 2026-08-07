@@ -110,3 +110,7 @@
 * [Прочіс ринку LA + Bay Area (новий і б/у) — вибір станції не змінюється](prochis-rynku-la-bay-area-novyi-i-b-u-vybir-stantsii-ne-zmin.md)
 * [Лампи на корпусі робота — паралельно від клемного вузла, не шлейфом](lampy-na-korpusi-robota-paralelno-vid-klemnoho-vuzla-ne-shle.md)
 * [Стрічка подіуму: усі вісім рукавів зводяться в центр, живлення одним кабелем](strichka-podiumu-usi-visim-rukaviv-zvodiatsia-v-tsentr-zhyvl.md)
+* [Кабель 12/2 перезамовляємо: у реєстрі стояв круглий Ancor за $208 замість плоского за $103](kabel-12-2-perezamovliaiemo-u-reiestri-stoiav-kruhlyi-ancor-.md)
+* [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
+* [Кутики рами беремо в Home Depot поштучно, а не на Amazon](kutyky-ramy-beremo-v-home-depot-poshtuchno-a-ne-na-amazon.md)
+* [Світловідбивні стрічки — з eBay, не з Amazon](svitlovidbyvni-strichky-z-ebay-ne-z-amazon.md)
