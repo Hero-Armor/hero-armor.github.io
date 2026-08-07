@@ -86,6 +86,21 @@ SYS_LABEL.update({c["key"]: c["label"] for c in SYSTEMS_REG
 COMP_STATUS_LABEL = {"design-ready": "дизайн готовий", "in-design": "проєктується",
                      "build": "збірка", "concept": "концепт"}
 TASK_STATUS = {"doing": "в роботі", "waiting": "чекаємо", "todo": "до роботи", "done": "готово"}
+
+
+def task_status(t):
+    """Підпис статусу задачі, який НЕ валить складача через незнайоме слово.
+
+    07.08.2026: у data/tasks.json приїхав статус «open», якого в словнику немає —
+    `build.py --docs` упав з KeyError, а це рівно та команда, якою збирається сайт
+    на GitHub. Один зайвий статус не має гасити весь портал: показуємо його як є
+    і голосно попереджаємо в логу складача.
+    """
+    st = t.get("status", "")
+    if st not in TASK_STATUS:
+        print(f'warn: незнайомий статус задачі «{st}» — {t.get("task", "")[:60]}')
+        return st
+    return TASK_STATUS[st]
 ORDER_STATUS = {"ordered": "замовлено", "shipped": "їде", "delivered": "доставлено",
                 "received": "отримано", "returned": "повернуто"}
 PILL = {"have": ("have", "у списку"), "add": ("add", "додати"), "tbd": ("tbd", "обрати")}
@@ -829,7 +844,7 @@ def build_okf():
             body.append("")
         if c_tasks:
             body.append("# Задачі\n")
-            body += [f"* [{t['task']}](/tasks/{uslug(t['task'])}.md) — {TASK_STATUS[t['status']]}"
+            body += [f"* [{t['task']}](/tasks/{uslug(t['task'])}.md) — {task_status(t)}"
                      for t in c_tasks]
             body.append("")
         if c_bom:
@@ -874,9 +889,9 @@ def build_okf():
         write(f"tasks/{s}.md", {
             "type": "Task", "title": t["task"], "description": note[:160] or None,
             "tags": [t["system"]], "task_status": t["status"], "generated": gen,
-        }, f"Статус: **{TASK_STATUS[t['status']]}** · система: {clink(t['system'])}"
+        }, f"Статус: **{task_status(t)}** · система: {clink(t['system'])}"
            + (f"\n\n{note}" if note else ""))
-        t_items.append(f"[{t['task']}]({s}.md) - {TASK_STATUS[t['status']]}")
+        t_items.append(f"[{t['task']}]({s}.md) - {task_status(t)}")
     index_md("tasks/index.md", "Задачі", [("Задачі", t_items)])
 
     # ---- BOM parts ----
@@ -1827,15 +1842,13 @@ def build():
         "вентиляція важливіша за герметичність. Глухо закритий бокс на сонці плайї перегріється "
         "швидше, ніж у нього набʼється пил.")
 
-    cab_decs = [d for d in DECISIONS if d["system"] == "lights"]
-    cables = cables.replace("{{DECISIONS_HTML}}", "\n".join(
-        f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
-        f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
-        for d in cab_decs if not d.get("open")))
-    cables = cables.replace("{{FLAGS_HTML}}", "\n".join(
-        f'  <div class="flag">\n    <h3>{esc(d["title"])}</h3>\n'
-        f'    <p><span class="why">відкрите</span> · {d["why"]}</p>\n  </div>'
-        for d in cab_decs if d.get("open")))
+    # Рішення і відкриті питання по світлу живуть ОДИН раз — на сторінці системи.
+    # До 07.08 той самий список друкувався і тут повністю: обидва блоки фільтрували
+    # DECISIONS однаково по system == "lights". Це і був найбільший дубль на сайті.
+    cables = cables.replace("{{DECISIONS_HTML}}",
+        f'    <p class="sub">Рішення і відкриті питання по світлу — одним списком на '
+        f'сторінці <a href="{SITE_URL}lights.html">Світло</a>, щоб не розходились дві копії.</p>')
+    cables = cables.replace("{{FLAGS_HTML}}", "")
 
     # ================= power node page + lab =================
     PP = pw.P
@@ -2053,57 +2066,83 @@ def build():
     clab = clab.replace("{{POWER_PATHS}}", "\n".join(path_rows))
     clab = clab.replace("{{BUY_BLOCK}}", _cables_buy_block())
 
-    # ================= схеми: усі в одному місці =================
-    # Марсель попросив 07.08 «схему, яку можна показати» — до цього схеми були
-    # розкидані по сторінках систем і одного адреса, який можна дати людині
-    # ззовні, не існувало. Сторінка нічого не малює сама: бере ті самі схеми,
-    # що зареєстровані в data/systems.json полем diagrams.
+    # ================= схеми: зміст, а не друга копія =================
+    # Було: сторінка вбудовувала кожну схему повністю ще раз — 560 КБ, з яких
+    # 90% дублі того, що вже є на сторінках систем (Іван, 07.08: «дуже багато
+    # дублікатів»). Стало: карта схем із підписами і лінком туди, де схема
+    # живе разом зі своїми числами.
+    SCHEME_MAP = [
+        ("💡 Світло", [
+            ("circuit_main.svg", "Світло цілком: станція → головний запобіжник → щит → три групи",
+             "lights.html"),
+            ("panel_tree.svg", "Щит і кабельне дерево: кожна ділянка з калібром, струмом і просадкою",
+             "cables.html"),
+            ("podium_plan.svg", "План подіуму згори: прожектори, рукави стрічки, врізні вогні, кабель до ящика",
+             "lights.html"),
+            ("spot_ring.svg", "Прожектори: як іде кабель по периметру від стійки до стійки",
+             "spots.html"),
+            ("circuit_g1.svg", "Прожектори, електрика: реле, ШІМ-диммер, замкнуте кільце, відвід на стійку",
+             "spots.html"),
+            ("strip_layout.svg", "Стрічка: вісім рукавів, ввід живлення у центрі, куди біжить хвиля",
+             "strip.html"),
+            ("circuit_g2_strip.svg", "Стрічка, електрика: WLED з конденсатором і буфером даних, центральний вузол",
+             "strip.html"),
+            ("body_route.svg", "Лампи робота: де яка сидить на фігурі і якою трасою до неї йде дріт",
+             "body_lamps.html"),
+            ("body_wiring.svg", "Лампи робота, електрика: клемний вузол Wago, кожна лампа своєю парою",
+             "body_lamps.html"),
+            ("edge_section.svg", "Аварійна лінія: розріз вузла врізного вогню в торці сходинки",
+             "edge_lights.html"),
+            ("circuit_g3a.svg", "Аварійна лінія, електрика: вісім граней по три вогні і хвіст на ящик",
+             "edge_lights.html"),
+            ("back_core_face.svg", "Ядро на спині в лоб: плата на 241 діод і те саме крізь біле вікно",
+             "back_core_lab.html"),
+            ("back_core_section.svg", "Ядро на спині в розрізі: чому плата стоїть углиб, а не впритул",
+             "back_core_lab.html"),
+            ("back_core_wiring.svg", "Ядро на спині: живлення від шини через понижувач до модуля",
+             "back_core_lab.html"),
+        ]),
+        ("🔊 Звук", [
+            ("schematic.svg", "Аудіо-вузол по пінах: радар → ESP32 → ЦАП → підсилювач → динамік",
+             "audio.html"),
+            ("signal_chain.svg", "Сигнальний тракт: що з чим говорить і в якому форматі", "audio.html"),
+            ("power_chain.svg", "Живлення звуку: свій кабель від авто-виходу повз щит світла",
+             "audio.html"),
+            ("speaker_mount.svg", "Динамік у броні: отвір, фланець, глибина, мембрана вниз", "audio.html"),
+        ]),
+        ("🔋 Живлення", [
+            ("site_plan.svg", "Розкладка на плайї: подіум, ящик станції, масив і траса кабелю", "solar.html"),
+            ("frame.svg", "Рама під панелі: кути, розкрій дощок і вітрове навантаження", "solar.html"),
+        ]),
+        ("🛡️ Броня і ящик", [
+            ("robot_fixtures.svg", "Що змонтовано на фігурі: лампи, динамік, вікно радара, ядро, стрічка",
+             "armor.html"),
+            ("night_visibility.svg", "Помітність уночі: чому мікропризма повертає промінь, а фарба ні",
+             "armor.html"),
+            ("box_marking.svg", "Ящик станції вночі: маркери, катафоти і стрічка по периметру",
+             "enclosure.html"),
+        ]),
+    ]
     schemes = tmpl("schemes.tmpl.html")
-    # власні схеми систем: вони живуть у <система>/model/schematic.svg і досі
-    # показувались тільки на сторінці системи — у зведення не потрапляли, і
-    # сторінка схем виглядала майже порожньою (Іван, 07.08)
-    SCHEME_EXTRA = {
-        "audio": [("audio/model/schematic.svg",
-                   "Аудіо-вузол по пінах: радар → ESP32 → ЦАП → підсилювач → динамік, "
-                   "з підписами як на самих платах"),
-                  ("audio/model/signal_chain.svg",
-                   "Сигнальний тракт звуку: що з чим говорить і в якому форматі"),
-                  ("audio/model/power_chain.svg",
-                   "Живлення аудіо: свій кабель від авто-виходу станції повз щит світла, "
-                   "запобіжник, понижувач і скільки бере кожен споживач")],
-        "solar": [("solar/model/schematic.svg",
-                   "Живлення цілком: станція, масив і що з чого живиться")],
-        "enclosure": [("enclosure/model/schematic.svg",
-                       "Ящик станції: вентиляція, живлення і як усе сидить усередині")],
-    }
-    sch_blocks, sch_toc = [], []
-    # світло першим: саме про нього питають ззовні (Марсель, 07.08), аудіо — останнім
-    sch_order = ["lights", "solar", "armor", "enclosure", "audio"]
-    for card in sorted(SYSTEMS_REG,
-                       key=lambda c: (sch_order.index(c["key"])
-                                      if c["key"] in sch_order else len(sch_order))):
-        if not (card.get("diagrams") or []):
-            continue
-        block = diagrams_html(card["key"], heading="",
-                              extra=SCHEME_EXTRA.get(card["key"]))
-        if not block:
-            continue
-        if sch_blocks:                      # css і скрипт зуму — один раз на сторінку
-            block = re.sub(r"  <style>.*?  </script>\n", "", block, flags=re.S)
-        anchor = f'sch-{card["key"]}'
-        title = f'{card.get("emoji", "")} {card["label"]}'.strip()
-        sch_toc.append(f'<a href="#{anchor}">{esc(title)}</a>')
+    sch_toc, sch_blocks = [], []
+    for group, rows in SCHEME_MAP:
+        anchor = "sch-" + str(abs(hash(group)) % 9999)
+        sch_toc.append(f'<a href="#{anchor}">{esc(group)}</a>')
+        cards = []
+        for fname, cap, page in rows:
+            cards.append(
+                f'<tr><td><a href="{SITE_URL}{page}">{esc(cap)}</a></td>'
+                f'<td><a href="{SITE_URL}{page}">{esc(page[:-5])}</a></td></tr>')
         sch_blocks.append(
-            f'  <h2 id="{anchor}">{esc(title)}</h2>\n'
-            f'  <p class="sub">{esc(card.get("summary", ""))}</p>\n'
-            f'  <p class="sub"><a href="{SITE_URL}{card["page"]}">'
-            f'усі розрахунки системи «{esc(card["label"])}» →</a></p>\n'
-            + block)
+            f'  <h2 id="{anchor}">{esc(group)}</h2>\n'
+            f'  <div class="tbl-wrap"><table><thead><tr><th>Схема</th>'
+            f'<th>Де вона живе</th></tr></thead><tbody>\n'
+            + "\n".join(cards) + '\n</tbody></table></div>')
     schemes = (schemes
                .replace("{{SCHEMES_TOC}}",
                         (LAB_CSS + '\n  <nav class="labs-strip" aria-label="Схеми">'
                          '<span class="lead">на сторінці</span> '
-                         + " · ".join(sch_toc) + "</nav>") if sch_toc else "")
+                         + " · ".join(sch_toc) + "</nav>"))
                .replace("{{SCHEMES_HTML}}", "\n".join(sch_blocks))
                .replace("{{GEN_DATE}}", today.isoformat()))
 
@@ -2195,7 +2234,7 @@ def build():
         c_tasks = [t for t in TASKS if t["system"] == k]
         if c_tasks:
             t_rows = "\n".join(
-                f'      <tr><td><span class="pill {t["status"]}">{TASK_STATUS[t["status"]]}</span></td>'
+                f'      <tr><td><span class="pill {t["status"]}">{task_status(t)}</span></td>'
                 f'<td>{esc(t["task"])}</td><td>{esc(t.get("note", ""))}</td></tr>'
                 for t in sorted(c_tasks, key=lambda x: {"doing":0,"waiting":1,"todo":2,"done":3}.get(x["status"], 9)))
             sections.append('  <h2>Задачі</h2>\n  <div class="tbl-wrap">\n  <table>\n'
@@ -2773,17 +2812,34 @@ def build():
         # 31.07: на сторінці стрічки бракувало схеми і того, що з неї випливає
         # для закупівлі (заглушки не замовити, поки не заміряний переріз).
         fig, joints, buy = "", "", ""
+
+        def _svg_block(entry, heading):
+            """Секція зі схемою: «де стоїть» / «як зʼєднано» — зі своїм підписом."""
+            if not entry:
+                return ""
+            path_, cap = entry
+            f = ROOT / path_
+            if not f.exists():
+                print(f"warn: нема схеми {path_} для цепі {c['key']}")
+                return ""
+            svg_ = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", f.read_text())
+            return (f'<h2>{esc(heading)}</h2><div class="fig">{svg_}</div>'
+                    f'<p class="fig-cap">{esc(cap)}</p>')
+
+        # Кожна сторінка типу світла тепер має однаковий скелет: спершу де воно
+        # стоїть, потім як зʼєднано, далі скільки їсть (калькулятор нижче в
+        # шаблоні) і що купити. Прохання Івана 07.08: «щоб був порядок».
+        fig = (_svg_block(c.get("plan_svg"), "Де воно стоїть")
+               + _svg_block(c.get("scheme_svg"), "Як воно зʼєднано"))
+
         if c["key"] == "strip":
-            fig = ('<h2>Як іде лінія</h2><div class="fig">'
-                   + re.sub(r"<\?xml[^>]*\?>\s*", "",
-                            (LIGHTS / "model" / "strip_layout.svg").read_text())
-                   + f'</div><p class="fig-cap">{esc(stl.I["flow"])} '
-                     f'{esc(stl.I["geometry_note"])} {esc(stl.I["cut_rule"])}</p>'
-                   + f'<div class="layer block"><h3>Живлення заходить у центрі: '
-                     f'{esc(stl.I["feed_point"]["where"])}</h3>'
-                     f'<p>{esc(stl.I["feed_point"]["what"])}. '
-                     f'{esc(stl.I["feed_point"]["why"])} '
-                     f'{esc(stl.I["feed_point"]["direction_note"])}</p></div>')
+            fig += (f'<p class="fig-cap">{esc(stl.I["flow"])} '
+                    f'{esc(stl.I["geometry_note"])} {esc(stl.I["cut_rule"])}</p>'
+                    f'<div class="layer block"><h3>Живлення заходить у центрі: '
+                    f'{esc(stl.I["feed_point"]["where"])}</h3>'
+                    f'<p>{esc(stl.I["feed_point"]["what"])}. '
+                    f'{esc(stl.I["feed_point"]["why"])} '
+                    f'{esc(stl.I["feed_point"]["direction_note"])}</p></div>')
             joints = ('<h2>Місця зʼєднань</h2><div class="tbl-wrap"><table>'
                       '<thead><tr><th>Де</th><th>Чим</th><th>Стан</th>'
                       '<th>Чому саме так</th></tr></thead><tbody>'
@@ -2794,8 +2850,6 @@ def build():
                           f'</td></tr>' for j in stl.I["joints"])
                       + '</tbody></table></div>')
             mt = stl.I["measure_task"]
-            # Позиції тягнемо з BOM, а не дублюємо руками: закупівля живе там,
-            # і сторінка не має розходитись із реєстром.
             rows = [b for b in BOM
                     if b.get("system") == "lights"
                     and any(m in b["item"] + b.get("note", "") for m in stl.I["buy_match"])]
@@ -2804,17 +2858,6 @@ def build():
                    + f'<div class="layer block"><h3>Спершу замір: {esc(mt["title"])}</h3>'
                      f'<p>{esc(mt["why"])} {esc(mt["how"])} '
                      f'<b>Що це розблокує:</b> {esc(mt["unblocks"])}</p></div>')
-        elif c["key"] == "fixtures":
-            # розріз вузла врізного вогника — головне питання цієї сторінки
-            fig = ('<h2>Як вогонь сидить у торці</h2><div class="fig">'
-                   + re.sub(r"<\?xml[^>]*\?>\s*", "",
-                            (LIGHTS / "model" / "edge_section.svg").read_text())
-                   + '</div>')
-        elif c["key"] == "spots":
-            fig = ('<h2>Як іде кабель</h2><div class="fig">'
-                   + re.sub(r"<\?xml[^>]*\?>\s*", "",
-                            (LIGHTS / "model" / "spot_ring.svg").read_text())
-                   + '</div>')
 
         # Для решти цепей закупівля збирається з BOM за списком `buy_match`
         # у circuits.json — щоб на сторінці типу світла було видно і фото
