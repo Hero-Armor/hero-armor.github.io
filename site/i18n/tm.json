@@ -2199,7 +2199,7 @@
  "Знання машинно-читабельні:\n  <x0/>knowledge/<x1/>\n  (Open Knowledge Format v0.2) · <x2/>knowledge.jsonld<x3/>\n  (schema.org JSON-LD) · <x4/>GitHub<x5/> ·\n  згенеровано 2026-08-07": "Machine-readable knowledge:\n  <x0/>knowledge/<x1/>\n  (Open Knowledge Format v0.2) · <x2/>knowledge.jsonld<x3/>\n  (schema.org JSON-LD) · <x4/>GitHub<x5/> ·\n  generated 2026-08-07",
  "Значення": "Value",
  "Зняти справжні довжини кабельних трас із креслення (зараз прикидка)": "Take actual cable run lengths from drawings (currently estimate)",
- "Знято": "Taken",
+ "Знято": "Dropped",
  "Знято 0 режимів з 5. Довжина тестованого відрізка в метрах і скільки діодів на метр (30 / 60 / 144). Без цих двох чисел заміри не перерахувати на проєкт: у стрічки на 60 діодів/м споживання вдвічі більше, ніж у 30. Рішення Івана: вдень стрічка вимкнена і струму не бачить, гріється сонцем, а не сама від себе. Паспортні межі +45/+60/+85°C більше нічого не відсіюють — вибираємо за чипом, щільністю, ціною і доставкою.": "0 modes out of 5 recorded. Length of tested segment in meters and how many diodes per meter (30 / 60 / 144). Without these two numbers, measurements can't be recalculated for the project: strip with 60 diodes/m consumes twice as much as 30. Ivan's decision: strip off during the day and sees no current, heats by the sun, not by itself. Passport limits +45/+60/+85°C don't filter anything else — choose by chip, density, price, and delivery.",
  "Знято 29.07: після перерахунку піку наявного Ancor 8/2 і 12/2 вистачає, AWG 6 не потрібен": "Removed 29.07: after recalculating peak, existing Ancor 8/2 and 12/2 suffice, AWG 6 not needed",
  "Знято 5 режимів з 5. Довжина тестованого відрізка в метрах і скільки діодів на метр (30 / 60 / 144). Без цих двох чисел заміри не перерахувати на проєкт: у стрічки на 60 діодів/м споживання вдвічі більше, ніж у 30. Рішення Івана: вдень стрічка вимкнена і струму не бачить, гріється сонцем, а не сама від себе. Паспортні межі +45/+60/+85°C більше нічого не відсіюють — вибираємо за чипом, щільністю, ціною і доставкою.": "5 modes out of 5 removed. Length of the tested segment in meters and how many LEDs per meter (30 / 60 / 144). Without these two numbers, measurements cannot be recalculated for the project: for a strip with 60 LEDs/m, consumption is twice that of 30. Ivan's decision: during the day, the strip is off and sees no current, heated by the sun, not by itself. Passport limits +45/+60/+85°C do not filter anything else — we choose by chip, density, price, and delivery.",
@@ -4478,5 +4478,10 @@
  "🔥 Зараз <x0/>1<x1/>": "🔥 Now <x0/>1<x1/>",
  "🔬 світло": "🔬 lighting",
  "🛡️ Броня": "🛡️ Armor",
- "🛡️ Броня<x0/>концепт<x1/>": "🛡️ Armor<x0/>concept<x1/>"
+ "🛡️ Броня<x0/>концепт<x1/>": "🛡️ Armor<x0/>concept<x1/>",
+ "Де купуємо": "Where we buy",
+ "Ще купити": "Still to buy",
+ "Уже взяли": "Already bought",
+ "У кошику": "In cart",
+ "Повернуто": "Returned"
 }
