@@ -108,3 +108,4 @@
 * [Рама: просвіт під ящик 460 → 540 мм, передня стійка 500 → 580](rama-prosvit-pid-iashchyk-460-540-mm-perednia-stiika-500-580.md)
 * [Рековий кейс з Facebook Marketplace за $175 — відмова](rekovyi-keis-z-facebook-marketplace-za-175-vidmova.md)
 * [Прочіс ринку LA + Bay Area (новий і б/у) — вибір станції не змінюється](prochis-rynku-la-bay-area-novyi-i-b-u-vybir-stantsii-ne-zmin.md)
+* [Лампи на корпусі робота — паралельно від клемного вузла, не шлейфом](lampy-na-korpusi-robota-paralelno-vid-klemnoho-vuzla-ne-shle.md)

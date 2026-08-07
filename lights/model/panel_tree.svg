@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 620" width="100%" font-family="ui-monospace,Menlo,monospace">
 <rect width="1040" height="620" fill="#fafaf7"/>
 <text x="520" y="24" text-anchor="middle" font-size="14" fill="#24231d" font-weight="bold">Щит подіуму і кабельне дерево · Hero Armor BM 2026</text>
-<text x="520" y="42" text-anchor="middle" font-size="11" fill="#6b675c">шина 12 В · пік 86 Вт · головний запобіжник 15 А · усі довжини — прикидки (estimate)</text>
+<text x="520" y="42" text-anchor="middle" font-size="11" fill="#6b675c">шина 12 В · пік 90 Вт · головний запобіжник 15 А · усі довжини — прикидки (estimate)</text>
 <rect x="22" y="220" width="76" height="120" rx="5" fill="#efeee7" stroke="#24231d" stroke-width="1.8"/>
 <text x="60" y="240" text-anchor="middle" font-size="12" fill="#24231d" font-weight="bold">EcoFlow</text>
 <text x="60" y="255" text-anchor="middle" font-size="10" fill="#6b675c">станція</text>
@@ -25,7 +25,7 @@
 <text x="300" y="500" text-anchor="middle" font-size="8" fill="#3d7a4f">5 А</text>
 <line x1="98" y1="280" x2="270" y2="315" stroke="#b35b1e" stroke-width="2.5"/>
 <text x="184" y="285" text-anchor="middle" font-size="10" fill="#6b675c">AWG8  7.6 м ~</text>
-<text x="184" y="298" text-anchor="middle" font-size="10" fill="#3d7a4f">7.1 А  −1.9%</text>
+<text x="184" y="298" text-anchor="middle" font-size="10" fill="#3d7a4f">7.5 А  −2.0%</text>
 <line x1="330" y1="155" x2="400" y2="155" stroke="#b07c14" stroke-width="2.0"/>
 <line x1="330" y1="300" x2="400" y2="300" stroke="#3d6f96" stroke-width="2.0"/>
 <line x1="330" y1="480" x2="400" y2="480" stroke="#3d7a4f" stroke-width="2.0"/>
@@ -46,7 +46,7 @@
 <text x="730" y="172" text-anchor="middle" font-size="9" fill="#6b675c">5 Вт × 8 = 40 Вт</text>
 <path d="M775,155 L870,155 L870,190" fill="none" stroke="#b07c14" stroke-width="1.5"/>
 <text x="875" y="176" text-anchor="start" font-size="8" fill="#6b675c">AWG16  2.5 м ~</text>
-<text x="875" y="188" text-anchor="start" font-size="8" fill="#b22020">0.42 А  −6.7% накоп.</text>
+<text x="875" y="188" text-anchor="start" font-size="8" fill="#b22020">0.42 А  −6.8% накоп.</text>
 <text x="875" y="200" text-anchor="start" font-size="8" fill="#6b675c">1 прожектор (найдальший)</text>
 <rect x="400" y="286" width="60" height="28" rx="3" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.5"/>
 <text x="430" y="304" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Реле</text>
@@ -59,20 +59,20 @@
 <text x="570" y="317" text-anchor="middle" font-size="9" fill="#6b675c">ESP32 · Гр.2</text>
 <path d="M620,300 L685,300 L685,240" fill="none" stroke="#3d6f96" stroke-width="1.8"/>
 <text x="625" y="245" text-anchor="start" font-size="8" fill="#6b675c">AWG14  4.0 м ~</text>
-<text x="625" y="257" text-anchor="start" font-size="8" fill="#3d7a4f">0.38 А  −2.5% накоп.</text>
+<text x="625" y="257" text-anchor="start" font-size="8" fill="#3d7a4f">0.38 А  −2.6% накоп.</text>
 <rect x="675" y="215" width="110" height="50" rx="3" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.5"/>
 <text x="730" y="244" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">8 рукавів стрічки</text>
 <text x="730" y="257" text-anchor="middle" font-size="9" fill="#6b675c">WS2811 · 13.6 Вт пік</text>
 <text x="730" y="278" text-anchor="middle" font-size="8" fill="#6b675c">+ WLED 4 Вт</text>
 <path d="M620,300 L685,300 L685,305" fill="none" stroke="#3d6f96" stroke-width="1.8"/>
 <text x="630" y="310" text-anchor="start" font-size="8" fill="#6b675c">AWG18  6.0 м ~</text>
-<text x="630" y="322" text-anchor="start" font-size="8" fill="#3d7a4f">0.27 А  −2.9% накоп.</text>
+<text x="630" y="322" text-anchor="start" font-size="8" fill="#3d7a4f">0.27 А  −3.0% накоп.</text>
 <rect x="675" y="283" width="110" height="44" rx="3" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.5"/>
 <text x="730" y="309" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Лампи робота</text>
 <text x="730" y="322" text-anchor="middle" font-size="9" fill="#6b675c">10 шт · 4.0 Вт</text>
 <path d="M620,300 L685,300 L685,365" fill="none" stroke="#3d6f96" stroke-width="1.8"/>
 <text x="630" y="370" text-anchor="start" font-size="8" fill="#6b675c">AWG18  7.0 м ~</text>
-<text x="630" y="382" text-anchor="start" font-size="8" fill="#c45f00">0.69 А  −4.0% накоп.</text>
+<text x="630" y="382" text-anchor="start" font-size="8" fill="#c45f00">0.69 А  −4.1% накоп.</text>
 <rect x="675" y="343" width="110" height="44" rx="3" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.5"/>
 <text x="730" y="369" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Ядро на спині</text>
 <text x="730" y="382" text-anchor="middle" font-size="9" fill="#6b675c">WS2812B · 8.3 Вт пік</text>
@@ -81,13 +81,13 @@
 <text x="430" y="497" text-anchor="middle" font-size="9" fill="#6b675c">Гр.3А</text>
 <line x1="460" y1="480" x2="520" y2="480" stroke="#3d7a4f" stroke-width="2.0"/>
 <text x="470" y="462" text-anchor="start" font-size="9" fill="#6b675c">AWG12  6.0 м ~</text>
-<text x="470" y="475" text-anchor="start" font-size="9" fill="#3d7a4f">1.24 А  −0.6%</text>
+<text x="470" y="475" text-anchor="start" font-size="9" fill="#3d7a4f">1.60 А  −0.8%</text>
 <rect x="520" y="462" width="100" height="36" rx="3" fill="#f5f4ef" stroke="#3d7a4f" stroke-width="1.5"/>
 <text x="570" y="484" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Коробка Гр.3А</text>
 <text x="570" y="497" text-anchor="middle" font-size="9" fill="#6b675c">аварійна лінія</text>
 <path d="M620,480 L685,480 L685,430" fill="none" stroke="#3d7a4f" stroke-width="1.8"/>
 <text x="625" y="435" text-anchor="start" font-size="8" fill="#6b675c">AWG16  10.0 м ~</text>
-<text x="625" y="447" text-anchor="start" font-size="8" fill="#b22020">1.20 А  −5.1% накоп.</text>
+<text x="625" y="447" text-anchor="start" font-size="8" fill="#b22020">1.20 А  −5.4% накоп.</text>
 <rect x="675" y="408" width="110" height="44" rx="3" fill="#f5f4ef" stroke="#3d7a4f" stroke-width="1.5"/>
 <text x="730" y="434" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">24 врізних вогні</text>
 <text x="730" y="447" text-anchor="middle" font-size="9" fill="#6b675c">торець · 14.4 Вт</text>
