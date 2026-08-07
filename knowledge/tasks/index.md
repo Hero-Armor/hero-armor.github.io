@@ -87,3 +87,6 @@
 * [Замовити ORALITE V98 і 3M 983-10 з eBay](zamovyty-oralite-v98-i-3m-983-10-z-ebay.md) - до роботи
 * [Вирішити отвір на тильному боці кисті під лампу](vyrishyty-otvir-na-tylnomu-botsi-kysti-pid-lampu.md) - до роботи
 * [Обрати кабель на гілку Гр.2 замість поверненої бухти](obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) - до роботи
+* [Задати топологію 24 врізних вогнів торця (зірка / шлейф / по гранях)](zadaty-topolohiiu-24-vriznykh-vohniv-tortsia-zirka-shleif-po.md) - до роботи
+* [Задати розводку 10 ламп на корпусі робота (шлейф чи зірка всередині броні)](zadaty-rozvodku-10-lamp-na-korpusi-robota-shleif-chy-zirka-v.md) - до роботи
+* [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) - до роботи

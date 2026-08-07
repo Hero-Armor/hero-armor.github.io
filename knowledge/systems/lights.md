@@ -99,6 +99,9 @@ generated: { by: "process:site-build" }
 * [Обрати кабель магістралі станція → щит під Anderson 30 А](/tasks/obraty-kabel-mahistrali-stantsiia-shchyt-pid-anderson-30-a.md) — до роботи
 * [Звірити руками, скільки рулонів неону фізично лежить у Марселя](/tasks/zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) — до роботи
 * [Обрати кабель на гілку Гр.2 замість поверненої бухти](/tasks/obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) — до роботи
+* [Задати топологію 24 врізних вогнів торця (зірка / шлейф / по гранях)](/tasks/zadaty-topolohiiu-24-vriznykh-vohniv-tortsia-zirka-shleif-po.md) — до роботи
+* [Задати розводку 10 ламп на корпусі робота (шлейф чи зірка всередині броні)](/tasks/zadaty-rozvodku-10-lamp-na-korpusi-robota-shleif-chy-zirka-v.md) — до роботи
+* [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](/tasks/opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) — до роботи
 
 # Закупівля
 
@@ -114,7 +117,7 @@ generated: { by: "process:site-build" }
 * [Запобіжники ATO/ATC, набір](/bom/zapobizhnyky-ato-atc-nabir.md) — $9.99, купити
 * [Реле на групи 12 В, 30 А](/bom/rele-na-hrupy-12-v-30-a.md) — $12.15, купити
 * [Гермокоробка IP66 для щита і реле](/bom/hermokorobka-ip66-dlia-shchyta-i-rele.md) — $49.59, купити
-* [Гермокоробки IP65 під диммер і WLED](/bom/hermokorobky-ip65-pid-dymmer-i-wled.md) — $8.99, купити
+* [Гермокоробки IP65 під диммер, WLED і аварійну Гр.3А](/bom/hermokorobky-ip65-pid-dymmer-wled-i-avariinu-hr-3a.md) — $8.99, купити
 * [Гермороз'єми IP68 (швидкознімні)](/bom/hermoroziemy-ip68-shvydkoznimni.md) — $14.95, купити
 * [Гель-конектори / вологозахищені клеми](/bom/hel-konektory-volohozakhyshcheni-klemy.md) — $9.99, купити
 * [Гофра/кабель-канал для відводів](/bom/hofra-kabel-kanal-dlia-vidvodiv.md) — $30.99, купити

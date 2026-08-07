@@ -40,7 +40,7 @@
 * [Запобіжники ATO/ATC, набір](zapobizhnyky-ato-atc-nabir.md) - $9.99, купити
 * [Реле на групи 12 В, 30 А](rele-na-hrupy-12-v-30-a.md) - $12.15, купити
 * [Гермокоробка IP66 для щита і реле](hermokorobka-ip66-dlia-shchyta-i-rele.md) - $49.59, купити
-* [Гермокоробки IP65 під диммер і WLED](hermokorobky-ip65-pid-dymmer-i-wled.md) - $8.99, купити
+* [Гермокоробки IP65 під диммер, WLED і аварійну Гр.3А](hermokorobky-ip65-pid-dymmer-wled-i-avariinu-hr-3a.md) - $8.99, купити
 * [Гермороз'єми IP68 (швидкознімні)](hermoroziemy-ip68-shvydkoznimni.md) - $14.95, купити
 * [Гель-конектори / вологозахищені клеми](hel-konektory-volohozakhyshcheni-klemy.md) - $9.99, купити
 * [Гофра/кабель-канал для відводів](hofra-kabel-kanal-dlia-vidvodiv.md) - $30.99, купити
