@@ -1001,7 +1001,7 @@ def build_okf():
     log_lines = ["# Журнал проєкту", ""]
     for d_key in sorted(log_by_date, reverse=True):
         log_lines.append(f"## {d_key}")
-        log_lines += [f"* **{e['kind']}**: {e['text']}" for e in log_by_date[d_key]]
+        log_lines += [f"* **{e.get('kind', 'Event')}**: {e.get('text', '')}" for e in log_by_date[d_key]]
         log_lines.append("")
     (okf / "log.md").write_text("\n".join(log_lines).rstrip() + "\n")
 
