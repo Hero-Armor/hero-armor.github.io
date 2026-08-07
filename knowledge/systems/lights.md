@@ -91,6 +91,7 @@ generated: { by: "process:site-build" }
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](/tasks/vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) — до роботи
 * [Заземлити металеву раму подіуму на мінус шини](/tasks/zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) — чекаємо
 * [Зняти справжні довжини кабельних трас із креслення (зараз прикидка)](/tasks/zniaty-spravzhni-dovzhyny-kabelnykh-tras-iz-kreslennia-zaraz.md) — до роботи
+* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](/tasks/dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) — до роботи
 
 # Закупівля
 

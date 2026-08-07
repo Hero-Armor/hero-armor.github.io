@@ -79,3 +79,4 @@
 * [Тест станції під навантаженням до виїзду (виїзд 28-29.08, Burn 30.08-07.09)](test-stantsii-pid-navantazhenniam-do-vyizdu-vyizd-28-29-08-b.md) - чекаємо
 * [Виміряти реальну висоту ящика Sterilite — 457 мм це з колесами чи без](vymiriaty-realnu-vysotu-iashchyka-sterilite-457-mm-tse-z-kol.md) - чекаємо
 * [Обрати кабель від станції до щита під Anderson на 30 А](obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) - до роботи
+* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) - до роботи
