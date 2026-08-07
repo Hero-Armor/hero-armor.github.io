@@ -2044,7 +2044,11 @@ def build():
     # що зареєстровані в data/systems.json полем diagrams.
     schemes = tmpl("schemes.tmpl.html")
     sch_blocks, sch_toc = [], []
-    for card in SYSTEMS_REG:
+    # світло першим: саме про нього питають ззовні (Марсель, 07.08), аудіо — останнім
+    sch_order = ["lights", "solar", "armor", "enclosure", "audio"]
+    for card in sorted(SYSTEMS_REG,
+                       key=lambda c: (sch_order.index(c["key"])
+                                      if c["key"] in sch_order else len(sch_order))):
         if not (card.get("diagrams") or []):
             continue
         block = diagrams_html(card["key"], heading="")
