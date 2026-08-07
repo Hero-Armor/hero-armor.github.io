@@ -2865,6 +2865,7 @@ def build():
         if not buy and c.get("buy_match"):
             rows = [b for b in BOM
                     if b.get("system") in ("lights", "enclosure")
+                    and b.get("flow") not in ("dropped", "returned")
                     and any(m in b["item"] + b.get("note", "") for m in c["buy_match"])]
             buy = photo_wall_html(rows) + buy_table_html(rows)
 
