@@ -136,3 +136,4 @@ generated: { by: "process:site-build" }
 * [Ватметр ВВОДУ — CGELE DC 0–200 В / 0–100 А, LCD 9 параметрів з шунтом](/bom/vatmetr-vvodu-cgele-dc-0-200-v-0-100-a-lcd-9-parametriv-z-sh.md) — $16.12, купити
 * [Тумблери підсвічені — DaierTek 12 В 20 А IP65, 5-pack](/bom/tumblery-pidsvicheni-daiertek-12-v-20-a-ip65-5-pack.md) — $7.79, купити
 * [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](/bom/klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) — $29.47, купити
+* [DMWD 12мм LED — дозамовити 1 упаковку](/bom/dmwd-12mm-led-dozamovyty-1-upakovku.md) — $10.99, купити

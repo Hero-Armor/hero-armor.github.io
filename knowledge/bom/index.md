@@ -124,3 +124,4 @@
 * [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) - $1,599.00, купити
 * [Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)](iashchyk-sterilite-40-gal-wheeled-industrial-tote-para-stant.md) - $176.99, купити
 * [Кабель від станції до щита під Anderson, переріз на 30 А](kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) - —, купити
+* [DMWD 12мм LED — дозамовити 1 упаковку](dmwd-12mm-led-dozamovyty-1-upakovku.md) - $10.99, купити
