@@ -114,3 +114,7 @@
 * [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
 * [Кутики рами беремо в Home Depot поштучно, а не на Amazon](kutyky-ramy-beremo-v-home-depot-poshtuchno-a-ne-na-amazon.md)
 * [Світловідбивні стрічки — з eBay, не з Amazon](svitlovidbyvni-strichky-z-ebay-ne-z-amazon.md)
+* [Світловідбивна стрічка: ORALITE V98 на фігуру, 3M 983-10 на торець подіуму](svitlovidbyvna-strichka-oralite-v98-na-fihuru-3m-983-10-na-t.md)
+* [Монтаж світловідбивної стрічки: ґрунтовка, знежирення, прогрів](montazh-svitlovidbyvnoi-strichky-gruntovka-znezhyrennia-proh.md)
+* [Кисті друкуються заново з металевими стержнями всередині](kysti-drukuiutsia-zanovo-z-metalevymy-sterzhniamy-vseredyni.md)
+* [Електричну частину веде Іван — рішення можуть розходитись із кресленнями](elektrychnu-chastynu-vede-ivan-rishennia-mozhut-rozkhodytys-.md)

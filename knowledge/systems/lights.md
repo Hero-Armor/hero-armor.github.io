@@ -98,6 +98,7 @@ generated: { by: "process:site-build" }
 * [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](/tasks/dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) — в роботі
 * [Обрати кабель магістралі станція → щит під Anderson 30 А](/tasks/obraty-kabel-mahistrali-stantsiia-shchyt-pid-anderson-30-a.md) — до роботи
 * [Звірити руками, скільки рулонів неону фізично лежить у Марселя](/tasks/zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) — до роботи
+* [Обрати кабель на гілку Гр.2 замість поверненої бухти](/tasks/obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) — до роботи
 
 # Закупівля
 

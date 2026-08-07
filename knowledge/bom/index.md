@@ -13,8 +13,8 @@
 * [microSD SPI модуль](microsd-spi-modul.md) - $6.99 за 5 шт, купити
 * [SanDisk 32GB Class 10](sandisk-32gb-class-10.md) - $23.95, купити
 * [TPA3116D2 Mono (HiLetgo)](tpa3116d2-mono-hiletgo.md) - $13.99 за 2 плати, купити
-* [Динамік Poly-Planar MA-3013 3", пара — морський](dynamik-poly-planar-ma-3013-3-para-morskyi.md) - $69.99, купити
-* [Динамік Poly-Planar MA-3013 3", пара — морський](dynamik-poly-planar-ma-3013-3-para-morskyi.md) - $69.99, купити
+* [Herdio 3" пара (куплено як Poly-Planar) — ПОВЕРНУТО](herdio-3-para-kupleno-iak-poly-planar-povernuto.md) - $69.99, купити
+* [Herdio 3" пара (куплено як Poly-Planar) — ПОВЕРНУТО](herdio-3-para-kupleno-iak-poly-planar-povernuto.md) - $69.99, купити
 * [LD2410C](ld2410c.md) - $20.48 за 3 шт, купити
 * [Buck 12→5В ≥1.5А + LC](buck-12-5v-1-5a-lc.md) - $8.99 за 5 шт, купити
 * [Радіатор 50×50 мм + термопрокладка](radiator-50-50-mm-termoprokladka.md) - ~$9/4шт, купити
@@ -33,7 +33,7 @@
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
 * [Сонячні панелі для масиву (потужність не обрана)](soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - $149, купити
-* [Станції EcoFlow ×2 (модель не обрана)](stantsii-ecoflow-2-model-ne-obrana.md) - $1099/шт, купити
+* [Друга станція EcoFlow — змінна, модель не обрана](druha-stantsiia-ecoflow-zminna-model-ne-obrana.md) - ~$1600, купити
 * [Рама під сонячний масив](rama-pid-soniachnyi-masyv.md) - —, купити
 * [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - $29.99, купити
 * [Щит-бокс із тримачами запобіжників — Cyrico 12 Circuits](shchyt-boks-iz-trymachamy-zapobizhnykiv-cyrico-12-circuits.md) - $15.99, купити
@@ -55,8 +55,8 @@
 * [Кабель: Коробка → врізні вогні торця](kabel-korobka-vrizni-vohni-tortsia.md) - $71.12, купити
 * [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - $49.99, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - $29.39, купити
-* [Світловідбивна стрічка на корпус — БІЛА (поз. №3,4)](svitlovidbyvna-strichka-na-korpus-bila-poz-3-4.md) - $21.99 / 10 ft, купити
-* [Світловідбивна стрічка на корпус — ЖОВТА (поз. №5)](svitlovidbyvna-strichka-na-korpus-zhovta-poz-5.md) - $21.99 / 10 ft, купити
+* [ORALITE V98 біла, 2" × 10 ft — корпус фігури](oralite-v98-bila-2-10-ft-korpus-fihury.md) - $21.99, купити
+* [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) - $14.99, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](lifepo4-12-v-100-ah-bufer-pid-svitlo.md) - ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](zariadnyk-14-6-v-20-30-a-z-anderson.md) - ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) - $201, купити
@@ -80,7 +80,6 @@
 * [Таймер-реле 12 В — чим рвати живлення стрічки на день](taimer-rele-12-v-chym-rvaty-zhyvlennia-strichky-na-den.md) - $13.49, купити
 * [Підсилювач сигналу SP901E (WS2811/WS2812)](pidsyliuvach-syhnalu-sp901e-ws2811-ws2812.md) - $19.99, купити
 * [Гермовводи PG7–PG16, набір 25 шт](hermovvody-pg7-pg16-nabir-25-sht.md) - $7.99, купити
-* [Термоусадка з клеєм 3:1, набір 350 шт](termousadka-z-kleiem-3-1-nabir-350-sht.md) - $6, купити
 * [Джампери Dupont мама-мама 20 см](dzhampery-dupont-mama-mama-20-sm.md) - $4, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](stiazhky-neilonovi-uv-stiiki-400-sht.md) - $7, купити
 * [Кейс під станцію](keis-pid-stantsiiu.md) - $75-485, купити

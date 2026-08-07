@@ -84,3 +84,6 @@
 * [Оформити кошик Amazon — 45 позицій, ~$1 110](oformyty-koshyk-amazon-45-pozytsii-1-110.md) - чекаємо
 * [Звірити руками, скільки рулонів неону фізично лежить у Марселя](zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) - до роботи
 * [Купити стрічки ORALITE V98 на eBay (біла + жовта)](kupyty-strichky-oralite-v98-na-ebay-bila-zhovta.md) - до роботи
+* [Замовити ORALITE V98 і 3M 983-10 з eBay](zamovyty-oralite-v98-i-3m-983-10-z-ebay.md) - до роботи
+* [Вирішити отвір на тильному боці кисті під лампу](vyrishyty-otvir-na-tylnomu-botsi-kysti-pid-lampu.md) - до роботи
+* [Обрати кабель на гілку Гр.2 замість поверненої бухти](obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) - до роботи

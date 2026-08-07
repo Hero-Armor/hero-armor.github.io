@@ -2,7 +2,7 @@
 type: "Part"
 title: "Gebildet LED 12 мм, металеві"
 description: "Фактично куплені DMWD B0BQV8LM1P, упаковка 5 шт, $10.99. Куплено ДВІ упаковки 20.07: одна Марселю в Hillsborough, одна Івану в Санта-Моніку. РІШЕННЯ ІВАНА 06.08"
-resource: "https://www.amazon.com/dp/B09PFMXBNW"
+resource: "https://www.amazon.com/dp/B0BQV8LM1P"
 tags: ["lights"]
 quantity: "треба 10 (8 на корпус + 2 маркери ящика) — у Марселя 5, НЕ ВИСТАЧАЄ 5"
 price: "$10.99 за 5 шт (фактично DMWD)"

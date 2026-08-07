@@ -6,7 +6,7 @@ resource: "https://www.amazon.com/dp/B071CV4P2B"
 tags: ["armor"]
 quantity: "1 рулон (9.15 м)"
 price: "$38.39"
-procurement_status: "add"
+procurement_status: "tbd"
 generated: { by: "process:site-build" }
 ---
 

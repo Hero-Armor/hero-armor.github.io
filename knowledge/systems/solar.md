@@ -60,7 +60,7 @@ generated: { by: "process:site-build" }
 # Закупівля
 
 * [Сонячні панелі для масиву (потужність не обрана)](/bom/soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — $149, купити
-* [Станції EcoFlow ×2 (модель не обрана)](/bom/stantsii-ecoflow-2-model-ne-obrana.md) — $1099/шт, купити
+* [Друга станція EcoFlow — змінна, модель не обрана](/bom/druha-stantsiia-ecoflow-zminna-model-ne-obrana.md) — ~$1600, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $29.99, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](/bom/lifepo4-12-v-100-ah-bufer-pid-svitlo.md) — ~$250, купити

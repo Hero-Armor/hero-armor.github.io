@@ -1,0 +1,290 @@
+{
+ "_source": "enclosure/model/joint_map.py — рахується з даних, руками не правити",
+ "_rule": "Іван 07.08.2026: кожен елемент і кожне з'єднання — у власній коробці",
+ "nodes": [
+  {
+   "id": "case_station",
+   "where": "D · ящик станції",
+   "box": "ящик",
+   "title": "Станція живлення",
+   "why": "Заводський корпус, але сам ящик потрібен від пилу і сонця",
+   "seg": null
+  },
+  {
+   "id": "case_panel",
+   "where": "D · ящик станції",
+   "box": "ящик",
+   "title": "Ящик щита і проводки",
+   "why": "Другий тот поруч зі станцією — у ньому живе щит",
+   "seg": null
+  },
+  {
+   "id": "panel",
+   "where": "D · ящик щита",
+   "box": "гермокоробка IP66",
+   "title": "Щит запобіжників",
+   "why": "Блок запобіжників Cyrico + шини + 4 ватметри + 3 тумблери — один вузол",
+   "seg": "trunk"
+  },
+  {
+   "id": "box_marker",
+   "where": "D · стінка ящика",
+   "box": "мала IP65",
+   "title": "Розгалуження на маркерні вогники ящика",
+   "why": "Окремий корінь топології: магістраль подіуму цих вогників не бачить",
+   "seg": "box_g3a"
+  },
+  {
+   "id": "dimmer",
+   "where": "B · подіум",
+   "box": "гермокоробка IP65",
+   "title": "Коробка ШІМ-диммера (Гр.1)",
+   "why": "Диммер продається без захисту — голі клеми",
+   "seg": "br_g1"
+  },
+  {
+   "id": "wled",
+   "where": "B · центр подіуму",
+   "box": "гермокоробка IP65",
+   "title": "Центральний вузол стрічки: контролер WLED + конденсатор",
+   "why": "Тут сходяться 8 рукавів і 3 точки підкачки живлення",
+   "seg": "br_g2"
+  },
+  {
+   "id": "relay_g3a",
+   "where": "B · подіум",
+   "box": "гермокоробка IP65",
+   "title": "Коробка аварійної групи (Гр.3А)",
+   "why": "Реле окремої лінії, яка гасне останньою; рознесена від щита на 6 м",
+   "seg": "br_g3a"
+  },
+  {
+   "id": "audio",
+   "where": "A · груди фігури",
+   "box": "гермокоробка IP65",
+   "title": "Аудіо-вузол",
+   "why": "ESP32 + ЦАП + підсилювач на одній платі, радіатор назовні",
+   "seg": null
+  },
+  {
+   "id": "back_core",
+   "where": "A · спина фігури",
+   "box": "без коробки",
+   "title": "Ядро на спині",
+   "why": "Кишеня в самій оболонці робота вже герметична — окремий корпус зайвий",
+   "seg": "drop_back_core"
+  }
+ ],
+ "joints": [
+  {
+   "id": "spot_splices",
+   "title": "Відвід на кожну стійку прожектора",
+   "where": "B · 8 стійок по периметру",
+   "fixed": 8,
+   "box": "гель-бокс на сплайс",
+   "why": "Кільце йде повз стійку, від нього відгалужується хвіст лампи",
+   "src": "params.json → spot_group.install"
+  },
+  {
+   "id": "strip_arms",
+   "title": "Вхід живлення в кожен рукав стрічки",
+   "where": "B · центр подіуму",
+   "fixed": 8,
+   "box": "всередині коробки WLED",
+   "why": "Пайка на майданчики + термоусадка з клеєм, усе сходиться в один вузол",
+   "src": "strip_install.json → joints"
+  },
+  {
+   "id": "strip_inject",
+   "title": "Точки підкачки живлення стрічки",
+   "where": "B · настил подіуму",
+   "fixed": 3,
+   "box": "всередині коробки WLED",
+   "why": "Підкачка кожні 2.5–3 м, струм ділиться на три вводи",
+   "src": "params.json → topology.inj_g2"
+  },
+  {
+   "id": "strip_caps",
+   "title": "Заглушка на торець кожного відрізка стрічки",
+   "where": "B · зовнішні кінці променів",
+   "fixed": 8,
+   "box": "заглушка+герметик",
+   "why": "Відкритий торець неону — головний вхід для пилу; це не коробка",
+   "src": "strip_install.json → joints"
+  },
+  {
+   "id": "stairs",
+   "title": "Сплайси врізних вогнів торця",
+   "where": "B · торець подіуму",
+   "lo": 1,
+   "hi": 24,
+   "box": "гель-бокс на сплайс",
+   "why": "Топологія не задана: зірка з однієї коробки чи шлейф із відводом на кожен вогонь",
+   "src": "params.json → topology.stairs_g3a (топологія відсутня)"
+  },
+  {
+   "id": "robot_lamps",
+   "title": "Сплайси ламп на корпусі робота",
+   "where": "A · всередині броні",
+   "lo": 1,
+   "hi": 10,
+   "box": "мала коробка / гель",
+   "why": "Один хвіст 18AWG несе всі лампи, але як саме — шлейфом чи зіркою — не вирішено",
+   "src": "params.json → topology.drop_robot (топологія відсутня)"
+  },
+  {
+   "id": "figure_link",
+   "title": "Перехід кабелю подіум → фігура",
+   "where": "B/A · крізь настил",
+   "lo": 1,
+   "hi": 1,
+   "box": "роз'єм + коробка",
+   "why": "Ніде не описано, чи фігура знімна і як заведений кабель — а це стик, який рветься при перевезенні",
+   "src": "в файлах немає"
+  },
+  {
+   "id": "station_link",
+   "title": "Стик станція → магістраль подіуму",
+   "where": "D → B",
+   "fixed": 1,
+   "box": "роз'єм Anderson у стінці ящика",
+   "why": "Роз'ємне з'єднання на 30 А, ховається в стінку ящика",
+   "src": "params.json → topology.trunk"
+  }
+ ],
+ "totals": {
+  "nodes": 9,
+  "node_boxes": 8,
+  "joints_lo": 31,
+  "joints_hi": 63,
+  "boxes_lo": 20,
+  "boxes_hi": 52
+ },
+ "in_registry": [
+  {
+   "item": "Позначення траси кабелю ящик → подіум",
+   "qty": "7.6 м",
+   "price": "—",
+   "flow": "to_order",
+   "system": "project",
+   "url": ""
+  },
+  {
+   "item": "Маркерний вогник ящика — індикатор 12 мм 12 В",
+   "qty": "2 (уп 5)",
+   "price": "~$10",
+   "flow": "dropped",
+   "system": "enclosure",
+   "url": "https://www.amazon.com/dp/B09YXLW81Q"
+  },
+  {
+   "item": "Гермокоробка IP66 для щита і реле",
+   "qty": "1",
+   "price": "$49.59",
+   "flow": "in_cart",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B0D5ZDQLKN"
+  },
+  {
+   "item": "Гермокоробки IP65 під диммер і WLED",
+   "qty": "2",
+   "price": "$8.99",
+   "flow": "in_cart",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B08N1DD5WJ"
+  },
+  {
+   "item": "Гель-конектори / вологозахищені клеми",
+   "qty": "компл.",
+   "price": "$9.99",
+   "flow": "in_cart",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B09H7DQN1V"
+  },
+  {
+   "item": "Кабель: Щит → коробка диммера (Гр.1)",
+   "qty": "~4 м",
+   "price": "$102.99",
+   "flow": "in_cart",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B000NUYBU2"
+  },
+  {
+   "item": "Кабель: Щит → коробка WLED (Гр.2)",
+   "qty": "~5 м",
+   "price": "$106.40",
+   "flow": "to_order",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B000NV2ATU"
+  },
+  {
+   "item": "Кабель: Коробка → лампи робота",
+   "qty": "~6 м",
+   "price": "$11.26",
+   "flow": "arrived",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B07D3M9B3H"
+  },
+  {
+   "item": "Кабель: Щит → коробка аварійної (Гр.3А)",
+   "qty": "~6 м",
+   "price": "$102.99",
+   "flow": "in_cart",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B000NUYBU2"
+  },
+  {
+   "item": "Кабель: Коробка → врізні вогні торця",
+   "qty": "~10 м",
+   "price": "$71.12",
+   "flow": "in_cart",
+   "system": "lights",
+   "url": "https://www.amazon.com/dp/B07321KYP9"
+  },
+  {
+   "item": "Гермовводи PG7–PG16, набір 25 шт",
+   "qty": "3 (пак 25)",
+   "price": "$7.99",
+   "flow": "in_cart",
+   "system": "audio",
+   "url": "https://www.amazon.com/dp/B0FJFVBLJD"
+  },
+  {
+   "item": "Кейс під станцію",
+   "qty": "1",
+   "price": "$75-485",
+   "flow": "dropped",
+   "system": "enclosure",
+   "url": "https://www.ebay.com/str/surpluscases"
+  },
+  {
+   "item": "Гермоввід PG13.5 IP68",
+   "qty": "4",
+   "price": "$10",
+   "flow": "tbd",
+   "system": "enclosure",
+   "url": "https://www.amazon.com/dp/B0FC2ZZDP3"
+  },
+  {
+   "item": "Коробка ABS IP65 200×120×75 (якщо своя не підійде)",
+   "qty": "1",
+   "price": "$10",
+   "flow": "dropped",
+   "system": "audio",
+   "url": "https://www.amazon.com/dp/B07D23BF7Y"
+  },
+  {
+   "item": "Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)",
+   "qty": "2",
+   "price": "$176.99",
+   "flow": "to_order",
+   "system": "enclosure",
+   "url": "https://www.target.com/p/sterilite-40-gal-wheeled-industrial-tote-stackable-storage-bin-with-latch-lid-plastic-container-with-heavy-duty-latches-black-base-and-lid-2-pack/-/A-89587851"
+  }
+ ],
+ "open_questions": [
+  "Сплайси врізних вогнів торця",
+  "Сплайси ламп на корпусі робота",
+  "Де саме стоїть коробка диммера (params.json сам пише placement_open)"
+ ]
+}

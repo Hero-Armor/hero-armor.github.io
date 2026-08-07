@@ -61,8 +61,8 @@ generated: { by: "process:site-build" }
 * [microSD SPI модуль](/bom/microsd-spi-modul.md) — $6.99 за 5 шт, купити
 * [SanDisk 32GB Class 10](/bom/sandisk-32gb-class-10.md) — $23.95, купити
 * [TPA3116D2 Mono (HiLetgo)](/bom/tpa3116d2-mono-hiletgo.md) — $13.99 за 2 плати, купити
-* [Динамік Poly-Planar MA-3013 3", пара — морський](/bom/dynamik-poly-planar-ma-3013-3-para-morskyi.md) — $69.99, купити
-* [Динамік Poly-Planar MA-3013 3", пара — морський](/bom/dynamik-poly-planar-ma-3013-3-para-morskyi.md) — $69.99, купити
+* [Herdio 3" пара (куплено як Poly-Planar) — ПОВЕРНУТО](/bom/herdio-3-para-kupleno-iak-poly-planar-povernuto.md) — $69.99, купити
+* [Herdio 3" пара (куплено як Poly-Planar) — ПОВЕРНУТО](/bom/herdio-3-para-kupleno-iak-poly-planar-povernuto.md) — $69.99, купити
 * [LD2410C](/bom/ld2410c.md) — $20.48 за 3 шт, купити
 * [Buck 12→5В ≥1.5А + LC](/bom/buck-12-5v-1-5a-lc.md) — $8.99 за 5 шт, купити
 * [Радіатор 50×50 мм + термопрокладка](/bom/radiator-50-50-mm-termoprokladka.md) — ~$9/4шт, купити
@@ -79,7 +79,6 @@ generated: { by: "process:site-build" }
 * [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — $71.12, купити
 * [Екранований кабель ЦАП → амп (аукс-шнур, 30 см)](/bom/ekranovanyi-kabel-tsap-amp-auks-shnur-30-sm.md) — $4.19, купити
 * [Гермовводи PG7–PG16, набір 25 шт](/bom/hermovvody-pg7-pg16-nabir-25-sht.md) — $7.99, купити
-* [Термоусадка з клеєм 3:1, набір 350 шт](/bom/termousadka-z-kleiem-3-1-nabir-350-sht.md) — $6, купити
 * [Джампери Dupont мама-мама 20 см](/bom/dzhampery-dupont-mama-mama-20-sm.md) — $4, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](/bom/stiazhky-neilonovi-uv-stiiki-400-sht.md) — $7, купити
 * [Коробка ABS IP65 200×120×75 (якщо своя не підійде)](/bom/korobka-abs-ip65-200-120-75-iakshcho-svoia-ne-pidiide.md) — $10, купити

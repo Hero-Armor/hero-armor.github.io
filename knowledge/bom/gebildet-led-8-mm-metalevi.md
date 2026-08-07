@@ -2,7 +2,7 @@
 type: "Part"
 title: "Gebildet LED 8 мм, металеві"
 description: "Фактично куплені DMWD B0BQTT4XN3, упаковка 5 шт, $8.99. Схема просить дві — запас втричі. Дубль із Санта-Моніки повернуто разом із 12-міліметровими."
-resource: "https://www.amazon.com/dp/B09PFNXG5H"
+resource: "https://www.amazon.com/dp/B0BQTT4XN3"
 tags: ["lights"]
 quantity: "2 (упаковка 5) — у Марселя, вистачає"
 price: "$8.99 за 5 шт (фактично DMWD)"
