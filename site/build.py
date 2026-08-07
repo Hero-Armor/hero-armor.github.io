@@ -2037,6 +2037,38 @@ def build():
     clab = clab.replace("{{POWER_PATHS}}", "\n".join(path_rows))
     clab = clab.replace("{{BUY_BLOCK}}", _cables_buy_block())
 
+    # ================= схеми: усі в одному місці =================
+    # Марсель попросив 07.08 «схему, яку можна показати» — до цього схеми були
+    # розкидані по сторінках систем і одного адреса, який можна дати людині
+    # ззовні, не існувало. Сторінка нічого не малює сама: бере ті самі схеми,
+    # що зареєстровані в data/systems.json полем diagrams.
+    schemes = tmpl("schemes.tmpl.html")
+    sch_blocks, sch_toc = [], []
+    for card in SYSTEMS_REG:
+        if not (card.get("diagrams") or []):
+            continue
+        block = diagrams_html(card["key"], heading="")
+        if not block:
+            continue
+        if sch_blocks:                      # css і скрипт зуму — один раз на сторінку
+            block = re.sub(r"  <style>.*?  </script>\n", "", block, flags=re.S)
+        anchor = f'sch-{card["key"]}'
+        title = f'{card.get("emoji", "")} {card["label"]}'.strip()
+        sch_toc.append(f'<a href="#{anchor}">{esc(title)}</a>')
+        sch_blocks.append(
+            f'  <h2 id="{anchor}">{esc(title)}</h2>\n'
+            f'  <p class="sub">{esc(card.get("summary", ""))}</p>\n'
+            f'  <p class="sub"><a href="{SITE_URL}{card["page"]}">'
+            f'усі розрахунки системи «{esc(card["label"])}» →</a></p>\n'
+            + block)
+    schemes = (schemes
+               .replace("{{SCHEMES_TOC}}",
+                        (LAB_CSS + '\n  <nav class="labs-strip" aria-label="Схеми">'
+                         '<span class="lead">на сторінці</span> '
+                         + " · ".join(sch_toc) + "</nav>") if sch_toc else "")
+               .replace("{{SCHEMES_HTML}}", "\n".join(sch_blocks))
+               .replace("{{GEN_DATE}}", today.isoformat()))
+
     # ================= ops page =================
     ops = tmpl("ops.tmpl.html")
     if ADDR.get("move_date"):
@@ -2736,6 +2768,7 @@ def build():
     pages = {**circ_pages,
              "index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
+             "schemes.html": schemes,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
              "solar_lab.html": slab, "cables_lab.html": clab,
