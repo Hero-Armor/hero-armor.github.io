@@ -2688,6 +2688,8 @@ def build():
         if c["key"] == "spots":
             notes.append(("Рішення по прокладці",
                           sr.SG["_recommended_note"]))
+        if c.get("topology_note"):
+            notes.append(("Яка схема прокладки в нас насправді", c["topology_note"]))
         if c["key"] == "strip":
             notes.append(("Обережно з цими Вт/м", sb.status()["verdict"]
                           if isinstance(sb.status(), dict) and "verdict" in sb.status()

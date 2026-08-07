@@ -142,7 +142,10 @@ def circuits():
         cfg["ohm"] = {str(g): OHM[str(g)] for g in C["gauges"]}
         cfg["v"] = V
         cfg["limits"] = {**C["limits"], **c.get("limits", {})}
-        cfg["topologies"] = [t for t in C["topologies"] if t["key"] in c["topologies"]]
+        # порядок беремо з самої цепі, а не з загального списку: перша в списку —
+        # та, яку ми справді робимо, вона ж стоїть за замовчуванням на сторінці
+        _tmap = {t["key"]: t for t in C["topologies"]}
+        cfg["topologies"] = [_tmap[k] for k in c["topologies"] if k in _tmap]
         out.append(cfg)
     return out
 
