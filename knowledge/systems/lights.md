@@ -54,6 +54,7 @@ generated: { by: "process:site-build" }
 * [Обидва кабелі лишаються — ні 8/2, ні 12/2 не повертаємо [ЧАСТКОВО СКАСОВАНО 05.08]](/decisions/obydva-kabeli-lyshaiutsia-ni-8-2-ni-12-2-ne-povertaiemo-chas.md)
 * [Корпусів прожекторів лишаємо рівно 12 — надлишок повернути](/decisions/korpusiv-prozhektoriv-lyshaiemo-rivno-12-nadlyshok-povernuty.md)
 * [Лампи на корпусі робота — паралельно від клемного вузла, не шлейфом](/decisions/lampy-na-korpusi-robota-paralelno-vid-klemnoho-vuzla-ne-shle.md)
+* [Стрічка подіуму: усі вісім рукавів зводяться в центр, живлення одним кабелем](/decisions/strichka-podiumu-usi-visim-rukaviv-zvodiatsia-v-tsentr-zhyvl.md)
 
 # Задачі
 

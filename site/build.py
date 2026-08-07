@@ -2701,7 +2701,12 @@ def build():
                    + re.sub(r"<\?xml[^>]*\?>\s*", "",
                             (LIGHTS / "model" / "strip_layout.svg").read_text())
                    + f'</div><p class="fig-cap">{esc(stl.I["flow"])} '
-                     f'{esc(stl.I["geometry_note"])} {esc(stl.I["cut_rule"])}</p>')
+                     f'{esc(stl.I["geometry_note"])} {esc(stl.I["cut_rule"])}</p>'
+                   + f'<div class="layer block"><h3>Живлення заходить у центрі: '
+                     f'{esc(stl.I["feed_point"]["where"])}</h3>'
+                     f'<p>{esc(stl.I["feed_point"]["what"])}. '
+                     f'{esc(stl.I["feed_point"]["why"])} '
+                     f'{esc(stl.I["feed_point"]["direction_note"])}</p></div>')
             joints = ('<h2>Місця зʼєднань</h2><div class="tbl-wrap"><table>'
                       '<thead><tr><th>Де</th><th>Чим</th><th>Стан</th>'
                       '<th>Чому саме так</th></tr></thead><tbody>'

@@ -109,3 +109,4 @@
 * [Рековий кейс з Facebook Marketplace за $175 — відмова](rekovyi-keis-z-facebook-marketplace-za-175-vidmova.md)
 * [Прочіс ринку LA + Bay Area (новий і б/у) — вибір станції не змінюється](prochis-rynku-la-bay-area-novyi-i-b-u-vybir-stantsii-ne-zmin.md)
 * [Лампи на корпусі робота — паралельно від клемного вузла, не шлейфом](lampy-na-korpusi-robota-paralelno-vid-klemnoho-vuzla-ne-shle.md)
+* [Стрічка подіуму: усі вісім рукавів зводяться в центр, живлення одним кабелем](strichka-podiumu-usi-visim-rukaviv-zvodiatsia-v-tsentr-zhyvl.md)
