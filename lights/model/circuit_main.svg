@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 780" width="100%" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+<text x="620" y="30" text-anchor="middle" font-size="15" fill="#24231d" font-weight="bold">Світло цілком — від станції до трьох груп</text>
+<text x="620" y="52" text-anchor="middle" font-size="11" fill="#6b675c">шина 12 В · пік 90 Вт · головний запобіжник 15 А · магістраль Ancor 8/2 AWG дуплекс (наявний), 7.6 м</text>
+<text x="620" y="72" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Три групи окремі, кожна зі своїм запобіжником і своїм реле — щоб гасити їх по черзі, коли станція сідає.</text>
+<line x1="230" y1="255" x2="248" y2="255" stroke="#b35b1e" stroke-width="2.6"/>
+<line x1="248" y1="255" x2="332" y2="255" stroke="#b35b1e" stroke-width="2.6"/>
+<line x1="332" y1="255" x2="350" y2="255" stroke="#b35b1e" stroke-width="2.6"/>
+<line x1="480" y1="255" x2="498" y2="255" stroke="#b35b1e" stroke-width="2.6"/>
+<line x1="498" y1="255" x2="582" y2="255" stroke="#b35b1e" stroke-width="2.6"/>
+<line x1="582" y1="255" x2="600" y2="255" stroke="#b35b1e" stroke-width="2.6"/>
+<line x1="810" y1="200" x2="828" y2="200" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="828" y1="200" x2="862" y2="200" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="862" y1="200" x2="880" y2="200" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="810" y1="335" x2="828" y2="335" stroke="#3d6f96" stroke-width="2.2"/>
+<line x1="828" y1="335" x2="845" y2="335" stroke="#3d6f96" stroke-width="2.2"/>
+<line x1="845" y1="335" x2="845" y2="380" stroke="#3d6f96" stroke-width="2.2"/>
+<line x1="845" y1="380" x2="862" y2="380" stroke="#3d6f96" stroke-width="2.2"/>
+<line x1="862" y1="380" x2="880" y2="380" stroke="#3d6f96" stroke-width="2.2"/>
+<line x1="810" y1="335" x2="828" y2="335" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="828" y1="335" x2="845" y2="335" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="845" y1="335" x2="845" y2="560" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="845" y1="560" x2="862" y2="560" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="862" y1="560" x2="880" y2="560" stroke="#3d7a4f" stroke-width="2.2"/>
+<rect x="40" y="190" width="190" height="130" rx="5" fill="#efeee7" stroke="#24231d" stroke-width="1.8"/>
+<text x="135" y="212" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">Станція EcoFlow</text>
+<text x="135" y="228" text-anchor="middle" font-size="9" fill="#6b675c">вихід 12 В</text>
+<text x="135" y="242" text-anchor="middle" font-size="9" fill="#6b675c">силовий розʼєм 30 А</text>
+<text x="135" y="256" text-anchor="middle" font-size="9" fill="#6b675c">(не прикурювач)</text>
+<rect x="350" y="215" width="130" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="415" y="237" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">15 А</text>
+<text x="415" y="253" text-anchor="middle" font-size="9" fill="#6b675c">головний</text>
+<text x="415" y="267" text-anchor="middle" font-size="9" fill="#6b675c">запобіжник</text>
+<rect x="600" y="150" width="210" height="210" rx="5" fill="#efeee7" stroke="#24231d" stroke-width="1.8"/>
+<text x="705" y="172" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">Щит подіуму</text>
+<text x="705" y="188" text-anchor="middle" font-size="9" fill="#6b675c">4 запобіжники</text>
+<text x="705" y="202" text-anchor="middle" font-size="9" fill="#6b675c">3 групові реле 12 В / 30 А</text>
+<text x="705" y="216" text-anchor="middle" font-size="9" fill="#6b675c">пост контролю: ватметри</text>
+<text x="705" y="230" text-anchor="middle" font-size="9" fill="#6b675c">і тумблери</text>
+<text x="705" y="244" text-anchor="middle" font-size="9" fill="#6b675c">у гермокоробці IP66</text>
+<rect x="880" y="140" width="320" height="120" rx="5" fill="#f5f4ef" stroke="#b07c14" stroke-width="1.8"/>
+<text x="1040" y="162" text-anchor="middle" font-size="11" fill="#b07c14" font-weight="bold">Гр.1 · прожектори заливки</text>
+<text x="1040" y="178" text-anchor="middle" font-size="9" fill="#6b675c">8 × MR16 через ШІМ-диммер</text>
+<text x="1040" y="192" text-anchor="middle" font-size="9" fill="#6b675c">40 Вт · запобіжник 5 А</text>
+<rect x="880" y="320" width="320" height="120" rx="5" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="1040" y="342" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Гр.2 · декор</text>
+<text x="1040" y="358" text-anchor="middle" font-size="9" fill="#6b675c">стрічка подіуму, лампи робота,</text>
+<text x="1040" y="372" text-anchor="middle" font-size="9" fill="#6b675c">ядро на спині — через WLED</text>
+<text x="1040" y="386" text-anchor="middle" font-size="9" fill="#6b675c">31 Вт · запобіжник 5 А</text>
+<rect x="880" y="500" width="320" height="120" rx="5" fill="#f5f4ef" stroke="#3d7a4f" stroke-width="1.8"/>
+<text x="1040" y="522" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Гр.3А · аварійна лінія</text>
+<text x="1040" y="538" text-anchor="middle" font-size="9" fill="#6b675c">24 врізні вогні торця</text>
+<text x="1040" y="552" text-anchor="middle" font-size="9" fill="#6b675c">+ 2 маркери ящика</text>
+<text x="1040" y="566" text-anchor="middle" font-size="9" fill="#6b675c">19 Вт · запобіжник 5 А</text>
+<text x="290" y="245" text-anchor="middle" font-size="9" fill="#6b675c">магістраль світла</text>
+<text x="540" y="245" text-anchor="middle" font-size="9" fill="#6b675c">7.6 м · 7.5 А · −2.0%</text>
+<text x="40" y="400" text-anchor="start" font-size="12" fill="#24231d" font-weight="bold">Що НЕ на цій схемі</text>
+<text x="40" y="424" text-anchor="start" font-size="10" fill="#6b675c">Звук живиться окремим кабелем прямо</text>
+<text x="40" y="441" text-anchor="start" font-size="10" fill="#6b675c">з авто-виходу станції — повз цей щит</text>
+<text x="40" y="458" text-anchor="start" font-size="10" fill="#6b675c">і повз групові реле, щоб не гаснути</text>
+<text x="40" y="475" text-anchor="start" font-size="10" fill="#6b675c">разом зі світлом.</text>
+<text x="40" y="492" text-anchor="start" font-size="10" fill="#6b675c"></text>
+<text x="40" y="509" text-anchor="start" font-size="10" fill="#6b675c">Що всередині кожної групи — на своїх</text>
+<text x="40" y="526" text-anchor="start" font-size="10" fill="#6b675c">схемах: кільце прожекторів, стрічка</text>
+<text x="40" y="543" text-anchor="start" font-size="10" fill="#6b675c">подіуму, аварійна лінія, лампи по тілу</text>
+<text x="40" y="560" text-anchor="start" font-size="10" fill="#6b675c">робота і ядро на спині.</text>
+<text x="40" y="610" text-anchor="start" font-size="12" fill="#24231d" font-weight="bold">Чому три групи, а не одна</text>
+<text x="40" y="634" text-anchor="start" font-size="10" fill="#6b675c">Коли станція сідає, гасимо по черзі:</text>
+<text x="40" y="651" text-anchor="start" font-size="10" fill="#6b675c">першим декор (найдорожчий по ватах),</text>
+<text x="40" y="668" text-anchor="start" font-size="10" fill="#6b675c">другою заливку фігури, а аварійну</text>
+<text x="40" y="685" text-anchor="start" font-size="10" fill="#6b675c">тримаємо найдовше — щоб уночі ніхто</text>
+<text x="40" y="702" text-anchor="start" font-size="10" fill="#6b675c">не наштовхнувся на подіум.</text>
+<line x1="40" y1="708" x2="1200" y2="708" stroke="#d8d5c9" stroke-width="1"/>
+<text x="40" y="730" text-anchor="start" font-size="10" fill="#6b675c">Земля — зіркою в одній точці біля щита. Все обладнання в тінь, зазор від землі 5+ см.</text>
+<text x="40" y="746" text-anchor="start" font-size="10" fill="#6b675c">Фотореле з проєкту прибрано 29.07 — чим вмикати Гр.1 і Гр.3А по темряві, ще не обрано: ручний тумблер у щиті або вихід WLED.</text>
+<text x="40" y="762" text-anchor="start" font-size="10" fill="#6b675c">Довжина магістралі 7.6 м — прикидка, з креслення не знята; просадка на ній −2.0% при межі 5%.</text>
+</svg>

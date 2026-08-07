@@ -153,7 +153,7 @@ def photos_html(key):
     return f'  <h2>Фото з місця</h2>\n  <div class="figs">\n{cards}\n  </div>\n'
 
 
-def diagrams_html(key, heading="Схеми"):
+def diagrams_html(key, heading="Схеми", extra=None):
     """Схеми системи, вставлені ТЕКСТОМ SVG, а не картинкою.
 
     Так підписи на схемі лишаються справжнім текстом — англійська версія сайту
@@ -179,7 +179,9 @@ def diagrams_html(key, heading="Схеми"):
                  "траса кабелю і бік, з якого вночі підʼїжджають"]]
     else:
         reg = next((c for c in SYSTEMS_REG if c["key"] == key), None)
-        dias = (reg or {}).get("diagrams") or []
+        dias = list((reg or {}).get("diagrams") or [])
+    if extra:
+        dias = list(dias) + list(extra)
     cards = []
     for path_, cap in dias:
         f = ROOT / path_
@@ -1159,7 +1161,7 @@ def build():
     GAUGES = sorted((int(a) for a in LP["wiring"]["awg_ohm_per_m"]), reverse=True)
 
     lights = tmpl("lights.tmpl.html")
-    lsvg = (LIGHTS / "model" / "schematic.svg").read_text()
+    lsvg = (LIGHTS / "model" / "circuit_main.svg").read_text()
     lsvg = re.sub(r"<\?xml[^>]*\?>\s*|<!DOCTYPE[^>]*>\s*", "", lsvg)
     lights = lights.replace("{{SCHEMATIC_SVG}}", lsvg)
 
@@ -2043,6 +2045,23 @@ def build():
     # ззовні, не існувало. Сторінка нічого не малює сама: бере ті самі схеми,
     # що зареєстровані в data/systems.json полем diagrams.
     schemes = tmpl("schemes.tmpl.html")
+    # власні схеми систем: вони живуть у <система>/model/schematic.svg і досі
+    # показувались тільки на сторінці системи — у зведення не потрапляли, і
+    # сторінка схем виглядала майже порожньою (Іван, 07.08)
+    SCHEME_EXTRA = {
+        "audio": [("audio/model/schematic.svg",
+                   "Аудіо-вузол по пінах: радар → ESP32 → ЦАП → підсилювач → динамік, "
+                   "з підписами як на самих платах"),
+                  ("audio/model/signal_chain.svg",
+                   "Сигнальний тракт звуку: що з чим говорить і в якому форматі"),
+                  ("audio/model/power_chain.svg",
+                   "Живлення аудіо: свій кабель від авто-виходу станції повз щит світла, "
+                   "запобіжник, понижувач і скільки бере кожен споживач")],
+        "solar": [("solar/model/schematic.svg",
+                   "Живлення цілком: станція, масив і що з чого живиться")],
+        "enclosure": [("enclosure/model/schematic.svg",
+                       "Ящик станції: вентиляція, живлення і як усе сидить усередині")],
+    }
     sch_blocks, sch_toc = [], []
     # світло першим: саме про нього питають ззовні (Марсель, 07.08), аудіо — останнім
     sch_order = ["lights", "solar", "armor", "enclosure", "audio"]
@@ -2051,7 +2070,8 @@ def build():
                                       if c["key"] in sch_order else len(sch_order))):
         if not (card.get("diagrams") or []):
             continue
-        block = diagrams_html(card["key"], heading="")
+        block = diagrams_html(card["key"], heading="",
+                              extra=SCHEME_EXTRA.get(card["key"]))
         if not block:
             continue
         if sch_blocks:                      # css і скрипт зуму — один раз на сторінку

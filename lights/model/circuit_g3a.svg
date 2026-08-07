@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 900" width="100%" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+<text x="640" y="30" text-anchor="middle" font-size="15" fill="#24231d" font-weight="bold">Гр.3А · аварійна лінія — врізні вогні торця + маркер ящика</text>
+<text x="640" y="52" text-anchor="middle" font-size="11" fill="#6b675c">24 × 0.6 Вт по торцю (по 3 на грань) + 2 × 0.24 Вт на ящику · пік групи 19.2 Вт · запобіжник 5 А · не регулюється диммером</text>
+<text x="640" y="72" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">тримається найдовше — щоб подіум лишався видимим</text>
+<line x1="240" y1="230" x2="258" y2="230" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="258" y1="230" x2="362" y2="230" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="362" y1="230" x2="380" y2="230" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="580" y1="230" x2="598" y2="230" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="598" y1="230" x2="702" y2="230" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="702" y1="230" x2="720" y2="230" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="755" y1="254" x2="755" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="755" y1="272" x2="755" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="755" y1="362" x2="755" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="816" y1="254" x2="816" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="816" y1="272" x2="816" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="816" y1="362" x2="816" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="878" y1="254" x2="878" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="878" y1="272" x2="878" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="878" y1="362" x2="878" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="939" y1="254" x2="939" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="939" y1="272" x2="939" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="939" y1="362" x2="939" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1001" y1="254" x2="1001" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1001" y1="272" x2="1001" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1001" y1="362" x2="1001" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1062" y1="254" x2="1062" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1062" y1="272" x2="1062" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1062" y1="362" x2="1062" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1124" y1="254" x2="1124" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1124" y1="272" x2="1124" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1124" y1="362" x2="1124" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1185" y1="254" x2="1185" y2="272" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1185" y1="272" x2="1185" y2="362" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="1185" y1="362" x2="1185" y2="380" stroke="#b23a2e" stroke-width="1.6"/>
+<line x1="960" y1="575" x2="978" y2="575" stroke="#3d6f96" stroke-width="1.8"/>
+<line x1="978" y1="575" x2="1082" y2="575" stroke="#3d6f96" stroke-width="1.8"/>
+<line x1="1082" y1="575" x2="1100" y2="575" stroke="#3d6f96" stroke-width="1.8"/>
+<line x1="960" y1="599" x2="978" y2="599" stroke="#3d6f96" stroke-width="1.8"/>
+<line x1="978" y1="599" x2="1030" y2="599" stroke="#3d6f96" stroke-width="1.8"/>
+<line x1="1030" y1="599" x2="1030" y2="685" stroke="#3d6f96" stroke-width="1.8"/>
+<line x1="1030" y1="685" x2="1082" y2="685" stroke="#3d6f96" stroke-width="1.8"/>
+<line x1="1082" y1="685" x2="1100" y2="685" stroke="#3d6f96" stroke-width="1.8"/>
+<rect x="40" y="170" width="200" height="120" rx="5" fill="#efeee7" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="140" y="192" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Щит подіуму</text>
+<text x="140" y="208" text-anchor="middle" font-size="9" fill="#6b675c">запобіжник Гр.3А · 5 А</text>
+<text x="140" y="222" text-anchor="middle" font-size="9" fill="#6b675c">реле 12 В / 30 А</text>
+<text x="140" y="236" text-anchor="middle" font-size="9" fill="#6b675c">аварійна — своя, окремий канал</text>
+<rect x="380" y="170" width="200" height="120" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="480" y="192" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Коробка аварійної лінії</text>
+<text x="480" y="208" text-anchor="middle" font-size="9" fill="#6b675c">гермокоробка IP65</text>
+<text x="480" y="222" text-anchor="middle" font-size="9" fill="#6b675c">розподіл на торець подіуму</text>
+<rect x="720" y="206" width="500" height="48" rx="5" fill="#fff" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="970" y="234" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Кабель у каналі настилу · 10 м · 16/2 AWG у каналі настилу</text>
+<rect x="725" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="755" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 1</text>
+<text x="755" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="755" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="786" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="816" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 2</text>
+<text x="816" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="816" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="848" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="878" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 3</text>
+<text x="878" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="878" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="909" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="939" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 4</text>
+<text x="939" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="939" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="971" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="1001" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 5</text>
+<text x="1001" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="1001" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="1032" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="1062" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 6</text>
+<text x="1062" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="1062" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="1094" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="1124" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 7</text>
+<text x="1124" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="1124" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="1155" y="380" width="60" height="80" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="1185" y="402" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Грань 8</text>
+<text x="1185" y="418" text-anchor="middle" font-size="9" fill="#6b675c">3 × 0.6 Вт</text>
+<text x="1185" y="432" text-anchor="middle" font-size="9" fill="#6b675c">1.8 Вт</text>
+<rect x="760" y="520" width="200" height="110" rx="5" fill="#efeee7" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="860" y="542" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Щит ящика станції</text>
+<text x="860" y="558" text-anchor="middle" font-size="9" fill="#6b675c">18/2 AWG короткий хвіст</text>
+<text x="860" y="572" text-anchor="middle" font-size="9" fill="#6b675c">1.0 м — свій хвіст,</text>
+<text x="860" y="586" text-anchor="middle" font-size="9" fill="#6b675c">магістраль подіуму це не бачить</text>
+<rect x="1100" y="535" width="90" height="80" rx="5" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="1145" y="557" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Маркер #1</text>
+<text x="1145" y="573" text-anchor="middle" font-size="9" fill="#6b675c">0.24 Вт</text>
+<rect x="1100" y="645" width="90" height="80" rx="5" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="1145" y="667" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Маркер #2</text>
+<text x="1145" y="683" text-anchor="middle" font-size="9" fill="#6b675c">0.24 Вт</text>
+<text x="310" y="220" text-anchor="middle" font-size="9" fill="#6b675c">Ancor 12/2 AWG · 6.0 м</text>
+<text x="650" y="220" text-anchor="middle" font-size="9" fill="#6b675c">AWG16 · 1.20 А · −2.6%</text>
+<text x="720" y="300" text-anchor="start" font-size="10" fill="#6b675c">24 врізних вогнів торця діляться порівну на 8 граней октагона — по 3 на грань,</text>
+<text x="720" y="318" text-anchor="start" font-size="10" fill="#6b675c">усі грані сидять паралельно на одному кабелі (не ланцюжком).</text>
+<text x="760" y="505" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Ящик станції — окреме живлення, не через щит подіуму:</text>
+<text x="1030" y="565" text-anchor="middle" font-size="9" fill="#6b675c">AWG18 · 0.04 А</text>
+<text x="760" y="665" text-anchor="start" font-size="10" fill="#6b675c">Два вогники на протилежні боки ящика — з одного боку</text>
+<text x="760" y="683" text-anchor="start" font-size="10" fill="#6b675c">він інакше лишається темним у пилу.</text>
+<text x="40" y="340" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Чому ця лінія окрема:</text>
+<text x="40" y="358" text-anchor="start" font-size="10" fill="#6b675c">коли станція сідає, Гр.2 гасне першою при просадці станції — декор найдорожчий по ватах,</text>
+<text x="40" y="376" text-anchor="start" font-size="10" fill="#6b675c">Гр.1 гасне другою — заливка фігури, без неї подіум ще читається,</text>
+<text x="40" y="394" text-anchor="start" font-size="10" fill="#6b675c">а Гр.3А тримається найдовше — щоб подіум лишався видимим.</text>
+<text x="40" y="460" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Не регулюється диммером:</text>
+<text x="40" y="478" text-anchor="start" font-size="10" fill="#6b675c">врізні вогні в торець подіуму і маркерний вогник ящика станції</text>
+<text x="40" y="496" text-anchor="start" font-size="10" fill="#6b675c">мають dimming=none — або горять на повну,</text>
+<text x="40" y="514" text-anchor="start" font-size="10" fill="#6b675c">або вимкнені цілком, проміжного стану нема.</text>
+<text x="40" y="570" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Пасивний шар (страховка, не заміна):</text>
+<text x="40" y="588" text-anchor="start" font-size="10" fill="#6b675c">катафоти і мікропризматична стрічка по торцю</text>
+<text x="40" y="606" text-anchor="start" font-size="10" fill="#6b675c">повертають чужу фару навіть при повному</text>
+<text x="40" y="624" text-anchor="start" font-size="10" fill="#6b675c">знеструмленні — але без чужого світла на них</text>
+<text x="40" y="642" text-anchor="start" font-size="10" fill="#6b675c">не видно нічого, вони не замінюють цю лінію.</text>
+<line x1="40" y1="780" x2="1240" y2="780" stroke="#d8d5c9" stroke-width="1"/>
+<text x="40" y="802" text-anchor="start" font-size="10" fill="#6b675c">Просадка від коробки −2.6%, накопичено від станції до найдальшого вогню торця −5.4% при бюджеті лінії 10% (у нормі) · струм лінії 1.20 А при запобіжнику Гр.3А 5 А.</text>
+<text x="40" y="818" text-anchor="start" font-size="10" fill="#6b675c">Довжина 10 м (прикидка) від коробки до торця, 6.0 м від щита до коробки (прикидка) — обидві не з креслення, міряти по факту складання.</text>
+<text x="40" y="834" text-anchor="start" font-size="10" fill="#6b675c">Запобіжник Гр.3А рахований на всю групу (тут на схемі — 14.4 Вт торця + 0.5 Вт ящика; ще 4.3 Вт бере пост контролю в щиті, він на цій схемі не показаний).</text>
+<text x="40" y="850" text-anchor="start" font-size="10" fill="#6b675c">Хвіст ящика: −0.01% просадки, 0.04 А — окрема ділянка, у ланцюг подіуму не додається.</text>
+<text x="40" y="866" text-anchor="start" font-size="10" fill="#6b675c">Відкрите: Отвір в алюмінієвій накладці — Ø22, а ходовий набір просить посадку Ø25 під фланець Ø32. У Ø22 такий вогник не заходить. Узгодження з Володимир — чекаємо на відповідь.</text>
+<text x="40" y="882" text-anchor="start" font-size="10" fill="#6b675c">Катафот і стрічка працюють ТІЛЬКИ поки на них хтось світить. Велосипедист без фари не побачить нічого, тому пасивний шар не заміняє активного світла — він страховка на випадок, коли сіла станція або згорів запобіжник.</text>
+</svg>

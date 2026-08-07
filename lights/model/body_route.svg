@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1010" width="100%" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+<text x="620" y="30" text-anchor="middle" font-size="15" fill="#24231d" font-weight="bold">Розводка ламп по тілу робота — куди йде кожен дріт</text>
+<text x="620" y="52" text-anchor="middle" font-size="11" fill="#6b675c">8 ламп Ø12 мм + 2 лампи Ø8 мм · 0.4 Вт кожна · магістраль 18/2 AWG тонкий, у броні, 0.27 А</text>
+<text x="620" y="72" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Один кабель заходить крізь ногу, далі клемний вузол у грудях — і від нього своя пара до кожної лампи.</text>
+<rect x="469" y="240" width="61" height="72" rx="12" fill="#efeee7" stroke="#24231d" stroke-width="1.4"/>
+<rect x="481" y="306" width="38" height="19" fill="#efeee7" stroke="#24231d" stroke-width="1.2"/>
+<path d="M388.0,325.2 L612.0,325.2 L558.9,466.0 L571.7,530.0 L428.3,530.0 L441.1,466.0 Z" fill="#efeee7" stroke="#24231d" stroke-width="1.4"/>
+<path d="M393.1,325.2 L414.9,325.2 L412.3,530.0 L395.7,530.0 Z" fill="#efeee7" stroke="#24231d" stroke-width="1.4"/>
+<path d="M585.1,325.2 L606.9,325.2 L604.3,530.0 L587.7,530.0 Z" fill="#efeee7" stroke="#24231d" stroke-width="1.4"/>
+<path d="M422.6,530.0 L494.2,530.0 L482.7,821.2 L434.1,821.2 Z" fill="#efeee7" stroke="#24231d" stroke-width="1.4"/>
+<rect x="419" y="821" width="79" height="29" rx="3" fill="#e8e4d6" stroke="#24231d" stroke-width="1.2"/>
+<path d="M505.8,530.0 L577.4,530.0 L565.9,821.2 L517.3,821.2 Z" fill="#efeee7" stroke="#24231d" stroke-width="1.4"/>
+<rect x="502" y="821" width="79" height="29" rx="3" fill="#e8e4d6" stroke="#24231d" stroke-width="1.2"/>
+<rect x="282" y="850" width="435" height="12" fill="#e8e4d6" stroke="#24231d" stroke-width="1.2"/>
+<path d="M540,850 L540,380 L500,380" fill="none" stroke="#b35b1e" stroke-width="3.4"/>
+<circle cx="540" cy="850" r="6" fill="#b35b1e"/>
+<text x="562" y="884" text-anchor="start" font-size="10" fill="#24231d">вхід кабелю з настилу подіуму</text>
+<text x="562" y="900" text-anchor="start" font-size="9" fill="#6b675c">18/2 AWG тонкий, у броні, 6.0 м від коробки Гр.2</text>
+<path d="M500,380 L500,258 L478,258" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="478" cy="258" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,258 L492,258" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="492" cy="258" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,258 L508,258" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="508" cy="258" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,258 L522,258" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="522" cy="258" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,325 L404,325 L404,330 L396,330" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="396" cy="330" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,325 L596,325 L596,330 L604,330" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="604" cy="330" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,380 L500,380" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85" stroke-dasharray="5,4"/>
+<circle cx="500" cy="380" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,530 L458,530 L458,668 L460,668" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="460" cy="668" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,530 L542,530 L542,824 L540,824" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85"/>
+<circle cx="540" cy="824" r="5" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,325 L404,325 L404,492 L404,492" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85" stroke-dasharray="5,4"/>
+<circle cx="404" cy="492" r="4" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<path d="M500,380 L500,325 L596,325 L596,492 L596,492" fill="none" stroke="#b35b1e" stroke-width="1.5" opacity="0.85" stroke-dasharray="5,4"/>
+<circle cx="596" cy="492" r="4" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<rect x="448" y="360" width="104" height="40" rx="6" fill="#fff" stroke="#b35b1e" stroke-width="2"/>
+<text x="500" y="376" text-anchor="middle" font-size="10" fill="#24231d" font-weight="bold">клемний вузол</text>
+<text x="500" y="391" text-anchor="middle" font-size="9" fill="#6b675c">Wago 221 у гелі</text>
+<text x="800" y="150" text-anchor="start" font-size="12" fill="#24231d" font-weight="bold">Гілки від вузла</text>
+<text x="800" y="168" text-anchor="start" font-size="9" fill="#6b675c">довжина — геометрична прикидка з пропорцій фігури</text>
+<text x="800" y="196" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">шолом · 4× Ø12 мм</text>
+<text x="800" y="211" text-anchor="start" font-size="10" fill="#6b675c">1.71 м дроту · 1.6 Вт</text>
+<text x="800" y="234" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">плечі · 2× Ø12 мм</text>
+<text x="800" y="249" text-anchor="start" font-size="10" fill="#6b675c">1.02 м дроту · 0.8 Вт</text>
+<text x="800" y="272" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">груди · 1× Ø12 мм (місце уточнюємо)</text>
+<text x="800" y="287" text-anchor="start" font-size="10" fill="#6b675c">сидить на самому вузлі · 0.4 Вт</text>
+<text x="800" y="310" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">коліно · 1× Ø12 мм</text>
+<text x="800" y="325" text-anchor="start" font-size="10" fill="#6b675c">1.04 м дроту · 0.4 Вт</text>
+<text x="800" y="348" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">стопа · 1× Ø12 мм</text>
+<text x="800" y="363" text-anchor="start" font-size="10" fill="#6b675c">1.53 м дроту · 0.4 Вт</text>
+<text x="800" y="386" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">передпліччя · 2× Ø8 мм (місце уточнюємо)</text>
+<text x="800" y="401" text-anchor="start" font-size="10" fill="#6b675c">1.98 м дроту · 0.8 Вт</text>
+<line x1="800" y1="418" x2="1200" y2="418" stroke="#d8d5c9"/>
+<text x="800" y="438" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Магістраль у тілі: 1.59 м</text>
+<text x="800" y="456" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Усі гілки разом: 7.27 м</text>
+<text x="800" y="474" text-anchor="start" font-size="10" fill="#3d7a4f" font-weight="bold">Разом дроту в костюмі ≈ 8.9 м</text>
+<text x="800" y="492" text-anchor="start" font-size="9" fill="#6b675c">плюс запас на вигини і зачистку</text>
+<text x="60" y="150" text-anchor="start" font-size="12" fill="#24231d" font-weight="bold">Як це читати</text>
+<text x="60" y="174" text-anchor="start" font-size="10" fill="#6b675c">Товста лінія — магістральна пара: заходить</text>
+<text x="60" y="190" text-anchor="start" font-size="10" fill="#6b675c">з настилу крізь ногу і піднімається до грудей.</text>
+<text x="60" y="206" text-anchor="start" font-size="10" fill="#6b675c"></text>
+<text x="60" y="222" text-anchor="start" font-size="10" fill="#6b675c">Тонкі лінії — гілки до окремих ламп. Кожна</text>
+<text x="60" y="238" text-anchor="start" font-size="10" fill="#6b675c">лампа має СВОЮ пару від вузла, тому</text>
+<text x="60" y="254" text-anchor="start" font-size="10" fill="#6b675c">перегоріла лампа не гасить сусідніх.</text>
+<text x="60" y="270" text-anchor="start" font-size="10" fill="#6b675c"></text>
+<text x="60" y="286" text-anchor="start" font-size="10" fill="#6b675c">Дріт іде всередині решітки корпусу —</text>
+<text x="60" y="302" text-anchor="start" font-size="10" fill="#6b675c">по прямій крізь порожнечу він не піде,</text>
+<text x="60" y="318" text-anchor="start" font-size="10" fill="#6b675c">тому траси намальовані ламаними.</text>
+<text x="60" y="334" text-anchor="start" font-size="10" fill="#6b675c"></text>
+<text x="60" y="350" text-anchor="start" font-size="10" fill="#6b675c">Пунктир — те, що ще не підтверджене</text>
+<text x="60" y="366" text-anchor="start" font-size="10" fill="#6b675c">конструктором (лампа грудей видна лише</text>
+<text x="60" y="382" text-anchor="start" font-size="10" fill="#6b675c">спереду, місце двох Ø8 мм уточнюємо).</text>
+<line x1="40" y1="914" x2="1200" y2="914" stroke="#d8d5c9"/>
+<text x="40" y="934" text-anchor="start" font-size="10" fill="#6b675c">Довжини рахуються з пропорцій фігури (висота 2.0 м над настилом) манхеттенською трасою — це прикидка на закупівлю дроту, а не розмір з креслення.</text>
+<text x="40" y="952" text-anchor="start" font-size="10" fill="#6b675c">Місць на схемі 11, у специфікації 10 ламп — розбіжність усередині бази показуємо, а не ховаємо.</text>
+<text x="40" y="970" text-anchor="start" font-size="10" fill="#6b675c">Електрика цього ж вузла (шини, запобіжник, паралельне підключення) — на схемі «Лампи на корпусі робота».</text>
+</svg>

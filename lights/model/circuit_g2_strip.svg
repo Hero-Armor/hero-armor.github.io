@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 860" width="100%" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+<text x="640" y="30" text-anchor="middle" font-size="15" fill="#24231d" font-weight="bold">Гр.2 · «біжуча вода» — адресна стрічка подіуму</text>
+<text x="640" y="52" text-anchor="middle" font-size="11" fill="#6b675c">8 × 1.22 м · 17.0 Вт нейплейт на рукав · запобіжник Гр.2 5 А · робочий пік стрічки 13.6 Вт при 10% біжучого фронту</text>
+<text x="640" y="72" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Ввід живлення й даних — у центрі подіуму, не з восьми зовнішніх кінців: менше міді, і траса не лежить по краю, де на неї наступають.</text>
+<line x1="220" y1="225" x2="238" y2="225" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="238" y1="225" x2="342" y2="225" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="342" y1="225" x2="360" y2="225" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="620" y1="225" x2="638" y2="225" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="638" y1="225" x2="682" y2="225" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="682" y1="225" x2="700" y2="225" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="735" y1="249" x2="735" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="735" y1="267" x2="735" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="735" y1="382" x2="735" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="802" y1="249" x2="802" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="802" y1="267" x2="802" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="802" y1="382" x2="802" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="869" y1="249" x2="869" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="869" y1="267" x2="869" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="869" y1="382" x2="869" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="936" y1="249" x2="936" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="936" y1="267" x2="936" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="936" y1="382" x2="936" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1004" y1="249" x2="1004" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1004" y1="267" x2="1004" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1004" y1="382" x2="1004" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1071" y1="249" x2="1071" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1071" y1="267" x2="1071" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1071" y1="382" x2="1071" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1138" y1="249" x2="1138" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1138" y1="267" x2="1138" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1138" y1="382" x2="1138" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1205" y1="249" x2="1205" y2="267" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1205" y1="267" x2="1205" y2="382" stroke="#3d6f96" stroke-width="1.6"/>
+<line x1="1205" y1="382" x2="1205" y2="400" stroke="#3d6f96" stroke-width="1.6"/>
+<rect x="40" y="150" width="180" height="150" rx="5" fill="#efeee7" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="130" y="172" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Щит подіуму</text>
+<text x="130" y="188" text-anchor="middle" font-size="9" fill="#6b675c">запобіжник Гр.2 · 5 А</text>
+<text x="130" y="202" text-anchor="middle" font-size="9" fill="#6b675c">реле 12 В / 30 А</text>
+<text x="130" y="216" text-anchor="middle" font-size="9" fill="#6b675c">гасить групу цілком</text>
+<rect x="360" y="150" width="260" height="150" rx="5" fill="#f5f4ef" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="490" y="172" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Коробка WLED · гермокоробка IP65</text>
+<text x="490" y="188" text-anchor="middle" font-size="9" fill="#6b675c">ESP32 WLED (GLEDOPTO / QuinLED Dig)</text>
+<text x="490" y="202" text-anchor="middle" font-size="9" fill="#6b675c">вхід 5-24В</text>
+<text x="490" y="216" text-anchor="middle" font-size="9" fill="#6b675c">конденсатор 1000+ мкФ / 16В+</text>
+<text x="490" y="230" text-anchor="middle" font-size="9" fill="#6b675c">буфер 74HCT125 на лінії DATA</text>
+<rect x="700" y="201" width="540" height="48" rx="5" fill="#fff" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="970" y="229" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Центральний вузол під настилом · шина +12В / шина − / лінія DATA</text>
+<rect x="708" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="735" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#1</text>
+<text x="735" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="735" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<rect x="775" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="802" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#2</text>
+<text x="802" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="802" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<rect x="842" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="869" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#3</text>
+<text x="869" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="869" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<rect x="909" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="936" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#4</text>
+<text x="936" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="936" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<rect x="977" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="1004" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#5</text>
+<text x="1004" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="1004" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<rect x="1044" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="1071" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#6</text>
+<text x="1071" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="1071" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<rect x="1111" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="1138" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#7</text>
+<text x="1138" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="1138" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<rect x="1178" y="400" width="54" height="80" rx="5" fill="#f5f4ef" stroke="#24231d" stroke-width="1.8"/>
+<text x="1205" y="422" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">#8</text>
+<text x="1205" y="438" text-anchor="middle" font-size="9" fill="#6b675c">1.22 м</text>
+<text x="1205" y="452" text-anchor="middle" font-size="9" fill="#6b675c">17.0 Вт</text>
+<text x="290" y="215" text-anchor="middle" font-size="9" fill="#6b675c">Ancor 8/2 AWG · 5 м</text>
+<text x="660" y="215" text-anchor="middle" font-size="9" fill="#6b675c">14/2 AWG · 4 м</text>
+<text x="40" y="340" text-anchor="start" font-size="10" fill="#6b675c">Кабель WLED→стрічка довгий —</text>
+<text x="40" y="358" text-anchor="start" font-size="10" fill="#6b675c">тому конденсатор на вході і</text>
+<text x="40" y="376" text-anchor="start" font-size="10" fill="#6b675c">буфер на DATA не розкіш, а те,</text>
+<text x="40" y="394" text-anchor="start" font-size="10" fill="#6b675c">без чого контролер скидається.</text>
+<text x="40" y="440" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Ввід у центрі, не з восьми</text>
+<text x="40" y="458" text-anchor="start" font-size="10" fill="#6b675c">зовнішніх кінців: менше міді,</text>
+<text x="40" y="476" text-anchor="start" font-size="10" fill="#6b675c">траса не йде по краю подіуму,</text>
+<text x="40" y="494" text-anchor="start" font-size="10" fill="#6b675c">де на неї наступають.</text>
+<text x="40" y="540" text-anchor="start" font-size="10" fill="#6b675c">Рукави підключені паралельно,</text>
+<text x="40" y="558" text-anchor="start" font-size="10" fill="#6b675c">не ланцюжком: згас один —</text>
+<text x="40" y="576" text-anchor="start" font-size="10" fill="#6b675c">решта світять як і раніше.</text>
+<text x="40" y="610" text-anchor="start" font-size="10" fill="#6b675c">Напрямок хвилі задає реверс</text>
+<text x="40" y="628" text-anchor="start" font-size="10" fill="#6b675c">сегмента у прошивці WLED, а не</text>
+<text x="40" y="646" text-anchor="start" font-size="10" fill="#6b675c">те, з якого кінця прийшов дріт.</text>
+<text x="40" y="680" text-anchor="start" font-size="10" fill="#b23a2e">Вдень стрічка вимкнена —</text>
+<text x="40" y="698" text-anchor="start" font-size="10" fill="#b23a2e">чипи перегріваються на сонці.</text>
+<line x1="40" y1="756" x2="1240" y2="756" stroke="#d8d5c9" stroke-width="1"/>
+<text x="40" y="778" text-anchor="start" font-size="10" fill="#6b675c">Просадка WLED→вузол −0.21% (сукупно від щита −2.61%) при межі 5% для адресної лінії · струм 0.38 А.</text>
+<text x="40" y="794" text-anchor="start" font-size="10" fill="#6b675c">Точки підживлення (power injection) на самому рукаві: Пара 14 AWG від центрального вузла, паяно в тому ж місці, що й вхід рукава — кількість точок рахує калькулятор вище.</text>
+<text x="40" y="810" text-anchor="start" font-size="10" fill="#6b675c">Кабель від WLED до першого пікселя — не довше 30–50 см. Якщо довший — потрібен буфер 74HCT125 (рівневий зсув і відновлення форми сигналу), інакше викиди і помилки адресації на довгих лініях.</text>
+<text x="40" y="826" text-anchor="start" font-size="10" fill="#6b675c">Місце вводу не диктує, куди біжить хвиля: напрямок сегмента реверсується в прошивці WLED. Затверджений ще в червні вигляд «вода біжить до центру» лишається, живлення від цього не залежить.</text>
+<text x="40" y="842" text-anchor="start" font-size="10" fill="#6b675c">Вт на рукаві — нейплейт суцільного білого (ніколи не буває); реальний робочий пік 1.70 Вт на рукав при 10% біжучого фронту.</text>
+</svg>

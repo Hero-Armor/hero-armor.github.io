@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="100%" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+<text x="700" y="30" text-anchor="middle" font-size="15" fill="#24231d" font-weight="bold">Живлення аудіо-вузла — від станції до кожного споживача</text>
+<text x="700" y="52" text-anchor="middle" font-size="11" fill="#6b675c">вхід 126 Вт / 10 А (авто-порт EcoFlow) · запобіжник 3 А · вузол ~24 Вт на піку, ~1.2 Вт у спокої (розрахунок моделі)</text>
+<text x="700" y="72" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Свій кабель повз щит світла і групові реле — звук працює цілодобово і не гасне разом зі світлом.</text>
+<line x1="230" y1="310" x2="248" y2="310" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="248" y1="310" x2="412" y2="310" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="412" y1="310" x2="430" y2="310" stroke="#3d6f96" stroke-width="2.4"/>
+<line x1="580" y1="310" x2="598" y2="310" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="598" y1="310" x2="662" y2="310" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="662" y1="310" x2="680" y2="310" stroke="#b23a2e" stroke-width="2.4"/>
+<line x1="840" y1="280" x2="858" y2="280" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="858" y1="280" x2="900" y2="280" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="900" y1="280" x2="900" y2="140" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="900" y1="140" x2="942" y2="140" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="942" y1="140" x2="960" y2="140" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="1110" y1="140" x2="1128" y2="140" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="1128" y1="140" x2="1155" y2="140" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="1155" y1="140" x2="1155" y2="165" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="1155" y1="165" x2="1182" y2="165" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="1182" y1="165" x2="1200" y2="165" stroke="#b07c14" stroke-width="2.2"/>
+<line x1="840" y1="340" x2="858" y2="340" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="858" y1="340" x2="900" y2="340" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="900" y1="340" x2="900" y2="535" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="900" y1="535" x2="942" y2="535" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="942" y1="535" x2="960" y2="535" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="1130" y1="535" x2="1148" y2="535" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="1148" y1="535" x2="1145" y2="535" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="1145" y1="535" x2="1145" y2="585" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="1145" y1="585" x2="1142" y2="585" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="1142" y1="585" x2="1160" y2="585" stroke="#3d7a4f" stroke-width="2.2"/>
+<line x1="1178" y1="465" x2="1196" y2="465" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1196" y1="465" x2="1182" y2="465" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1182" y1="465" x2="1200" y2="465" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1178" y1="585" x2="1196" y2="585" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1196" y1="585" x2="1182" y2="585" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1182" y1="585" x2="1200" y2="585" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1178" y1="705" x2="1196" y2="705" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1196" y1="705" x2="1182" y2="705" stroke="#3d7a4f" stroke-width="1.8"/>
+<line x1="1182" y1="705" x2="1200" y2="705" stroke="#3d7a4f" stroke-width="1.8"/>
+<rect x="40" y="250" width="190" height="120" rx="5" fill="#efeee7" stroke="#3d6f96" stroke-width="1.8"/>
+<text x="135" y="272" text-anchor="middle" font-size="11" fill="#3d6f96" font-weight="bold">Станція EcoFlow</text>
+<text x="135" y="288" text-anchor="middle" font-size="9" fill="#6b675c">авто-вихід 12 В (прикурювач)</text>
+<text x="135" y="302" text-anchor="middle" font-size="9" fill="#6b675c">ліміт 126 Вт / 10 А</text>
+<text x="135" y="316" text-anchor="middle" font-size="9" fill="#6b675c">запас 5× до піку вузла</text>
+<rect x="430" y="250" width="150" height="120" rx="5" fill="#f5f4ef" stroke="#b23a2e" stroke-width="1.8"/>
+<text x="505" y="272" text-anchor="middle" font-size="11" fill="#b23a2e" font-weight="bold">Запобіжник</text>
+<text x="505" y="288" text-anchor="middle" font-size="9" fill="#6b675c">3 А, у гермовводі,</text>
+<text x="505" y="302" text-anchor="middle" font-size="9" fill="#6b675c">впритул до клемника</text>
+<text x="505" y="316" text-anchor="middle" font-size="9" fill="#6b675c">(ще 3 А — у штекері</text>
+<text x="505" y="330" text-anchor="middle" font-size="9" fill="#6b675c">прикурювача, до кабелю)</text>
+<rect x="680" y="250" width="160" height="120" rx="5" fill="#efeee7" stroke="#24231d" stroke-width="1.8"/>
+<text x="760" y="272" text-anchor="middle" font-size="11" fill="#24231d" font-weight="bold">Клемник K1</text>
+<text x="760" y="288" text-anchor="middle" font-size="9" fill="#6b675c">точка зірки: сюди</text>
+<text x="760" y="302" text-anchor="middle" font-size="9" fill="#6b675c">сходяться всі землі</text>
+<rect x="960" y="90" width="150" height="100" rx="5" fill="#f5f4ef" stroke="#b07c14" stroke-width="1.8"/>
+<text x="1035" y="112" text-anchor="middle" font-size="11" fill="#b07c14" font-weight="bold">Буферний конд.</text>
+<text x="1035" y="128" text-anchor="middle" font-size="9" fill="#6b675c">1000 µF</text>
+<text x="1035" y="142" text-anchor="middle" font-size="9" fill="#6b675c">стоїть біля ампа, не біля входу</text>
+<rect x="1200" y="90" width="170" height="150" rx="5" fill="#f5f4ef" stroke="#b07c14" stroke-width="1.8"/>
+<text x="1285" y="112" text-anchor="middle" font-size="11" fill="#b07c14" font-weight="bold">Підсилювач TPA3116D2</text>
+<text x="1285" y="128" text-anchor="middle" font-size="9" fill="#6b675c">спокій ~0.57 Вт</text>
+<text x="1285" y="142" text-anchor="middle" font-size="9" fill="#6b675c">пік ~23 Вт (модель,</text>
+<text x="1285" y="156" text-anchor="middle" font-size="9" fill="#6b675c">«Пилова буря»)</text>
+<text x="1285" y="170" text-anchor="middle" font-size="9" fill="#6b675c">радіатор — назовні коробки</text>
+<rect x="960" y="470" width="170" height="130" rx="5" fill="#f5f4ef" stroke="#3d7a4f" stroke-width="1.8"/>
+<text x="1045" y="492" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Понижувач 12→5 В</text>
+<text x="1045" y="508" text-anchor="middle" font-size="9" fill="#6b675c">MP1584 · Buck 12→5 В</text>
+<text x="1045" y="522" text-anchor="middle" font-size="9" fill="#6b675c">вхід: спокій ~0.68 Вт · відтв. ~1.21 Вт</text>
+<rect x="1200" y="420" width="170" height="90" rx="5" fill="#f5f4ef" stroke="#3d7a4f" stroke-width="1.8"/>
+<text x="1285" y="442" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">ESP32 + microSD</text>
+<text x="1285" y="458" text-anchor="middle" font-size="9" fill="#6b675c">спокій ~0.15 Вт</text>
+<text x="1285" y="472" text-anchor="middle" font-size="9" fill="#6b675c">відтв. ~0.63 Вт</text>
+<rect x="1200" y="540" width="170" height="90" rx="5" fill="#f5f4ef" stroke="#3d7a4f" stroke-width="1.8"/>
+<text x="1285" y="562" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">ЦАП PCM5102A</text>
+<text x="1285" y="578" text-anchor="middle" font-size="9" fill="#6b675c">~0.07 Вт</text>
+<text x="1285" y="592" text-anchor="middle" font-size="9" fill="#6b675c">постійно</text>
+<rect x="1200" y="660" width="170" height="90" rx="5" fill="#f5f4ef" stroke="#3d7a4f" stroke-width="1.8"/>
+<text x="1285" y="682" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold">Радар LD2410C</text>
+<text x="1285" y="698" text-anchor="middle" font-size="9" fill="#6b675c">~0.40 Вт</text>
+<text x="1285" y="712" text-anchor="middle" font-size="9" fill="#6b675c">постійно (завжди слухає)</text>
+<rect x="1160" y="420" width="18" height="330" rx="5" fill="#fff" stroke="#3d7a4f" stroke-width="1.8"/>
+<text x="1169" y="589" text-anchor="middle" font-size="11" fill="#3d7a4f" font-weight="bold"></text>
+<text x="330" y="300" text-anchor="middle" font-size="9" fill="#6b675c">ВЛАСНИЙ кабель AWG16 · ~8 м</text>
+<text x="260" y="230" text-anchor="start" font-size="9" fill="#3d7a4f">повз щит світла і групові реле — цілодобово, без реле</text>
+<text x="1154" y="410" text-anchor="start" font-size="9" fill="#6b675c">шина 5 В</text>
+<text x="40" y="420" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Чому окремий кабель, а не щит світла:</text>
+<text x="40" y="438" text-anchor="start" font-size="10" fill="#6b675c">світло гасять реле й таймер станції —</text>
+<text x="40" y="456" text-anchor="start" font-size="10" fill="#6b675c">робот не має мовчати, коли гасне світло.</text>
+<text x="40" y="474" text-anchor="start" font-size="10" fill="#6b675c">Тому звук іде своїм проводом просто з</text>
+<text x="40" y="492" text-anchor="start" font-size="10" fill="#6b675c">авто-виходу станції, повз щит і реле.</text>
+<text x="40" y="550" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Радіатор ампа — крізь стінку назовні:</text>
+<text x="40" y="568" text-anchor="start" font-size="10" fill="#6b675c">у закритій коробці на сонці кристал іде</text>
+<text x="40" y="586" text-anchor="start" font-size="10" fill="#6b675c">за 150°C і замовкає в захисті. Радіатор</text>
+<text x="40" y="604" text-anchor="start" font-size="10" fill="#6b675c">50×50 мм через термопрокладку тримає</text>
+<text x="40" y="622" text-anchor="start" font-size="10" fill="#6b675c">його близько до 84°C навіть на плайї.</text>
+<text x="40" y="680" text-anchor="start" font-size="10" fill="#24231d" font-weight="bold">Скільки їсть вузол (з моделі):</text>
+<text x="40" y="698" text-anchor="start" font-size="10" fill="#6b675c">за ніч (~12 год composite) — ~18.4 Вт·год</text>
+<text x="40" y="716" text-anchor="start" font-size="10" fill="#6b675c">за добу (24 год composite) — ~39.4 Вт·год</text>
+<text x="40" y="734" text-anchor="start" font-size="10" fill="#6b675c">холостий хід ЗАМІРЯНО 1.5 Вт (2026-08-02,</text>
+<text x="40" y="752" text-anchor="start" font-size="10" fill="#6b675c">живий вузол у коробці) — не з паспорта</text>
+<text x="40" y="770" text-anchor="start" font-size="10" fill="#6b675c">модель дає ~1.25 Вт спокою (близько,</text>
+<text x="40" y="788" text-anchor="start" font-size="10" fill="#6b675c">різниця — втрати, яких нема в розрахунку).</text>
+<line x1="40" y1="876" x2="1360" y2="876" stroke="#d8d5c9" stroke-width="1"/>
+<text x="40" y="898" text-anchor="start" font-size="10" fill="#6b675c">Ліміт авто-порту станції 126 Вт / 10 А — вузол на піку бере ~24 Вт, запас у 5× з гаком. Запобіжник стоїть двічі поспіль тим самим номіналом 3 А: у штекері прикурювача і ще раз у гермовводі коробки.</text>
+<text x="40" y="914" text-anchor="start" font-size="10" fill="#6b675c">Кабель AWG16, ~8 м (прикидка) — власний, окремий від щита світла; довжину міряти по місцю (рішення Івана 29.07).</text>
+<text x="40" y="930" text-anchor="start" font-size="10" fill="#6b675c">Заміряний холостий хід 1.5 Вт (2026-08-02) — заміряно Іваном на зібраному вузлі в коробці: ESP32 + ЦАП + картка + радар + підсилювач у спокої.</text>
+<text x="40" y="946" text-anchor="start" font-size="10" fill="#6b675c">Підсилювач у монтажі притиснутий до правої стінки — радіатор виходить назовні.</text>
+<text x="40" y="962" text-anchor="start" font-size="10" fill="#6b675c">Сигнальний тракт (ЦАП→підсилювач→динамік) — окрема схема audio/model/schematic.svg, тут лише живлення.</text>
+</svg>
