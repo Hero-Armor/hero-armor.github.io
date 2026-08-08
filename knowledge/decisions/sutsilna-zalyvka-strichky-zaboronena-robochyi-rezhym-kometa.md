@@ -4,12 +4,12 @@ title: "Суцільна заливка стрічки заборонена; р�
 description: "Заміряно 13.9 Вт/м."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-decided_by: "team"
+decided_by: "ivan"
 decision_zone: ""
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md) · вирішив: **—**
+Система: [Світло](/systems/lights.md) · вирішив: **Іван**
 
 # Чому
 

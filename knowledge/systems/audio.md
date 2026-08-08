@@ -23,7 +23,6 @@ generated: { by: "process:site-build" }
 * [Запас плат ×2–3 — на плайї не паяємо](/decisions/zapas-plat-2-3-na-plaii-ne-paiaiemo.md)
 * [Основа вузла — перфоборд 150×90, не 3D-друк і не «насипом у коробку»](/decisions/osnova-vuzla-perfobord-150-90-ne-3d-druk-i-ne-nasypom-u-koro.md)
 * [Роз'ємні місця: XT60 на вході, клемники на платі, лопатки на динаміку](/decisions/roziemni-mistsia-xt60-na-vkhodi-klemnyky-na-plati-lopatky-na.md)
-* [Коробка: пластик, з фільтрованою вентиляцією, радіатор ампа назовні](/decisions/korobka-plastyk-z-filtrovanoiu-ventyliatsiieiu-radiator-ampa.md)
 * [Коробку аудіо не вентилюємо — рахунок каже, що нічого не гріється](/decisions/korobku-audio-ne-ventyliuiemo-rakhunok-kazhe-shcho-nichoho-n.md)
 * [До динаміка паяємось, а не тиснемо «мами» на пелюстки](/decisions/do-dynamika-paiaiemos-a-ne-tysnemo-mamy-na-peliustky.md)
 * [Читач радара — свій, не стороння бібліотека](/decisions/chytach-radara-svii-ne-storonnia-biblioteka.md)
@@ -61,8 +60,8 @@ generated: { by: "process:site-build" }
 * [microSD SPI модуль](/bom/microsd-spi-modul.md) — $6.99 за 5 шт, купити
 * [SanDisk 32GB Class 10](/bom/sandisk-32gb-class-10.md) — $23.95, купити
 * [TPA3116D2 Mono (HiLetgo)](/bom/tpa3116d2-mono-hiletgo.md) — $13.99 за 2 плати, купити
-* [Herdio 3" пара (куплено як Poly-Planar) — ПОВЕРНУТО](/bom/herdio-3-para-kupleno-iak-poly-planar-povernuto.md) — $69.99, купити
-* [Herdio 3" пара (куплено як Poly-Planar) — ПОВЕРНУТО](/bom/herdio-3-para-kupleno-iak-poly-planar-povernuto.md) — $69.99, купити
+* [Poly-Planar MA-3013 3" пара — ПОВЕРНУТО](/bom/poly-planar-ma-3013-3-para-povernuto.md) — $69.99, купити
+* [Herdio 3" пара — ПОВЕРНУТО](/bom/herdio-3-para-povernuto.md) — $39.99, купити
 * [LD2410C](/bom/ld2410c.md) — $20.48 за 3 шт, купити
 * [Buck 12→5В ≥1.5А + LC](/bom/buck-12-5v-1-5a-lc.md) — $8.99 за 5 шт, купити
 * [Радіатор 50×50 мм + термопрокладка](/bom/radiator-50-50-mm-termoprokladka.md) — ~$9/4шт, купити

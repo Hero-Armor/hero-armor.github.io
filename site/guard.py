@@ -189,6 +189,24 @@ try:
 except Exception:
     pass
 
+# --- 6. схема бази ----------------------------------------------------------
+# Гардрейл ловив секрети й биті файли, але не саму форму даних. 08.08.2026 позиція
+# з порожнім `status` валила збірку, а дубль позиції і два написання одного імені
+# лежали роками. Правила бази описані окремо; тут просто не пускаємо далі, якщо
+# вони порушені.
+try:
+    import subprocess
+    r = subprocess.run(["python3", "/root/hero-armor/tools/hero_armor_db_check.py"],
+                       capture_output=True, text=True, timeout=120)
+    if r.returncode != 0:
+        for line in (r.stdout or "").splitlines():
+            if line.strip().startswith("✗"):
+                problems.append(f"схема бази — {line.strip()[2:]}")
+        if not any(p.startswith("схема бази") for p in problems):
+            problems.append("схема бази: перевірка не пройшла (див. hero_armor_db_check.py)")
+except Exception as e:
+    problems.append(f"схема бази: перевірку не вдалося запустити ({e})")
+
 # --- вердикт ---------------------------------------------------------------
 if problems:
     print("ГАРДРЕЙЛ: знайдено порушення\n")

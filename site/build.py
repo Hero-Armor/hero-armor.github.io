@@ -104,6 +104,21 @@ def task_status(t):
 ORDER_STATUS = {"ordered": "замовлено", "shipped": "їде", "delivered": "доставлено",
                 "received": "отримано", "returned": "повернуто"}
 PILL = {"have": ("have", "у списку"), "add": ("add", "додати"), "tbd": ("tbd", "обрати")}
+
+
+def pill_of(b):
+    """Значок стану позиції закупівлі. Веде `flow`; `status` — спадщина.
+
+    Тонкість, на якій збірка падала 08.08.2026: запис виду
+    `FLOW.get(b.get("flow"), PILL[b["status"]])` обчислює запасний варіант ЗАВЖДИ,
+    навіть коли `flow` є. Тому позиція з порожнім чи чужим `status` валила весь
+    build з `KeyError: ''` — а таку позицію створював `hero_armor_promote.py accept`.
+    Тут запасний варіант береться ліниво і ніколи не кидає.
+    """
+    f = FLOW.get(b.get("flow"))
+    if f:
+        return f
+    return PILL.get(b.get("status"), ("tbd", "обрати"))
 # Ланцюг статусів Івана: замовити -> їде -> приїхало. Виводиться з даних
 # (bom.status + активні замовлення), руками ніде не дублюється.
 FLOW = {"to_order": ("add", "замовити"), "in_cart": ("add", "у кошику"),
@@ -509,8 +524,8 @@ def buy_table_html(rows, note=""):
         + (f'<a href="{esc(b["url"])}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"]))
         + f'</td><td>{esc(str(b.get("qty", "—")))}</td>'
           f'<td class="num">{esc(str(b.get("price", "—")))}</td>'
-          f'<td><span class="pill {FLOW.get(b.get("flow"), PILL[b["status"]])[0]}">'
-          f'{FLOW.get(b.get("flow"), PILL[b["status"]])[1]}</span></td>'
+          f'<td><span class="pill {pill_of(b)[0]}">'
+          f'{pill_of(b)[1]}</span></td>'
           f'<td>{esc(b.get("where", "—"))}</td>'
           f'<td style="white-space:normal;max-width:56ch">{esc(b.get("note", ""))}</td></tr>'
         for b in rows)
@@ -590,12 +605,12 @@ def _cables_buy_block():
 def bom_rows_html():
     rows = []
     for b in BOM:
-        cls, label = FLOW.get(b.get("flow"), PILL[b["status"]])
+        cls, label = pill_of(b)
         item = esc(b["item"])
         if b.get("url"):
             item = f'<a href="{b["url"]}">{item}</a>'
         rows.append(
-            f'      <tr data-status="{b.get("flow", b["status"])}">{bom_thumb(b)}<td>{item}</td>'
+            f'      <tr data-status="{b.get("flow") or b.get("status") or "tbd"}">{bom_thumb(b)}<td>{item}</td>'
             f'<td><span class="chip {b["system"]}">{b["system"]}</span></td>'
             f'<td class="num">{b["qty"]}</td>'
             f'<td class="num">{b["price"]}</td><td><span class="pill {cls}">{label}</span></td>'
@@ -646,7 +661,7 @@ def build_knowledge():
         node = {"@id": bid, "@type": "Product", "name": b["item"],
                 "description": b["note"], "isRelatedTo": sys_ref(b["system"]),
                 "additionalProperty": [
-                    {"@type": "PropertyValue", "name": "procurement-status", "value": b["status"]},
+                    {"@type": "PropertyValue", "name": "procurement-status", "value": b.get("status") or b.get("flow") or ""},
                     {"@type": "PropertyValue", "name": "quantity", "value": b["qty"]}]}
         price = re.search(r"\$(\d+(?:\.\d+)?)", b["price"])
         if b.get("url"):
@@ -902,7 +917,7 @@ def build_okf():
             "type": "Part", "title": b["item"], "description": b["note"][:160],
             "resource": b.get("url"), "tags": [b["system"]],
             "quantity": b["qty"], "price": b["price"],
-            "procurement_status": b["status"], "generated": gen,
+            "procurement_status": b.get("status") or b.get("flow") or "", "generated": gen,
         }, f"{b['note']}\n\nСистема: {clink(b['system'])} · статус: "
            f"**{'є' if b['status'] == 'have' else 'купити'}** · ціна {b['price']} · к-сть {b['qty']}")
         b_items.append(f"[{b['item']}]({s}.md) - {b['price']}, "
@@ -1006,7 +1021,7 @@ def build_okf():
     (okf / "log.md").write_text("\n".join(log_lines).rstrip() + "\n")
 
     open_n = sum(1 for t in TASKS if t["status"] != "done")
-    tobuy_n = sum(1 for b in BOM if b["status"] != "have")
+    tobuy_n = sum(1 for b in BOM if b.get("status") != "have")
     index_md("index.md", "Hero Armor — база знань (OKF)", [
         ("Проєкт", [
             "[Hero Armor](project.md) - меморіальна інсталяція памʼяті Захара Захарова",
@@ -1079,7 +1094,7 @@ def build():
     a_bom = [b for b in BOM if b["system"] == "audio"]
     b_rows = []
     for b in a_bom:
-        cls, label = FLOW.get(b.get("flow"), PILL[b["status"]])
+        cls, label = pill_of(b)
         item = f'<a href="{b["url"]}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"])
         b_rows.append(f'      <tr>{bom_thumb(b)}<td>{item}</td><td class="num">{b["qty"]}</td>'
                       f'<td class="num">{b["price"]}</td>'
@@ -1833,7 +1848,7 @@ def build():
                                                           "гель-конектори", "гофра", "вимикач"))]
     k_rows = "\n".join(
         f'      <tr><td>{esc(b["item"])}</td><td class="num">{esc(b["qty"])}</td>'
-        f'<td><span class="pill {b["status"]}">{PILL[b["status"]][1]}</span></td>'
+        f'<td><span class="pill {pill_of(b)[0]}">{pill_of(b)[1]}</span></td>'
         f'<td>{esc(b["note"])}</td></tr>' for b in kit_items)
     cables = cables.replace("{{KIT_ROWS}}", k_rows)
     cables = cables.replace("{{KIT_CAPTION}}",
@@ -2245,7 +2260,7 @@ def build():
         if c_bom:
             b_rows = []
             for b in c_bom:
-                cls, label = FLOW.get(b.get("flow"), PILL[b["status"]])
+                cls, label = pill_of(b)
                 item = f'<a href="{b["url"]}">{esc(b["item"])}</a>' if b.get("url") else esc(b["item"])
                 b_rows.append(f'      <tr>{bom_thumb(b)}<td>{item}</td><td class="num">{b["qty"]}</td>'
                               f'<td class="num">{b["price"]}</td>'
@@ -2365,7 +2380,7 @@ def build():
         f = b.get("flow")
         if f:
             return f
-        return "arrived" if b["status"] == "have" else "to_order"
+        return "arrived" if b.get("status") == "have" else "to_order"
     have_n = sum(1 for b in BOM if _st(b) in FLOW_HAVE)
     budget_have = sum(usd(b["price"]) for b in BOM if _st(b) in FLOW_HAVE)
     budget_tobuy = sum(usd(b["price"]) for b in BOM if _st(b) in FLOW_TOBUY)
@@ -2409,7 +2424,7 @@ def build():
         c_tasks = [t for t in TASKS if t["system"] == k]
         c_done = sum(1 for t in c_tasks if t["status"] == "done")
         c_bom = [b for b in BOM if b["system"] == k]
-        c_have = sum(1 for b in c_bom if b["status"] == "have")
+        c_have = sum(1 for b in c_bom if b.get("status") == "have")
         tot = len(c_tasks) + len(c_bom)
         pct = round(100 * (c_done + c_have) / tot) if tot else 0
         links = []

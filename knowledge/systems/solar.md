@@ -40,6 +40,7 @@ generated: { by: "process:site-build" }
 * [Рама: просвіт під ящик 460 → 540 мм, передня стійка 500 → 580](/decisions/rama-prosvit-pid-iashchyk-460-540-mm-perednia-stiika-500-580.md)
 * [Прочіс ринку LA + Bay Area (новий і б/у) — вибір станції не змінюється](/decisions/prochis-rynku-la-bay-area-novyi-i-b-u-vybir-stantsii-ne-zmin.md)
 * [Кутики рами беремо в Home Depot поштучно, а не на Amazon](/decisions/kutyky-ramy-beremo-v-home-depot-poshtuchno-a-ne-na-amazon.md)
+* [Уся система на шині 12 В — перехід з 24 В](/decisions/usia-systema-na-shyni-12-v-perekhid-z-24-v.md)
 
 # Задачі
 

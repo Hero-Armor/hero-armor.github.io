@@ -29,7 +29,6 @@ generated: { by: "process:site-build" }
 * [Прожектори зʼєднуємо по краю подіуму, а не через коробку в центрі](/decisions/prozhektory-ziednuiemo-po-kraiu-podiumu-a-ne-cherez-korobku-.md)
 * [Лампа прожекторів — Luxrite MR16 4000K, вибір закрито](/decisions/lampa-prozhektoriv-luxrite-mr16-4000k-vybir-zakryto.md)
 * [Адресну стрічку рахуємо по біжучому фронту, не по повній лінії](/decisions/adresnu-strichku-rakhuiemo-po-bizhuchomu-frontu-ne-po-povnii.md)
-* [Прожектори — MR16 без стабілізатора (voltage-following)](/decisions/prozhektory-mr16-bez-stabilizatora-voltage-following.md)
 * [Адресна стрічка вдень вимкнена](/decisions/adresna-strichka-vden-vymknena.md)
 * [«Біжуча вода» — біла, зовнішній контур прибрано](/decisions/bizhucha-voda-bila-zovnishnii-kontur-prybrano.md)
 * [Анімація замість заливки — стрічка світить не вся одразу](/decisions/animatsiia-zamist-zalyvky-strichka-svityt-ne-vsia-odrazu.md)

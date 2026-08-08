@@ -80,7 +80,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B08YNJGSN4.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "microSD SPI модуль",
@@ -104,7 +105,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B08L5HMJVW.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "TPA3116D2 Mono (HiLetgo)",
@@ -119,28 +121,30 @@
     "where": "Amazon"
   },
   {
-    "item": "Herdio 3\" пара (куплено як Poly-Planar) — ПОВЕРНУТО",
+    "item": "Poly-Planar MA-3013 3\" пара — ПОВЕРНУТО",
     "qty": "1 пара",
     "price": "$69.99",
     "status": "tbd",
-    "note": "ASIN B073WQJ2WB — це Herdio, не Poly-Planar (звірено з amazon_orders_2026.json). Рішення Івана 06.08: усі Herdio повертаються. B00197V836. У Марселя в Hillsborough на примірку до грудної панелі. РІШЕННЯ ІВАНА 06.08: лишається ОДНА пара Poly-Planar, усі Herdio повертаються. Herdio був тестовою болванкою — захист лише IP44, для плайї слабко. Куплено 3 пари Herdio: одна вже повернута, дві на повернення (одна у Марселя $39.99 до 25.08, одна в Івана $31.99).",
+    "note": "Poly-Planar MA-3013, ASIN B00197V836, $69.99 — замовлення 112-4535913-3376268. Рішення Івана 06.08: повертається. Розділено 08.08: раніше цей і Herdio лежали двома рядками з ОДНАКОВОЮ назвою і однаковою ціною — сторож бази знайшов дубль.",
     "system": "audio",
     "flow": "returned",
     "url": "https://www.amazon.com/dp/B00197V836",
     "img": "assets/bom/B00197V836.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-012"
   },
   {
-    "item": "Herdio 3\" пара (куплено як Poly-Planar) — ПОВЕРНУТО",
+    "item": "Herdio 3\" пара — ПОВЕРНУТО",
     "qty": "1 пара",
-    "price": "$69.99",
+    "price": "$39.99",
     "status": "tbd",
-    "note": "ASIN B073WQJ2WB — це Herdio, не Poly-Planar (звірено з amazon_orders_2026.json). Рішення Івана 06.08: усі Herdio повертаються. B00197V836. У Марселя в Hillsborough на примірку до грудної панелі. РІШЕННЯ ІВАНА 06.08: лишається ОДНА пара Poly-Planar, усі Herdio повертаються. Herdio був тестовою болванкою — захист лише IP44, для плайї слабко. Куплено 3 пари Herdio: одна вже повернута, дві на повернення (одна у Марселя $39.99 до 25.08, одна в Івана $31.99).",
+    "note": "Herdio 3\" marine, ASIN B073WQJ2WB, $39.99 — те саме замовлення 112-4535913-3376268, в Amazon позначено Refunded. Рішення Івана 06.08: усі Herdio повертаються. Ціна виправлена 08.08: стояла $69.99 від сусідньої позиції.",
     "system": "audio",
     "flow": "returned",
     "url": "https://www.amazon.com/dp/B073WQJ2WB",
     "img": "assets/bom/B073WQJ2WB.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-012"
   },
   {
     "item": "LD2410C",
@@ -152,7 +156,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B0F1F97422.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "Buck 12→5В ≥1.5А + LC",
@@ -164,7 +169,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B0B779ZYN1.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "Радіатор 50×50 мм + термопрокладка",
@@ -176,7 +182,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B0BC15L51H.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "Запобіжник 3А + тримач",
@@ -188,7 +195,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B0C15H3F9M.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "Конденсатор 1000 µФ 25В low-ESR",
@@ -236,7 +244,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B07BF8154S.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "Кабель 18AWG силікон, 2×2 м",
@@ -248,7 +257,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B07FMRDP87.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-003"
   },
   {
     "item": "Gardencoin прожектор (корпус)",
@@ -343,7 +353,8 @@
     "flow": "arrived",
     "url": "https://www.amazon.com/dp/B095M4JS31",
     "img": "assets/bom/B095M4JS31.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-004"
   },
   {
     "item": "Сонячні панелі для масиву (потужність не обрана)",
@@ -796,7 +807,8 @@
     "note": "ЗАМОВЛЕНО 29.07. Маленький тюбик під видавлювання рукою — саме те, що треба для 24 різів: не треба пістолета, не сохне туба між сесіями. Electronic grade = нейтральний, не роз'їдає мідь. НЕ брати звичайний прозорий RTV із автомагазину — він зазвичай оцтовий. Альтернатива в тому ж форматі: GE Advanced Silicone 2.8 oz (~$8), теж нейтральний. Підтверджено по історії замовлень Amazon 05.08.2026 — куплено. Замовлення 113-1352544-9105867 від 29.07, $11.02.",
     "url": "https://www.amazon.com/dp/B0063U2RT8",
     "img": "assets/bom/B0063U2RT8.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-002"
   },
   {
     "item": "Заглушки неон 8×16 З ОТВОРОМ під дріт — набір 60 шт",
@@ -912,11 +924,12 @@
     "price": "$7.99",
     "status": "add",
     "url": "https://www.amazon.com/dp/B0FJFVBLJD",
-    "note": "IP68 нейлон PA66 з O-ring. Три вводи в коробку: 12 В, динамік, радар. Перевірено 30.07: окремий пак 10×PG7 коштує стільки ж ($7.69), тому беремо набір — у ньому і PG9 на запас",
+    "note": "IP68 нейлон PA66 з O-ring. Три вводи в коробку: 12 В, динамік, радар. Перевірено 30.07: окремий пак 10×PG7 коштує стільки ж ($7.69), тому беремо набір — у ньому і PG9 на запас · Приїхало 01.08 у замовленні 114-2699328-1540233 ($7.99). ⚠ Звірка 08.08: в Amazon по цьому замовленню один пак, у нас записано 3 — перерахувати по факту в руках.",
     "system": "audio",
-    "flow": "in_cart",
+    "flow": "arrived",
     "img": "assets/bom/B0FJFVBLJD.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-008"
   },
   {
     "item": "Джампери Dupont мама-мама 20 см",
@@ -928,7 +941,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B0BRTJQGS6.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-008"
   },
   {
     "item": "Стяжки нейлонові UV-стійкі, 400 шт",
@@ -940,7 +954,8 @@
     "system": "audio",
     "flow": "arrived",
     "img": "assets/bom/B0C2Z4L3S6.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-008"
   },
   {
     "item": "Кейс під станцію",
@@ -1386,7 +1401,8 @@
     "url": "https://www.amazon.com/HLG-320H-12A-Switching-Supply-Single-Output/dp/B00DWIC6M2",
     "note": "Рішення Івана 05.08.2026: РЕЗЕРВНИЙ шлях живлення шини 12 В — якщо станція не дасть 12 В або відпаде взагалі. Живиться від 110 В (генератор кемпу / мережа на базі). 264 Вт / 22 А проти нашого піку 184 Вт / 15.3 А — запас 1.4×. Без вентилятора (нічого не засмоктує пил), IP65/67, вихід підстроюється — можна виставити 12.6 В як у станції. Це 12-вольтовий близнюк HLG-320H-24, який був у першій схемі архітектора і помер разом із 24 В. ЗАМОВЛЕНО 05.08.2026 — замовлення 113-9896923-6082624, $93.01.",
     "img": "assets/bom/B00DWIC6M2.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-009"
   },
   {
     "item": "Обдувач компресорний WOLFBOX MF100 (турбіна 150 000 об/хв)",
@@ -1398,7 +1414,8 @@
     "url": "https://www.amazon.com/dp/B0DHNG4DL8",
     "note": "Рішення Івана 05.08.2026: беремо як проєктний інструмент. Обслуговування на плайї — здувати пил із сонячних панелей (без чистки −21% віддачі за тиждень), із плат, роз'ємів і радіаторів. Без витратного балона, працює від акумулятора. Замовлення 114-7203183-2588266 від 30.07, $69.75.",
     "img": "assets/bom/B0DHNG4DL8.jpg",
-    "where": "Amazon"
+    "where": "Amazon",
+    "order": "ORD-011"
   },
   {
     "item": "Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А",

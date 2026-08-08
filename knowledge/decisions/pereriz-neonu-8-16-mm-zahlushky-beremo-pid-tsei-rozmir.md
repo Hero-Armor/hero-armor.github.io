@@ -4,12 +4,12 @@ title: "Переріз неону — 8 × 16 мм, заглушки берем�
 description: "Торець стрічки приклали до контурів у натуральну величину на друкованому аркуші-калібрі — сів у 8×16."
 tags: ["lights"]
 generated: { by: "process:site-build" }
-decided_by: "team"
+decided_by: "ivan"
 decision_zone: ""
-verified: { by: "human:gumanist", at: "2026-07-27T00:00:00Z" }
+verified: { by: "human:ivan", at: "2026-07-27T00:00:00Z" }
 ---
 
-Система: [Світло](/systems/lights.md) · вирішив: **—**
+Система: [Світло](/systems/lights.md) · вирішив: **Іван**
 
 # Чому
 
