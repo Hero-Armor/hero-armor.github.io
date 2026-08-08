@@ -56,6 +56,7 @@ generated: { by: "process:site-build" }
 * [Стрічка подіуму: усі вісім рукавів зводяться в центр, живлення одним кабелем](/decisions/strichka-podiumu-usi-visim-rukaviv-zvodiatsia-v-tsentr-zhyvl.md)
 * [Кабель 12/2 перезамовляємо: у реєстрі стояв круглий Ancor за $208 замість плоского за $103](/decisions/kabel-12-2-perezamovliaiemo-u-reiestri-stoiav-kruhlyi-ancor-.md)
 * [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](/decisions/mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
+* [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 
 # Задачі
 

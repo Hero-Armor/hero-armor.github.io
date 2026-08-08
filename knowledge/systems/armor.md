@@ -18,6 +18,7 @@ generated: { by: "process:site-build" }
 * [Світловідбивна стрічка: ORALITE V98 на фігуру, 3M 983-10 на торець подіуму](/decisions/svitlovidbyvna-strichka-oralite-v98-na-fihuru-3m-983-10-na-t.md)
 * [Монтаж світловідбивної стрічки: ґрунтовка, знежирення, прогрів](/decisions/montazh-svitlovidbyvnoi-strichky-gruntovka-znezhyrennia-proh.md)
 * [Кисті друкуються заново з металевими стержнями всередині](/decisions/kysti-drukuiutsia-zanovo-z-metalevymy-sterzhniamy-vseredyni.md)
+* [Архітектор прибрав передню металеву частину грудей — деталі 7A,7B,8,10,11A,11B,12A,12B](/decisions/arkhitektor-prybrav-peredniu-metalevu-chastynu-hrudei-detali.md)
 
 # Задачі
 
