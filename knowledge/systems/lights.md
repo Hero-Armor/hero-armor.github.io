@@ -57,6 +57,7 @@ generated: { by: "process:site-build" }
 * [Кабель 12/2 перезамовляємо: у реєстрі стояв круглий Ancor за $208 замість плоского за $103](/decisions/kabel-12-2-perezamovliaiemo-u-reiestri-stoiav-kruhlyi-ancor-.md)
 * [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](/decisions/mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
+* [Діоди на корпусі робота — 3-вольтові: резистор на кожен, підключення паралельно](/decisions/diody-na-korpusi-robota-3-voltovi-rezystor-na-kozhen-pidkliu.md)
 
 # Задачі
 
