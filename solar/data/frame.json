@@ -1,6 +1,6 @@
 {
   "_note": "Рама під сонячний масив — деревʼяний каркас 2×4 з нахилом, місцем під ящики всередині і такелажем під вітер плайї. Дані перенесені в хаб 02.08.2026 з проєкту, зробленого ще до появи цього репозиторію.",
-  "_source": "/root/hero_armor/elec/solar_frame/solar_frame_project.md (16.07.2026) + креслення solar_frame_20deg_v2.svg, solar_frame_wood_2x4.svg, cut_diagram_2x4.svg там само. Першоджерело — тека Drive «Solar Frame», яку Іван прислав 16.07.",
+  "_source": "/root/hero-armor/raw/elec/solar_frame/solar_frame_project.md (16.07.2026) + креслення solar_frame_20deg_v2.svg, solar_frame_wood_2x4.svg, cut_diagram_2x4.svg там само. Першоджерело — тека Drive «Solar Frame», яку Іван прислав 16.07.",
   "_recalc_note": "⚠ Старий проєкт рахований під ОДНУ панель 500 Вт 1956×1134×30 мм (~26 кг). У хабі масив тепер збираємо самі, орієнтир ~600 Вт. Тому геометрію не копіюємо числами — її перераховує модель solar/model/frame.py під фактичну конфігурацію з solar/data/params.json. Методика (кут, анкери, такелаж, розкрій, правила плайї) переноситься як є.",
   "reference_panel": {
     "w_watt": 500,
