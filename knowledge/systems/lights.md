@@ -58,6 +58,7 @@ generated: { by: "process:site-build" }
 * [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](/decisions/mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 * [Діоди на корпусі робота — 3-вольтові: резистор на кожен, підключення паралельно](/decisions/diody-na-korpusi-robota-3-voltovi-rezystor-na-kozhen-pidkliu.md)
+* [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](/decisions/kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 
 # Задачі
 
@@ -124,11 +125,9 @@ generated: { by: "process:site-build" }
 * [Гермороз'єми IP68 (швидкознімні)](/bom/hermoroziemy-ip68-shvydkoznimni.md) — $14.95, купити
 * [Гель-конектори / вологозахищені клеми](/bom/hel-konektory-volohozakhyshcheni-klemy.md) — $9.99, купити
 * [Гофра/кабель-канал для відводів](/bom/hofra-kabel-kanal-dlia-vidvodiv.md) — $30.99, купити
-* [Кабель: Станція (30 А вихід) → щит запобіжників](/bom/kabel-stantsiia-30-a-vykhid-shchyt-zapobizhnykiv.md) — $106.40, купити
 * [Кабель: Щит → коробка диммера (Гр.1)](/bom/kabel-shchyt-korobka-dymmera-hr-1.md) — $79.77, купити
 * [Кабель: Диммер → кільце прожекторів](/bom/kabel-dymmer-kiltse-prozhektoriv.md) — $79.77, купити
 * [Кабель: Відвід на прожектор (найдальший)](/bom/kabel-vidvid-na-prozhektor-naidalshyi.md) — $71.12, купити
-* [Кабель: Щит → коробка WLED (Гр.2)](/bom/kabel-shchyt-korobka-wled-hr-2.md) — $106.40, купити
 * [Кабель: WLED → точки живлення стрічки](/bom/kabel-wled-tochky-zhyvlennia-strichky.md) — $33.99, купити
 * [Кабель: Коробка → лампи робота](/bom/kabel-korobka-lampy-robota.md) — $11.26, купити
 * [Кабель: Щит → коробка аварійної (Гр.3А)](/bom/kabel-shchyt-korobka-avariinoi-hr-3a.md) — $79.77, купити
@@ -151,3 +150,4 @@ generated: { by: "process:site-build" }
 * [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](/bom/klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) — $33.99, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](/bom/dmwd-12mm-led-dozamovyty-1-upakovku.md) — $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](/bom/shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) — $11.99 за набір, купити
+* [Гофра 3/4" на магістраль (розрізний лум)](/bom/hofra-3-4-na-mahistral-rozriznyi-lum.md) — $~13, купити

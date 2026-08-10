@@ -44,11 +44,10 @@
 * [Гермороз'єми IP68 (швидкознімні)](hermoroziemy-ip68-shvydkoznimni.md) - $14.95, купити
 * [Гель-конектори / вологозахищені клеми](hel-konektory-volohozakhyshcheni-klemy.md) - $9.99, купити
 * [Гофра/кабель-канал для відводів](hofra-kabel-kanal-dlia-vidvodiv.md) - $30.99, купити
-* [Кабель: Станція (30 А вихід) → щит запобіжників](kabel-stantsiia-30-a-vykhid-shchyt-zapobizhnykiv.md) - $106.40, купити
+* [Кабель: Станція (Anderson 30 А) → щит запобіжників](kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) - $~65, купити
 * [Кабель: Щит → коробка диммера (Гр.1)](kabel-shchyt-korobka-dymmera-hr-1.md) - $79.77, купити
 * [Кабель: Диммер → кільце прожекторів](kabel-dymmer-kiltse-prozhektoriv.md) - $79.77, купити
 * [Кабель: Відвід на прожектор (найдальший)](kabel-vidvid-na-prozhektor-naidalshyi.md) - $71.12, купити
-* [Кабель: Щит → коробка WLED (Гр.2)](kabel-shchyt-korobka-wled-hr-2.md) - $106.40, купити
 * [Кабель: WLED → точки живлення стрічки](kabel-wled-tochky-zhyvlennia-strichky.md) - $33.99, купити
 * [Кабель: Коробка → лампи робота](kabel-korobka-lampy-robota.md) - $11.26, купити
 * [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - $79.77, купити
@@ -125,3 +124,7 @@
 * [Кабель від станції до щита під Anderson, переріз на 30 А](kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) - —, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](dmwd-12mm-led-dozamovyty-1-upakovku.md) - $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) - $11.99 за набір, купити
+* [Гофра 3/4" на магістраль (розрізний лум)](hofra-3-4-na-mahistral-rozriznyi-lum.md) - $~13, купити
+* [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) - $~15, купити
+* [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) - $~17, купити
+* [Кліщі обтискні під контакти Powerpole 15/30/45 А](klishchi-obtyskni-pid-kontakty-powerpole-15-30-45-a.md) - $~30, купити

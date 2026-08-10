@@ -121,3 +121,4 @@
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 * [Діоди на корпусі робота — 3-вольтові: резистор на кожен, підключення паралельно](diody-na-korpusi-robota-3-voltovi-rezystor-na-kozhen-pidkliu.md)
 * [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
+* [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)

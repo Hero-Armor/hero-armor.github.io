@@ -65,6 +65,7 @@ generated: { by: "process:site-build" }
 * [Друга станція EcoFlow — змінна, модель не обрана](/bom/druha-stantsiia-ecoflow-zminna-model-ne-obrana.md) — ~$1600, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $29.99, купити
+* [Кабель: Станція (Anderson 30 А) → щит запобіжників](/bom/kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) — $~65, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](/bom/lifepo4-12-v-100-ah-bufer-pid-svitlo.md) — ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](/bom/victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) — $201, купити
@@ -93,3 +94,5 @@ generated: { by: "process:site-build" }
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $93.01, купити
 * [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](/bom/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) — $1,599.00, купити
 * [Кабель від станції до щита під Anderson, переріз на 30 А](/bom/kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) — —, купити
+* [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](/bom/roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) — $~15, купити
+* [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](/bom/roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) — $~17, купити
