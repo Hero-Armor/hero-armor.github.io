@@ -57,6 +57,7 @@ generated: { by: "process:site-build" }
 * [Заміряти ватметром холостий хід станції в перший же день після отримання](/tasks/zamiriaty-vatmetrom-kholostyi-khid-stantsii-v-pershyi-zhe-de.md) — чекаємо
 * [Тест станції під навантаженням до виїзду (виїзд 28-29.08, Burn 30.08-07.09)](/tasks/test-stantsii-pid-navantazhenniam-do-vyizdu-vyizd-28-29-08-b.md) — чекаємо
 * [Обрати кабель від станції до щита під Anderson на 30 А](/tasks/obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) — до роботи
+* [Магістраль: скасувати повернення однієї бухти Ancor 8/2 АБО взяти готовий кабель 10 AWG з Anderson](/tasks/mahistral-skasuvaty-povernennia-odniiei-bukhty-ancor-8-2-abo.md) — до роботи
 
 # Закупівля
 

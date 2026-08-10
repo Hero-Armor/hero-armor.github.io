@@ -90,3 +90,7 @@
 * [Задати топологію 24 врізних вогнів торця (зірка / шлейф / по гранях)](zadaty-topolohiiu-24-vriznykh-vohniv-tortsia-zirka-shleif-po.md) - до роботи
 * [Задати розводку 10 ламп на корпусі робота (шлейф чи зірка всередині броні)](zadaty-rozvodku-10-lamp-na-korpusi-robota-shleif-chy-zirka-v.md) - до роботи
 * [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) - до роботи
+* [Продумати збір історій відвідувачів: мікрофон, розпізнавання, зберігання, публікація на сайті](produmaty-zbir-istorii-vidviduvachiv-mikrofon-rozpiznavannia.md) - до роботи
+* [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) - до роботи
+* [Магістраль: скасувати повернення однієї бухти Ancor 8/2 АБО взяти готовий кабель 10 AWG з Anderson](mahistral-skasuvaty-povernennia-odniiei-bukhty-ancor-8-2-abo.md) - до роботи
+* [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) - до роботи

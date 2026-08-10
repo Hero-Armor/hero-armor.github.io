@@ -120,3 +120,4 @@
 * [Архітектор прибрав передню металеву частину грудей — деталі 7A,7B,8,10,11A,11B,12A,12B](arkhitektor-prybrav-peredniu-metalevu-chastynu-hrudei-detali.md)
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 * [Діоди на корпусі робота — 3-вольтові: резистор на кожен, підключення паралельно](diody-na-korpusi-robota-3-voltovi-rezystor-na-kozhen-pidkliu.md)
+* [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)

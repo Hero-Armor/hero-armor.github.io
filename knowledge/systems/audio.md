@@ -34,6 +34,7 @@ generated: { by: "process:site-build" }
 * [Журнал пише і пропуски: коли радар бачив, а робот промовчав](/decisions/zhurnal-pyshe-i-propusky-koly-radar-bachyv-a-robot-promovcha.md)
 * [XSMT на ЦАПі — обовʼязковий дріт на 3.3 В](/decisions/xsmt-na-tsapi-oboviazkovyi-drit-na-3-3-v.md)
 * [Заміряно на живому вузлі: 1.5 Вт, працює від 10 В, радар бачить крізь пластик](/decisions/zamiriano-na-zhyvomu-vuzli-1-5-vt-pratsiuie-vid-10-v-radar-b.md)
+* [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](/decisions/nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
 
 # Задачі
 
@@ -52,6 +53,7 @@ generated: { by: "process:site-build" }
 * [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](/tasks/vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) — чекаємо
 * [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](/tasks/diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) — готово
 * [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](/tasks/prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) — до роботи
+* [Продумати збір історій відвідувачів: мікрофон, розпізнавання, зберігання, публікація на сайті](/tasks/produmaty-zbir-istorii-vidviduvachiv-mikrofon-rozpiznavannia.md) — до роботи
 
 # Закупівля
 
