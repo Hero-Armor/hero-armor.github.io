@@ -106,6 +106,7 @@ generated: { by: "process:site-build" }
 * [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](/tasks/opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) — до роботи
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](/tasks/pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) — до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](/tasks/14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) — до роботи
+* [Врізні вогні: обрати модель за ОТВОРОМ, а не за діаметром корпусу](/tasks/vrizni-vohni-obraty-model-za-otvorom-a-ne-za-diametrom-korpu.md) — до роботи
 
 # Закупівля
 
@@ -151,3 +152,5 @@ generated: { by: "process:site-build" }
 * [DMWD 12мм LED — дозамовити 1 упаковку](/bom/dmwd-12mm-led-dozamovyty-1-upakovku.md) — $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](/bom/shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) — $11.99 за набір, купити
 * [Кондуит liquid-tight 3/4" на магістраль (суцільний, не розрізний)](/bom/konduyt-liquid-tight-3-4-na-mahistral-sutsilnyi-ne-rozriznyi.md) — $~25, купити
+* [Свердло Форстнера 1" (25.4 мм) по дереву](/bom/sverdlo-forstnera-1-25-4-mm-po-derevu.md) — $~15, купити
+* [Ступінчасте свердло 6-35 мм (дерево + алюміній)](/bom/stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) — $~20, купити

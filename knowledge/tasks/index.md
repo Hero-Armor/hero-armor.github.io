@@ -97,3 +97,4 @@
 * [Вписати розділ Travel & Fuel у вкладку «Hero Armor — Purchase Audit» таблиці Марселя](vpysaty-rozdil-travel-fuel-u-vkladku-hero-armor-purchase-aud.md) - до роботи
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) - до роботи
 * [Підсилити ділянку кабелю там, де реально ходять — накладка або підняти](pidsylyty-dilianku-kabeliu-tam-de-realno-khodiat-nakladka-ab.md) - до роботи
+* [Врізні вогні: обрати модель за ОТВОРОМ, а не за діаметром корпусу](vrizni-vohni-obraty-model-za-otvorom-a-ne-za-diametrom-korpu.md) - до роботи

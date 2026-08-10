@@ -129,3 +129,5 @@
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) - $~17, купити
 * [Кліщі обтискні під контакти Powerpole 15/30/45 А](klishchi-obtyskni-pid-kontakty-powerpole-15-30-45-a.md) - $~30, купити
 * [Наконечники кільцеві під 10 AWG на болт шини](nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) - $~10, купити
+* [Свердло Форстнера 1" (25.4 мм) по дереву](sverdlo-forstnera-1-25-4-mm-po-derevu.md) - $~15, купити
+* [Ступінчасте свердло 6-35 мм (дерево + алюміній)](stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) - $~20, купити
