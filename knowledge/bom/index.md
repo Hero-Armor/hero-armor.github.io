@@ -45,13 +45,13 @@
 * [Гель-конектори / вологозахищені клеми](hel-konektory-volohozakhyshcheni-klemy.md) - $9.99, купити
 * [Гофра/кабель-канал для відводів](hofra-kabel-kanal-dlia-vidvodiv.md) - $30.99, купити
 * [Кабель: Станція (30 А вихід) → щит запобіжників](kabel-stantsiia-30-a-vykhid-shchyt-zapobizhnykiv.md) - $106.40, купити
-* [Кабель: Щит → коробка диммера (Гр.1)](kabel-shchyt-korobka-dymmera-hr-1.md) - $102.99, купити
-* [Кабель: Диммер → кільце прожекторів](kabel-dymmer-kiltse-prozhektoriv.md) - $102.99, купити
+* [Кабель: Щит → коробка диммера (Гр.1)](kabel-shchyt-korobka-dymmera-hr-1.md) - $79.77, купити
+* [Кабель: Диммер → кільце прожекторів](kabel-dymmer-kiltse-prozhektoriv.md) - $79.77, купити
 * [Кабель: Відвід на прожектор (найдальший)](kabel-vidvid-na-prozhektor-naidalshyi.md) - $71.12, купити
 * [Кабель: Щит → коробка WLED (Гр.2)](kabel-shchyt-korobka-wled-hr-2.md) - $106.40, купити
 * [Кабель: WLED → точки живлення стрічки](kabel-wled-tochky-zhyvlennia-strichky.md) - $33.99, купити
 * [Кабель: Коробка → лампи робота](kabel-korobka-lampy-robota.md) - $11.26, купити
-* [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - $102.99, купити
+* [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - $79.77, купити
 * [Кабель: Коробка → врізні вогні торця](kabel-korobka-vrizni-vohni-tortsia.md) - $71.12, купити
 * [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - $49.99, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - $29.39, купити

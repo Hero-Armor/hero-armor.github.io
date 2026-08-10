@@ -19,3 +19,4 @@
 * [ORD-014 — Amazon](ord-014.md) - доставлено
 * [ORD-015 — Amazon](ord-015.md) - замовлено
 * [ORD-016 — Amazon](ord-016.md) - замовлено
+* [ORD-017 — Заправки (Shell / One9 / Arco)](ord-017.md) - доставлено

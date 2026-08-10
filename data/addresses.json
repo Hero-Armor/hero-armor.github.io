@@ -1,11 +1,17 @@
 {
-  "current": "la",
-  "move_date": "2026-08-04",
-  "locations": {
-    "la": { "label": "Los Angeles", "period": "зараз" },
-    "sf": { "label": "San Francisco", "period": "після переїзду, фінальний стейджинг перед Burn" }
+ "current": "sf",
+ "move_date": "2026-08-09",
+ "locations": {
+  "la": {
+   "label": "Los Angeles",
+   "period": "зараз"
   },
-  "typical_delivery_days": 3,
-  "move_buffer_days": 2,
-  "note": "Реальні адреси й трек-номери — у data/private/ (gitignored, ніколи не публікується). move_date: YYYY-MM-DD — заповнити!"
+  "sf": {
+   "label": "San Francisco",
+   "period": "після переїзду, фінальний стейджинг перед Burn"
+  }
+ },
+ "typical_delivery_days": 3,
+ "move_buffer_days": 2,
+ "note": "Реальні адреси й трек-номери — у data/private/ (gitignored, ніколи не публікується). move_date: YYYY-MM-DD — заповнити! Іван підтвердив 09.08.2026: він уже в Сан-Франциско, все замовлене — при ньому. Нові замовлення слати на адресу sf."
 }
