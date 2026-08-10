@@ -128,3 +128,4 @@
 * [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) - $~15, купити
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) - $~17, купити
 * [Кліщі обтискні під контакти Powerpole 15/30/45 А](klishchi-obtyskni-pid-kontakty-powerpole-15-30-45-a.md) - $~30, купити
+* [Наконечники кільцеві під 10 AWG на болт шини](nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) - $~10, купити

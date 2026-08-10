@@ -41,6 +41,7 @@ generated: { by: "process:site-build" }
 * [Прочіс ринку LA + Bay Area (новий і б/у) — вибір станції не змінюється](/decisions/prochis-rynku-la-bay-area-novyi-i-b-u-vybir-stantsii-ne-zmin.md)
 * [Кутики рами беремо в Home Depot поштучно, а не на Amazon](/decisions/kutyky-ramy-beremo-v-home-depot-poshtuchno-a-ne-na-amazon.md)
 * [Уся система на шині 12 В — перехід з 24 В](/decisions/usia-systema-na-shyni-12-v-perekhid-z-24-v.md)
+* [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](/decisions/mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)
 
 # Задачі
 
@@ -58,6 +59,7 @@ generated: { by: "process:site-build" }
 * [Тест станції під навантаженням до виїзду (виїзд 28-29.08, Burn 30.08-07.09)](/tasks/test-stantsii-pid-navantazhenniam-do-vyizdu-vyizd-28-29-08-b.md) — чекаємо
 * [Обрати кабель від станції до щита під Anderson на 30 А](/tasks/obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) — до роботи
 * [Магістраль: скасувати повернення однієї бухти Ancor 8/2 АБО взяти готовий кабель 10 AWG з Anderson](/tasks/mahistral-skasuvaty-povernennia-odniiei-bukhty-ancor-8-2-abo.md) — до роботи
+* [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](/tasks/podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) — до роботи
 
 # Закупівля
 
@@ -96,3 +98,4 @@ generated: { by: "process:site-build" }
 * [Кабель від станції до щита під Anderson, переріз на 30 А](/bom/kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) — —, купити
 * [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](/bom/roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) — $~15, купити
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](/bom/roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) — $~17, купити
+* [Наконечники кільцеві під 10 AWG на болт шини](/bom/nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) — $~10, купити

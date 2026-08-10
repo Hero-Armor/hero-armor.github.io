@@ -122,3 +122,4 @@
 * [Діоди на корпусі робота — 3-вольтові: резистор на кожен, підключення паралельно](diody-na-korpusi-robota-3-voltovi-rezystor-na-kozhen-pidkliu.md)
 * [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
+* [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)

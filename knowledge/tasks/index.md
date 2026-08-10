@@ -95,3 +95,4 @@
 * [Магістраль: скасувати повернення однієї бухти Ancor 8/2 АБО взяти готовий кабель 10 AWG з Anderson](mahistral-skasuvaty-povernennia-odniiei-bukhty-ancor-8-2-abo.md) - до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) - до роботи
 * [Вписати розділ Travel & Fuel у вкладку «Hero Armor — Purchase Audit» таблиці Марселя](vpysaty-rozdil-travel-fuel-u-vkladku-hero-armor-purchase-aud.md) - до роботи
+* [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) - до роботи
