@@ -67,7 +67,7 @@ generated: { by: "process:site-build" }
 * [Друга станція EcoFlow — змінна, модель не обрана](/bom/druha-stantsiia-ecoflow-zminna-model-ne-obrana.md) — ~$1600, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $29.99, купити
-* [Кабель: Станція (Anderson 30 А) → щит запобіжників](/bom/kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) — $~65, купити
+* [Кабель: Станція (Anderson 30 А) → щит запобіжників](/bom/kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) — $~48, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](/bom/lifepo4-12-v-100-ah-bufer-pid-svitlo.md) — ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](/bom/victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) — $201, купити

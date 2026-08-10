@@ -44,7 +44,7 @@
 * [Гермороз'єми IP68 (швидкознімні)](hermoroziemy-ip68-shvydkoznimni.md) - $14.95, купити
 * [Гель-конектори / вологозахищені клеми](hel-konektory-volohozakhyshcheni-klemy.md) - $9.99, купити
 * [Гофра/кабель-канал для відводів](hofra-kabel-kanal-dlia-vidvodiv.md) - $30.99, купити
-* [Кабель: Станція (Anderson 30 А) → щит запобіжників](kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) - $~65, купити
+* [Кабель: Станція (Anderson 30 А) → щит запобіжників](kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) - $~48, купити
 * [Кабель: Щит → коробка диммера (Гр.1)](kabel-shchyt-korobka-dymmera-hr-1.md) - $79.77, купити
 * [Кабель: Диммер → кільце прожекторів](kabel-dymmer-kiltse-prozhektoriv.md) - $79.77, купити
 * [Кабель: Відвід на прожектор (найдальший)](kabel-vidvid-na-prozhektor-naidalshyi.md) - $71.12, купити
