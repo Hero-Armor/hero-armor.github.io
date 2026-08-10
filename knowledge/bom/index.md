@@ -28,7 +28,7 @@
 * [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - $96.34 за 12-пак, купити
 * [Gebildet LED 12 мм, металеві](gebildet-led-12-mm-metalevi.md) - $10.99 за 5 шт (фактично DMWD), купити
 * [Gebildet LED 8 мм, металеві](gebildet-led-8-mm-metalevi.md) - $8.99 за 5 шт (фактично DMWD), купити
-* [Врізні вогні в торець подіуму, 0.6 Вт](vrizni-vohni-v-torets-podiumu-0-6-vt.md) - $55.99, купити
+* [Врізні вогні в торець подіуму, 0.6 Вт, IP68](vrizni-vohni-v-torets-podiumu-0-6-vt-ip68.md) - $~35 за набір 20 шт, купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити

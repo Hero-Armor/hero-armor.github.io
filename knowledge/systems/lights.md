@@ -59,6 +59,7 @@ generated: { by: "process:site-build" }
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 * [Діоди на корпусі робота — 3-вольтові: резистор на кожен, підключення паралельно](/decisions/diody-na-korpusi-robota-3-voltovi-rezystor-na-kozhen-pidkliu.md)
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](/decisions/kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
+* [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](/decisions/vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
 
 # Задачі
 
@@ -114,7 +115,7 @@ generated: { by: "process:site-build" }
 * [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — $96.34 за 12-пак, купити
 * [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — $10.99 за 5 шт (фактично DMWD), купити
 * [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — $8.99 за 5 шт (фактично DMWD), купити
-* [Врізні вогні в торець подіуму, 0.6 Вт](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt.md) — $55.99, купити
+* [Врізні вогні в торець подіуму, 0.6 Вт, IP68](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt-ip68.md) — $~35 за набір 20 шт, купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $13.99 за 2 шт, купити

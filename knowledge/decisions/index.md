@@ -124,3 +124,4 @@
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 * [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)
 * [Відстань станція → подіум лишається ~7.6 м; кабель веде суцільний кондуит, не розрізна гофра](vidstan-stantsiia-podium-lyshaietsia-7-6-m-kabel-vede-sutsil.md)
+* [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
