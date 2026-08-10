@@ -124,7 +124,7 @@
 * [Кабель від станції до щита під Anderson, переріз на 30 А](kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) - —, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](dmwd-12mm-led-dozamovyty-1-upakovku.md) - $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) - $11.99 за набір, купити
-* [Гофра 3/4" на магістраль (розрізний лум)](hofra-3-4-na-mahistral-rozriznyi-lum.md) - $~13, купити
+* [Кондуит liquid-tight 3/4" на магістраль (суцільний, не розрізний)](konduyt-liquid-tight-3-4-na-mahistral-sutsilnyi-ne-rozriznyi.md) - $~25, купити
 * [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) - $~15, купити
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) - $~17, купити
 * [Кліщі обтискні під контакти Powerpole 15/30/45 А](klishchi-obtyskni-pid-kontakty-powerpole-15-30-45-a.md) - $~30, купити

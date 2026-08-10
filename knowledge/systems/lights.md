@@ -150,4 +150,4 @@ generated: { by: "process:site-build" }
 * [Кліщі DC/AC — allsun Hall Effect 400 А, True RMS, авторанг](/bom/klishchi-dc-ac-allsun-hall-effect-400-a-true-rms-avtoranh.md) — $33.99, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](/bom/dmwd-12mm-led-dozamovyty-1-upakovku.md) — $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](/bom/shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) — $11.99 за набір, купити
-* [Гофра 3/4" на магістраль (розрізний лум)](/bom/hofra-3-4-na-mahistral-rozriznyi-lum.md) — $~13, купити
+* [Кондуит liquid-tight 3/4" на магістраль (суцільний, не розрізний)](/bom/konduyt-liquid-tight-3-4-na-mahistral-sutsilnyi-ne-rozriznyi.md) — $~25, купити

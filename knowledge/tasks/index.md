@@ -92,7 +92,8 @@
 * [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) - до роботи
 * [Продумати збір історій відвідувачів: мікрофон, розпізнавання, зберігання, публікація на сайті](produmaty-zbir-istorii-vidviduvachiv-mikrofon-rozpiznavannia.md) - до роботи
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) - до роботи
-* [Магістраль: скасувати повернення однієї бухти Ancor 8/2 АБО взяти готовий кабель 10 AWG з Anderson](mahistral-skasuvaty-povernennia-odniiei-bukhty-ancor-8-2-abo.md) - до роботи
+* [Магістраль: бухти 8/2 здані — закриваємо готовим кабелем 10 AWG з Anderson](mahistral-bukhty-8-2-zdani-zakryvaiemo-hotovym-kabelem-10-aw.md) - до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) - до роботи
 * [Вписати розділ Travel & Fuel у вкладку «Hero Armor — Purchase Audit» таблиці Марселя](vpysaty-rozdil-travel-fuel-u-vkladku-hero-armor-purchase-aud.md) - до роботи
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) - до роботи
+* [Підсилити ділянку кабелю там, де реально ходять — накладка або підняти](pidsylyty-dilianku-kabeliu-tam-de-realno-khodiat-nakladka-ab.md) - до роботи

@@ -42,6 +42,7 @@ generated: { by: "process:site-build" }
 * [Кутики рами беремо в Home Depot поштучно, а не на Amazon](/decisions/kutyky-ramy-beremo-v-home-depot-poshtuchno-a-ne-na-amazon.md)
 * [Уся система на шині 12 В — перехід з 24 В](/decisions/usia-systema-na-shyni-12-v-perekhid-z-24-v.md)
 * [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](/decisions/mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)
+* [Відстань станція → подіум лишається ~7.6 м; кабель веде суцільний кондуит, не розрізна гофра](/decisions/vidstan-stantsiia-podium-lyshaietsia-7-6-m-kabel-vede-sutsil.md)
 
 # Задачі
 
@@ -58,7 +59,7 @@ generated: { by: "process:site-build" }
 * [Заміряти ватметром холостий хід станції в перший же день після отримання](/tasks/zamiriaty-vatmetrom-kholostyi-khid-stantsii-v-pershyi-zhe-de.md) — чекаємо
 * [Тест станції під навантаженням до виїзду (виїзд 28-29.08, Burn 30.08-07.09)](/tasks/test-stantsii-pid-navantazhenniam-do-vyizdu-vyizd-28-29-08-b.md) — чекаємо
 * [Обрати кабель від станції до щита під Anderson на 30 А](/tasks/obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) — до роботи
-* [Магістраль: скасувати повернення однієї бухти Ancor 8/2 АБО взяти готовий кабель 10 AWG з Anderson](/tasks/mahistral-skasuvaty-povernennia-odniiei-bukhty-ancor-8-2-abo.md) — до роботи
+* [Магістраль: бухти 8/2 здані — закриваємо готовим кабелем 10 AWG з Anderson](/tasks/mahistral-bukhty-8-2-zdani-zakryvaiemo-hotovym-kabelem-10-aw.md) — до роботи
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](/tasks/podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) — до роботи
 
 # Закупівля
