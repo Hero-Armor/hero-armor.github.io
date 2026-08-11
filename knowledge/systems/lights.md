@@ -107,7 +107,9 @@ generated: { by: "process:site-build" }
 * [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](/tasks/opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) — до роботи
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](/tasks/pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) — до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](/tasks/14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) — до роботи
-* [Врізні вогні: обрати модель за ОТВОРОМ, а не за діаметром корпусу](/tasks/vrizni-vohni-obraty-model-za-otvorom-a-ne-za-diametrom-korpu.md) — до роботи
+* [Врізні вогні торця: розмір отвору взято з креслення 04.8 — 7/8" (22 мм), R25 у сосновому брусі і R11 в алюмінієвій накладці сходинки, 24 шт. Звірити з нашими вогнями B0DQLGG1C8 (у кошику) — чи сідають у 22 мм](/tasks/vrizni-vohni-tortsia-rozmir-otvoru-vziato-z-kreslennia-04-8-.md) — до роботи
+* [Аварійні габаритні вогні на стійки прожекторів (поз. N7 креслення 04.6): 8 шт, IP67, 3 Вт, бурштин/червоний, 10-30 В — у Володимира в специфікації є, у нашій закупівлі їх немає взагалі](/tasks/avariini-habarytni-vohni-na-stiiky-prozhektoriv-poz-n7-kresl.md) — до роботи
+* [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](/tasks/svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) — до роботи
 
 # Закупівля
 
@@ -155,3 +157,4 @@ generated: { by: "process:site-build" }
 * [Кондуит liquid-tight 3/4" на магістраль (суцільний, не розрізний)](/bom/konduyt-liquid-tight-3-4-na-mahistral-sutsilnyi-ne-rozriznyi.md) — $~25, купити
 * [Свердло Форстнера 1" (25.4 мм) по дереву](/bom/sverdlo-forstnera-1-25-4-mm-po-derevu.md) — $~15, купити
 * [Ступінчасте свердло 6-35 мм (дерево + алюміній)](/bom/stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) — $~20, купити
+* [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](/bom/avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) — —, купити
