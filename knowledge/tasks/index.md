@@ -98,4 +98,4 @@
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) - до роботи
 * [Підсилити ділянку кабелю там, де реально ходять — накладка або підняти](pidsylyty-dilianku-kabeliu-tam-de-realno-khodiat-nakladka-ab.md) - до роботи
 * [Врізні вогні: обрати модель за ОТВОРОМ, а не за діаметром корпусу](vrizni-vohni-obraty-model-za-otvorom-a-ne-za-diametrom-korpu.md) - до роботи
-* [З'єднувачі каркасу подіуму: дочекатися відповіді Володимира по LS50Z/HTP37Z (кількість, кут 135° на межі, гвинти 1 1/2" замість цвяхів 3") і тоді купувати](ziednuvachi-karkasu-podiumu-dochekatysia-vidpovidi-volodymyr.md) - чекаємо
+* [З'єднувачі каркасу подіуму: Володимир дав 32 шт (16 на лучах у центрі + 16 між лучами та сходинкою), беремо коробку 50 LS50Z. Лишились без відповіді три питання: гвинти 1 1/2" замість цвяхів 3", кут 135° на межі діапазону LS, і чи лишаються 4 стики частин A–D розбірними на болтах](ziednuvachi-karkasu-podiumu-volodymyr-dav-32-sht-16-na-lucha.md) - чекаємо
