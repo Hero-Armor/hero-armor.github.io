@@ -107,7 +107,7 @@ generated: { by: "process:site-build" }
 * [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](/tasks/opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) — до роботи
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](/tasks/pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) — до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](/tasks/14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) — до роботи
-* [Врізні вогні торця: розмір отвору взято з креслення 04.8 — 7/8" (22 мм), R25 у сосновому брусі і R11 в алюмінієвій накладці сходинки, 24 шт. Звірити з нашими вогнями B0DQLGG1C8 (у кошику) — чи сідають у 22 мм](/tasks/vrizni-vohni-tortsia-rozmir-otvoru-vziato-z-kreslennia-04-8-.md) — до роботи
+* [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення](/tasks/vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) — в роботі
 * [Аварійні габаритні вогні на стійки прожекторів (поз. N7 креслення 04.6): 8 шт, IP67, 3 Вт, бурштин/червоний, 10-30 В — у Володимира в специфікації є, у нашій закупівлі їх немає взагалі](/tasks/avariini-habarytni-vohni-na-stiiky-prozhektoriv-poz-n7-kresl.md) — до роботи
 * [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](/tasks/svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) — до роботи
 
@@ -117,7 +117,7 @@ generated: { by: "process:site-build" }
 * [Luxrite MR16 4000K — лампа прожекторів](/bom/luxrite-mr16-4000k-lampa-prozhektoriv.md) — $96.34 за 12-пак, купити
 * [Gebildet LED 12 мм, металеві](/bom/gebildet-led-12-mm-metalevi.md) — $10.99 за 5 шт (фактично DMWD), купити
 * [Gebildet LED 8 мм, металеві](/bom/gebildet-led-8-mm-metalevi.md) — $8.99 за 5 шт (фактично DMWD), купити
-* [Врізні вогні в торець подіуму, 0.6 Вт, IP68](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt-ip68.md) — $~35 за набір 20 шт, купити
+* [Врізні вогні в торець подіуму, 0.6 Вт, IP68](/bom/vrizni-vohni-v-torets-podiumu-0-6-vt-ip68.md) — $~35 за набір 12 шт (~$105 за три), купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](/bom/neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) — $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](/bom/gledopto-esp32-wled-ip65.md) — $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](/bom/supernight-shim-dymmer-12-24-v-30-a.md) — $13.99 за 2 шт, купити
