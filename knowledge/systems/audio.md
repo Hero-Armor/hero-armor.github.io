@@ -35,6 +35,7 @@ generated: { by: "process:site-build" }
 * [XSMT на ЦАПі — обовʼязковий дріт на 3.3 В](/decisions/xsmt-na-tsapi-oboviazkovyi-drit-na-3-3-v.md)
 * [Заміряно на живому вузлі: 1.5 Вт, працює від 10 В, радар бачить крізь пластик](/decisions/zamiriano-na-zhyvomu-vuzli-1-5-vt-pratsiuie-vid-10-v-radar-b.md)
 * [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](/decisions/nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
+* [Аудіо-вузол оновлюється по повітрю: власна точка WiFi на вимогу + автовідкат на попередню прошивку](/decisions/audio-vuzol-onovliuietsia-po-povitriu-vlasna-tochka-wifi-na-.md)
 
 # Задачі
 
