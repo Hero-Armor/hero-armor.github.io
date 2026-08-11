@@ -127,4 +127,4 @@
 * [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
 * [Аудіо-вузол оновлюється по повітрю: власна точка WiFi на вимогу + автовідкат на попередню прошивку](audio-vuzol-onovliuietsia-po-povitriu-vlasna-tochka-wifi-na-.md)
 * [Резервна зарядка станції живлення — від RV, якщо сонце відмовить](rezervna-zariadka-stantsii-zhyvlennia-vid-rv-iakshcho-sontse.md)
-* [Вузли каркасу подіуму підсилюємо кутиками: мінімум 32 шт, на всю висоту дошки](vuzly-karkasu-podiumu-pidsyliuiemo-kutykamy-minimum-32-sht-n.md)
+* [Кутиків на подіум — рівно 16, тільки на лучах біля малого восьмикутника](kutykiv-na-podium-rivno-16-tilky-na-luchakh-bilia-maloho-vos.md)
