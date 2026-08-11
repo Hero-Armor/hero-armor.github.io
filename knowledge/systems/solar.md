@@ -43,6 +43,7 @@ generated: { by: "process:site-build" }
 * [Уся система на шині 12 В — перехід з 24 В](/decisions/usia-systema-na-shyni-12-v-perekhid-z-24-v.md)
 * [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](/decisions/mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)
 * [Відстань станція → подіум лишається ~7.6 м; кабель веде суцільний кондуит, не розрізна гофра](/decisions/vidstan-stantsiia-podium-lyshaietsia-7-6-m-kabel-vede-sutsil.md)
+* [Резервна зарядка станції живлення — від RV, якщо сонце відмовить](/decisions/rezervna-zariadka-stantsii-zhyvlennia-vid-rv-iakshcho-sontse.md)
 
 # Задачі
 
