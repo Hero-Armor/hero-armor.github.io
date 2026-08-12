@@ -1,0 +1,102 @@
+<title>Hero Armor — розпис робота</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c; }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem; margin: 2.4rem 0 .9rem; }
+  .sub { color: var(--ink-2); max-width: 64ch; margin: 0 0 1.4rem; }
+  
+  a { color: var(--accent); text-underline-offset: .15em; }
+  a:hover { color: var(--ink); }
+  .banner { border-left: 3px solid var(--warn); background: var(--warn-bg); color: var(--ink);
+            border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-bottom: 1.2rem; font-size: .9rem; }
+  .banner.ok { border-left-color: var(--good); background: var(--good-bg); }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: .5rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
+          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
+  .pill.done { background: var(--good-bg); color: var(--good); }
+  .pill.doing { background: var(--warn-bg); color: var(--warn); }
+  .pill.waiting { background: var(--warn-bg); color: var(--warn); }
+  .pill.todo { background: var(--bg); color: var(--ink-2); border: 1px solid var(--line); }
+  .pill.ordered { background: var(--warn-bg); color: var(--warn); }
+  .pill.shipped { background: var(--warn-bg); color: var(--warn); }
+  .pill.delivered { background: var(--good-bg); color: var(--good); }
+  .pill.received { background: var(--good-bg); color: var(--good); }
+  .comp { font-family: var(--mono); font-size: .68rem; color: var(--signal); }
+  .gen { font-size: .75rem; color: var(--ink-2); margin-top: 2rem; }
+
+  /* сторінка розпису */
+  .zone { display: grid; grid-template-columns: 210px 1fr; gap: 1rem;
+          border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem;
+          margin: .8rem 0; background: var(--panel); }
+  .sw { display: flex; gap: 0; border-radius: 6px; overflow: hidden; height: 62px; }
+  .sw div { flex: 1; }
+  .sw-cap { font-size: .68rem; color: var(--ink-2); margin-top: .3rem; }
+  .zone h3 { margin: 0 0 .25rem; font-size: 1rem; }
+  .code { font-family: var(--mono); font-size: 1rem; color: var(--signal); }
+  .zone p { margin: .3rem 0; font-size: .86rem; }
+  .zone .meta { color: var(--ink-2); font-size: .78rem; }
+  figure.dia { margin: 1rem 0; }
+  figure.dia svg { max-width: 100%; height: auto; }
+  @media (max-width: 640px) { .zone { grid-template-columns: 1fr; } }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← головна</a> · розпис робота</p>
+  <h1>Розпис робота — палітра і фарби</h1>
+  <p class="sub">Кольори взяті не на око, а зміряні програмно з оригінальної роботи Захара: пікселі фігури розібрані за відтінком, і для кожної зони порахований основний тон плюс тінь і світло. Головне, що з цього випливає — синій в оригіналі приглушений сталевий, а не яскравий, і бурштинового там лише два відсотки площі, це тонка окантовка, а не заливка.</p>
+
+{{PALETTE_DIA}}
+
+  <h2>Чотири зони</h2>
+{{ZONES_HTML}}
+
+  <h2>Чим це фарбувати</h2>
+  <p class="sub">Точного готового синього під наш код немає ні в Rust-Oleum, ні в Krylon — це перевірено. Тому нижче три шляхи: найближчий готовий колір, який треба звірити очима; темніший базою з приглушенням зверху; і тонування точно під код. Для синього третій шлях найнадійніший — він займає майже всю поверхню, і промах побачать усі.</p>
+{{PAINT_BUY}}
+
+  <h2>Як робиться затертий метал</h2>
+  <p class="sub">Сірі пластини — це не один тон із балона, а техніка. Темна база, зверху металік, далі суха кисть світлим по ребрах і виступах, потім рідкий темний замив у заглибини — і одразу протерти ганчіркою по площинах. Замив лишається в щілинах, площини виходять затертими. Саме це видно на оригіналі: темні смуги в прорізях і витертий світлий метал по центру панелі. Коричневий і чорний матовий акрил у списку — рівно для цього.</p>
+  <p class="sub">Дзеркального хрому в проєкті немає, тому лак поверх металу класти можна — але матовий або сатиновий. Глянець поверх затертої сталі вбиває ефект: поверхня стає схожа на свіжий пластик.</p>
+
+  <p class="gen">Згенеровано {{GEN_DATE}} · site/build.py · кольори: armor/model/palette.py</p>
+</div>

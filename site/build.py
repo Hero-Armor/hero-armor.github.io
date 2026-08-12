@@ -2161,6 +2161,41 @@ def build():
                .replace("{{SCHEMES_HTML}}", "\n".join(sch_blocks))
                .replace("{{GEN_DATE}}", today.isoformat()))
 
+
+    # ================= paint page (розпис робота) =================
+    # Окрема сторінка, а не блок на сторінці броні: там світло, лампи і катафоти,
+    # і палітра в тому сусідстві губилась (зауваження Івана 12.08.2026).
+    paint = tmpl("paint.tmpl.html")
+    pal = json.loads((ROOT / "armor/data/palette.json").read_text())
+    dia = ""
+    svg_f = ROOT / "armor/model/palette.svg"
+    if svg_f.exists():
+        svg = svg_f.read_text()
+        dia = ('  <figure class="dia">\n' + svg[svg.index("<svg"):] +
+               '\n    <figcaption>Схема палітри: ліворуч оригінал Захара з виносками на зони, '
+               'праворуч для кожної зони тінь, основний тон і світло з кодами.</figcaption>\n  </figure>')
+    zone_cards = []
+    for z in pal["zones"]:
+        zone_cards.append(
+            f'  <div class="zone">\n'
+            f'    <div>\n      <div class="sw">'
+            f'<div style="background:{z["shadow"]}"></div>'
+            f'<div style="background:{z["hex"]}"></div>'
+            f'<div style="background:{z["light"]}"></div></div>\n'
+            f'      <div class="sw-cap">тінь {z["shadow"]} · <b>{z["hex"]}</b> · світло {z["light"]}</div>\n'
+            f'    </div>\n'
+            f'    <div>\n      <h3>{esc(z["label"])}</h3>\n'
+            f'      <p class="code">{z["hex"]}<span class="meta">  ціль для фарби {z.get("target", z["hex"])}</span></p>\n'
+            f'      <p>{esc(z["where"])}</p>\n'
+            f'      <p class="meta">{esc(z["finish"])} · {esc(z["share"])}</p>\n'
+            f'      <p>{esc(z.get("note", ""))}</p>\n    </div>\n  </div>')
+    paint_rows = [b for b in BOM if b.get("tag") == "paint"]
+    paint = (paint
+             .replace("{{PALETTE_DIA}}", dia)
+             .replace("{{ZONES_HTML}}", "\n".join(zone_cards))
+             .replace("{{PAINT_BUY}}", photo_wall_html(paint_rows) + buy_table_html(paint_rows))
+             .replace("{{GEN_DATE}}", today.isoformat()))
+
     # ================= ops page =================
     ops = tmpl("ops.tmpl.html")
     if ADDR.get("move_date"):
@@ -2913,7 +2948,7 @@ def build():
     pages = {**circ_pages,
              "index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
-             "schemes.html": schemes,
+             "schemes.html": schemes, "paint.html": paint,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
              "solar_lab.html": slab, "cables_lab.html": clab,
