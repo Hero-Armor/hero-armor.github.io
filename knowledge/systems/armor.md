@@ -31,6 +31,7 @@ generated: { by: "process:site-build" }
 * [Художниця: підтвердити ФІНІШ лаку — матовий/сатиновий замість глянцю. Дзеркального хрому нема (Іван 12.08: потрібен затертий метал), тому проблема з лакуванням хрому знята, лишилось питання блиску](/tasks/khudozhnytsia-pidtverdyty-finish-laku-matovyi-satynovyi-zami.md) — чекаємо
 * [ЗАКРИТО 12.08: пластик ASA, не PLA — окремий пластиковий праймер не обовʼязковий](/tasks/zakryto-12-08-plastyk-asa-ne-pla-okremyi-plastykovyi-praimer.md) — готово
 * [ЗАКРИТО 12.08: гнучких деталей у роботі нема взагалі (Іван) — питання зняте](/tasks/zakryto-12-08-hnuchkykh-detalei-u-roboti-nema-vzahali-ivan-p.md) — готово
+* [Замовити 4 тестові балони фарби і пофарбувати однакові обрізки ASA: Rust-Oleum Painter Touch 2X Gloss Deep Blue 334032, Benjamin Moore Old Glory 811 (кастомний аерозоль у Gray's), BEHR Premium Citrus Orange SP-120 Gloss, Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](/tasks/zamovyty-4-testovi-balony-farby-i-pofarbuvaty-odnakovi-obriz.md) — до роботи
 
 # Закупівля
 
