@@ -131,7 +131,7 @@
 * [Наконечники кільцеві під 10 AWG на болт шини](nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) - $~10, купити
 * [Свердло Форстнера 1" (25.4 мм) по дереву](sverdlo-forstnera-1-25-4-mm-po-derevu.md) - $~15, купити
 * [Ступінчасте свердло 6-35 мм (дерево + алюміній)](stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) - $~20, купити
-* [Simpson Strong-Tie LS50Z — кутик з регульованим кутом (2x6/2x8), ZMAX](simpson-strong-tie-ls50z-kutyk-z-rehulovanym-kutom-2x6-2x8-z.md) - $76, купити
+* [Simpson Strong-Tie LS50Z — кутик з регульованим кутом (2x6/2x8), ZMAX](simpson-strong-tie-ls50z-kutyk-z-rehulovanym-kutom-2x6-2x8-z.md) - $67, купити
 * [Simpson Strong-Tie HTP37Z — пластина-тяж 3"x7", 16ga, ZMAX](simpson-strong-tie-htp37z-plastyna-tiazh-3-x7-16ga-zmax.md) - —, купити
 * [Гвинти Simpson SD9112 #9x1 1/2" (Strong-Drive connector screw)](hvynty-simpson-sd9112-9x1-1-2-strong-drive-connector-screw.md) - $33, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) - —, купити
