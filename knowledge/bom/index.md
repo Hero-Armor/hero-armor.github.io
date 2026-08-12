@@ -156,3 +156,9 @@
 * [Пензлі, набір 20 шт](penzli-nabir-20-sht.md) - $23, купити
 * [Акрил матовий Apple Barrel 2oz — коричневий і чорний](akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) - $4, купити
 * [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) - $7, купити
+* [Синій основний — кандидат 1: Rust-Oleum Painter's Touch 2X Satin Slate Blue 249066](synii-osnovnyi-kandydat-1-rust-oleum-painters-touch-2x-satin.md) - $7, купити
+* [Синій основний — кандидат 2: Rust-Oleum Painter's Touch 2X Satin Midnight Blue 334091](synii-osnovnyi-kandydat-2-rust-oleum-painters-touch-2x-satin.md) - $7, купити
+* [Синій основний — кандидат 3: кастомне тонування точно під #3E5878](synii-osnovnyi-kandydat-3-kastomne-tonuvannia-tochno-pid-3e5.md) - $25-30/балон, купити
+* [Бурштиновий акцент — кастомне тонування під #B98B42](burshtynovyi-aktsent-kastomne-tonuvannia-pid-b98b42.md) - —, купити
+* [Темний карбон — Krylon COLORmaxx Smoke Gray K05539007](temnyi-karbon-krylon-colormaxx-smoke-gray-k05539007.md) - $6, купити
+* [Сірий метал — Rust-Oleum Universal Metallic Flat Soft Iron 271473](siryi-metal-rust-oleum-universal-metallic-flat-soft-iron-271.md) - $9, купити
