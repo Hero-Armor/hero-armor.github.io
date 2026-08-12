@@ -1,0 +1,15 @@
+---
+type: "Part"
+title: "Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано"
+description: "Художниця просила Behr yellow-orange gloss. У аерозольній лінії Behr такого відтінку НЕ знайдено — у них спреї тільки готовими кольорами, кастомного тонування а"
+resource: "https://www.homedepot.com/p/Rust-Oleum-Painter-s-Touch-2X-12-oz-Gloss-Real-Orange-General-Purpose-Spray-Paint-334043/307244823"
+tags: ["armor"]
+quantity: "1 балон"
+price: "$7"
+procurement_status: "tbd"
+generated: { by: "process:site-build" }
+---
+
+Художниця просила Behr yellow-orange gloss. У аерозольній лінії Behr такого відтінку НЕ знайдено — у них спреї тільки готовими кольорами, кастомного тонування аерозолю нема. Найближче у Behr — чистий жовтий Unmellow Yellow P300-7. Пропонуємо заміну: Rust-Oleum Real Orange 334043 або Sun Yellow 334046. ПОТРІБНЕ ЇЇ СЛОВО — це єдина позиція, де доводиться міняти бренд.
+
+Система: [Броня](/systems/armor.md) · статус: **купити** · ціна $7 · к-сть 1 балон

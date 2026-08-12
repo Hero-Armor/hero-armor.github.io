@@ -1,0 +1,15 @@
+---
+type: "Part"
+title: "Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017"
+description: "Список художниці для розпису робота, зібраний 12.08. Перекриття 10-12 кв.футів на балон, 8 балонів дають 2+ шари по всій фігурі. ⚠ Під 3D-друк форуми вимагають "
+resource: "https://www.homedepot.com/p/Rust-Oleum-Painter-s-Touch-2X-12-oz-Flat-Gray-Primer-General-Purpose-Primer-Spray-334017/307244825"
+tags: ["armor"]
+quantity: "8 балонів"
+price: "$52"
+procurement_status: "tbd"
+generated: { by: "process:site-build" }
+---
+
+Список художниці для розпису робота, зібраний 12.08. Перекриття 10-12 кв.футів на балон, 8 балонів дають 2+ шари по всій фігурі. ⚠ Під 3D-друк форуми вимагають ОКРЕМИЙ пластиковий праймер (Rust-Oleum Specialty Plastic Primer або Krylon Fusion) — сірого ґрунту на PLA/PETG мало.
+
+Система: [Броня](/systems/armor.md) · статус: **купити** · ціна $52 · к-сть 8 балонів

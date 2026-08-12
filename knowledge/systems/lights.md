@@ -111,6 +111,7 @@ generated: { by: "process:site-build" }
 * [Аварійні габаритні вогні на стійки прожекторів (поз. N7 креслення 04.6): 8 шт, IP67, 3 Вт, бурштин/червоний, 10-30 В — у Володимира в специфікації є, у нашій закупівлі їх немає взагалі](/tasks/avariini-habarytni-vohni-na-stiiky-prozhektoriv-poz-n7-kresl.md) — до роботи
 * [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](/tasks/svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) — до роботи
 * [Світло в торець подіуму: Іван чекає відповідь по лазерній різці отворів. Якщо великі круглі отвори зробити не вийде — беремо накладні (ALFU бурштин $2/шт або Dream Lighting теплий білий $4.5/шт)](/tasks/svitlo-v-torets-podiumu-ivan-chekaie-vidpovid-po-lazernii-ri.md) — чекаємо
+* [Ідентифікувати лампи MR16, що приїхали 10.08 (замовлення поза нашою базою). Якщо на коробці не Luxrite — перевибір: стенд 31.07 показав, що саме Luxrite не мерехтить на мінімумі під ШІМ-диммером, на інший бренд цей результат не переноситься, треба перетестувати перед монтажем](/tasks/identyfikuvaty-lampy-mr16-shcho-pryikhaly-10-08-zamovlennia-.md) — до роботи
 
 # Закупівля
 
@@ -162,3 +163,4 @@ generated: { by: "process:site-build" }
 * [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](/bom/nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) — $~108, купити
 * [Бокові маркери ALFU, накладні, 10 шт (варіант замість врізних)](/bom/bokovi-markery-alfu-nakladni-10-sht-variant-zamist-vriznykh.md) — $60 ($2/шт), купити
 * [Rock light GZ5CG, чорний накладний, 2 шт у наборі](/bom/rock-light-gz5cg-chornyi-nakladnyi-2-sht-u-nabori.md) — $90 ($7.5/шт), купити
+* [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](/bom/sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) — —, купити

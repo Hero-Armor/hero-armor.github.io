@@ -142,3 +142,17 @@
 * [Пластини кріплення ґрунтових анкерів до подіуму — лазерна різка 5x7", 3/16"](plastyny-kriplennia-gruntovykh-ankeriv-do-podiumu-lazerna-ri.md) - —, купити
 * [Ґрунтовка-герметик під фарбу Zinsser Bulls Eye 1-2-3 (обробка каркасу подіуму)](gruntovka-hermetyk-pid-farbu-zinsser-bulls-eye-1-2-3-obrobka.md) - $~40, купити
 * [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
+* [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) - —, купити
+* [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $52, купити
+* [Хром Rust-Oleum Stops Rust Bright Coat Metallic Chrome 11oz 7718830](khrom-rust-oleum-stops-rust-bright-coat-metallic-chrome-11oz.md) - $70-80, купити
+* [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) - $49, купити
+* [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $52, купити
+* [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $39, купити
+* [Клей J-B Weld ClearWeld шприц 0.85 oz 50112](klei-j-b-weld-clearweld-shpryts-0-85-oz-50112.md) - $78, купити
+* [Респіратори 3M 8247 R95 під фарбу](respiratory-3m-8247-r95-pid-farbu.md) - $18, купити
+* [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) - $38, купити
+* [Рукавички вінілові одноразові HDX, 100 шт](rukavychky-vinilovi-odnorazovi-hdx-100-sht.md) - $30-45, купити
+* [Мікрофіброві ганчірки HDX 2 lbs](mikrofibrovi-hanchirky-hdx-2-lbs.md) - $9, купити
+* [Пензлі, набір 20 шт](penzli-nabir-20-sht.md) - $23, купити
+* [Акрил матовий Apple Barrel 2oz — коричневий і чорний](akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) - $4, купити
+* [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) - $7, купити
