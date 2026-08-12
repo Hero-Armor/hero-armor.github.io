@@ -43,7 +43,7 @@ generated: { by: "process:site-build" }
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](/bom/synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) — $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](/bom/bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) — $52, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](/bom/prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) — $39, купити
-* [Клей J-B Weld ClearWeld шприц 0.85 oz 50112](/bom/klei-j-b-weld-clearweld-shpryts-0-85-oz-50112.md) — $78, купити
+* [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](/bom/klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) — $19-25, купити
 * [Респіратори 3M 8247 R95 під фарбу](/bom/respiratory-3m-8247-r95-pid-farbu.md) — $18, купити
 * [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](/bom/maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) — $38, купити
 * [Рукавички вінілові одноразові HDX, 100 шт](/bom/rukavychky-vinilovi-odnorazovi-hdx-100-sht.md) — $30-45, купити
