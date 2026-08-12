@@ -56,6 +56,7 @@ generated: { by: "process:site-build" }
 * [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](/tasks/prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) — до роботи
 * [Продумати збір історій відвідувачів: мікрофон, розпізнавання, зберігання, публікація на сайті](/tasks/produmaty-zbir-istorii-vidviduvachiv-mikrofon-rozpiznavannia.md) — до роботи
 * [Перед виїздом на плайю: вимкнути автовхід вузла в мережу (bootwifi off)](/tasks/pered-vyizdom-na-plaiiu-vymknuty-avtovkhid-vuzla-v-merezhu-b.md) — до роботи
+* [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](/tasks/daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) — до роботи
 
 # Закупівля
 

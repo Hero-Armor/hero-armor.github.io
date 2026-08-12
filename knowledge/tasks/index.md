@@ -102,3 +102,4 @@
 * [Аварійні габаритні вогні на стійки прожекторів (поз. N7 креслення 04.6): 8 шт, IP67, 3 Вт, бурштин/червоний, 10-30 В — у Володимира в специфікації є, у нашій закупівлі їх немає взагалі](avariini-habarytni-vohni-na-stiiky-prozhektoriv-poz-n7-kresl.md) - до роботи
 * [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) - до роботи
 * [Перед виїздом на плайю: вимкнути автовхід вузла в мережу (bootwifi off)](pered-vyizdom-na-plaiiu-vymknuty-avtovkhid-vuzla-v-merezhu-b.md) - до роботи
+* [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) - до роботи
