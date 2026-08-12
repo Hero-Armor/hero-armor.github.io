@@ -110,6 +110,7 @@ generated: { by: "process:site-build" }
 * [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення](/tasks/vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) — в роботі
 * [Аварійні габаритні вогні на стійки прожекторів (поз. N7 креслення 04.6): 8 шт, IP67, 3 Вт, бурштин/червоний, 10-30 В — у Володимира в специфікації є, у нашій закупівлі їх немає взагалі](/tasks/avariini-habarytni-vohni-na-stiiky-prozhektoriv-poz-n7-kresl.md) — до роботи
 * [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](/tasks/svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) — до роботи
+* [Світло в торець подіуму: Іван чекає відповідь по лазерній різці отворів. Якщо великі круглі отвори зробити не вийде — беремо накладні (ALFU бурштин $2/шт або Dream Lighting теплий білий $4.5/шт)](/tasks/svitlo-v-torets-podiumu-ivan-chekaie-vidpovid-po-lazernii-ri.md) — чекаємо
 
 # Закупівля
 
@@ -159,3 +160,5 @@ generated: { by: "process:site-build" }
 * [Ступінчасте свердло 6-35 мм (дерево + алюміній)](/bom/stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) — $~20, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](/bom/avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) — —, купити
 * [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](/bom/nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) — $~108, купити
+* [Бокові маркери ALFU, накладні, 10 шт (варіант замість врізних)](/bom/bokovi-markery-alfu-nakladni-10-sht-variant-zamist-vriznykh.md) — $60 ($2/шт), купити
+* [Rock light GZ5CG, чорний накладний, 2 шт у наборі](/bom/rock-light-gz5cg-chornyi-nakladnyi-2-sht-u-nabori.md) — $90 ($7.5/шт), купити

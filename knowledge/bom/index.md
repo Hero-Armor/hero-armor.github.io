@@ -136,3 +136,7 @@
 * [Гвинти Simpson SD9112 #9x1 1/2" (Strong-Drive connector screw)](hvynty-simpson-sd9112-9x1-1-2-strong-drive-connector-screw.md) - $33, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) - —, купити
 * [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) - $~108, купити
+* [Бокові маркери ALFU, накладні, 10 шт (варіант замість врізних)](bokovi-markery-alfu-nakladni-10-sht-variant-zamist-vriznykh.md) - $60 ($2/шт), купити
+* [Rock light GZ5CG, чорний накладний, 2 шт у наборі](rock-light-gz5cg-chornyi-nakladnyi-2-sht-u-nabori.md) - $90 ($7.5/шт), купити
+* [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $~23, купити
+* [Пластини кріплення ґрунтових анкерів до подіуму — лазерна різка 5x7", 3/16"](plastyny-kriplennia-gruntovykh-ankeriv-do-podiumu-lazerna-ri.md) - —, купити

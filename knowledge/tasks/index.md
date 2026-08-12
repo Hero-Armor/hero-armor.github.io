@@ -103,3 +103,5 @@
 * [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) - до роботи
 * [Перед виїздом на плайю: вимкнути автовхід вузла в мережу (bootwifi off)](pered-vyizdom-na-plaiiu-vymknuty-avtovkhid-vuzla-v-merezhu-b.md) - до роботи
 * [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) - до роботи
+* [Замовити 4 пластини 5x7" зі сталі 3/16" з отворами під M10 на лазерній різці (SendCutSend/OshCut) — притискання ґрунтових анкерів. Володимир 12.08 сказав, що 1/16" з креслення замало](zamovyty-4-plastyny-5x7-zi-stali-3-16-z-otvoramy-pid-m10-na-.md) - до роботи
+* [Світло в торець подіуму: Іван чекає відповідь по лазерній різці отворів. Якщо великі круглі отвори зробити не вийде — беремо накладні (ALFU бурштин $2/шт або Dream Lighting теплий білий $4.5/шт)](svitlo-v-torets-podiumu-ivan-chekaie-vidpovid-po-lazernii-ri.md) - чекаємо
