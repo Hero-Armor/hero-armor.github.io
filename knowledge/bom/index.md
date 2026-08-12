@@ -144,7 +144,7 @@
 * [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) - —, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $52, купити
-* [Хром Rust-Oleum Stops Rust Bright Coat Metallic Chrome 11oz 7718830](khrom-rust-oleum-stops-rust-bright-coat-metallic-chrome-11oz.md) - $70-80, купити
+* [Металік Rust-Oleum Universal All-Surface Metallic Titanium Silver 245220, 11 oz](metalik-rust-oleum-universal-all-surface-metallic-titanium-s.md) - $48, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) - $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $52, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $39, купити
