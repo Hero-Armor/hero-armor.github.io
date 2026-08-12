@@ -55,6 +55,7 @@ generated: { by: "process:site-build" }
 * [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](/tasks/diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) — готово
 * [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](/tasks/prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) — до роботи
 * [Продумати збір історій відвідувачів: мікрофон, розпізнавання, зберігання, публікація на сайті](/tasks/produmaty-zbir-istorii-vidviduvachiv-mikrofon-rozpiznavannia.md) — до роботи
+* [Перед виїздом на плайю: вимкнути автовхід вузла в мережу (bootwifi off)](/tasks/pered-vyizdom-na-plaiiu-vymknuty-avtovkhid-vuzla-v-merezhu-b.md) — до роботи
 
 # Закупівля
 
