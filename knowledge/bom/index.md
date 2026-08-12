@@ -140,3 +140,4 @@
 * [Rock light GZ5CG, чорний накладний, 2 шт у наборі](rock-light-gz5cg-chornyi-nakladnyi-2-sht-u-nabori.md) - $90 ($7.5/шт), купити
 * [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $~23, купити
 * [Пластини кріплення ґрунтових анкерів до подіуму — лазерна різка 5x7", 3/16"](plastyny-kriplennia-gruntovykh-ankeriv-do-podiumu-lazerna-ri.md) - —, купити
+* [Ґрунтовка-герметик під фарбу Zinsser Bulls Eye 1-2-3 (обробка каркасу подіуму)](gruntovka-hermetyk-pid-farbu-zinsser-bulls-eye-1-2-3-obrobka.md) - $~40, купити

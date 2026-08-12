@@ -105,3 +105,5 @@
 * [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) - до роботи
 * [Замовити 4 пластини 5x7" зі сталі 3/16" з отворами під M10 на лазерній різці (SendCutSend/OshCut) — притискання ґрунтових анкерів. Володимир 12.08 сказав, що 1/16" з креслення замало](zamovyty-4-plastyny-5x7-zi-stali-3-16-z-otvoramy-pid-m10-na-.md) - до роботи
 * [Світло в торець подіуму: Іван чекає відповідь по лазерній різці отворів. Якщо великі круглі отвори зробити не вийде — беремо накладні (ALFU бурштин $2/шт або Dream Lighting теплий білий $4.5/шт)](svitlo-v-torets-podiumu-ivan-chekaie-vidpovid-po-lazernii-ri.md) - чекаємо
+* [Обробка дерева каркасу: чекаємо «так» від Володимира на ґрунтовку Zinsser 1-2-3 замість рідкого скла (силікат заважає розпису художниці і в США в магазинах не продається)](obrobka-dereva-karkasu-chekaiemo-tak-vid-volodymyra-na-grunt.md) - чекаємо
+* [Уточнити у Володимира кількість пластин TP57 (у Home Depot вони 5 3/4"x7" 20ga, а не 5x7) — 4 чи 8 шт](utochnyty-u-volodymyra-kilkist-plastyn-tp57-u-home-depot-von.md) - чекаємо

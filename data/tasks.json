@@ -725,5 +725,17 @@
   "system": "lights",
   "status": "waiting",
   "owner": "ivan"
+ },
+ {
+  "task": "Обробка дерева каркасу: чекаємо «так» від Володимира на ґрунтовку Zinsser 1-2-3 замість рідкого скла (силікат заважає розпису художниці і в США в магазинах не продається)",
+  "system": "project",
+  "status": "waiting",
+  "owner": "volodymyr"
+ },
+ {
+  "task": "Уточнити у Володимира кількість пластин TP57 (у Home Depot вони 5 3/4\"x7\" 20ga, а не 5x7) — 4 чи 8 шт",
+  "system": "project",
+  "status": "waiting",
+  "owner": "volodymyr"
  }
 ]
