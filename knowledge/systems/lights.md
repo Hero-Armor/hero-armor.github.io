@@ -158,3 +158,4 @@ generated: { by: "process:site-build" }
 * [Свердло Форстнера 1" (25.4 мм) по дереву](/bom/sverdlo-forstnera-1-25-4-mm-po-derevu.md) — $~15, купити
 * [Ступінчасте свердло 6-35 мм (дерево + алюміній)](/bom/stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) — $~20, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](/bom/avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) — —, купити
+* [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](/bom/nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) — $~108, купити

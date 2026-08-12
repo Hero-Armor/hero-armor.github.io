@@ -135,3 +135,4 @@
 * [Simpson Strong-Tie HTP37Z — пластина-тяж 3"x7", 16ga, ZMAX](simpson-strong-tie-htp37z-plastyna-tiazh-3-x7-16ga-zmax.md) - —, купити
 * [Гвинти Simpson SD9112 #9x1 1/2" (Strong-Drive connector screw)](hvynty-simpson-sd9112-9x1-1-2-strong-drive-connector-screw.md) - $33, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) - —, купити
+* [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) - $~108, купити
