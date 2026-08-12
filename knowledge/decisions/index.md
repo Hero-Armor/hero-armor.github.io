@@ -128,3 +128,4 @@
 * [Аудіо-вузол оновлюється по повітрю: власна точка WiFi на вимогу + автовідкат на попередню прошивку](audio-vuzol-onovliuietsia-po-povitriu-vlasna-tochka-wifi-na-.md)
 * [Резервна зарядка станції живлення — від RV, якщо сонце відмовить](rezervna-zariadka-stantsii-zhyvlennia-vid-rv-iakshcho-sontse.md)
 * [Кутиків на подіум — рівно 16, тільки на лучах біля малого восьмикутника](kutykiv-na-podium-rivno-16-tilky-na-luchakh-bilia-maloho-vos.md)
+* [Каркас подіуму обробляємо ґрунтовкою-герметиком, не рідким склом](karkas-podiumu-obrobliaiemo-gruntovkoiu-hermetykom-ne-ridkym.md)
