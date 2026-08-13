@@ -162,3 +162,8 @@
 * [Бурштиновий акцент — кастомне тонування під #B98B42](burshtynovyi-aktsent-kastomne-tonuvannia-pid-b98b42.md) - —, купити
 * [Темний карбон — Krylon COLORmaxx Smoke Gray K05539007](temnyi-karbon-krylon-colormaxx-smoke-gray-k05539007.md) - $6, купити
 * [Сірий метал — Rust-Oleum Universal Metallic Flat Soft Iron 271473](siryi-metal-rust-oleum-universal-metallic-flat-soft-iron-271.md) - $9, купити
+* [Твердосплавний диск по алюмінію для дискової пили (різ підлоги подіуму)](tverdosplavnyi-dysk-po-aliuminiiu-dlia-dyskovoi-pyly-riz-pid.md) - $20-40, купити
+* [Полотно по металу для електролобзика (внутрішній вигин підлоги R 13 5/8")](polotno-po-metalu-dlia-elektrolobzyka-vnutrishnii-vyhyn-pidl.md) - $10-15, купити
+* [Циркульне пристосування Rockler для фрезера (виріз кола Ø692 мм у підлозі)](tsyrkulne-prystosuvannia-rockler-dlia-frezera-vyriz-kola-692.md) - $39.99, купити
+* [Фреза твердосплавна однозуба (O-flute upcut) по алюмінію, хвостовик 1/4"](freza-tverdosplavna-odnozuba-o-flute-upcut-po-aliuminiiu-khv.md) - $30-40, купити
+* [Знімач задирок Noga DB1000 (двосторонній, під листовий метал)](znimach-zadyrok-noga-db1000-dvostoronnii-pid-lystovyi-metal.md) - $19.99, купити
