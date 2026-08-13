@@ -169,3 +169,4 @@ generated: { by: "process:site-build" }
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](/bom/sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) — —, купити
 * [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](/bom/kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) — $15-25, купити
 * [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](/bom/vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) — $28.49, купити
+* [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](/bom/rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) — $12.12, купити
