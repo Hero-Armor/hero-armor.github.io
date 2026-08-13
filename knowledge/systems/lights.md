@@ -57,7 +57,7 @@ generated: { by: "process:site-build" }
 * [Кабель 12/2 перезамовляємо: у реєстрі стояв круглий Ancor за $208 замість плоского за $103](/decisions/kabel-12-2-perezamovliaiemo-u-reiestri-stoiav-kruhlyi-ancor-.md)
 * [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](/decisions/mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
-* [Діоди на корпусі робота — 3-вольтові: резистор на кожен, підключення паралельно](/decisions/diody-na-korpusi-robota-3-voltovi-rezystor-na-kozhen-pidkliu.md)
+* [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, монтуються шлейфом по колу](/decisions/indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](/decisions/kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 * [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](/decisions/vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
 
