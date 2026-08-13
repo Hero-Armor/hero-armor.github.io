@@ -57,6 +57,7 @@ generated: { by: "process:site-build" }
 * [Продумати збір історій відвідувачів: мікрофон, розпізнавання, зберігання, публікація на сайті](/tasks/produmaty-zbir-istorii-vidviduvachiv-mikrofon-rozpiznavannia.md) — до роботи
 * [Перед виїздом на плайю: вимкнути автовхід вузла в мережу (bootwifi off)](/tasks/pered-vyizdom-na-plaiiu-vymknuty-avtovkhid-vuzla-v-merezhu-b.md) — до роботи
 * [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](/tasks/daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) — до роботи
+* [Прошивка аудіо-вузла: знизити швидкість UART радара з 256000 до 9600 (команда 0x00A1, зберігається в самому LD2410C). Це головна умова виносу радара в фігуру: на 256000 надійна довжина менша за метр, на 9600 — близько 15 м. Частота кадрів не постраждає, кадри маленькі](/tasks/proshyvka-audio-vuzla-znyzyty-shvydkist-uart-radara-z-256000.md) — до роботи
 
 # Закупівля
 
@@ -86,6 +87,8 @@ generated: { by: "process:site-build" }
 * [Джампери Dupont мама-мама 20 см](/bom/dzhampery-dupont-mama-mama-20-sm.md) — $4, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](/bom/stiazhky-neilonovi-uv-stiiki-400-sht.md) — $7, купити
 * [Коробка ABS IP65 200×120×75 (якщо своя не підійде)](/bom/korobka-abs-ip65-200-120-75-iakshcho-svoia-ne-pidiide.md) — $10, купити
+* [Кабель екранована вита пара Cat6 outdoor, 100 ft — винос радара в фігуру](/bom/kabel-ekranovana-vyta-para-cat6-outdoor-100-ft-vynos-radara-.md) — $22.52, купити
+* [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](/bom/roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) — $10.91, купити
 
 # Розраховані цифри
 
