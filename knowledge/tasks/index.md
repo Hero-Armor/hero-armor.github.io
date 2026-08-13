@@ -126,3 +126,4 @@
 * [Ліза: прислати фото фізичного тестового зразка хрому (ASA → праймер → Rust-Oleum Chrome, Sample D з її плану)](liza-pryslaty-foto-fizychnoho-testovoho-zrazka-khromu-asa-pr.md) - чекаємо
 * [Ліза: підтвердити кількість балонів білого глянцевого спрею (Rust-Oleum Gloss White 334048) — у оригінальному списку кількість не вказана](liza-pidtverdyty-kilkist-baloniv-biloho-hliantsevoho-spreiu-.md) - чекаємо
 * [Ліза: підтвердити заміну Behr yellow-orange gloss на Rust-Oleum Real Orange / Marigold 249862 (точного відповідника Behr в аерозолі нема)](liza-pidtverdyty-zaminu-behr-yellow-orange-gloss-na-rust-ole.md) - чекаємо
+* [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї?](pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) - чекаємо

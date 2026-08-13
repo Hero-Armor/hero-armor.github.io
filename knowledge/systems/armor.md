@@ -20,7 +20,7 @@ generated: { by: "process:site-build" }
 * [Кисті друкуються заново з металевими стержнями всередині](/decisions/kysti-drukuiutsia-zanovo-z-metalevymy-sterzhniamy-vseredyni.md)
 * [Архітектор прибрав передню металеву частину грудей — деталі 7A,7B,8,10,11A,11B,12A,12B](/decisions/arkhitektor-prybrav-peredniu-metalevu-chastynu-hrudei-detali.md)
 * [Технічний бриф Лізи 12.08 — офіційне джерело правди по фарбуванню робота](/decisions/tekhnichnyi-bryf-lizy-12-08-ofitsiine-dzherelo-pravdy-po-far.md)
-* [Хром лишається блискучим (Rust-Oleum Chrome), не затертим металом — виправлення помилки 12.08](/decisions/khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-ne-zatertym-m.md)
+* [Хром лишається блискучим (Rust-Oleum Chrome); затертий метал робиться патинуванням ПОВЕРХ нього](/decisions/khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-zatertyi-meta.md)
 
 # Задачі
 
@@ -37,6 +37,7 @@ generated: { by: "process:site-build" }
 * [Ліза: прислати фото фізичного тестового зразка хрому (ASA → праймер → Rust-Oleum Chrome, Sample D з її плану)](/tasks/liza-pryslaty-foto-fizychnoho-testovoho-zrazka-khromu-asa-pr.md) — чекаємо
 * [Ліза: підтвердити кількість балонів білого глянцевого спрею (Rust-Oleum Gloss White 334048) — у оригінальному списку кількість не вказана](/tasks/liza-pidtverdyty-kilkist-baloniv-biloho-hliantsevoho-spreiu-.md) — чекаємо
 * [Ліза: підтвердити заміну Behr yellow-orange gloss на Rust-Oleum Real Orange / Marigold 249862 (точного відповідника Behr в аерозолі нема)](/tasks/liza-pidtverdyty-zaminu-behr-yellow-orange-gloss-na-rust-ole.md) — чекаємо
+* [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї?](/tasks/pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) — чекаємо
 
 # Закупівля
 
