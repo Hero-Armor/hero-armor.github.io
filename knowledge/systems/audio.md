@@ -89,7 +89,7 @@ generated: { by: "process:site-build" }
 * [Джампери Dupont мама-мама 20 см](/bom/dzhampery-dupont-mama-mama-20-sm.md) — $4, купити
 * [Стяжки нейлонові UV-стійкі, 400 шт](/bom/stiazhky-neilonovi-uv-stiiki-400-sht.md) — $7, купити
 * [Коробка ABS IP65 200×120×75 (якщо своя не підійде)](/bom/korobka-abs-ip65-200-120-75-iakshcho-svoia-ne-pidiide.md) — $10, купити
-* [Кабель екранована вита пара Cat6 outdoor, 100 ft — винос радара в фігуру](/bom/kabel-ekranovana-vyta-para-cat6-outdoor-100-ft-vynos-radara-.md) — $22.52, купити
+* [Кабель екранована вита пара Cat6 outdoor, 25 ft — винос радара в фігуру](/bom/kabel-ekranovana-vyta-para-cat6-outdoor-25-ft-vynos-radara-v.md) — $6.92, купити
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](/bom/roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) — $10.91, купити
 * [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](/bom/roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) — $9.35, купити
 

@@ -174,7 +174,7 @@
 * [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) - $15-25, купити
 * [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) - $28.49, купити
 * [EZARC набір кільцевих пил 16 предметів, 3/4"–2 1/2", з арборами і пілотними свердлами](ezarc-nabir-kiltsevykh-pyl-16-predmetiv-3-4-2-1-2-z-arboramy.md) - $47.58, купити
-* [Кабель екранована вита пара Cat6 outdoor, 100 ft — винос радара в фігуру](kabel-ekranovana-vyta-para-cat6-outdoor-100-ft-vynos-radara-.md) - $22.52, купити
+* [Кабель екранована вита пара Cat6 outdoor, 25 ft — винос радара в фігуру](kabel-ekranovana-vyta-para-cat6-outdoor-25-ft-vynos-radara-v.md) - $6.92, купити
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) - $10.91, купити
 * [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) - $12.12, купити
 * [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) - $9.35, купити
