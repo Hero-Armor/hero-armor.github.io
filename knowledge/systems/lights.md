@@ -57,9 +57,10 @@ generated: { by: "process:site-build" }
 * [Кабель 12/2 перезамовляємо: у реєстрі стояв круглий Ancor за $208 замість плоского за $103](/decisions/kabel-12-2-perezamovliaiemo-u-reiestri-stoiav-kruhlyi-ancor-.md)
 * [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](/decisions/mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
-* [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, монтуються шлейфом по колу](/decisions/indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
+* [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, живлення тільки паралельне](/decisions/indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](/decisions/kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 * [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](/decisions/vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
+* [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](/decisions/dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
 
 # Задачі
 
@@ -116,6 +117,9 @@ generated: { by: "process:site-build" }
 * [Димер: рішення за Іваном. Найдешевше і без ризику — лишити перший Greenclick (він працює бездоганно) і прибрати його єдиний недолік: тонкі дроти обжати в наконечники і завести в клемну колодку за $5 у тій самій герметичній коробці. Якщо хочеться новий блок з рідними клемами — 12Vmonster B076MVT1CR, 30 А, метал, сертифікація ETL/cULus, ~$16, скарг на нагрів у відгуках нема](/tasks/dymer-rishennia-za-ivanom-naideshevshe-i-bez-ryzyku-lyshyty-.md) — чекаємо
 * [⚠ Не купувати пробійник Greenlee 7/8", поки не зафіксований світильник: пробійник дає рівно 22.2 мм і розширити пробитий отвір неможливо, а наш Sunmerit просить 22.6. Ступінчасте свердло дає будь-який діаметр — поки світильник не обраний остаточно, беремо його](/tasks/ne-kupuvaty-probiinyk-greenlee-7-8-poky-ne-zafiksovanyi-svit.md) — до роботи
 * [Скасувати на Amazon повернення двох прожекторів Gardencoin — лишаємо всі 10 (рішення Івана 13.08)](/tasks/skasuvaty-na-amazon-povernennia-dvokh-prozhektoriv-gardencoi.md) — до роботи
+* [Вирішити, де ставити розʼєми фігура↔подіум: під настилом чи вище. Від цього довжина хвостів і місце отвору](/tasks/vyrishyty-de-stavyty-roziemy-fihura-podium-pid-nastylom-chy-.md) — чекаємо
+* [Просвердлити отвір Ø25 мм під джгут фігури (пропускає кабельну половину LP-12 по одній)](/tasks/prosverdlyty-otvir-25-mm-pid-dzhhut-fihury-propuskaie-kabeln.md) — до роботи
+* [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](/tasks/zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) — до роботи
 
 # Закупівля
 
@@ -171,3 +175,4 @@ generated: { by: "process:site-build" }
 * [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](/bom/kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) — $15-25, купити
 * [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](/bom/vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) — $28.49, купити
 * [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](/bom/rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) — $12.12, купити
+* [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](/bom/roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) — $10.13, купити

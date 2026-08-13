@@ -127,3 +127,6 @@
 * [Ліза: підтвердити кількість балонів білого глянцевого спрею (Rust-Oleum Gloss White 334048) — у оригінальному списку кількість не вказана](liza-pidtverdyty-kilkist-baloniv-biloho-hliantsevoho-spreiu-.md) - чекаємо
 * [Ліза: підтвердити заміну Behr yellow-orange gloss на Rust-Oleum Real Orange / Marigold 249862 (точного відповідника Behr в аерозолі нема)](liza-pidtverdyty-zaminu-behr-yellow-orange-gloss-na-rust-ole.md) - чекаємо
 * [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї?](pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) - чекаємо
+* [Вирішити, де ставити розʼєми фігура↔подіум: під настилом чи вище. Від цього довжина хвостів і місце отвору](vyrishyty-de-stavyty-roziemy-fihura-podium-pid-nastylom-chy-.md) - чекаємо
+* [Просвердлити отвір Ø25 мм під джгут фігури (пропускає кабельну половину LP-12 по одній)](prosverdlyty-otvir-25-mm-pid-dzhhut-fihury-propuskaie-kabeln.md) - до роботи
+* [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) - до роботи

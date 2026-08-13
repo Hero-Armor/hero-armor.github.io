@@ -178,3 +178,4 @@
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) - $10.91, купити
 * [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) - $12.12, купити
 * [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) - $9.35, купити
+* [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) - $10.13, купити

@@ -119,7 +119,7 @@
 * [Уся система на шині 12 В — перехід з 24 В](usia-systema-na-shyni-12-v-perekhid-z-24-v.md)
 * [Архітектор прибрав передню металеву частину грудей — деталі 7A,7B,8,10,11A,11B,12A,12B](arkhitektor-prybrav-peredniu-metalevu-chastynu-hrudei-detali.md)
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
-* [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, монтуються шлейфом по колу](indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
+* [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, живлення тільки паралельне](indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
 * [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 * [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)
@@ -132,3 +132,4 @@
 * [Динамік у голові живиться ОКРЕМИМ кабелем, не тією ж витою парою, що радар](dynamik-u-holovi-zhyvytsia-okremym-kabelem-ne-tiieiu-zh-vyto.md)
 * [Технічний бриф Лізи 12.08 — офіційне джерело правди по фарбуванню робота](tekhnichnyi-bryf-lizy-12-08-ofitsiine-dzherelo-pravdy-po-far.md)
 * [Хром лишається блискучим (Rust-Oleum Chrome); затертий метал робиться патинуванням ПОВЕРХ нього](khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-zatertyi-meta.md)
+* [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
