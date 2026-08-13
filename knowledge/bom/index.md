@@ -167,3 +167,5 @@
 * [Циркульне пристосування Rockler для фрезера (виріз кола Ø692 мм у підлозі)](tsyrkulne-prystosuvannia-rockler-dlia-frezera-vyriz-kola-692.md) - $39.99, купити
 * [Фреза твердосплавна однозуба (O-flute upcut) по алюмінію, хвостовик 1/4"](freza-tverdosplavna-odnozuba-o-flute-upcut-po-aliuminiiu-khv.md) - $30-40, купити
 * [Знімач задирок Noga DB1000 (двосторонній, під листовий метал)](znimach-zadyrok-noga-db1000-dvostoronnii-pid-lystovyi-metal.md) - $19.99, купити
+* [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) - $15-25, купити
+* [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) - $28.49, купити

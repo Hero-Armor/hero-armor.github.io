@@ -167,3 +167,5 @@ generated: { by: "process:site-build" }
 * [Бокові маркери ALFU, накладні, 10 шт (варіант замість врізних)](/bom/bokovi-markery-alfu-nakladni-10-sht-variant-zamist-vriznykh.md) — $60 ($2/шт), купити
 * [Rock light GZ5CG, чорний накладний, 2 шт у наборі](/bom/rock-light-gz5cg-chornyi-nakladnyi-2-sht-u-nabori.md) — $90 ($7.5/шт), купити
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](/bom/sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) — —, купити
+* [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](/bom/kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) — $15-25, купити
+* [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](/bom/vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) — $28.49, купити
