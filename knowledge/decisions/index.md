@@ -129,3 +129,6 @@
 * [Резервна зарядка станції живлення — від RV, якщо сонце відмовить](rezervna-zariadka-stantsii-zhyvlennia-vid-rv-iakshcho-sontse.md)
 * [Кутиків на подіум — рівно 16, тільки на лучах біля малого восьмикутника](kutykiv-na-podium-rivno-16-tilky-na-luchakh-bilia-maloho-vos.md)
 * [Каркас подіуму обробляємо ґрунтовкою-герметиком, не рідким склом](karkas-podiumu-obrobliaiemo-gruntovkoiu-hermetykom-ne-ridkym.md)
+* [Динамік у голові живиться ОКРЕМИМ кабелем, не тією ж витою парою, що радар](dynamik-u-holovi-zhyvytsia-okremym-kabelem-ne-tiieiu-zh-vyto.md)
+* [Технічний бриф Лізи 12.08 — офіційне джерело правди по фарбуванню робота](tekhnichnyi-bryf-lizy-12-08-ofitsiine-dzherelo-pravdy-po-far.md)
+* [Хром лишається блискучим (Rust-Oleum Chrome), не затертим металом — виправлення помилки 12.08](khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-ne-zatertym-m.md)

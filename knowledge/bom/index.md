@@ -144,7 +144,7 @@
 * [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) - —, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $52, купити
-* [Металік Rust-Oleum Universal All-Surface Metallic Titanium Silver 245220, 11 oz](metalik-rust-oleum-universal-all-surface-metallic-titanium-s.md) - $48, купити
+* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $9, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) - $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $52, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $39, купити
@@ -156,6 +156,10 @@
 * [Пензлі, набір 20 шт](penzli-nabir-20-sht.md) - $23, купити
 * [Акрил матовий Apple Barrel 2oz — коричневий і чорний](akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) - $4, купити
 * [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) - $7, купити
+* [Синій — поточний вибір Лізи: Benjamin Moore Element Guard Exterior, Old Glory 811, Low Lustre](synii-potochnyi-vybir-lizy-benjamin-moore-element-guard-exte.md) - $25.68/кварта (за прайсом Gray's від 05.08, база 1), купити
+* [Синій — тестовий зразок Лізи: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](synii-testovyi-zrazok-lizy-rust-oleum-painters-touch-2x-glos.md) - $7, купити
+* [Жовто-помаранчевий — тестовий зразок Лізи: BEHR PREMIUM Gloss Interior/Exterior Citrus Orange SP-120](zhovto-pomaranchevyi-testovyi-zrazok-lizy-behr-premium-gloss.md) - $7, купити
+* [Бурштиновий/золотий — тестовий зразок Лізи: Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](burshtynovyi-zolotyi-testovyi-zrazok-lizy-benjamin-moore-but.md) - —, купити
 * [Синій основний — кандидат 1: Rust-Oleum Painter's Touch 2X Satin Slate Blue 249066](synii-osnovnyi-kandydat-1-rust-oleum-painters-touch-2x-satin.md) - $7, купити
 * [Синій основний — кандидат 2: Rust-Oleum Painter's Touch 2X Satin Midnight Blue 334091](synii-osnovnyi-kandydat-2-rust-oleum-painters-touch-2x-satin.md) - $7, купити
 * [Синій основний — кандидат 3: кастомне тонування точно під #3E5878](synii-osnovnyi-kandydat-3-kastomne-tonuvannia-tochno-pid-3e5.md) - $25-30/балон, купити
@@ -173,3 +177,4 @@
 * [Кабель екранована вита пара Cat6 outdoor, 100 ft — винос радара в фігуру](kabel-ekranovana-vyta-para-cat6-outdoor-100-ft-vynos-radara-.md) - $22.52, купити
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) - $10.91, купити
 * [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) - $12.12, купити
+* [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) - $9.35, купити

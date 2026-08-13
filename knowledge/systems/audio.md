@@ -36,6 +36,7 @@ generated: { by: "process:site-build" }
 * [Заміряно на живому вузлі: 1.5 Вт, працює від 10 В, радар бачить крізь пластик](/decisions/zamiriano-na-zhyvomu-vuzli-1-5-vt-pratsiuie-vid-10-v-radar-b.md)
 * [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](/decisions/nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
 * [Аудіо-вузол оновлюється по повітрю: власна точка WiFi на вимогу + автовідкат на попередню прошивку](/decisions/audio-vuzol-onovliuietsia-po-povitriu-vlasna-tochka-wifi-na-.md)
+* [Динамік у голові живиться ОКРЕМИМ кабелем, не тією ж витою парою, що радар](/decisions/dynamik-u-holovi-zhyvytsia-okremym-kabelem-ne-tiieiu-zh-vyto.md)
 
 # Задачі
 
@@ -58,6 +59,7 @@ generated: { by: "process:site-build" }
 * [Перед виїздом на плайю: вимкнути автовхід вузла в мережу (bootwifi off)](/tasks/pered-vyizdom-na-plaiiu-vymknuty-avtovkhid-vuzla-v-merezhu-b.md) — до роботи
 * [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](/tasks/daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) — до роботи
 * [Прошивка аудіо-вузла: знизити швидкість UART радара з 256000 до 9600 (команда 0x00A1, зберігається в самому LD2410C). Це головна умова виносу радара в фігуру: на 256000 надійна довжина менша за метр, на 9600 — близько 15 м. Частота кадрів не постраждає, кадри маленькі](/tasks/proshyvka-audio-vuzla-znyzyty-shvydkist-uart-radara-z-256000.md) — до роботи
+* [Заміряти реальну довжину траси мозки в підлозі подіуму → динамік у голові, і перевірити, скільки лишилось від бухти 18 AWG силікон (18 м)](/tasks/zamiriaty-realnu-dovzhynu-trasy-mozky-v-pidlozi-podiumu-dyna.md) — до роботи
 
 # Закупівля
 
@@ -89,6 +91,7 @@ generated: { by: "process:site-build" }
 * [Коробка ABS IP65 200×120×75 (якщо своя не підійде)](/bom/korobka-abs-ip65-200-120-75-iakshcho-svoia-ne-pidiide.md) — $10, купити
 * [Кабель екранована вита пара Cat6 outdoor, 100 ft — винос радара в фігуру](/bom/kabel-ekranovana-vyta-para-cat6-outdoor-100-ft-vynos-radara-.md) — $22.52, купити
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](/bom/roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) — $10.91, купити
+* [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](/bom/roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) — $9.35, купити
 
 # Розраховані цифри
 

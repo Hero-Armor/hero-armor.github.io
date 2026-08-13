@@ -19,6 +19,8 @@ generated: { by: "process:site-build" }
 * [Монтаж світловідбивної стрічки: ґрунтовка, знежирення, прогрів](/decisions/montazh-svitlovidbyvnoi-strichky-gruntovka-znezhyrennia-proh.md)
 * [Кисті друкуються заново з металевими стержнями всередині](/decisions/kysti-drukuiutsia-zanovo-z-metalevymy-sterzhniamy-vseredyni.md)
 * [Архітектор прибрав передню металеву частину грудей — деталі 7A,7B,8,10,11A,11B,12A,12B](/decisions/arkhitektor-prybrav-peredniu-metalevu-chastynu-hrudei-detali.md)
+* [Технічний бриф Лізи 12.08 — офіційне джерело правди по фарбуванню робота](/decisions/tekhnichnyi-bryf-lizy-12-08-ofitsiine-dzherelo-pravdy-po-far.md)
+* [Хром лишається блискучим (Rust-Oleum Chrome), не затертим металом — виправлення помилки 12.08](/decisions/khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-ne-zatertym-m.md)
 
 # Задачі
 
@@ -32,6 +34,9 @@ generated: { by: "process:site-build" }
 * [ЗАКРИТО 12.08: пластик ASA, не PLA — окремий пластиковий праймер не обовʼязковий](/tasks/zakryto-12-08-plastyk-asa-ne-pla-okremyi-plastykovyi-praimer.md) — готово
 * [ЗАКРИТО 12.08: гнучких деталей у роботі нема взагалі (Іван) — питання зняте](/tasks/zakryto-12-08-hnuchkykh-detalei-u-roboti-nema-vzahali-ivan-p.md) — готово
 * [Замовити 4 тестові балони фарби і пофарбувати однакові обрізки ASA: Rust-Oleum Painter Touch 2X Gloss Deep Blue 334032, Benjamin Moore Old Glory 811 (кастомний аерозоль у Gray's), BEHR Premium Citrus Orange SP-120 Gloss, Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](/tasks/zamovyty-4-testovi-balony-farby-i-pofarbuvaty-odnakovi-obriz.md) — до роботи
+* [Ліза: прислати фото фізичного тестового зразка хрому (ASA → праймер → Rust-Oleum Chrome, Sample D з її плану)](/tasks/liza-pryslaty-foto-fizychnoho-testovoho-zrazka-khromu-asa-pr.md) — чекаємо
+* [Ліза: підтвердити кількість балонів білого глянцевого спрею (Rust-Oleum Gloss White 334048) — у оригінальному списку кількість не вказана](/tasks/liza-pidtverdyty-kilkist-baloniv-biloho-hliantsevoho-spreiu-.md) — чекаємо
+* [Ліза: підтвердити заміну Behr yellow-orange gloss на Rust-Oleum Real Orange / Marigold 249862 (точного відповідника Behr в аерозолі нема)](/tasks/liza-pidtverdyty-zaminu-behr-yellow-orange-gloss-na-rust-ole.md) — чекаємо
 
 # Закупівля
 
@@ -40,7 +45,7 @@ generated: { by: "process:site-build" }
 * [ORALITE V98 біла, 2" × 10 ft — корпус фігури](/bom/oralite-v98-bila-2-10-ft-korpus-fihury.md) — $21.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](/bom/oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) — $14.99, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](/bom/grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) — $52, купити
-* [Металік Rust-Oleum Universal All-Surface Metallic Titanium Silver 245220, 11 oz](/bom/metalik-rust-oleum-universal-all-surface-metallic-titanium-s.md) — $48, купити
+* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $9, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](/bom/synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) — $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](/bom/bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) — $52, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](/bom/prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) — $39, купити
@@ -52,6 +57,10 @@ generated: { by: "process:site-build" }
 * [Пензлі, набір 20 шт](/bom/penzli-nabir-20-sht.md) — $23, купити
 * [Акрил матовий Apple Barrel 2oz — коричневий і чорний](/bom/akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) — $4, купити
 * [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](/bom/zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) — $7, купити
+* [Синій — поточний вибір Лізи: Benjamin Moore Element Guard Exterior, Old Glory 811, Low Lustre](/bom/synii-potochnyi-vybir-lizy-benjamin-moore-element-guard-exte.md) — $25.68/кварта (за прайсом Gray's від 05.08, база 1), купити
+* [Синій — тестовий зразок Лізи: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](/bom/synii-testovyi-zrazok-lizy-rust-oleum-painters-touch-2x-glos.md) — $7, купити
+* [Жовто-помаранчевий — тестовий зразок Лізи: BEHR PREMIUM Gloss Interior/Exterior Citrus Orange SP-120](/bom/zhovto-pomaranchevyi-testovyi-zrazok-lizy-behr-premium-gloss.md) — $7, купити
+* [Бурштиновий/золотий — тестовий зразок Лізи: Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](/bom/burshtynovyi-zolotyi-testovyi-zrazok-lizy-benjamin-moore-but.md) — —, купити
 * [Синій основний — кандидат 1: Rust-Oleum Painter's Touch 2X Satin Slate Blue 249066](/bom/synii-osnovnyi-kandydat-1-rust-oleum-painters-touch-2x-satin.md) — $7, купити
 * [Синій основний — кандидат 2: Rust-Oleum Painter's Touch 2X Satin Midnight Blue 334091](/bom/synii-osnovnyi-kandydat-2-rust-oleum-painters-touch-2x-satin.md) — $7, купити
 * [Синій основний — кандидат 3: кастомне тонування точно під #3E5878](/bom/synii-osnovnyi-kandydat-3-kastomne-tonuvannia-tochno-pid-3e5.md) — $25-30/балон, купити
