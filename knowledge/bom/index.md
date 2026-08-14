@@ -185,3 +185,4 @@
 * [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) - $22.49, купити
 * [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) - $699-950 на розпродажі (звичайна $1498), купити
 * [SWRT біла світлоповертальна стрічка 2" × 30 ft, DOT-C2 — 2 рулони в упаковці](swrt-bila-svitlopovertalna-strichka-2-30-ft-dot-c2-2-rulony-.md) - ~$12 (сервер бачить EUR 10.39 — точну ціну в доларах перевірити), купити
+* [AISEY біла світлоповертальна стрічка 2" × 30 ft — суцільна, мікропризма](aisey-bila-svitlopovertalna-strichka-2-30-ft-sutsilna-mikrop.md) - $7.49, купити
