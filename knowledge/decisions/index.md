@@ -135,3 +135,4 @@
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
 * [Колір світловідбивної плівки на плечі — School Bus Yellow](kolir-svitlovidbyvnoi-plivky-na-plechi-school-bus-yellow.md)
 * [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
+* [Світлоповертальна плівка — тільки два кольори: School Bus Yellow і біла](svitlopovertalna-plivka-tilky-dva-kolory-school-bus-yellow-i.md)

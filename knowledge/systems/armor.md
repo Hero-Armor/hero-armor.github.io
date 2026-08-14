@@ -22,6 +22,7 @@ generated: { by: "process:site-build" }
 * [Технічний бриф Лізи 12.08 — офіційне джерело правди по фарбуванню робота](/decisions/tekhnichnyi-bryf-lizy-12-08-ofitsiine-dzherelo-pravdy-po-far.md)
 * [Хром лишається блискучим (Rust-Oleum Chrome); затертий метал робиться патинуванням ПОВЕРХ нього](/decisions/khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-zatertyi-meta.md)
 * [Колір світловідбивної плівки на плечі — School Bus Yellow](/decisions/kolir-svitlovidbyvnoi-plivky-na-plechi-school-bus-yellow.md)
+* [Світлоповертальна плівка — тільки два кольори: School Bus Yellow і біла](/decisions/svitlopovertalna-plivka-tilky-dva-kolory-school-bus-yellow-i.md)
 
 # Задачі
 
