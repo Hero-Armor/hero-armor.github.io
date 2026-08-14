@@ -148,3 +148,4 @@
 * [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) - готово
 * [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) - до роботи
 * [Ліза: перевірити переклад сайту трьома мовами (превʼю), сказати що поправити — після її слова публікуємо](liza-pereviryty-pereklad-saitu-troma-movamy-previu-skazaty-s.md) - чекаємо
+* [Транспорт: забронювати мінівен у SFO. Реально підходить лише Chrysler Pacifica зі Stow'n Go (99.5" довжини) — інші мінівени короткі або низькі. Уточнити в компанії, що дадуть саме Pacifica, а не «minivan or similar»](transport-zabroniuvaty-miniven-u-sfo-realno-pidkhodyt-lyshe-.md) - до роботи
