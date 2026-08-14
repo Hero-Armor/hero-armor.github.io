@@ -23,6 +23,7 @@ generated: { by: "process:site-build" }
 * [Хром лишається блискучим (Rust-Oleum Chrome); затертий метал робиться патинуванням ПОВЕРХ нього](/decisions/khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-zatertyi-meta.md)
 * [Колір світловідбивної плівки на плечі — School Bus Yellow](/decisions/kolir-svitlovidbyvnoi-plivky-na-plechi-school-bus-yellow.md)
 * [Світлоповертальна плівка — тільки два кольори: School Bus Yellow і біла](/decisions/svitlopovertalna-plivka-tilky-dva-kolory-school-bus-yellow-i.md)
+* [Стрічка — тільки суцільна, без смуг; дешеві DOT-C2 не підходять за виглядом](/decisions/strichka-tilky-sutsilna-bez-smuh-deshevi-dot-c2-ne-pidkhodia.md)
 
 # Задачі
 

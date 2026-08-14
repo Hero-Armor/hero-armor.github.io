@@ -138,3 +138,4 @@
 * [Світлоповертальна плівка — тільки два кольори: School Bus Yellow і біла](svitlopovertalna-plivka-tilky-dva-kolory-school-bus-yellow-i.md)
 * [Станція мусить мати справжній вихід 12 В на 30 А — це умова відбору, а не побажання](stantsiia-musyt-maty-spravzhnii-vykhid-12-v-na-30-a-tse-umov.md)
 * [Страховку Home Depot на станцію не беремо](strakhovku-home-depot-na-stantsiiu-ne-beremo.md)
+* [Стрічка — тільки суцільна, без смуг; дешеві DOT-C2 не підходять за виглядом](strichka-tilky-sutsilna-bez-smuh-deshevi-dot-c2-ne-pidkhodia.md)
