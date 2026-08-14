@@ -140,3 +140,4 @@
 * [Облік чеків запущено: кожен шле фото чека своєму боту, бот пише в спільний облік (tools/ha_expenses.py). Нагадати Марселю і Лізі слати чеки](oblik-chekiv-zapushcheno-kozhen-shle-foto-cheka-svoiemu-botu.md) - до роботи
 * [Синк витрат у таблицю Марселя: писати кожного в його вкладку — Ivan у «Hero Armor — Purchase Audit», Marcel у «Marcel Expenses», Ліза у «Painting Expenses». Зробити після отримання ключа](synk-vytrat-u-tablytsiu-marselia-pysaty-kozhnoho-v-ioho-vkla.md) - чекаємо
 * [Ліза: обрати відтінок жовтої плівки на плечі — School Bus Yellow чи Fluorescent Lime (ціна однакова, $14.99 за 5 ft)](liza-obraty-vidtinok-zhovtoi-plivky-na-plechi-school-bus-yel.md) - готово
+* [Замовити тижневий таймер DC 12 В (CN101, $11.89) — вмикання прожекторів і аварійної за розкладом; за бажанням фотореле ($11.93) послідовно до нього](zamovyty-tyzhnevyi-taimer-dc-12-v-cn101-11-89-vmykannia-proz.md) - до роботи

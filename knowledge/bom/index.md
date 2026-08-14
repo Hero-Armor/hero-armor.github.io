@@ -179,3 +179,5 @@
 * [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) - $12.12, купити
 * [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) - $9.35, купити
 * [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) - $10.13, купити
+* [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) - $11.89, купити
+* [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) - $11.93, купити

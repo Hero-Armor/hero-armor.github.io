@@ -134,3 +134,4 @@
 * [Хром лишається блискучим (Rust-Oleum Chrome); затертий метал робиться патинуванням ПОВЕРХ нього](khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-zatertyi-meta.md)
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
 * [Колір світловідбивної плівки на плечі — School Bus Yellow](kolir-svitlovidbyvnoi-plivky-na-plechi-school-bus-yellow.md)
+* [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)

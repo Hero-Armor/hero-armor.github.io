@@ -61,6 +61,7 @@ generated: { by: "process:site-build" }
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](/decisions/kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 * [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](/decisions/vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](/decisions/dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
+* [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](/decisions/chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
 
 # Задачі
 
@@ -120,6 +121,7 @@ generated: { by: "process:site-build" }
 * [Вирішити, де ставити розʼєми фігура↔подіум: під настилом чи вище. Від цього довжина хвостів і місце отвору](/tasks/vyrishyty-de-stavyty-roziemy-fihura-podium-pid-nastylom-chy-.md) — чекаємо
 * [Просвердлити отвір Ø25 мм під джгут фігури (пропускає кабельну половину LP-12 по одній)](/tasks/prosverdlyty-otvir-25-mm-pid-dzhhut-fihury-propuskaie-kabeln.md) — до роботи
 * [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](/tasks/zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) — до роботи
+* [Замовити тижневий таймер DC 12 В (CN101, $11.89) — вмикання прожекторів і аварійної за розкладом; за бажанням фотореле ($11.93) послідовно до нього](/tasks/zamovyty-tyzhnevyi-taimer-dc-12-v-cn101-11-89-vmykannia-proz.md) — до роботи
 
 # Закупівля
 
@@ -176,3 +178,5 @@ generated: { by: "process:site-build" }
 * [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](/bom/vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) — $28.49, купити
 * [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](/bom/rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) — $12.12, купити
 * [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](/bom/roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) — $10.13, купити
+* [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](/bom/tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) — $11.89, купити
+* [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](/bom/fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) — $11.93, купити
