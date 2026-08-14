@@ -134,6 +134,7 @@
 * [Зняти габарити і вагу вантажу для транспорту з креслень: робот 2 м, октагон 8 футів (4 частини), металевий каркас, станція, ящики](zniaty-habaryty-i-vahu-vantazhu-dlia-transportu-z-kreslen-ro.md) - до роботи
 * [Домовитись про причіп для перевезення робота на плайю](domovytys-pro-prychip-dlia-perevezennia-robota-na-plaiiu.md) - до роботи
 * [Подзвонити в Gray's про кастомний аерозоль](podzvonyty-v-grays-pro-kastomnyi-aerozol.md) - до роботи
-* [Google Tasks для Лізи: створити в Google Cloud Console OAuth Client ID типу Desktop, увімкнути Tasks API і покласти json у /root/.secrets/google_tasks_creds.json — далі я даю Лізі посилання на згоду і вмикаю синхронізацію](google-tasks-dlia-lizy-stvoryty-v-google-cloud-console-oauth.md) - до роботи
+* [Google API: створити один OAuth Client ID (Desktop) і ввімкнути Sheets + Drive + Tasks + Calendar — цим одним ключем закриваються таблиця Марселя (точковий запис витрат), Google Tasks Лізи і календар](google-api-stvoryty-odyn-oauth-client-id-desktop-i-vvimknuty.md) - до роботи
 * [Кемп Attlee: вписатись у спільну таблицю відповідальним за полотно тіньової зони і купити Aluminet 20×30 ft ($103.96) — Міша взяв на себе стійки, анкери і мотузку, полотно лишилось без господаря](kemp-attlee-vpysatys-u-spilnu-tablytsiu-vidpovidalnym-za-pol.md) - до роботи
 * [Кемп Attlee: заповнити форму транспорту і перевірити, що наша машина/причіп є в таблиці розміщення — кемп без placement, місце розподіляють за цими даними](kemp-attlee-zapovnyty-formu-transportu-i-pereviryty-shcho-na.md) - до роботи
+* [Облік чеків запущено: кожен шле фото чека своєму боту, бот пише в спільний облік (tools/ha_expenses.py). Нагадати Марселю і Лізі слати чеки](oblik-chekiv-zapushcheno-kozhen-shle-foto-cheka-svoiemu-botu.md) - до роботи

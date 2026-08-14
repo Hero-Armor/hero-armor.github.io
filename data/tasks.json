@@ -912,12 +912,12 @@
     "note": "на цьому тижні"
   },
   {
-    "task": "Google Tasks для Лізи: створити в Google Cloud Console OAuth Client ID типу Desktop, увімкнути Tasks API і покласти json у /root/.secrets/google_tasks_creds.json — далі я даю Лізі посилання на згоду і вмикаю синхронізацію",
+    "task": "Google API: створити один OAuth Client ID (Desktop) і ввімкнути Sheets + Drive + Tasks + Calendar — цим одним ключем закриваються таблиця Марселя (точковий запис витрат), Google Tasks Лізи і календар",
     "system": "project",
     "status": "todo",
     "owner": "ivan",
-    "prio": 2,
-    "note": "Скрипт готовий: tools/liza_gtasks.py (--auth, --sync, --dry-run, --check). Той самий крок потрібен і для Календаря Івана з 11.08 — один клієнт покриє обидва, якщо додати scope."
+    "prio": 1,
+    "note": "Покрокова інструкція з посиланнями: private/google_api_setup.md. Далі я підключаю сам. Без цього пальне $327.62 так і не потрапить у таблицю Марселя — заливка файлом зносить її оформлення й історію."
   },
   {
     "task": "Кемп Attlee: вписатись у спільну таблицю відповідальним за полотно тіньової зони і купити Aluminet 20×30 ft ($103.96) — Міша взяв на себе стійки, анкери і мотузку, полотно лишилось без господаря",
@@ -934,5 +934,13 @@
     "owner": "ivan",
     "prio": 1,
     "note": "Міша 14.08 наголосив окремо. Таблиця: https://docs.google.com/spreadsheets/d/1FrbskUt6ysfOS5OD4W0WGwxKvNFbIbdWojVSjdOdG9E"
+  },
+  {
+    "task": "Облік чеків запущено: кожен шле фото чека своєму боту, бот пише в спільний облік (tools/ha_expenses.py). Нагадати Марселю і Лізі слати чеки",
+    "system": "project",
+    "status": "todo",
+    "owner": "ivan",
+    "prio": 2,
+    "note": "Дані приватні (private/expenses/), у хаб іде тільки підсумок. Звіт: ha_expenses.py report — хто скільки і на скільки відхилився від рівного внеску. Вивід для таблиці Марселя: ha_expenses.py csv. Пальне за перегін LA→SF ($327.62) уже занесено."
   }
 ]
