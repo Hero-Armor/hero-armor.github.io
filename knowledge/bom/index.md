@@ -174,14 +174,14 @@
 * [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) - $15-25, купити
 * [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) - $28.49, купити
 * [EZARC набір кільцевих пил 16 предметів, 3/4"–2 1/2", з арборами і пілотними свердлами](ezarc-nabir-kiltsevykh-pyl-16-predmetiv-3-4-2-1-2-z-arboramy.md) - $47.58, купити
-* [Кабель екранована вита пара Cat6 outdoor, 25 ft — винос радара в фігуру](kabel-ekranovana-vyta-para-cat6-outdoor-25-ft-vynos-radara-v.md) - $6.92, купити
+* [Кабель екранована вита пара Cat6 outdoor, 25 ft — винос радара в фігуру](kabel-ekranovana-vyta-para-cat6-outdoor-25-ft-vynos-radara-v.md) - $7.99, купити
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) - $10.91, купити
 * [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) - $12.12, купити
 * [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) - $9.35, купити
-* [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) - $10.13, купити
+* [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) - $11.69, купити
 * [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) - $11.89, купити
 * [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) - $11.93, купити
-* [Тижневий таймер DC 12 В Heschen CN101A, 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-heschen-cn101a-16-a-vmykannia-svitl.md) - $8.57 за шт ($17.14), купити
-* [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) - $19.49, купити
+* [Тижневий таймер DC 12 В Heschen CN101A, 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-heschen-cn101a-16-a-vmykannia-svitl.md) - $9.89 за шт ($19.78 за дві), купити
+* [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) - $22.49, купити
 * [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) - $699-950 на розпродажі (звичайна $1498), купити
 * [SWRT біла світлоповертальна стрічка 2" × 30 ft, DOT-C2 — 2 рулони в упаковці](swrt-bila-svitlopovertalna-strichka-2-30-ft-dot-c2-2-rulony-.md) - ~$12 (сервер бачить EUR 10.39 — точну ціну в доларах перевірити), купити
