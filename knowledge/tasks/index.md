@@ -94,7 +94,7 @@
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) - до роботи
 * [Магістраль: бухти 8/2 здані — закриваємо готовим кабелем 10 AWG з Anderson](mahistral-bukhty-8-2-zdani-zakryvaiemo-hotovym-kabelem-10-aw.md) - до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) - до роботи
-* [Вписати розділ Travel & Fuel у вкладку «Hero Armor — Purchase Audit» таблиці Марселя](vpysaty-rozdil-travel-fuel-u-vkladku-hero-armor-purchase-aud.md) - до роботи
+* [Вписати розділ Travel & Fuel у НАШУ копію таблиці (вкладка «Hero Armor — Purchase Audit»)](vpysaty-rozdil-travel-fuel-u-nashu-kopiiu-tablytsi-vkladka-h.md) - чекаємо
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) - до роботи
 * [Підсилити ділянку кабелю там, де реально ходять — накладка або підняти](pidsylyty-dilianku-kabeliu-tam-de-realno-khodiat-nakladka-ab.md) - до роботи
 * [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення](vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) - в роботі
@@ -138,6 +138,6 @@
 * [Кемп Attlee: вписатись у спільну таблицю відповідальним за полотно тіньової зони і купити Aluminet 20×30 ft ($103.96) — Міша взяв на себе стійки, анкери і мотузку, полотно лишилось без господаря](kemp-attlee-vpysatys-u-spilnu-tablytsiu-vidpovidalnym-za-pol.md) - до роботи
 * [Кемп Attlee: заповнити форму транспорту і перевірити, що наша машина/причіп є в таблиці розміщення — кемп без placement, місце розподіляють за цими даними](kemp-attlee-zapovnyty-formu-transportu-i-pereviryty-shcho-na.md) - до роботи
 * [Облік чеків запущено: кожен шле фото чека своєму боту, бот пише в спільний облік (tools/ha_expenses.py). Нагадати Марселю і Лізі слати чеки](oblik-chekiv-zapushcheno-kozhen-shle-foto-cheka-svoiemu-botu.md) - до роботи
-* [Синк витрат у таблицю Марселя: писати кожного в його вкладку — Ivan у «Hero Armor — Purchase Audit», Marcel у «Marcel Expenses», Ліза у «Painting Expenses». Зробити після отримання ключа](synk-vytrat-u-tablytsiu-marselia-pysaty-kozhnoho-v-ioho-vkla.md) - чекаємо
+* [Синк витрат у нашу копію таблиці: кожного у свою вкладку — ivan у «Hero Armor — Purchase Audit», marcel у «Marcel Expenses», liza у «Painting Expenses»](synk-vytrat-u-nashu-kopiiu-tablytsi-kozhnoho-u-svoiu-vkladku.md) - чекаємо
 * [Ліза: обрати відтінок жовтої плівки на плечі — School Bus Yellow чи Fluorescent Lime (ціна однакова, $14.99 за 5 ft)](liza-obraty-vidtinok-zhovtoi-plivky-na-plechi-school-bus-yel.md) - готово
 * [Замовити тижневий таймер DC 12 В (CN101, $11.89) — вмикання прожекторів і аварійної за розкладом; за бажанням фотореле ($11.93) послідовно до нього](zamovyty-tyzhnevyi-taimer-dc-12-v-cn101-11-89-vmykannia-proz.md) - до роботи
