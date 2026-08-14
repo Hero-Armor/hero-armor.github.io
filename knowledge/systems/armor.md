@@ -38,6 +38,7 @@ generated: { by: "process:site-build" }
 * [Ліза: підтвердити кількість балонів білого глянцевого спрею (Rust-Oleum Gloss White 334048) — у оригінальному списку кількість не вказана](/tasks/liza-pidtverdyty-kilkist-baloniv-biloho-hliantsevoho-spreiu-.md) — чекаємо
 * [Ліза: підтвердити заміну Behr yellow-orange gloss на Rust-Oleum Real Orange / Marigold 249862 (точного відповідника Behr в аерозолі нема)](/tasks/liza-pidtverdyty-zaminu-behr-yellow-orange-gloss-na-rust-ole.md) — чекаємо
 * [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї?](/tasks/pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) — чекаємо
+* [Подзвонити в Gray's про кастомний аерозоль](/tasks/podzvonyty-v-grays-pro-kastomnyi-aerozol.md) — до роботи
 
 # Закупівля
 

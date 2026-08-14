@@ -88,8 +88,8 @@
 * [Вирішити отвір на тильному боці кисті під лампу](vyrishyty-otvir-na-tylnomu-botsi-kysti-pid-lampu.md) - до роботи
 * [Обрати кабель на гілку Гр.2 замість поверненої бухти](obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) - до роботи
 * [Задати топологію 24 врізних вогнів торця (зірка / шлейф / по гранях)](zadaty-topolohiiu-24-vriznykh-vohniv-tortsia-zirka-shleif-po.md) - до роботи
-* [Задати розводку 10 ламп на корпусі робота (шлейф чи зірка всередині броні)](zadaty-rozvodku-10-lamp-na-korpusi-robota-shleif-chy-zirka-v.md) - до роботи
-* [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) - до роботи
+* [Задати розводку 10 ламп на корпусі робота (шлейф чи зірка всередині броні)](zadaty-rozvodku-10-lamp-na-korpusi-robota-shleif-chy-zirka-v.md) - готово
+* [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) - готово
 * [Продумати збір історій відвідувачів: мікрофон, розпізнавання, зберігання, публікація на сайті](produmaty-zbir-istorii-vidviduvachiv-mikrofon-rozpiznavannia.md) - до роботи
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) - до роботи
 * [Магістраль: бухти 8/2 здані — закриваємо готовим кабелем 10 AWG з Anderson](mahistral-bukhty-8-2-zdani-zakryvaiemo-hotovym-kabelem-10-aw.md) - до роботи
@@ -121,7 +121,7 @@
 * [⚠ Не купувати пробійник Greenlee 7/8", поки не зафіксований світильник: пробійник дає рівно 22.2 мм і розширити пробитий отвір неможливо, а наш Sunmerit просить 22.6. Ступінчасте свердло дає будь-який діаметр — поки світильник не обраний остаточно, беремо його](ne-kupuvaty-probiinyk-greenlee-7-8-poky-ne-zafiksovanyi-svit.md) - до роботи
 * [Прошивка аудіо-вузла: знизити швидкість UART радара з 256000 до 9600 (команда 0x00A1, зберігається в самому LD2410C). Це головна умова виносу радара в фігуру: на 256000 надійна довжина менша за метр, на 9600 — близько 15 м. Частота кадрів не постраждає, кадри маленькі](proshyvka-audio-vuzla-znyzyty-shvydkist-uart-radara-z-256000.md) - до роботи
 * [Скасувати на Amazon повернення двох прожекторів Gardencoin — лишаємо всі 10 (рішення Івана 13.08)](skasuvaty-na-amazon-povernennia-dvokh-prozhektoriv-gardencoi.md) - до роботи
-* [Заміряти реальну довжину траси мозки в підлозі подіуму → динамік у голові, і перевірити, скільки лишилось від бухти 18 AWG силікон (18 м)](zamiriaty-realnu-dovzhynu-trasy-mozky-v-pidlozi-podiumu-dyna.md) - до роботи
+* [Перевірити, скільки лишилось від бухти 18 AWG силікон (траса заміряна 13.08 — 3 м від мозку до голови)](pereviryty-skilky-lyshylos-vid-bukhty-18-awg-sylikon-trasa-z.md) - до роботи
 * [Відео живого сайту hero-armor.com (video1.mp4 54М, video2.mp4 7.4М) не потрапляють у новий бекап (виключені *.mp4) — перевірити, чи є інша копія (Google Drive), і якщо ні — вирішити чи потрібен окремий бекап медіа](video-zhyvoho-saitu-hero-armor-com-video1-mp4-54m-video2-mp4.md) - до роботи
 * [Ліза: прислати фото фізичного тестового зразка хрому (ASA → праймер → Rust-Oleum Chrome, Sample D з її плану)](liza-pryslaty-foto-fizychnoho-testovoho-zrazka-khromu-asa-pr.md) - чекаємо
 * [Ліза: підтвердити кількість балонів білого глянцевого спрею (Rust-Oleum Gloss White 334048) — у оригінальному списку кількість не вказана](liza-pidtverdyty-kilkist-baloniv-biloho-hliantsevoho-spreiu-.md) - чекаємо
@@ -132,3 +132,5 @@
 * [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) - до роботи
 * [Транспорт робота і подіуму на плайю: зібрати і порахувати варіанти (U-Haul фургон ~$1500 без пального, причіп U-Haul + машина з фаркопом, попутний вантаж бернерів, перевізник). Повна вартість кожного разом із пальним, обмеження і строки. Стартові зачіпки (не перевірені цінами): сторінка U-Haul саме під Burning Man https://www.uhaul.com/BurningMan/ , перевізники з досвідом плайї https://minutementransport.com/burningman , офіційне пояснення як везуть арт https://help.burningman.org/hc/en-us/articles/4418738371476-Transporting-Art-Transporting-Art-to-Playa-How-does-it-work і сторінка мистецтва https://burningman.org/black-rock-city/bring-your-art/](transport-robota-i-podiumu-na-plaiiu-zibraty-i-porakhuvaty-v.md) - в роботі
 * [Зняти габарити і вагу вантажу для транспорту з креслень: робот 2 м, октагон 8 футів (4 частини), металевий каркас, станція, ящики](zniaty-habaryty-i-vahu-vantazhu-dlia-transportu-z-kreslen-ro.md) - до роботи
+* [Домовитись про причіп для перевезення робота на плайю](domovytys-pro-prychip-dlia-perevezennia-robota-na-plaiiu.md) - до роботи
+* [Подзвонити в Gray's про кастомний аерозоль](podzvonyty-v-grays-pro-kastomnyi-aerozol.md) - до роботи

@@ -104,8 +104,8 @@ generated: { by: "process:site-build" }
 * [Звірити руками, скільки рулонів неону фізично лежить у Марселя](/tasks/zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) — до роботи
 * [Обрати кабель на гілку Гр.2 замість поверненої бухти](/tasks/obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) — до роботи
 * [Задати топологію 24 врізних вогнів торця (зірка / шлейф / по гранях)](/tasks/zadaty-topolohiiu-24-vriznykh-vohniv-tortsia-zirka-shleif-po.md) — до роботи
-* [Задати розводку 10 ламп на корпусі робота (шлейф чи зірка всередині броні)](/tasks/zadaty-rozvodku-10-lamp-na-korpusi-robota-shleif-chy-zirka-v.md) — до роботи
-* [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](/tasks/opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) — до роботи
+* [Задати розводку 10 ламп на корпусі робота (шлейф чи зірка всередині броні)](/tasks/zadaty-rozvodku-10-lamp-na-korpusi-robota-shleif-chy-zirka-v.md) — готово
+* [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](/tasks/opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) — готово
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](/tasks/pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) — до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](/tasks/14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) — до роботи
 * [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення](/tasks/vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) — в роботі

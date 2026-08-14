@@ -59,7 +59,7 @@ generated: { by: "process:site-build" }
 * [Перед виїздом на плайю: вимкнути автовхід вузла в мережу (bootwifi off)](/tasks/pered-vyizdom-na-plaiiu-vymknuty-avtovkhid-vuzla-v-merezhu-b.md) — до роботи
 * [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](/tasks/daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) — до роботи
 * [Прошивка аудіо-вузла: знизити швидкість UART радара з 256000 до 9600 (команда 0x00A1, зберігається в самому LD2410C). Це головна умова виносу радара в фігуру: на 256000 надійна довжина менша за метр, на 9600 — близько 15 м. Частота кадрів не постраждає, кадри маленькі](/tasks/proshyvka-audio-vuzla-znyzyty-shvydkist-uart-radara-z-256000.md) — до роботи
-* [Заміряти реальну довжину траси мозки в підлозі подіуму → динамік у голові, і перевірити, скільки лишилось від бухти 18 AWG силікон (18 м)](/tasks/zamiriaty-realnu-dovzhynu-trasy-mozky-v-pidlozi-podiumu-dyna.md) — до роботи
+* [Перевірити, скільки лишилось від бухти 18 AWG силікон (траса заміряна 13.08 — 3 м від мозку до голови)](/tasks/pereviryty-skilky-lyshylos-vid-bukhty-18-awg-sylikon-trasa-z.md) — до роботи
 
 # Закупівля
 
