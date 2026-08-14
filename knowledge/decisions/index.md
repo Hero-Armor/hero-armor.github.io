@@ -133,3 +133,4 @@
 * [Технічний бриф Лізи 12.08 — офіційне джерело правди по фарбуванню робота](tekhnichnyi-bryf-lizy-12-08-ofitsiine-dzherelo-pravdy-po-far.md)
 * [Хром лишається блискучим (Rust-Oleum Chrome); затертий метал робиться патинуванням ПОВЕРХ нього](khrom-lyshaietsia-blyskuchym-rust-oleum-chrome-zatertyi-meta.md)
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
+* [Колір світловідбивної плівки на плечі — School Bus Yellow](kolir-svitlovidbyvnoi-plivky-na-plechi-school-bus-yellow.md)
