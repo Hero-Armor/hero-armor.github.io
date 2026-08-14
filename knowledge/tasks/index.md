@@ -140,4 +140,4 @@
 * [Облік чеків запущено: кожен шле фото чека своєму боту, бот пише в спільний облік (tools/ha_expenses.py). Нагадати Марселю і Лізі слати чеки](oblik-chekiv-zapushcheno-kozhen-shle-foto-cheka-svoiemu-botu.md) - до роботи
 * [Синк витрат у нашу копію таблиці: кожного у свою вкладку — ivan у «Hero Armor — Purchase Audit», marcel у «Marcel Expenses», liza у «Painting Expenses»](synk-vytrat-u-nashu-kopiiu-tablytsi-kozhnoho-u-svoiu-vkladku.md) - чекаємо
 * [Ліза: обрати відтінок жовтої плівки на плечі — School Bus Yellow чи Fluorescent Lime (ціна однакова, $14.99 за 5 ft)](liza-obraty-vidtinok-zhovtoi-plivky-na-plechi-school-bus-yel.md) - готово
-* [Замовити тижневий таймер DC 12 В (CN101, $11.89) — вмикання прожекторів і аварійної за розкладом; за бажанням фотореле ($11.93) послідовно до нього](zamovyty-tyzhnevyi-taimer-dc-12-v-cn101-11-89-vmykannia-proz.md) - до роботи
+* [Замовити таймери на Amazon: 2× Heschen CN101A 12 В ($8.57) + 1× MISOL 25 А ($19.49), разом $36.63; фотореле ($11.93 eBay) — за бажанням](zamovyty-taimery-na-amazon-2-heschen-cn101a-12-v-8-57-1-miso.md) - до роботи

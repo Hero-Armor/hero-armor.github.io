@@ -121,7 +121,7 @@ generated: { by: "process:site-build" }
 * [Вирішити, де ставити розʼєми фігура↔подіум: під настилом чи вище. Від цього довжина хвостів і місце отвору](/tasks/vyrishyty-de-stavyty-roziemy-fihura-podium-pid-nastylom-chy-.md) — чекаємо
 * [Просвердлити отвір Ø25 мм під джгут фігури (пропускає кабельну половину LP-12 по одній)](/tasks/prosverdlyty-otvir-25-mm-pid-dzhhut-fihury-propuskaie-kabeln.md) — до роботи
 * [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](/tasks/zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) — до роботи
-* [Замовити тижневий таймер DC 12 В (CN101, $11.89) — вмикання прожекторів і аварійної за розкладом; за бажанням фотореле ($11.93) послідовно до нього](/tasks/zamovyty-tyzhnevyi-taimer-dc-12-v-cn101-11-89-vmykannia-proz.md) — до роботи
+* [Замовити таймери на Amazon: 2× Heschen CN101A 12 В ($8.57) + 1× MISOL 25 А ($19.49), разом $36.63; фотореле ($11.93 eBay) — за бажанням](/tasks/zamovyty-taimery-na-amazon-2-heschen-cn101a-12-v-8-57-1-miso.md) — до роботи
 
 # Закупівля
 
@@ -180,3 +180,5 @@ generated: { by: "process:site-build" }
 * [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](/bom/roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) — $10.13, купити
 * [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](/bom/tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) — $11.89, купити
 * [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](/bom/fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) — $11.93, купити
+* [Тижневий таймер DC 12 В Heschen CN101A, 16 А — вмикання світла за розкладом](/bom/tyzhnevyi-taimer-dc-12-v-heschen-cn101a-16-a-vmykannia-svitl.md) — $8.57 за шт ($17.14), купити
+* [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](/bom/taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) — $19.49, купити
