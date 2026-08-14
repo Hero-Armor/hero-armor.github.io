@@ -46,7 +46,7 @@ generated: { by: "process:site-build" }
 
 * [3M 983-326 світлоповертальна стрічка DOT-C2, 2"×30'](/bom/3m-983-326-svitlopovertalna-strichka-dot-c2-2-30.md) — $33.99, купити
 * [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](/bom/katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) — $12.25, купити
-* [ORALITE V98 біла, 2" × 10 ft — корпус фігури](/bom/oralite-v98-bila-2-10-ft-korpus-fihury.md) — $42.99, купити
+* [ORALITE V98 біла, 2" × 20 ft — корпус фігури + боки ящика](/bom/oralite-v98-bila-2-20-ft-korpus-fihury-boky-iashchyka.md) — $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](/bom/oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) — $14.99, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](/bom/grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) — $52, купити
 * [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $9, купити

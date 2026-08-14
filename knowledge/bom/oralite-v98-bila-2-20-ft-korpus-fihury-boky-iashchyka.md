@@ -1,6 +1,6 @@
 ---
 type: "Part"
-title: "ORALITE V98 біла, 2\" × 10 ft — корпус фігури"
+title: "ORALITE V98 біла, 2\" × 20 ft — корпус фігури + боки ящика"
 description: "Обрано Іваном 07.08 замість 3M Scotchlite: мікропризма того ж класу за вдвічі меншу ціну. Ріжеться по формі місця. 13.08 звірено через eBay API: лістинг живий, "
 resource: "https://www.ebay.com/itm/306171987235"
 tags: ["armor"]
