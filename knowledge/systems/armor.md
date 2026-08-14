@@ -77,3 +77,4 @@ generated: { by: "process:site-build" }
 * [Сірий метал — Rust-Oleum Universal Metallic Flat Soft Iron 271473](/bom/siryi-metal-rust-oleum-universal-metallic-flat-soft-iron-271.md) — $9, купити
 * [SWRT біла світлоповертальна стрічка 2" × 30 ft, DOT-C2 — 2 рулони в упаковці](/bom/swrt-bila-svitlopovertalna-strichka-2-30-ft-dot-c2-2-rulony-.md) — ~$12 (сервер бачить EUR 10.39 — точну ціну в доларах перевірити), купити
 * [AISEY біла світлоповертальна стрічка 2" × 30 ft — суцільна, мікропризма](/bom/aisey-bila-svitlopovertalna-strichka-2-30-ft-sutsilna-mikrop.md) — $7.49, купити
+* [Trim Brite жовта світлоповертальна стрічка 2" × 24" — самовивіз в Ace Hardware](/bom/trim-brite-zhovta-svitlopovertalna-strichka-2-24-samovyviz-v.md) — $4.99 за упаковку ($14.97), купити
