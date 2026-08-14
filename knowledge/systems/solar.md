@@ -62,6 +62,7 @@ generated: { by: "process:site-build" }
 * [Обрати кабель від станції до щита під Anderson на 30 А](/tasks/obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) — до роботи
 * [Магістраль: бухти 8/2 здані — закриваємо готовим кабелем 10 AWG з Anderson](/tasks/mahistral-bukhty-8-2-zdani-zakryvaiemo-hotovym-kabelem-10-aw.md) — до роботи
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](/tasks/podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) — до роботи
+* [Звірити живою карткою реальну ціну Anker SOLIX C2000 Gen 2 і струм її автомобільного виходу 12 В — від цього залежить, чи міняємо станцію](/tasks/zviryty-zhyvoiu-kartkoiu-realnu-tsinu-anker-solix-c2000-gen-.md) — до роботи
 
 # Закупівля
 
@@ -101,3 +102,4 @@ generated: { by: "process:site-build" }
 * [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](/bom/roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) — $~15, купити
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](/bom/roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) — $~17, купити
 * [Наконечники кільцеві під 10 AWG на болт шини](/bom/nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) — $~10, купити
+* [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](/bom/stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) — $699-950 на розпродажі (звичайна $1498), купити

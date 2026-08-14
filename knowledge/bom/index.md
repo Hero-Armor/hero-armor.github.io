@@ -183,3 +183,4 @@
 * [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) - $11.93, купити
 * [Тижневий таймер DC 12 В Heschen CN101A, 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-heschen-cn101a-16-a-vmykannia-svitl.md) - $8.57 за шт ($17.14), купити
 * [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) - $19.49, купити
+* [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) - $699-950 на розпродажі (звичайна $1498), купити
