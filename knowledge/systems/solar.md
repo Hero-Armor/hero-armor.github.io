@@ -72,8 +72,8 @@ generated: { by: "process:site-build" }
 * [Сонячні панелі для масиву (потужність не обрана)](/bom/soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — $149, купити
 * [Друга станція EcoFlow — змінна, модель не обрана](/bom/druha-stantsiia-ecoflow-zminna-model-ne-obrana.md) — ~$1600, купити
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
-* [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $29.99, купити
-* [Кабель: Станція (Anderson 30 А) → щит запобіжників](/bom/kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) — $~48, купити
+* [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $61.95, купити
+* [Кабель: Станція (Anderson 30 А) → щит запобіжників](/bom/kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) — $72.99, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](/bom/lifepo4-12-v-100-ah-bufer-pid-svitlo.md) — ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](/bom/zariadnyk-14-6-v-20-30-a-z-anderson.md) — ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](/bom/victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) — $201, купити
@@ -82,10 +82,10 @@ generated: { by: "process:site-build" }
 * [Кабель XT150 для порту розширення (готовий)](/bom/kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) — ~$25, купити
 * [Дошки 2×4×8ft Douglas Fir](/bom/doshky-2-4-8ft-douglas-fir.md) — $36–45, купити
 * [Lag screws 3/8"×10" hex head, оцинковані](/bom/lag-screws-3-8-10-hex-head-otsynkovani.md) — $19.99, купити
-* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](/bom/simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) — ~$1.50/шт, купити
+* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](/bom/simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) — $117.72 за лот — ⚠ фасовку не підтверджено, купити
 * [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](/bom/carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) — $17.62, купити
 * [Fender washers 3/8"×1.5", оцинковані](/bom/fender-washers-3-8-1-5-otsynkovani.md) — $12.97, купити
-* [Eye bolts 1/4"×3" (рим-болти) для такелажу](/bom/eye-bolts-1-4-3-rym-bolty-dlia-takelazhu.md) — $22.69, купити
+* [Eye bolts 1/4"×3" (рим-болти) для такелажу](/bom/eye-bolts-1-4-3-rym-bolty-dlia-takelazhu.md) — $21.21, купити
 * [Wire rope 1/8" PVC coated, сталевий трос у ПВХ](/bom/wire-rope-1-8-pvc-coated-stalevyi-tros-u-pvkh.md) — $17.99, купити
 * [Turnbuckles 1/4" eye-to-eye, нержавіюча сталь](/bom/turnbuckles-1-4-eye-to-eye-nerzhaviiucha-stal.md) — $29.99, купити
 * [Wire rope thimbles 1/8"](/bom/wire-rope-thimbles-1-8.md) — $8.99, купити

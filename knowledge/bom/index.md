@@ -28,32 +28,32 @@
 * [Luxrite MR16 4000K — лампа прожекторів](luxrite-mr16-4000k-lampa-prozhektoriv.md) - $96.34 за 12-пак, купити
 * [Gebildet LED 12 мм, металеві](gebildet-led-12-mm-metalevi.md) - $10.99 за 5 шт (фактично DMWD), купити
 * [Gebildet LED 8 мм, металеві](gebildet-led-8-mm-metalevi.md) - $8.99 за 5 шт (фактично DMWD), купити
-* [Врізні вогні в торець подіуму, 0.6 Вт, IP68](vrizni-vohni-v-torets-podiumu-0-6-vt-ip68.md) - $~35 за набір 12 шт (~$105 за три), купити
+* [Врізні вогні в торець подіуму, 0.6 Вт, IP68](vrizni-vohni-v-torets-podiumu-0-6-vt-ip68.md) - $37.99, купити
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
 * [Сонячні панелі для масиву (потужність не обрана)](soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - $149, купити
 * [Друга станція EcoFlow — змінна, модель не обрана](druha-stantsiia-ecoflow-zminna-model-ne-obrana.md) - ~$1600, купити
 * [Рама під сонячний масив](rama-pid-soniachnyi-masyv.md) - —, купити
-* [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - $29.99, купити
+* [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - $61.95, купити
 * [Щит-бокс із тримачами запобіжників — Cyrico 12 Circuits](shchyt-boks-iz-trymachamy-zapobizhnykiv-cyrico-12-circuits.md) - $15.99, купити
 * [Запобіжники ATO/ATC, набір](zapobizhnyky-ato-atc-nabir.md) - $9.99, купити
 * [Реле на групи 12 В, 30 А](rele-na-hrupy-12-v-30-a.md) - $12.15, купити
-* [Гермокоробка IP66 для щита і реле](hermokorobka-ip66-dlia-shchyta-i-rele.md) - $49.59, купити
+* [Гермокоробка IP66 для щита і реле](hermokorobka-ip66-dlia-shchyta-i-rele.md) - $53.98, купити
 * [Гермокоробки IP65 під диммер, WLED і аварійну Гр.3А](hermokorobky-ip65-pid-dymmer-wled-i-avariinu-hr-3a.md) - $8.99, купити
 * [Гермороз'єми IP68 (швидкознімні)](hermoroziemy-ip68-shvydkoznimni.md) - $14.95, купити
 * [Гель-конектори / вологозахищені клеми](hel-konektory-volohozakhyshcheni-klemy.md) - $9.99, купити
 * [Гофра/кабель-канал для відводів](hofra-kabel-kanal-dlia-vidvodiv.md) - $30.99, купити
-* [Кабель: Станція (Anderson 30 А) → щит запобіжників](kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) - $~48, купити
-* [Кабель: Щит → коробка диммера (Гр.1)](kabel-shchyt-korobka-dymmera-hr-1.md) - $79.77, купити
-* [Кабель: Диммер → кільце прожекторів](kabel-dymmer-kiltse-prozhektoriv.md) - $79.77, купити
-* [Кабель: Відвід на прожектор (найдальший)](kabel-vidvid-na-prozhektor-naidalshyi.md) - $71.12, купити
+* [Кабель: Станція (Anderson 30 А) → щит запобіжників](kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) - $72.99, купити
+* [Кабель: Щит → коробка диммера (Гр.1)](kabel-shchyt-korobka-dymmera-hr-1.md) - $102.77, купити
+* [Кабель: Диммер → кільце прожекторів](kabel-dymmer-kiltse-prozhektoriv.md) - $102.77, купити
+* [Кабель: Відвід на прожектор (найдальший)](kabel-vidvid-na-prozhektor-naidalshyi.md) - $42.99, купити
 * [Кабель: WLED → точки живлення стрічки](kabel-wled-tochky-zhyvlennia-strichky.md) - $33.99, купити
 * [Кабель: Коробка → лампи робота](kabel-korobka-lampy-robota.md) - $11.26, купити
-* [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - $79.77, купити
-* [Кабель: Коробка → врізні вогні торця](kabel-korobka-vrizni-vohni-tortsia.md) - $71.12, купити
+* [Кабель: Щит → коробка аварійної (Гр.3А)](kabel-shchyt-korobka-avariinoi-hr-3a.md) - $102.77, купити
+* [Кабель: Коробка → врізні вогні торця](kabel-korobka-vrizni-vohni-tortsia.md) - $42.99, купити
 * [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - $49.99, купити
-* [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - $29.39, купити
+* [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - $37.99, купити
 * [ORALITE V98 біла, 2" × 20 ft — корпус фігури + боки ящика](oralite-v98-bila-2-20-ft-korpus-fihury-boky-iashchyka.md) - $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) - $14.99, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](lifepo4-12-v-100-ah-bufer-pid-svitlo.md) - ~$250, купити
@@ -66,7 +66,7 @@
 * [Набір нейлонових стійок M2.5/M3/M4](nabir-neilonovykh-stiiok-m2-5-m3-m4.md) - $17, купити
 * [Клемники гвинтові 5.08мм 2-pin](klemnyky-hvyntovi-5-08mm-2-pin.md) - $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](hnizda-khedery-2-54mm-mama-kyt.md) - $8, купити
-* [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) - $71.12, купити
+* [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) - $42.99, купити
 * [Екранований кабель ЦАП → амп (аукс-шнур, 30 см)](ekranovanyi-kabel-tsap-amp-auks-shnur-30-sm.md) - $4.19, купити
 * [ASI 388 Electronic Grade Silicone, тюбик 2.8 oz](asi-388-electronic-grade-silicone-tiubyk-2-8-oz.md) - $10, купити
 * [Заглушки неон 8×16 З ОТВОРОМ під дріт — набір 60 шт](zahlushky-neon-8-16-z-otvorom-pid-drit-nabir-60-sht.md) - $11.99, купити
@@ -96,10 +96,10 @@
 * [Понижувач 12 В → 5 В, 10 А (2 шт) — під ядро на спині](ponyzhuvach-12-v-5-v-10-a-2-sht-pid-iadro-na-spyni.md) - $14.99, купити
 * [Дошки 2×4×8ft Douglas Fir](doshky-2-4-8ft-douglas-fir.md) - $36–45, купити
 * [Lag screws 3/8"×10" hex head, оцинковані](lag-screws-3-8-10-hex-head-otsynkovani.md) - $19.99, купити
-* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) - ~$1.50/шт, купити
+* [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) - $117.72 за лот — ⚠ фасовку не підтверджено, купити
 * [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) - $17.62, купити
 * [Fender washers 3/8"×1.5", оцинковані](fender-washers-3-8-1-5-otsynkovani.md) - $12.97, купити
-* [Eye bolts 1/4"×3" (рим-болти) для такелажу](eye-bolts-1-4-3-rym-bolty-dlia-takelazhu.md) - $22.69, купити
+* [Eye bolts 1/4"×3" (рим-болти) для такелажу](eye-bolts-1-4-3-rym-bolty-dlia-takelazhu.md) - $21.21, купити
 * [Wire rope 1/8" PVC coated, сталевий трос у ПВХ](wire-rope-1-8-pvc-coated-stalevyi-tros-u-pvkh.md) - $17.99, купити
 * [Turnbuckles 1/4" eye-to-eye, нержавіюча сталь](turnbuckles-1-4-eye-to-eye-nerzhaviiucha-stal.md) - $29.99, купити
 * [Wire rope thimbles 1/8"](wire-rope-thimbles-1-8.md) - $8.99, купити
@@ -124,7 +124,7 @@
 * [Кабель від станції до щита під Anderson, переріз на 30 А](kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) - —, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](dmwd-12mm-led-dozamovyty-1-upakovku.md) - $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) - $11.99 за набір, купити
-* [Кондуит liquid-tight 3/4" на магістраль (суцільний, не розрізний)](konduyt-liquid-tight-3-4-na-mahistral-sutsilnyi-ne-rozriznyi.md) - $~25, купити
+* [Кондуит liquid-tight 3/4" на магістраль (суцільний, не розрізний)](konduyt-liquid-tight-3-4-na-mahistral-sutsilnyi-ne-rozriznyi.md) - $28.99, купити
 * [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) - $~15, купити
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) - $~17, купити
 * [Кліщі обтискні під контакти Powerpole 15/30/45 А](klishchi-obtyskni-pid-kontakty-powerpole-15-30-45-a.md) - $~30, купити
@@ -133,7 +133,7 @@
 * [Ступінчасте свердло 6-35 мм (дерево + алюміній)](stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) - $~20, купити
 * [Simpson Strong-Tie LS50Z — кутик з регульованим кутом (2x6/2x8), ZMAX](simpson-strong-tie-ls50z-kutyk-z-rehulovanym-kutom-2x6-2x8-z.md) - $67, купити
 * [Simpson Strong-Tie HTP37Z — пластина-тяж 3"x7", 16ga, ZMAX](simpson-strong-tie-htp37z-plastyna-tiazh-3-x7-16ga-zmax.md) - —, купити
-* [Гвинти Simpson SD9112 #9x1 1/2" (Strong-Drive connector screw)](hvynty-simpson-sd9112-9x1-1-2-strong-drive-connector-screw.md) - $33, купити
+* [Гвинти Simpson SD9112 #9x1 1/2" (Strong-Drive connector screw)](hvynty-simpson-sd9112-9x1-1-2-strong-drive-connector-screw.md) - $30.84, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) - —, купити
 * [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) - $~108, купити
 * [Бокові маркери ALFU, накладні, 10 шт (варіант замість врізних)](bokovi-markery-alfu-nakladni-10-sht-variant-zamist-vriznykh.md) - $60 ($2/шт), купити

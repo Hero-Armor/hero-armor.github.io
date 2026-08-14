@@ -147,3 +147,4 @@
 * [Глянути ціну в доларах на білу стрічку SWRT 2"×30 ft (2 рулони) — якщо близько $12, беремо її замість ORALITE білої за $42.99](hlianuty-tsinu-v-dolarakh-na-bilu-strichku-swrt-2-30-ft-2-ru.md) - до роботи
 * [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) - готово
 * [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) - до роботи
+* [Ліза: перевірити переклад сайту трьома мовами (превʼю), сказати що поправити — після її слова публікуємо](liza-pereviryty-pereklad-saitu-troma-movamy-previu-skazaty-s.md) - чекаємо

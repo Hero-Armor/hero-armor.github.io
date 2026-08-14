@@ -83,7 +83,7 @@ generated: { by: "process:site-build" }
 * [Набір нейлонових стійок M2.5/M3/M4](/bom/nabir-neilonovykh-stiiok-m2-5-m3-m4.md) — $17, купити
 * [Клемники гвинтові 5.08мм 2-pin](/bom/klemnyky-hvyntovi-5-08mm-2-pin.md) — $9, купити
 * [Гнізда-хедери 2.54мм (мама) кит](/bom/hnizda-khedery-2-54mm-mama-kyt.md) — $8, купити
-* [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — $71.12, купити
+* [Кабель: Станція (авто-вихід 12 В) → аудіо-вузол](/bom/kabel-stantsiia-avto-vykhid-12-v-audio-vuzol.md) — $42.99, купити
 * [Екранований кабель ЦАП → амп (аукс-шнур, 30 см)](/bom/ekranovanyi-kabel-tsap-amp-auks-shnur-30-sm.md) — $4.19, купити
 * [Гермовводи PG7–PG16, набір 25 шт](/bom/hermovvody-pg7-pg16-nabir-25-sht.md) — $7.99, купити
 * [Джампери Dupont мама-мама 20 см](/bom/dzhampery-dupont-mama-mama-20-sm.md) — $4, купити
