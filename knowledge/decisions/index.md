@@ -136,3 +136,5 @@
 * [Колір світловідбивної плівки на плечі — School Bus Yellow](kolir-svitlovidbyvnoi-plivky-na-plechi-school-bus-yellow.md)
 * [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
 * [Світлоповертальна плівка — тільки два кольори: School Bus Yellow і біла](svitlopovertalna-plivka-tilky-dva-kolory-school-bus-yellow-i.md)
+* [Станція мусить мати справжній вихід 12 В на 30 А — це умова відбору, а не побажання](stantsiia-musyt-maty-spravzhnii-vykhid-12-v-na-30-a-tse-umov.md)
+* [Страховку Home Depot на станцію не беремо](strakhovku-home-depot-na-stantsiiu-ne-beremo.md)

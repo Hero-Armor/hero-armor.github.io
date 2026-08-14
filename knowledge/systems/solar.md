@@ -44,6 +44,8 @@ generated: { by: "process:site-build" }
 * [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](/decisions/mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)
 * [Відстань станція → подіум лишається ~7.6 м; кабель веде суцільний кондуит, не розрізна гофра](/decisions/vidstan-stantsiia-podium-lyshaietsia-7-6-m-kabel-vede-sutsil.md)
 * [Резервна зарядка станції живлення — від RV, якщо сонце відмовить](/decisions/rezervna-zariadka-stantsii-zhyvlennia-vid-rv-iakshcho-sontse.md)
+* [Станція мусить мати справжній вихід 12 В на 30 А — це умова відбору, а не побажання](/decisions/stantsiia-musyt-maty-spravzhnii-vykhid-12-v-na-30-a-tse-umov.md)
+* [Страховку Home Depot на станцію не беремо](/decisions/strakhovku-home-depot-na-stantsiiu-ne-beremo.md)
 
 # Задачі
 
@@ -62,7 +64,8 @@ generated: { by: "process:site-build" }
 * [Обрати кабель від станції до щита під Anderson на 30 А](/tasks/obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) — до роботи
 * [Магістраль: бухти 8/2 здані — закриваємо готовим кабелем 10 AWG з Anderson](/tasks/mahistral-bukhty-8-2-zdani-zakryvaiemo-hotovym-kabelem-10-aw.md) — до роботи
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](/tasks/podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) — до роботи
-* [Звірити живою карткою реальну ціну Anker SOLIX C2000 Gen 2 і струм її автомобільного виходу 12 В — від цього залежить, чи міняємо станцію](/tasks/zviryty-zhyvoiu-kartkoiu-realnu-tsinu-anker-solix-c2000-gen-.md) — до роботи
+* [Звірити живою карткою реальну ціну Anker SOLIX C2000 Gen 2 і струм її автомобільного виходу 12 В — від цього залежить, чи міняємо станцію](/tasks/zviryty-zhyvoiu-kartkoiu-realnu-tsinu-anker-solix-c2000-gen-.md) — готово
+* [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](/tasks/ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) — готово
 
 # Закупівля
 
