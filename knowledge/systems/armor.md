@@ -42,6 +42,7 @@ generated: { by: "process:site-build" }
 * [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї?](/tasks/pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) — чекаємо
 * [Подзвонити в Gray's про кастомний аерозоль](/tasks/podzvonyty-v-grays-pro-kastomnyi-aerozol.md) — до роботи
 * [Ліза: обрати відтінок жовтої плівки на плечі — School Bus Yellow чи Fluorescent Lime (ціна однакова, $14.99 за 5 ft)](/tasks/liza-obraty-vidtinok-zhovtoi-plivky-na-plechi-school-bus-yel.md) — готово
+* [Глянути ціну в доларах на білу стрічку SWRT 2"×30 ft (2 рулони) — якщо близько $12, беремо її замість ORALITE білої за $42.99](/tasks/hlianuty-tsinu-v-dolarakh-na-bilu-strichku-swrt-2-30-ft-2-ru.md) — до роботи
 
 # Закупівля
 
@@ -72,3 +73,4 @@ generated: { by: "process:site-build" }
 * [Бурштиновий акцент — кастомне тонування під #B98B42](/bom/burshtynovyi-aktsent-kastomne-tonuvannia-pid-b98b42.md) — —, купити
 * [Темний карбон — Krylon COLORmaxx Smoke Gray K05539007](/bom/temnyi-karbon-krylon-colormaxx-smoke-gray-k05539007.md) — $6, купити
 * [Сірий метал — Rust-Oleum Universal Metallic Flat Soft Iron 271473](/bom/siryi-metal-rust-oleum-universal-metallic-flat-soft-iron-271.md) — $9, купити
+* [SWRT біла світлоповертальна стрічка 2" × 30 ft, DOT-C2 — 2 рулони в упаковці](/bom/swrt-bila-svitlopovertalna-strichka-2-30-ft-dot-c2-2-rulony-.md) — ~$12 (сервер бачить EUR 10.39 — точну ціну в доларах перевірити), купити
