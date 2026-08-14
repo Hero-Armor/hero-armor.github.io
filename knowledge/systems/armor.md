@@ -44,6 +44,7 @@ generated: { by: "process:site-build" }
 * [Подзвонити в Gray's про кастомний аерозоль](/tasks/podzvonyty-v-grays-pro-kastomnyi-aerozol.md) — до роботи
 * [Ліза: обрати відтінок жовтої плівки на плечі — School Bus Yellow чи Fluorescent Lime (ціна однакова, $14.99 за 5 ft)](/tasks/liza-obraty-vidtinok-zhovtoi-plivky-na-plechi-school-bus-yel.md) — готово
 * [Глянути ціну в доларах на білу стрічку SWRT 2"×30 ft (2 рулони) — якщо близько $12, беремо її замість ORALITE білої за $42.99](/tasks/hlianuty-tsinu-v-dolarakh-na-bilu-strichku-swrt-2-30-ft-2-ru.md) — до роботи
+* [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](/tasks/zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) — до роботи
 
 # Закупівля
 
