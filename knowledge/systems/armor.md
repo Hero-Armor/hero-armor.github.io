@@ -44,7 +44,7 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [3M 983-326 світлоповертальна стрічка DOT-C2, 2"×30'](/bom/3m-983-326-svitlopovertalna-strichka-dot-c2-2-30.md) — $38.39, купити
+* [3M 983-326 світлоповертальна стрічка DOT-C2, 2"×30'](/bom/3m-983-326-svitlopovertalna-strichka-dot-c2-2-30.md) — $33.99, купити
 * [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](/bom/katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) — $12.25, купити
 * [ORALITE V98 біла, 2" × 10 ft — корпус фігури](/bom/oralite-v98-bila-2-10-ft-korpus-fihury.md) — $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](/bom/oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) — $14.99, купити
