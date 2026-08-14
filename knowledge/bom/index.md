@@ -54,7 +54,7 @@
 * [Кабель: Коробка → врізні вогні торця](kabel-korobka-vrizni-vohni-tortsia.md) - $71.12, купити
 * [Захисний лак MG Chemicals 422B](zakhysnyi-lak-mg-chemicals-422b.md) - $49.99, купити
 * [Алюмінієвий U-профіль для LED у настил подіуму](aliuminiievyi-u-profil-dlia-led-u-nastyl-podiumu.md) - $29.39, купити
-* [ORALITE V98 біла, 2" × 10 ft — корпус фігури](oralite-v98-bila-2-10-ft-korpus-fihury.md) - $21.99, купити
+* [ORALITE V98 біла, 2" × 10 ft — корпус фігури](oralite-v98-bila-2-10-ft-korpus-fihury.md) - $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) - $14.99, купити
 * [LiFePO4 12 В 100 Ah (буфер під світло)](lifepo4-12-v-100-ah-bufer-pid-svitlo.md) - ~$250, купити
 * [Зарядник 14.6 В 20-30 А з Anderson](zariadnyk-14-6-v-20-30-a-z-anderson.md) - ~$60, купити

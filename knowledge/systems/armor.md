@@ -39,12 +39,13 @@ generated: { by: "process:site-build" }
 * [Ліза: підтвердити заміну Behr yellow-orange gloss на Rust-Oleum Real Orange / Marigold 249862 (точного відповідника Behr в аерозолі нема)](/tasks/liza-pidtverdyty-zaminu-behr-yellow-orange-gloss-na-rust-ole.md) — чекаємо
 * [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї?](/tasks/pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) — чекаємо
 * [Подзвонити в Gray's про кастомний аерозоль](/tasks/podzvonyty-v-grays-pro-kastomnyi-aerozol.md) — до роботи
+* [Ліза: обрати відтінок жовтої плівки на плечі — School Bus Yellow чи Fluorescent Lime (ціна однакова, $14.99 за 5 ft)](/tasks/liza-obraty-vidtinok-zhovtoi-plivky-na-plechi-school-bus-yel.md) — чекаємо
 
 # Закупівля
 
 * [3M 983-326 світлоповертальна стрічка DOT-C2, 2"×30'](/bom/3m-983-326-svitlopovertalna-strichka-dot-c2-2-30.md) — $38.39, купити
 * [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](/bom/katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) — $12.25, купити
-* [ORALITE V98 біла, 2" × 10 ft — корпус фігури](/bom/oralite-v98-bila-2-10-ft-korpus-fihury.md) — $21.99, купити
+* [ORALITE V98 біла, 2" × 10 ft — корпус фігури](/bom/oralite-v98-bila-2-10-ft-korpus-fihury.md) — $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](/bom/oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) — $14.99, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](/bom/grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) — $52, купити
 * [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $9, купити
