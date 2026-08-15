@@ -140,3 +140,4 @@
 * [Страховку Home Depot на станцію не беремо](strakhovku-home-depot-na-stantsiiu-ne-beremo.md)
 * [Стрічка — тільки суцільна, без смуг; дешеві DOT-C2 не підходять за виглядом](strichka-tilky-sutsilna-bez-smuh-deshevi-dot-c2-ne-pidkhodia.md)
 * [Транспорт: беремо мінівен напрокат у SFO — але не будь-який і не в будь-кого](transport-beremo-miniven-naprokat-u-sfo-ale-ne-bud-iakyi-i-n.md)
+* [Аварійне світло — це МАРКЕРИ, а не робоче освітлення](avariine-svitlo-tse-markery-a-ne-roboche-osvitlennia.md)

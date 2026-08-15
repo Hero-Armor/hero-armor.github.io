@@ -192,3 +192,7 @@
 * [Samyoung робочий ліхтар 2400 лм, 2 шт — до 80 годин на заряді](samyoung-robochyi-likhtar-2400-lm-2-sht-do-80-hodyn-na-zaria.md) - $34.18, купити
 * [Botepon навігаційні вогні для каяка, 4 шт — на трубу чи поручень](botepon-navihatsiini-vohni-dlia-kaiaka-4-sht-na-trubu-chy-po.md) - $17.99, купити
 * [3M 983-10 біла Diamond Grade, 2" × 15 ft — корпус фігури (пара до жовтої 983-71NL)](3m-983-10-bila-diamond-grade-2-15-ft-korpus-fihury-para-do-z.md) - $32.95, купити
+* [Adventure Lights Guardian Expedition — маркерний маяк, до 240 годин](adventure-lights-guardian-expedition-markernyi-maiak-do-240-.md) - $18.99 за шт, купити
+* [ACR Firefly PRO SOLAS — аварійний строб на найнебезпечніші кути](acr-firefly-pro-solas-avariinyi-strob-na-nainebezpechnishi-k.md) - $67.99-74.95, купити
+* [Tobfit акумуляторні LED-фаєри, 4 шт — мигаючі маркери на магніті](tobfit-akumuliatorni-led-faiery-4-sht-myhaiuchi-markery-na-m.md) - $21.99, купити
+* [Planet Bike Superflash Turbo — задня мигалка, 100 годин на 2×AAA](planet-bike-superflash-turbo-zadnia-myhalka-100-hodyn-na-2-a.md) - $29.99, купити
