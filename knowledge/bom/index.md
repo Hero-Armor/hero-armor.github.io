@@ -203,3 +203,5 @@
 * [Amzonly навігаційні вогні для каяка, 4 шт — маркери периметра, 170 годин мигання](amzonly-navihatsiini-vohni-dlia-kaiaka-4-sht-markery-perymet.md) - $12.99 за набір ($51.96 за 16 шт), купити
 * [Мастило для різання металу (cutting fluid) — обовʼязкове для алюмінію](mastylo-dlia-rizannia-metalu-cutting-fluid-oboviazkove-dlia-.md) - ~$10, купити
 * [Набір біметалевих коронок M42, 3/4″–2″ — під світильники, розʼєми і кабельні проходи](nabir-bimetalevykh-koronok-m42-3-4-2-pid-svitylnyky-roziemy-.md) - $24-38 залежно від набору, купити
+* [Стійки під плати самоклейні, нейлон — 100 шт (не свердлити коробку)](stiiky-pid-platy-samokleini-neilon-100-sht-ne-sverdlyty-koro.md) - $9.99, купити
+* [Латунні стійки M3 з гвинтами і гайками, 320 шт — коли є монтажна панель](latunni-stiiky-m3-z-hvyntamy-i-haikamy-320-sht-koly-ie-monta.md) - $14.98, купити
