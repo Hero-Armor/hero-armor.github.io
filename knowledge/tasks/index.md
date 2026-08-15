@@ -156,3 +156,4 @@
 * [Turo: написати 3-5 власникам старих фургонів (cargo van або 12-15 місний) ДО броні — прямо спитати дозвіл на Burning Man і суму за прибирання після плайї, зберегти відповідь у переписці](turo-napysaty-3-5-vlasnykam-starykh-furhoniv-cargo-van-abo-1.md) - до роботи
 * [Дочекатись відповіді Лізи і Марселя по звірці витрат із бюджетною таблицею](dochekatys-vidpovidi-lizy-i-marselia-po-zvirtsi-vytrat-iz-bi.md) - чекаємо
 * [Свердлити торець у зборі: спершу прикрутити алюмінієву накладку до дерева, потім проходити коронкою наскрізь — отвори будуть співвісні](sverdlyty-torets-u-zbori-spershu-prykrutyty-aliuminiievu-nak.md) - до роботи
+* [Ліза: надіслати пункти 1-2 інструкції по кріпленню вантажу (у неї є тільки 3-4, це середина документа)](liza-nadislaty-punkty-1-2-instruktsii-po-kriplenniu-vantazhu.md) - чекаємо
