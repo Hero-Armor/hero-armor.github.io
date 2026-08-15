@@ -198,7 +198,7 @@
 * [Planet Bike Superflash Turbo — задня мигалка, 100 годин на 2×AAA](planet-bike-superflash-turbo-zadnia-myhalka-100-hodyn-na-2-a.md) - $29.99, купити
 * [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) - $17.95, купити
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) - $13.95, купити
-* [Коронка біметалева 3/4″ (19.05 мм) з хвостовиком — отвори під врізні вогні](koronka-bimetaleva-3-4-19-05-mm-z-khvostovykom-otvory-pid-vr.md) - $8.79, купити
+* [Коронка Bosch HBT075 3/4″ біметал M42 — отвори під врізні вогні](koronka-bosch-hbt075-3-4-bimetal-m42-otvory-pid-vrizni-vohni.md) - $6.49 за шт ($12.98 за дві), купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) - $9.19, купити
 * [Amzonly навігаційні вогні для каяка, 4 шт — маркери периметра, 170 годин мигання](amzonly-navihatsiini-vohni-dlia-kaiaka-4-sht-markery-perymet.md) - $12.99 за набір ($51.96 за 16 шт), купити
 * [Мастило для різання металу (cutting fluid) — обовʼязкове для алюмінію](mastylo-dlia-rizannia-metalu-cutting-fluid-oboviazkove-dlia-.md) - ~$10, купити
