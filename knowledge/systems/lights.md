@@ -123,6 +123,7 @@ generated: { by: "process:site-build" }
 * [Просвердлити отвір Ø25 мм під джгут фігури (пропускає кабельну половину LP-12 по одній)](/tasks/prosverdlyty-otvir-25-mm-pid-dzhhut-fihury-propuskaie-kabeln.md) — до роботи
 * [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](/tasks/zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) — до роботи
 * [Замовити таймери на Amazon: 2× Heschen CN101A 12 В ($8.57) + 1× MISOL 25 А ($19.49), разом $36.63; фотореле ($11.93 eBay) — за бажанням](/tasks/zamovyty-taimery-na-amazon-2-heschen-cn101a-12-v-8-57-1-miso.md) — до роботи
+* [Свердлити торець у зборі: спершу прикрутити алюмінієву накладку до дерева, потім проходити коронкою наскрізь — отвори будуть співвісні](/tasks/sverdlyty-torets-u-zbori-spershu-prykrutyty-aliuminiievu-nak.md) — до роботи
 
 # Закупівля
 
@@ -185,3 +186,4 @@ generated: { by: "process:site-build" }
 * [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](/bom/taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) — $22.49, купити
 * [Коронка біметалева 3/4″ (19.05 мм) з хвостовиком — отвори під врізні вогні](/bom/koronka-bimetaleva-3-4-19-05-mm-z-khvostovykom-otvory-pid-vr.md) — $8.79, купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](/bom/stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) — $9.19, купити
+* [Мастило для різання металу (cutting fluid) — обовʼязкове для алюмінію](/bom/mastylo-dlia-rizannia-metalu-cutting-fluid-oboviazkove-dlia-.md) — ~$10, купити
