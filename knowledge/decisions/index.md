@@ -142,3 +142,4 @@
 * [Транспорт: беремо мінівен напрокат у SFO — але не будь-який і не в будь-кого](transport-beremo-miniven-naprokat-u-sfo-ale-ne-bud-iakyi-i-n.md)
 * [Аварійне світло — це МАРКЕРИ, а не робоче освітлення](avariine-svitlo-tse-markery-a-ne-roboche-osvitlennia.md)
 * [Світлоповертальні елементи на фігурі — не рулон, а лист: деталі дрібні, а одна ширша за 2″](svitlopovertalni-elementy-na-fihuri-ne-rulon-a-lyst-detali-d.md)
+* [Оренда машини на плайю — не мережеві прокати, а Turo з письмовим дозволом власника](orenda-mashyny-na-plaiiu-ne-merezhevi-prokaty-a-turo-z-pysmo.md)
