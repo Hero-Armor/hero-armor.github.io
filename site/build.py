@@ -2196,6 +2196,49 @@ def build():
              .replace("{{PAINT_BUY}}", photo_wall_html(paint_rows) + buy_table_html(paint_rows))
              .replace("{{GEN_DATE}}", today.isoformat()))
 
+    # ================= transport page (як везмо фігуру) =================
+    # Окрема сторінка, бо питання «у що вона влазить» вирішує вибір машини,
+    # а це гроші і строки. Схема і числа — з project/data/transport.json.
+    tr = tmpl("transport.tmpl.html")
+    TRD = json.loads((ROOT / "project/data/transport.json").read_text())
+    tsvg = ROOT / "project/model/transport_load.svg"
+    tdia = ""
+    if tsvg.exists():
+        sv = tsvg.read_text()
+        tdia = ('  <figure class="dia">\n' + sv[sv.index("<svg"):] +
+                '\n    <figcaption>Як фігура лежить у кузові: лицем вниз, труба в плечах, '
+                'каркас під 90° вперед і дві рейки вниз до металевого багатокутника основи. '
+                'Нижче — вантажні обʼєми машин у тому ж масштабі.</figcaption>\n  </figure>')
+    b = TRD["box_in"]
+    how = (f'<ul>\n<li>Габарит перевезення: <b>{b["l"]}″ × {b["w"]}″ × {b["h"]}″</b> '
+           f'({b["l"]//12}×{b["w"]//12}×{b["h"]//12} фути) — це фігура РАЗОМ із рамою.</li>\n'
+           f'<li>Фігура лежить <b>лицем вниз</b>: так захищені лице і груди, а ядро на спині зверху.</li>\n'
+           f'<li>У плечі — поперечна труба; від неї каркас під 90° вперед і дві рейки вниз '
+           f'до металевого багатокутника основи.</li>\n'
+           f'<li>З боків запас: у плечах {TRD["figure"]["shoulders_in"]}″ проти {b["w"]}″ кузова.</li>\n</ul>')
+    rows = []
+    for v in TRD["vans"]:
+        fits = v["len_in"] >= b["l"] and v["w_in"] >= b["w"] and v["h_in"] >= b["h"]
+        rows.append(f'<tr><td>{esc(v["name"])}</td><td>{v["len_in"]}″</td><td>{v["w_in"]}″</td>'
+                    f'<td>{v["h_in"]}″</td><td>{"так" if fits else "ні — " + esc(v.get("why", ""))}</td></tr>')
+    vans = ('<table class="tbl"><thead><tr><th>машина</th><th>довжина</th><th>ширина</th>'
+            '<th>висота</th><th>влазить</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table>')
+    rent = TRD.get("rent_html", "")
+    tdec = [d for d in DECISIONS if d.get("system") == "project" and "транспорт" in (d.get("title", "") + d.get("why", "")).lower()]
+    ttask = [t for t in TASKS if t.get("system") == "project" and "транспорт" in t.get("task", "").lower()]
+    tr = (tr.replace("{{LEAD}}", esc(TRD["note"]))
+            .replace("{{DIAGRAM}}", tdia)
+            .replace("{{HOW_HTML}}", how)
+            .replace("{{VANS_HTML}}", vans)
+            .replace("{{RENT_HTML}}", rent)
+            .replace("{{DEC_HTML}}", "".join(
+                f'<div class="card"><h3>{esc(d.get("title",""))}</h3><p>{d.get("why","")}</p></div>'
+                for d in tdec) or '<p class="meta">поки нема</p>')
+            .replace("{{TASK_HTML}}", "<ul>" + "".join(
+                f'<li>{esc(t.get("task",""))} <span class="meta">— {esc(t.get("status",""))}</span></li>'
+                for t in ttask) + "</ul>" if ttask else "")
+            .replace("{{GEN_DATE}}", today.isoformat()))
+
     # ================= ops page =================
     ops = tmpl("ops.tmpl.html")
     if ADDR.get("move_date"):
@@ -2948,7 +2991,7 @@ def build():
     pages = {**circ_pages,
              "index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
-             "schemes.html": schemes, "paint.html": paint,
+             "schemes.html": schemes, "paint.html": paint, "transport.html": tr,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
              "solar_lab.html": slab, "cables_lab.html": clab,

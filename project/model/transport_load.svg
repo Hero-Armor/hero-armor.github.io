@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1028" height="1020" viewBox="0 0 1028 1020">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#7f8aa3" stroke-width="1"/></marker></defs>
+<rect width="1028" height="1020" fill="#0e1420"/>
+<rect x="70" y="64" width="518.4" height="259.2" fill="none" stroke="#7f8aa3" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="70.0" y="50.0" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#e8edf7" text-anchor="start" font-weight="600">Збоку — як лежить у кузові</text>
+<line x1="70" y1="323.2" x2="588.4" y2="323.2" stroke="#7f8aa3" stroke-width="2"/>
+<path d="M97.0 269.2 q 27.0 -43.2 59.4 0 l 48.6 0 q 37.8 -21.6 81.0 0 l 167.4 0 q 37.8 5.4 70.2 10.8 l 0 43.2 l -399.6 0 z" fill="#1b2740" stroke="#4da3ff" stroke-width="1.6"/>
+<text x="107.8" y="209.8" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#4da3ff" text-anchor="start" font-weight="400">фігура лежить ЛИЦЕМ ВНИЗ</text>
+<circle cx="226.6" cy="258.4" r="5.5" fill="#ffb648"/>
+<text x="236.6" y="236.8" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#ffb648" text-anchor="start" font-weight="400">труба в плечах</text>
+<line x1="226.6" y1="258.4" x2="226.6" y2="323.2" stroke="#ffb648" stroke-width="3.2"/>
+<path d="M230.6 307.2 l 12 0 l 0 12" fill="none" stroke="#ffb648" stroke-width="1"/>
+<text x="218.6" y="337.2" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#ffb648" text-anchor="middle" font-weight="400">каркас під 90° вперед</text>
+<line x1="226.6" y1="258.4" x2="269.8" y2="301.6" stroke="#ffb648" stroke-width="2.2" stroke-dasharray="7 3"/>
+<line x1="226.6" y1="258.4" x2="323.8" y2="301.6" stroke="#ffb648" stroke-width="2.2" stroke-dasharray="7 3"/>
+<text x="340.0" y="280.0" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#ffb648" text-anchor="start" font-weight="400">дві рейки вниз</text>
+<rect x="215.8" y="301.6" width="140.4" height="21.6" fill="#243350" stroke="#ffb648" stroke-width="1.4"/>
+<text x="377.8" y="316.7" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="start" font-weight="400">металевий багатокутник основи</text>
+<line x1="70.0" y1="367.2" x2="588.4" y2="367.2" stroke="#7f8aa3" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="329.2" y="361.2" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="middle" font-weight="400">96" (8 фути)</text>
+<line x1="46.0" y1="64.0" x2="46.0" y2="323.2" stroke="#7f8aa3" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="46.0" y="197.6" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="middle" font-weight="400">48"</text>
+<rect x="70" y="415.20000000000005" width="518.4" height="259.2" fill="none" stroke="#7f8aa3" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="70.0" y="403.2" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#e8edf7" text-anchor="start" font-weight="600">Зверху — запас з боків</text>
+<rect x="91.6" y="474.6" width="426.6" height="140.4" rx="27.0" fill="#1b2740" stroke="#4da3ff" stroke-width="1.6"/>
+<text x="124.0" y="548.8" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#4da3ff" text-anchor="start" font-weight="400">фігура: плечі 26"</text>
+<line x1="102.4" y1="415.2" x2="102.4" y2="474.6" stroke="#7f8aa3" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="102.4" y="448.9" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="middle" font-weight="400">11"</text>
+<line x1="102.4" y1="615.0" x2="102.4" y2="674.4" stroke="#7f8aa3" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="102.4" y="648.7" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="middle" font-weight="400">11"</text>
+<line x1="70.0" y1="700.4" x2="588.4" y2="700.4" stroke="#7f8aa3" stroke-width="1" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="329.2" y="694.4" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="middle" font-weight="400">48" завширшки</text>
+<text x="70.0" y="740.4" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#e8edf7" text-anchor="start" font-weight="600">Що влазить — вантажний обʼєм у тому ж масштабі</text>
+<rect x="70" y="752.4000000000001" width="537.3" height="26" rx="4" fill="none" stroke="#59d98e" stroke-width="1.6"/>
+<rect x="70" y="757.4000000000001" width="518.4" height="16" fill="#4da3ff" fill-opacity="0.18" stroke="#4da3ff" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="619.3" y="769.4" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#59d98e" text-anchor="start" font-weight="400">Chrysler Pacifica (Stow'n Go) — 99.5" × 49" × 48"</text>
+<rect x="70" y="790.4000000000001" width="388.8" height="26" rx="4" fill="none" stroke="#ff6b6b" stroke-width="1.6"/>
+<rect x="70" y="795.4000000000001" width="518.4" height="16" fill="#4da3ff" fill-opacity="0.18" stroke="#4da3ff" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="470.8" y="807.4" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#ff6b6b" text-anchor="start" font-weight="400">Toyota Sienna — 72" × 50" × 48"  ✗ коротка: 96" тільки якщо зняти сидіння 2-го ряду</text>
+<rect x="70" y="828.4000000000001" width="529.2" height="26" rx="4" fill="none" stroke="#ff6b6b" stroke-width="1.6"/>
+<rect x="70" y="833.4000000000001" width="518.4" height="16" fill="#4da3ff" fill-opacity="0.18" stroke="#4da3ff" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="611.2" y="845.4" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#ff6b6b" text-anchor="start" font-weight="400">Honda Odyssey — 98" × 49" × 40"  ✗ низька: 40" замість 48"</text>
+<rect x="70" y="866.4000000000001" width="469.8" height="26" rx="4" fill="none" stroke="#ff6b6b" stroke-width="1.6"/>
+<rect x="70" y="871.4000000000001" width="518.4" height="16" fill="#4da3ff" fill-opacity="0.18" stroke="#4da3ff" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="551.8" y="883.4" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#ff6b6b" text-anchor="start" font-weight="400">Ram ProMaster City — 87" × 48" × 51"  ✗ коротка на 9 дюймів</text>
+<rect x="70" y="904.4000000000001" width="680.4" height="26" rx="4" fill="none" stroke="#59d98e" stroke-width="1.6"/>
+<rect x="70" y="909.4000000000001" width="518.4" height="16" fill="#4da3ff" fill-opacity="0.18" stroke="#4da3ff" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="762.4" y="921.4" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#59d98e" text-anchor="start" font-weight="400">Ford Transit 250 (low roof) — 126" × 54" × 56"</text>
+<text x="70.0" y="948.4" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="start" font-weight="400">синім пунктиром — наш габарит 96×48×48"</text>
+<text x="40.0" y="990.4" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#7f8aa3" text-anchor="start" font-weight="400">Габарит 96×48×48 — це фігура РАЗОМ із рамою перевезення, а не сама фігура. З боків лишається запас, бо в плечах вона вужча за кузов.</text>
+</svg>
