@@ -2229,6 +2229,15 @@ def build():
     tr = (tr.replace("{{LEAD}}", esc(TRD["note"]))
             .replace("{{DIAGRAM}}", tdia)
             .replace("{{HOW_HTML}}", how)
+            .replace("{{HYPOTHESES}}", "".join(
+                f'<div class="card"><h3>{esc(x["title"])}</h3>'
+                f'<p>{esc(x["what"])}</p>'
+                f'<p><b>За:</b> {esc(x["pro"])}</p>'
+                f'<p><b>Проти:</b> {esc(x["contra"])}</p>'
+                f'<p><b>Висновок:</b> {esc(x["verdict"])}</p>'
+                f'<p class="meta">джерело: {esc(x["who"])}</p></div>'
+                for x in TRD.get("hypotheses", [])) +
+                f'<p class="meta">{esc(TRD.get("suspension_note",""))}</p>')
             .replace("{{MINIVAN}}", (lambda m: (
                 f'<div class="card"><h3>Підходить рівно одна — {esc(m["only_one"])}</h3>'
                 f'<p>{esc(m["why"])}</p>'
