@@ -200,3 +200,4 @@
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) - $13.95, купити
 * [Коронка біметалева 3/4″ (19.05 мм) з хвостовиком — отвори під врізні вогні](koronka-bimetaleva-3-4-19-05-mm-z-khvostovykom-otvory-pid-vr.md) - $8.79, купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) - $9.19, купити
+* [Amzonly навігаційні вогні для каяка, 4 шт — маркери периметра, 170 годин мигання](amzonly-navihatsiini-vohni-dlia-kaiaka-4-sht-markery-perymet.md) - $12.99 за набір, купити
