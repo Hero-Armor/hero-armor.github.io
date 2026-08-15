@@ -138,7 +138,7 @@
 * [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) - $~108, купити
 * [Бокові маркери ALFU, накладні, 10 шт (варіант замість врізних)](bokovi-markery-alfu-nakladni-10-sht-variant-zamist-vriznykh.md) - $60 ($2/шт), купити
 * [Rock light GZ5CG, чорний накладний, 2 шт у наборі](rock-light-gz5cg-chornyi-nakladnyi-2-sht-u-nabori.md) - $90 ($7.5/шт), купити
-* [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $25.99, купити
+* [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $25.99 за 12 шт, купити
 * [Пластини кріплення ґрунтових анкерів до подіуму — лазерна різка 5x7", 3/16"](plastyny-kriplennia-gruntovykh-ankeriv-do-podiumu-lazerna-ri.md) - —, купити
 * [Ґрунтовка-герметик під фарбу Zinsser Bulls Eye 1-2-3 (обробка каркасу подіуму)](gruntovka-hermetyk-pid-farbu-zinsser-bulls-eye-1-2-3-obrobka.md) - $~40, купити
 * [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
@@ -200,4 +200,4 @@
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) - $13.95, купити
 * [Коронка біметалева 3/4″ (19.05 мм) з хвостовиком — отвори під врізні вогні](koronka-bimetaleva-3-4-19-05-mm-z-khvostovykom-otvory-pid-vr.md) - $8.79, купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) - $9.19, купити
-* [Amzonly навігаційні вогні для каяка, 4 шт — маркери периметра, 170 годин мигання](amzonly-navihatsiini-vohni-dlia-kaiaka-4-sht-markery-perymet.md) - $12.99 за набір, купити
+* [Amzonly навігаційні вогні для каяка, 4 шт — маркери периметра, 170 годин мигання](amzonly-navihatsiini-vohni-dlia-kaiaka-4-sht-markery-perymet.md) - $12.99 за набір ($51.96 за 16 шт), купити
