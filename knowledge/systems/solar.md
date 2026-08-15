@@ -46,6 +46,7 @@ generated: { by: "process:site-build" }
 * [Резервна зарядка станції живлення — від RV, якщо сонце відмовить](/decisions/rezervna-zariadka-stantsii-zhyvlennia-vid-rv-iakshcho-sontse.md)
 * [Станція мусить мати справжній вихід 12 В на 30 А — це умова відбору, а не побажання](/decisions/stantsiia-musyt-maty-spravzhnii-vykhid-12-v-na-30-a-tse-umov.md)
 * [Страховку Home Depot на станцію не беремо](/decisions/strakhovku-home-depot-na-stantsiiu-ne-beremo.md)
+* [REI як місце покупки станції — не підходить: потрібної моделі там нема](/decisions/rei-iak-mistse-pokupky-stantsii-ne-pidkhodyt-potribnoi-model.md)
 
 # Задачі
 
