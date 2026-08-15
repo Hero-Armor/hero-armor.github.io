@@ -2210,7 +2210,7 @@ def build():
                 'каркас під 90° вперед і дві рейки вниз до металевого багатокутника основи. '
                 'Нижче — вантажні обʼєми машин у тому ж масштабі.</figcaption>\n  </figure>')
     b = TRD["box_in"]
-    how = (f'<ul>\n<li>Габарит перевезення: <b>{b["l"]}″ × {b["w"]}″ × {b["h"]}″</b> '
+    how = (f'<ul class="facts">\n<li>Габарит перевезення: <b>{b["l"]}″ × {b["w"]}″ × {b["h"]}″</b> '
            f'({b["l"]//12}×{b["w"]//12}×{b["h"]//12} фути) — це фігура РАЗОМ із рамою.</li>\n'
            f'<li>Фігура лежить <b>лицем вниз</b>: так захищені лице і груди, а ядро на спині зверху.</li>\n'
            f'<li>У плечі — поперечна труба; від неї каркас під 90° вперед і дві рейки вниз '
@@ -2221,8 +2221,8 @@ def build():
         fits = v["len_in"] >= b["l"] and v["w_in"] >= b["w"] and v["h_in"] >= b["h"]
         rows.append(f'<tr><td>{esc(v["name"])}</td><td>{v["len_in"]}″</td><td>{v["w_in"]}″</td>'
                     f'<td>{v["h_in"]}″</td><td>{"так" if fits else "ні — " + esc(v.get("why", ""))}</td></tr>')
-    vans = ('<table class="tbl"><thead><tr><th>машина</th><th>довжина</th><th>ширина</th>'
-            '<th>висота</th><th>влазить</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table>')
+    vans = ('<div class="tbl-wrap"><table><thead><tr><th>машина</th><th>довжина</th><th>ширина</th>'
+            '<th>висота</th><th>влазить</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table></div>')
     rent = TRD.get("rent_html", "")
     tdec = [d for d in DECISIONS if d.get("system") == "project" and "транспорт" in (d.get("title", "") + d.get("why", "")).lower()]
     ttask = [t for t in TASKS if t.get("system") == "project" and "транспорт" in t.get("task", "").lower()]
