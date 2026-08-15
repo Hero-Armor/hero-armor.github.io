@@ -2250,6 +2250,12 @@ def build():
                 "".join(f'<div class="card"><h3>{esc(t)}</h3><p>{esc(c)}</p></div>' for t, c in v["points"]) +
                 f'<div class="card"><h3>Що з цим робимо</h3><p>{esc(v["verdict"])}</p></div>'))(TRD["tie_down"])
                 if "tie_down" in TRD else "")
+            .replace("{{HYBRID}}", (lambda hb: (
+                f'<div class="card"><h3>{esc(hb["verdict"])}</h3>'
+                f'<p class="meta">розглянутий варіант: {esc(hb["case"])}</p>'
+                f'<p><b>Сидіння:</b> {esc(hb["seats"])}</p>'
+                f'<p><b>Паливо:</b> {esc(hb["fuel"])}</p>'
+                f'<p><b>Висновок:</b> {esc(hb["conclusion"])}</p></div>'))(TRD["hybrid_check"]))
             .replace("{{HYPOTHESES}}", "".join(
                 f'<div class="card"><h3>{esc(x["title"])}</h3>'
                 f'<p>{esc(x["what"])}</p>'
