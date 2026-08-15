@@ -154,3 +154,4 @@
 * [Comet: натиснути Validate fix у Search Console по двох звітах структурованих даних hero-armor.com](comet-natysnuty-validate-fix-u-search-console-po-dvokh-zvita.md) - до роботи
 * [Заміряти на самій фігурі фактичні місця під світлоповертальні елементи (поз.3 — 20 мм ×5, поз.4 — 56 мм ×2, поз.5 — круг Ø44 мм): креслення прямо просить це перевірити](zamiriaty-na-samii-fihuri-faktychni-mistsia-pid-svitlopovert.md) - до роботи
 * [Turo: написати 3-5 власникам старих фургонів (cargo van або 12-15 місний) ДО броні — прямо спитати дозвіл на Burning Man і суму за прибирання після плайї, зберегти відповідь у переписці](turo-napysaty-3-5-vlasnykam-starykh-furhoniv-cargo-van-abo-1.md) - до роботи
+* [Дочекатись відповіді Лізи і Марселя по звірці витрат із бюджетною таблицею](dochekatys-vidpovidi-lizy-i-marselia-po-zvirtsi-vytrat-iz-bi.md) - чекаємо
