@@ -2229,6 +2229,12 @@ def build():
     tr = (tr.replace("{{LEAD}}", esc(TRD["note"]))
             .replace("{{DIAGRAM}}", tdia)
             .replace("{{HOW_HTML}}", how)
+            .replace("{{VOLODYMYR}}", (lambda v: (
+                f'<p>{esc(v["intro"])}</p>' +
+                "".join(f'<figure class="dia"><img src="{src}" alt=""/>'
+                        f'<figcaption>{esc(cap)}</figcaption></figure>' for src, cap in v["figures"]) +
+                "".join(f'<div class="card"><h3>{esc(t)}</h3><p>{esc(c)}</p></div>' for t, c in v["points"]) +
+                f'<div class="card"><h3>Що з цим робимо</h3><p>{esc(v["verdict"])}</p></div>'))(TRD["volodymyr"]))
             .replace("{{HYPOTHESES}}", "".join(
                 f'<div class="card"><h3>{esc(x["title"])}</h3>'
                 f'<p>{esc(x["what"])}</p>'
