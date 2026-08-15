@@ -79,3 +79,4 @@ generated: { by: "process:site-build" }
 * [AISEY біла світлоповертальна стрічка 2" × 30 ft — суцільна, мікропризма](/bom/aisey-bila-svitlopovertalna-strichka-2-30-ft-sutsilna-mikrop.md) — $7.49, купити
 * [Trim Brite жовта світлоповертальна стрічка 2" × 24" — самовивіз в Ace Hardware](/bom/trim-brite-zhovta-svitlopovertalna-strichka-2-24-samovyviz-v.md) — $4.99 за упаковку ($14.97), купити
 * [3M 983-71NL жовта Diamond Grade, 2" × 15 ft — плечі фігури](/bom/3m-983-71nl-zhovta-diamond-grade-2-15-ft-plechi-fihury.md) — $30.95, купити
+* [3M 983-10 біла Diamond Grade, 2" × 15 ft — корпус фігури (пара до жовтої 983-71NL)](/bom/3m-983-10-bila-diamond-grade-2-15-ft-korpus-fihury-para-do-z.md) — $32.95, купити

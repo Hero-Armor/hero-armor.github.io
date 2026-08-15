@@ -191,3 +191,4 @@
 * [VICOODA робочий ліхтар на магніті, 4 шт — аварійне і будівельне світло](vicooda-robochyi-likhtar-na-mahniti-4-sht-avariine-i-budivel.md) - $24.49, купити
 * [Samyoung робочий ліхтар 2400 лм, 2 шт — до 80 годин на заряді](samyoung-robochyi-likhtar-2400-lm-2-sht-do-80-hodyn-na-zaria.md) - $34.18, купити
 * [Botepon навігаційні вогні для каяка, 4 шт — на трубу чи поручень](botepon-navihatsiini-vohni-dlia-kaiaka-4-sht-na-trubu-chy-po.md) - $17.99, купити
+* [3M 983-10 біла Diamond Grade, 2" × 15 ft — корпус фігури (пара до жовтої 983-71NL)](3m-983-10-bila-diamond-grade-2-15-ft-korpus-fihury-para-do-z.md) - $32.95, купити
