@@ -2231,6 +2231,9 @@ def build():
             .replace("{{HOW_HTML}}", how)
             .replace("{{VOLODYMYR}}", (lambda v: (
                 f'<p>{esc(v["intro"])}</p>' +
+                (lambda f: ('  <figure class="dia">\n' + f.read_text()[f.read_text().index("<svg"):] +
+                            f'\n    <figcaption>{esc(v.get("top_view_cap",""))}</figcaption>\n  </figure>')
+                 if f.exists() else "")(ROOT / v.get("top_view_svg", "")) +
                 "".join(f'<figure class="dia"><img src="{src}" alt=""/>'
                         f'<figcaption>{esc(cap)}</figcaption></figure>' for src, cap in v["figures"]) +
                 "".join(f'<div class="card"><h3>{esc(t)}</h3><p>{esc(c)}</p></div>' for t, c in v["points"]) +
