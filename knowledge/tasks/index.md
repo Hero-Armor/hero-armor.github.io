@@ -157,3 +157,4 @@
 * [Дочекатись відповіді Лізи і Марселя по звірці витрат із бюджетною таблицею](dochekatys-vidpovidi-lizy-i-marselia-po-zvirtsi-vytrat-iz-bi.md) - чекаємо
 * [Свердлити торець у зборі: спершу прикрутити алюмінієву накладку до дерева, потім проходити коронкою наскрізь — отвори будуть співвісні](sverdlyty-torets-u-zbori-spershu-prykrutyty-aliuminiievu-nak.md) - до роботи
 * [Ліза: надіслати пункт 1 інструкції по кріпленню вантажу (маємо вже 2, 3, 4)](liza-nadislaty-punkt-1-instruktsii-po-kriplenniu-vantazhu-ma.md) - готово
+* [Уточнити в Лізи, хто веде графік збірки в ProjectLibre (Hero Armor.pod, комп'ютер «Wolo») і чи є в нас доступ до нього — щоб звіряти терміни з нашою базою автоматично, а не по скріншотах](utochnyty-v-lizy-khto-vede-hrafik-zbirky-v-projectlibre-hero.md) - до роботи
