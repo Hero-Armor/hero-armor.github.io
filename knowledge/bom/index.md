@@ -198,3 +198,5 @@
 * [Planet Bike Superflash Turbo — задня мигалка, 100 годин на 2×AAA](planet-bike-superflash-turbo-zadnia-myhalka-100-hodyn-na-2-a.md) - $29.99, купити
 * [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) - $17.95, купити
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) - $13.95, купити
+* [Коронка біметалева 3/4″ (19.05 мм) з хвостовиком — отвори під врізні вогні](koronka-bimetaleva-3-4-19-05-mm-z-khvostovykom-otvory-pid-vr.md) - $8.79, купити
+* [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) - $9.19, купити

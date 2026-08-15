@@ -143,3 +143,4 @@
 * [Аварійне світло — це МАРКЕРИ, а не робоче освітлення](avariine-svitlo-tse-markery-a-ne-roboche-osvitlennia.md)
 * [Світлоповертальні елементи на фігурі — не рулон, а лист: деталі дрібні, а одна ширша за 2″](svitlopovertalni-elementy-na-fihuri-ne-rulon-a-lyst-detali-d.md)
 * [Оренда машини на плайю — не мережеві прокати, а Turo з письмовим дозволом власника](orenda-mashyny-na-plaiiu-ne-merezhevi-prokaty-a-turo-z-pysmo.md)
+* [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)

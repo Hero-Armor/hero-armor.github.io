@@ -62,6 +62,7 @@ generated: { by: "process:site-build" }
 * [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](/decisions/vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](/decisions/dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
 * [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](/decisions/chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
+* [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](/decisions/vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
 
 # Задачі
 
@@ -182,3 +183,5 @@ generated: { by: "process:site-build" }
 * [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](/bom/fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) — $11.93, купити
 * [Тижневий таймер DC 12 В Heschen CN101A, 16 А — вмикання світла за розкладом](/bom/tyzhnevyi-taimer-dc-12-v-heschen-cn101a-16-a-vmykannia-svitl.md) — $9.89 за шт ($19.78 за дві), купити
 * [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](/bom/taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) — $22.49, купити
+* [Коронка біметалева 3/4″ (19.05 мм) з хвостовиком — отвори під врізні вогні](/bom/koronka-bimetaleva-3-4-19-05-mm-z-khvostovykom-otvory-pid-vr.md) — $8.79, купити
+* [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](/bom/stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) — $9.19, купити
