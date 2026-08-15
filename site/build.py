@@ -2229,6 +2229,12 @@ def build():
     tr = (tr.replace("{{LEAD}}", esc(TRD["note"]))
             .replace("{{DIAGRAM}}", tdia)
             .replace("{{HOW_HTML}}", how)
+            .replace("{{MINIVAN}}", (lambda m: (
+                f'<div class="card"><h3>Підходить рівно одна — {esc(m["only_one"])}</h3>'
+                f'<p>{esc(m["why"])}</p>'
+                f'<p><b>Ризик:</b> {esc(m["risk"])}</p>'
+                f'<p><b>Що робити:</b> {esc(m["advice"])}</p>'
+                f'<p class="meta">{esc(m["alternatives"])}</p></div>'))(TRD["minivan_verdict"]))
             .replace("{{VANS_HTML}}", vans)
             .replace("{{RENT_HTML}}", rent)
             .replace("{{DEC_HTML}}", "".join(
