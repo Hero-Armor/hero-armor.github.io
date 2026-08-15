@@ -187,3 +187,4 @@ generated: { by: "process:site-build" }
 * [Коронка Bosch HBT075 3/4″ біметал M42 — отвори під врізні вогні](/bom/koronka-bosch-hbt075-3-4-bimetal-m42-otvory-pid-vrizni-vohni.md) — $6.49 за шт ($12.98 за дві), купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](/bom/stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) — $9.19, купити
 * [Мастило для різання металу (cutting fluid) — обовʼязкове для алюмінію](/bom/mastylo-dlia-rizannia-metalu-cutting-fluid-oboviazkove-dlia-.md) — ~$10, купити
+* [Набір біметалевих коронок M42, 3/4″–2″ — під світильники, розʼєми і кабельні проходи](/bom/nabir-bimetalevykh-koronok-m42-3-4-2-pid-svitylnyky-roziemy-.md) — $24-38 залежно від набору, купити
