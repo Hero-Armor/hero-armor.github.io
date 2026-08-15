@@ -138,7 +138,7 @@
 * [Накладні вогні в торець подіуму — Dream Lighting, теплий білий (альтернатива врізним)](nakladni-vohni-v-torets-podiumu-dream-lighting-teplyi-bilyi-.md) - $~108, купити
 * [Бокові маркери ALFU, накладні, 10 шт (варіант замість врізних)](bokovi-markery-alfu-nakladni-10-sht-variant-zamist-vriznykh.md) - $60 ($2/шт), купити
 * [Rock light GZ5CG, чорний накладний, 2 шт у наборі](rock-light-gz5cg-chornyi-nakladnyi-2-sht-u-nabori.md) - $90 ($7.5/шт), купити
-* [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $~23, купити
+* [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $25.99, купити
 * [Пластини кріплення ґрунтових анкерів до подіуму — лазерна різка 5x7", 3/16"](plastyny-kriplennia-gruntovykh-ankeriv-do-podiumu-lazerna-ri.md) - —, купити
 * [Ґрунтовка-герметик під фарбу Zinsser Bulls Eye 1-2-3 (обробка каркасу подіуму)](gruntovka-hermetyk-pid-farbu-zinsser-bulls-eye-1-2-3-obrobka.md) - $~40, купити
 * [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
@@ -188,3 +188,6 @@
 * [AISEY біла світлоповертальна стрічка 2" × 30 ft — суцільна, мікропризма](aisey-bila-svitlopovertalna-strichka-2-30-ft-sutsilna-mikrop.md) - $7.49, купити
 * [Trim Brite жовта світлоповертальна стрічка 2" × 24" — самовивіз в Ace Hardware](trim-brite-zhovta-svitlopovertalna-strichka-2-24-samovyviz-v.md) - $4.99 за упаковку ($14.97), купити
 * [3M 983-71NL жовта Diamond Grade, 2" × 15 ft — плечі фігури](3m-983-71nl-zhovta-diamond-grade-2-15-ft-plechi-fihury.md) - $30.95, купити
+* [VICOODA робочий ліхтар на магніті, 4 шт — аварійне і будівельне світло](vicooda-robochyi-likhtar-na-mahniti-4-sht-avariine-i-budivel.md) - $24.49, купити
+* [Samyoung робочий ліхтар 2400 лм, 2 шт — до 80 годин на заряді](samyoung-robochyi-likhtar-2400-lm-2-sht-do-80-hodyn-na-zaria.md) - $34.18, купити
+* [Botepon навігаційні вогні для каяка, 4 шт — на трубу чи поручень](botepon-navihatsiini-vohni-dlia-kaiaka-4-sht-na-trubu-chy-po.md) - $17.99, купити
