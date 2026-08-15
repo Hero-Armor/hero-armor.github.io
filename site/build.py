@@ -2238,6 +2238,11 @@ def build():
                         f'<figcaption>{esc(cap)}</figcaption></figure>' for src, cap in v["figures"]) +
                 "".join(f'<div class="card"><h3>{esc(t)}</h3><p>{esc(c)}</p></div>' for t, c in v["points"]) +
                 f'<div class="card"><h3>Що з цим робимо</h3><p>{esc(v["verdict"])}</p></div>'))(TRD["volodymyr"]))
+            .replace("{{CLEARANCE}}", (lambda v: (
+                f'<p>{esc(v["intro"])}</p>' +
+                "".join(f'<div class="card"><h3>{esc(t)}</h3><p>{esc(c)}</p></div>' for t, c in v["points"]) +
+                f'<div class="card"><h3>⚠ Звірити з Лізою</h3><p>{esc(v["verdict"])}</p></div>'))(TRD["clearance"])
+                if "clearance" in TRD else "")
             .replace("{{TIE_DOWN}}", (lambda v: (
                 f'<p>{esc(v["intro"])}</p>' +
                 "".join(f'<div class="card"><h3>{esc(t)}</h3><p>{esc(c)}</p></div>' for t, c in v["points"]) +
