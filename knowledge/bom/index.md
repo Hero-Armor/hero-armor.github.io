@@ -196,3 +196,5 @@
 * [ACR Firefly PRO SOLAS — аварійний строб на найнебезпечніші кути](acr-firefly-pro-solas-avariinyi-strob-na-nainebezpechnishi-k.md) - $67.99-74.95, купити
 * [Tobfit акумуляторні LED-фаєри, 4 шт — мигаючі маркери на магніті](tobfit-akumuliatorni-led-faiery-4-sht-myhaiuchi-markery-na-m.md) - $21.99, купити
 * [Planet Bike Superflash Turbo — задня мигалка, 100 годин на 2×AAA](planet-bike-superflash-turbo-zadnia-myhalka-100-hodyn-na-2-a.md) - $29.99, купити
+* [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) - $17.95, купити
+* [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) - $13.95, купити

@@ -24,6 +24,7 @@ generated: { by: "process:site-build" }
 * [Колір світловідбивної плівки на плечі — School Bus Yellow](/decisions/kolir-svitlovidbyvnoi-plivky-na-plechi-school-bus-yellow.md)
 * [Світлоповертальна плівка — тільки два кольори: School Bus Yellow і біла](/decisions/svitlopovertalna-plivka-tilky-dva-kolory-school-bus-yellow-i.md)
 * [Стрічка — тільки суцільна, без смуг; дешеві DOT-C2 не підходять за виглядом](/decisions/strichka-tilky-sutsilna-bez-smuh-deshevi-dot-c2-ne-pidkhodia.md)
+* [Світлоповертальні елементи на фігурі — не рулон, а лист: деталі дрібні, а одна ширша за 2″](/decisions/svitlopovertalni-elementy-na-fihuri-ne-rulon-a-lyst-detali-d.md)
 
 # Задачі
 
@@ -45,6 +46,7 @@ generated: { by: "process:site-build" }
 * [Ліза: обрати відтінок жовтої плівки на плечі — School Bus Yellow чи Fluorescent Lime (ціна однакова, $14.99 за 5 ft)](/tasks/liza-obraty-vidtinok-zhovtoi-plivky-na-plechi-school-bus-yel.md) — готово
 * [Глянути ціну в доларах на білу стрічку SWRT 2"×30 ft (2 рулони) — якщо близько $12, беремо її замість ORALITE білої за $42.99](/tasks/hlianuty-tsinu-v-dolarakh-na-bilu-strichku-swrt-2-30-ft-2-ru.md) — до роботи
 * [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](/tasks/zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) — до роботи
+* [Заміряти на самій фігурі фактичні місця під світлоповертальні елементи (поз.3 — 20 мм ×5, поз.4 — 56 мм ×2, поз.5 — круг Ø44 мм): креслення прямо просить це перевірити](/tasks/zamiriaty-na-samii-fihuri-faktychni-mistsia-pid-svitlopovert.md) — до роботи
 
 # Закупівля
 
@@ -80,3 +82,5 @@ generated: { by: "process:site-build" }
 * [Trim Brite жовта світлоповертальна стрічка 2" × 24" — самовивіз в Ace Hardware](/bom/trim-brite-zhovta-svitlopovertalna-strichka-2-24-samovyviz-v.md) — $4.99 за упаковку ($14.97), купити
 * [3M 983-71NL жовта Diamond Grade, 2" × 15 ft — плечі фігури](/bom/3m-983-71nl-zhovta-diamond-grade-2-15-ft-plechi-fihury.md) — $30.95, купити
 * [3M 983-10 біла Diamond Grade, 2" × 15 ft — корпус фігури (пара до жовтої 983-71NL)](/bom/3m-983-10-bila-diamond-grade-2-15-ft-korpus-fihury-para-do-z.md) — $32.95, купити
+* [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](/bom/bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) — $17.95, купити
+* [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](/bom/zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) — $13.95, купити

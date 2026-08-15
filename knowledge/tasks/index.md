@@ -152,3 +152,4 @@
 * [Search Console: натиснути VALIDATE FIX по двох звітах (author + datePublished) — API цього не вміє, тільки інтерфейс](search-console-natysnuty-validate-fix-po-dvokh-zvitakh-autho.md) - до роботи
 * [Search Console: розібрати два інші листи — «New reasons prevent pages from being indexed» (27.07) і рекомендації по присутності](search-console-rozibraty-dva-inshi-lysty-new-reasons-prevent.md) - до роботи
 * [Comet: натиснути Validate fix у Search Console по двох звітах структурованих даних hero-armor.com](comet-natysnuty-validate-fix-u-search-console-po-dvokh-zvita.md) - до роботи
+* [Заміряти на самій фігурі фактичні місця під світлоповертальні елементи (поз.3 — 20 мм ×5, поз.4 — 56 мм ×2, поз.5 — круг Ø44 мм): креслення прямо просить це перевірити](zamiriaty-na-samii-fihuri-faktychni-mistsia-pid-svitlopovert.md) - до роботи
