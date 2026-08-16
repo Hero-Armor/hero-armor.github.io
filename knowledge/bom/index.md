@@ -176,7 +176,7 @@
 * [EZARC набір кільцевих пил 16 предметів, 3/4"–2 1/2", з арборами і пілотними свердлами](ezarc-nabir-kiltsevykh-pyl-16-predmetiv-3-4-2-1-2-z-arboramy.md) - $47.58, купити
 * [Кабель екранована вита пара Cat6 outdoor, 25 ft — винос радара в фігуру](kabel-ekranovana-vyta-para-cat6-outdoor-25-ft-vynos-radara-v.md) - $7.99, купити
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) - $10.91, купити
-* [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) - $12.12, купити
+* [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження світлодіодів на корпусі](rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-svitlo.md) - $12.12, купити
 * [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) - $9.35, купити
 * [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) - $11.69, купити
 * [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) - $11.89, купити

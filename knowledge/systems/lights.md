@@ -121,6 +121,7 @@ generated: { by: "process:site-build" }
 * [Замовити таймери на Amazon: 2× Heschen CN101A 12 В ($8.57) + 1× MISOL 25 А ($19.49), разом $36.63; фотореле ($11.93 eBay) — за бажанням](/tasks/zamovyty-taimery-na-amazon-2-heschen-cn101a-12-v-8-57-1-miso.md) — до роботи
 * [Свердлити торець у зборі: спершу прикрутити алюмінієву накладку до дерева, потім проходити коронкою наскрізь — отвори будуть співвісні](/tasks/sverdlyty-torets-u-zbori-spershu-prykrutyty-aliuminiievu-nak.md) — до роботи
 * [Іван дасть фінальне рішення по електриці фігури — звірити, що ще скасовується після переходу спини на лампу MR16](/tasks/ivan-dast-finalne-rishennia-po-elektrytsi-fihury-zviryty-shc.md) — чекаємо
+* [Лампи Diodesy, замовлення 114-0792999-4940230 ($92.32): або відправити повернення до 06.09, або переоформити скаргу A-to-z до 14.09](/tasks/lampy-diodesy-zamovlennia-114-0792999-4940230-92-32-abo-vidp.md) — до роботи
 
 # Закупівля
 
@@ -175,7 +176,7 @@ generated: { by: "process:site-build" }
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](/bom/sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) — —, купити
 * [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](/bom/kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) — $15-25, купити
 * [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](/bom/vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) — $28.49, купити
-* [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження жовтих світлодіодів](/bom/rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-zhovty.md) — $12.12, купити
+* [Резистори 1/2 Вт, набір 25 номіналів — струмообмеження світлодіодів на корпусі](/bom/rezystory-1-2-vt-nabir-25-nominaliv-strumoobmezhennia-svitlo.md) — $12.12, купити
 * [Розʼєм CNLINKO M12 4 контакти IP67 — живлення світла фігури](/bom/roziem-cnlinko-m12-4-kontakty-ip67-zhyvlennia-svitla-fihury.md) — $11.69, купити
 * [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](/bom/tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) — $11.89, купити
 * [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](/bom/fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) — $11.93, купити
