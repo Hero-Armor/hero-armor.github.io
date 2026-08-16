@@ -46,6 +46,7 @@ generated: { by: "process:site-build" }
 * [Глянути ціну в доларах на білу стрічку SWRT 2"×30 ft (2 рулони) — якщо близько $12, беремо її замість ORALITE білої за $42.99](/tasks/hlianuty-tsinu-v-dolarakh-na-bilu-strichku-swrt-2-30-ft-2-ru.md) — до роботи
 * [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](/tasks/zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) — до роботи
 * [Заміряти на самій фігурі фактичні місця під світлоповертальні елементи (поз.3 — 20 мм ×5, поз.4 — 56 мм ×2, поз.5 — круг Ø44 мм): креслення прямо просить це перевірити](/tasks/zamiriaty-na-samii-fihuri-faktychni-mistsia-pid-svitlopovert.md) — до роботи
+* [Спитати @vlbrsk (проєктував оболонку) і Марселя (друкував): яке навантаження тримає пластик броні при перенесенні](/tasks/spytaty-vlbrsk-proiektuvav-obolonku-i-marselia-drukuvav-iake.md) — до роботи
 
 # Закупівля
 

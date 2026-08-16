@@ -168,3 +168,4 @@
 * [Зробити виділений токен для ботів: claude setup-token → покласти в /root/.secrets/claude_code_oauth_token](zrobyty-vydilenyi-token-dlia-botiv-claude-setup-token-poklas.md) - до роботи
 * [Іван дасть фінальне рішення по електриці фігури — звірити, що ще скасовується після переходу спини на лампу MR16](ivan-dast-finalne-rishennia-po-elektrytsi-fihury-zviryty-shc.md) - чекаємо
 * [Лампи Diodesy, замовлення 114-0792999-4940230 ($92.32): або відправити повернення до 06.09, або переоформити скаргу A-to-z до 14.09](lampy-diodesy-zamovlennia-114-0792999-4940230-92-32-abo-vidp.md) - до роботи
+* [Спитати @vlbrsk (проєктував оболонку) і Марселя (друкував): яке навантаження тримає пластик броні при перенесенні](spytaty-vlbrsk-proiektuvav-obolonku-i-marselia-drukuvav-iake.md) - до роботи
