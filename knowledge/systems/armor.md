@@ -13,7 +13,6 @@ generated: { by: "process:site-build" }
 # Рішення
 
 * [Пасивна помітність: катафоти і мікропризматична стрічка на подіум](/decisions/pasyvna-pomitnist-katafoty-i-mikropryzmatychna-strichka-na-p.md)
-* [Помітність конструкції вночі — габарити або світловідбивна стрічка](/decisions/pomitnist-konstruktsii-vnochi-habaryty-abo-svitlovidbyvna-st.md)
 * [Світловідбивні стрічки — з eBay, не з Amazon](/decisions/svitlovidbyvni-strichky-z-ebay-ne-z-amazon.md)
 * [Світловідбивна стрічка: ORALITE V98 на фігуру, 3M 983-10 на торець подіуму](/decisions/svitlovidbyvna-strichka-oralite-v98-na-fihuru-3m-983-10-na-t.md)
 * [Монтаж світловідбивної стрічки: ґрунтовка, знежирення, прогрів](/decisions/montazh-svitlovidbyvnoi-strichky-gruntovka-znezhyrennia-proh.md)
@@ -82,5 +81,5 @@ generated: { by: "process:site-build" }
 * [Trim Brite жовта світлоповертальна стрічка 2" × 24" — самовивіз в Ace Hardware](/bom/trim-brite-zhovta-svitlopovertalna-strichka-2-24-samovyviz-v.md) — $4.99 за упаковку ($14.97), купити
 * [3M 983-71NL жовта Diamond Grade, 2" × 15 ft — плечі фігури](/bom/3m-983-71nl-zhovta-diamond-grade-2-15-ft-plechi-fihury.md) — $30.95, купити
 * [3M 983-10 біла Diamond Grade, 2" × 15 ft — корпус фігури (пара до жовтої 983-71NL)](/bom/3m-983-10-bila-diamond-grade-2-15-ft-korpus-fihury-para-do-z.md) — $32.95, купити
-* [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](/bom/bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) — $17.95, купити
+* [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](/bom/bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) — $17.95, є
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](/bom/zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) — $13.95, купити

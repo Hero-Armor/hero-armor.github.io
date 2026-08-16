@@ -22,7 +22,6 @@ generated: { by: "process:site-build" }
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](/decisions/nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
 * [Габаритні вогні на стійках прожекторів — скасовано](/decisions/habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
 * [Окремі сторінки-калькулятори по типах світла](/decisions/okremi-storinky-kalkuliatory-po-typakh-svitla.md)
-* [Стрічка — це вісім рукавів, а не промені плюс окреме коло](/decisions/strichka-tse-visim-rukaviv-a-ne-promeni-plius-okreme-kolo.md)
 * [Регулюємо прожектори ШІМ-диммером, а не заниженням напруги](/decisions/rehuliuiemo-prozhektory-shim-dymmerom-a-ne-zanyzhenniam-napr.md)
 * [Переріз неону — 8 × 16 мм, заглушки беремо під цей розмір](/decisions/pereriz-neonu-8-16-mm-zahlushky-beremo-pid-tsei-rozmir.md)
 * [Суцільна заливка стрічки заборонена; робочий режим — «Комета»](/decisions/sutsilna-zalyvka-strichky-zaboronena-robochyi-rezhym-kometa.md)
@@ -48,9 +47,7 @@ generated: { by: "process:site-build" }
 * [Стрічка мусить тримати +60°C — попередні відхилені](/decisions/strichka-musyt-trymaty-60-c-poperedni-vidkhyleni.md)
 * [Просадка вздовж самої стрічки — перевірити на довжині гілки](/decisions/prosadka-vzdovzh-samoi-strichky-pereviryty-na-dovzhyni-hilky.md)
 * [Як герметизувати різи стрічки: нейтральний силікон, не оцтовий і не термоклей](/decisions/iak-hermetyzuvaty-rizy-strichky-neitralnyi-sylikon-ne-otstov.md)
-* [Чим вмикати прожектори і аварійну без фотореле](/decisions/chym-vmykaty-prozhektory-i-avariinu-bez-fotorele.md)
 * [Звук і світло — два окремі кабелі від станції](/decisions/zvuk-i-svitlo-dva-okremi-kabeli-vid-stantsii.md)
-* [Обидва кабелі лишаються — ні 8/2, ні 12/2 не повертаємо [ЧАСТКОВО СКАСОВАНО 05.08]](/decisions/obydva-kabeli-lyshaiutsia-ni-8-2-ni-12-2-ne-povertaiemo-chas.md)
 * [Корпусів прожекторів лишаємо рівно 12 — надлишок повернути](/decisions/korpusiv-prozhektoriv-lyshaiemo-rivno-12-nadlyshok-povernuty.md)
 * [Лампи на корпусі робота — паралельно від клемного вузла, не шлейфом](/decisions/lampy-na-korpusi-robota-paralelno-vid-klemnoho-vuzla-ne-shle.md)
 * [Стрічка подіуму: усі вісім рукавів зводяться в центр, живлення одним кабелем](/decisions/strichka-podiumu-usi-visim-rukaviv-zvodiatsia-v-tsentr-zhyvl.md)
@@ -59,7 +56,6 @@ generated: { by: "process:site-build" }
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 * [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, живлення тільки паралельне](/decisions/indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
 * [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](/decisions/kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
-* [Врізні вогні торця — Sunmerit IP68 у захисному кожусі; отвір під них ріже ступінчасте свердло](/decisions/vrizni-vohni-tortsia-sunmerit-ip68-u-zakhysnomu-kozhusi-otvi.md)
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](/decisions/dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
 * [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](/decisions/chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
 * [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](/decisions/vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
@@ -183,10 +179,13 @@ generated: { by: "process:site-build" }
 * [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](/bom/tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) — $11.89, купити
 * [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](/bom/fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) — $11.93, купити
 * [Тижневий таймер DC 12 В Heschen CN101A, 16 А — вмикання світла за розкладом](/bom/tyzhnevyi-taimer-dc-12-v-heschen-cn101a-16-a-vmykannia-svitl.md) — $9.89 за шт ($19.78 за дві), купити
-* [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](/bom/taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) — $22.49, купити
+* [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](/bom/taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) — $22.49, є
 * [Коронка Bosch HBT075 3/4″ біметал M42 — отвори під врізні вогні](/bom/koronka-bosch-hbt075-3-4-bimetal-m42-otvory-pid-vrizni-vohni.md) — $6.49 за шт ($12.98 за дві), купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](/bom/stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) — $9.19, купити
 * [Мастило для різання металу (cutting fluid) — обовʼязкове для алюмінію](/bom/mastylo-dlia-rizannia-metalu-cutting-fluid-oboviazkove-dlia-.md) — ~$10, купити
 * [Набір біметалевих коронок M42, 3/4″–2″ — під світильники, розʼєми і кабельні проходи](/bom/nabir-bimetalevykh-koronok-m42-3-4-2-pid-svitylnyky-roziemy-.md) — $24-38 залежно від набору, купити
 * [Стійки під плати самоклейні, нейлон — 100 шт (не свердлити коробку)](/bom/stiiky-pid-platy-samokleini-neilon-100-sht-ne-sverdlyty-koro.md) — $9.99, купити
 * [Латунні стійки M3 з гвинтами і гайками, 320 шт — коли є монтажна панель](/bom/latunni-stiiky-m3-z-hvyntamy-i-haikamy-320-sht-koly-ie-monta.md) — $14.98, купити
+* [Врізні вогні торця подіуму — 16 шт LED IP68 у захисному кожусі, 12 В 0.6 Вт](/bom/vrizni-vohni-tortsia-podiumu-16-sht-led-ip68-u-zakhysnomu-ko.md) — $52.49 за набір, купити
+* [Коронка LENOX Speed Slot 3/4″ біметал з тримачем — запасна до Bosch](/bom/koronka-lenox-speed-slot-3-4-bimetal-z-trymachem-zapasna-do-.md) — $13.35, купити
+* [Коронка VIKITON 3/4″ з тримачем — друга запасна](/bom/koronka-vikiton-3-4-z-trymachem-druha-zapasna.md) — $9.61, купити

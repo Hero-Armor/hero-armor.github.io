@@ -302,5 +302,184 @@
    "Arco — пальне, перегін LA → SF $155.30"
   ],
   "note": "Разом $327.62. Витрати на пальне за перегін LA → SF (Іван переїхав у СФ 09.08.2026). Занесені у вкладку «Hero Armor — Purchase Audit» у таблиці Марселя окремим розділом Travel & Fuel — див. задачу про вписання, таблиця нативна Google і пишеться тільки через браузер."
+ },
+ {
+  "id": "ORD-018",
+  "date": "2026-08-14",
+  "vendor": "Chevron",
+  "items": [
+   "Пальне — 16.437 гал $101.24"
+  ],
+  "system": "project",
+  "note": "Заправка Івана, фото колонки в чаті витрат. $6.16/гал.",
+  "status": "delivered"
+ },
+ {
+  "id": "ORD-019",
+  "date": "2026-08-15",
+  "vendor": "Amazon",
+  "order_no": "113-0678421-7953018",
+  "items": [
+   "Csdtylh 320Pcs M3 Motherboard Standoffs&Screws&Nuts Kit, Hex Male-Female Brass Spacer Standoffs, Laptop Screws for DIY Computer Build, Electronic Projects, Raspberry Pi, Circuit Board etc."
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 113-0678421-7953018, $16.38. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-020",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "114-3194212-5146663",
+  "items": [
+   "Bosch HBT075 3/4 in. Bi-Metal M42 Hole Saw"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 114-3194212-5146663, $7.10. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-021",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "114-4887148-3827411",
+  "items": [
+   "Bosch HBT075 3/4 in. Bi-Metal M42 Hole Saw"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 114-4887148-3827411, $7.10. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-022",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "113-7521839-1270654",
+  "items": [
+   "LENOX Tools Bi-Metal Speed Slot Arbored Hole Saw with T3 Technology, 3/4\" - 1772426"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 113-7521839-1270654, $13.35. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-023",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "114-0089845-2731460",
+  "items": [
+   "Tobfit 6 Pack LED Road Flares Emergency Lights Roadside Safety Beacon Disc Flashing Warning Flare Kit with Magnetic Base & Hook for Car Truck Boats | 9 Flash Modes (Batteries Not Included) (6)"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 114-0089845-2731460, $57.72. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-024",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "113-3165203-1260207",
+  "items": [
+   "Amzonly 4Pack Kayak Lights with IPX8 Fish-shaped Waterproof Bag, Battery Operated Navigation Lights for Night Kayaking, Clip on for Paddle board, Pontoon Boat, Dinghy, Canoe, Jetski, Kayak Accessories"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 113-3165203-1260207, $14.21. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-025",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "114-8803360-9957835",
+  "items": [
+   "Treela 12 Pcs Kayak Lights Battery Powered LED"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 114-8803360-9957835, $28.43. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-026",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "114-1916203-2999466",
+  "items": [
+   "NEIKO 10184A Step Drill Bit, 9 Steps 1/4” to 3/4” Straight High Speed Steel, Titanium Nitride Coated, 3/8” Tri Flat Step Bits for Steel, Metal, Wood, Plastic, Unibit Cone Drill Bits, Two Flute"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 114-1916203-2999466, $10.05. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-027",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "113-3588440-8237851",
+  "items": [
+   "VIKITON 3/4 inch Hole Saw for Wood, Metal, Plastic & Drywall, with Arbor"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 113-3588440-8237851, $9.61. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-028",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "111-8616221-7185841",
+  "items": [
+   "Reflective Vinyl Permanent Adhesive, 12x12 Reflective Vinyl Sheets Tape for Cricut, Cars, Bikes, Signs, Helmet Stickers, Address Numbers by Turner Moore Edition (White, Red, Green, Yellow, 4 Pack)"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 111-8616221-7185841, $16.35. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-029",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "111-7476444-1338600",
+  "items": [
+   "White Reflective Vinyl Adhesive, 12\" x 4 FT Roll by Turner Moore Edition"
+  ],
+  "system": "project",
+  "status": "delivered",
+  "note": "Замовлення 111-7476444-1338600, $19.63. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-030",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "114-5016328-8330651",
+  "items": [
+   "16 Pack LED Recessed Deck Lights with Protecting Shell, IP68 Waterproof Warm White, 0.6W , Outdoor Landscape Lighting, 12V Low Voltage Deck Lights Kit for Garden Yard Step Riser Stair Decoration"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 114-5016328-8330651, $52.49. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-031",
+  "date": "2026-08-14",
+  "vendor": "Amazon",
+  "order_no": "114-9711764-6611462",
+  "items": [
+   "AISEY 2\" X 30ft Reflective Tape White Outdoor High Vis Conspicuity Safety Tape, Reflector Tape Trailer Waterproof"
+  ],
+  "system": "project",
+  "status": "ordered",
+  "note": "Замовлення 114-9711764-6611462, $8.19. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-032",
+  "date": "2026-08-13",
+  "vendor": "Amazon",
+  "order_no": "113-3837542-9442655",
+  "items": [
+   "MISOL 12V Timer Switch, 25A Programmable Digital Timer with LCD Display, Auto On/Off Relay"
+  ],
+  "system": "project",
+  "status": "delivered",
+  "note": "Замовлення 113-3837542-9442655, $26.24. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
  }
 ]

@@ -182,7 +182,7 @@
 * [Тижневий таймер DC 12 В з годинником і LCD (CN101), 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-z-hodynnykom-i-lcd-cn101-16-a-vmyka.md) - $11.89, купити
 * [Фотореле DC 12-48 В, dusk-to-dawn - вмикання по темряві](fotorele-dc-12-48-v-dusk-to-dawn-vmykannia-po-temriavi.md) - $11.93, купити
 * [Тижневий таймер DC 12 В Heschen CN101A, 16 А — вмикання світла за розкладом](tyzhnevyi-taimer-dc-12-v-heschen-cn101a-16-a-vmykannia-svitl.md) - $9.89 за шт ($19.78 за дві), купити
-* [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) - $22.49, купити
+* [Таймер DC 12 В MISOL 25 А з LCD — потужний, як страховка](taimer-dc-12-v-misol-25-a-z-lcd-potuzhnyi-iak-strakhovka.md) - $22.49, є
 * [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) - $699-950 на розпродажі (звичайна $1498), купити
 * [SWRT біла світлоповертальна стрічка 2" × 30 ft, DOT-C2 — 2 рулони в упаковці](swrt-bila-svitlopovertalna-strichka-2-30-ft-dot-c2-2-rulony-.md) - ~$12 (сервер бачить EUR 10.39 — точну ціну в доларах перевірити), купити
 * [AISEY біла світлоповертальна стрічка 2" × 30 ft — суцільна, мікропризма](aisey-bila-svitlopovertalna-strichka-2-30-ft-sutsilna-mikrop.md) - $7.49, купити
@@ -196,7 +196,7 @@
 * [ACR Firefly PRO SOLAS — аварійний строб на найнебезпечніші кути](acr-firefly-pro-solas-avariinyi-strob-na-nainebezpechnishi-k.md) - $67.99-74.95, купити
 * [Tobfit акумуляторні LED-фаєри, 4 шт — мигаючі маркери на магніті](tobfit-akumuliatorni-led-faiery-4-sht-myhaiuchi-markery-na-m.md) - $21.99, купити
 * [Planet Bike Superflash Turbo — задня мигалка, 100 годин на 2×AAA](planet-bike-superflash-turbo-zadnia-myhalka-100-hodyn-na-2-a.md) - $29.99, купити
-* [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) - $17.95, купити
+* [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) - $17.95, є
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) - $13.95, купити
 * [Коронка Bosch HBT075 3/4″ біметал M42 — отвори під врізні вогні](koronka-bosch-hbt075-3-4-bimetal-m42-otvory-pid-vrizni-vohni.md) - $6.49 за шт ($12.98 за дві), купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) - $9.19, купити
@@ -205,3 +205,6 @@
 * [Набір біметалевих коронок M42, 3/4″–2″ — під світильники, розʼєми і кабельні проходи](nabir-bimetalevykh-koronok-m42-3-4-2-pid-svitylnyky-roziemy-.md) - $24-38 залежно від набору, купити
 * [Стійки під плати самоклейні, нейлон — 100 шт (не свердлити коробку)](stiiky-pid-platy-samokleini-neilon-100-sht-ne-sverdlyty-koro.md) - $9.99, купити
 * [Латунні стійки M3 з гвинтами і гайками, 320 шт — коли є монтажна панель](latunni-stiiky-m3-z-hvyntamy-i-haikamy-320-sht-koly-ie-monta.md) - $14.98, купити
+* [Врізні вогні торця подіуму — 16 шт LED IP68 у захисному кожусі, 12 В 0.6 Вт](vrizni-vohni-tortsia-podiumu-16-sht-led-ip68-u-zakhysnomu-ko.md) - $52.49 за набір, купити
+* [Коронка LENOX Speed Slot 3/4″ біметал з тримачем — запасна до Bosch](koronka-lenox-speed-slot-3-4-bimetal-z-trymachem-zapasna-do-.md) - $13.35, купити
+* [Коронка VIKITON 3/4″ з тримачем — друга запасна](koronka-vikiton-3-4-z-trymachem-druha-zapasna.md) - $9.61, купити

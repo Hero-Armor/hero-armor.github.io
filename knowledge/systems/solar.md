@@ -28,7 +28,6 @@ generated: { by: "process:site-build" }
 * [Нічне мале навантаження станцію не присипляє](/decisions/nichne-male-navantazhennia-stantsiiu-ne-prysypliaie.md)
 * [Якщо 126 Вт не вистачить — чотири станції з 30 А по 12 В](/decisions/iakshcho-126-vt-ne-vystachyt-chotyry-stantsii-z-30-a-po-12-v.md)
 * [Перехідник від порту зовнішньої батареї — уточнено (див. нижче)](/decisions/perekhidnyk-vid-portu-zovnishnoi-batarei-utochneno-dyv-nyzhc.md)
-* [Запасний шлях: розетка 220 В + блок живлення 12 В коштує ~20% ємності](/decisions/zapasnyi-shliakh-rozetka-220-v-blok-zhyvlennia-12-v-koshtuie.md)
 * [Anker F2000 має TT-30R — але це 120 В змінного, не наші 12 В](/decisions/anker-f2000-maie-tt-30r-ale-tse-120-v-zminnoho-ne-nashi-12-v.md)
 * [Перехідники на сторонні АКБ існують — але вони 48-вольтові](/decisions/perekhidnyky-na-storonni-akb-isnuiut-ale-vony-48-voltovi.md)
 * [Найпростіший шлях: окремий АКБ 12 В живить світло, станція його заряджає](/decisions/naiprostishyi-shliakh-okremyi-akb-12-v-zhyvyt-svitlo-stantsi.md)

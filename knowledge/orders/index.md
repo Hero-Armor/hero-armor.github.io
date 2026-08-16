@@ -20,3 +20,18 @@
 * [ORD-015 — Amazon](ord-015.md) - замовлено
 * [ORD-016 — Amazon](ord-016.md) - замовлено
 * [ORD-017 — Заправки (Shell / One9 / Arco)](ord-017.md) - доставлено
+* [ORD-018 — Chevron](ord-018.md) - доставлено
+* [ORD-019 — Amazon](ord-019.md) - замовлено
+* [ORD-020 — Amazon](ord-020.md) - замовлено
+* [ORD-021 — Amazon](ord-021.md) - замовлено
+* [ORD-022 — Amazon](ord-022.md) - замовлено
+* [ORD-023 — Amazon](ord-023.md) - замовлено
+* [ORD-024 — Amazon](ord-024.md) - замовлено
+* [ORD-025 — Amazon](ord-025.md) - замовлено
+* [ORD-026 — Amazon](ord-026.md) - замовлено
+* [ORD-027 — Amazon](ord-027.md) - замовлено
+* [ORD-028 — Amazon](ord-028.md) - замовлено
+* [ORD-029 — Amazon](ord-029.md) - доставлено
+* [ORD-030 — Amazon](ord-030.md) - замовлено
+* [ORD-031 — Amazon](ord-031.md) - замовлено
+* [ORD-032 — Amazon](ord-032.md) - доставлено

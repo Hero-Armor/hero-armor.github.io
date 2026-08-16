@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1010" viewBox="0 0 1180 1010">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M1,1 L8,4.5 L1,8" fill="none" stroke="#d81f1f" stroke-width="1.2"/></marker></defs>
+<rect width="1180" height="1010" fill="#ffffff"/>
+<text x="40.0" y="38.0" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#1b1b1b" text-anchor="start" font-weight="700">Що міряти на ГОТОВІЙ фігурі</text>
+<text x="40.0" y="60.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#555" text-anchor="start" font-weight="400">Рулетку тягнути по зібраній фігурі з обшивкою, а не по каркасу. Сірим — що дає креслення; якщо збіглось, добре.</text>
+<circle cx="283.6" cy="225.2" r="25.2" fill="none" stroke="#1f4fd8" stroke-width="2"/>
+<path d="M224.0 261.6 L343.1 261.6 L331.2 407.2 L235.9 407.2 Z" fill="none" stroke="#1f4fd8" stroke-width="2"/>
+<path d="M224.0 267.2 L150.0 429.6" stroke="#1f4fd8" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="150.0" cy="429.6" r="9.0" fill="#1f4fd8"/>
+<path d="M343.1 267.2 L417.1 429.6" stroke="#1f4fd8" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="417.1" cy="429.6" r="9.0" fill="#1f4fd8"/>
+<rect x="115.0" y="261.0" width="337.1" height="12.3" fill="none" stroke="#0b8a3e" stroke-width="2"/>
+<text x="109.0" y="271.2" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#0b8a3e" text-anchor="end" font-weight="400">труба</text>
+<line x1="253.8" y1="407.2" x2="235.1" y2="642.4" stroke="#1f4fd8" stroke-width="7" stroke-linecap="round"/>
+<line x1="313.3" y1="407.2" x2="332.1" y2="642.4" stroke="#1f4fd8" stroke-width="7" stroke-linecap="round"/>
+<rect x="207.4" y="642.4" width="152.3" height="9.0" fill="#1f4fd8" fill-opacity="0.25" stroke="#1f4fd8" stroke-width="1.6"/>
+<line x1="150.0" y1="463.2" x2="417.1" y2="463.2" stroke="#d81f1f" stroke-width="1.6" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="150.0" y1="456.2" x2="150.0" y2="470.2" stroke="#d81f1f" stroke-width="1.2"/>
+<line x1="417.1" y1="456.2" x2="417.1" y2="470.2" stroke="#d81f1f" stroke-width="1.2"/>
+<text x="283.6" y="455.2" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#d81f1f" text-anchor="middle" font-weight="700">M1 · від кисті до кисті — головне число</text>
+<text x="283.6" y="481.2" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#9a9a9a" text-anchor="middle" font-weight="400">креслення 47.7″</text>
+<line x1="115.0" y1="166.0" x2="452.1" y2="166.0" stroke="#0b8a3e" stroke-width="1.6" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="115.0" y1="159.0" x2="115.0" y2="173.0" stroke="#0b8a3e" stroke-width="1.2"/>
+<line x1="452.1" y1="159.0" x2="452.1" y2="173.0" stroke="#0b8a3e" stroke-width="1.2"/>
+<text x="283.6" y="158.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#0b8a3e" text-anchor="middle" font-weight="700">M2 · труба в плечах, повна довжина</text>
+<text x="283.6" y="184.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#9a9a9a" text-anchor="middle" font-weight="400">креслення 60.2″</text>
+<line x1="498.1" y1="200.0" x2="498.1" y2="642.4" stroke="#d81f1f" stroke-width="1.6" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="491.1" y1="200.0" x2="505.1" y2="200.0" stroke="#d81f1f" stroke-width="1.2"/>
+<line x1="491.1" y1="642.4" x2="505.1" y2="642.4" stroke="#d81f1f" stroke-width="1.2"/>
+<text x="507.1" y="421.2" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#d81f1f" text-anchor="start" font-weight="700">M4 · висота</text>
+<text x="507.1" y="436.2" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#9a9a9a" text-anchor="start" font-weight="400">креслення 79.0″</text>
+<line x1="223.9" y1="608.8" x2="343.3" y2="608.8" stroke="#0b8a3e" stroke-width="1.6" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="223.9" y1="601.8" x2="223.9" y2="615.8" stroke="#0b8a3e" stroke-width="1.2"/>
+<line x1="343.3" y1="601.8" x2="343.3" y2="615.8" stroke="#0b8a3e" stroke-width="1.2"/>
+<text x="283.6" y="600.8" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#0b8a3e" text-anchor="middle" font-weight="700">M6 · розмах стоп</text>
+<text x="283.6" y="626.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#9a9a9a" text-anchor="middle" font-weight="400">креслення 31.5″</text>
+<line x1="207.4" y1="692.8" x2="359.7" y2="692.8" stroke="#d81f1f" stroke-width="1.6" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="207.4" y1="685.8" x2="207.4" y2="699.8" stroke="#d81f1f" stroke-width="1.2"/>
+<line x1="359.7" y1="685.8" x2="359.7" y2="699.8" stroke="#d81f1f" stroke-width="1.2"/>
+<text x="283.6" y="684.8" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#d81f1f" text-anchor="middle" font-weight="700">M5 · діаметр бази</text>
+<text x="283.6" y="710.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#9a9a9a" text-anchor="middle" font-weight="400">креслення 27.2″</text>
+<line x1="146.4" y1="142.0" x2="146.4" y2="709.6" stroke="#d81f1f" stroke-width="1.4" stroke-dasharray="8 5"/>
+<line x1="420.8" y1="142.0" x2="420.8" y2="709.6" stroke="#d81f1f" stroke-width="1.4" stroke-dasharray="8 5"/>
+<text x="283.6" y="134.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#d81f1f" text-anchor="middle" font-weight="700">вантажний отвір мінівена 49″ — фігура має пройти між цими лініями</text>
+<circle cx="915.3" cy="225.2" r="25.2" fill="none" stroke="#1f4fd8" stroke-width="2"/>
+<path d="M880.0 261.6 L950.6 261.6 L940.0 407.2 L890.6 407.2 Z" fill="none" stroke="#1f4fd8" stroke-width="2"/>
+<rect x="950.6" y="284.0" width="22.4" height="50.4" fill="#0b8a3e" fill-opacity="0.18" stroke="#0b8a3e" stroke-width="1.6"/>
+<text x="978.6" y="312.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#0b8a3e" text-anchor="start" font-weight="400">ядро на спині</text>
+<line x1="915.3" y1="407.2" x2="915.3" y2="642.4" stroke="#1f4fd8" stroke-width="7" stroke-linecap="round"/>
+<rect x="880.0" y="642.4" width="70.6" height="9.0" fill="#1f4fd8" fill-opacity="0.25" stroke="#1f4fd8" stroke-width="1.6"/>
+<text x="880.0" y="182.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#555" text-anchor="start" font-weight="700">вид збоку</text>
+<line x1="880.0" y1="384.8" x2="973.0" y2="384.8" stroke="#d81f1f" stroke-width="1.6" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="880.0" y1="377.8" x2="880.0" y2="391.8" stroke="#d81f1f" stroke-width="1.2"/>
+<line x1="973.0" y1="377.8" x2="973.0" y2="391.8" stroke="#d81f1f" stroke-width="1.2"/>
+<text x="926.5" y="376.8" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#d81f1f" text-anchor="middle" font-weight="700">M3 · глибина</text>
+<text x="926.5" y="402.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#9a9a9a" text-anchor="middle" font-weight="400">каркас 8.6″ + обшивка</text>
+<text x="40.0" y="788.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#1b1b1b" text-anchor="start" font-weight="700">Як міряти</text>
+<text x="40.0" y="810.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#d81f1f" text-anchor="start" font-weight="700">M1</text>
+<text x="72.0" y="810.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1b1b1b" text-anchor="start" font-weight="600">від кисті до кисті</text>
+<text x="230.0" y="810.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">Найширше місце фігури. Стрічку натягнути по прямій між крайніми точками кистей, не по дузі рук.</text>
+<text x="40.0" y="829.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#d81f1f" text-anchor="start" font-weight="700">M2</text>
+<text x="72.0" y="829.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1b1b1b" text-anchor="start" font-weight="600">труба в плечах</text>
+<text x="230.0" y="829.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">Повна довжина, від торця до торця. Заодно — на скільки вона виступає за кисті: це те, що можна відрізати.</text>
+<text x="40.0" y="848.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#d81f1f" text-anchor="start" font-weight="700">M3</text>
+<text x="72.0" y="848.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1b1b1b" text-anchor="start" font-weight="600">глибина</text>
+<text x="230.0" y="848.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">У найтовщому місці, від грудей до найдальшої точки ЗЗАДУ. Ядро на спині рахується — воно й може бути тією точкою.</text>
+<text x="40.0" y="867.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#d81f1f" text-anchor="start" font-weight="700">M4</text>
+<text x="72.0" y="867.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1b1b1b" text-anchor="start" font-weight="600">висота</text>
+<text x="230.0" y="867.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">Від низу бази до маківки, фігура стоїть.</text>
+<text x="40.0" y="886.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#d81f1f" text-anchor="start" font-weight="700">M5</text>
+<text x="72.0" y="886.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1b1b1b" text-anchor="start" font-weight="600">діаметр бази</text>
+<text x="230.0" y="886.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">Диск під ногами, по крайніх точках.</text>
+<text x="40.0" y="905.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#d81f1f" text-anchor="start" font-weight="700">M6</text>
+<text x="72.0" y="905.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1b1b1b" text-anchor="start" font-weight="600">розмах ніг унизу</text>
+<text x="230.0" y="905.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">По зовнішніх краях стоп.</text>
+<text x="40.0" y="942.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1b1b1b" text-anchor="start" font-weight="600">Головне: якщо M1 з обшивкою вийде більше 49″ — мінівен відпадає і веземо причепом. Менше — заходить, але без ящика, у ковдрах.</text>
+</svg>

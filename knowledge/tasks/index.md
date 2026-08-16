@@ -148,7 +148,7 @@
 * [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) - готово
 * [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) - до роботи
 * [Ліза: перевірити переклад сайту трьома мовами (превʼю), сказати що поправити — після її слова публікуємо](liza-pereviryty-pereklad-saitu-troma-movamy-previu-skazaty-s.md) - чекаємо
-* [Транспорт: забронювати мінівен у SFO. Реально підходить лише Chrysler Pacifica зі Stow'n Go (99.5" довжини) — інші мінівени короткі або низькі. Уточнити в компанії, що дадуть саме Pacifica, а не «minivan or similar»](transport-zabroniuvaty-miniven-u-sfo-realno-pidkhodyt-lyshe-.md) - до роботи
+* [Знято 15.08: мінівен не підходить — обмір креслення дав 47.7-50″ при отворі 49″ (DEC-145)](zniato-15-08-miniven-ne-pidkhodyt-obmir-kreslennia-dav-47-7-.md) - готово
 * [Search Console: натиснути VALIDATE FIX по двох звітах (author + datePublished) — API цього не вміє, тільки інтерфейс](search-console-natysnuty-validate-fix-po-dvokh-zvitakh-autho.md) - до роботи
 * [Search Console: розібрати два інші листи — «New reasons prevent pages from being indexed» (27.07) і рекомендації по присутності](search-console-rozibraty-dva-inshi-lysty-new-reasons-prevent.md) - до роботи
 * [Comet: натиснути Validate fix у Search Console по двох звітах структурованих даних hero-armor.com](comet-natysnuty-validate-fix-u-search-console-po-dvokh-zvita.md) - до роботи
@@ -158,3 +158,10 @@
 * [Свердлити торець у зборі: спершу прикрутити алюмінієву накладку до дерева, потім проходити коронкою наскрізь — отвори будуть співвісні](sverdlyty-torets-u-zbori-spershu-prykrutyty-aliuminiievu-nak.md) - до роботи
 * [Ліза: надіслати пункт 1 інструкції по кріпленню вантажу (маємо вже 2, 3, 4)](liza-nadislaty-punkt-1-instruktsii-po-kriplenniu-vantazhu-ma.md) - готово
 * [Уточнити в Лізи, хто веде графік збірки в ProjectLibre (Hero Armor.pod, комп'ютер «Wolo») і чи є в нас доступ до нього — щоб звіряти терміни з нашою базою автоматично, а не по скріншотах](utochnyty-v-lizy-khto-vede-hrafik-zbirky-v-projectlibre-hero.md) - до роботи
+* [Транспорт: чекаємо квоти від восьми дозволених перевізників BM — рішення «везти самим чи наймати» після відповідей](transport-chekaiemo-kvoty-vid-vosmy-dozvolenykh-pereviznykiv.md) - чекаємо
+* [Знято 15.08: placement кемпу нам не потрібен — заїзд іде по реєстрації АРТ-обʼєкта](zniato-15-08-placement-kempu-nam-ne-potriben-zaizd-ide-po-re.md) - готово
+* [Підтвердити причіп: у таблиці кемпу за Іваном записаний travel trailer 30 ft (8 ft завширшки) + машина, заїзд 27.08, виїзд 08.09](pidtverdyty-prychip-u-tablytsi-kempu-za-ivanom-zapysanyi-tra.md) - до роботи
+* [Знайти Art Transportation Questionnaire від Burning Man — без неї водія перевізника не пустять у місто](znaity-art-transportation-questionnaire-vid-burning-man-bez-.md) - до роботи
+* [Оновити знімок замовлень Amazon і перезібрати вкладку витрат Івана](onovyty-znimok-zamovlen-amazon-i-perezibraty-vkladku-vytrat-.md) - чекаємо
+* [Відповідь є: руки НЕ знімаються (Іван 15.08) — лишився тільки замір глибини](vidpovid-ie-ruky-ne-znimaiutsia-ivan-15-08-lyshyvsia-tilky-z.md) - готово
+* [Заміряти готову фігуру рулеткою від кисті до кисті — це число вирішує мінівен чи причіп](zamiriaty-hotovu-fihuru-ruletkoiu-vid-kysti-do-kysti-tse-chy.md) - до роботи
