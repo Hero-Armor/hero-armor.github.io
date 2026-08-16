@@ -169,3 +169,4 @@
 * [Іван дасть фінальне рішення по електриці фігури — звірити, що ще скасовується після переходу спини на лампу MR16](ivan-dast-finalne-rishennia-po-elektrytsi-fihury-zviryty-shc.md) - чекаємо
 * [Лампи Diodesy, замовлення 114-0792999-4940230 ($92.32): або відправити повернення до 06.09, або переоформити скаргу A-to-z до 14.09](lampy-diodesy-zamovlennia-114-0792999-4940230-92-32-abo-vidp.md) - до роботи
 * [Спитати @vlbrsk (проєктував оболонку) і Марселя (друкував): яке навантаження тримає пластик броні при перенесенні](spytaty-vlbrsk-proiektuvav-obolonku-i-marselia-drukuvav-iake.md) - до роботи
+* [Понеділок 17.08, 9:00 — поїхати в офіс Burning Man Project у Сан-Франциско (660 Alabama St, Suite 4)](ponedilok-17-08-9-00-poikhaty-v-ofis-burning-man-project-u-s.md) - до роботи
