@@ -2224,8 +2224,14 @@ def build():
         f = ROOT / rel
         if not f.exists():
             continue
-        sv2 = f.read_text()
-        tdia += ('\n  <figure class="dia">\n' + sv2[sv2.index("<svg"):] +
+        if f.suffix.lower() == ".svg":
+            sv2 = f.read_text()
+            body = sv2[sv2.index("<svg"):]
+        else:
+            # растр (заводське креслення, скан) — вставляємо картинкою; підпис
+            # усе одно текстом, тож перекладається разом зі сторінкою
+            body = f'<img src="assets/{f.name}" alt=""/>'
+        tdia += ('\n  <figure class="dia">\n' + body +
                  f'\n    <figcaption>{esc(cap)}</figcaption>\n  </figure>')
 
     for v in TRD["vans"]:
