@@ -147,7 +147,7 @@
 * [Глянути ціну в доларах на білу стрічку SWRT 2"×30 ft (2 рулони) — якщо близько $12, беремо її замість ORALITE білої за $42.99](hlianuty-tsinu-v-dolarakh-na-bilu-strichku-swrt-2-30-ft-2-ru.md) - до роботи
 * [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) - готово
 * [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) - до роботи
-* [Ліза: перевірити переклад сайту трьома мовами (превʼю), сказати що поправити — після її слова публікуємо](liza-pereviryty-pereklad-saitu-troma-movamy-previu-skazaty-s.md) - чекаємо
+* [Три мови hero-armor.com випущені 16.08 за словом Івана — Ліза читає вже на живому](try-movy-hero-armor-com-vypushcheni-16-08-za-slovom-ivana-li.md) - готово
 * [Знято 15.08: мінівен не підходить — обмір креслення дав 47.7-50″ при отворі 49″ (DEC-145)](zniato-15-08-miniven-ne-pidkhodyt-obmir-kreslennia-dav-47-7-.md) - готово
 * [Search Console: натиснути VALIDATE FIX по двох звітах (author + datePublished) — API цього не вміє, тільки інтерфейс](search-console-natysnuty-validate-fix-po-dvokh-zvitakh-autho.md) - до роботи
 * [Search Console: розібрати два інші листи — «New reasons prevent pages from being indexed» (27.07) і рекомендації по присутності](search-console-rozibraty-dva-inshi-lysty-new-reasons-prevent.md) - до роботи
@@ -170,3 +170,20 @@
 * [Лампи Diodesy, замовлення 114-0792999-4940230 ($92.32): або відправити повернення до 06.09, або переоформити скаргу A-to-z до 14.09](lampy-diodesy-zamovlennia-114-0792999-4940230-92-32-abo-vidp.md) - до роботи
 * [Спитати @vlbrsk (проєктував оболонку) і Марселя (друкував): яке навантаження тримає пластик броні при перенесенні](spytaty-vlbrsk-proiektuvav-obolonku-i-marselia-drukuvav-iake.md) - до роботи
 * [Понеділок 17.08, 9:00 — поїхати в офіс Burning Man Project у Сан-Франциско (660 Alabama St, Suite 4)](ponedilok-17-08-9-00-poikhaty-v-ofis-burning-man-project-u-s.md) - до роботи
+* [Графік збірки, крок 1: монтаж електрообладнання корпусу (10.08–14.08)](hrafik-zbirky-krok-1-montazh-elektroobladnannia-korpusu-10-0.md) - до роботи
+* [Графік збірки, крок 2: підгонка плечей та рук (14.08–17.08)](hrafik-zbirky-krok-2-pidhonka-plechei-ta-ruk-14-08-17-08.md) - до роботи
+* [Графік збірки, крок 3: склейка деталей корпусу (03.08–14.08)](hrafik-zbirky-krok-3-skleika-detalei-korpusu-03-08-14-08.md) - до роботи
+* [Графік збірки, крок 4: зачистка деталей корпусу (03.08–14.08)](hrafik-zbirky-krok-4-zachystka-detalei-korpusu-03-08-14-08.md) - до роботи
+* [Графік збірки, крок 5: деталізація зʼєднань корпусу (10.08–17.08)](hrafik-zbirky-krok-5-detalizatsiia-ziednan-korpusu-10-08-17-.md) - до роботи
+* [Графік збірки, крок 6: шпаклювання корпусу (20.08–21.08)](hrafik-zbirky-krok-6-shpakliuvannia-korpusu-20-08-21-08.md) - до роботи
+* [Графік збірки, крок 7: фарбування корпусу (23.08–25.08)](hrafik-zbirky-krok-7-farbuvannia-korpusu-23-08-25-08.md) - до роботи
+* [Графік збірки, крок 8: монтаж каркасу подіуму (08.08–17.08)](hrafik-zbirky-krok-8-montazh-karkasu-podiumu-08-08-17-08.md) - до роботи
+* [Графік збірки, крок 9: фарбування подіуму (18.08–18.08)](hrafik-zbirky-krok-9-farbuvannia-podiumu-18-08-18-08.md) - до роботи
+* [Графік збірки, крок 10: монтаж електрики в подіум (15.08–17.08)](hrafik-zbirky-krok-10-montazh-elektryky-v-podium-15-08-17-08.md) - до роботи
+* [Графік збірки, крок 11: облицювання подіуму алюмінієм (15.08–17.08)](hrafik-zbirky-krok-11-oblytsiuvannia-podiumu-aliuminiiem-15-.md) - до роботи
+* [Графік збірки, крок 12: монтаж LED Strip в подіум (18.08–20.08)](hrafik-zbirky-krok-12-montazh-led-strip-v-podium-18-08-20-08.md) - до роботи
+* [Графік збірки, крок 13: закупка недостаючих матеріалів (03.08–20.08)](hrafik-zbirky-krok-13-zakupka-nedostaiuchykh-materialiv-03-0.md) - до роботи
+* [Графік збірки, крок 14: виготовлення зарядної станції (20.08–26.08)](hrafik-zbirky-krok-14-vyhotovlennia-zariadnoi-stantsii-20-08.md) - до роботи
+* [Графік збірки, крок 15: перевірка працездатності Hero Armor (26.08–26.08)](hrafik-zbirky-krok-15-perevirka-pratsezdatnosti-hero-armor-2.md) - до роботи
+* [Графік збірки, крок 16: демонтаж, погрузка Hero Armor (26.08–26.08)](hrafik-zbirky-krok-16-demontazh-pohruzka-hero-armor-26-08-26.md) - до роботи
+* [Графік збірки, крок 17: виїзд на Плаю (27.08–27.08)](hrafik-zbirky-krok-17-vyizd-na-plaiu-27-08-27-08.md) - до роботи
