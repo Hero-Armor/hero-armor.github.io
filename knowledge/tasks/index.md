@@ -166,3 +166,4 @@
 * [Відповідь є: руки НЕ знімаються (Іван 15.08) — лишився тільки замір глибини](vidpovid-ie-ruky-ne-znimaiutsia-ivan-15-08-lyshyvsia-tilky-z.md) - готово
 * [Заміряти готову фігуру рулеткою від кисті до кисті — це число вирішує мінівен чи причіп](zamiriaty-hotovu-fihuru-ruletkoiu-vid-kysti-do-kysti-tse-chy.md) - до роботи
 * [Зробити виділений токен для ботів: claude setup-token → покласти в /root/.secrets/claude_code_oauth_token](zrobyty-vydilenyi-token-dlia-botiv-claude-setup-token-poklas.md) - до роботи
+* [Іван дасть фінальне рішення по електриці фігури — звірити, що ще скасовується після переходу спини на лампу MR16](ivan-dast-finalne-rishennia-po-elektrytsi-fihury-zviryty-shc.md) - чекаємо

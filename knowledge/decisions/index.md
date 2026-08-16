@@ -17,7 +17,6 @@
 * [Такелаж рами на сталевих талрепах](takelazh-ramy-na-stalevykh-talrepakh.md)
 * [Запасний варіант Володимира — світло без стрічки і без нижніх вогнів](zapasnyi-variant-volodymyra-svitlo-bez-strichky-i-bez-nyzhni.md)
 * [Трасу кабелю до ящика треба позначити — чим саме, ще обираємо](trasu-kabeliu-do-iashchyka-treba-poznachyty-chym-same-shche-.md)
-* [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
 * [Габаритні вогні на стійках прожекторів — скасовано](habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
 * [Пасивна помітність: катафоти і мікропризматична стрічка на подіум](pasyvna-pomitnist-katafoty-i-mikropryzmatychna-strichka-na-p.md)
@@ -139,3 +138,4 @@
 * [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
 * [REI як місце покупки станції — не підходить: потрібної моделі там нема](rei-iak-mistse-pokupky-stantsii-ne-pidkhodyt-potribnoi-model.md)
 * [Фігуру веземо причепом, не мінівеном — ящик 88×57×20″](fihuru-vezemo-prychepom-ne-minivenom-iashchyk-88-57-20.md)
+* [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)

@@ -18,7 +18,6 @@ generated: { by: "process:site-build" }
 * [Буфер-конденсатор на вхід адресної стрічки — від пускового струму](/decisions/bufer-kondensator-na-vkhid-adresnoi-strichky-vid-puskovoho-s.md)
 * [Геометрія зірки підтверджена кресленням Rev 2.1: коло R 346 мм (2.17 м), рукав 1.22 м](/decisions/heometriia-zirky-pidtverdzhena-kreslenniam-rev-2-1-kolo-r-34.md)
 * [Запасний варіант Володимира — світло без стрічки і без нижніх вогнів](/decisions/zapasnyi-variant-volodymyra-svitlo-bez-strichky-i-bez-nyzhni.md)
-* [На спині робота зʼявляється світне ядро — окремий модуль зі своїм контролером](/decisions/na-spyni-robota-ziavliaietsia-svitne-iadro-okremyi-modul-zi-.md)
 * [Нижнє світло по торцю подіуму лишається — сонячні садові скасовані](/decisions/nyzhnie-svitlo-po-tortsiu-podiumu-lyshaietsia-soniachni-sado.md)
 * [Габаритні вогні на стійках прожекторів — скасовано](/decisions/habarytni-vohni-na-stiikakh-prozhektoriv-skasovano.md)
 * [Окремі сторінки-калькулятори по типах світла](/decisions/okremi-storinky-kalkuliatory-po-typakh-svitla.md)
@@ -59,6 +58,7 @@ generated: { by: "process:site-build" }
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](/decisions/dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
 * [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](/decisions/chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
 * [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](/decisions/vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
+* [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](/decisions/svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)
 
 # Задачі
 
@@ -120,6 +120,7 @@ generated: { by: "process:site-build" }
 * [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](/tasks/zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) — до роботи
 * [Замовити таймери на Amazon: 2× Heschen CN101A 12 В ($8.57) + 1× MISOL 25 А ($19.49), разом $36.63; фотореле ($11.93 eBay) — за бажанням](/tasks/zamovyty-taimery-na-amazon-2-heschen-cn101a-12-v-8-57-1-miso.md) — до роботи
 * [Свердлити торець у зборі: спершу прикрутити алюмінієву накладку до дерева, потім проходити коронкою наскрізь — отвори будуть співвісні](/tasks/sverdlyty-torets-u-zbori-spershu-prykrutyty-aliuminiievu-nak.md) — до роботи
+* [Іван дасть фінальне рішення по електриці фігури — звірити, що ще скасовується після переходу спини на лампу MR16](/tasks/ivan-dast-finalne-rishennia-po-elektrytsi-fihury-zviryty-shc.md) — чекаємо
 
 # Закупівля
 
