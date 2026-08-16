@@ -2217,6 +2217,17 @@ def build():
            f'до металевого багатокутника основи.</li>\n'
            f'<li>З боків запас: у плечах {TRD["figure"]["shoulders_in"]}″ проти {b["w"]}″ кузова.</li>\n</ul>')
     rows = []
+    # Додаткові схеми сторінки — списком у самих даних, а не вшиті в складач:
+    # «diagrams»: [[шлях до .svg, підпис], …]. Так нову схему додає той, хто її
+    # намалював, правкою json, і вона одразу перекладається разом зі сторінкою.
+    for rel, cap in TRD.get("diagrams", []):
+        f = ROOT / rel
+        if not f.exists():
+            continue
+        sv2 = f.read_text()
+        tdia += ('\n  <figure class="dia">\n' + sv2[sv2.index("<svg"):] +
+                 f'\n    <figcaption>{esc(cap)}</figcaption>\n  </figure>')
+
     for v in TRD["vans"]:
         fits = v["len_in"] >= b["l"] and v["w_in"] >= b["w"] and v["h_in"] >= b["h"]
         rows.append(f'<tr><td>{esc(v["name"])}</td><td>{v["len_in"]}″</td><td>{v["w_in"]}″</td>'
