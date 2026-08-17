@@ -23,7 +23,38 @@ BOM_FILE = ROOT / "data" / "bom.json"
 FIRECRAWL = "http://localhost:3002/v1/scrape"
 
 
-def fetch(url):
+PROXY_FILE = Path("/root/.secrets/us_proxy")
+MOBILE_UA = ("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) "
+             "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1")
+
+
+def fetch_amazon(asin):
+    """Amazon через Firecrawl віддає капчу — і перевірка мовчки бракує живі лінки.
+
+    17.08.2026: `bom_verify` показав 84 «підозрілих» позиції, хоча ті самі ASIN
+    відкривались вручну з кодом 200. Причина — не лістинги, а сам скрипт: Firecrawl
+    з німецького сервера отримував сторінку-капчу з заголовком «Amazon.com», у якій
+    ASIN, звісно, нема. Сліпа перевірка гірша за відсутню, бо виглядає як робота.
+    Тому для Amazon ідемо мобільною сторінкою крізь американський проксі — той самий
+    шлях, яким ми і так тягнемо ціни.
+    """
+    if not PROXY_FILE.exists():
+        return "__ERR__нема /root/.secrets/us_proxy"
+    px = PROXY_FILE.read_text().strip()
+    op = urllib.request.build_opener(urllib.request.ProxyHandler({"http": px, "https": px}))
+    req = urllib.request.Request(f"https://www.amazon.com/gp/aw/d/{asin}",
+                                 headers={"User-Agent": MOBILE_UA,
+                                          "Accept-Language": "en-US,en;q=0.9"})
+    try:
+        with op.open(req, timeout=90) as r:
+            return r.read().decode("utf-8", "ignore")
+    except Exception as e:
+        return f"__ERR__{e}"
+
+
+def fetch(url, asin=None):
+    if asin and "amazon." in url:
+        return fetch_amazon(asin)
     body = json.dumps({"url": url, "formats": ["rawHtml"]}).encode()
     req = urllib.request.Request(FIRECRAWL, data=body,
                                  headers={"Content-Type": "application/json"})
@@ -51,7 +82,7 @@ def main():
         if not url or (a.only and a.only.lower() not in b["item"].lower()):
             continue
         asin = (re.search(r"/dp/([A-Z0-9]{10})", url) or [None, None])[1]
-        html = fetch(url)
+        html = fetch(url, asin)
         if html.startswith("__ERR__"):
             print(f"  ✗ {b['item'][:44]} — сторінка не відкрилась ({html[7:60]})")
             bad.append(b["item"])

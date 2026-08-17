@@ -49,8 +49,36 @@ def asin_of(url):
     return m.group(1) if m else None
 
 
+PROXY_FILE = Path("/root/.secrets/us_proxy")
+MOBILE_UA = ("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) "
+             "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1")
+
+
+def scrape_proxy(asin):
+    """Мобільна сторінка крізь американський проксі — коли Firecrawl упіймав капчу.
+
+    17.08.2026: Firecrawl з німецького сервера почав віддавати капчу замість карток,
+    і фото просто не тягнулись («фото у 0 позицій») без жодної помилки. Мобільна
+    сторінка /gp/aw/d/ капчі не показує — той самий шлях, що вже використовує
+    bom_verify.py.
+    """
+    if not PROXY_FILE.exists():
+        return None
+    px = PROXY_FILE.read_text().strip()
+    op = urllib.request.build_opener(urllib.request.ProxyHandler({"http": px, "https": px}))
+    req = urllib.request.Request(f"https://www.amazon.com/gp/aw/d/{asin}",
+                                 headers={"User-Agent": MOBILE_UA,
+                                          "Accept-Language": "en-US,en;q=0.9"})
+    try:
+        with op.open(req, timeout=90) as r:
+            return r.read().decode("utf-8", "ignore")
+    except Exception as e:
+        print(f"    проксі: {e}")
+        return None
+
+
 def scrape(asin):
-    """Сторінка товару через свій Firecrawl. Повертає html або None."""
+    """Сторінка товару через свій Firecrawl, із запасним шляхом крізь проксі."""
     body = json.dumps({"url": f"https://www.amazon.com/dp/{asin}",
                        "formats": ["rawHtml"]}).encode()
     req = urllib.request.Request(FIRECRAWL, data=body,
@@ -58,10 +86,12 @@ def scrape(asin):
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
             d = json.loads(r.read().decode("utf-8", "ignore"))
-        return (d.get("data") or {}).get("rawHtml")
+        html = (d.get("data") or {}).get("rawHtml")
+        if html and asin in html:
+            return html
     except Exception as e:
         print(f"    firecrawl: {e}")
-        return None
+    return scrape_proxy(asin)
 
 
 def image_from_html(html, asin):

@@ -232,3 +232,6 @@
 * [Герметик термостійкий Permatex Ultra Red RTV, 3 oz](hermetyk-termostiikyi-permatex-ultra-red-rtv-3-oz.md) - $7.56, купити
 * [Саморізи по дереву Power Pro #8 × 2″, 141 шт](samorizy-po-derevu-power-pro-8-2-141-sht.md) - $7.99, купити
 * [Кутики монтажні нержавійка, 40 шт](kutyky-montazhni-nerzhaviika-40-sht.md) - $6.99, купити
+* [Мастило для різання Tap Magic Industrial Pro, 4 oz](mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) - $7.90, купити
+* [Набір насадок Dremel 710-08, 160 предметів](nabir-nasadok-dremel-710-08-160-predmetiv.md) - $39.97, купити
+* [Відрізні круги фібро-армовані TEMO, 100 шт + 2 мандрелі](vidrizni-kruhy-fibro-armovani-temo-100-sht-2-mandreli.md) - $17.99, купити
