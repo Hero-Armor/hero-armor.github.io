@@ -213,3 +213,5 @@
 * [Коронка LENOX 1″ з тримачем (1772481) — отвір під джгут із фігури](koronka-lenox-1-z-trymachem-1772481-otvir-pid-dzhhut-iz-fihu.md) - $9.86, купити
 * [Коронка 1″ VIKITON з тримачем — дешева заміна LENOX](koronka-1-vikiton-z-trymachem-desheva-zamina-lenox.md) - $8.79, купити
 * [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) - $14.79, купити
+* [Коронка Bosch HBT100 1″ біметал M42 — робоча, під отвір джгута](koronka-bosch-hbt100-1-bimetal-m42-robocha-pid-otvir-dzhhuta.md) - $7.49, купити
+* [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) - $89.00, купити

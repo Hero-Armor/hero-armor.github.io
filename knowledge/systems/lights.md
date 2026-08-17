@@ -59,6 +59,7 @@ generated: { by: "process:site-build" }
 * [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](/decisions/chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
 * [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](/decisions/vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
 * [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](/decisions/svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)
+* [Коронки по алюмінію — тільки біметал M42 фірмових ліній, дешевий набір не беремо](/decisions/koronky-po-aliuminiiu-tilky-bimetal-m42-firmovykh-linii-desh.md)
 
 # Задачі
 
@@ -196,3 +197,5 @@ generated: { by: "process:site-build" }
 * [Коронка LENOX 1″ з тримачем (1772481) — отвір під джгут із фігури](/bom/koronka-lenox-1-z-trymachem-1772481-otvir-pid-dzhhut-iz-fihu.md) — $9.86, купити
 * [Коронка 1″ VIKITON з тримачем — дешева заміна LENOX](/bom/koronka-1-vikiton-z-trymachem-desheva-zamina-lenox.md) — $8.79, купити
 * [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](/bom/koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) — $14.79, купити
+* [Коронка Bosch HBT100 1″ біметал M42 — робоча, під отвір джгута](/bom/koronka-bosch-hbt100-1-bimetal-m42-robocha-pid-otvir-dzhhuta.md) — $7.49, купити
+* [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](/bom/nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) — $89.00, купити
