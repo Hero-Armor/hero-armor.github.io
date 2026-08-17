@@ -2312,6 +2312,49 @@ def build():
                 for t in ttask) + "</ul>" if ttask else "")
             .replace("{{GEN_DATE}}", today.isoformat()))
 
+    # ================= logistics page (відповіді перевізників) =================
+    # Іван 17.08: «створи сторінку по логістиці, де будуть відповіді виконавців,
+    # щоб було видно, які варіанти відповідей». Тобто цінність не в переліку
+    # компаній, а в ТИПАХ відповідей: сторінка групує їх і каже, що кожен тип
+    # означає для нашого плану. Контакти сюди НЕ йдуть — вони в приватному репо.
+    lg = tmpl("logistics.tmpl.html")
+    QD = json.loads((ROOT / "project/data/quotes.json").read_text())
+    kind_by = {k["key"]: k for k in QD["kinds"]}
+    counts = {k: 0 for k in kind_by}
+    for c in QD["carriers"]:
+        counts[c["kind"]] = counts.get(c["kind"], 0) + 1
+        # відповідь може містити ДВІ причини одразу (Temen: і дедлайн, і плейсмент) —
+        # інакше тип «не веземо в кемпи без плейсменту» показував би нуль при живому прикладі
+        if c.get("also"):
+            counts[c["also"]] = counts.get(c["also"], 0) + 1
+    kinds_html = "".join(
+        f'<div class="card {("tone-" + k["tone"]) if k.get("tone") else ""}">'
+        f'<h3>{esc(k["label"])} — {counts.get(k["key"], 0)}</h3>'
+        f'<p>{esc(k["what"])}</p></div>' for k in QD["kinds"])
+    car_html = ""
+    for c in QD["carriers"]:
+        k = kind_by.get(c["kind"], {})
+        when = f' · відповіли {esc(c["answered"])}' if c.get("answered") else ""
+        car_html += (f'<div class="card">'
+                     f'<h3>{esc(c["name"])} <span class="meta">— {esc(k.get("label", ""))}{when}</span></h3>'
+                     f'<p><b>Їхніми словами:</b> {esc(c["answer"])}</p>'
+                     + (f'<p><b>Що це означає:</b> {esc(c["means"])}</p>' if c.get("means") else "")
+                     + (f'<p class="meta">Що потрібно від нас: {esc(c["need"])}</p>' if c.get("need") else "")
+                     + '</div>')
+    lg = (lg.replace("{{LEAD}}", esc(QD["lead"]))
+            .replace("{{CARGO}}", esc(QD["cargo"]))
+            .replace("{{KINDS}}", kinds_html)
+            .replace("{{CARRIERS}}", car_html)
+            .replace("{{CONCLUSIONS}}", "<ul class=\"facts\">" +
+                     "".join(f"<li>{esc(x)}</li>" for x in QD["conclusions"]) + "</ul>")
+            .replace("{{DEC_HTML}}", "".join(
+                f'<div class="card"><h3>{esc(d.get("title",""))}</h3><p>{d.get("why","")}</p></div>'
+                for d in tdec) or '<p class="meta">поки нема</p>')
+            .replace("{{TASK_HTML}}", "<ul>" + "".join(
+                f'<li>{esc(t.get("task",""))} <span class="meta">— {esc(t.get("status",""))}</span></li>'
+                for t in ttask) + "</ul>" if ttask else "")
+            .replace("{{GEN_DATE}}", today.isoformat()))
+
     # ================= ops page =================
     ops = tmpl("ops.tmpl.html")
     if ADDR.get("move_date"):
@@ -3064,7 +3107,7 @@ def build():
     pages = {**circ_pages,
              "index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
-             "schemes.html": schemes, "paint.html": paint, "transport.html": tr,
+             "schemes.html": schemes, "paint.html": paint, "transport.html": tr, "logistics.html": lg,
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
              "solar_lab.html": slab, "cables_lab.html": clab,
