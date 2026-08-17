@@ -204,3 +204,4 @@
 * [Відповісти Playa Partners: адреса забору, габарити в ящику, коли вантаж буде готовий](vidpovisty-playa-partners-adresa-zaboru-habaryty-v-iashchyku.md) - до роботи
 * [Закрити облік витрат: три уточнення від команди, і підсумок стає точним](zakryty-oblik-vytrat-try-utochnennia-vid-komandy-i-pidsumok-.md) - до роботи
 * [Підтвердити, чи генератор дадуть — від цього залежить половина ящика](pidtverdyty-chy-henerator-dadut-vid-tsoho-zalezhyt-polovyna-.md) - до роботи
+* [Надіслати лист-запит на панель і акумулятор (або станцію) — текст готовий, бракує адресата](nadislaty-lyst-zapyt-na-panel-i-akumuliator-abo-stantsiiu-te.md) - чекаємо
