@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="470" viewBox="0 0 1240 470">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 z" fill="#d81f1f"/></marker><marker id="ab" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 z" fill="#1f4fd8"/></marker></defs>
+<rect width="1240" height="470" fill="#ffffff"/>
+<text x="40.0" y="34.0" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#1b1b1b" text-anchor="start" font-weight="700">Розкрій: із чого пиляємо ящик</text>
+<text x="40.0" y="56.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">Аркуш фанери 4×8 футів = 1220×2440 мм, товщина 15 мм. Деталей 8, площа 4.68 м², аркушів треба 3.</text>
+<text x="40.0" y="92.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">ДЕТАЛІ</text>
+<text x="40.0" y="114.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1b1b1b" text-anchor="start" font-weight="600">1 × дно</text>
+<text x="200.0" y="114.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">1430 × 550 мм</text>
+<text x="40.0" y="136.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1b1b1b" text-anchor="start" font-weight="600">1 × кришка</text>
+<text x="200.0" y="136.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">1430 × 550 мм</text>
+<text x="40.0" y="158.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1b1b1b" text-anchor="start" font-weight="600">2 × стінка довга</text>
+<text x="200.0" y="158.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">1430 × 635 мм</text>
+<text x="40.0" y="180.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1b1b1b" text-anchor="start" font-weight="600">2 × торець</text>
+<text x="200.0" y="180.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">520 × 620 мм</text>
+<text x="40.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1b1b1b" text-anchor="start" font-weight="600">2 × перегородка</text>
+<text x="200.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#555" text-anchor="start" font-weight="400">520 × 620 мм</text>
+<text x="40.0" y="232.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#d81f1f" text-anchor="start" font-weight="700">вага самої фанери ≈ 44 кг</text>
+<text x="380.0" y="92.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">АРКУШ 1</text>
+<rect x="380.0" y="104.0" width="164.7" height="329.4" fill="#fcfcfc" stroke="#1b1b1b" stroke-width="1.8"/>
+<rect x="380.0" y="104.0" width="74.2" height="193.1" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="417.1" y="198.5" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">дно</text>
+<text x="417.1" y="211.5" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">550×1430</text>
+<rect x="454.2" y="104.0" width="74.2" height="193.1" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="491.4" y="198.5" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">кришка</text>
+<text x="491.4" y="211.5" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">550×1430</text>
+<rect x="380.0" y="297.1" width="70.2" height="83.7" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="415.1" y="336.9" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">торець</text>
+<text x="415.1" y="349.9" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">520×620</text>
+<rect x="450.2" y="297.1" width="70.2" height="83.7" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="485.3" y="336.9" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">торець</text>
+<text x="485.3" y="349.9" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">520×620</text>
+<text x="380.0" y="451.4" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#a0a0a0" text-anchor="start" font-weight="400">сірим — залишок, з нього ідуть косинці</text>
+<text x="604.7" y="92.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">АРКУШ 2</text>
+<rect x="604.7" y="104.0" width="164.7" height="329.4" fill="#fcfcfc" stroke="#1b1b1b" stroke-width="1.8"/>
+<rect x="604.7" y="104.0" width="85.7" height="193.1" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="647.6" y="198.5" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">стінка довга</text>
+<text x="647.6" y="211.5" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">635×1430</text>
+<rect x="690.4" y="104.0" width="70.2" height="83.7" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="725.5" y="143.8" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">перегородка</text>
+<text x="725.5" y="156.8" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">520×620</text>
+<rect x="604.7" y="297.1" width="70.2" height="83.7" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="639.8" y="336.9" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">перегородка</text>
+<text x="639.8" y="349.9" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">520×620</text>
+<text x="604.7" y="451.4" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#a0a0a0" text-anchor="start" font-weight="400">сірим — залишок, з нього ідуть косинці</text>
+<text x="829.4" y="92.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">АРКУШ 3</text>
+<rect x="829.4" y="104.0" width="164.7" height="329.4" fill="#fcfcfc" stroke="#1b1b1b" stroke-width="1.8"/>
+<rect x="829.4" y="104.0" width="85.7" height="193.1" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.1"/>
+<text x="872.3" y="198.5" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">стінка довга</text>
+<text x="872.3" y="211.5" font-family="Arial,Helvetica,sans-serif" font-size="8.5" fill="#555" text-anchor="middle" font-weight="400">635×1430</text>
+<text x="829.4" y="451.4" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#a0a0a0" text-anchor="start" font-weight="400">сірим — залишок, з нього ідуть косинці</text>
+<text x="40.0" y="330.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#d81f1f" text-anchor="start" font-weight="700">ВАГА — ГОЛОВНА ПАСТКА ЦІЄЇ КОНСТРУКЦІЇ</text>
+<text x="40.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">фанера 44 кг + генератор 38 кг + станція 33.7 кг = 116 кг</text>
+<text x="40.0" y="371.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">стільки вдвох не піднімають і в кузов не подають. Три виходи:</text>
+<text x="40.0" y="390.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">· колеса і ручка — ящик не носять, його котять;</text>
+<text x="40.0" y="409.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">· кришка знімна, залізо виймається окремо — тоді носять 44 кг порожнього;</text>
+<text x="40.0" y="428.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">· два ящики поруч, зчеплені болтами — кожен несуть окремо.</text>
+<text x="40.0" y="447.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">12-мм фанера замість 15-мм знімає близько 9 кг і цього достатньо для стінок,</text>
+<text x="40.0" y="466.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">але дно лишаємо 15 — на ньому стоїть уся вага.</text>
+</svg>

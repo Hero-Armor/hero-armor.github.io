@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="540" viewBox="0 0 1420 540">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 z" fill="#d81f1f"/></marker><marker id="ab" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 z" fill="#1f4fd8"/></marker></defs>
+<rect width="1420" height="540" fill="#ffffff"/>
+<text x="40.0" y="34.0" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#1b1b1b" text-anchor="start" font-weight="700">Два вузли, на яких усе тримається</text>
+<text x="40.0" y="56.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">Решта ящика — це коробка. Ці два місця вирішують, буде він працювати чи згорить.</text>
+<text x="60.0" y="100.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#d81f1f" text-anchor="start" font-weight="700">1 · ПРОХІД ВИХЛОПУ КРІЗЬ СТІНКУ</text>
+<rect x="250.0" y="140.0" width="22.0" height="250.0" fill="#e8dcc4" stroke="#b09a70" stroke-width="1.4"/>
+<text x="261.0" y="130.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">фанера 15 мм</text>
+<rect x="244.0" y="235.0" width="34.0" height="60.0" fill="#dfe4ea" stroke="#7a828c" stroke-width="1.6"/>
+<text x="310.0" y="229.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1b1b1b" text-anchor="start" font-weight="600">металева гільза — ширша за трубу</text>
+<rect x="130.0" y="253.0" width="240.0" height="24.0" fill="#c9ccd1" stroke="#5c6169" stroke-width="1.4"/>
+<text x="132.0" y="269.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1b1b1b" text-anchor="start" font-weight="400">гофра нержавійка</text>
+<line x1="276" y1="235" x2="276" y2="253" stroke="#d81f1f" stroke-width="1.4"/>
+<text x="282.0" y="249.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#d81f1f" text-anchor="start" font-weight="700">зазор ≥20 мм, не забивати ватою щільно</text>
+<path d="M370,277 q30,10 30,50" fill="none" stroke="#5c6169" stroke-width="8"/>
+<text x="406.0" y="319.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1b1b1b" text-anchor="start" font-weight="700">вихід ДОНИЗУ</text>
+<text x="406.0" y="335.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="start" font-weight="400">пил і вода не залітають</text>
+<text x="60.0" y="420.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#1b1b1b" text-anchor="start" font-weight="400">· фанера впритул до труби — це відкритий вогонь, тому гільза</text>
+<text x="60.0" y="438.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#1b1b1b" text-anchor="start" font-weight="400">· гільзу садити на термостійкий герметик, не на силікон</text>
+<text x="60.0" y="456.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">· з вулиці — сітка від іскри, з середини — нічого горючого в радіусі 100 мм</text>
+<text x="60.0" y="474.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">· датчик чадного газу: один у ящику, другий там, де спимо</text>
+<text x="780.0" y="100.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1f4fd8" text-anchor="start" font-weight="700">2 · ВХІД ПОВІТРЯ В СТАНЦІЙНИЙ ВІДСІК</text>
+<rect x="780.0" y="140.0" width="22.0" height="250.0" fill="#e8dcc4" stroke="#b09a70" stroke-width="1.4"/>
+<text x="791.0" y="130.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">фанера</text>
+<line x1="550" y1="270" x2="610" y2="270" stroke="#1f4fd8" stroke-width="3" marker-end="url(#ab)"/>
+<text x="548.0" y="256.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1f4fd8" text-anchor="start" font-weight="700">з вулиці</text>
+<circle cx="640" cy="270" r="26" fill="#eef3ff" stroke="#1f4fd8" stroke-width="1.6"/>
+<path d="M622,270 q18,-16 18,0 q18,16 18,0" fill="none" stroke="#1f4fd8" stroke-width="2.4"/>
+<path d="M622,281 q18,-16 18,0 q18,16 18,0" fill="none" stroke="#1f4fd8" stroke-width="2.4"/>
+<text x="614.0" y="318.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1b1b1b" text-anchor="start" font-weight="600">вентилятор</text>
+<text x="604.0" y="334.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1f4fd8" text-anchor="start" font-weight="700">дме ВСЕРЕДИНУ</text>
+<rect x="688.0" y="225.0" width="26.0" height="90.0" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.4"/>
+<text x="701.0" y="214.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">поролон</text>
+<text x="701.0" y="362.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">пісок,</text>
+<text x="701.0" y="376.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">миється</text>
+<line x1="720" y1="270" x2="776" y2="270" stroke="#1f4fd8" stroke-width="3" marker-end="url(#ab)"/>
+<rect x="810.0" y="225.0" width="26.0" height="90.0" fill="#eef3ff" stroke="#7f9ee0" stroke-width="1.4"/>
+<text x="823.0" y="214.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1b1b1b" text-anchor="middle" font-weight="600">MERV 13</text>
+<text x="848.0" y="332.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">луговий пил pH 9-10 до плат не доходить</text>
+<line x1="842" y1="270" x2="910" y2="270" stroke="#1f4fd8" stroke-width="3" marker-end="url(#ab)"/>
+<text x="916.0" y="264.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1b1b1b" text-anchor="start" font-weight="700">відсік станції</text>
+<text x="916.0" y="280.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="700">тиск на 20-50 Па вищий</text>
+<text x="916.0" y="296.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="start" font-weight="400">за вулицю — витік іде</text>
+<text x="916.0" y="310.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="start" font-weight="400">назовні, а не всередину</text>
+<text x="780.0" y="420.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#1b1b1b" text-anchor="start" font-weight="400">Це рішення DEC-087 і DEC-088, ухвалене ще під окремий ящик станції.</text>
+<text x="780.0" y="438.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#1b1b1b" text-anchor="start" font-weight="400">Воно НЕ померло разом із гіпотезою кулера: пил на плайї нікуди не дівся,</text>
+<text x="780.0" y="456.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#1b1b1b" text-anchor="start" font-weight="400">а генераторний відсік однаково продувається наскрізь.</text>
+<text x="780.0" y="474.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Різниця одна: фільтр тепер потрібен лише станційному боку, бо генератору</text>
+<text x="780.0" y="492.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">фільтрувати повітря на горіння ми не будемо — у нього свій фільтр.</text>
+</svg>

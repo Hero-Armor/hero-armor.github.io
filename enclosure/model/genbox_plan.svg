@@ -36,7 +36,8 @@
 <text x="66.7" y="491.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1f4fd8" text-anchor="start" font-weight="700">холодне знизу</text>
 <line x1="517.6" y1="503.6" x2="517.6" y2="465.8" stroke="#0b8a3e" stroke-width="3" marker-end="url(#f0b8a3e)"/>
 <text x="525.6" y="470.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="700">гаряче вгору + вентилятор</text>
-<text x="60.0" y="772.8" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#555" text-anchor="start" font-weight="400">вхід унизу з боку станції · вихід угорі з боку генератора — проти конвекції не працюємо</text>
+<text x="60.0" y="772.8" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#555" text-anchor="start" font-weight="400">станційний бік — нагнітання крізь фільтр, надлишковий тиск · генераторний — наскрізний продув із витяжкою вгору</text>
+<text x="60.0" y="786.8" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#d81f1f" text-anchor="start" font-weight="600">перегородка мусить бути ГЕРМЕТИЧНОЮ, інакше витяжка генератора висмокче тиск зі станційного боку</text>
 <line x1="52.0" y1="800.8" x2="656.0" y2="800.8" stroke="#d81f1f" stroke-width="1.3" marker-start="url(#a)" marker-end="url(#a)"/>
 <text x="354.0" y="794.8" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#d81f1f" text-anchor="middle" font-weight="700">висота ≈620 мм</text>
 <text x="738.0" y="116.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#d81f1f" text-anchor="start" font-weight="700">ЧОГО НЕ МОЖНА</text>

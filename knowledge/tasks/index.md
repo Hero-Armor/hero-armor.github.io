@@ -74,10 +74,10 @@
 * [Фільтр: замовлення на Наталію Багінську — не наші, у звіти не включати](filtr-zamovlennia-na-nataliiu-bahinsku-ne-nashi-u-zvity-ne-v.md) - готово
 * [Здати на Amazon усі надлишки — рішення Івана 06.08 «повертаємо все»](zdaty-na-amazon-usi-nadlyshky-rishennia-ivana-06-08-povertai.md) - в роботі
 * [Замовити станцію EcoFlow DELTA 3 Ultra Plus у Home Depot ($1599, доставка 12-14.08)](zamovyty-stantsiiu-ecoflow-delta-3-ultra-plus-u-home-depot-1.md) - до роботи
-* [Замовити пару ящиків Sterilite 40 gal у Target ($176.99, доставка наступного дня)](zamovyty-paru-iashchykiv-sterilite-40-gal-u-target-176-99-do.md) - до роботи
+* [Замовити пару ящиків Sterilite 40 gal у Target ($176.99, доставка наступного дня)](zamovyty-paru-iashchykiv-sterilite-40-gal-u-target-176-99-do.md) - готово
 * [Заміряти ватметром холостий хід станції в перший же день після отримання](zamiriaty-vatmetrom-kholostyi-khid-stantsii-v-pershyi-zhe-de.md) - чекаємо
 * [Тест станції під навантаженням до виїзду (виїзд 28-29.08, Burn 30.08-07.09)](test-stantsii-pid-navantazhenniam-do-vyizdu-vyizd-28-29-08-b.md) - чекаємо
-* [Виміряти реальну висоту ящика Sterilite — 457 мм це з колесами чи без](vymiriaty-realnu-vysotu-iashchyka-sterilite-457-mm-tse-z-kol.md) - чекаємо
+* [Виміряти реальну висоту ящика Sterilite — 457 мм це з колесами чи без](vymiriaty-realnu-vysotu-iashchyka-sterilite-457-mm-tse-z-kol.md) - готово
 * [Обрати кабель від станції до щита під Anderson на 30 А](obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) - до роботи
 * [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) - в роботі
 * [Обрати кабель магістралі станція → щит під Anderson 30 А](obraty-kabel-mahistrali-stantsiia-shchyt-pid-anderson-30-a.md) - до роботи
@@ -195,3 +195,7 @@
 * [Порахувати витяжний вентилятор під ящик: скільки кубів на годину треба, щоб усередині не було вище вулиці](porakhuvaty-vytiazhnyi-ventyliator-pid-iashchyk-skilky-kubiv.md) - до роботи
 * [Заміри є: корпус світильника 17.6 мм, конус 18.8 мм — 3/4″ підходить обом](zamiry-ie-korpus-svitylnyka-17-6-mm-konus-18-8-mm-3-4-pidkho.md) - готово
 * [Перевірити, що Ліза підключила Google Tasks СВОЇМ акаунтом, а не Івановим](pereviryty-shcho-liza-pidkliuchyla-google-tasks-svoim-akaunt.md) - чекаємо
+* [Підтвердити розводку повітря: станційний відсік — нагнітання через фільтр, генераторний — витяжка](pidtverdyty-rozvodku-povitria-stantsiinyi-vidsik-nahnitannia.md) - до роботи
+* [Вирішити, як ящик пересувати: колеса, знімна кришка чи два ящики болтами](vyrishyty-iak-iashchyk-peresuvaty-kolesa-znimna-kryshka-chy-.md) - до роботи
+* [Передбачити доступ до екрана і кнопок станції і до панелі генератора, не розбираючи ящик](peredbachyty-dostup-do-ekrana-i-knopok-stantsii-i-do-paneli-.md) - до роботи
+* [Вирішити, чи потрібен ящику дах, чи він живе під тіньовою зоною кемпу](vyrishyty-chy-potriben-iashchyku-dakh-chy-vin-zhyve-pid-tino.md) - до роботи

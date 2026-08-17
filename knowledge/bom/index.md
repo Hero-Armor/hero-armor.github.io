@@ -218,3 +218,17 @@
 * [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $14.78, купити
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) - $11.56, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) - $37.49, купити
+* [Фанера береза PureBond 1/2″ × 4×8 футів (Home Depot)](fanera-bereza-purebond-1-2-4-8-futiv-home-depot.md) - $59.98 / аркуш, купити
+* [Мінеральна вата ROCKWOOL Rockboard 60, 2″ (50 мм), 4 плити](mineralna-vata-rockwool-rockboard-60-2-50-mm-4-plyty.md) - $122.99, купити
+* [Фольгована ізоляція в рулоні 23.6″ × 10 футів](folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) - $12.99, купити
+* [Гофра вихлопна нержавійка T304, 1.5″ × 6 футів](hofra-vykhlopna-nerzhaviika-t304-1-5-6-futiv.md) - $34.80, купити
+* [Прохід вихлопу крізь стінку GenExhaust, подвійна стінка 1½″](prokhid-vykhlopu-kriz-stinku-genexhaust-podviina-stinka-1.md) - $104.50, купити
+* [Решітка вентиляційна металева 6″, плоскі жалюзі](reshitka-ventyliatsiina-metaleva-6-ploski-zhaliuzi.md) - $16.45 / шт, купити
+* [Петлі нержавійка 3″, 4 шт](petli-nerzhaviika-3-4-sht.md) - $9.99, купити
+* [Засувки-защіпки нержавійка 304, 2 шт](zasuvky-zashchipky-nerzhaviika-304-2-sht.md) - $17.99, купити
+* [Ручка врізна пружинна сталева з накладкою](ruchka-vrizna-pruzhynna-staleva-z-nakladkoiu.md) - $19.95 / шт, купити
+* [Датчик чадного газу Kidde на батарейках](datchyk-chadnoho-hazu-kidde-na-batareikakh.md) - $27.79 / шт, купити
+* [Вогнегасник First Alert ABC з металевим кронштейном](vohnehasnyk-first-alert-abc-z-metalevym-kronshteinom.md) - $34.95, купити
+* [Герметик термостійкий Permatex Ultra Red RTV, 3 oz](hermetyk-termostiikyi-permatex-ultra-red-rtv-3-oz.md) - $7.56, купити
+* [Саморізи по дереву Power Pro #8 × 2″, 141 шт](samorizy-po-derevu-power-pro-8-2-141-sht.md) - $7.99, купити
+* [Кутики монтажні нержавійка, 40 шт](kutyky-montazhni-nerzhaviika-40-sht.md) - $6.99, купити

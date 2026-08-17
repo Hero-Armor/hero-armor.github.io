@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="604" viewBox="0 0 1240 604">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 z" fill="#d81f1f"/></marker><marker id="ab" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 z" fill="#1f4fd8"/></marker></defs>
+<rect width="1240" height="604" fill="#ffffff"/>
+<text x="40.0" y="34.0" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#1b1b1b" text-anchor="start" font-weight="700">Порядок збірки — що за чим</text>
+<text x="40.0" y="56.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">Порядок не косметичний: половину операцій фізично неможливо зробити після того, як коробка закрита.</text>
+<rect x="40.0" y="92.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="68" cy="124" r="17" fill="#1f4fd8"/>
+<text x="68.0" y="129.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+<text x="98.0" y="122.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Дно і торці</text>
+<text x="98.0" y="144.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Спочатку рама: дно, два торці, кути на косинцях зсередини. Поки</text>
+<text x="98.0" y="160.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">нема довгих стінок — усе доступно з обох боків.</text>
+<rect x="40.0" y="210.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="68" cy="242" r="17" fill="#1f4fd8"/>
+<text x="68.0" y="247.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+<text x="98.0" y="240.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Перегородка</text>
+<text x="98.0" y="262.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Ставимо ДО довгих стінок: вата 50 мм між двома листами, фольга</text>
+<text x="98.0" y="278.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">на бік генератора, зазор 20 мм. Потім її туди не заведеш.</text>
+<rect x="40.0" y="328.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="68" cy="360" r="17" fill="#1f4fd8"/>
+<text x="68.0" y="365.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+<text x="98.0" y="358.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Прохід вихлопу</text>
+<text x="98.0" y="380.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Гільзу в торець ріжемо зараз, поки деталь лежить на столі.</text>
+<text x="98.0" y="396.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Свердлити зібраний ящик — це стружка всередину і кривий отвір.</text>
+<rect x="40.0" y="446.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="68" cy="478" r="17" fill="#1f4fd8"/>
+<text x="68.0" y="483.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">4</text>
+<text x="98.0" y="476.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Вентиляція</text>
+<text x="98.0" y="498.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Станційний бік: отвір під фільтр і вентилятор на нагнітання.</text>
+<text x="98.0" y="514.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Генераторний: великий вхід унизу і витяжка вгорі. Отвори теж по</text>
+<text x="98.0" y="530.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">деталях.</text>
+<rect x="640.0" y="92.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="668" cy="124" r="17" fill="#1f4fd8"/>
+<text x="668.0" y="129.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">5</text>
+<text x="698.0" y="122.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Довгі стінки</text>
+<text x="698.0" y="144.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Закриваємо коробку. З цього моменту всередину лізе тільки рука.</text>
+<rect x="640.0" y="210.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="668" cy="242" r="17" fill="#1f4fd8"/>
+<text x="668.0" y="247.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">6</text>
+<text x="698.0" y="240.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Кришка на петлях</text>
+<text x="698.0" y="262.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Петлі, засувки, ручка. Кришка знімна або на петлях — але залізо</text>
+<text x="698.0" y="278.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">мусить виніматись без розбирання ящика.</text>
+<rect x="640.0" y="328.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="668" cy="360" r="17" fill="#1f4fd8"/>
+<text x="668.0" y="365.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">7</text>
+<text x="698.0" y="358.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Обшивка ватою</text>
+<text x="698.0" y="380.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Вата під перфорованим алюмінієм по стінках генераторного</text>
+<text x="698.0" y="396.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">відсіку. Волокно не має літати всередині.</text>
+<rect x="640.0" y="446.0" width="560.0" height="100.0" fill="#fbfcff" stroke="#d5ddee" stroke-width="1.2"/>
+<circle cx="668" cy="478" r="17" fill="#1f4fd8"/>
+<text x="668.0" y="483.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="700">8</text>
+<text x="698.0" y="476.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">Приміряти залізо</text>
+<text x="698.0" y="498.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">Ставимо генератор і станцію ДО фарбування. Не влізло — правити</text>
+<text x="698.0" y="514.0" font-family="Arial,Helvetica,sans-serif" font-size="10.8" fill="#555" text-anchor="start" font-weight="400">ще можна.</text>
+<text x="40.0" y="578.0" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#d81f1f" text-anchor="start" font-weight="600">Правило всієї збірки: кожен отвір і кожен виріз робиться по деталі, що лежить на столі. Все, що робиться в зібраному ящику, робиться погано.</text>
+</svg>
