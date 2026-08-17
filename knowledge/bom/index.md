@@ -236,3 +236,6 @@
 * [Набір насадок Dremel 710-08, 160 предметів](nabir-nasadok-dremel-710-08-160-predmetiv.md) - $39.97, купити
 * [Відрізні круги фібро-армовані TEMO, 100 шт + 2 мандрелі](vidrizni-kruhy-fibro-armovani-temo-100-sht-2-mandreli.md) - $17.99, купити
 * [Набір насадок Dremel 709-02, 110 предметів](nabir-nasadok-dremel-709-02-110-predmetiv.md) - $24.98, купити
+* [Здувач Ryobi ONE+ 18V, 250 CFM (тільки інструмент, P21011)](zduvach-ryobi-one-18v-250-cfm-tilky-instrument-p21011.md) - $69.00, купити
+* [Здувач акумуляторний 750 CFM, 2 батареї 5.5 Ah + зарядка](zduvach-akumuliatornyi-750-cfm-2-batarei-5-5-ah-zariadka.md) - $75.99, купити
+* [Груша-здувач Rocket Air Blaster, велика](hrusha-zduvach-rocket-air-blaster-velyka.md) - $21.95, купити
