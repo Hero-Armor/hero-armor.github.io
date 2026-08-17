@@ -2273,6 +2273,20 @@ def build():
                 f'<p><b>Сидіння:</b> {esc(hb["seats"])}</p>'
                 f'<p><b>Паливо:</b> {esc(hb["fuel"])}</p>'
                 f'<p><b>Висновок:</b> {esc(hb["conclusion"])}</p></div>'))(TRD["hybrid_check"]))
+            .replace("{{SURFACES}}", (lambda s: "" if not s else (
+                f'<p>{esc(s["key_insight"])}</p>'
+                + '<div class="tbl-wrap"><table><thead><tr><th>поверхня</th><th>розмір</th>'
+                  '<th>проти 79″ фігури</th></tr></thead><tbody>'
+                + "".join(
+                    f'<tr><td>{esc(o["name"])}</td>'
+                    f'<td>{(str(o["size_in"][0]) + "×" + str(o["size_in"][1]) + "″") if o.get("size_in") else "—"}</td>'
+                    f'<td>{esc(o["verdict"])}</td></tr>' for o in s["options"])
+                + '</tbody></table></div>'
+                + f'<div class="card"><h3>Везти розкладеним?</h3><p>{esc(s["tow_rule"])}</p></div>'
+                + f'<p class="meta">{esc(s["forum_note"])}</p>'
+                + '<div class="card"><h3>Що заміряти в господаря</h3><ul>'
+                + "".join(f'<li>{esc(x)}</li>' for x in s["to_measure"]) + '</ul></div>'
+                + f'<p class="meta">джерело: {esc(s["_source"])}</p>'))(TRD.get("rv_surfaces")))
             .replace("{{HYPOTHESES}}", "".join(
                 f'<div class="card"><h3>{esc(x["title"])}</h3>'
                 f'<p>{esc(x["what"])}</p>'
