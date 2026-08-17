@@ -49,3 +49,6 @@ generated: { by: "process:site-build" }
 * [Кулер Coleman 100-150 qt](/bom/kuler-coleman-100-150-qt.md) — $100-140, купити
 * [Каністри під воду 5 л](/bom/kanistry-pid-vodu-5-l.md) — $40, купити
 * [Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)](/bom/iashchyk-sterilite-40-gal-wheeled-industrial-tote-para-stant.md) — $176.99, купити
+* [Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском](/bom/henerator-ecoflow-smart-generator-4000-dual-fuel-firmovyi-z-.md) — $1259, купити
+* [Генератор PowerSmart 3800 Вт dual fuel — найдешевша заміна фірмовому](/bom/henerator-powersmart-3800-vt-dual-fuel-naideshevsha-zamina-f.md) — $422.99, купити
+* [Генератор AIVOLT 4300 Вт dual fuel, заявлено 53 дБ — тихий варіант](/bom/henerator-aivolt-4300-vt-dual-fuel-zaiavleno-53-db-tykhyi-va.md) — $666.99, купити

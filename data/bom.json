@@ -2503,5 +2503,38 @@
   "order": "ORD-027",
   "url": "https://www.amazon.com/s?k=VIKITON+3%2F4+inch+Hole+Saw+with+Arbor",
   "note": "КУПЛЕНО 14.08 (ORD-027). Дешева, по дереву і металу — як витратна на пробні отвори."
+ },
+ {
+  "item": "Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском",
+  "qty": "1 шт",
+  "price": "$1259",
+  "status": "tbd",
+  "flow": "tbd",
+  "system": "enclosure",
+  "where": "Amazon / EcoFlow",
+  "url": "https://us.ecoflow.com/products/smart-generator-4000-dual-fuel",
+  "note": "Ціна з офіційного магазину EcoFlow 17.08. Сумісний із DELTA 3 Ultra Plus через XT150 і свіжу прошивку. За ці гроші купується пряме заряджання постійним струмом і автозапуск-зупинка з застосунку."
+ },
+ {
+  "item": "Генератор PowerSmart 3800 Вт dual fuel — найдешевша заміна фірмовому",
+  "qty": "1 шт",
+  "price": "$422.99",
+  "status": "tbd",
+  "flow": "tbd",
+  "system": "enclosure",
+  "where": "Amazon / EcoFlow",
+  "url": "https://www.amazon.com/dp/B0FSD2SJJP",
+  "note": "★4.6 при 1109 відгуках, найкращий рейтинг серед дешевих. Заряджає станцію ЗМІННИМ струмом через розетку: автозапуску нема, вмикати руками. Економія проти EcoFlow — $836."
+ },
+ {
+  "item": "Генератор AIVOLT 4300 Вт dual fuel, заявлено 53 дБ — тихий варіант",
+  "qty": "1 шт",
+  "price": "$666.99",
+  "status": "tbd",
+  "flow": "tbd",
+  "system": "enclosure",
+  "where": "Amazon / EcoFlow",
+  "url": "https://www.amazon.com/dp/B0DQY3MBLJ",
+  "note": "★4.1 при 500 відгуках. Головна причина дивитись саме на нього — заявлені 53 дБ проти 70 у EcoFlow. У кемпі, де сусіди за три метри, це важливіше за автозапуск. Економія $592."
  }
 ]

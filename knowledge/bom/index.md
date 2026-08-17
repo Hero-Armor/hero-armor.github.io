@@ -208,3 +208,6 @@
 * [Врізні вогні торця подіуму — 16 шт LED IP68 у захисному кожусі, 12 В 0.6 Вт](vrizni-vohni-tortsia-podiumu-16-sht-led-ip68-u-zakhysnomu-ko.md) - $52.49 за набір, купити
 * [Коронка LENOX Speed Slot 3/4″ біметал з тримачем — запасна до Bosch](koronka-lenox-speed-slot-3-4-bimetal-z-trymachem-zapasna-do-.md) - $13.35, купити
 * [Коронка VIKITON 3/4″ з тримачем — друга запасна](koronka-vikiton-3-4-z-trymachem-druha-zapasna.md) - $9.61, купити
+* [Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском](henerator-ecoflow-smart-generator-4000-dual-fuel-firmovyi-z-.md) - $1259, купити
+* [Генератор PowerSmart 3800 Вт dual fuel — найдешевша заміна фірмовому](henerator-powersmart-3800-vt-dual-fuel-naideshevsha-zamina-f.md) - $422.99, купити
+* [Генератор AIVOLT 4300 Вт dual fuel, заявлено 53 дБ — тихий варіант](henerator-aivolt-4300-vt-dual-fuel-zaiavleno-53-db-tykhyi-va.md) - $666.99, купити

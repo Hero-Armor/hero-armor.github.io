@@ -141,3 +141,4 @@
 * [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)
 * [Задачі збірки: створює Володимир, веде Ліза](zadachi-zbirky-stvoriuie-volodymyr-vede-liza.md)
 * [Ящик під станцію і генератор: фанера і мінеральна вата, не МДФ і не піна](iashchyk-pid-stantsiiu-i-henerator-fanera-i-mineralna-vata-n.md)
+* [Робочі повідомлення Лізі йдуть через її бота, не з акаунта Івана](robochi-povidomlennia-lizi-idut-cherez-ii-bota-ne-z-akaunta-.md)
