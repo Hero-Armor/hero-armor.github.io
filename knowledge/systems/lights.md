@@ -122,7 +122,7 @@ generated: { by: "process:site-build" }
 * [Свердлити торець у зборі: спершу прикрутити алюмінієву накладку до дерева, потім проходити коронкою наскрізь — отвори будуть співвісні](/tasks/sverdlyty-torets-u-zbori-spershu-prykrutyty-aliuminiievu-nak.md) — до роботи
 * [Іван дасть фінальне рішення по електриці фігури — звірити, що ще скасовується після переходу спини на лампу MR16](/tasks/ivan-dast-finalne-rishennia-po-elektrytsi-fihury-zviryty-shc.md) — чекаємо
 * [Лампи Diodesy, замовлення 114-0792999-4940230 ($92.32): або відправити повернення до 06.09, або переоформити скаргу A-to-z до 14.09](/tasks/lampy-diodesy-zamovlennia-114-0792999-4940230-92-32-abo-vidp.md) — до роботи
-* [Заміряти зовнішній діаметр пластикового конуса світильника — від нього залежить розмір коронки](/tasks/zamiriaty-zovnishnii-diametr-plastykovoho-konusa-svitylnyka-.md) — до роботи
+* [Заміри є: корпус світильника 17.6 мм, конус 18.8 мм — 3/4″ підходить обом](/tasks/zamiry-ie-korpus-svitylnyka-17-6-mm-konus-18-8-mm-3-4-pidkho.md) — готово
 
 # Закупівля
 

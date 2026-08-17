@@ -193,4 +193,5 @@
 * [Купити датчик чадного газу — в ящик і в житло](kupyty-datchyk-chadnoho-hazu-v-iashchyk-i-v-zhytlo.md) - до роботи
 * [Визначити місце для палива окремо від ящика, з піддоном під розлив](vyznachyty-mistse-dlia-palyva-okremo-vid-iashchyka-z-piddono.md) - до роботи
 * [Порахувати витяжний вентилятор під ящик: скільки кубів на годину треба, щоб усередині не було вище вулиці](porakhuvaty-vytiazhnyi-ventyliator-pid-iashchyk-skilky-kubiv.md) - до роботи
-* [Заміряти зовнішній діаметр пластикового конуса світильника — від нього залежить розмір коронки](zamiriaty-zovnishnii-diametr-plastykovoho-konusa-svitylnyka-.md) - до роботи
+* [Заміри є: корпус світильника 17.6 мм, конус 18.8 мм — 3/4″ підходить обом](zamiry-ie-korpus-svitylnyka-17-6-mm-konus-18-8-mm-3-4-pidkho.md) - готово
+* [Перевірити, що Ліза підключила Google Tasks СВОЇМ акаунтом, а не Івановим](pereviryty-shcho-liza-pidkliuchyla-google-tasks-svoim-akaunt.md) - чекаємо
