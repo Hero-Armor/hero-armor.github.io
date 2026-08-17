@@ -201,3 +201,4 @@ generated: { by: "process:site-build" }
 * [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](/bom/nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) — $89.00, купити
 * [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](/bom/mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) — $14.78, купити
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](/bom/voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) — $11.56, купити
+* [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](/bom/nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) — $37.49, купити
