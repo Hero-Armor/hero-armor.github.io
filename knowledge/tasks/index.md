@@ -187,3 +187,4 @@
 * [Графік збірки, крок 15: перевірка працездатності Hero Armor (26.08–26.08)](hrafik-zbirky-krok-15-perevirka-pratsezdatnosti-hero-armor-2.md) - до роботи
 * [Графік збірки, крок 16: демонтаж, погрузка Hero Armor (26.08–26.08)](hrafik-zbirky-krok-16-demontazh-pohruzka-hero-armor-26-08-26.md) - до роботи
 * [Графік збірки, крок 17: виїзд на Плаю (27.08–27.08)](hrafik-zbirky-krok-17-vyizd-na-plaiu-27-08-27-08.md) - до роботи
+* [Синхронізація: Ліза працює в Google Tasks, задачі мають ходити в обидва боки з базою і сайтом](synkhronizatsiia-liza-pratsiuie-v-google-tasks-zadachi-maiut.md) - чекаємо
