@@ -60,6 +60,7 @@ generated: { by: "process:site-build" }
 * [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](/decisions/vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
 * [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](/decisions/svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)
 * [Коронки по алюмінію — тільки біметал M42 фірмових ліній, дешевий набір не беремо](/decisions/koronky-po-aliuminiiu-tilky-bimetal-m42-firmovykh-linii-desh.md)
+* [Стрічка виступає на 2-3 мм над подіумом, ОСБ ріжемо на дві частини по контуру](/decisions/strichka-vystupaie-na-2-3-mm-nad-podiumom-osb-rizhemo-na-dvi.md)
 
 # Задачі
 
@@ -199,7 +200,7 @@ generated: { by: "process:site-build" }
 * [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](/bom/koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) — $14.79, купити
 * [Коронка Bosch HBT100 1″ біметал M42 — робоча, під отвір джгута](/bom/koronka-bosch-hbt100-1-bimetal-m42-robocha-pid-otvir-dzhhuta.md) — $7.49, купити
 * [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](/bom/nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) — $89.00, купити
-* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](/bom/mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) — $14.78, купити
-* [Восковий олівець для різання — Champion BruteLube, 2 oz](/bom/voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) — $11.56, купити
+* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](/bom/mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) — $15.16, купити
+* [Восковий олівець для різання — Champion BruteLube, 2 oz](/bom/voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) — $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](/bom/nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) — $37.49, купити
 * [Мастило для різання Tap Magic Industrial Pro, 4 oz](/bom/mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) — $7.90, купити

@@ -215,8 +215,8 @@
 * [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) - $14.79, купити
 * [Коронка Bosch HBT100 1″ біметал M42 — робоча, під отвір джгута](koronka-bosch-hbt100-1-bimetal-m42-robocha-pid-otvir-dzhhuta.md) - $7.49, купити
 * [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) - $89.00, купити
-* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $14.78, купити
-* [Восковий олівець для різання — Champion BruteLube, 2 oz](voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) - $11.56, купити
+* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $15.16, купити
+* [Восковий олівець для різання — Champion BruteLube, 2 oz](voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) - $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) - $37.49, купити
 * [Фанера береза PureBond 1/2″ × 4×8 футів (Home Depot)](fanera-bereza-purebond-1-2-4-8-futiv-home-depot.md) - $59.98 / аркуш, купити
 * [Мінеральна вата ROCKWOOL Rockboard 60, 2″ (50 мм), 4 плити](mineralna-vata-rockwool-rockboard-60-2-50-mm-4-plyty.md) - $122.99, купити
