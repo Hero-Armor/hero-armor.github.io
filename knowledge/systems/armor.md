@@ -49,6 +49,7 @@ generated: { by: "process:site-build" }
 * [Заміряти на самій фігурі фактичні місця під світлоповертальні елементи (поз.3 — 20 мм ×5, поз.4 — 56 мм ×2, поз.5 — круг Ø44 мм): креслення прямо просить це перевірити](/tasks/zamiriaty-na-samii-fihuri-faktychni-mistsia-pid-svitlopovert.md) — до роботи
 * [Спитати @vlbrsk (проєктував оболонку) і Марселя (друкував): яке навантаження тримає пластик броні при перенесенні](/tasks/spytaty-vlbrsk-proiektuvav-obolonku-i-marselia-drukuvav-iake.md) — до роботи
 * [Обрати праймер під ASA: X-I-M UMA чи Rust-Oleum Plastic Primer — у брифі стоїть NOT LOCKED](/tasks/obraty-praimer-pid-asa-x-i-m-uma-chy-rust-oleum-plastic-prim.md) — до роботи
+* [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](/tasks/zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) — до роботи
 
 # Закупівля
 

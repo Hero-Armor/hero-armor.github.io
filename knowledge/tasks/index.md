@@ -210,3 +210,4 @@
 * [Підтвердити, що труба з плечей знімається на час перевезення](pidtverdyty-shcho-truba-z-plechei-znimaietsia-na-chas-pereve.md) - до роботи
 * [Вирішити, як їде подіум: другим рейсом чи причепом разом із ящиком](vyrishyty-iak-ide-podium-druhym-reisom-chy-prychepom-razom-i.md) - до роботи
 * [Перерахувати логістику під ПОВЕРНЕННЯ В РІНО замість SF](pererakhuvaty-lohistyku-pid-povernennia-v-rino-zamist-sf.md) - до роботи
+* [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) - до роботи
