@@ -86,3 +86,5 @@ generated: { by: "process:site-build" }
 * [3M 983-10 біла Diamond Grade, 2" × 15 ft — корпус фігури (пара до жовтої 983-71NL)](/bom/3m-983-10-bila-diamond-grade-2-15-ft-korpus-fihury-para-do-z.md) — $32.95, купити
 * [Біла світлоповертальна плівка листом 12″ × 4 ft — під поз. 3 і 4](/bom/bila-svitlopovertalna-plivka-lystom-12-4-ft-pid-poz-3-i-4.md) — $17.95, є
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](/bom/zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) — $13.95, купити
+* [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](/bom/praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) — $34.90, купити
+* [Праймер під пластик — X-I-M UMA спрей 12 oz](/bom/praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) — $28.02, купити
