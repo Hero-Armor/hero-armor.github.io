@@ -22,6 +22,7 @@ generated: { by: "process:site-build" }
 * [Рековий кейс з Facebook Marketplace за $175 — відмова](/decisions/rekovyi-keis-z-facebook-marketplace-za-175-vidmova.md)
 * [Ящик під станцію і генератор: фанера і мінеральна вата, не МДФ і не піна](/decisions/iashchyk-pid-stantsiiu-i-henerator-fanera-i-mineralna-vata-n.md)
 * [Два відсіки — два режими повітря: станцію піддуваємо через фільтр, генератор продуваємо наскрізь](/decisions/dva-vidsiky-dva-rezhymy-povitria-stantsiiu-pidduvaiemo-chere.md)
+* [Генератор не купуємо — його дають покористуватись, і без нього теж проживемо](/decisions/henerator-ne-kupuiemo-ioho-daiut-pokorystuvatys-i-bez-noho-t.md)
 
 # Задачі
 
@@ -37,6 +38,7 @@ generated: { by: "process:site-build" }
 * [Вирішити, як ящик пересувати: колеса, знімна кришка чи два ящики болтами](/tasks/vyrishyty-iak-iashchyk-peresuvaty-kolesa-znimna-kryshka-chy-.md) — до роботи
 * [Передбачити доступ до екрана і кнопок станції і до панелі генератора, не розбираючи ящик](/tasks/peredbachyty-dostup-do-ekrana-i-knopok-stantsii-i-do-paneli-.md) — до роботи
 * [Вирішити, чи потрібен ящику дах, чи він живе під тіньовою зоною кемпу](/tasks/vyrishyty-chy-potriben-iashchyku-dakh-chy-vin-zhyve-pid-tino.md) — до роботи
+* [Підтвердити, чи генератор дадуть — від цього залежить половина ящика](/tasks/pidtverdyty-chy-henerator-dadut-vid-tsoho-zalezhyt-polovyna-.md) — до роботи
 
 # Закупівля
 

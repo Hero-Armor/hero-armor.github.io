@@ -146,3 +146,4 @@
 * [Стрічка виступає на 2-3 мм над подіумом, ОСБ ріжемо на дві частини по контуру](strichka-vystupaie-na-2-3-mm-nad-podiumom-osb-rizhemo-na-dvi.md)
 * [Обкладинки бруса TP57 — 8 шт, по дві на анкер, з трьома отворами під М10](obkladynky-brusa-tp57-8-sht-po-dvi-na-anker-z-troma-otvoramy.md)
 * [Синя фарба в фінальному списку закупівлі — Deep Blue 334027 замість Brilliant Blue, 8 балонів](synia-farba-v-finalnomu-spysku-zakupivli-deep-blue-334027-za.md)
+* [Генератор не купуємо — його дають покористуватись, і без нього теж проживемо](henerator-ne-kupuiemo-ioho-daiut-pokorystuvatys-i-bez-noho-t.md)
