@@ -142,3 +142,4 @@
 * [Робочі повідомлення Лізі йдуть через її бота, не з акаунта Івана](robochi-povidomlennia-lizi-idut-cherez-ii-bota-ne-z-akaunta-.md)
 * [Коронки по алюмінію — тільки біметал M42 фірмових ліній, дешевий набір не беремо](koronky-po-aliuminiiu-tilky-bimetal-m42-firmovykh-linii-desh.md)
 * [Два відсіки — два режими повітря: станцію піддуваємо через фільтр, генератор продуваємо наскрізь](dva-vidsiky-dva-rezhymy-povitria-stantsiiu-pidduvaiemo-chere.md)
+* [Дуйку міряємо швидкістю струменя і змінною батареєю, а не обертами](duiku-miriaiemo-shvydkistiu-strumenia-i-zminnoiu-batareieiu-.md)

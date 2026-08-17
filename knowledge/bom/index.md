@@ -241,3 +241,5 @@
 * [Груша-здувач Rocket Air Blaster, велика](hrusha-zduvach-rocket-air-blaster-velyka.md) - $21.95, купити
 * [Набір насадок Ryobi A90AS37, 37 предметів](nabir-nasadok-ryobi-a90as37-37-predmetiv.md) - $11.91, купити
 * [Набір насадок WEN 230327A, 327 предметів](nabir-nasadok-wen-230327a-327-predmetiv.md) - $17.11, купити
+* [Дуйка акумуляторна WOLFBOX MF200 (змінна батарея)](duika-akumuliatorna-wolfbox-mf200-zminna-batareia.md) - $85–102, купити
+* [Запасна батарея до WOLFBOX MF200, 37 Вт·год](zapasna-batareia-do-wolfbox-mf200-37-vt-hod.md) - $14.39, купити
