@@ -202,3 +202,4 @@
 * [Подивитись, які акумулятори Ryobi є вдома — ONE+ 18 В чи 40 В](podyvytys-iaki-akumuliatory-ryobi-ie-vdoma-one-18-v-chy-40-v.md) - до роботи
 * [У Богдана: заміряти ширину проходу при ЗСУНУТОМУ слайді (між кухонним рядом і дінетом)](u-bohdana-zamiriaty-shyrynu-prokhodu-pry-zsunutomu-slaidi-mi.md) - до роботи
 * [Відповісти Playa Partners: адреса забору, габарити в ящику, коли вантаж буде готовий](vidpovisty-playa-partners-adresa-zaboru-habaryty-v-iashchyku.md) - до роботи
+* [Закрити облік витрат: три уточнення від команди, і підсумок стає точним](zakryty-oblik-vytrat-try-utochnennia-vid-komandy-i-pidsumok-.md) - до роботи
