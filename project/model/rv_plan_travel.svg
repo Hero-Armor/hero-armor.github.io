@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1187" viewBox="0 0 1500 1187">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M1,1 L8,4.5 L1,8" fill="none" stroke="currentColor" stroke-width="1.2"/></marker></defs>
+<rect width="1500" height="1187" fill="#ffffff"/>
+<text x="40.0" y="34.0" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#1b1b1b" text-anchor="start" font-weight="700">Причіп у похідному положенні — слайд зсунутий</text>
+<text x="40.0" y="56.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">Заводського плану зі зсунутим слайдом НЕ ІСНУЄ: Keystone публікує тільки розсунутий і кількість слайдів, а глибину висування не дає ніде. Тому три варіанти поруч — 24, 30 і 36 дюймів.</text>
+<text x="40.0" y="74.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">Орієнтація та сама, що на заводському кресленні: ніс праворуч. Синім — дінет і диван, які в похідному положенні заїжджають усередину і забирають прохід.</text>
+<text x="70.0" y="138.0" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#1b1b1b" text-anchor="start" font-weight="700">слайд заходить на 24″</text>
+<rect x="70.0" y="150.0" width="862.5" height="225.6" rx="18.8" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+<rect x="735.1" y="157.1" width="197.4" height="211.5" fill="#eef3ff" stroke="#9db4e8" stroke-width="1.2"/>
+<text x="833.8" y="262.8" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">спальня</text>
+<rect x="580.0" y="298.1" width="89.3" height="70.5" fill="#f2f7f0" stroke="#a9c6a1" stroke-width="1.2"/>
+<text x="624.6" y="333.3" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">острівець, ТБ</text>
+<rect x="471.9" y="298.1" width="108.1" height="70.5" fill="#f2f7f0" stroke="#a9c6a1" stroke-width="1.2"/>
+<text x="525.9" y="333.3" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">холодильник</text>
+<rect x="373.1" y="298.1" width="98.7" height="70.5" fill="#f7f2ea" stroke="#cbbba2" stroke-width="1.2"/>
+<text x="422.5" y="333.3" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">комора</text>
+<rect x="77.0" y="157.1" width="108.1" height="103.4" fill="#f7f2ea" stroke="#cbbba2" stroke-width="1.2"/>
+<text x="131.1" y="208.8" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">санвузол</text>
+<rect x="77.0" y="260.5" width="183.3" height="108.1" fill="#fff4ee" stroke="#e0b49a" stroke-width="1.2"/>
+<text x="168.7" y="310.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">ліжка</text>
+<text x="168.7" y="326.5" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#a0a0a0" text-anchor="middle" font-weight="400">51×74″</text>
+<rect x="368.5" y="157.1" width="305.5" height="56.4" fill="#e8eaff" stroke="#1f4fd8" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="521.2" y="185.2" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">U-дінет і диван — заїхали всередину</text>
+<rect x="368.5" y="213.5" width="305.5" height="84.6" fill="#0b8a3e" fill-opacity="0.10" stroke="#0b8a3e" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="392.0" y="215.5" width="185.7" height="30.6" fill="#ffe9c9" stroke="#c2660a" stroke-width="1.2"/>
+<text x="484.8" y="233.7" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#c2660a" text-anchor="middle" font-weight="700">фігура НА БОЦІ 79″ × 13″</text>
+<line x1="354.4" y1="213.5" x2="354.4" y2="298.1" stroke="#0b8a3e" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="361.4" y="259.8" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#0b8a3e" text-anchor="start" font-weight="700">36″</text>
+<text x="946.5" y="262.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#0b8a3e" text-anchor="start" font-weight="700">ТАК — лишається 36″ — фігура на боці (13″) і ще 23″ на прохід</text>
+<text x="70.0" y="433.6" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#1b1b1b" text-anchor="start" font-weight="700">слайд заходить на 30″</text>
+<rect x="70.0" y="445.6" width="862.5" height="225.6" rx="18.8" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+<rect x="735.1" y="452.7" width="197.4" height="211.5" fill="#eef3ff" stroke="#9db4e8" stroke-width="1.2"/>
+<text x="833.8" y="558.4" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">спальня</text>
+<rect x="580.0" y="593.7" width="89.3" height="70.5" fill="#f2f7f0" stroke="#a9c6a1" stroke-width="1.2"/>
+<text x="624.6" y="628.9" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">острівець, ТБ</text>
+<rect x="471.9" y="593.7" width="108.1" height="70.5" fill="#f2f7f0" stroke="#a9c6a1" stroke-width="1.2"/>
+<text x="525.9" y="628.9" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">холодильник</text>
+<rect x="373.1" y="593.7" width="98.7" height="70.5" fill="#f7f2ea" stroke="#cbbba2" stroke-width="1.2"/>
+<text x="422.5" y="628.9" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">комора</text>
+<rect x="77.0" y="452.7" width="108.1" height="103.4" fill="#f7f2ea" stroke="#cbbba2" stroke-width="1.2"/>
+<text x="131.1" y="504.4" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">санвузол</text>
+<rect x="77.0" y="556.1" width="183.3" height="108.1" fill="#fff4ee" stroke="#e0b49a" stroke-width="1.2"/>
+<text x="168.7" y="606.1" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">ліжка</text>
+<text x="168.7" y="622.1" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#a0a0a0" text-anchor="middle" font-weight="400">51×74″</text>
+<rect x="368.5" y="452.7" width="305.5" height="70.5" fill="#e8eaff" stroke="#1f4fd8" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="521.2" y="487.9" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">U-дінет і диван — заїхали всередину</text>
+<rect x="368.5" y="523.2" width="305.5" height="70.5" fill="#0b8a3e" fill-opacity="0.10" stroke="#0b8a3e" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="392.0" y="525.2" width="185.7" height="30.6" fill="#ffe9c9" stroke="#c2660a" stroke-width="1.2"/>
+<text x="484.8" y="543.4" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#c2660a" text-anchor="middle" font-weight="700">фігура НА БОЦІ 79″ × 13″</text>
+<line x1="354.4" y1="523.2" x2="354.4" y2="593.7" stroke="#0b8a3e" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="361.4" y="562.4" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#0b8a3e" text-anchor="start" font-weight="700">30″</text>
+<text x="946.5" y="558.4" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#0b8a3e" text-anchor="start" font-weight="700">ТАК — лишається 30″ — фігура на боці (13″) і ще 17″ на прохід</text>
+<text x="70.0" y="729.2" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#1b1b1b" text-anchor="start" font-weight="700">слайд заходить на 36″</text>
+<rect x="70.0" y="741.2" width="862.5" height="225.6" rx="18.8" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+<rect x="735.1" y="748.2" width="197.4" height="211.5" fill="#eef3ff" stroke="#9db4e8" stroke-width="1.2"/>
+<text x="833.8" y="854.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">спальня</text>
+<rect x="580.0" y="889.2" width="89.3" height="70.5" fill="#f2f7f0" stroke="#a9c6a1" stroke-width="1.2"/>
+<text x="624.6" y="924.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">острівець, ТБ</text>
+<rect x="471.9" y="889.2" width="108.1" height="70.5" fill="#f2f7f0" stroke="#a9c6a1" stroke-width="1.2"/>
+<text x="525.9" y="924.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">холодильник</text>
+<rect x="373.1" y="889.2" width="98.7" height="70.5" fill="#f7f2ea" stroke="#cbbba2" stroke-width="1.2"/>
+<text x="422.5" y="924.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">комора</text>
+<rect x="77.0" y="748.2" width="108.1" height="103.4" fill="#f7f2ea" stroke="#cbbba2" stroke-width="1.2"/>
+<text x="131.1" y="800.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">санвузол</text>
+<rect x="77.0" y="851.6" width="183.3" height="108.1" fill="#fff4ee" stroke="#e0b49a" stroke-width="1.2"/>
+<text x="168.7" y="901.7" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">ліжка</text>
+<text x="168.7" y="917.7" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#a0a0a0" text-anchor="middle" font-weight="400">51×74″</text>
+<rect x="368.5" y="748.2" width="305.5" height="84.6" fill="#e8eaff" stroke="#1f4fd8" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="521.2" y="790.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">U-дінет і диван — заїхали всередину</text>
+<rect x="368.5" y="832.9" width="305.5" height="56.4" fill="#0b8a3e" fill-opacity="0.10" stroke="#0b8a3e" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="392.0" y="834.9" width="185.7" height="30.6" fill="#ffe9c9" stroke="#c2660a" stroke-width="1.2"/>
+<text x="484.8" y="853.1" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#c2660a" text-anchor="middle" font-weight="700">фігура НА БОЦІ 79″ × 13″</text>
+<line x1="354.4" y1="832.9" x2="354.4" y2="889.2" stroke="#0b8a3e" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="361.4" y="865.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#0b8a3e" text-anchor="start" font-weight="700">24″</text>
+<text x="946.5" y="854.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#c2660a" text-anchor="start" font-weight="700">ТАК — лишається 24″ — фігура влізе, але повз неї вже не пройти</text>
+<text x="40.0" y="1056.8" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">ЩО З ЦЬОГО ВИПЛИВАЄ</text>
+<text x="40.0" y="1080.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#0b8a3e" text-anchor="start" font-weight="600">· Фігуру везуть НА БОЦІ. Тоді їй треба смуга 13″ завширшки, а не 47.7″ — і вона проходить у всіх трьох випадках.</text>
+<text x="40.0" y="1100.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">· Місця по довжині вистачає з запасом: вільна зона між спальнею і ліжками близько 154″ проти 79″ фігури.</text>
+<text x="40.0" y="1120.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#d81f1f" text-anchor="start" font-weight="600">· На нижнє ліжко фігура НЕ ляже: полиця 74″, фігура 79″ — не вистачає пʼяти дюймів. Тільки підлога.</text>
+<text x="40.0" y="1140.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">· Слайд не можна везти висунутим — ні на трасі, ні на плайї. Тому всі розрахунки перевезення робимо тільки по цій схемі, а не по заводській.</text>
+<text x="40.0" y="1160.8" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#c2660a" text-anchor="start" font-weight="600">· ОДИН ЗАМІР ЗАКРИВАЄ ПИТАННЯ: ширина проходу між кухонним рядом і зсунутим дінетом. Рулетка в Богдана, тридцять секунд — і три варіанти стають одним.</text>
+</svg>

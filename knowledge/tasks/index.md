@@ -200,3 +200,4 @@
 * [Передбачити доступ до екрана і кнопок станції і до панелі генератора, не розбираючи ящик](peredbachyty-dostup-do-ekrana-i-knopok-stantsii-i-do-paneli-.md) - до роботи
 * [Вирішити, чи потрібен ящику дах, чи він живе під тіньовою зоною кемпу](vyrishyty-chy-potriben-iashchyku-dakh-chy-vin-zhyve-pid-tino.md) - до роботи
 * [Подивитись, які акумулятори Ryobi є вдома — ONE+ 18 В чи 40 В](podyvytys-iaki-akumuliatory-ryobi-ie-vdoma-one-18-v-chy-40-v.md) - до роботи
+* [У Богдана: заміряти ширину проходу при ЗСУНУТОМУ слайді (між кухонним рядом і дінетом)](u-bohdana-zamiriaty-shyrynu-prokhodu-pry-zsunutomu-slaidi-mi.md) - до роботи
