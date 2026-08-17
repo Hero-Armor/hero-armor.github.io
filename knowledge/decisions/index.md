@@ -139,3 +139,4 @@
 * [REI як місце покупки станції — не підходить: потрібної моделі там нема](rei-iak-mistse-pokupky-stantsii-ne-pidkhodyt-potribnoi-model.md)
 * [Фігуру веземо причепом, не мінівеном — ящик 88×57×20″](fihuru-vezemo-prychepom-ne-minivenom-iashchyk-88-57-20.md)
 * [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)
+* [Задачі збірки: створює Володимир, веде Ліза](zadachi-zbirky-stvoriuie-volodymyr-vede-liza.md)
