@@ -29,7 +29,7 @@ generated: { by: "process:site-build" }
 * [Поставити маркерний вогник у стінку ящика станції — герметично](/tasks/postavyty-markernyi-vohnyk-u-stinku-iashchyka-stantsii-herme.md) — чекаємо
 * [Замовити пару ящиків Sterilite 40 gal у Target ($176.99, доставка наступного дня)](/tasks/zamovyty-paru-iashchykiv-sterilite-40-gal-u-target-176-99-do.md) — до роботи
 * [Виміряти реальну висоту ящика Sterilite — 457 мм це з колесами чи без](/tasks/vymiriaty-realnu-vysotu-iashchyka-sterilite-457-mm-tse-z-kol.md) — чекаємо
-* [Підтвердити модель генератора: EcoFlow Smart Generator 4000 Dual Fuel](/tasks/pidtverdyty-model-heneratora-ecoflow-smart-generator-4000-du.md) — до роботи
+* [Знайти EcoFlow Smart Generator 4000 Dual Fuel дешевше за $1259 — ту саму модель, не заміну](/tasks/znaity-ecoflow-smart-generator-4000-dual-fuel-deshevshe-za-1.md) — до роботи
 * [Подивитись на живому генераторі, де саме вихлоп — EcoFlow цього у відкритих даних не дає](/tasks/podyvytys-na-zhyvomu-heneratori-de-same-vykhlop-ecoflow-tsoh.md) — до роботи
 * [Купити датчик чадного газу — в ящик і в житло](/tasks/kupyty-datchyk-chadnoho-hazu-v-iashchyk-i-v-zhytlo.md) — до роботи
 * [Визначити місце для палива окремо від ящика, з піддоном під розлив](/tasks/vyznachyty-mistse-dlia-palyva-okremo-vid-iashchyka-z-piddono.md) — до роботи
@@ -50,5 +50,3 @@ generated: { by: "process:site-build" }
 * [Каністри під воду 5 л](/bom/kanistry-pid-vodu-5-l.md) — $40, купити
 * [Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)](/bom/iashchyk-sterilite-40-gal-wheeled-industrial-tote-para-stant.md) — $176.99, купити
 * [Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском](/bom/henerator-ecoflow-smart-generator-4000-dual-fuel-firmovyi-z-.md) — $1259, купити
-* [Генератор PowerSmart 3800 Вт dual fuel — найдешевша заміна фірмовому](/bom/henerator-powersmart-3800-vt-dual-fuel-naideshevsha-zamina-f.md) — $422.99, купити
-* [Генератор AIVOLT 4300 Вт dual fuel, заявлено 53 дБ — тихий варіант](/bom/henerator-aivolt-4300-vt-dual-fuel-zaiavleno-53-db-tykhyi-va.md) — $666.99, купити

@@ -188,7 +188,7 @@
 * [Графік збірки, крок 16: демонтаж, погрузка Hero Armor (26.08–26.08)](hrafik-zbirky-krok-16-demontazh-pohruzka-hero-armor-26-08-26.md) - до роботи
 * [Графік збірки, крок 17: виїзд на Плаю (27.08–27.08)](hrafik-zbirky-krok-17-vyizd-na-plaiu-27-08-27-08.md) - до роботи
 * [Синхронізація: Ліза працює в Google Tasks, задачі мають ходити в обидва боки з базою і сайтом](synkhronizatsiia-liza-pratsiuie-v-google-tasks-zadachi-maiut.md) - чекаємо
-* [Підтвердити модель генератора: EcoFlow Smart Generator 4000 Dual Fuel](pidtverdyty-model-heneratora-ecoflow-smart-generator-4000-du.md) - до роботи
+* [Знайти EcoFlow Smart Generator 4000 Dual Fuel дешевше за $1259 — ту саму модель, не заміну](znaity-ecoflow-smart-generator-4000-dual-fuel-deshevshe-za-1.md) - до роботи
 * [Подивитись на живому генераторі, де саме вихлоп — EcoFlow цього у відкритих даних не дає](podyvytys-na-zhyvomu-heneratori-de-same-vykhlop-ecoflow-tsoh.md) - до роботи
 * [Купити датчик чадного газу — в ящик і в житло](kupyty-datchyk-chadnoho-hazu-v-iashchyk-i-v-zhytlo.md) - до роботи
 * [Визначити місце для палива окремо від ящика, з піддоном під розлив](vyznachyty-mistse-dlia-palyva-okremo-vid-iashchyka-z-piddono.md) - до роботи

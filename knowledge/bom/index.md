@@ -209,6 +209,7 @@
 * [Коронка LENOX Speed Slot 3/4″ біметал з тримачем — запасна до Bosch](koronka-lenox-speed-slot-3-4-bimetal-z-trymachem-zapasna-do-.md) - $13.35, купити
 * [Коронка VIKITON 3/4″ з тримачем — друга запасна](koronka-vikiton-3-4-z-trymachem-druha-zapasna.md) - $9.61, купити
 * [Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском](henerator-ecoflow-smart-generator-4000-dual-fuel-firmovyi-z-.md) - $1259, купити
-* [Генератор PowerSmart 3800 Вт dual fuel — найдешевша заміна фірмовому](henerator-powersmart-3800-vt-dual-fuel-naideshevsha-zamina-f.md) - $422.99, купити
-* [Генератор AIVOLT 4300 Вт dual fuel, заявлено 53 дБ — тихий варіант](henerator-aivolt-4300-vt-dual-fuel-zaiavleno-53-db-tykhyi-va.md) - $666.99, купити
 * [Набір коронок KATA 18 предметів, 3/4″–2½″ — з розмірами 1″, 1⅛″ і 1¼″ під конус світильника](nabir-koronok-kata-18-predmetiv-3-4-2-z-rozmiramy-1-1-i-1-pi.md) - $35.99, купити
+* [Коронка LENOX 1″ з тримачем (1772481) — отвір під джгут із фігури](koronka-lenox-1-z-trymachem-1772481-otvir-pid-dzhhut-iz-fihu.md) - $9.86, купити
+* [Коронка 1″ VIKITON з тримачем — дешева заміна LENOX](koronka-1-vikiton-z-trymachem-desheva-zamina-lenox.md) - $8.79, купити
+* [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) - $14.79, купити
