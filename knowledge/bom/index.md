@@ -235,3 +235,4 @@
 * [Мастило для різання Tap Magic Industrial Pro, 4 oz](mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) - $7.90, купити
 * [Набір насадок Dremel 710-08, 160 предметів](nabir-nasadok-dremel-710-08-160-predmetiv.md) - $39.97, купити
 * [Відрізні круги фібро-армовані TEMO, 100 шт + 2 мандрелі](vidrizni-kruhy-fibro-armovani-temo-100-sht-2-mandreli.md) - $17.99, купити
+* [Набір насадок Dremel 709-02, 110 предметів](nabir-nasadok-dremel-709-02-110-predmetiv.md) - $24.98, купити
