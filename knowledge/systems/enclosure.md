@@ -22,12 +22,18 @@ generated: { by: "process:site-build" }
 * [Тінь важить більше за вентилятор](/decisions/tin-vazhyt-bilshe-za-ventyliator.md)
 * [Ящик під станцію — Sterilite 40 gal Wheeled, пара за $176.99 у Target](/decisions/iashchyk-pid-stantsiiu-sterilite-40-gal-wheeled-para-za-176-.md)
 * [Рековий кейс з Facebook Marketplace за $175 — відмова](/decisions/rekovyi-keis-z-facebook-marketplace-za-175-vidmova.md)
+* [Ящик під станцію і генератор: фанера і мінеральна вата, не МДФ і не піна](/decisions/iashchyk-pid-stantsiiu-i-henerator-fanera-i-mineralna-vata-n.md)
 
 # Задачі
 
 * [Поставити маркерний вогник у стінку ящика станції — герметично](/tasks/postavyty-markernyi-vohnyk-u-stinku-iashchyka-stantsii-herme.md) — чекаємо
 * [Замовити пару ящиків Sterilite 40 gal у Target ($176.99, доставка наступного дня)](/tasks/zamovyty-paru-iashchykiv-sterilite-40-gal-u-target-176-99-do.md) — до роботи
 * [Виміряти реальну висоту ящика Sterilite — 457 мм це з колесами чи без](/tasks/vymiriaty-realnu-vysotu-iashchyka-sterilite-457-mm-tse-z-kol.md) — чекаємо
+* [Підтвердити модель генератора: EcoFlow Smart Generator 4000 Dual Fuel](/tasks/pidtverdyty-model-heneratora-ecoflow-smart-generator-4000-du.md) — до роботи
+* [Подивитись на живому генераторі, де саме вихлоп — EcoFlow цього у відкритих даних не дає](/tasks/podyvytys-na-zhyvomu-heneratori-de-same-vykhlop-ecoflow-tsoh.md) — до роботи
+* [Купити датчик чадного газу — в ящик і в житло](/tasks/kupyty-datchyk-chadnoho-hazu-v-iashchyk-i-v-zhytlo.md) — до роботи
+* [Визначити місце для палива окремо від ящика, з піддоном під розлив](/tasks/vyznachyty-mistse-dlia-palyva-okremo-vid-iashchyka-z-piddono.md) — до роботи
+* [Порахувати витяжний вентилятор під ящик: скільки кубів на годину треба, щоб усередині не було вище вулиці](/tasks/porakhuvaty-vytiazhnyi-ventyliator-pid-iashchyk-skilky-kubiv.md) — до роботи
 
 # Закупівля
 

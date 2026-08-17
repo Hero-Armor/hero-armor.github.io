@@ -1544,5 +1544,55 @@
   "prio": 1,
   "note": "Постановка Івана 16.08: Ліза створює задачі теж, але не в графіку ProjectLibre (той веде Володимир) — вона працює ЧИСТО в Google Tasks, і вони мають синхронізуватись із базою в GitHub і з сайтом. Що вже є: доступ Івана до Google Tasks підключено 16.08, список «Мои задачи» видно, задачі створюються. ЧОГО БРАКУЄ: токена самої Лізи — без нього її задачі впадуть у список Івана, а не в її. Вона вже в тестових користувачах, тож потрібен лише один її клік по посиланню згоди. Далі синхронізацію робити двобічною: tasks.json ↔ Google Tasks, ключ звірки — текст задачі плюс власник; статуси мапляться todo/doing/waiting → needsAction, done → completed.",
   "id": "HA-186"
+ },
+ {
+  "id": "HA-187",
+  "task": "Підтвердити модель генератора: EcoFlow Smart Generator 4000 Dual Fuel",
+  "system": "enclosure",
+  "status": "todo",
+  "owner": "ivan",
+  "author": "ivan",
+  "prio": 2,
+  "note": "4 кВт — це пікові з X-Boost; паспортні 3200 Вт на бензині і 2900 на газі. Габарит 633×381×529 мм, 38 кг. Від моделі залежать усі розміри ящика. Схема: enclosure/model/genbox_plan.svg, дані: enclosure/data/genbox.json."
+ },
+ {
+  "id": "HA-188",
+  "task": "Подивитись на живому генераторі, де саме вихлоп — EcoFlow цього у відкритих даних не дає",
+  "system": "enclosure",
+  "status": "todo",
+  "owner": "ivan",
+  "author": "ivan",
+  "prio": 2,
+  "note": "Від розташування вихлопу залежить, у яку стінку ставити гільзу і куди виводити трубу. Схема: enclosure/model/genbox_plan.svg, дані: enclosure/data/genbox.json."
+ },
+ {
+  "id": "HA-189",
+  "task": "Купити датчик чадного газу — в ящик і в житло",
+  "system": "enclosure",
+  "status": "todo",
+  "owner": "ivan",
+  "author": "ivan",
+  "prio": 2,
+  "note": "Генератор у корпусі без датчика CO — це те, чим щороку труяться. Дві штуки: одна в ящику, одна там, де спимо. Схема: enclosure/model/genbox_plan.svg, дані: enclosure/data/genbox.json."
+ },
+ {
+  "id": "HA-190",
+  "task": "Визначити місце для палива окремо від ящика, з піддоном під розлив",
+  "system": "enclosure",
+  "status": "todo",
+  "owner": "ivan",
+  "author": "ivan",
+  "prio": 2,
+  "note": "Балон і каністра в самому ящику неприпустимі. Плюс на плайї потрібен піддон: розлив на землю — це і штраф, і принцип Leave No Trace. Схема: enclosure/model/genbox_plan.svg, дані: enclosure/data/genbox.json."
+ },
+ {
+  "id": "HA-191",
+  "task": "Порахувати витяжний вентилятор під ящик: скільки кубів на годину треба, щоб усередині не було вище вулиці",
+  "system": "enclosure",
+  "status": "todo",
+  "owner": "ivan",
+  "author": "ivan",
+  "prio": 2,
+  "note": "Вихідні дані: генератор скидає в повітря кілька кВт тепла, стеля 40 °C, на плайї в тіні під 40. Без числа вентилятор обирати не можна. Схема: enclosure/model/genbox_plan.svg, дані: enclosure/data/genbox.json."
  }
 ]
