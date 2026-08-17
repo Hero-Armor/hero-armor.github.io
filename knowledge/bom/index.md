@@ -239,3 +239,5 @@
 * [Здувач Ryobi ONE+ 18V, 250 CFM (тільки інструмент, P21011)](zduvach-ryobi-one-18v-250-cfm-tilky-instrument-p21011.md) - $69.00, купити
 * [Здувач акумуляторний 750 CFM, 2 батареї 5.5 Ah + зарядка](zduvach-akumuliatornyi-750-cfm-2-batarei-5-5-ah-zariadka.md) - $75.99, купити
 * [Груша-здувач Rocket Air Blaster, велика](hrusha-zduvach-rocket-air-blaster-velyka.md) - $21.95, купити
+* [Набір насадок Ryobi A90AS37, 37 предметів](nabir-nasadok-ryobi-a90as37-37-predmetiv.md) - $11.91, купити
+* [Набір насадок WEN 230327A, 327 предметів](nabir-nasadok-wen-230327a-327-predmetiv.md) - $17.11, купити
