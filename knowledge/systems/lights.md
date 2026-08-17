@@ -199,3 +199,5 @@ generated: { by: "process:site-build" }
 * [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](/bom/koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) — $14.79, купити
 * [Коронка Bosch HBT100 1″ біметал M42 — робоча, під отвір джгута](/bom/koronka-bosch-hbt100-1-bimetal-m42-robocha-pid-otvir-dzhhuta.md) — $7.49, купити
 * [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](/bom/nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) — $89.00, купити
+* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](/bom/mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) — $14.78, купити
+* [Восковий олівець для різання — Champion BruteLube, 2 oz](/bom/voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) — $11.56, купити
