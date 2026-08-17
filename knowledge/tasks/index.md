@@ -206,3 +206,7 @@
 * [Підтвердити, чи генератор дадуть — від цього залежить половина ящика](pidtverdyty-chy-henerator-dadut-vid-tsoho-zalezhyt-polovyna-.md) - до роботи
 * [Надіслати лист-запит на панель і акумулятор (або станцію) — текст готовий, бракує адресата](nadislaty-lyst-zapyt-na-panel-i-akumuliator-abo-stantsiiu-te.md) - чекаємо
 * [Обрати праймер під ASA: X-I-M UMA чи Rust-Oleum Plastic Primer — у брифі стоїть NOT LOCKED](obraty-praimer-pid-asa-x-i-m-uma-chy-rust-oleum-plastic-prim.md) - до роботи
+* [Дізнатись у Богдана довжину кузова його пікапа: 5.5, 6.5 чи 8 футів](diznatys-u-bohdana-dovzhynu-kuzova-ioho-pikapa-5-5-6-5-chy-8.md) - до роботи
+* [Підтвердити, що труба з плечей знімається на час перевезення](pidtverdyty-shcho-truba-z-plechei-znimaietsia-na-chas-pereve.md) - до роботи
+* [Вирішити, як їде подіум: другим рейсом чи причепом разом із ящиком](vyrishyty-iak-ide-podium-druhym-reisom-chy-prychepom-razom-i.md) - до роботи
+* [Перерахувати логістику під ПОВЕРНЕННЯ В РІНО замість SF](pererakhuvaty-lohistyku-pid-povernennia-v-rino-zamist-sf.md) - до роботи
