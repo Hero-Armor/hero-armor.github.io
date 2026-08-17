@@ -24,6 +24,7 @@ generated: { by: "process:site-build" }
 * [Світлоповертальна плівка — тільки два кольори: School Bus Yellow і біла](/decisions/svitlopovertalna-plivka-tilky-dva-kolory-school-bus-yellow-i.md)
 * [Стрічка — тільки суцільна, без смуг; дешеві DOT-C2 не підходять за виглядом](/decisions/strichka-tilky-sutsilna-bez-smuh-deshevi-dot-c2-ne-pidkhodia.md)
 * [Світлоповертальні елементи на фігурі — не рулон, а лист: деталі дрібні, а одна ширша за 2″](/decisions/svitlopovertalni-elementy-na-fihuri-ne-rulon-a-lyst-detali-d.md)
+* [Синя фарба в фінальному списку закупівлі — Deep Blue 334027 замість Brilliant Blue, 8 балонів](/decisions/synia-farba-v-finalnomu-spysku-zakupivli-deep-blue-334027-za.md)
 
 # Задачі
 
@@ -68,7 +69,7 @@ generated: { by: "process:site-build" }
 * [Акрил матовий Apple Barrel 2oz — коричневий і чорний](/bom/akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) — $4, купити
 * [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](/bom/zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) — $7, купити
 * [Синій — поточний вибір Лізи: Benjamin Moore Element Guard Exterior, Old Glory 811, Low Lustre](/bom/synii-potochnyi-vybir-lizy-benjamin-moore-element-guard-exte.md) — $25.68/кварта (за прайсом Gray's від 05.08, база 1), купити
-* [Синій — тестовий зразок Лізи: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](/bom/synii-testovyi-zrazok-lizy-rust-oleum-painters-touch-2x-glos.md) — $7, купити
+* [Синій — фінал: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](/bom/synii-final-rust-oleum-painters-touch-2x-gloss-deep-blue-334.md) — $7, купити
 * [Жовто-помаранчевий — тестовий зразок Лізи: BEHR PREMIUM Gloss Interior/Exterior Citrus Orange SP-120](/bom/zhovto-pomaranchevyi-testovyi-zrazok-lizy-behr-premium-gloss.md) — $7, купити
 * [Бурштиновий/золотий — тестовий зразок Лізи: Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](/bom/burshtynovyi-zolotyi-testovyi-zrazok-lizy-benjamin-moore-but.md) — —, купити
 * [Синій основний — кандидат 1: Rust-Oleum Painter's Touch 2X Satin Slate Blue 249066](/bom/synii-osnovnyi-kandydat-1-rust-oleum-painters-touch-2x-satin.md) — $7, купити

@@ -157,7 +157,7 @@
 * [Акрил матовий Apple Barrel 2oz — коричневий і чорний](akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) - $4, купити
 * [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) - $7, купити
 * [Синій — поточний вибір Лізи: Benjamin Moore Element Guard Exterior, Old Glory 811, Low Lustre](synii-potochnyi-vybir-lizy-benjamin-moore-element-guard-exte.md) - $25.68/кварта (за прайсом Gray's від 05.08, база 1), купити
-* [Синій — тестовий зразок Лізи: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](synii-testovyi-zrazok-lizy-rust-oleum-painters-touch-2x-glos.md) - $7, купити
+* [Синій — фінал: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](synii-final-rust-oleum-painters-touch-2x-gloss-deep-blue-334.md) - $7, купити
 * [Жовто-помаранчевий — тестовий зразок Лізи: BEHR PREMIUM Gloss Interior/Exterior Citrus Orange SP-120](zhovto-pomaranchevyi-testovyi-zrazok-lizy-behr-premium-gloss.md) - $7, купити
 * [Бурштиновий/золотий — тестовий зразок Лізи: Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](burshtynovyi-zolotyi-testovyi-zrazok-lizy-benjamin-moore-but.md) - —, купити
 * [Синій основний — кандидат 1: Rust-Oleum Painter's Touch 2X Satin Slate Blue 249066](synii-osnovnyi-kandydat-1-rust-oleum-painters-touch-2x-satin.md) - $7, купити
