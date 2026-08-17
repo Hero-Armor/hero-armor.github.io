@@ -211,3 +211,4 @@
 * [Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском](henerator-ecoflow-smart-generator-4000-dual-fuel-firmovyi-z-.md) - $1259, купити
 * [Генератор PowerSmart 3800 Вт dual fuel — найдешевша заміна фірмовому](henerator-powersmart-3800-vt-dual-fuel-naideshevsha-zamina-f.md) - $422.99, купити
 * [Генератор AIVOLT 4300 Вт dual fuel, заявлено 53 дБ — тихий варіант](henerator-aivolt-4300-vt-dual-fuel-zaiavleno-53-db-tykhyi-va.md) - $666.99, купити
+* [Набір коронок KATA 18 предметів, 3/4″–2½″ — з розмірами 1″, 1⅛″ і 1¼″ під конус світильника](nabir-koronok-kata-18-predmetiv-3-4-2-z-rozmiramy-1-1-i-1-pi.md) - $35.99, купити
