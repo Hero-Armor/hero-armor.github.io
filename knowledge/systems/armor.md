@@ -88,3 +88,4 @@ generated: { by: "process:site-build" }
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](/bom/zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) — $13.95, купити
 * [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](/bom/praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) — $34.90, купити
 * [Праймер під пластик — X-I-M UMA спрей 12 oz](/bom/praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) — $28.02, купити
+* [Ганчірки бавовняні Arkwright Premium T-Shirt Rags, 5 lb — заміна мікрофібри](/bom/hanchirky-bavovniani-arkwright-premium-t-shirt-rags-5-lb-zam.md) — $34.99, купити

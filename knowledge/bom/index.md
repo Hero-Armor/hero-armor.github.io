@@ -245,3 +245,4 @@
 * [Дуйка акумуляторна WOLFBOX MF50 (MegaFlow 50)](duika-akumuliatorna-wolfbox-mf50-megaflow-50.md) - $39.99, купити
 * [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) - $34.90, купити
 * [Праймер під пластик — X-I-M UMA спрей 12 oz](praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) - $28.02, купити
+* [Ганчірки бавовняні Arkwright Premium T-Shirt Rags, 5 lb — заміна мікрофібри](hanchirky-bavovniani-arkwright-premium-t-shirt-rags-5-lb-zam.md) - $34.99, купити
