@@ -146,10 +146,10 @@
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $52, купити
 * [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $9, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) - $49, купити
-* [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $52, купити
+* [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $6.48, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $9.59/балон, є
-* [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) - $19-25, купити
-* [Респіратори 3M 8247 R95 під фарбу](respiratory-3m-8247-r95-pid-farbu.md) - $18, купити
+* [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) - $21.98, купити
+* [Респіратори 3M 8577 P95 з клапаном Cool Flow під фарбу](respiratory-3m-8577-p95-z-klapanom-cool-flow-pid-farbu.md) - $25.96, купити
 * [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) - $38, купити
 * [Рукавички вінілові одноразові HDX, 100 шт](rukavychky-vinilovi-odnorazovi-hdx-100-sht.md) - $30-45, купити
 * [Мікрофіброві ганчірки HDX 2 lbs](mikrofibrovi-hanchirky-hdx-2-lbs.md) - $9, купити
@@ -162,7 +162,7 @@
 * [Бурштиновий/золотий — тестовий зразок Лізи: Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](burshtynovyi-zolotyi-testovyi-zrazok-lizy-benjamin-moore-but.md) - —, купити
 * [Синій основний — кандидат 1: Rust-Oleum Painter's Touch 2X Satin Slate Blue 249066](synii-osnovnyi-kandydat-1-rust-oleum-painters-touch-2x-satin.md) - $7, купити
 * [Синій основний — кандидат 2: Rust-Oleum Painter's Touch 2X Satin Midnight Blue 334091](synii-osnovnyi-kandydat-2-rust-oleum-painters-touch-2x-satin.md) - $7, купити
-* [Синій основний — кандидат 3: кастомне тонування точно під #3E5878](synii-osnovnyi-kandydat-3-kastomne-tonuvannia-tochno-pid-3e5.md) - $25-30/балон, купити
+* [Синій кастомний під HEX #3E5878 — тонування на замовлення (MyPerfectColor)](synii-kastomnyi-pid-hex-3e5878-tonuvannia-na-zamovlennia-myp.md) - $25-30/балон, купити
 * [Бурштиновий акцент — кастомне тонування під #B98B42](burshtynovyi-aktsent-kastomne-tonuvannia-pid-b98b42.md) - —, купити
 * [Темний карбон — Krylon COLORmaxx Smoke Gray K05539007](temnyi-karbon-krylon-colormaxx-smoke-gray-k05539007.md) - $6, купити
 * [Сірий метал — Rust-Oleum Universal Metallic Flat Soft Iron 271473](siryi-metal-rust-oleum-universal-metallic-flat-soft-iron-271.md) - $9, купити
@@ -243,7 +243,7 @@
 * [Запасна батарея до WOLFBOX MF200, 37 Вт·год](zapasna-batareia-do-wolfbox-mf200-37-vt-hod.md) - $14.39, купити
 * [Дуйка акумуляторна WOLFBOX MF70](duika-akumuliatorna-wolfbox-mf70.md) - $49.99, купити
 * [Дуйка акумуляторна WOLFBOX MF50 (MegaFlow 50)](duika-akumuliatorna-wolfbox-mf50-megaflow-50.md) - $39.99, купити
-* [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) - $34.90, купити
+* [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) - $34.90, є
 * [Праймер під пластик — X-I-M UMA спрей 12 oz](praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) - $28.02, купити
 * [Ганчірки бавовняні Arkwright Premium T-Shirt Rags, 5 lb — заміна мікрофібри](hanchirky-bavovniani-arkwright-premium-t-shirt-rags-5-lb-zam.md) - $34.99, купити
 * [Промотор адгезії Rust-Oleum 251572 Automotive, 11 oz](promotor-adhezii-rust-oleum-251572-automotive-11-oz.md) - $9.69, купити

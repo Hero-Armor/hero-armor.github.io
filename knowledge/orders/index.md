@@ -35,3 +35,4 @@
 * [ORD-030 — Amazon](ord-030.md) - замовлено
 * [ORD-031 — Amazon](ord-031.md) - замовлено
 * [ORD-032 — Amazon](ord-032.md) - доставлено
+* [ORD-033 — Home Depot](ord-033.md) - замовлено

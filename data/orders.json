@@ -481,5 +481,19 @@
   "system": "project",
   "status": "delivered",
   "note": "Замовлення 113-3837542-9442655, $26.24. Занесено 15.08.2026 зі сторінки замовлень Amazon через міст до браузера."
+ },
+ {
+  "id": "ORD-033",
+  "date": "2026-08-17",
+  "vendor": "Home Depot",
+  "order_no": "",
+  "items": [
+   "BEHR PREMIUM 12 oz. #SP-120 Citrus Orange Gloss Interior/Exterior Spray Paint and Primer — $6.98",
+   "J-B WELD Clear Weld Pro 8 oz. 2-Part Liquid Epoxy 50240H — $21.98",
+   "3M 8577 P95 Paint Odor Disposable Respirator Cool Flow Valve, 2 упаковки по 2 — $25.96"
+  ],
+  "system": "armor",
+  "status": "ordered",
+  "note": "Замовлення зі скріншота підтвердження, доставка Outside (Porch or Driveway), прийде наступного дня (18.08). Вендор \"Home Depot\" визначено за збігом товарів з BOM, номер замовлення на скріні не було видно — уточнити. Разом $54.92."
  }
 ]
