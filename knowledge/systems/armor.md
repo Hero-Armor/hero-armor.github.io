@@ -57,12 +57,12 @@ generated: { by: "process:site-build" }
 * [Катафоти 2×3" DOT-SAE, призматичні, самоклейні](/bom/katafoty-2-3-dot-sae-pryzmatychni-samokleini.md) — $12.25, купити
 * [ORALITE V98 біла, 2" × 20 ft — корпус фігури + боки ящика](/bom/oralite-v98-bila-2-20-ft-korpus-fihury-boky-iashchyka.md) — $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](/bom/oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) — $14.99, купити
-* [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](/bom/grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) — $52, купити
+* [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](/bom/grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) — $51.83, є
 * [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $9, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](/bom/synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) — $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](/bom/bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) — $6.48, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](/bom/prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) — $9.59/балон, є
-* [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](/bom/klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) — $21.98, купити
+* [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](/bom/klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) — $21.98, є
 * [Респіратори 3M 8577 P95 з клапаном Cool Flow під фарбу](/bom/respiratory-3m-8577-p95-z-klapanom-cool-flow-pid-farbu.md) — $25.96, купити
 * [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](/bom/maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) — $38, купити
 * [Рукавички вінілові одноразові HDX, 100 шт](/bom/rukavychky-vinilovi-odnorazovi-hdx-100-sht.md) — $30-45, купити
@@ -71,8 +71,8 @@ generated: { by: "process:site-build" }
 * [Акрил матовий Apple Barrel 2oz — коричневий і чорний](/bom/akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) — $4, купити
 * [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](/bom/zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) — $7, купити
 * [Синій — поточний вибір Лізи: Benjamin Moore Element Guard Exterior, Old Glory 811, Low Lustre](/bom/synii-potochnyi-vybir-lizy-benjamin-moore-element-guard-exte.md) — $25.68/кварта (за прайсом Gray's від 05.08, база 1), купити
-* [Синій — фінал: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](/bom/synii-final-rust-oleum-painters-touch-2x-gloss-deep-blue-334.md) — $7, купити
-* [Жовто-помаранчевий — тестовий зразок Лізи: BEHR PREMIUM Gloss Interior/Exterior Citrus Orange SP-120](/bom/zhovto-pomaranchevyi-testovyi-zrazok-lizy-behr-premium-gloss.md) — $7, купити
+* [Синій — фінал: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](/bom/synii-final-rust-oleum-painters-touch-2x-gloss-deep-blue-334.md) — $50.24, є
+* [Жовто-помаранчевий — тестовий зразок Лізи: BEHR PREMIUM Gloss Interior/Exterior Citrus Orange SP-120](/bom/zhovto-pomaranchevyi-testovyi-zrazok-lizy-behr-premium-gloss.md) — $7, є
 * [Бурштиновий/золотий — тестовий зразок Лізи: Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](/bom/burshtynovyi-zolotyi-testovyi-zrazok-lizy-benjamin-moore-but.md) — —, купити
 * [Синій основний — кандидат 1: Rust-Oleum Painter's Touch 2X Satin Slate Blue 249066](/bom/synii-osnovnyi-kandydat-1-rust-oleum-painters-touch-2x-satin.md) — $7, купити
 * [Синій основний — кандидат 2: Rust-Oleum Painter's Touch 2X Satin Midnight Blue 334091](/bom/synii-osnovnyi-kandydat-2-rust-oleum-painters-touch-2x-satin.md) — $7, купити
@@ -92,3 +92,8 @@ generated: { by: "process:site-build" }
 * [Ганчірки бавовняні Arkwright Premium T-Shirt Rags, 5 lb — заміна мікрофібри](/bom/hanchirky-bavovniani-arkwright-premium-t-shirt-rags-5-lb-zam.md) — $34.99, купити
 * [Промотор адгезії Rust-Oleum 251572 Automotive, 11 oz](/bom/promotor-adhezii-rust-oleum-251572-automotive-11-oz.md) — $9.69, купити
 * [Скловолоконний мат Bondo, 8 кв. футів](/bom/sklovolokonnyi-mat-bondo-8-kv-futiv.md) — $8.99, є
+* [Респіратор 3M 8577 P95 — замовив Марсель](/bom/respirator-3m-8577-p95-zamovyv-marsel.md) — $26.58, є
+* [Жовтий BEHR #P300-7 Unmellow Yellow Gloss, 12 oz](/bom/zhovtyi-behr-p300-7-unmellow-yellow-gloss-12-oz.md) — $7.75, купити
+* [Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz](/bom/zhovtyi-behr-sp-110-summer-sun-flat-12-oz.md) — $7.75, купити
+* [Пензлі художні, набір 20 шт](/bom/penzli-khudozhni-nabir-20-sht.md) — $12-15, купити
+* [Малярний скотч FrogTape, набір ширин](/bom/maliarnyi-skotch-frogtape-nabir-shyryn.md) — $17.72, купити
