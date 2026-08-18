@@ -50,6 +50,7 @@ generated: { by: "process:site-build" }
 * [Спитати @vlbrsk (проєктував оболонку) і Марселя (друкував): яке навантаження тримає пластик броні при перенесенні](/tasks/spytaty-vlbrsk-proiektuvav-obolonku-i-marselia-drukuvav-iake.md) — до роботи
 * [Обрати праймер під ASA: X-I-M UMA чи Rust-Oleum Plastic Primer — у брифі стоїть NOT LOCKED](/tasks/obraty-praimer-pid-asa-x-i-m-uma-chy-rust-oleum-plastic-prim.md) — до роботи
 * [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](/tasks/zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) — до роботи
+* [Забрати 8 балонів хрому в Home Depot San Carlos (1125 Old County Rd)](/tasks/zabraty-8-baloniv-khromu-v-home-depot-san-carlos-1125-old-co.md) — до роботи
 
 # Закупівля
 
@@ -58,9 +59,9 @@ generated: { by: "process:site-build" }
 * [ORALITE V98 біла, 2" × 20 ft — корпус фігури + боки ящика](/bom/oralite-v98-bila-2-20-ft-korpus-fihury-boky-iashchyka.md) — $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](/bom/oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) — $14.99, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](/bom/grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) — $51.83, є
-* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $9, купити
+* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $6.48/балон, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](/bom/synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) — $49, купити
-* [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](/bom/bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) — $6.48, купити
+* [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](/bom/bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) — $5.98, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](/bom/prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) — $9.59/балон, є
 * [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](/bom/klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) — $21.98, є
 * [Респіратори 3M 8577 P95 з клапаном Cool Flow під фарбу](/bom/respiratory-3m-8577-p95-z-klapanom-cool-flow-pid-farbu.md) — $25.96, купити
@@ -93,7 +94,8 @@ generated: { by: "process:site-build" }
 * [Промотор адгезії Rust-Oleum 251572 Automotive, 11 oz](/bom/promotor-adhezii-rust-oleum-251572-automotive-11-oz.md) — $9.69, купити
 * [Скловолоконний мат Bondo, 8 кв. футів](/bom/sklovolokonnyi-mat-bondo-8-kv-futiv.md) — $8.99, є
 * [Респіратор 3M 8577 P95 — замовив Марсель](/bom/respirator-3m-8577-p95-zamovyv-marsel.md) — $26.58, є
-* [Жовтий BEHR #P300-7 Unmellow Yellow Gloss, 12 oz](/bom/zhovtyi-behr-p300-7-unmellow-yellow-gloss-12-oz.md) — $7.75, купити
-* [Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz](/bom/zhovtyi-behr-sp-110-summer-sun-flat-12-oz.md) — $7.75, купити
+* [Жовтий BEHR #P300-7 Unmellow Yellow Gloss, 12 oz](/bom/zhovtyi-behr-p300-7-unmellow-yellow-gloss-12-oz.md) — $6.98, купити
+* [Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz](/bom/zhovtyi-behr-sp-110-summer-sun-flat-12-oz.md) — $6.98, купити
 * [Пензлі художні, набір 20 шт](/bom/penzli-khudozhni-nabir-20-sht.md) — $12-15, купити
 * [Малярний скотч FrogTape, набір ширин](/bom/maliarnyi-skotch-frogtape-nabir-shyryn.md) — $17.72, купити
+* [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](/bom/prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) — звірити на місці (та сама лінійка .5-7/балон), купити

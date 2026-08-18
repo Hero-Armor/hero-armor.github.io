@@ -144,9 +144,9 @@
 * [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) - —, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $51.83, є
-* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $9, купити
+* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $6.48/балон, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) - $49, купити
-* [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $6.48, купити
+* [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $5.98, купити
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $9.59/балон, є
 * [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) - $21.98, є
 * [Респіратори 3M 8577 P95 з клапаном Cool Flow під фарбу](respiratory-3m-8577-p95-z-klapanom-cool-flow-pid-farbu.md) - $25.96, купити
@@ -249,7 +249,8 @@
 * [Промотор адгезії Rust-Oleum 251572 Automotive, 11 oz](promotor-adhezii-rust-oleum-251572-automotive-11-oz.md) - $9.69, купити
 * [Скловолоконний мат Bondo, 8 кв. футів](sklovolokonnyi-mat-bondo-8-kv-futiv.md) - $8.99, є
 * [Респіратор 3M 8577 P95 — замовив Марсель](respirator-3m-8577-p95-zamovyv-marsel.md) - $26.58, є
-* [Жовтий BEHR #P300-7 Unmellow Yellow Gloss, 12 oz](zhovtyi-behr-p300-7-unmellow-yellow-gloss-12-oz.md) - $7.75, купити
-* [Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz](zhovtyi-behr-sp-110-summer-sun-flat-12-oz.md) - $7.75, купити
+* [Жовтий BEHR #P300-7 Unmellow Yellow Gloss, 12 oz](zhovtyi-behr-p300-7-unmellow-yellow-gloss-12-oz.md) - $6.98, купити
+* [Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz](zhovtyi-behr-sp-110-summer-sun-flat-12-oz.md) - $6.98, купити
 * [Пензлі художні, набір 20 шт](penzli-khudozhni-nabir-20-sht.md) - $12-15, купити
 * [Малярний скотч FrogTape, набір ширин](maliarnyi-skotch-frogtape-nabir-shyryn.md) - $17.72, купити
+* [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) - звірити на місці (та сама лінійка .5-7/балон), купити

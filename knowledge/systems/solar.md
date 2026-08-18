@@ -67,6 +67,7 @@ generated: { by: "process:site-build" }
 * [Звірити живою карткою реальну ціну Anker SOLIX C2000 Gen 2 і струм її автомобільного виходу 12 В — від цього залежить, чи міняємо станцію](/tasks/zviryty-zhyvoiu-kartkoiu-realnu-tsinu-anker-solix-c2000-gen-.md) — готово
 * [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](/tasks/ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) — готово
 * [Надіслати лист-запит на панель і акумулятор (або станцію) — текст готовий, бракує адресата](/tasks/nadislaty-lyst-zapyt-na-panel-i-akumuliator-abo-stantsiiu-te.md) — чекаємо
+* [Чекаємо відповідь Shing (Starchild) по акумулятору і панелі — можуть дати безкоштовно](/tasks/chekaiemo-vidpovid-shing-starchild-po-akumuliatoru-i-paneli-.md) — чекаємо
 
 # Закупівля
 

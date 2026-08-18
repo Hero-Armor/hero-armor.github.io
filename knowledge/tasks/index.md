@@ -213,3 +213,6 @@
 * [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) - до роботи
 * [Turo Frontier: узяти в власника ПИСЬМОВИЙ дозвіл на Burning Man і ціну прибирання після плайї](turo-frontier-uziaty-v-vlasnyka-pysmovyi-dozvil-na-burning-m.md) - до роботи
 * [Підтвердити, що труба з плечей знімається — від цього залежить, чи ця машина взагалі підходить](pidtverdyty-shcho-truba-z-plechei-znimaietsia-vid-tsoho-zale.md) - до роботи
+* [Забрати 8 балонів хрому в Home Depot San Carlos (1125 Old County Rd)](zabraty-8-baloniv-khromu-v-home-depot-san-carlos-1125-old-co.md) - до роботи
+* [Чекаємо відповідь Shing (Starchild) по акумулятору і панелі — можуть дати безкоштовно](chekaiemo-vidpovid-shing-starchild-po-akumuliatoru-i-paneli-.md) - чекаємо
+* [Спитано Shing, чи знає вона художників із SF із вільним місцем у машині — попутний вантаж](spytano-shing-chy-znaie-vona-khudozhnykiv-iz-sf-iz-vilnym-mi.md) - чекаємо
