@@ -147,7 +147,7 @@
 * [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $9, купити
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) - $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $52, купити
-* [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $39, купити
+* [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $9.59/балон, є
 * [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) - $19-25, купити
 * [Респіратори 3M 8247 R95 під фарбу](respiratory-3m-8247-r95-pid-farbu.md) - $18, купити
 * [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) - $38, купити
@@ -247,3 +247,4 @@
 * [Праймер під пластик — X-I-M UMA спрей 12 oz](praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) - $28.02, купити
 * [Ганчірки бавовняні Arkwright Premium T-Shirt Rags, 5 lb — заміна мікрофібри](hanchirky-bavovniani-arkwright-premium-t-shirt-rags-5-lb-zam.md) - $34.99, купити
 * [Промотор адгезії Rust-Oleum 251572 Automotive, 11 oz](promotor-adhezii-rust-oleum-251572-automotive-11-oz.md) - $9.69, купити
+* [Скловолоконний мат Bondo, 8 кв. футів](sklovolokonnyi-mat-bondo-8-kv-futiv.md) - $8.99, є
