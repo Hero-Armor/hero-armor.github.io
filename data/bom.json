@@ -1707,7 +1707,7 @@
  },
  {
   "item": "Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz",
-  "qty": "8 балонів",
+  "qty": "8 балонів (1 куплено, треба ще 7)",
   "price": "$6.48/балон",
   "status": "add",
   "system": "armor",
@@ -1715,7 +1715,7 @@
   "where": "Home Depot San Carlos — самовивіз",
   "url": "https://www.homedepot.com/p/Rust-Oleum-Stops-Rust-11-oz-Bright-Coat-Metallic-Chrome-Spray-Paint-7718830/100151050",
   "img": "",
-  "note": "✅ ІВАН ЗАТВЕРДИВ 18.08: беремо хром, 8 балонів, самовивіз Home Depot San Carlos. | 📍 НАЯВНІСТЬ ЗНЯТА 18.08 з живих сторінок магазинів через браузер Івана. Ціна $6.48. По магазинах: San Carlos (1125 Old County Rd) — 9 шт, San Mateo (2001 Chess Dr) — 5 шт, Daly City — 2, East Palo Alt",
+  "note": "🟡 ЧАСТКОВО: Ліза купила 1 балон 18.08 у Home Depot San Mateo за $6.48 (чек у чаті витрат). Треба ще 7. | ✅ ІВАН ЗАТВЕРДИВ 18.08: беремо хром, 8 балонів, самовивіз Home Depot San Carlos. | 📍 НАЯВНІСТЬ ЗНЯТА 18.08 з живих сторінок магазинів через браузер Івана. Ціна $6.48. По магазинах: San Carlos (1125 Ol",
   "tag": "paint"
  },
  {
@@ -1735,13 +1735,13 @@
   "item": "Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048",
   "qty": "1 балон",
   "price": "$5.98",
-  "status": "tbd",
+  "status": "have",
   "system": "armor",
-  "flow": "tbd",
+  "flow": "arrived",
   "where": "Home Depot San Carlos — самовивіз",
   "url": "https://www.homedepot.com/p/Rust-Oleum-Painter-s-Touch-2X-12-oz-Gloss-White-General-Purpose-Spray-Paint-334048/307244833",
   "img": "",
-  "note": "📍 НАЯВНІСТЬ 18.08: San Carlos — 86 шт, San Mateo — 79 шт, ціна $5.98. Дефіциту нема, береться тим самим заїздом, що й хром. | Кількість виправлена 18.08 Іваном: ОДИН балон, не вісім. Білого на фігурі мало. | ✅ 17.08 Ліза виправила кількість: 1 балон, не 8 ",
+  "note": "✅ КУПИЛА ЛІЗА 18.08, Home Depot San Mateo, $5.98. | 📍 НАЯВНІСТЬ 18.08: San Carlos — 86 шт, San Mateo — 79 шт, ціна $5.98. Дефіциту нема, береться тим самим заїздом, що й хром. | Кількість виправлена 18.",
   "tag": "paint"
  },
  {
@@ -1884,7 +1884,7 @@
   "where": "Home Depot",
   "url": "https://www.homedepot.com/p/Rust-Oleum-Painter-s-Touch-2X-12-oz-Gloss-Deep-Blue-General-Purpose-Spray-Paint-6-Pack-334032/307246380",
   "img": "",
-  "note": "✅ ЗАМОВИВ МАРСЕЛЬ — таблиця Лізи 18.08, «M ordered», 7 балонів (не 8). | Один з чотирьох тестових балонів плану Лізи 12.08 (tasks.json, owner liza): фарбує однакові обрізки ASA і звіряє з ренде",
+  "note": "✅ ОПЛАТИВ МАРСЕЛЬ 18.08 — $57.53 (чек у чаті витрат, самовивіз). | ✅ ЗАМОВИВ МАРСЕЛЬ — таблиця Лізи 18.08, «M ordered», 7 балонів (не 8). | Один з чотирьох тестових балонів плану Лізи 12.08 (tasks.json, owner liza): ф",
   "tag": "paint"
  },
  {
@@ -2926,7 +2926,7 @@
   "system": "armor",
   "where": "Home Depot",
   "url": "https://www.homedepot.com/p/Rust-Oleum-Specialty-12-oz-Plastic-Primer-Spray-6-Pack-209460/202058455",
-  "note": "✅ ЗАМОВИВ МАРСЕЛЬ (Іван 18.08: «замовили шість штук»). ⚠ Чекаємо від Марселя, ДЕ саме замовив — треба забрати. | Кандидат 1 із двох у брифі Лізи (DEC-128, праймер NOT LOCKED). Головна перевага — доступність: є в Home Depot, можна забрати того "
+  "note": "✅ ОПЛАТИВ МАРСЕЛЬ 18.08 — $65.75 (чек у чаті витрат, самовивіз). Питання «де замовив» закрите. | ✅ ЗАМОВИВ МАРСЕЛЬ (Іван 18.08: «замовили шість штук»). ⚠ Чекаємо від Марселя, ДЕ саме замовив — треба забрати. | Кандидат 1 із дво"
  },
  {
   "item": "Праймер під пластик — X-I-M UMA спрей 12 oz",
@@ -2940,16 +2940,16 @@
   "note": "❌ Знято 18.08 за питанням Івана «навіщо два праймери»: Марсель замовив Rust-Oleum Specialty Plastic Primer, 6 шт. Два праймери на одну задачу не потрібні. | Кандидат 2 із двох у брифі Лізи. ⚠ Звірка 17.08: у Home Depot і Lowe's НЕ ПРОДАЄТЬСЯ взагалі — тільки Ace Hardware (квар"
  },
  {
-  "item": "Ганчірки бавовняні Arkwright Premium T-Shirt Rags, 5 lb — заміна мікрофібри",
-  "qty": "1 упаковка (5 lb)",
-  "price": "$34.99",
+  "item": "Ганчірки бавовняні (трикотаж, як футболки) — Ace, 4 lb",
+  "qty": "1 упаковка (4 lb)",
+  "price": "$19.99",
   "status": "add",
   "system": "armor",
   "flow": "to_order",
-  "where": "Amazon",
-  "url": "https://www.amazon.com/dp/B07RFT8HY4",
+  "where": "Ace Hardware — самовивіз",
+  "url": "https://www.acehardware.com/p/1027108",
   "img": "",
-  "note": "17.08: заміна HDX мікрофібри за словом художниці — потрібна саме бавовна (старий трикотаж типу футболок), вона вбирає фарбу й розчинник і не линяє ворсом, бо вже багато разів прана. ★4.6, 280 відгуків — найкращий рейтинг серед бавовняних варіантів на Amazon. У Home Depot є схожий Intex 20 lbs. New Bleached White Knit Rags Box (https://www.homedepot.com/p/Intex-20-lbs-New-Bleached-White-Knit-Rags-Box-6414-25/202967707), той самий бавовняний трикотаж під ганчірки, але це промисловий обсяг 20 lb — для нашого фарбування явно забагато, і ціну на сторінці перевірити не вдалось (Home Depot блокує автоматичну перевірку). Amazon 5 lb ближче до реальної потреби.",
+  "note": "Рішення Івана 18.08: беремо Ace item #1027108, 4 фунти за $19.99 — це той самий бавовняний трикотаж (t-shirt knit), що просила художниця, і дешевше за фунт, ніж Arkwright 5 lb $34.99 на Amazon. HDX із Home Depot не годиться — це суміш, а не чиста бавовна. Купує Ліза. | 17.08: заміна HDX мікрофібри за словом художниці — потрібна саме бавовна (старий трикотаж типу футболок), вона вбирає фа",
   "tag": "paint"
  },
  {
@@ -2989,12 +2989,12 @@
   "item": "Жовтий BEHR #P300-7 Unmellow Yellow Gloss, 12 oz",
   "qty": "1 балон",
   "price": "$6.98",
-  "status": "add",
-  "flow": "to_order",
+  "status": "have",
+  "flow": "arrived",
   "system": "armor",
   "where": "Home Depot San Carlos — самовивіз",
   "url": "https://www.homedepot.com/s/BEHR%20P300-7%20Unmellow%20Yellow%20spray",
-  "note": "📍 НАЯВНІСТЬ 18.08: San Carlos — 8 шт, San Mateo — 6 шт, ціна $6.98. Артикул BEHR B001044. Береться тим самим заїздом. | З оновленого списку Лізи 18.08 — його в нашій базі не було. Другий відтінок жовтого поруч із SP-120: художниця бере два і обирає н"
+  "note": "✅ КУПИЛА ЛІЗА 18.08, Home Depot San Mateo, $6.98. | 📍 НАЯВНІСТЬ 18.08: San Carlos — 8 шт, San Mateo — 6 шт, ціна $6.98. Артикул BEHR B001044. Береться тим самим заїздом. | З оновленого списку Лізи 18.08"
  },
  {
   "item": "Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz",
