@@ -33,18 +33,24 @@
 <text x="520.0" y="326.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">21″</text>
 <text x="600.0" y="326.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="600">так</text>
 <text x="800.0" y="326.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#d81f1f" text-anchor="start" font-weight="600">ні — ширина +2″</text>
-<text x="40.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">Причіп 5×8 (U-Haul)</text>
-<text x="300.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">96″</text>
-<text x="395.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">60/60″</text>
-<text x="520.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">—</text>
-<text x="600.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="600">так</text>
-<text x="800.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#d81f1f" text-anchor="start" font-weight="600">ні — ширина +6″</text>
-<text x="40.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">Причіп 6×12</text>
-<text x="300.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">144″</text>
-<text x="395.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">72/72″</text>
+<text x="40.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">Nissan Frontier 2022 Crew Cab (Turo, Hayward)</text>
+<text x="300.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">60″</text>
+<text x="395.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">44/61″</text>
+<text x="520.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">19″</text>
+<text x="600.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#d81f1f" text-anchor="start" font-weight="600">ні — довжина +25″</text>
+<text x="800.0" y="352.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#d81f1f" text-anchor="start" font-weight="600">ні — довжина +25″, ширина +4″</text>
+<text x="40.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">Причіп 5×8 (U-Haul)</text>
+<text x="300.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">96″</text>
+<text x="395.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">60/60″</text>
 <text x="520.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">—</text>
 <text x="600.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="600">так</text>
-<text x="800.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="600">так</text>
+<text x="800.0" y="378.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#d81f1f" text-anchor="start" font-weight="600">ні — ширина +6″</text>
+<text x="40.0" y="404.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1b1b1b" text-anchor="start" font-weight="400">Причіп 6×12</text>
+<text x="300.0" y="404.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">144″</text>
+<text x="395.0" y="404.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">72/72″</text>
+<text x="520.0" y="404.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="start" font-weight="400">—</text>
+<text x="600.0" y="404.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="600">так</text>
+<text x="800.0" y="404.0" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#0b8a3e" text-anchor="start" font-weight="600">так</text>
 <text x="40.0" y="420.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1b1b1b" text-anchor="start" font-weight="700">ЯК ЦЕ ВИГЛЯДАЄ: стандартний кузов 6.5 фута, вид згори</text>
 <rect x="60.0" y="444.0" width="234.0" height="180.0" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
 <text x="177.0" y="438.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="400">платформа 78″</text>

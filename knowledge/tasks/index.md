@@ -211,3 +211,5 @@
 * [Вирішити, як їде подіум: другим рейсом чи причепом разом із ящиком](vyrishyty-iak-ide-podium-druhym-reisom-chy-prychepom-razom-i.md) - до роботи
 * [Перерахувати логістику під ПОВЕРНЕННЯ В РІНО замість SF](pererakhuvaty-lohistyku-pid-povernennia-v-rino-zamist-sf.md) - до роботи
 * [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) - до роботи
+* [Turo Frontier: узяти в власника ПИСЬМОВИЙ дозвіл на Burning Man і ціну прибирання після плайї](turo-frontier-uziaty-v-vlasnyka-pysmovyi-dozvil-na-burning-m.md) - до роботи
+* [Підтвердити, що труба з плечей знімається — від цього залежить, чи ця машина взагалі підходить](pidtverdyty-shcho-truba-z-plechei-znimaietsia-vid-tsoho-zale.md) - до роботи
