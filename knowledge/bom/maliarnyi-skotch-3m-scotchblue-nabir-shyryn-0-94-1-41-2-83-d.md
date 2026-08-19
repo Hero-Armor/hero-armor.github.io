@@ -1,15 +1,15 @@
 ---
 type: "Part"
 title: "Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма"
-description: "Список художниці для розпису робота, зібраний 12.08."
+description: "✅ ДОСТАВЛЕНО 19.08 три позиції: ScotchBlue Original 2″ (3 рулони), Original 0.70″×60 yd, PROSharp 1.5″ (3 рулони). Скотч закритий повністю. | Список художниці д"
 resource: "https://www.homedepot.com/p/3M-ScotchBlue-0-94-In-x-60-Yds-Original-Multi-Surface-Painter-s-Tape-6-Rolls-2090-24EP6/305218344"
 tags: ["armor"]
-quantity: "6-пак + 2 рулони"
+quantity: "3 ширини, 7 рулонів"
 price: "$38"
-procurement_status: "tbd"
+procurement_status: "have"
 generated: { by: "process:site-build" }
 ---
 
-Список художниці для розпису робота, зібраний 12.08.
+✅ ДОСТАВЛЕНО 19.08 три позиції: ScotchBlue Original 2″ (3 рулони), Original 0.70″×60 yd, PROSharp 1.5″ (3 рулони). Скотч закритий повністю. | Список художниці для розпису робота, зібраний 12.08.
 
-Система: [Броня](/systems/armor.md) · статус: **купити** · ціна $38 · к-сть 6-пак + 2 рулони
+Система: [Броня](/systems/armor.md) · статус: **є** · ціна $38 · к-сть 3 ширини, 7 рулонів

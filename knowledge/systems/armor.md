@@ -68,11 +68,11 @@ generated: { by: "process:site-build" }
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](/bom/prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) — $9.59/балон, є
 * [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](/bom/klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) — $21.98, є
 * [Респіратори 3M 8577 P95 з клапаном Cool Flow під фарбу](/bom/respiratory-3m-8577-p95-z-klapanom-cool-flow-pid-farbu.md) — $25.96, купити
-* [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](/bom/maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) — $38, купити
+* [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](/bom/maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) — $38, є
 * [Рукавички нітрилові одноразові (куплено), 100 шт](/bom/rukavychky-nitrylovi-odnorazovi-kupleno-100-sht.md) — $23.99, є
 * [Мікрофіброві ганчірки HDX 2 lbs](/bom/mikrofibrovi-hanchirky-hdx-2-lbs.md) — $9, купити
-* [Пензлі, набір 20 шт](/bom/penzli-nabir-20-sht.md) — $23, купити
-* [Акрил матовий Apple Barrel 2oz — коричневий і чорний](/bom/akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) — $4, купити
+* [Пензлі, набір 20 шт](/bom/penzli-nabir-20-sht.md) — $23, є
+* [Акрил матовий Apple Barrel 2oz — коричневий і чорний](/bom/akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) — $4, є
 * [Жовто-помаранчевий глянцевий спрей — заміна Behr, ще не обрано](/bom/zhovto-pomaranchevyi-hliantsevyi-sprei-zamina-behr-shche-ne-.md) — $7, купити
 * [Синій — поточний вибір Лізи: Benjamin Moore Element Guard Exterior, Old Glory 811, Low Lustre](/bom/synii-potochnyi-vybir-lizy-benjamin-moore-element-guard-exte.md) — $25.68/кварта (за прайсом Gray's від 05.08, база 1), купити
 * [Синій — фінал: Rust-Oleum Painter's Touch 2X Gloss Deep Blue 334032](/bom/synii-final-rust-oleum-painters-touch-2x-gloss-deep-blue-334.md) — $50.24, є
@@ -99,7 +99,7 @@ generated: { by: "process:site-build" }
 * [Респіратор 3M 8577 P95 — замовив Марсель](/bom/respirator-3m-8577-p95-zamovyv-marsel.md) — $26.58, є
 * [Жовтий BEHR #P300-7 Unmellow Yellow Gloss, 12 oz](/bom/zhovtyi-behr-p300-7-unmellow-yellow-gloss-12-oz.md) — $6.98, є
 * [Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz](/bom/zhovtyi-behr-sp-110-summer-sun-flat-12-oz.md) — $6.98, купити
-* [Пензлі художні, набір 20 шт](/bom/penzli-khudozhni-nabir-20-sht.md) — $12-15, купити
+* [Пензлі художні, набір 20 шт](/bom/penzli-khudozhni-nabir-20-sht.md) — $12-15, є
 * [Малярний скотч FrogTape, набір ширин](/bom/maliarnyi-skotch-frogtape-nabir-shyryn.md) — $17.72, купити
 * [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](/bom/prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) — $8.99/балон, є
 * [Плівка поліетиленова 10×25 ft, 3.5 mil — укриття під покраску](/bom/plivka-polietylenova-10-25-ft-3-5-mil-ukryttia-pid-pokrasku.md) — $15.98, є
