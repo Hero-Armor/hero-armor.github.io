@@ -38,6 +38,7 @@ generated: { by: "process:site-build" }
 * [Аудіо-вузол оновлюється по повітрю: власна точка WiFi на вимогу + автовідкат на попередню прошивку](/decisions/audio-vuzol-onovliuietsia-po-povitriu-vlasna-tochka-wifi-na-.md)
 * [Динамік у голові живиться ОКРЕМИМ кабелем, не тією ж витою парою, що радар](/decisions/dynamik-u-holovi-zhyvytsia-okremym-kabelem-ne-tiieiu-zh-vyto.md)
 * [Траса радара скоротилась до 1 м — радар ставимо в ногу, не в голову](/decisions/trasa-radara-skorotylas-do-1-m-radar-stavymo-v-nohu-ne-v-hol.md)
+* [Радар ставимо в носок ноги — працює, але це найгірша висота, тому три обовʼязкові поправки](/decisions/radar-stavymo-v-nosok-nohy-pratsiuie-ale-tse-naihirsha-vysot.md)
 
 # Задачі
 
@@ -61,6 +62,7 @@ generated: { by: "process:site-build" }
 * [Дати аудіо-вузлу постійне імʼя в мережі (mDNS hero-audio.local)](/tasks/daty-audio-vuzlu-postiine-imia-v-merezhi-mdns-hero-audio-loc.md) — до роботи
 * [Прошивка аудіо-вузла: знизити швидкість UART радара з 256000 до 9600 (команда 0x00A1, зберігається в самому LD2410C). Це головна умова виносу радара в фігуру: на 256000 надійна довжина менша за метр, на 9600 — близько 15 м. Частота кадрів не постраждає, кадри маленькі](/tasks/proshyvka-audio-vuzla-znyzyty-shvydkist-uart-radara-z-256000.md) — до роботи
 * [Перевірити, скільки лишилось від бухти 18 AWG силікон (траса заміряна 13.08 — 3 м від мозку до голови)](/tasks/pereviryty-skilky-lyshylos-vid-bukhty-18-awg-sylikon-trasa-z.md) — до роботи
+* [Радар у носку: нахилити на 10-15° угору, металевий екран за модулем проти задньої пелюстки, жорстке кріплення. Потім підібрати поріг trig ходою по живому екрану /live](/tasks/radar-u-nosku-nakhylyty-na-10-15-uhoru-metalevyi-ekran-za-mo.md) — до роботи
 
 # Закупівля
 

@@ -149,3 +149,4 @@
 * [Генератор не купуємо — його дають покористуватись, і без нього теж проживемо](henerator-ne-kupuiemo-ioho-daiut-pokorystuvatys-i-bez-noho-t.md)
 * [Везмо пікапом Богдана, не причепом-домом; повернення в Ріно, не в SF](vezmo-pikapom-bohdana-ne-prychepom-domom-povernennia-v-rino-.md)
 * [Траса радара скоротилась до 1 м — радар ставимо в ногу, не в голову](trasa-radara-skorotylas-do-1-m-radar-stavymo-v-nohu-ne-v-hol.md)
+* [Радар ставимо в носок ноги — працює, але це найгірша висота, тому три обовʼязкові поправки](radar-stavymo-v-nosok-nohy-pratsiuie-ale-tse-naihirsha-vysot.md)
