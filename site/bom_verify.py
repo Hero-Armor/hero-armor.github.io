@@ -76,7 +76,7 @@ def main():
     ap.add_argument("--only")
     a = ap.parse_args()
 
-    bad = []
+    bad, ok_n = [], 0
     for b in json.loads(BOM_FILE.read_text()):
         url = b.get("url")
         if not url or (a.only and a.only.lower() not in b["item"].lower()):
@@ -91,9 +91,20 @@ def main():
             print(f"  ✗ {b['item'][:44]} — на сторінці нема ASIN {asin}: {title_of(html)}")
             bad.append(b["item"])
             continue
+        ok_n += 1
         print(f"  ✓ {b['item'][:44]} — {title_of(html) or 'сторінка жива'}")
 
-    print(f"\nпідсумок: перевірено лінків, підозрілих {len(bad)}")
+    total = len(bad) + ok_n
+    print(f"\nпідсумок: перевірено {total}, підозрілих {len(bad)}")
+
+    # ⚠ Граблі 17.08.2026: перевірка показала 84 «мертвих» лінки на живих лістингах —
+    # насправді Amazon віддавав нашому серверу капчу. Масовий однаковий вердикт — це
+    # привід підозрювати ІНСТРУМЕНТ, а не дані. Тому мовчазний «все погано» заборонено.
+    if total >= 10 and len(bad) / total > 0.6:
+        print(f"\n⚠⚠ СТОП: підозрілих {len(bad)} з {total} — це схоже на поломку самої "
+              f"перевірки (капча, проксі, мережа), а не на мертві лінки.")
+        print("   Перевір ОДИН лінк руками, перш ніж вірити цьому списку.")
+        sys.exit(2)
     sys.exit(1 if bad else 0)
 
 
