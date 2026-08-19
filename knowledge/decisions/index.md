@@ -148,3 +148,4 @@
 * [Синя фарба в фінальному списку закупівлі — Deep Blue 334027 замість Brilliant Blue, 8 балонів](synia-farba-v-finalnomu-spysku-zakupivli-deep-blue-334027-za.md)
 * [Генератор не купуємо — його дають покористуватись, і без нього теж проживемо](henerator-ne-kupuiemo-ioho-daiut-pokorystuvatys-i-bez-noho-t.md)
 * [Везмо пікапом Богдана, не причепом-домом; повернення в Ріно, не в SF](vezmo-pikapom-bohdana-ne-prychepom-domom-povernennia-v-rino-.md)
+* [Траса радара скоротилась до 1 м — радар ставимо в ногу, не в голову](trasa-radara-skorotylas-do-1-m-radar-stavymo-v-nohu-ne-v-hol.md)

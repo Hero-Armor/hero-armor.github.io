@@ -37,6 +37,7 @@ generated: { by: "process:site-build" }
 * [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](/decisions/nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
 * [Аудіо-вузол оновлюється по повітрю: власна точка WiFi на вимогу + автовідкат на попередню прошивку](/decisions/audio-vuzol-onovliuietsia-po-povitriu-vlasna-tochka-wifi-na-.md)
 * [Динамік у голові живиться ОКРЕМИМ кабелем, не тією ж витою парою, що радар](/decisions/dynamik-u-holovi-zhyvytsia-okremym-kabelem-ne-tiieiu-zh-vyto.md)
+* [Траса радара скоротилась до 1 м — радар ставимо в ногу, не в голову](/decisions/trasa-radara-skorotylas-do-1-m-radar-stavymo-v-nohu-ne-v-hol.md)
 
 # Задачі
 

@@ -7,7 +7,7 @@
 саме це й робить виту пару витою парою.
 
 Числа не з голови:
-  · 23 AWG ≈ 0.067 Ом/м; траса 3 м → 0.20 Ом туди, 0.05 Ом назад (4 землі паралельно);
+  · 23 AWG ≈ 0.067 Ом/м; траса 1 м → 0.067 Ом туди, 0.017 Ом назад (4 землі паралельно);
   · LD2410C бере ~80 мА → просадка 0.02 В. Живлення можна вести однією жилою.
 
   radar_cable_wiring.py            зібрати SVG
@@ -20,7 +20,7 @@ from pathlib import Path
 OUT = Path(__file__).with_suffix(".svg")
 
 AWG23_OHM_M = 0.067
-RUN_M = 3.0
+RUN_M = 1.0
 I_RADAR_A = 0.08
 
 INK, INK2, SURFACE, GRID = "#0b0b0b", "#52514e", "#fcfcfb", "#e8e7e3"
@@ -105,7 +105,7 @@ def demo() -> int:
     assert len(LINES) == 4, "чотири пари Cat6 — чотири сигнали"
     sigs = {l[2] for l in LINES}
     assert sigs == {"+5 В", "TX радара", "RX радара", "OUT"}, sigs
-    assert 0.01 < drop_v() < 0.05, drop_v()      # десятки мВ, не вольти
+    assert 0.002 < drop_v() < 0.05, drop_v()     # одиниці-десятки мВ, не вольти
     for _, name, _, _, _ in LINES:
         assert name in s, name
     assert "навхрест" in s.lower(), "попередження про перехрещення TX/RX обовʼязкове"
