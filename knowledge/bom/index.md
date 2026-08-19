@@ -256,3 +256,7 @@
 * [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) - звірити на місці (та сама лінійка .5-7/балон), купити
 * [Тент-шатро 10×10 робоче, друге — Eurmax USA Commercial](tent-shatro-10-10-roboche-druhe-eurmax-usa-commercial.md) - $172.97, купити
 * [Набір магнітних головок під шуруповерт LOZAGU, 17 шт — SAE і метричні](nabir-mahnitnykh-holovok-pid-shurupovert-lozagu-17-sht-sae-i.md) - $9.99, купити
+* [Головка Wera Zyklop 8790 HMA 14 мм, квадрат 1/4", коротка 23 мм](holovka-wera-zyklop-8790-hma-14-mm-kvadrat-1-4-korotka-23-mm.md) - $7.29, купити
+* [Головка Craftsman 9/16" SAE, квадрат 1/4", коротка, 6 граней](holovka-craftsman-9-16-sae-kvadrat-1-4-korotka-6-hranei.md) - $5.59, купити
+* [Головка TEKTON 14 мм, квадрат 3/8", 6 граней, ударна](holovka-tekton-14-mm-kvadrat-3-8-6-hranei-udarna.md) - $6.26, купити
+* [Головка TEKTON 9/16", квадрат 3/8", 6 граней, коротка](holovka-tekton-9-16-kvadrat-3-8-6-hranei-korotka.md) - $5.92, купити
