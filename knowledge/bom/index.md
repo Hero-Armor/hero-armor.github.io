@@ -266,3 +266,11 @@
 * [Респіратор проти запаху фарби, 2 шт в упаковці ×2](respirator-proty-zapakhu-farby-2-sht-v-upakovtsi-2.md) - $16.99/упак, є
 * [Стілець розкладний Everbilt](stilets-rozkladnyi-everbilt.md) - $14.98, є
 * [Ніж складаний Husky lockback](nizh-skladanyi-husky-lockback.md) - $7.97, є
+* [Ґрунт-праймер сірий — Rust-Oleum Stops Rust Universal Bonding Primer Spray, Flat Gray, 6-Pack](grunt-praimer-siryi-rust-oleum-stops-rust-universal-bonding-.md) - $58.74, купити
+* [Наждачний папір 120 grit, 9×11" аркуші](nazhdachnyi-papir-120-grit-9-11-arkushi.md) - $16.91, купити
+* [Шліфувальний блок — губка Medium/Fine (3M)](shlifuvalnyi-blok-hubka-medium-fine-3m.md) - $4.83, купити
+* [Синій без fast-dry — кандидат: Rust-Oleum Stops Rust Gloss Sail Blue](synii-bez-fast-dry-kandydat-rust-oleum-stops-rust-gloss-sail.md) - $6.47/балон, купити
+* [Праймер сірий Rust-Oleum Painter's Touch 2X Ultra Cover Flat Gray, 12 oz](praimer-siryi-rust-oleum-painters-touch-2x-ultra-cover-flat-.md) - $8.99/балон, купити
+* [Губка шліфувальна Ace 80 grit Medium, 2-стороння](hubka-shlifuvalna-ace-80-grit-medium-2-storonnia.md) - $4.99, купити
+* [Губка шліфувальна Ace 120 grit Fine, 2-стороння](hubka-shlifuvalna-ace-120-grit-fine-2-storonnia.md) - $4.99, купити
+* [Наждачний папір Ace 120 grit, 11×9″, 15 аркушів](nazhdachnyi-papir-ace-120-grit-11-9-15-arkushiv.md) - $13.99, купити
