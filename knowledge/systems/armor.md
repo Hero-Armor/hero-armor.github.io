@@ -51,6 +51,7 @@ generated: { by: "process:site-build" }
 * [Обрати праймер під ASA: X-I-M UMA чи Rust-Oleum Plastic Primer — у брифі стоїть NOT LOCKED](/tasks/obraty-praimer-pid-asa-x-i-m-uma-chy-rust-oleum-plastic-prim.md) — до роботи
 * [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](/tasks/zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) — до роботи
 * [Забрати 8 балонів хрому в Home Depot San Carlos (1125 Old County Rd)](/tasks/zabraty-8-baloniv-khromu-v-home-depot-san-carlos-1125-old-co.md) — до роботи
+* [Купити гумові рукавички під покраску (не вінілові одноразові — під розчинник треба нітрил)](/tasks/kupyty-humovi-rukavychky-pid-pokrasku-ne-vinilovi-odnorazovi.md) — до роботи
 
 # Закупівля
 

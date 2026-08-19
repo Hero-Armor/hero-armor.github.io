@@ -218,3 +218,11 @@
 * [Спитано Shing, чи знає вона художників із SF із вільним місцем у машині — попутний вантаж](spytano-shing-chy-znaie-vona-khudozhnykiv-iz-sf-iz-vilnym-mi.md) - чекаємо
 * [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) - чекаємо
 * [Радар у носку: нахилити на 10-15° угору, металевий екран за модулем проти задньої пелюстки, жорстке кріплення. Потім підібрати поріг trig ходою по живому екрану /live](radar-u-nosku-nakhylyty-na-10-15-uhoru-metalevyi-ekran-za-mo.md) - до роботи
+* [Замовити дуйку WOLFBOX MF70 $49.99 — заміна поверненої MF100](zamovyty-duiku-wolfbox-mf70-49-99-zamina-povernenoi-mf100.md) - до роботи
+* [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите](vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) - до роботи
+* [Купити друге робоче шатро 10×10 — Everbilt $139 самовивозом у Home Depot San Mateo (44 шт) або Eurmax $172.97 з Amazon](kupyty-druhe-roboche-shatro-10-10-everbilt-139-samovyvozom-u.md) - до роботи
+* [Скасувати два непотрібні замовлення на Amazon — назвати які](skasuvaty-dva-nepotribni-zamovlennia-na-amazon-nazvaty-iaki.md) - до роботи
+* [Прислати посилання від Міші на річ для RV — я її не знайшов у жодному архіві чатів](pryslaty-posylannia-vid-mishi-na-rich-dlia-rv-ia-ii-ne-znais.md) - до роботи
+* [Прислати посилання на відео Марини — витягну аудіо, зроблю текст і зведу з нашим старим списком у чекліст](pryslaty-posylannia-na-video-maryny-vytiahnu-audio-zrobliu-t.md) - до роботи
+* [Купити гумові рукавички під покраску (не вінілові одноразові — під розчинник треба нітрил)](kupyty-humovi-rukavychky-pid-pokrasku-ne-vinilovi-odnorazovi.md) - до роботи
+* [План повернень на Amazon — зібрати список, що і до якої дати можна здати](plan-povernen-na-amazon-zibraty-spysok-shcho-i-do-iakoi-daty.md) - до роботи
