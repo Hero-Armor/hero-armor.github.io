@@ -116,3 +116,6 @@ generated: { by: "process:site-build" }
 * [Наждачний папір Ace 120 grit, 11×9″, 15 аркушів](/bom/nazhdachnyi-papir-ace-120-grit-11-9-15-arkushiv.md) — $13.99, купити
 * [Світловідбивна стрічка DOT-C2 WAENLIR, 2″ × 200 ft, червоно-біла](/bom/svitlovidbyvna-strichka-dot-c2-waenlir-2-200-ft-chervono-bil.md) — $17.99, купити
 * [Світловідбивна стрічка DOT-C2 SEVEN SPARTA, 2″ × 200 ft](/bom/svitlovidbyvna-strichka-dot-c2-seven-sparta-2-200-ft.md) — $25.99, купити
+* [Світловідбивна стрічка AISEY 2″ × 30 ft, біла conspicuity](/bom/svitlovidbyvna-strichka-aisey-2-30-ft-bila-conspicuity.md) — , є
+* [Світловідбивний вініл білий, рулон 12″ × 4 ft (Turner Moore)](/bom/svitlovidbyvnyi-vinil-bilyi-rulon-12-4-ft-turner-moore.md) — , є
+* [Світловідбивний вініл, аркуші 12×12″ (під Cricut)](/bom/svitlovidbyvnyi-vinil-arkushi-12-12-pid-cricut.md) — , є

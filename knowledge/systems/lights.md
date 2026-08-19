@@ -205,3 +205,4 @@ generated: { by: "process:site-build" }
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](/bom/voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) — $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](/bom/nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) — $37.49, купити
 * [Мастило для різання Tap Magic Industrial Pro, 4 oz](/bom/mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) — $7.90, купити
+* [Таймер MISOL 12 В, 25 А, програмований з екраном](/bom/taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) — , є
