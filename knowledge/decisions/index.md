@@ -135,7 +135,6 @@
 * [Оренда машини на плайю — не мережеві прокати, а Turo з письмовим дозволом власника](orenda-mashyny-na-plaiiu-ne-merezhevi-prokaty-a-turo-z-pysmo.md)
 * [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
 * [REI як місце покупки станції — не підходить: потрібної моделі там нема](rei-iak-mistse-pokupky-stantsii-ne-pidkhodyt-potribnoi-model.md)
-* [Фігуру веземо причепом, не мінівеном — ящик 88×57×20″](fihuru-vezemo-prychepom-ne-minivenom-iashchyk-88-57-20.md)
 * [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)
 * [Задачі збірки: створює Володимир, веде Ліза](zadachi-zbirky-stvoriuie-volodymyr-vede-liza.md)
 * [Ящик під станцію і генератор: фанера і мінеральна вата, не МДФ і не піна](iashchyk-pid-stantsiiu-i-henerator-fanera-i-mineralna-vata-n.md)
