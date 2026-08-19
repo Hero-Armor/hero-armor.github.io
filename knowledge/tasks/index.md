@@ -230,3 +230,13 @@
 * [Подзвонити в Burlingame Ace 650-340-1818 і скасувати два оплачені замовлення від 17.08 — вони оформлені БЕЗ акаунту, онлайн скасувати неможливо](podzvonyty-v-burlingame-ace-650-340-1818-i-skasuvaty-dva-opl.md) - до роботи
 * [Дотестити Perplexity: 19.08 і research, і search повернули порожньо. Поки не полагоджено — на нього не спиратись](dotestyty-perplexity-19-08-i-research-i-search-povernuly-por.md) - до роботи
 * [Перевірити руками куплені ганчірки (артикул 1025740, 2 фунти): чи це бавовняний трикотаж і чи вистачить на фігуру](pereviryty-rukamy-kupleni-hanchirky-artykul-1025740-2-funty-.md) - до роботи
+* [ПИТАННЯ ДО МЕНЕ: підтвердити, що вчорашнє замовлення в Home Depot — це саме станція EcoFlow. Лист «Order confirmed» від 19.08 08:59 є, але Home Depot не пише назв у листі](pytannia-do-mene-pidtverdyty-shcho-vchorashnie-zamovlennia-v.md) - чекаємо
+* [Підготувати повернення на Amazon — зібрати список що і до якої дати можна здати](pidhotuvaty-povernennia-na-amazon-zibraty-spysok-shcho-i-do-.md) - до роботи
+* [Дороблення аудіо-вузла до кінця](doroblennia-audio-vuzla-do-kintsia.md) - в роботі
+* [Тимчасовий динамік для тестів аудіо — штатний стоїть у роботі, до нього не підійти під час покраски](tymchasovyi-dynamik-dlia-testiv-audio-shtatnyi-stoit-u-robot.md) - до роботи
+* [Обрати таймер — прийшло два варіанти, вирішити який лишаємо](obraty-taimer-pryishlo-dva-varianty-vyrishyty-iakyi-lyshaiem.md) - до роботи
+* [Підбити фінанси: надійшло ~$2000 + $500 + $300, звести з витратами](pidbyty-finansy-nadiishlo-2000-500-300-zvesty-z-vytratamy.md) - до роботи
+* [Купити сонячні панелі для масиву — потужність не обрана](kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - до роботи
+* [Порахувати ящик: чи вистачає матеріалу, що треба докупити](porakhuvaty-iashchyk-chy-vystachaie-materialu-shcho-treba-do.md) - до роботи
+* [Транспортування робота: зняти з оренди GMC довжину кузова (довга/коротка база), Ліза скидала листування з хостом](transportuvannia-robota-zniaty-z-orendy-gmc-dovzhynu-kuzova-.md) - до роботи
+* [Замовити стяжні ремені з храповиком (ratchet straps), набір 4 шт — кріплення робота в кузові](zamovyty-stiazhni-remeni-z-khrapovykom-ratchet-straps-nabir-.md) - до роботи

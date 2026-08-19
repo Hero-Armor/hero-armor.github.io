@@ -70,6 +70,8 @@ generated: { by: "process:site-build" }
 * [Чекаємо відповідь Shing (Starchild) по акумулятору і панелі — можуть дати безкоштовно](/tasks/chekaiemo-vidpovid-shing-starchild-po-akumuliatoru-i-paneli-.md) — чекаємо
 * [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](/tasks/spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) — чекаємо
 * [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите](/tasks/vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) — до роботи
+* [ПИТАННЯ ДО МЕНЕ: підтвердити, що вчорашнє замовлення в Home Depot — це саме станція EcoFlow. Лист «Order confirmed» від 19.08 08:59 є, але Home Depot не пише назв у листі](/tasks/pytannia-do-mene-pidtverdyty-shcho-vchorashnie-zamovlennia-v.md) — чекаємо
+* [Купити сонячні панелі для масиву — потужність не обрана](/tasks/kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — до роботи
 
 # Закупівля
 

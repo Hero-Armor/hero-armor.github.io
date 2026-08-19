@@ -39,6 +39,7 @@ generated: { by: "process:site-build" }
 * [Передбачити доступ до екрана і кнопок станції і до панелі генератора, не розбираючи ящик](/tasks/peredbachyty-dostup-do-ekrana-i-knopok-stantsii-i-do-paneli-.md) — до роботи
 * [Вирішити, чи потрібен ящику дах, чи він живе під тіньовою зоною кемпу](/tasks/vyrishyty-chy-potriben-iashchyku-dakh-chy-vin-zhyve-pid-tino.md) — до роботи
 * [Підтвердити, чи генератор дадуть — від цього залежить половина ящика](/tasks/pidtverdyty-chy-henerator-dadut-vid-tsoho-zalezhyt-polovyna-.md) — до роботи
+* [Порахувати ящик: чи вистачає матеріалу, що треба докупити](/tasks/porakhuvaty-iashchyk-chy-vystachaie-materialu-shcho-treba-do.md) — до роботи
 
 # Закупівля
 
