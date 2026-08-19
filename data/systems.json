@@ -36,6 +36,10 @@
    [
     "audio/model/radar_cable_wiring.svg",
     "Радар на витій парі: яка жила куди паяється"
+   ],
+   [
+    "audio/model/radar_uart_cross.svg",
+    "Чому помаранчева і зелена йдуть навхрест: TX — рот, RX — вухо"
    ]
   ]
  },
