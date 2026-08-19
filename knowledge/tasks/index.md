@@ -240,3 +240,4 @@
 * [Порахувати ящик: чи вистачає матеріалу, що треба докупити](porakhuvaty-iashchyk-chy-vystachaie-materialu-shcho-treba-do.md) - до роботи
 * [Транспортування робота: зняти з оренди GMC довжину кузова (довга/коротка база), Ліза скидала листування з хостом](transportuvannia-robota-zniaty-z-orendy-gmc-dovzhynu-kuzova-.md) - до роботи
 * [Замовити стяжні ремені з храповиком (ratchet straps), набір 4 шт — кріплення робота в кузові](zamovyty-stiazhni-remeni-z-khrapovykom-ratchet-straps-nabir-.md) - до роботи
+* [Зняти по місцю ширину кузова між арками і з кришкою — ящик 53.2″ має лягти зверху на арки, перевірити чи знімається кришка](zniaty-po-mistsiu-shyrynu-kuzova-mizh-arkamy-i-z-kryshkoiu-i.md) - до роботи

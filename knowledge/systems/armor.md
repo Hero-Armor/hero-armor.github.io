@@ -114,3 +114,5 @@ generated: { by: "process:site-build" }
 * [Губка шліфувальна Ace 80 grit Medium, 2-стороння](/bom/hubka-shlifuvalna-ace-80-grit-medium-2-storonnia.md) — $4.99, купити
 * [Губка шліфувальна Ace 120 grit Fine, 2-стороння](/bom/hubka-shlifuvalna-ace-120-grit-fine-2-storonnia.md) — $4.99, купити
 * [Наждачний папір Ace 120 grit, 11×9″, 15 аркушів](/bom/nazhdachnyi-papir-ace-120-grit-11-9-15-arkushiv.md) — $13.99, купити
+* [Світловідбивна стрічка DOT-C2 WAENLIR, 2″ × 200 ft, червоно-біла](/bom/svitlovidbyvna-strichka-dot-c2-waenlir-2-200-ft-chervono-bil.md) — $17.99, купити
+* [Світловідбивна стрічка DOT-C2 SEVEN SPARTA, 2″ × 200 ft](/bom/svitlovidbyvna-strichka-dot-c2-seven-sparta-2-200-ft.md) — $25.99, купити
