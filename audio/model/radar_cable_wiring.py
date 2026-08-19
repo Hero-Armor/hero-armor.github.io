@@ -39,16 +39,19 @@ INK, INK2, SURFACE, GRID = "#0b0b0b", "#52514e", "#fcfcfb", "#e8e7e3"
 WARN, SHIELD = "#c2410c", "#8a8a85"
 BOARD, BOARD_EDGE = "#eef3f8", "#c2d2e2"
 
+# Порядок рядків — РІВНО як контакти на платі радара (прохання Івана 18.08):
+# TX · RX · OUT · GND · VCC. Так схему читаєш згори вниз, не перекладаючи в голові.
 # (колір, назва пари, сигнал, клема в коробці, підпис на платі радара)
 LINES = [
-    ("#2a78d6", "синя",        "+5 В",       "понижайка 12→5 В, вихід +5 В", "5V"),
     ("#eb6834", "помаранчева", "TX радара",  "ESP32 · GPIO16, підпис RX2",   "TX"),
     ("#1baf7a", "зелена",      "RX радара",  "ESP32 · GPIO17, підпис TX2",   "RX"),
     ("#8b5a2b", "коричнева",   "OUT",        "ESP32 · GPIO27, підпис D27",   "OUT"),
+    (None,      "усі 4 білі",  "GND",        "спільна земля схеми",          "GND"),
+    ("#2a78d6", "синя",        "+5 В",       "понижайка 12→5 В, вихід +5 В", "VCC"),
 ]
 
 X_L, X_R = 372, 946          # де кабель починається і закінчується
-Y0, STEP = 214, 118
+Y0, STEP = 214, 106
 
 
 def drop_v() -> float:
@@ -80,7 +83,7 @@ def esc(s: str) -> str:
 
 
 def build() -> str:
-    W, H = 1400, 900
+    W, H = 1400, 1000
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
          f'width="{W}" height="{H}">',
          f'<rect width="{W}" height="{H}" fill="{SURFACE}"/>',
@@ -97,7 +100,7 @@ def build() -> str:
     a(f'<text class="s" x="30" y="94" fill="{INK2}">Кожен сигнал скручений зі своєю '
       f'землею, а не з чужим сигналом — тільки так вита пара працює.</text>')
 
-    box_h = STEP * 4 + 18
+    box_h = STEP * 5 + 40
     # ── коробка ліворуч ────────────────────────────────────────────────
     a(f'<rect x="30" y="130" width="342" height="{box_h}" rx="12" '
       f'fill="{BOARD}" stroke="{BOARD_EDGE}" stroke-width="2"/>')
@@ -114,29 +117,38 @@ def build() -> str:
     for i, (col, colname, sig, left, pinname) in enumerate(LINES):
         y = Y0 + i * STEP
 
-        # земля пари: біла жила зі смужкою кольору
-        a(f'<path d="{twist(y+30, math.pi)}" fill="none" stroke="#ffffff" stroke-width="7"/>')
-        a(f'<path d="{twist(y+30, math.pi)}" fill="none" stroke="{col}" '
-          f'stroke-width="7" stroke-dasharray="5 13"/>')
-        # сигнал: суцільний колір
-        a(f'<path d="{twist(y, 0)}" fill="none" stroke="{col}" stroke-width="7"/>')
+        if col is None:
+            # рядок землі: одна шина, зібрана з білих жил усіх чотирьох пар
+            a(f'<path d="{twist(y, 0)}" fill="none" stroke="#ffffff" stroke-width="9"/>')
+            for k, (c, *_rest) in enumerate(x for x in LINES if x[0]):
+                a(f'<path d="{twist(y, 0)}" fill="none" stroke="{c}" stroke-width="9" '
+                  f'stroke-dasharray="7 21" stroke-dashoffset="{-k*7}"/>')
+            a(f'<text class="t" x="{(X_L+X_R)//2}" y="{y-26}" fill="{INK}" '
+              f'text-anchor="middle">білі жили всіх чотирьох пар — разом в одну землю</text>')
+        else:
+            # земля пари: біла жила зі смужкою кольору
+            a(f'<path d="{twist(y+30, math.pi)}" fill="none" stroke="#ffffff" stroke-width="7"/>')
+            a(f'<path d="{twist(y+30, math.pi)}" fill="none" stroke="{col}" '
+              f'stroke-width="7" stroke-dasharray="5 13"/>')
+            # сигнал: суцільний колір
+            a(f'<path d="{twist(y, 0)}" fill="none" stroke="{col}" stroke-width="7"/>')
+            a(f'<text class="t" x="{(X_L+X_R)//2}" y="{y-26}" fill="{INK}" '
+              f'text-anchor="middle">{esc(colname)} — {esc(sig)}</text>')
+            a(f'<text class="m" x="{(X_L+X_R)//2}" y="{y+52}" fill="{INK2}" '
+              f'text-anchor="middle">біла зі смужкою ({esc(colname)}) — у землю</text>')
+            a(f'<circle cx="360" cy="{y+30}" r="6" fill="#c9c9c4" stroke="#fff" stroke-width="2"/>')
 
-        # клеми в коробці
-        a(f'<circle cx="360" cy="{y}" r="7" fill="{col}" stroke="#fff" stroke-width="2"/>')
-        a(f'<circle cx="360" cy="{y+30}" r="7" fill="#9ca3af" stroke="#fff" stroke-width="2"/>')
+        # клема в коробці
+        dot = col or "#9ca3af"
+        a(f'<circle cx="360" cy="{y}" r="7" fill="{dot}" stroke="#fff" stroke-width="2"/>')
         a(f'<text class="t" x="344" y="{y+5}" fill="{INK}" text-anchor="end">{esc(left)}</text>')
-        a(f'<text class="m" x="344" y="{y+34}" text-anchor="end">GND (спільна шина)</text>')
 
-        # гребінка на платі радара
+        # контакт на платі радара — порядок як на гребінці
         a(f'<rect x="952" y="{y-11}" width="26" height="22" rx="3" fill="#111"/>')
-        a(f'<rect x="952" y="{y+19}" width="26" height="22" rx="3" fill="#111"/>')
         a(f'<text class="k" x="990" y="{y+5}" fill="{INK}">{esc(pinname)}</text>')
-        a(f'<text class="m" x="990" y="{y+34}">GND</text>')
-        a(f'<text class="t" x="{(X_L+X_R)//2}" y="{y-26}" fill="{INK}" '
-          f'text-anchor="middle">{esc(colname)} — {esc(sig)}</text>')
 
     # ── екран і дренажна жила ──────────────────────────────────────────
-    ys = 130 + box_h + 46
+    ys = 130 + box_h + 40
     a(f'<path d="{twist(ys, 0.6)}" fill="none" stroke="{SHIELD}" stroke-width="6" '
       f'stroke-dasharray="2 5"/>')
     a(f'<line x1="360" y1="{ys}" x2="{X_L}" y2="{ys}" stroke="{SHIELD}" stroke-width="6"/>')
@@ -155,10 +167,11 @@ def build() -> str:
     a(f'<text class="m" x="{X_R+20}" y="{ys+20}">відкусити + термоусадка</text>')
 
     # ── нотатки ────────────────────────────────────────────────────────
-    yn = 130 + box_h + 118
+    yn = 130 + box_h + 112
     a(f'<line x1="30" y1="{yn-28}" x2="{W-30}" y2="{yn-28}" stroke="{GRID}" stroke-width="2"/>')
     bold = ' font-weight="700"'
     notes = [
+        (INK2, "", "Порядок рядків тут — РІВНО як контакти на платі радара: TX · RX · OUT · GND · VCC."),
         (WARN, bold, "Земля екрана — тільки з боку коробки. З двох кінців НЕ можна."),
         (INK2, "", "Корпус у нас пластиковий, металевого корпусу нема — дренажна жила "
                    "йде на спільну землю схеми в коробці."),
@@ -180,17 +193,18 @@ def build() -> str:
 def demo() -> int:
     s = build()
     assert s.startswith("<svg") and s.rstrip().endswith("</svg>")
-    assert len(LINES) == 4, "чотири пари Cat6 — чотири сигнали"
-    assert {l[2] for l in LINES} == {"+5 В", "TX радара", "RX радара", "OUT"}
+    assert [l[4] for l in LINES] == ["TX", "RX", "OUT", "GND", "VCC"], \
+        "порядок мусить збігатися з гребінкою радара — прохання Івана"
+    assert sum(1 for l in LINES if l[0]) == 4, "чотири кольорові жили = чотири пари Cat6"
     assert 0.002 < drop_v() < 0.05, drop_v()
     assert edge_ns() < bit_us() * 100, "фронт мусить бути на порядки менший за біт"
     for _, name, _, _, pin in LINES:
-        assert name in s and f'>{pin}<' in s, name
+        assert f'>{pin}<' in s, pin
     assert "навхрест" in s.lower(), "перехрещення TX/RX має бути на схемі"
     assert "тільки з боку коробки" in s, "правило екрана має бути на схемі"
     assert "тут НЕ паяти" in s, "обрив екрана з боку радара має бути показаний"
-    assert s.count("<path") >= len(LINES) * 3, "кожна пара — дві жили, плюс екран"
-    print(f"demo ok — 4 пари, просадка {drop_v()*1000:.0f} мВ, "
+    assert s.count("<path") >= 4 * 3, "кожна пара — дві жили, плюс шина землі й екран"
+    print(f"demo ok — 5 рядків у порядку гребінки, просадка {drop_v()*1000:.0f} мВ, "
           f"фронт {edge_ns():.1f} нс проти {bit_us():.1f} мкс, {len(s)} байт")
     return 0
 
