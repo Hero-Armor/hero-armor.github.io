@@ -52,6 +52,8 @@ generated: { by: "process:site-build" }
 * [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](/tasks/zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) — до роботи
 * [Забрати 8 балонів хрому в Home Depot San Carlos (1125 Old County Rd)](/tasks/zabraty-8-baloniv-khromu-v-home-depot-san-carlos-1125-old-co.md) — до роботи
 * [Купити гумові рукавички під покраску (не вінілові одноразові — під розчинник треба нітрил)](/tasks/kupyty-humovi-rukavychky-pid-pokrasku-ne-vinilovi-odnorazovi.md) — до роботи
+* [Подзвонити в Burlingame Ace 650-340-1818 і скасувати два оплачені замовлення від 17.08 — вони оформлені БЕЗ акаунту, онлайн скасувати неможливо](/tasks/podzvonyty-v-burlingame-ace-650-340-1818-i-skasuvaty-dva-opl.md) — до роботи
+* [Перевірити руками куплені ганчірки (артикул 1025740, 2 фунти): чи це бавовняний трикотаж і чи вистачить на фігуру](/tasks/pereviryty-rukamy-kupleni-hanchirky-artykul-1025740-2-funty-.md) — до роботи
 
 # Закупівля
 

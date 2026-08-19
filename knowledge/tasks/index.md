@@ -226,3 +226,7 @@
 * [Прислати посилання на відео Марини — витягну аудіо, зроблю текст і зведу з нашим старим списком у чекліст](pryslaty-posylannia-na-video-maryny-vytiahnu-audio-zrobliu-t.md) - до роботи
 * [Купити гумові рукавички під покраску (не вінілові одноразові — під розчинник треба нітрил)](kupyty-humovi-rukavychky-pid-pokrasku-ne-vinilovi-odnorazovi.md) - до роботи
 * [План повернень на Amazon — зібрати список, що і до якої дати можна здати](plan-povernen-na-amazon-zibraty-spysok-shcho-i-do-iakoi-daty.md) - до роботи
+* [Закрити Chrome на маку (Cmd+Q) і запустити ~/bin/chrome-cdp.sh main — після цього асистент бачить твої замовлення Amazon і Ace з ТВОЇМИ логінами](zakryty-chrome-na-maku-cmd-q-i-zapustyty-bin-chrome-cdp-sh-m.md) - до роботи
+* [Подзвонити в Burlingame Ace 650-340-1818 і скасувати два оплачені замовлення від 17.08 — вони оформлені БЕЗ акаунту, онлайн скасувати неможливо](podzvonyty-v-burlingame-ace-650-340-1818-i-skasuvaty-dva-opl.md) - до роботи
+* [Дотестити Perplexity: 19.08 і research, і search повернули порожньо. Поки не полагоджено — на нього не спиратись](dotestyty-perplexity-19-08-i-research-i-search-povernuly-por.md) - до роботи
+* [Перевірити руками куплені ганчірки (артикул 1025740, 2 фунти): чи це бавовняний трикотаж і чи вистачить на фігуру](pereviryty-rukamy-kupleni-hanchirky-artykul-1025740-2-funty-.md) - до роботи

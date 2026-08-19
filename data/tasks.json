@@ -1884,5 +1884,29 @@
   "system": "project",
   "status": "todo",
   "owner": "claude"
+ },
+ {
+  "task": "Закрити Chrome на маку (Cmd+Q) і запустити ~/bin/chrome-cdp.sh main — після цього асистент бачить твої замовлення Amazon і Ace з ТВОЇМИ логінами",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan"
+ },
+ {
+  "task": "Подзвонити в Burlingame Ace 650-340-1818 і скасувати два оплачені замовлення від 17.08 — вони оформлені БЕЗ акаунту, онлайн скасувати неможливо",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan"
+ },
+ {
+  "task": "Дотестити Perplexity: 19.08 і research, і search повернули порожньо. Поки не полагоджено — на нього не спиратись",
+  "system": "project",
+  "status": "todo",
+  "owner": "claude"
+ },
+ {
+  "task": "Перевірити руками куплені ганчірки (артикул 1025740, 2 фунти): чи це бавовняний трикотаж і чи вистачить на фігуру",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan"
  }
 ]
