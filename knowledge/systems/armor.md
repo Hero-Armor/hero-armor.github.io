@@ -60,7 +60,7 @@ generated: { by: "process:site-build" }
 * [ORALITE V98 біла, 2" × 20 ft — корпус фігури + боки ящика](/bom/oralite-v98-bila-2-20-ft-korpus-fihury-boky-iashchyka.md) — $42.99, купити
 * [ORALITE V98 жовта, 2" × 5 ft — позиція №5 (плечі)](/bom/oralite-v98-zhovta-2-5-ft-pozytsiia-5-plechi.md) — $14.99, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](/bom/grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) — $51.83, є
-* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $6.48/балон, купити
+* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](/bom/metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) — $6.48/балон, є
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](/bom/synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) — $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](/bom/bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) — $5.98, є
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](/bom/prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) — $9.59/балон, є
@@ -100,3 +100,6 @@ generated: { by: "process:site-build" }
 * [Пензлі художні, набір 20 шт](/bom/penzli-khudozhni-nabir-20-sht.md) — $12-15, купити
 * [Малярний скотч FrogTape, набір ширин](/bom/maliarnyi-skotch-frogtape-nabir-shyryn.md) — $17.72, купити
 * [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](/bom/prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) — звірити на місці (та сама лінійка .5-7/балон), купити
+* [Плівка поліетиленова 10×25 ft, 3.5 mil — укриття під покраску](/bom/plivka-polietylenova-10-25-ft-3-5-mil-ukryttia-pid-pokrasku.md) — $15.98, є
+* [Малярний папір коричневий 12″×180 ft](/bom/maliarnyi-papir-korychnevyi-12-180-ft.md) — $3.98, є
+* [Біта DEWALT MAXFIT Ultra 3.5″ TX25](/bom/bita-dewalt-maxfit-ultra-3-5-tx25.md) — $3.97, є

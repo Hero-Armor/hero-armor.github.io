@@ -1707,15 +1707,15 @@
  },
  {
   "item": "Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz",
-  "qty": "8 балонів (1 куплено, треба ще 7)",
+  "qty": "8 балонів",
   "price": "$6.48/балон",
-  "status": "add",
+  "status": "have",
   "system": "armor",
-  "flow": "to_order",
+  "flow": "arrived",
   "where": "Home Depot San Carlos — самовивіз",
   "url": "https://www.homedepot.com/p/Rust-Oleum-Stops-Rust-11-oz-Bright-Coat-Metallic-Chrome-Spray-Paint-7718830/100151050",
   "img": "",
-  "note": "🟡 ЧАСТКОВО: Ліза купила 1 балон 18.08 у Home Depot San Mateo за $6.48 (чек у чаті витрат). Треба ще 7. | ✅ ІВАН ЗАТВЕРДИВ 18.08: беремо хром, 8 балонів, самовивіз Home Depot San Carlos. | 📍 НАЯВНІСТЬ ЗНЯТА 18.08 з живих сторінок магазинів через браузер Івана. Ціна $6.48. По магазинах: San Carlos (1125 Ol",
+  "note": "✅ ЗАКРИТО 19.08: Марсель купив 7 балонів по $6.48 у Home Depot San Carlos (чек 09:24, разом $75.79 із супутнім). Плюс 1 балон Лізи від 18.08 — разом 8 із 8. | 🟡 ЧАСТКОВО: Ліза купила 1 балон 18.08 у Home Depot San Mateo за $6.48 (чек у чаті витрат). Треба ще 7. | ✅ ІВАН ЗАТВЕРДИВ 18.08: беремо хром, 8 балоні",
   "tag": "paint"
  },
  {
@@ -3113,5 +3113,41 @@
   "url": "https://www.amazon.com/dp/B07R88X3TL",
   "img": "",
   "note": "★4.8 (2131). Пара до попередньої під квадрат 3/8\". Доставка 20.08. ⚠ Який саме квадрат у перехідника Івана — 1/4\" чи 3/8\" — не підтверджено, тому в базі лежать обидві пари; беремо ту, що підходить."
+ },
+ {
+  "item": "Плівка поліетиленова 10×25 ft, 3.5 mil — укриття під покраску",
+  "qty": "1",
+  "price": "$15.98",
+  "status": "have",
+  "flow": "arrived",
+  "system": "armor",
+  "where": "Home Depot San Carlos",
+  "url": "",
+  "img": "",
+  "note": "✅ Купив Марсель 19.08 у складі чека на $75.79 (Home Depot San Carlos, 09:24). Заведено з чека, не з памʼяті."
+ },
+ {
+  "item": "Малярний папір коричневий 12″×180 ft",
+  "qty": "1",
+  "price": "$3.98",
+  "status": "have",
+  "flow": "arrived",
+  "system": "armor",
+  "where": "Home Depot San Carlos",
+  "url": "",
+  "img": "",
+  "note": "✅ Купив Марсель 19.08 у складі чека на $75.79 (Home Depot San Carlos, 09:24). Заведено з чека, не з памʼяті."
+ },
+ {
+  "item": "Біта DEWALT MAXFIT Ultra 3.5″ TX25",
+  "qty": "1",
+  "price": "$3.97",
+  "status": "have",
+  "flow": "arrived",
+  "system": "armor",
+  "where": "Home Depot San Carlos",
+  "url": "",
+  "img": "",
+  "note": "✅ Купив Марсель 19.08 у складі чека на $75.79 (Home Depot San Carlos, 09:24). Заведено з чека, не з памʼяті."
  }
 ]

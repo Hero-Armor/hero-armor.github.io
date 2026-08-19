@@ -144,7 +144,7 @@
 * [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) - —, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $51.83, є
-* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $6.48/балон, купити
+* [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $6.48/балон, є
 * [Синій глянець Rust-Oleum Painter's Touch 2X 12oz Gloss Brilliant Blue 334027](synii-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-brill.md) - $49, купити
 * [Білий глянець Rust-Oleum Painter's Touch 2X 12oz Gloss White 334048](bilyi-hlianets-rust-oleum-painters-touch-2x-12oz-gloss-white.md) - $5.98, є
 * [Прозорий глянцевий лак Rust-Oleum Stops Rust 12oz Crystal Clear 7701830](prozoryi-hliantsevyi-lak-rust-oleum-stops-rust-12oz-crystal-.md) - $9.59/балон, є
@@ -260,3 +260,6 @@
 * [Головка Craftsman 9/16" SAE, квадрат 1/4", коротка, 6 граней](holovka-craftsman-9-16-sae-kvadrat-1-4-korotka-6-hranei.md) - $5.59, купити
 * [Головка TEKTON 14 мм, квадрат 3/8", 6 граней, ударна](holovka-tekton-14-mm-kvadrat-3-8-6-hranei-udarna.md) - $6.26, купити
 * [Головка TEKTON 9/16", квадрат 3/8", 6 граней, коротка](holovka-tekton-9-16-kvadrat-3-8-6-hranei-korotka.md) - $5.92, купити
+* [Плівка поліетиленова 10×25 ft, 3.5 mil — укриття під покраску](plivka-polietylenova-10-25-ft-3-5-mil-ukryttia-pid-pokrasku.md) - $15.98, є
+* [Малярний папір коричневий 12″×180 ft](maliarnyi-papir-korychnevyi-12-180-ft.md) - $3.98, є
+* [Біта DEWALT MAXFIT Ultra 3.5″ TX25](bita-dewalt-maxfit-ultra-3-5-tx25.md) - $3.97, є
