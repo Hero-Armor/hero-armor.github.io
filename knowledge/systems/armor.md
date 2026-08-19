@@ -67,7 +67,7 @@ generated: { by: "process:site-build" }
 * [Клей J-B Weld ClearWeld Pro Size 50240H — 2 тюби по 4 fl oz](/bom/klei-j-b-weld-clearweld-pro-size-50240h-2-tiuby-po-4-fl-oz.md) — $21.98, є
 * [Респіратори 3M 8577 P95 з клапаном Cool Flow під фарбу](/bom/respiratory-3m-8577-p95-z-klapanom-cool-flow-pid-farbu.md) — $25.96, купити
 * [Малярний скотч 3M ScotchBlue, набір ширин 0.94 / 1.41 / 2.83 дюйма](/bom/maliarnyi-skotch-3m-scotchblue-nabir-shyryn-0-94-1-41-2-83-d.md) — $38, купити
-* [Рукавички вінілові одноразові HDX, 100 шт](/bom/rukavychky-vinilovi-odnorazovi-hdx-100-sht.md) — $30-45, купити
+* [Рукавички нітрилові одноразові (куплено), 100 шт](/bom/rukavychky-nitrylovi-odnorazovi-kupleno-100-sht.md) — $23.99, є
 * [Мікрофіброві ганчірки HDX 2 lbs](/bom/mikrofibrovi-hanchirky-hdx-2-lbs.md) — $9, купити
 * [Пензлі, набір 20 шт](/bom/penzli-nabir-20-sht.md) — $23, купити
 * [Акрил матовий Apple Barrel 2oz — коричневий і чорний](/bom/akryl-matovyi-apple-barrel-2oz-korychnevyi-i-chornyi.md) — $4, купити
@@ -91,7 +91,7 @@ generated: { by: "process:site-build" }
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](/bom/zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) — $13.95, купити
 * [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](/bom/praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) — $34.90, є
 * [Праймер під пластик — X-I-M UMA спрей 12 oz](/bom/praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) — $28.02, купити
-* [Ганчірки бавовняні (трикотаж, як футболки) — Ace, 4 lb](/bom/hanchirky-bavovniani-trykotazh-iak-futbolky-ace-4-lb.md) — $19.99, купити
+* [Ганчірки бавовняні (трикотаж, як футболки) — Ace, 4 lb](/bom/hanchirky-bavovniani-trykotazh-iak-futbolky-ace-4-lb.md) — $5.99/фунт, є
 * [Промотор адгезії Rust-Oleum 251572 Automotive, 11 oz](/bom/promotor-adhezii-rust-oleum-251572-automotive-11-oz.md) — $9.69, купити
 * [Скловолоконний мат Bondo, 8 кв. футів](/bom/sklovolokonnyi-mat-bondo-8-kv-futiv.md) — $8.99, є
 * [Респіратор 3M 8577 P95 — замовив Марсель](/bom/respirator-3m-8577-p95-zamovyv-marsel.md) — $26.58, є
@@ -99,7 +99,8 @@ generated: { by: "process:site-build" }
 * [Жовтий BEHR #SP-110 Summer Sun Flat, 12 oz](/bom/zhovtyi-behr-sp-110-summer-sun-flat-12-oz.md) — $6.98, купити
 * [Пензлі художні, набір 20 шт](/bom/penzli-khudozhni-nabir-20-sht.md) — $12-15, купити
 * [Малярний скотч FrogTape, набір ширин](/bom/maliarnyi-skotch-frogtape-nabir-shyryn.md) — $17.72, купити
-* [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](/bom/prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) — звірити на місці (та сама лінійка .5-7/балон), купити
+* [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](/bom/prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) — $8.99/балон, є
 * [Плівка поліетиленова 10×25 ft, 3.5 mil — укриття під покраску](/bom/plivka-polietylenova-10-25-ft-3-5-mil-ukryttia-pid-pokrasku.md) — $15.98, є
 * [Малярний папір коричневий 12″×180 ft](/bom/maliarnyi-papir-korychnevyi-12-180-ft.md) — $3.98, є
 * [Біта DEWALT MAXFIT Ultra 3.5″ TX25](/bom/bita-dewalt-maxfit-ultra-3-5-tx25.md) — $3.97, є
+* [Респіратор проти запаху фарби, 2 шт в упаковці ×2](/bom/respirator-proty-zapakhu-farby-2-sht-v-upakovtsi-2.md) — $16.99/упак, є
