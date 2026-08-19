@@ -254,3 +254,4 @@
 * [Пензлі художні, набір 20 шт](penzli-khudozhni-nabir-20-sht.md) - $12-15, купити
 * [Малярний скотч FrogTape, набір ширин](maliarnyi-skotch-frogtape-nabir-shyryn.md) - $17.72, купити
 * [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) - звірити на місці (та сама лінійка .5-7/балон), купити
+* [Тент-шатро 10×10 робоче, друге — Eurmax USA Commercial](tent-shatro-10-10-roboche-druhe-eurmax-usa-commercial.md) - $172.97, купити

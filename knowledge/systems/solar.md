@@ -68,6 +68,7 @@ generated: { by: "process:site-build" }
 * [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](/tasks/ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) — готово
 * [Надіслати лист-запит на панель і акумулятор (або станцію) — текст готовий, бракує адресата](/tasks/nadislaty-lyst-zapyt-na-panel-i-akumuliator-abo-stantsiiu-te.md) — чекаємо
 * [Чекаємо відповідь Shing (Starchild) по акумулятору і панелі — можуть дати безкоштовно](/tasks/chekaiemo-vidpovid-shing-starchild-po-akumuliatoru-i-paneli-.md) — чекаємо
+* [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](/tasks/spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) — чекаємо
 
 # Закупівля
 

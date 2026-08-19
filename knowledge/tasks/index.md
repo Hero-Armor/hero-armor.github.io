@@ -216,3 +216,4 @@
 * [Забрати 8 балонів хрому в Home Depot San Carlos (1125 Old County Rd)](zabraty-8-baloniv-khromu-v-home-depot-san-carlos-1125-old-co.md) - до роботи
 * [Чекаємо відповідь Shing (Starchild) по акумулятору і панелі — можуть дати безкоштовно](chekaiemo-vidpovid-shing-starchild-po-akumuliatoru-i-paneli-.md) - чекаємо
 * [Спитано Shing, чи знає вона художників із SF із вільним місцем у машині — попутний вантаж](spytano-shing-chy-znaie-vona-khudozhnykiv-iz-sf-iz-vilnym-mi.md) - чекаємо
+* [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) - чекаємо
