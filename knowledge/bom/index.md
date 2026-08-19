@@ -242,7 +242,7 @@
 * [Дуйка акумуляторна WOLFBOX MF200 (змінна батарея)](duika-akumuliatorna-wolfbox-mf200-zminna-batareia.md) - $85–102, купити
 * [Запасна батарея до WOLFBOX MF200, 37 Вт·год](zapasna-batareia-do-wolfbox-mf200-37-vt-hod.md) - $14.39, купити
 * [Дуйка акумуляторна WOLFBOX MF70](duika-akumuliatorna-wolfbox-mf70.md) - $49.99, купити
-* [Дуйка акумуляторна WOLFBOX MF50 (MegaFlow 50)](duika-akumuliatorna-wolfbox-mf50-megaflow-50.md) - $39.99, купити
+* [Дуйка акумуляторна WOLFBOX MF50 (MegaFlow 50)](duika-akumuliatorna-wolfbox-mf50-megaflow-50.md) - $33.99, купити
 * [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) - $34.90, є
 * [Праймер під пластик — X-I-M UMA спрей 12 oz](praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) - $28.02, купити
 * [Ганчірки бавовняні (трикотаж, як футболки) — Ace, 4 lb](hanchirky-bavovniani-trykotazh-iak-futbolky-ace-4-lb.md) - $19.99, купити
@@ -255,3 +255,4 @@
 * [Малярний скотч FrogTape, набір ширин](maliarnyi-skotch-frogtape-nabir-shyryn.md) - $17.72, купити
 * [Прозорий глянцевий лак Rust-Oleum Painter's Touch 2X Gloss Clear 334029 — правильна лінійка](prozoryi-hliantsevyi-lak-rust-oleum-painters-touch-2x-gloss-.md) - звірити на місці (та сама лінійка .5-7/балон), купити
 * [Тент-шатро 10×10 робоче, друге — Eurmax USA Commercial](tent-shatro-10-10-roboche-druhe-eurmax-usa-commercial.md) - $172.97, купити
+* [Набір магнітних головок під шуруповерт LOZAGU, 17 шт — SAE і метричні](nabir-mahnitnykh-holovok-pid-shurupovert-lozagu-17-sht-sae-i.md) - $9.99, купити
