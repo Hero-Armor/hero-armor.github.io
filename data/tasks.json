@@ -2132,5 +2132,68 @@
   "status": "todo",
   "owner": "ivan",
   "area": "plan"
+ },
+ {
+  "task": "Покраска 1 · Праймер по фігурі — ЗРОБЛЕНО",
+  "system": "armor",
+  "status": "done",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 2 · Срібна фарба поверх праймера — ЗРОБЛЕНО",
+  "system": "armor",
+  "status": "done",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 3 · Пошкодження паяльниками (фактура «бойових» слідів) — ЗРОБЛЕНО",
+  "system": "armor",
+  "status": "done",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 4 · Наклеїти світловідбивну плівку на підготовлені місця",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 5 · Надрукувати на 3D сіточку, яка лягає поверх плівки",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 6 · Встановити надруковану сіточку на плівку",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 7 · Фінальна фарба поверх усього",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 8 · Зняти захисні скотчі з лампочок",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "paint"
+ },
+ {
+  "task": "Покраска 9 · Підфарбувати навколо лампочок після зняття скотчів",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "paint"
  }
 ]

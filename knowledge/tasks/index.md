@@ -260,3 +260,12 @@
 * [ВІХА · Фігура пофарбована і зібрана — дедлайн 26.08](vikha-fihura-pofarbovana-i-zibrana-dedlain-26-08.md) - до роботи
 * [ВІХА · Електрика зібрана і перевірена під навантаженням](vikha-elektryka-zibrana-i-perevirena-pid-navantazhenniam.md) - до роботи
 * [ВІХА · Усе спаковано і завантажено — виїзд 27.08](vikha-use-spakovano-i-zavantazheno-vyizd-27-08.md) - до роботи
+* [Покраска 1 · Праймер по фігурі — ЗРОБЛЕНО](pokraska-1-praimer-po-fihuri-zrobleno.md) - готово
+* [Покраска 2 · Срібна фарба поверх праймера — ЗРОБЛЕНО](pokraska-2-sribna-farba-poverkh-praimera-zrobleno.md) - готово
+* [Покраска 3 · Пошкодження паяльниками (фактура «бойових» слідів) — ЗРОБЛЕНО](pokraska-3-poshkodzhennia-paialnykamy-faktura-boiovykh-slidi.md) - готово
+* [Покраска 4 · Наклеїти світловідбивну плівку на підготовлені місця](pokraska-4-nakleity-svitlovidbyvnu-plivku-na-pidhotovleni-mi.md) - до роботи
+* [Покраска 5 · Надрукувати на 3D сіточку, яка лягає поверх плівки](pokraska-5-nadrukuvaty-na-3d-sitochku-iaka-liahaie-poverkh-p.md) - до роботи
+* [Покраска 6 · Встановити надруковану сіточку на плівку](pokraska-6-vstanovyty-nadrukovanu-sitochku-na-plivku.md) - до роботи
+* [Покраска 7 · Фінальна фарба поверх усього](pokraska-7-finalna-farba-poverkh-usoho.md) - до роботи
+* [Покраска 8 · Зняти захисні скотчі з лампочок](pokraska-8-zniaty-zakhysni-skotchi-z-lampochok.md) - до роботи
+* [Покраска 9 · Підфарбувати навколо лампочок після зняття скотчів](pokraska-9-pidfarbuvaty-navkolo-lampochok-pislia-zniattia-sk.md) - до роботи

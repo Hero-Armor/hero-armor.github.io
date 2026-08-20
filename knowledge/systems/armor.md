@@ -60,6 +60,15 @@ generated: { by: "process:site-build" }
 * [Склейка пальців через метал — 3D-пластик](/tasks/skleika-paltsiv-cherez-metal-3d-plastyk.md) — до роботи
 * [Склейка пальців через метал — 3D-пластик](/tasks/skleika-paltsiv-cherez-metal-3d-plastyk.md) — до роботи
 * [ВІХА · Фігура пофарбована і зібрана — дедлайн 26.08](/tasks/vikha-fihura-pofarbovana-i-zibrana-dedlain-26-08.md) — до роботи
+* [Покраска 1 · Праймер по фігурі — ЗРОБЛЕНО](/tasks/pokraska-1-praimer-po-fihuri-zrobleno.md) — готово
+* [Покраска 2 · Срібна фарба поверх праймера — ЗРОБЛЕНО](/tasks/pokraska-2-sribna-farba-poverkh-praimera-zrobleno.md) — готово
+* [Покраска 3 · Пошкодження паяльниками (фактура «бойових» слідів) — ЗРОБЛЕНО](/tasks/pokraska-3-poshkodzhennia-paialnykamy-faktura-boiovykh-slidi.md) — готово
+* [Покраска 4 · Наклеїти світловідбивну плівку на підготовлені місця](/tasks/pokraska-4-nakleity-svitlovidbyvnu-plivku-na-pidhotovleni-mi.md) — до роботи
+* [Покраска 5 · Надрукувати на 3D сіточку, яка лягає поверх плівки](/tasks/pokraska-5-nadrukuvaty-na-3d-sitochku-iaka-liahaie-poverkh-p.md) — до роботи
+* [Покраска 6 · Встановити надруковану сіточку на плівку](/tasks/pokraska-6-vstanovyty-nadrukovanu-sitochku-na-plivku.md) — до роботи
+* [Покраска 7 · Фінальна фарба поверх усього](/tasks/pokraska-7-finalna-farba-poverkh-usoho.md) — до роботи
+* [Покраска 8 · Зняти захисні скотчі з лампочок](/tasks/pokraska-8-zniaty-zakhysni-skotchi-z-lampochok.md) — до роботи
+* [Покраска 9 · Підфарбувати навколо лампочок після зняття скотчів](/tasks/pokraska-9-pidfarbuvaty-navkolo-lampochok-pislia-zniattia-sk.md) — до роботи
 
 # Закупівля
 
