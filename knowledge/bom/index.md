@@ -170,7 +170,7 @@
 * [Полотно по металу для електролобзика (внутрішній вигин підлоги R 13 5/8")](polotno-po-metalu-dlia-elektrolobzyka-vnutrishnii-vyhyn-pidl.md) - $10-15, купити
 * [Циркульне пристосування Rockler для фрезера (виріз кола Ø692 мм у підлозі)](tsyrkulne-prystosuvannia-rockler-dlia-frezera-vyriz-kola-692.md) - $39.99, купити
 * [Фреза твердосплавна однозуба (O-flute upcut) по алюмінію, хвостовик 1/4"](freza-tverdosplavna-odnozuba-o-flute-upcut-po-aliuminiiu-khv.md) - $30-40, купити
-* [Знімач задирок Noga DB1000 (двосторонній, під листовий метал)](znimach-zadyrok-noga-db1000-dvostoronnii-pid-lystovyi-metal.md) - $19.99, купити
+* [Знімач задирок Noga DB1000 (двосторонній, під листовий метал)](znimach-zadyrok-noga-db1000-dvostoronnii-pid-lystovyi-metal.md) - $26.16, купити
 * [Кільцеві пили біметал 7/8" і 15/16" на спільний арбор (24 отвори під врізні вогні)](kiltsevi-pyly-bimetal-7-8-i-15-16-na-spilnyi-arbor-24-otvory.md) - $15-25, купити
 * [Вирубний пробійник Klein 53819, 7/8" (заміна відсутньому Greenlee)](vyrubnyi-probiinyk-klein-53819-7-8-zamina-vidsutnomu-greenle.md) - $28.49, купити
 * [EZARC набір кільцевих пил 16 предметів, 3/4"–2 1/2", з арборами і пілотними свердлами](ezarc-nabir-kiltsevykh-pyl-16-predmetiv-3-4-2-1-2-z-arboramy.md) - $47.58, купити
@@ -288,3 +288,5 @@
 * [Перехідники LEXIVON LX-101, 3 шт (без тримача) — дешевша версія](perekhidnyky-lexivon-lx-101-3-sht-bez-trymacha-deshevsha-ver.md) - $7.17, купити
 * [Перехідник Milwaukee 48-32-5031, 1/4″ шестигранник → 3/8″ квадрат, поштучно](perekhidnyk-milwaukee-48-32-5031-1-4-shestyhrannyk-3-8-kvadr.md) - $3.11, є
 * [Набір головок NEIKO 02432A, квадрат 3/8″, 21 шт — SAE і метричні, 6 граней](nabir-holovok-neiko-02432a-kvadrat-3-8-21-sht-sae-i-metrychn.md) - $23.98, купити
+* [Знімач задирок Sabre/аналог — заміна Milwaukee 49-66-4588: Sabre Tools 9/16″ × 6″ магнітна](znimach-zadyrok-sabre-analoh-zamina-milwaukee-49-66-4588-sab.md) - $7.99, купити
+* [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) - $21.88, купити

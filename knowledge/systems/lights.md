@@ -207,3 +207,4 @@ generated: { by: "process:site-build" }
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](/bom/nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) — $37.49, купити
 * [Мастило для різання Tap Magic Industrial Pro, 4 oz](/bom/mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) — $7.90, купити
 * [Таймер MISOL 12 В, 25 А, програмований з екраном](/bom/taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) — , є
+* [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](/bom/samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) — $21.88, купити
