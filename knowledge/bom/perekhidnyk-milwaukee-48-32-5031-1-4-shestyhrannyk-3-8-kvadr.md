@@ -1,0 +1,15 @@
+---
+type: "Part"
+title: "Перехідник Milwaukee 48-32-5031, 1/4″ шестигранник → 3/8″ квадрат, поштучно"
+description: "★4.8 (322). Якщо потрібен рівно один перехідник під 3/8 і без набору. Ударний клас Shockwave."
+resource: "https://www.amazon.com/dp/B002U0D3LQ"
+tags: ["project"]
+quantity: "1 шт"
+price: "$3.11"
+procurement_status: "add"
+generated: { by: "process:site-build" }
+---
+
+★4.8 (322). Якщо потрібен рівно один перехідник під 3/8 і без набору. Ударний клас Shockwave.
+
+Система: [Проєкт](/project.md) · статус: **купити** · ціна $3.11 · к-сть 1 шт

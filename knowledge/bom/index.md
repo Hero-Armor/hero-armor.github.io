@@ -284,3 +284,6 @@
 * [Стяжні ремені з храповиком Jack Boss, 1″ × 15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-z-khrapovykom-jack-boss-1-15-ft-4-sht-rozryv.md) - $0 — уточнити, купити
 * [Ковдри для перевезення WEN 72″×80″, 4 шт](kovdry-dlia-perevezennia-wen-72-80-4-sht.md) - $39.99, купити
 * [Ковдри для перевезення Amazon Basics 72″×80″, 6 шт](kovdry-dlia-perevezennia-amazon-basics-72-80-6-sht.md) - $48.14, купити
+* [Перехідники з шестигранника 1/4″ на квадрат 1/4, 3/8 і 1/2 — LEXIVON LX-104, 4 шт + тримач](perekhidnyky-z-shestyhrannyka-1-4-na-kvadrat-1-4-3-8-i-1-2-l.md) - $8.47, купити
+* [Перехідники LEXIVON LX-101, 3 шт (без тримача) — дешевша версія](perekhidnyky-lexivon-lx-101-3-sht-bez-trymacha-deshevsha-ver.md) - $7.17, купити
+* [Перехідник Milwaukee 48-32-5031, 1/4″ шестигранник → 3/8″ квадрат, поштучно](perekhidnyk-milwaukee-48-32-5031-1-4-shestyhrannyk-3-8-kvadr.md) - $3.11, купити

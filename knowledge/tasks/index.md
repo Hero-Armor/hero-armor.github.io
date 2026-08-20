@@ -244,3 +244,5 @@
 * [Проба світловідбиття на обрізку броні: мокрий лак + скляні кульки, подивитись у світлі ліхтаря вночі](proba-svitlovidbyttia-na-obrizku-broni-mokryi-lak-skliani-ku.md) - до роботи
 * [Замовити скляні світловідбивні кульки — 1 lb $19.97 або 4.4 lb $27.99, доставка 21.08](zamovyty-skliani-svitlovidbyvni-kulky-1-lb-19-97-abo-4-4-lb-.md) - до роботи
 * [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) - до роботи
+* [Склейка пальців через метал — 3D-пластик](skleika-paltsiv-cherez-metal-3d-plastyk.md) - до роботи
+* [Склейка пальців через метал — 3D-пластик](skleika-paltsiv-cherez-metal-3d-plastyk.md) - до роботи
