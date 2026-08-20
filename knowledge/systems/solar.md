@@ -73,6 +73,7 @@ generated: { by: "process:site-build" }
 * [ПИТАННЯ ДО МЕНЕ: підтвердити, що вчорашнє замовлення в Home Depot — це саме станція EcoFlow. Лист «Order confirmed» від 19.08 08:59 є, але Home Depot не пише назв у листі](/tasks/pytannia-do-mene-pidtverdyty-shcho-vchorashnie-zamovlennia-v.md) — чекаємо
 * [Купити сонячні панелі для масиву — потужність не обрана](/tasks/kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — до роботи
 * [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](/tasks/zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) — до роботи
+* [Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова](/tasks/vyrishyty-po-vzhyvanii-stantsii-u-bay-area-zaraz-ie-delta-ma.md) — до роботи
 
 # Закупівля
 

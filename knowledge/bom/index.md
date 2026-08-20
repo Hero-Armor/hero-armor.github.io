@@ -290,3 +290,4 @@
 * [Набір головок NEIKO 02432A, квадрат 3/8″, 21 шт — SAE і метричні, 6 граней](nabir-holovok-neiko-02432a-kvadrat-3-8-21-sht-sae-i-metrychn.md) - $23.98, купити
 * [Знімач задирок Sabre/аналог — заміна Milwaukee 49-66-4588: Sabre Tools 9/16″ × 6″ магнітна](znimach-zadyrok-sabre-analoh-zamina-milwaukee-49-66-4588-sab.md) - $7.99, купити
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) - $21.88, купити
+* [Знімач задирок AFA Tooling, 11 лез M2 HSS, алюмінієва ручка](znimach-zadyrok-afa-tooling-11-lez-m2-hss-aliuminiieva-ruchk.md) - $9.99, купити

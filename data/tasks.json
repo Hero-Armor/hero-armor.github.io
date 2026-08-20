@@ -2195,5 +2195,19 @@
   "status": "todo",
   "owner": "ivan",
   "area": "paint"
+ },
+ {
+  "task": "Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова",
+  "system": "solar",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
+ },
+ {
+  "task": "Замовити знімач задирок AFA Tooling $9.99 — Noga не встигає (30.08-02.09)",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
  }
 ]

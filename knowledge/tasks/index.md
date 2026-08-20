@@ -269,3 +269,5 @@
 * [Покраска 7 · Фінальна фарба поверх усього](pokraska-7-finalna-farba-poverkh-usoho.md) - до роботи
 * [Покраска 8 · Зняти захисні скотчі з лампочок](pokraska-8-zniaty-zakhysni-skotchi-z-lampochok.md) - до роботи
 * [Покраска 9 · Підфарбувати навколо лампочок після зняття скотчів](pokraska-9-pidfarbuvaty-navkolo-lampochok-pislia-zniattia-sk.md) - до роботи
+* [Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова](vyrishyty-po-vzhyvanii-stantsii-u-bay-area-zaraz-ie-delta-ma.md) - до роботи
+* [Замовити знімач задирок AFA Tooling $9.99 — Noga не встигає (30.08-02.09)](zamovyty-znimach-zadyrok-afa-tooling-9-99-noga-ne-vstyhaie-3.md) - до роботи
