@@ -95,7 +95,7 @@
 * [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) - $19.07, купити
 * [Понижувач 12 В → 5 В, 10 А (2 шт) — під ядро на спині](ponyzhuvach-12-v-5-v-10-a-2-sht-pid-iadro-na-spyni.md) - $14.99, купити
 * [Дошки 2×4×8ft Douglas Fir](doshky-2-4-8ft-douglas-fir.md) - $36–45, купити
-* [Lag screws 3/8"×10" hex head, гарячий цинк, 25 шт](lag-screws-3-8-10-hex-head-hariachyi-tsynk-25-sht.md) - $35.99, купити
+* [Lag screws 3/8"×10" гарячий цинк — 3 пачки по 10 шт](lag-screws-3-8-10-hariachyi-tsynk-3-pachky-po-10-sht.md) - $20.99 за 10 шт = $62.97, купити
 * [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) - $117.72 за лот — ⚠ фасовку не підтверджено, купити
 * [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) - $17.62, купити
 * [Fender washers 3/8"×1.5", оцинковані](fender-washers-3-8-1-5-otsynkovani.md) - $12.97, купити
