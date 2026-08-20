@@ -291,5 +291,5 @@
 * [Знімач задирок Sabre/аналог — заміна Milwaukee 49-66-4588: Sabre Tools 9/16″ × 6″ магнітна](znimach-zadyrok-sabre-analoh-zamina-milwaukee-49-66-4588-sab.md) - $7.99, купити
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) - $21.88, купити
 * [Знімач задирок AFA Tooling, 11 лез M2 HSS, алюмінієва ручка](znimach-zadyrok-afa-tooling-11-lez-m2-hss-aliuminiieva-ruchk.md) - $9.99, купити
-* [Анкери-шпильки J-подібні 12″ × 1/4″, 20 шт — кріплення ліхтариків до землі](ankery-shpylky-j-podibni-12-1-4-20-sht-kriplennia-likhtaryki.md) - $23.99, купити
+* [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) - $24.99, купити
 * [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, купити

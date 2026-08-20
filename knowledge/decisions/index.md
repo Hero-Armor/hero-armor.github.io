@@ -151,3 +151,4 @@
 * [Радар ставимо в носок ноги — працює, але це найгірша висота, тому три обовʼязкові поправки](radar-stavymo-v-nosok-nohy-pratsiuie-ale-tse-naihirsha-vysot.md)
 * [Кузов орендованого пікапа — 5 футів, везмо з відкритим бортом; є 7-контактний розʼєм під причіп](kuzov-orendovanoho-pikapa-5-futiv-vezmo-z-vidkrytym-bortom-i.md)
 * [Світловідбиття на броні робимо скляними кульками по мокрому лаку, а не плівкою і не «світловідбивною фарбою»](svitlovidbyttia-na-broni-robymo-sklianymy-kulkamy-po-mokromu.md)
+* [У плайю йдуть тільки анкери з різьбою — гладкі шпильки і скоби не тримають](u-plaiiu-idut-tilky-ankery-z-rizboiu-hladki-shpylky-i-skoby-.md)

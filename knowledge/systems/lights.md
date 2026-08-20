@@ -61,6 +61,7 @@ generated: { by: "process:site-build" }
 * [Світло на спині — звичайна лампа MR16 12 В за надрукованою панеллю, без адресних кілець](/decisions/svitlo-na-spyni-zvychaina-lampa-mr16-12-v-za-nadrukovanoiu-p.md)
 * [Коронки по алюмінію — тільки біметал M42 фірмових ліній, дешевий набір не беремо](/decisions/koronky-po-aliuminiiu-tilky-bimetal-m42-firmovykh-linii-desh.md)
 * [Стрічка виступає на 2-3 мм над подіумом, ОСБ ріжемо на дві частини по контуру](/decisions/strichka-vystupaie-na-2-3-mm-nad-podiumom-osb-rizhemo-na-dvi.md)
+* [У плайю йдуть тільки анкери з різьбою — гладкі шпильки і скоби не тримають](/decisions/u-plaiiu-idut-tilky-ankery-z-rizboiu-hladki-shpylky-i-skoby-.md)
 
 # Задачі
 
@@ -208,4 +209,4 @@ generated: { by: "process:site-build" }
 * [Мастило для різання Tap Magic Industrial Pro, 4 oz](/bom/mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) — $7.90, купити
 * [Таймер MISOL 12 В, 25 А, програмований з екраном](/bom/taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) — , є
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](/bom/samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) — $21.88, купити
-* [Анкери-шпильки J-подібні 12″ × 1/4″, 20 шт — кріплення ліхтариків до землі](/bom/ankery-shpylky-j-podibni-12-1-4-20-sht-kriplennia-likhtaryki.md) — $23.99, купити
+* [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](/bom/lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) — $24.99, купити
