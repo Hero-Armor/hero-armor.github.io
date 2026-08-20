@@ -241,3 +241,5 @@
 * [Транспортування робота: зняти з оренди GMC довжину кузова (довга/коротка база), Ліза скидала листування з хостом](transportuvannia-robota-zniaty-z-orendy-gmc-dovzhynu-kuzova-.md) - до роботи
 * [Замовити стяжні ремені з храповиком (ratchet straps), набір 4 шт — кріплення робота в кузові](zamovyty-stiazhni-remeni-z-khrapovykom-ratchet-straps-nabir-.md) - до роботи
 * [Зняти по місцю ширину кузова між арками і з кришкою — ящик 53.2″ має лягти зверху на арки, перевірити чи знімається кришка](zniaty-po-mistsiu-shyrynu-kuzova-mizh-arkamy-i-z-kryshkoiu-i.md) - до роботи
+* [Проба світловідбиття на обрізку броні: мокрий лак + скляні кульки, подивитись у світлі ліхтаря вночі](proba-svitlovidbyttia-na-obrizku-broni-mokryi-lak-skliani-ku.md) - до роботи
+* [Замовити скляні світловідбивні кульки — 1 lb $19.97 або 4.4 lb $27.99, доставка 21.08](zamovyty-skliani-svitlovidbyvni-kulky-1-lb-19-97-abo-4-4-lb-.md) - до роботи

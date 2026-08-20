@@ -280,3 +280,4 @@
 * [Світловідбивний вініл білий, рулон 12″ × 4 ft (Turner Moore)](svitlovidbyvnyi-vinil-bilyi-rulon-12-4-ft-turner-moore.md) - , є
 * [Світловідбивний вініл, аркуші 12×12″ (під Cricut)](svitlovidbyvnyi-vinil-arkushi-12-12-pid-cricut.md) - , є
 * [Таймер MISOL 12 В, 25 А, програмований з екраном](taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) - , є
+* [Скляні мікрокульки світловідбивні, 1 фунт — посипка по мокрому лаку](skliani-mikrokulky-svitlovidbyvni-1-funt-posypka-po-mokromu-.md) - $19.97, купити

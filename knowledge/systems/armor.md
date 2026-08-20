@@ -25,6 +25,7 @@ generated: { by: "process:site-build" }
 * [Стрічка — тільки суцільна, без смуг; дешеві DOT-C2 не підходять за виглядом](/decisions/strichka-tilky-sutsilna-bez-smuh-deshevi-dot-c2-ne-pidkhodia.md)
 * [Світлоповертальні елементи на фігурі — не рулон, а лист: деталі дрібні, а одна ширша за 2″](/decisions/svitlopovertalni-elementy-na-fihuri-ne-rulon-a-lyst-detali-d.md)
 * [Синя фарба в фінальному списку закупівлі — Deep Blue 334027 замість Brilliant Blue, 8 балонів](/decisions/synia-farba-v-finalnomu-spysku-zakupivli-deep-blue-334027-za.md)
+* [Світловідбиття на броні робимо скляними кульками по мокрому лаку, а не плівкою і не «світловідбивною фарбою»](/decisions/svitlovidbyttia-na-broni-robymo-sklianymy-kulkamy-po-mokromu.md)
 
 # Задачі
 
@@ -54,6 +55,8 @@ generated: { by: "process:site-build" }
 * [Купити гумові рукавички під покраску (не вінілові одноразові — під розчинник треба нітрил) [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](/tasks/kupyty-humovi-rukavychky-pid-pokrasku-ne-vinilovi-odnorazovi.md) — готово
 * [Подзвонити в Burlingame Ace 650-340-1818 і скасувати два оплачені замовлення від 17.08 — вони оформлені БЕЗ акаунту, онлайн скасувати неможливо](/tasks/podzvonyty-v-burlingame-ace-650-340-1818-i-skasuvaty-dva-opl.md) — до роботи
 * [Перевірити руками куплені ганчірки (артикул 1025740, 2 фунти): чи це бавовняний трикотаж і чи вистачить на фігуру [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](/tasks/pereviryty-rukamy-kupleni-hanchirky-artykul-1025740-2-funty-.md) — готово
+* [Проба світловідбиття на обрізку броні: мокрий лак + скляні кульки, подивитись у світлі ліхтаря вночі](/tasks/proba-svitlovidbyttia-na-obrizku-broni-mokryi-lak-skliani-ku.md) — до роботи
+* [Замовити скляні світловідбивні кульки — 1 lb $19.97 або 4.4 lb $27.99, доставка 21.08](/tasks/zamovyty-skliani-svitlovidbyvni-kulky-1-lb-19-97-abo-4-4-lb-.md) — до роботи
 
 # Закупівля
 
@@ -119,3 +122,4 @@ generated: { by: "process:site-build" }
 * [Світловідбивна стрічка AISEY 2″ × 30 ft, біла conspicuity](/bom/svitlovidbyvna-strichka-aisey-2-30-ft-bila-conspicuity.md) — , є
 * [Світловідбивний вініл білий, рулон 12″ × 4 ft (Turner Moore)](/bom/svitlovidbyvnyi-vinil-bilyi-rulon-12-4-ft-turner-moore.md) — , є
 * [Світловідбивний вініл, аркуші 12×12″ (під Cricut)](/bom/svitlovidbyvnyi-vinil-arkushi-12-12-pid-cricut.md) — , є
+* [Скляні мікрокульки світловідбивні, 1 фунт — посипка по мокрому лаку](/bom/skliani-mikrokulky-svitlovidbyvni-1-funt-posypka-po-mokromu-.md) — $19.97, купити
