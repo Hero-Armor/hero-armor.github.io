@@ -2335,5 +2335,40 @@
   "status": "todo",
   "owner": "liza",
   "area": "liza"
+ },
+ {
+  "task": "Зробити замовлення в CVS",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Знайти, де підстригтися перед фестивалем",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Перебрати речі в машині: частина перекладена в RV у Мелени — забрати назад у машину",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Відсортувати речі: що беру на Burning Man, що лишається; машина лишається в Ріно",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Дозамовити особисті речі, потрібні на Burning Man — скласти список",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
  }
 ]

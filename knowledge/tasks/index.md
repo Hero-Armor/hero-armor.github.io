@@ -289,3 +289,8 @@
 * [Відправити гроші за квартиру — ТІЛЬКИ після того, як закритий договір](vidpravyty-hroshi-za-kvartyru-tilky-pislia-toho-iak-zakrytyi.md) - до роботи
 * [Попросити Пашу повернути обладнання назад у Spectrum](poprosyty-pashu-povernuty-obladnannia-nazad-u-spectrum.md) - до роботи
 * [Спитати в Марини про фанеру: Іван питав про дерево — бруски квадратні кутові, які тягнуть конструкцію, є, а фанери не вистачає](spytaty-v-maryny-pro-faneru-ivan-pytav-pro-derevo-brusky-kva.md) - до роботи
+* [Зробити замовлення в CVS](zrobyty-zamovlennia-v-cvs.md) - до роботи
+* [Знайти, де підстригтися перед фестивалем](znaity-de-pidstryhtysia-pered-festyvalem.md) - до роботи
+* [Перебрати речі в машині: частина перекладена в RV у Мелени — забрати назад у машину](perebraty-rechi-v-mashyni-chastyna-perekladena-v-rv-u-meleny.md) - до роботи
+* [Відсортувати речі: що беру на Burning Man, що лишається; машина лишається в Ріно](vidsortuvaty-rechi-shcho-beru-na-burning-man-shcho-lyshaiets.md) - до роботи
+* [Дозамовити особисті речі, потрібні на Burning Man — скласти список](dozamovyty-osobysti-rechi-potribni-na-burning-man-sklasty-sp.md) - до роботи
