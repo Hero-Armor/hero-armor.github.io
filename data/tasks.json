@@ -2209,5 +2209,131 @@
   "status": "todo",
   "owner": "ivan",
   "area": "logistics"
+ },
+ {
+  "task": "Замовити ковдри для перевезення WEN 72×80, 4 шт — $39.99",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
+ },
+ {
+  "task": "Замовити стяжні ремені Jack Boss 1″×15 ft, 4 шт — $19.99",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
+ },
+ {
+  "task": "Дерево на транспортування: бруски куплені на смітнику, ФАНЕРИ не вистачає — докупити або взяти в Марини",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
+ },
+ {
+  "task": "Знайти магазин із бракованим/уціненим деревом у Bay Area — заїхати і взяти фанеру дешево",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
+ },
+ {
+  "task": "Аудіо 1 · Налаштувати сенсор радара",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Аудіо 2 · Підключити тимчасовий динамік для тестів (штатний у роботі під покраскою)",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Аудіо 3 · Залити прошивку",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Аудіо 4 · Протестувати вузол на коротких дротах, БЕЗ робота",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Аудіо 5 · Тимчасово підключити до робота і перевірити в зборі",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Аудіо 6 · Поставити в носок ноги сенсор на витій парі (той, що в термоусадці) — ПІСЛЯ тестів",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Аудіо 7 · ПИТАННЯ: яка фінальна довжина витої пари до носка? Від неї залежить, лишаємо 256000 бод чи переводимо на 9600",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Повернення на Amazon — зібрати і здати",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Проконтролювати, чи зробили дівчата прибирання",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Дізнатись, як забрати ключі від нової квартири — щоб дівчата прибрали і там",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Дороблити договір з Ніккі по квартирі",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Відправити гроші за квартиру — ТІЛЬКИ після того, як закритий договір",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Попросити Пашу повернути обладнання назад у Spectrum",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "personal"
+ },
+ {
+  "task": "Спитати в Марини про фанеру: Іван питав про дерево — бруски квадратні кутові, які тягнуть конструкцію, є, а фанери не вистачає",
+  "system": "project",
+  "status": "todo",
+  "owner": "liza",
+  "area": "liza"
  }
 ]

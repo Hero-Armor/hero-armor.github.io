@@ -271,3 +271,21 @@
 * [Покраска 9 · Підфарбувати навколо лампочок після зняття скотчів](pokraska-9-pidfarbuvaty-navkolo-lampochok-pislia-zniattia-sk.md) - до роботи
 * [Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова](vyrishyty-po-vzhyvanii-stantsii-u-bay-area-zaraz-ie-delta-ma.md) - до роботи
 * [Замовити знімач задирок AFA Tooling $9.99 — Noga не встигає (30.08-02.09)](zamovyty-znimach-zadyrok-afa-tooling-9-99-noga-ne-vstyhaie-3.md) - до роботи
+* [Замовити ковдри для перевезення WEN 72×80, 4 шт — $39.99](zamovyty-kovdry-dlia-perevezennia-wen-72-80-4-sht-39-99.md) - до роботи
+* [Замовити стяжні ремені Jack Boss 1″×15 ft, 4 шт — $19.99](zamovyty-stiazhni-remeni-jack-boss-1-15-ft-4-sht-19-99.md) - до роботи
+* [Дерево на транспортування: бруски куплені на смітнику, ФАНЕРИ не вистачає — докупити або взяти в Марини](derevo-na-transportuvannia-brusky-kupleni-na-smitnyku-fanery.md) - до роботи
+* [Знайти магазин із бракованим/уціненим деревом у Bay Area — заїхати і взяти фанеру дешево](znaity-mahazyn-iz-brakovanym-utsinenym-derevom-u-bay-area-za.md) - до роботи
+* [Аудіо 1 · Налаштувати сенсор радара](audio-1-nalashtuvaty-sensor-radara.md) - до роботи
+* [Аудіо 2 · Підключити тимчасовий динамік для тестів (штатний у роботі під покраскою)](audio-2-pidkliuchyty-tymchasovyi-dynamik-dlia-testiv-shtatny.md) - до роботи
+* [Аудіо 3 · Залити прошивку](audio-3-zalyty-proshyvku.md) - до роботи
+* [Аудіо 4 · Протестувати вузол на коротких дротах, БЕЗ робота](audio-4-protestuvaty-vuzol-na-korotkykh-drotakh-bez-robota.md) - до роботи
+* [Аудіо 5 · Тимчасово підключити до робота і перевірити в зборі](audio-5-tymchasovo-pidkliuchyty-do-robota-i-pereviryty-v-zbo.md) - до роботи
+* [Аудіо 6 · Поставити в носок ноги сенсор на витій парі (той, що в термоусадці) — ПІСЛЯ тестів](audio-6-postavyty-v-nosok-nohy-sensor-na-vytii-pari-toi-shch.md) - до роботи
+* [Аудіо 7 · ПИТАННЯ: яка фінальна довжина витої пари до носка? Від неї залежить, лишаємо 256000 бод чи переводимо на 9600](audio-7-pytannia-iaka-finalna-dovzhyna-vytoi-pary-do-noska-v.md) - до роботи
+* [Повернення на Amazon — зібрати і здати](povernennia-na-amazon-zibraty-i-zdaty.md) - до роботи
+* [Проконтролювати, чи зробили дівчата прибирання](prokontroliuvaty-chy-zrobyly-divchata-prybyrannia.md) - до роботи
+* [Дізнатись, як забрати ключі від нової квартири — щоб дівчата прибрали і там](diznatys-iak-zabraty-kliuchi-vid-novoi-kvartyry-shchob-divch.md) - до роботи
+* [Дороблити договір з Ніккі по квартирі](doroblyty-dohovir-z-nikki-po-kvartyri.md) - до роботи
+* [Відправити гроші за квартиру — ТІЛЬКИ після того, як закритий договір](vidpravyty-hroshi-za-kvartyru-tilky-pislia-toho-iak-zakrytyi.md) - до роботи
+* [Попросити Пашу повернути обладнання назад у Spectrum](poprosyty-pashu-povernuty-obladnannia-nazad-u-spectrum.md) - до роботи
+* [Спитати в Марини про фанеру: Іван питав про дерево — бруски квадратні кутові, які тягнуть конструкцію, є, а фанери не вистачає](spytaty-v-maryny-pro-faneru-ivan-pytav-pro-derevo-brusky-kva.md) - до роботи

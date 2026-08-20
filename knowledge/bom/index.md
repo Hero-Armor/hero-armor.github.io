@@ -242,7 +242,7 @@
 * [Дуйка акумуляторна WOLFBOX MF200 (змінна батарея)](duika-akumuliatorna-wolfbox-mf200-zminna-batareia.md) - $85–102, купити
 * [Запасна батарея до WOLFBOX MF200, 37 Вт·год](zapasna-batareia-do-wolfbox-mf200-37-vt-hod.md) - $14.39, купити
 * [Дуйка акумуляторна WOLFBOX MF70](duika-akumuliatorna-wolfbox-mf70.md) - $49.99, купити
-* [Дуйка акумуляторна WOLFBOX MF50 (MegaFlow 50)](duika-akumuliatorna-wolfbox-mf50-megaflow-50.md) - $33.99, купити
+* [Дуйка акумуляторна WOLFBOX MF50 (MegaFlow 50)](duika-akumuliatorna-wolfbox-mf50-megaflow-50.md) - $33.99, є
 * [Праймер під пластик — Rust-Oleum Specialty Plastic Primer 209460, 6 балонів](praimer-pid-plastyk-rust-oleum-specialty-plastic-primer-2094.md) - $34.90, є
 * [Праймер під пластик — X-I-M UMA спрей 12 oz](praimer-pid-plastyk-x-i-m-uma-sprei-12-oz.md) - $28.02, купити
 * [Ганчірки бавовняні (трикотаж, як футболки) — Ace, 4 lb](hanchirky-bavovniani-trykotazh-iak-futbolky-ace-4-lb.md) - $5.99/фунт, є
@@ -291,3 +291,5 @@
 * [Знімач задирок Sabre/аналог — заміна Milwaukee 49-66-4588: Sabre Tools 9/16″ × 6″ магнітна](znimach-zadyrok-sabre-analoh-zamina-milwaukee-49-66-4588-sab.md) - $7.99, купити
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) - $21.88, купити
 * [Знімач задирок AFA Tooling, 11 лез M2 HSS, алюмінієва ручка](znimach-zadyrok-afa-tooling-11-lez-m2-hss-aliuminiieva-ruchk.md) - $9.99, купити
+* [Анкери-шпильки J-подібні 12″ × 1/4″, 10 шт — кріплення ліхтариків до землі](ankery-shpylky-j-podibni-12-1-4-10-sht-kriplennia-likhtaryki.md) - $12.99, купити
+* [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, купити

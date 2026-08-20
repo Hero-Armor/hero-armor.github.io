@@ -65,6 +65,13 @@ generated: { by: "process:site-build" }
 * [Радар у носку: нахилити на 10-15° угору, металевий екран за модулем проти задньої пелюстки, жорстке кріплення. Потім підібрати поріг trig ходою по живому екрану /live](/tasks/radar-u-nosku-nakhylyty-na-10-15-uhoru-metalevyi-ekran-za-mo.md) — до роботи
 * [Дороблення аудіо-вузла до кінця](/tasks/doroblennia-audio-vuzla-do-kintsia.md) — в роботі
 * [Тимчасовий динамік для тестів аудіо — штатний стоїть у роботі, до нього не підійти під час покраски [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](/tasks/tymchasovyi-dynamik-dlia-testiv-audio-shtatnyi-stoit-u-robot.md) — готово
+* [Аудіо 1 · Налаштувати сенсор радара](/tasks/audio-1-nalashtuvaty-sensor-radara.md) — до роботи
+* [Аудіо 2 · Підключити тимчасовий динамік для тестів (штатний у роботі під покраскою)](/tasks/audio-2-pidkliuchyty-tymchasovyi-dynamik-dlia-testiv-shtatny.md) — до роботи
+* [Аудіо 3 · Залити прошивку](/tasks/audio-3-zalyty-proshyvku.md) — до роботи
+* [Аудіо 4 · Протестувати вузол на коротких дротах, БЕЗ робота](/tasks/audio-4-protestuvaty-vuzol-na-korotkykh-drotakh-bez-robota.md) — до роботи
+* [Аудіо 5 · Тимчасово підключити до робота і перевірити в зборі](/tasks/audio-5-tymchasovo-pidkliuchyty-do-robota-i-pereviryty-v-zbo.md) — до роботи
+* [Аудіо 6 · Поставити в носок ноги сенсор на витій парі (той, що в термоусадці) — ПІСЛЯ тестів](/tasks/audio-6-postavyty-v-nosok-nohy-sensor-na-vytii-pari-toi-shch.md) — до роботи
+* [Аудіо 7 · ПИТАННЯ: яка фінальна довжина витої пари до носка? Від неї залежить, лишаємо 256000 бод чи переводимо на 9600](/tasks/audio-7-pytannia-iaka-finalna-dovzhyna-vytoi-pary-do-noska-v.md) — до роботи
 
 # Закупівля
 
