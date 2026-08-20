@@ -281,3 +281,6 @@
 * [Світловідбивний вініл, аркуші 12×12″ (під Cricut)](svitlovidbyvnyi-vinil-arkushi-12-12-pid-cricut.md) - , є
 * [Таймер MISOL 12 В, 25 А, програмований з екраном](taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) - , є
 * [Скляні мікрокульки світловідбивні, 1 фунт — посипка по мокрому лаку](skliani-mikrokulky-svitlovidbyvni-1-funt-posypka-po-mokromu-.md) - $19.97, купити
+* [Стяжні ремені з храповиком Jack Boss, 1″ × 15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-z-khrapovykom-jack-boss-1-15-ft-4-sht-rozryv.md) - $0 — уточнити, купити
+* [Ковдри для перевезення WEN 72″×80″, 4 шт](kovdry-dlia-perevezennia-wen-72-80-4-sht.md) - $39.99, купити
+* [Ковдри для перевезення Amazon Basics 72″×80″, 6 шт](kovdry-dlia-perevezennia-amazon-basics-72-80-6-sht.md) - $48.14, купити
