@@ -294,3 +294,4 @@
 * [Перебрати речі в машині: частина перекладена в RV у Мелени — забрати назад у машину](perebraty-rechi-v-mashyni-chastyna-perekladena-v-rv-u-meleny.md) - до роботи
 * [Відсортувати речі: що беру на Burning Man, що лишається; машина лишається в Ріно](vidsortuvaty-rechi-shcho-beru-na-burning-man-shcho-lyshaiets.md) - до роботи
 * [Дозамовити особисті речі, потрібні на Burning Man — скласти список](dozamovyty-osobysti-rechi-potribni-na-burning-man-sklasty-sp.md) - до роботи
+* [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) - до роботи

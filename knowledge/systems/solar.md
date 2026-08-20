@@ -74,6 +74,7 @@ generated: { by: "process:site-build" }
 * [Купити сонячні панелі для масиву — потужність не обрана](/tasks/kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — до роботи
 * [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](/tasks/zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) — до роботи
 * [Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова](/tasks/vyrishyty-po-vzhyvanii-stantsii-u-bay-area-zaraz-ie-delta-ma.md) — до роботи
+* [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](/tasks/nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) — до роботи
 
 # Закупівля
 
@@ -89,7 +90,7 @@ generated: { by: "process:site-build" }
 * [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](/bom/bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) — $6.99 за 2 пари, купити
 * [Кабель XT150 для порту розширення (готовий)](/bom/kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) — ~$25, купити
 * [Дошки 2×4×8ft Douglas Fir](/bom/doshky-2-4-8ft-douglas-fir.md) — $36–45, купити
-* [Lag screws 3/8"×10" hex head, оцинковані](/bom/lag-screws-3-8-10-hex-head-otsynkovani.md) — $19.99, купити
+* [Lag screws 3/8"×10" hex head, гарячий цинк, 25 шт](/bom/lag-screws-3-8-10-hex-head-hariachyi-tsynk-25-sht.md) — $35.99, купити
 * [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](/bom/simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) — $117.72 за лот — ⚠ фасовку не підтверджено, купити
 * [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](/bom/carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) — $17.62, купити
 * [Fender washers 3/8"×1.5", оцинковані](/bom/fender-washers-3-8-1-5-otsynkovani.md) — $12.97, купити

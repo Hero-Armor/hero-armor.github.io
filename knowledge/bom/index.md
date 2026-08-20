@@ -95,7 +95,7 @@
 * [GLEDOPTO ESP32 Mini WLED 5-24 В — контролер ядра](gledopto-esp32-mini-wled-5-24-v-kontroler-iadra.md) - $19.07, купити
 * [Понижувач 12 В → 5 В, 10 А (2 шт) — під ядро на спині](ponyzhuvach-12-v-5-v-10-a-2-sht-pid-iadro-na-spyni.md) - $14.99, купити
 * [Дошки 2×4×8ft Douglas Fir](doshky-2-4-8ft-douglas-fir.md) - $36–45, купити
-* [Lag screws 3/8"×10" hex head, оцинковані](lag-screws-3-8-10-hex-head-otsynkovani.md) - $19.99, купити
+* [Lag screws 3/8"×10" hex head, гарячий цинк, 25 шт](lag-screws-3-8-10-hex-head-hariachyi-tsynk-25-sht.md) - $35.99, купити
 * [Simpson Strong-Tie кутики (A21 framing angle або hurricane ties)](simpson-strong-tie-kutyky-a21-framing-angle-abo-hurricane-ti.md) - $117.72 за лот — ⚠ фасовку не підтверджено, купити
 * [Carriage bolts 3/8"×4" + гайки + шайби, оцинковані](carriage-bolts-3-8-4-haiky-shaiby-otsynkovani.md) - $17.62, купити
 * [Fender washers 3/8"×1.5", оцинковані](fender-washers-3-8-1-5-otsynkovani.md) - $12.97, купити
@@ -291,5 +291,5 @@
 * [Знімач задирок Sabre/аналог — заміна Milwaukee 49-66-4588: Sabre Tools 9/16″ × 6″ магнітна](znimach-zadyrok-sabre-analoh-zamina-milwaukee-49-66-4588-sab.md) - $7.99, купити
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) - $21.88, купити
 * [Знімач задирок AFA Tooling, 11 лез M2 HSS, алюмінієва ручка](znimach-zadyrok-afa-tooling-11-lez-m2-hss-aliuminiieva-ruchk.md) - $9.99, купити
-* [Анкери-шпильки J-подібні 12″ × 1/4″, 10 шт — кріплення ліхтариків до землі](ankery-shpylky-j-podibni-12-1-4-10-sht-kriplennia-likhtaryki.md) - $12.99, купити
+* [Анкери-шпильки J-подібні 12″ × 1/4″, 20 шт — кріплення ліхтариків до землі](ankery-shpylky-j-podibni-12-1-4-20-sht-kriplennia-likhtaryki.md) - $23.99, купити
 * [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, купити

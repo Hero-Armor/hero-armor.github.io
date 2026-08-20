@@ -2370,5 +2370,12 @@
   "status": "todo",
   "owner": "ivan",
   "area": "personal"
+ },
+ {
+  "task": "Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md",
+  "system": "solar",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
  }
 ]
