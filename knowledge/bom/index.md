@@ -294,6 +294,6 @@
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) - $24.99, купити
 * [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, купити
 * [Кабель AUX 3.5 мм тато-тато, 1 фут, кутовий — ЦАП → підсилювач](kabel-aux-3-5-mm-tato-tato-1-fut-kutovyi-tsap-pidsyliuvach.md) - $6.49, купити
-* [Алюміній рифлений 0.063″ на підлогу подіуму — M-D 36×36″, 6 листів](aliuminii-ryflenyi-0-063-na-pidlohu-podiumu-m-d-36-36-6-lyst.md) - $98.97/лист = $593.82, купити
-* [Вініл щіткове срібло на підлогу подіуму — VViViD Brushed, рулон 10×5 ft](vinil-shchitkove-sriblo-na-pidlohu-podiumu-vvivid-brushed-ru.md) - $69.98, купити
+* [Алюміній рифлений 1/16″ з клейкою основою на підлогу подіуму — 48×48″, 5 листів (за кресленням 06.13)](aliuminii-ryflenyi-1-16-z-kleikoiu-osnovoiu-na-pidlohu-podiu.md) - $145.45/лист = $727.25 (ціна з таблиці Володимира 20.07), купити
+* [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) - $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) - $232.14, купити
