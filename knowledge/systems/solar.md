@@ -51,7 +51,7 @@ generated: { by: "process:site-build" }
 
 * [Перерахувати раму під фактичний масив після вибору панелей](/tasks/pererakhuvaty-ramu-pid-faktychnyi-masyv-pislia-vyboru-panele.md) — чекаємо
 * [Тест EcoFlow: «DC always on» під навантаженням 1.6 Вт на всю ніч](/tasks/test-ecoflow-dc-always-on-pid-navantazhenniam-1-6-vt-na-vsiu.md) — чекаємо
-* [Вирішити скільки станцій і яку модель](/tasks/vyrishyty-skilky-stantsii-i-iaku-model.md) — чекаємо
+* [Вирішити скільки станцій і яку модель [ЗАКРИТО 19.08: замовлено EcoFlow DELTA 3 Ultra Plus, $1752.90, прибуття 25.08]](/tasks/vyrishyty-skilky-stantsii-i-iaku-model-zakryto-19-08-zamovle.md) — готово
 * [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — готово
 * [Спроєктувати раму сонячного масиву під вітер плайї](/tasks/sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) — чекаємо
 * [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) — в роботі
@@ -69,9 +69,10 @@ generated: { by: "process:site-build" }
 * [Надіслати лист-запит на панель і акумулятор (або станцію) — текст готовий, бракує адресата](/tasks/nadislaty-lyst-zapyt-na-panel-i-akumuliator-abo-stantsiiu-te.md) — чекаємо
 * [Чекаємо відповідь Shing (Starchild) по акумулятору і панелі — можуть дати безкоштовно](/tasks/chekaiemo-vidpovid-shing-starchild-po-akumuliatoru-i-paneli-.md) — чекаємо
 * [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](/tasks/spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) — чекаємо
-* [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите](/tasks/vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) — до роботи
+* [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите [ЗАКРИТО 19.08: замовлено EcoFlow DELTA 3 Ultra Plus, $1752.90, прибуття 25.08]](/tasks/vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) — готово
 * [ПИТАННЯ ДО МЕНЕ: підтвердити, що вчорашнє замовлення в Home Depot — це саме станція EcoFlow. Лист «Order confirmed» від 19.08 08:59 є, але Home Depot не пише назв у листі](/tasks/pytannia-do-mene-pidtverdyty-shcho-vchorashnie-zamovlennia-v.md) — чекаємо
 * [Купити сонячні панелі для масиву — потужність не обрана](/tasks/kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — до роботи
+* [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](/tasks/zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) — до роботи
 
 # Закупівля
 
@@ -106,7 +107,7 @@ generated: { by: "process:site-build" }
 * [Магнітна головка 9/16" × 6" під шуруповерт (Milwaukee SHOCKWAVE 49-66-4588)](/bom/mahnitna-holovka-9-16-6-pid-shurupovert-milwaukee-shockwave-.md) — $12.73/шт, купити
 * [Velcro кабельні стяжки (для проводки від панелі)](/bom/velcro-kabelni-stiazhky-dlia-provodky-vid-paneli.md) — $15.89, купити
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/bom/rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) — $93.01, купити
-* [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](/bom/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) — $1,599.00, купити
+* [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](/bom/stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) — $1,599.00, є
 * [Кабель від станції до щита під Anderson, переріз на 30 А](/bom/kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) — —, купити
 * [Роз'єми Anderson Powerpole 45 А, контакти під 10 AWG](/bom/roziemy-anderson-powerpole-45-a-kontakty-pid-10-awg.md) — $~15, купити
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](/bom/roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) — $~17, купити

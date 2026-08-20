@@ -33,7 +33,7 @@
 * [Вирішити: 12 В MR16 на шині 24 В через ШІМ чи step-down](vyrishyty-12-v-mr16-na-shyni-24-v-cherez-shim-chy-step-down.md) - готово
 * [Вирішити: врізні вогні торця в нашу лінію чи автономні сонячні](vyrishyty-vrizni-vohni-tortsia-v-nashu-liniiu-chy-avtonomni-.md) - готово
 * [Звірити статуси закупівлі світла з інвойсом](zviryty-statusy-zakupivli-svitla-z-invoisom.md) - чекаємо
-* [Вирішити скільки станцій і яку модель](vyrishyty-skilky-stantsii-i-iaku-model.md) - чекаємо
+* [Вирішити скільки станцій і яку модель [ЗАКРИТО 19.08: замовлено EcoFlow DELTA 3 Ultra Plus, $1752.90, прибуття 25.08]](vyrishyty-skilky-stantsii-i-iaku-model-zakryto-19-08-zamovle.md) - готово
 * [Звірити паспорт станції: ліміт сонячного входу](zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) - готово
 * [Спроєктувати раму сонячного масиву під вітер плайї](sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) - чекаємо
 * [Докупити товщий кабель: AWG 6 магістраль, AWG 8 декор](dokupyty-tovshchyi-kabel-awg-6-mahistral-awg-8-dekor.md) - готово
@@ -219,7 +219,7 @@
 * [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) - чекаємо
 * [Радар у носку: нахилити на 10-15° угору, металевий екран за модулем проти задньої пелюстки, жорстке кріплення. Потім підібрати поріг trig ходою по живому екрану /live](radar-u-nosku-nakhylyty-na-10-15-uhoru-metalevyi-ekran-za-mo.md) - до роботи
 * [Замовити дуйку WOLFBOX MF70 $49.99 — заміна поверненої MF100](zamovyty-duiku-wolfbox-mf70-49-99-zamina-povernenoi-mf100.md) - до роботи
-* [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите](vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) - до роботи
+* [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите [ЗАКРИТО 19.08: замовлено EcoFlow DELTA 3 Ultra Plus, $1752.90, прибуття 25.08]](vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) - готово
 * [Купити друге робоче шатро 10×10 — Everbilt $139 самовивозом у Home Depot San Mateo (44 шт) або Eurmax $172.97 з Amazon [ЗАКРИТО 19.08 — куплено]](kupyty-druhe-roboche-shatro-10-10-everbilt-139-samovyvozom-u.md) - готово
 * [Скасувати два непотрібні замовлення на Amazon — назвати які](skasuvaty-dva-nepotribni-zamovlennia-na-amazon-nazvaty-iaki.md) - до роботи
 * [Прислати посилання від Міші на річ для RV — я її не знайшов у жодному архіві чатів](pryslaty-posylannia-vid-mishi-na-rich-dlia-rv-ia-ii-ne-znais.md) - до роботи
@@ -243,3 +243,4 @@
 * [Зняти по місцю ширину кузова між арками і з кришкою — ящик 53.2″ має лягти зверху на арки, перевірити чи знімається кришка](zniaty-po-mistsiu-shyrynu-kuzova-mizh-arkamy-i-z-kryshkoiu-i.md) - до роботи
 * [Проба світловідбиття на обрізку броні: мокрий лак + скляні кульки, подивитись у світлі ліхтаря вночі](proba-svitlovidbyttia-na-obrizku-broni-mokryi-lak-skliani-ku.md) - до роботи
 * [Замовити скляні світловідбивні кульки — 1 lb $19.97 або 4.4 lb $27.99, доставка 21.08](zamovyty-skliani-svitlovidbyvni-kulky-1-lb-19-97-abo-4-4-lb-.md) - до роботи
+* [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) - до роботи
