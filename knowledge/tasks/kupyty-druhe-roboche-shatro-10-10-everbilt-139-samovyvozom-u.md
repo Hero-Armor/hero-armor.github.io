@@ -1,9 +1,9 @@
 ---
 type: "Task"
-title: "Купити друге робоче шатро 10×10 — Everbilt $139 самовивозом у Home Depot San Mateo (44 шт) або Eurmax $172.97 з Amazon"
+title: "Купити друге робоче шатро 10×10 — Everbilt $139 самовивозом у Home Depot San Mateo (44 шт) або Eurmax $172.97 з Amazon [ЗАКРИТО 19.08 — куплено]"
 tags: ["project"]
-task_status: "todo"
+task_status: "done"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · система: [Проєкт](/project.md)
+Статус: **готово** · система: [Проєкт](/project.md)

@@ -20,7 +20,7 @@
 * [Замовити решту BOM одним кошиком](zamovyty-reshtu-bom-odnym-koshykom.md) - чекаємо
 * [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) - готово
 * [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) - чекаємо
-* [Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу](vikno-v-broni-pid-radar-60-60-mm-abs-akryl-sklotkanyna-bez-m.md) - чекаємо
+* [Вікно в броні під радар: ~60×60 мм ABS/акрил/склотканина, БЕЗ металу [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](vikno-v-broni-pid-radar-60-60-mm-abs-akryl-sklotkanyna-bez-m.md) - готово
 * [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) - готово
 * [Пилозахист динаміка: гриль + тканина, мембрана вниз](pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) - готово
 * [Створити repo hero-armor (моно-репо) + GitHub Pages](stvoryty-repo-hero-armor-mono-repo-github-pages.md) - готово
@@ -63,7 +63,7 @@
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) - до роботи
 * [Прошити ESP32 і пройти пʼять перевірок на столі (картка, звук, радар, BLE, потенціометр ампа)](proshyty-esp32-i-proity-piat-perevirok-na-stoli-kartka-zvuk-.md) - готово
 * [Звірити склад коробок: у листі Amazon 18 позицій, у нашому списку 19](zviryty-sklad-korobok-u-lysti-amazon-18-pozytsii-u-nashomu-s.md) - до роботи
-* [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду](nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) - до роботи
+* [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) - готово
 * [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) - чекаємо
 * [Заземлити металеву раму подіуму на мінус шини](zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) - чекаємо
 * [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) - готово
@@ -83,7 +83,7 @@
 * [Обрати кабель магістралі станція → щит під Anderson 30 А](obraty-kabel-mahistrali-stantsiia-shchyt-pid-anderson-30-a.md) - до роботи
 * [Оформити кошик Amazon — 45 позицій, ~$1 110](oformyty-koshyk-amazon-45-pozytsii-1-110.md) - чекаємо
 * [Звірити руками, скільки рулонів неону фізично лежить у Марселя](zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) - до роботи
-* [Купити стрічки ORALITE V98 на eBay (біла + жовта)](kupyty-strichky-oralite-v98-na-ebay-bila-zhovta.md) - до роботи
+* [Купити стрічки ORALITE V98 на eBay (біла + жовта) [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](kupyty-strichky-oralite-v98-na-ebay-bila-zhovta-zakryto-19-0.md) - готово
 * [Замовити ORALITE V98 і 3M 983-10 з eBay](zamovyty-oralite-v98-i-3m-983-10-z-ebay.md) - до роботи
 * [Вирішити отвір на тильному боці кисті під лампу](vyrishyty-otvir-na-tylnomu-botsi-kysti-pid-lampu.md) - до роботи
 * [Обрати кабель на гілку Гр.2 замість поверненої бухти](obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) - до роботи
@@ -111,10 +111,10 @@
 * [Просвердлити по 3 отвори під M10 у 8 пластинах TP57 — рівно під притискну пластину анкера](prosverdlyty-po-3-otvory-pid-m10-u-8-plastynakh-tp57-rivno-p.md) - до роботи
 * [Міст до браузера Івана (Comet) не відповідає — Mac недоступний по ssh. Через це знімки замовлень Amazon застрягли на 7.08, і звірка закупівлі сліпа. Підняти: ssh mac '~/bin/comet-cdp.sh start'](mist-do-brauzera-ivana-comet-ne-vidpovidaie-mac-nedostupnyi-.md) - до роботи
 * [Ідентифікувати лампи MR16, що приїхали 10.08 (замовлення поза нашою базою). Якщо на коробці не Luxrite — перевибір: стенд 31.07 показав, що саме Luxrite не мерехтить на мінімумі під ШІМ-диммером, на інший бренд цей результат не переноситься, треба перетестувати перед монтажем](identyfikuvaty-lampy-mr16-shcho-pryikhaly-10-08-zamovlennia-.md) - до роботи
-* [Художниця: підтвердити ФІНІШ лаку — матовий/сатиновий замість глянцю. Дзеркального хрому нема (Іван 12.08: потрібен затертий метал), тому проблема з лакуванням хрому знята, лишилось питання блиску](khudozhnytsia-pidtverdyty-finish-laku-matovyi-satynovyi-zami.md) - чекаємо
+* [Художниця: підтвердити ФІНІШ лаку — матовий/сатиновий замість глянцю. Дзеркального хрому нема (Іван 12.08: потрібен затертий метал), тому проблема з лакуванням хрому знята, лишилось питання блиску [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](khudozhnytsia-pidtverdyty-finish-laku-matovyi-satynovyi-zami.md) - готово
 * [ЗАКРИТО 12.08: пластик ASA, не PLA — окремий пластиковий праймер не обовʼязковий](zakryto-12-08-plastyk-asa-ne-pla-okremyi-plastykovyi-praimer.md) - готово
 * [ЗАКРИТО 12.08: гнучких деталей у роботі нема взагалі (Іван) — питання зняте](zakryto-12-08-hnuchkykh-detalei-u-roboti-nema-vzahali-ivan-p.md) - готово
-* [Замовити 4 тестові балони фарби і пофарбувати однакові обрізки ASA: Rust-Oleum Painter Touch 2X Gloss Deep Blue 334032, Benjamin Moore Old Glory 811 (кастомний аерозоль у Gray's), BEHR Premium Citrus Orange SP-120 Gloss, Benjamin Moore Buttercup 2154-30 (кастомний аерозоль)](zamovyty-4-testovi-balony-farby-i-pofarbuvaty-odnakovi-obriz.md) - до роботи
+* [Замовити 4 тестові балони фарби і пофарбувати однакові обрізки ASA: Rust-Oleum Painter Touch 2X Gloss Deep Blue 334032, Benjamin Moore Old Glory 811 (кастомний аерозоль у Gray's), BEHR Premium Citrus Orange SP-120 Gloss, Benjamin Moore Buttercup 2154-30 (кастомний аерозоль) [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](zamovyty-4-testovi-balony-farby-i-pofarbuvaty-odnakovi-obriz.md) - готово
 * [Оформити повернення димера SUPERNIGHT/Lelukee B095M4JS31 на Amazon (замовлення 113-4638535-6465017 від 31.07, $15.49, набір з 2 шт) — забирає половину потужності](oformyty-povernennia-dymera-supernight-lelukee-b095m4js31-na.md) - до роботи
 * [Димер: рішення за Іваном. Найдешевше і без ризику — лишити перший Greenclick (він працює бездоганно) і прибрати його єдиний недолік: тонкі дроти обжати в наконечники і завести в клемну колодку за $5 у тій самій герметичній коробці. Якщо хочеться новий блок з рідними клемами — 12Vmonster B076MVT1CR, 30 А, метал, сертифікація ETL/cULus, ~$16, скарг на нагрів у відгуках нема](dymer-rishennia-za-ivanom-naideshevshe-i-bez-ryzyku-lyshyty-.md) - чекаємо
 * [Різ алюмінієвої підлоги: рішення за Іваном — самі (оснастка $50-100) чи майстерня. Дзвонити за реальною ціною: Platinum Water Jet, Campbell (408) 796-7877 — найближчі, 20 миль; Advanced Laser & WaterJet, Fremont (408) 486-0700 — найкращі відгуки. Оцінка майстерні $500-2000, котирування нема](riz-aliuminiievoi-pidlohy-rishennia-za-ivanom-sami-osnastka-.md) - до роботи
@@ -123,10 +123,10 @@
 * [Скасувати на Amazon повернення двох прожекторів Gardencoin — лишаємо всі 10 (рішення Івана 13.08)](skasuvaty-na-amazon-povernennia-dvokh-prozhektoriv-gardencoi.md) - до роботи
 * [Перевірити, скільки лишилось від бухти 18 AWG силікон (траса заміряна 13.08 — 3 м від мозку до голови)](pereviryty-skilky-lyshylos-vid-bukhty-18-awg-sylikon-trasa-z.md) - до роботи
 * [Відео живого сайту hero-armor.com (video1.mp4 54М, video2.mp4 7.4М) не потрапляють у новий бекап (виключені *.mp4) — перевірити, чи є інша копія (Google Drive), і якщо ні — вирішити чи потрібен окремий бекап медіа](video-zhyvoho-saitu-hero-armor-com-video1-mp4-54m-video2-mp4.md) - до роботи
-* [Ліза: прислати фото фізичного тестового зразка хрому (ASA → праймер → Rust-Oleum Chrome, Sample D з її плану)](liza-pryslaty-foto-fizychnoho-testovoho-zrazka-khromu-asa-pr.md) - чекаємо
+* [Ліза: прислати фото фізичного тестового зразка хрому (ASA → праймер → Rust-Oleum Chrome, Sample D з її плану) [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](liza-pryslaty-foto-fizychnoho-testovoho-zrazka-khromu-asa-pr.md) - готово
 * [Ліза: підтвердити кількість балонів білого глянцевого спрею (Rust-Oleum Gloss White 334048) — у оригінальному списку кількість не вказана](liza-pidtverdyty-kilkist-baloniv-biloho-hliantsevoho-spreiu-.md) - чекаємо
 * [Ліза: підтвердити заміну Behr yellow-orange gloss на Rust-Oleum Real Orange / Marigold 249862 (точного відповідника Behr в аерозолі нема)](liza-pidtverdyty-zaminu-behr-yellow-orange-gloss-na-rust-ole.md) - чекаємо
-* [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї?](pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) - чекаємо
+* [Питання до Лізи: хром лишається дзеркальним, отже лак поверх нього вбиває дзеркало (підтверджено форумами), а сам SKU маркований interior-only — чим захищаємо хром від тижня на плайї? [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](pytannia-do-lizy-khrom-lyshaietsia-dzerkalnym-otzhe-lak-pove.md) - готово
 * [Вирішити, де ставити розʼєми фігура↔подіум: під настилом чи вище. Від цього довжина хвостів і місце отвору](vyrishyty-de-stavyty-roziemy-fihura-podium-pid-nastylom-chy-.md) - чекаємо
 * [Просвердлити отвір Ø25 мм під джгут фігури (пропускає кабельну половину LP-12 по одній)](prosverdlyty-otvir-25-mm-pid-dzhhut-fihury-propuskaie-kabeln.md) - до роботи
 * [Замовити розʼєм CNLINKO M12 4 контакти на живлення світла фігури ($10.13)](zamovyty-roziem-cnlinko-m12-4-kontakty-na-zhyvlennia-svitla-.md) - до роботи
@@ -146,7 +146,7 @@
 * [Звірити склад шести замовлень від 13.08 із закупівлею — у листах Amazon складу немає, потрібен кабінет або міст до браузера](zviryty-sklad-shesty-zamovlen-vid-13-08-iz-zakupivleiu-u-lys.md) - до роботи
 * [Глянути ціну в доларах на білу стрічку SWRT 2"×30 ft (2 рулони) — якщо близько $12, беремо її замість ORALITE білої за $42.99](hlianuty-tsinu-v-dolarakh-na-bilu-strichku-swrt-2-30-ft-2-ru.md) - до роботи
 * [Не купувати страховку Home Depot на станцію ($300) — рішення 13.08. Якщо передумаємо, план можна докупити протягом 90 днів після покупки](ne-kupuvaty-strakhovku-home-depot-na-stantsiiu-300-rishennia.md) - готово
-* [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay](zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) - до роботи
+* [Замовити стрічки ORALITE V98: біла 20 або 30 ft + жовта School Bus Yellow 5 ft, один продавець eBay [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](zamovyty-strichky-oralite-v98-bila-20-abo-30-ft-zhovta-schoo.md) - готово
 * [Три мови hero-armor.com випущені 16.08 за словом Івана — Ліза читає вже на живому](try-movy-hero-armor-com-vypushcheni-16-08-za-slovom-ivana-li.md) - готово
 * [Знято 15.08: мінівен не підходить — обмір креслення дав 47.7-50″ при отворі 49″ (DEC-145)](zniato-15-08-miniven-ne-pidkhodyt-obmir-kreslennia-dav-47-7-.md) - готово
 * [Search Console: натиснути VALIDATE FIX по двох звітах (author + datePublished) — API цього не вміє, тільки інтерфейс](search-console-natysnuty-validate-fix-po-dvokh-zvitakh-autho.md) - до роботи
@@ -176,9 +176,9 @@
 * [Графік збірки, крок 4: зачистка деталей корпусу (03.08–14.08)](hrafik-zbirky-krok-4-zachystka-detalei-korpusu-03-08-14-08.md) - до роботи
 * [Графік збірки, крок 5: деталізація зʼєднань корпусу (10.08–17.08)](hrafik-zbirky-krok-5-detalizatsiia-ziednan-korpusu-10-08-17-.md) - до роботи
 * [Графік збірки, крок 6: шпаклювання корпусу (20.08–21.08)](hrafik-zbirky-krok-6-shpakliuvannia-korpusu-20-08-21-08.md) - до роботи
-* [Графік збірки, крок 7: фарбування корпусу (23.08–25.08)](hrafik-zbirky-krok-7-farbuvannia-korpusu-23-08-25-08.md) - до роботи
+* [Графік збірки, крок 7: фарбування корпусу (23.08–25.08) [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](hrafik-zbirky-krok-7-farbuvannia-korpusu-23-08-25-08-zakryto.md) - готово
 * [Графік збірки, крок 8: монтаж каркасу подіуму (08.08–17.08)](hrafik-zbirky-krok-8-montazh-karkasu-podiumu-08-08-17-08.md) - до роботи
-* [Графік збірки, крок 9: фарбування подіуму (18.08–18.08)](hrafik-zbirky-krok-9-farbuvannia-podiumu-18-08-18-08.md) - до роботи
+* [Графік збірки, крок 9: фарбування подіуму (18.08–18.08) [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](hrafik-zbirky-krok-9-farbuvannia-podiumu-18-08-18-08-zakryto.md) - готово
 * [Графік збірки, крок 10: монтаж електрики в подіум (15.08–17.08)](hrafik-zbirky-krok-10-montazh-elektryky-v-podium-15-08-17-08.md) - до роботи
 * [Графік збірки, крок 11: облицювання подіуму алюмінієм (15.08–17.08)](hrafik-zbirky-krok-11-oblytsiuvannia-podiumu-aliuminiiem-15-.md) - до роботи
 * [Графік збірки, крок 12: монтаж LED Strip в подіум (18.08–20.08)](hrafik-zbirky-krok-12-montazh-led-strip-v-podium-18-08-20-08.md) - до роботи
@@ -205,35 +205,35 @@
 * [Закрити облік витрат: три уточнення від команди, і підсумок стає точним](zakryty-oblik-vytrat-try-utochnennia-vid-komandy-i-pidsumok-.md) - до роботи
 * [Підтвердити, чи генератор дадуть — від цього залежить половина ящика](pidtverdyty-chy-henerator-dadut-vid-tsoho-zalezhyt-polovyna-.md) - до роботи
 * [Надіслати лист-запит на панель і акумулятор (або станцію) — текст готовий, бракує адресата](nadislaty-lyst-zapyt-na-panel-i-akumuliator-abo-stantsiiu-te.md) - чекаємо
-* [Обрати праймер під ASA: X-I-M UMA чи Rust-Oleum Plastic Primer — у брифі стоїть NOT LOCKED](obraty-praimer-pid-asa-x-i-m-uma-chy-rust-oleum-plastic-prim.md) - до роботи
+* [Обрати праймер під ASA: X-I-M UMA чи Rust-Oleum Plastic Primer — у брифі стоїть NOT LOCKED [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](obraty-praimer-pid-asa-x-i-m-uma-chy-rust-oleum-plastic-prim.md) - готово
 * [Дізнатись у Богдана довжину кузова його пікапа: 5.5, 6.5 чи 8 футів](diznatys-u-bohdana-dovzhynu-kuzova-ioho-pikapa-5-5-6-5-chy-8.md) - до роботи
 * [Підтвердити, що труба з плечей знімається на час перевезення](pidtverdyty-shcho-truba-z-plechei-znimaietsia-na-chas-pereve.md) - до роботи
 * [Вирішити, як їде подіум: другим рейсом чи причепом разом із ящиком](vyrishyty-iak-ide-podium-druhym-reisom-chy-prychepom-razom-i.md) - до роботи
 * [Перерахувати логістику під ПОВЕРНЕННЯ В РІНО замість SF](pererakhuvaty-lohistyku-pid-povernennia-v-rino-zamist-sf.md) - до роботи
-* [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore](zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) - до роботи
+* [Закрити три позиції брифу, які досі NOT CONFIRMED: лак, жовтий і білий у версії Benjamin Moore [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](zakryty-try-pozytsii-bryfu-iaki-dosi-not-confirmed-lak-zhovt.md) - готово
 * [Turo Frontier: узяти в власника ПИСЬМОВИЙ дозвіл на Burning Man і ціну прибирання після плайї](turo-frontier-uziaty-v-vlasnyka-pysmovyi-dozvil-na-burning-m.md) - до роботи
 * [Підтвердити, що труба з плечей знімається — від цього залежить, чи ця машина взагалі підходить](pidtverdyty-shcho-truba-z-plechei-znimaietsia-vid-tsoho-zale.md) - до роботи
-* [Забрати 8 балонів хрому в Home Depot San Carlos (1125 Old County Rd)](zabraty-8-baloniv-khromu-v-home-depot-san-carlos-1125-old-co.md) - до роботи
+* [Забрати 8 балонів хрому в Home Depot San Carlos (1125 Old County Rd) [ЗАКРИТО 19.08 — куплено]](zabraty-8-baloniv-khromu-v-home-depot-san-carlos-1125-old-co.md) - готово
 * [Чекаємо відповідь Shing (Starchild) по акумулятору і панелі — можуть дати безкоштовно](chekaiemo-vidpovid-shing-starchild-po-akumuliatoru-i-paneli-.md) - чекаємо
 * [Спитано Shing, чи знає вона художників із SF із вільним місцем у машині — попутний вантаж](spytano-shing-chy-znaie-vona-khudozhnykiv-iz-sf-iz-vilnym-mi.md) - чекаємо
 * [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) - чекаємо
 * [Радар у носку: нахилити на 10-15° угору, металевий екран за модулем проти задньої пелюстки, жорстке кріплення. Потім підібрати поріг trig ходою по живому екрану /live](radar-u-nosku-nakhylyty-na-10-15-uhoru-metalevyi-ekran-za-mo.md) - до роботи
 * [Замовити дуйку WOLFBOX MF70 $49.99 — заміна поверненої MF100](zamovyty-duiku-wolfbox-mf70-49-99-zamina-povernenoi-mf100.md) - до роботи
 * [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите](vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) - до роботи
-* [Купити друге робоче шатро 10×10 — Everbilt $139 самовивозом у Home Depot San Mateo (44 шт) або Eurmax $172.97 з Amazon](kupyty-druhe-roboche-shatro-10-10-everbilt-139-samovyvozom-u.md) - до роботи
+* [Купити друге робоче шатро 10×10 — Everbilt $139 самовивозом у Home Depot San Mateo (44 шт) або Eurmax $172.97 з Amazon [ЗАКРИТО 19.08 — куплено]](kupyty-druhe-roboche-shatro-10-10-everbilt-139-samovyvozom-u.md) - готово
 * [Скасувати два непотрібні замовлення на Amazon — назвати які](skasuvaty-dva-nepotribni-zamovlennia-na-amazon-nazvaty-iaki.md) - до роботи
 * [Прислати посилання від Міші на річ для RV — я її не знайшов у жодному архіві чатів](pryslaty-posylannia-vid-mishi-na-rich-dlia-rv-ia-ii-ne-znais.md) - до роботи
 * [Прислати посилання на відео Марини — витягну аудіо, зроблю текст і зведу з нашим старим списком у чекліст](pryslaty-posylannia-na-video-maryny-vytiahnu-audio-zrobliu-t.md) - до роботи
-* [Купити гумові рукавички під покраску (не вінілові одноразові — під розчинник треба нітрил)](kupyty-humovi-rukavychky-pid-pokrasku-ne-vinilovi-odnorazovi.md) - до роботи
+* [Купити гумові рукавички під покраску (не вінілові одноразові — під розчинник треба нітрил) [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](kupyty-humovi-rukavychky-pid-pokrasku-ne-vinilovi-odnorazovi.md) - готово
 * [План повернень на Amazon — зібрати список, що і до якої дати можна здати](plan-povernen-na-amazon-zibraty-spysok-shcho-i-do-iakoi-daty.md) - до роботи
 * [Закрити Chrome на маку (Cmd+Q) і запустити ~/bin/chrome-cdp.sh main — після цього асистент бачить твої замовлення Amazon і Ace з ТВОЇМИ логінами](zakryty-chrome-na-maku-cmd-q-i-zapustyty-bin-chrome-cdp-sh-m.md) - до роботи
 * [Подзвонити в Burlingame Ace 650-340-1818 і скасувати два оплачені замовлення від 17.08 — вони оформлені БЕЗ акаунту, онлайн скасувати неможливо](podzvonyty-v-burlingame-ace-650-340-1818-i-skasuvaty-dva-opl.md) - до роботи
 * [Дотестити Perplexity: 19.08 і research, і search повернули порожньо. Поки не полагоджено — на нього не спиратись](dotestyty-perplexity-19-08-i-research-i-search-povernuly-por.md) - до роботи
-* [Перевірити руками куплені ганчірки (артикул 1025740, 2 фунти): чи це бавовняний трикотаж і чи вистачить на фігуру](pereviryty-rukamy-kupleni-hanchirky-artykul-1025740-2-funty-.md) - до роботи
+* [Перевірити руками куплені ганчірки (артикул 1025740, 2 фунти): чи це бавовняний трикотаж і чи вистачить на фігуру [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](pereviryty-rukamy-kupleni-hanchirky-artykul-1025740-2-funty-.md) - готово
 * [ПИТАННЯ ДО МЕНЕ: підтвердити, що вчорашнє замовлення в Home Depot — це саме станція EcoFlow. Лист «Order confirmed» від 19.08 08:59 є, але Home Depot не пише назв у листі](pytannia-do-mene-pidtverdyty-shcho-vchorashnie-zamovlennia-v.md) - чекаємо
 * [Підготувати повернення на Amazon — зібрати список що і до якої дати можна здати](pidhotuvaty-povernennia-na-amazon-zibraty-spysok-shcho-i-do-.md) - до роботи
 * [Дороблення аудіо-вузла до кінця](doroblennia-audio-vuzla-do-kintsia.md) - в роботі
-* [Тимчасовий динамік для тестів аудіо — штатний стоїть у роботі, до нього не підійти під час покраски](tymchasovyi-dynamik-dlia-testiv-audio-shtatnyi-stoit-u-robot.md) - до роботи
+* [Тимчасовий динамік для тестів аудіо — штатний стоїть у роботі, до нього не підійти під час покраски [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](tymchasovyi-dynamik-dlia-testiv-audio-shtatnyi-stoit-u-robot.md) - готово
 * [Обрати таймер — прийшло два варіанти, вирішити який лишаємо](obraty-taimer-pryishlo-dva-varianty-vyrishyty-iakyi-lyshaiem.md) - до роботи
 * [Підбити фінанси: надійшло ~$2000 + $500 + $300, звести з витратами](pidbyty-finansy-nadiishlo-2000-500-300-zvesty-z-vytratamy.md) - до роботи
 * [Купити сонячні панелі для масиву — потужність не обрана](kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - до роботи

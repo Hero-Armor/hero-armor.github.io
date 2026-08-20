@@ -53,7 +53,7 @@ generated: { by: "process:site-build" }
 * [Докупити монтажну дрібницю: гермовводи, термоусадка, джампери, стяжки](/tasks/dokupyty-montazhnu-dribnytsiu-hermovvody-termousadka-dzhampe.md) — до роботи
 * [Прошити ESP32 і пройти пʼять перевірок на столі (картка, звук, радар, BLE, потенціометр ампа)](/tasks/proshyty-esp32-i-proity-piat-perevirok-na-stoli-kartka-zvuk-.md) — готово
 * [Звірити склад коробок: у листі Amazon 18 позицій, у нашому списку 19](/tasks/zviryty-sklad-korobok-u-lysti-amazon-18-pozytsii-u-nashomu-s.md) — до роботи
-* [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду](/tasks/nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) — до роботи
+* [Нанести захисний лак MG Chemicals 422B на всі плати — до виїзду [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](/tasks/nanesty-zakhysnyi-lak-mg-chemicals-422b-na-vsi-platy-do-vyiz.md) — готово
 * [Вирішити з Франком: 1 кнопка взаємодії чи 3 (так/ні/скасувати) на прототипі голови](/tasks/vyrishyty-z-frankom-1-knopka-vzaiemodii-chy-3-tak-ni-skasuva.md) — чекаємо
 * [Дізнатись у конструктора остаточний Ø отвору і місце динаміка (груди Ø60 чи живіт)](/tasks/diznatys-u-konstruktora-ostatochnyi-otvoru-i-mistse-dynamika.md) — готово
 * [Приміряти динамік до грудної панелі на місці і послухати, чи не глухо крізь броню](/tasks/prymiriaty-dynamik-do-hrudnoi-paneli-na-mistsi-i-poslukhaty-.md) — до роботи
@@ -64,7 +64,7 @@ generated: { by: "process:site-build" }
 * [Перевірити, скільки лишилось від бухти 18 AWG силікон (траса заміряна 13.08 — 3 м від мозку до голови)](/tasks/pereviryty-skilky-lyshylos-vid-bukhty-18-awg-sylikon-trasa-z.md) — до роботи
 * [Радар у носку: нахилити на 10-15° угору, металевий екран за модулем проти задньої пелюстки, жорстке кріплення. Потім підібрати поріг trig ходою по живому екрану /live](/tasks/radar-u-nosku-nakhylyty-na-10-15-uhoru-metalevyi-ekran-za-mo.md) — до роботи
 * [Дороблення аудіо-вузла до кінця](/tasks/doroblennia-audio-vuzla-do-kintsia.md) — в роботі
-* [Тимчасовий динамік для тестів аудіо — штатний стоїть у роботі, до нього не підійти під час покраски](/tasks/tymchasovyi-dynamik-dlia-testiv-audio-shtatnyi-stoit-u-robot.md) — до роботи
+* [Тимчасовий динамік для тестів аудіо — штатний стоїть у роботі, до нього не підійти під час покраски [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](/tasks/tymchasovyi-dynamik-dlia-testiv-audio-shtatnyi-stoit-u-robot.md) — готово
 
 # Закупівля
 
