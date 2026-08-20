@@ -40,6 +40,16 @@ generated: { by: "process:site-build" }
 * [Вирішити, чи потрібен ящику дах, чи він живе під тіньовою зоною кемпу](/tasks/vyrishyty-chy-potriben-iashchyku-dakh-chy-vin-zhyve-pid-tino.md) — до роботи
 * [Підтвердити, чи генератор дадуть — від цього залежить половина ящика](/tasks/pidtverdyty-chy-henerator-dadut-vid-tsoho-zalezhyt-polovyna-.md) — до роботи
 * [Порахувати ящик: чи вистачає матеріалу, що треба докупити](/tasks/porakhuvaty-iashchyk-chy-vystachaie-materialu-shcho-treba-do.md) — до роботи
+* [Подіум 1 · Прокласти електрику в подіум — проводка груп до місць світла](/tasks/podium-1-proklasty-elektryku-v-podium-provodka-hrup-do-mists.md) — до роботи
+* [Подіум 2 · Просвердлити отвори під цю електрику в каркасі](/tasks/podium-2-prosverdlyty-otvory-pid-tsiu-elektryku-v-karkasi.md) — до роботи
+* [Подіум 3 · Покрити дерево (тим, що вже купили) — до монтажу металу і алюмінію](/tasks/podium-3-pokryty-derevo-tym-shcho-vzhe-kupyly-do-montazhu-me.md) — до роботи
+* [Подіум 4 · Встановити металеві підсилення каркаса](/tasks/podium-4-vstanovyty-metalevi-pidsylennia-karkasa.md) — до роботи
+* [Подіум 5 · Встановити кріплення під ґрунтові анкери](/tasks/podium-5-vstanovyty-kriplennia-pid-gruntovi-ankery.md) — до роботи
+* [Подіум 6 · Порізати алюміній ГЕКСАГОНОМ — ріжемо самі, лазерна різка не потрібна](/tasks/podium-6-porizaty-aliuminii-heksahonom-rizhemo-sami-lazerna-.md) — до роботи
+* [Подіум 7 · Встановити алюміній на місце](/tasks/podium-7-vstanovyty-aliuminii-na-mistse.md) — до роботи
+* [Подіум 8 · Круглі отвори свердлити ТІЛЬКИ ПІСЛЯ монтажу алюмінію — наскрізь крізь алюміній і дерево, щоб не пішло криво](/tasks/podium-8-kruhli-otvory-sverdlyty-tilky-pislia-montazhu-alium.md) — до роботи
+* [Подіум 9 · Профрезерувати ніші під світлодіодну стрічку](/tasks/podium-9-profrezeruvaty-nishi-pid-svitlodiodnu-strichku.md) — до роботи
+* [Подіум 10 · Просвердлити проходи під конектори і розмістити коробки](/tasks/podium-10-prosverdlyty-prokhody-pid-konektory-i-rozmistyty-k.md) — до роботи
 
 # Закупівля
 

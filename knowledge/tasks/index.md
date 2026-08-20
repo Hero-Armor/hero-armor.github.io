@@ -246,3 +246,17 @@
 * [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) - до роботи
 * [Склейка пальців через метал — 3D-пластик](skleika-paltsiv-cherez-metal-3d-plastyk.md) - до роботи
 * [Склейка пальців через метал — 3D-пластик](skleika-paltsiv-cherez-metal-3d-plastyk.md) - до роботи
+* [Подіум 1 · Прокласти електрику в подіум — проводка груп до місць світла](podium-1-proklasty-elektryku-v-podium-provodka-hrup-do-mists.md) - до роботи
+* [Подіум 2 · Просвердлити отвори під цю електрику в каркасі](podium-2-prosverdlyty-otvory-pid-tsiu-elektryku-v-karkasi.md) - до роботи
+* [Подіум 3 · Покрити дерево (тим, що вже купили) — до монтажу металу і алюмінію](podium-3-pokryty-derevo-tym-shcho-vzhe-kupyly-do-montazhu-me.md) - до роботи
+* [Подіум 4 · Встановити металеві підсилення каркаса](podium-4-vstanovyty-metalevi-pidsylennia-karkasa.md) - до роботи
+* [Подіум 5 · Встановити кріплення під ґрунтові анкери](podium-5-vstanovyty-kriplennia-pid-gruntovi-ankery.md) - до роботи
+* [Подіум 6 · Порізати алюміній ГЕКСАГОНОМ — ріжемо самі, лазерна різка не потрібна](podium-6-porizaty-aliuminii-heksahonom-rizhemo-sami-lazerna-.md) - до роботи
+* [Подіум 7 · Встановити алюміній на місце](podium-7-vstanovyty-aliuminii-na-mistse.md) - до роботи
+* [Подіум 8 · Круглі отвори свердлити ТІЛЬКИ ПІСЛЯ монтажу алюмінію — наскрізь крізь алюміній і дерево, щоб не пішло криво](podium-8-kruhli-otvory-sverdlyty-tilky-pislia-montazhu-alium.md) - до роботи
+* [Подіум 9 · Профрезерувати ніші під світлодіодну стрічку](podium-9-profrezeruvaty-nishi-pid-svitlodiodnu-strichku.md) - до роботи
+* [Подіум 10 · Просвердлити проходи під конектори і розмістити коробки](podium-10-prosverdlyty-prokhody-pid-konektory-i-rozmistyty-k.md) - до роботи
+* [ВІХА · Подіум зібраний і покритий](vikha-podium-zibranyi-i-pokrytyi.md) - до роботи
+* [ВІХА · Фігура пофарбована і зібрана — дедлайн 26.08](vikha-fihura-pofarbovana-i-zibrana-dedlain-26-08.md) - до роботи
+* [ВІХА · Електрика зібрана і перевірена під навантаженням](vikha-elektryka-zibrana-i-perevirena-pid-navantazhenniam.md) - до роботи
+* [ВІХА · Усе спаковано і завантажено — виїзд 27.08](vikha-use-spakovano-i-zavantazheno-vyizd-27-08.md) - до роботи

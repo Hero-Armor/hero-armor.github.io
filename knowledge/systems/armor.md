@@ -59,6 +59,7 @@ generated: { by: "process:site-build" }
 * [Замовити скляні світловідбивні кульки — 1 lb $19.97 або 4.4 lb $27.99, доставка 21.08](/tasks/zamovyty-skliani-svitlovidbyvni-kulky-1-lb-19-97-abo-4-4-lb-.md) — до роботи
 * [Склейка пальців через метал — 3D-пластик](/tasks/skleika-paltsiv-cherez-metal-3d-plastyk.md) — до роботи
 * [Склейка пальців через метал — 3D-пластик](/tasks/skleika-paltsiv-cherez-metal-3d-plastyk.md) — до роботи
+* [ВІХА · Фігура пофарбована і зібрана — дедлайн 26.08](/tasks/vikha-fihura-pofarbovana-i-zibrana-dedlain-26-08.md) — до роботи
 
 # Закупівля
 
