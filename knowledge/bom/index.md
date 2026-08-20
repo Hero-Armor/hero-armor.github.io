@@ -293,3 +293,4 @@
 * [Знімач задирок AFA Tooling, 11 лез M2 HSS, алюмінієва ручка](znimach-zadyrok-afa-tooling-11-lez-m2-hss-aliuminiieva-ruchk.md) - $9.99, купити
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) - $24.99, купити
 * [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, купити
+* [Кабель AUX 3.5 мм тато-тато, 1 фут, кутовий — ЦАП → підсилювач](kabel-aux-3-5-mm-tato-tato-1-fut-kutovyi-tsap-pidsyliuvach.md) - $6.49, купити

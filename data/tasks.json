@@ -2377,5 +2377,12 @@
   "status": "todo",
   "owner": "ivan",
   "area": "logistics"
+ },
+ {
+  "task": "Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить",
+  "system": "audio",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "audiobuild"
  }
 ]

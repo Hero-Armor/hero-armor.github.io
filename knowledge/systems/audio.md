@@ -72,6 +72,7 @@ generated: { by: "process:site-build" }
 * [Аудіо 5 · Тимчасово підключити до робота і перевірити в зборі](/tasks/audio-5-tymchasovo-pidkliuchyty-do-robota-i-pereviryty-v-zbo.md) — до роботи
 * [Аудіо 6 · Поставити в носок ноги сенсор на витій парі (той, що в термоусадці) — ПІСЛЯ тестів](/tasks/audio-6-postavyty-v-nosok-nohy-sensor-na-vytii-pari-toi-shch.md) — до роботи
 * [Аудіо 7 · ПИТАННЯ: яка фінальна довжина витої пари до носка? Від неї залежить, лишаємо 256000 бод чи переводимо на 9600](/tasks/audio-7-pytannia-iaka-finalna-dovzhyna-vytoi-pary-do-noska-v.md) — до роботи
+* [Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить](/tasks/skopiiuvaty-16-holosovykh-mp3-z-private-firmware-radar-sound.md) — до роботи
 
 # Закупівля
 
@@ -104,6 +105,7 @@ generated: { by: "process:site-build" }
 * [Кабель екранована вита пара Cat6 outdoor, 25 ft — винос радара в фігуру](/bom/kabel-ekranovana-vyta-para-cat6-outdoor-25-ft-vynos-radara-v.md) — $7.99, купити
 * [Розʼєм CNLINKO M12, 5 контактів, IP67 — розʼєднання фігури і подіуму](/bom/roziem-cnlinko-m12-5-kontaktiv-ip67-roziednannia-fihury-i-po.md) — $10.91, купити
 * [Розʼєм CNLINKO M12 2 контакти IP67 — динамік у голові](/bom/roziem-cnlinko-m12-2-kontakty-ip67-dynamik-u-holovi.md) — $9.35, купити
+* [Кабель AUX 3.5 мм тато-тато, 1 фут, кутовий — ЦАП → підсилювач](/bom/kabel-aux-3-5-mm-tato-tato-1-fut-kutovyi-tsap-pidsyliuvach.md) — $6.49, купити
 
 # Розраховані цифри
 

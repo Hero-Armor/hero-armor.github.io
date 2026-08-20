@@ -295,3 +295,4 @@
 * [Відсортувати речі: що беру на Burning Man, що лишається; машина лишається в Ріно](vidsortuvaty-rechi-shcho-beru-na-burning-man-shcho-lyshaiets.md) - до роботи
 * [Дозамовити особисті речі, потрібні на Burning Man — скласти список](dozamovyty-osobysti-rechi-potribni-na-burning-man-sklasty-sp.md) - до роботи
 * [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) - до роботи
+* [Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить](skopiiuvaty-16-holosovykh-mp3-z-private-firmware-radar-sound.md) - до роботи
