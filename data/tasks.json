@@ -2379,10 +2379,24 @@
   "area": "logistics"
  },
  {
-  "task": "Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить",
+  "task": "Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить [ЗРОБЛЕНО 20.08 — залито по кабелю з сервера]",
+  "system": "audio",
+  "status": "done",
+  "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Калібрування радара: розкласти рулетку, пройти 1-2-3-4-5 м, записати що каже вузол — БЕЗ плівки поруч",
   "system": "audio",
   "status": "todo",
   "owner": "ivan",
+  "area": "audiobuild"
+ },
+ {
+  "task": "Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках",
+  "system": "audio",
+  "status": "todo",
+  "owner": "claude",
   "area": "audiobuild"
  }
 ]

@@ -80,3 +80,6 @@ generated: { by: "process:site-build" }
 * [Герметик термостійкий Permatex Ultra Red RTV, 3 oz](/bom/hermetyk-termostiikyi-permatex-ultra-red-rtv-3-oz.md) — $7.56, купити
 * [Саморізи по дереву Power Pro #8 × 2″, 141 шт](/bom/samorizy-po-derevu-power-pro-8-2-141-sht.md) — $7.99, купити
 * [Кутики монтажні нержавійка, 40 шт](/bom/kutyky-montazhni-nerzhaviika-40-sht.md) — $6.99, купити
+* [Алюміній рифлений 0.063″ на підлогу подіуму — M-D 36×36″, 6 листів](/bom/aliuminii-ryflenyi-0-063-na-pidlohu-podiumu-m-d-36-36-6-lyst.md) — $98.97/лист = $593.82, купити
+* [Вініл щіткове срібло на підлогу подіуму — VViViD Brushed, рулон 10×5 ft](/bom/vinil-shchitkove-sriblo-na-pidlohu-podiumu-vvivid-brushed-ru.md) — $69.98, купити
+* [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](/bom/vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) — $232.14, купити

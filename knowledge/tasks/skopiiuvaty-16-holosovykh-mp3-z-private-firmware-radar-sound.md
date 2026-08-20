@@ -1,9 +1,9 @@
 ---
 type: "Task"
-title: "Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить"
+title: "Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить [ЗРОБЛЕНО 20.08 — залито по кабелю з сервера]"
 tags: ["audio"]
-task_status: "todo"
+task_status: "done"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · система: [Аудіо](/systems/audio.md)
+Статус: **готово** · система: [Аудіо](/systems/audio.md)

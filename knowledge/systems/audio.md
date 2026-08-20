@@ -72,7 +72,9 @@ generated: { by: "process:site-build" }
 * [Аудіо 5 · Тимчасово підключити до робота і перевірити в зборі](/tasks/audio-5-tymchasovo-pidkliuchyty-do-robota-i-pereviryty-v-zbo.md) — до роботи
 * [Аудіо 6 · Поставити в носок ноги сенсор на витій парі (той, що в термоусадці) — ПІСЛЯ тестів](/tasks/audio-6-postavyty-v-nosok-nohy-sensor-na-vytii-pari-toi-shch.md) — до роботи
 * [Аудіо 7 · ПИТАННЯ: яка фінальна довжина витої пари до носка? Від неї залежить, лишаємо 256000 бод чи переводимо на 9600](/tasks/audio-7-pytannia-iaka-finalna-dovzhyna-vytoi-pary-do-noska-v.md) — до роботи
-* [Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить](/tasks/skopiiuvaty-16-holosovykh-mp3-z-private-firmware-radar-sound.md) — до роботи
+* [Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить [ЗРОБЛЕНО 20.08 — залито по кабелю з сервера]](/tasks/skopiiuvaty-16-holosovykh-mp3-z-private-firmware-radar-sound.md) — готово
+* [Калібрування радара: розкласти рулетку, пройти 1-2-3-4-5 м, записати що каже вузол — БЕЗ плівки поруч](/tasks/kalibruvannia-radara-rozklasty-ruletku-proity-1-2-3-4-5-m-za.md) — до роботи
+* [Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках](/tasks/dodaty-v-testovu-proshyvku-nalashtuvannia-radara-po-serial-m.md) — до роботи
 
 # Закупівля
 
