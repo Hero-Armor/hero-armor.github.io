@@ -298,3 +298,4 @@
 * [Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить [ЗРОБЛЕНО 20.08 — залито по кабелю з сервера]](skopiiuvaty-16-holosovykh-mp3-z-private-firmware-radar-sound.md) - готово
 * [Калібрування радара: розкласти рулетку, пройти 1-2-3-4-5 м, записати що каже вузол — БЕЗ плівки поруч](kalibruvannia-radara-rozklasty-ruletku-proity-1-2-3-4-5-m-za.md) - до роботи
 * [Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках](dodaty-v-testovu-proshyvku-nalashtuvannia-radara-po-serial-m.md) - до роботи
+* [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) - до роботи

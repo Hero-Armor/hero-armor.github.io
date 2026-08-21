@@ -50,6 +50,7 @@ generated: { by: "process:site-build" }
 * [Подіум 8 · Круглі отвори свердлити ТІЛЬКИ ПІСЛЯ монтажу алюмінію — наскрізь крізь алюміній і дерево, щоб не пішло криво](/tasks/podium-8-kruhli-otvory-sverdlyty-tilky-pislia-montazhu-alium.md) — до роботи
 * [Подіум 9 · Профрезерувати ніші під світлодіодну стрічку](/tasks/podium-9-profrezeruvaty-nishi-pid-svitlodiodnu-strichku.md) — до роботи
 * [Подіум 10 · Просвердлити проходи під конектори і розмістити коробки](/tasks/podium-10-prosverdlyty-prokhody-pid-konektory-i-rozmistyty-k.md) — до роботи
+* [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](/tasks/zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) — до роботи
 
 # Закупівля
 
