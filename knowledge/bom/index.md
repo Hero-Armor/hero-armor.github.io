@@ -308,3 +308,6 @@
 * [Гайки 3/8″ з нейлоновим кільцем (nylock) — щоб не розкрутились від вібрації](haiky-3-8-z-neilonovym-kiltsem-nylock-shchob-ne-rozkrutylys-.md) - ~$5 за пачку, купити
 * [Болти з гайками для скручування притискних пластин між собою](bolty-z-haikamy-dlia-skruchuvannia-prytysknykh-plastyn-mizh-.md) - ~$12 разом, купити
 * [FrogTape Multi-Surface 1.88″ × 60 ярдів — малярний скотч, самовивіз по дорозі](frogtape-multi-surface-1-88-60-iardiv-maliarnyi-skotch-samov.md) - $9.98 за рулон, купити
+* [Rosin paper Trimaco, рулон 3×144 фути — прошарок між ковдрою і обшивкою салону](rosin-paper-trimaco-rulon-3-144-futy-prosharok-mizh-kovdroiu.md) - ~$15-20, купити
+* [Ковдри для перевезення, комплект 8 шт — під кути і ребра вантажу](kovdry-dlia-perevezennia-komplekt-8-sht-pid-kuty-i-rebra-van.md) - ~$70-90, купити
+* [Фольгований екран на лобове скло — закрити головний вхід пилу зсередини](folhovanyi-ekran-na-lobove-sklo-zakryty-holovnyi-vkhid-pylu-.md) - ~$15-25, купити
