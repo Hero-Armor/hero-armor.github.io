@@ -2499,5 +2499,33 @@
   "status": "todo",
   "owner": "ivan",
   "area": "logistics"
+ },
+ {
+  "task": "Перевірити реєстрацію Rescue Now у реєстрах Генпрокурора Іллінойсу і Каліфорнії — портали відбивають автозапит, треба руками",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
+ },
+ {
+  "task": "Простежити оплату рахунку 000003 на 2800 від фонду Rescue Now — надіслано Лізі 21.08",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
+ },
+ {
+  "task": "Якщо EcoFlow таки повернемо — виставити фонду коригуючий рахунок на 1752.90 (рішення Івана 21.08: спершу гроші, виправлення потім)",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
+ },
+ {
+  "task": "Купити сталеві пластини під ґрунтові анкери: 12 шт 178x127 мм за кресленням 06.17. Готових 7x5 нема — беремо 2 листи 24x12 і ріжемо самі",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "podium"
  }
 ]

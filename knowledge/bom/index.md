@@ -303,3 +303,4 @@
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) - $11.99, купити
 * [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) - $17.50, купити
 * [Станція живлення з сонячними панелями — заміна поверненому EcoFlow](stantsiia-zhyvlennia-z-soniachnymy-paneliamy-zamina-povernen.md) - ~$1000 (закладено), купити
+* [Сталеві пластини під ґрунтові анкери — 12 шт, 178×127 мм (7×5″)](stalevi-plastyny-pid-gruntovi-ankery-12-sht-178-127-mm-7-5.md) - $39.90 за лист, треба 2 = $79.80, купити

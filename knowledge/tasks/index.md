@@ -313,3 +313,7 @@
 * [Запросити у фонду Rescue Now письмову угоду про фіскальне спонсорство і регулярний звіт по зборах — питання Лізи](zaprosyty-u-fondu-rescue-now-pysmovu-uhodu-pro-fiskalne-spon.md) - до роботи
 * [Коли пройдуть повернення (дуйка-дубль, замовлення Ace, EcoFlow) — прибрати ці суми з витрат. Поки висять на проєкті](koly-proidut-povernennia-duika-dubl-zamovlennia-ace-ecoflow-.md) - до роботи
 * [Взяти в Лізи ПОВНИЙ документ оренди Turo — страховка, депозит, ліміт пробігу. Поки в обліку стоїть 1100 з голосу](vziaty-v-lizy-povnyi-dokument-orendy-turo-strakhovka-depozyt.md) - до роботи
+* [Перевірити реєстрацію Rescue Now у реєстрах Генпрокурора Іллінойсу і Каліфорнії — портали відбивають автозапит, треба руками](pereviryty-reiestratsiiu-rescue-now-u-reiestrakh-henprokuror.md) - до роботи
+* [Простежити оплату рахунку 000003 на 2800 від фонду Rescue Now — надіслано Лізі 21.08](prostezhyty-oplatu-rakhunku-000003-na-2800-vid-fondu-rescue-.md) - до роботи
+* [Якщо EcoFlow таки повернемо — виставити фонду коригуючий рахунок на 1752.90 (рішення Івана 21.08: спершу гроші, виправлення потім)](iakshcho-ecoflow-taky-povernemo-vystavyty-fondu-koryhuiuchyi.md) - до роботи
+* [Купити сталеві пластини під ґрунтові анкери: 12 шт 178x127 мм за кресленням 06.17. Готових 7x5 нема — беремо 2 листи 24x12 і ріжемо самі](kupyty-stalevi-plastyny-pid-gruntovi-ankery-12-sht-178x127-m.md) - до роботи
