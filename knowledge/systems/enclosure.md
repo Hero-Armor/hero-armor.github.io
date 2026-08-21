@@ -85,7 +85,7 @@ generated: { by: "process:site-build" }
 * [Герметик термостійкий Permatex Ultra Red RTV, 3 oz](/bom/hermetyk-termostiikyi-permatex-ultra-red-rtv-3-oz.md) — $7.56, купити
 * [Саморізи по дереву Power Pro #8 × 2″, 141 шт](/bom/samorizy-po-derevu-power-pro-8-2-141-sht.md) — $7.99, купити
 * [Кутики монтажні нержавійка, 40 шт](/bom/kutyky-montazhni-nerzhaviika-40-sht.md) — $6.99, купити
-* [Алюміній рифлений на підлогу подіуму — лист 4×8 футів (48×96″), 2 шт](/bom/aliuminii-ryflenyi-na-pidlohu-podiumu-lyst-4-8-futiv-48-96-2.md) — $169.99 за лист = $339.98, купити
+* [Алюміній рифлений на підлогу подіуму — лист 4×8 футів (48×96″), 2 шт](/bom/aliuminii-ryflenyi-na-pidlohu-podiumu-lyst-4-8-futiv-48-96-2.md) — $191/лист у Coast Aluminum = $573, купити
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](/bom/vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) — $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](/bom/vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) — $232.14, купити
 * [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](/bom/hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) — $9.89 за 100, купити
