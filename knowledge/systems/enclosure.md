@@ -23,6 +23,7 @@ generated: { by: "process:site-build" }
 * [Ящик під станцію і генератор: фанера і мінеральна вата, не МДФ і не піна](/decisions/iashchyk-pid-stantsiiu-i-henerator-fanera-i-mineralna-vata-n.md)
 * [Два відсіки — два режими повітря: станцію піддуваємо через фільтр, генератор продуваємо наскрізь](/decisions/dva-vidsiky-dva-rezhymy-povitria-stantsiiu-pidduvaiemo-chere.md)
 * [Генератор не купуємо — його дають покористуватись, і без нього теж проживемо](/decisions/henerator-ne-kupuiemo-ioho-daiut-pokorystuvatys-i-bez-noho-t.md)
+* [Підлога подіуму — тільки алюміній. Вініл відхилено](/decisions/pidloha-podiumu-tilky-aliuminii-vinil-vidkhyleno.md)
 
 # Задачі
 
