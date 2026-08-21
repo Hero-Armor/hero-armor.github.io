@@ -300,3 +300,5 @@
 * [Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках](dodaty-v-testovu-proshyvku-nalashtuvannia-radara-po-serial-m.md) - до роботи
 * [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) - до роботи
 * [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт](zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) - до роботи
+* [Замовити кріплення алюмінієвої підлоги: напівкруглі #8x2 (200), потайні #8x1.5 (100), зенківка 82 градуси однозуба](zamovyty-kriplennia-aliuminiievoi-pidlohy-napivkruhli-8x2-20.md) - до роботи
+* [Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори](zamovyty-shche-pachku-lamp-sunlite-81120-mr16-4000k-v-prozhe.md) - до роботи

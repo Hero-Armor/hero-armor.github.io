@@ -51,6 +51,7 @@ generated: { by: "process:site-build" }
 * [Подіум 9 · Профрезерувати ніші під світлодіодну стрічку](/tasks/podium-9-profrezeruvaty-nishi-pid-svitlodiodnu-strichku.md) — до роботи
 * [Подіум 10 · Просвердлити проходи під конектори і розмістити коробки](/tasks/podium-10-prosverdlyty-prokhody-pid-konektory-i-rozmistyty-k.md) — до роботи
 * [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](/tasks/zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) — до роботи
+* [Замовити кріплення алюмінієвої підлоги: напівкруглі #8x2 (200), потайні #8x1.5 (100), зенківка 82 градуси однозуба](/tasks/zamovyty-kriplennia-aliuminiievoi-pidlohy-napivkruhli-8x2-20.md) — до роботи
 
 # Закупівля
 
@@ -84,3 +85,6 @@ generated: { by: "process:site-build" }
 * [Алюміній рифлений 1/16″ з клейкою основою на підлогу подіуму — 48×48″, 5 листів (за кресленням 06.13)](/bom/aliuminii-ryflenyi-1-16-z-kleikoiu-osnovoiu-na-pidlohu-podiu.md) — $145.45/лист = $727.25 (ціна з таблиці Володимира 20.07), купити
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](/bom/vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) — $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](/bom/vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) — $232.14, купити
+* [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](/bom/hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) — $9.89 за 100, купити
+* [Гвинти потайні #8 × 1½″, оцинковані — там, де головка має бути врівень](/bom/hvynty-potaini-8-1-otsynkovani-tam-de-holovka-maie-buty-vriv.md) — $7.24 за 100, купити
+* [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](/bom/zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) — $11.99, купити

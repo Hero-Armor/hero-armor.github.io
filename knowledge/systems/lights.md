@@ -129,6 +129,7 @@ generated: { by: "process:site-build" }
 * [Обрати таймер — прийшло два варіанти, вирішити який лишаємо](/tasks/obraty-taimer-pryishlo-dva-varianty-vyrishyty-iakyi-lyshaiem.md) — до роботи
 * [ВІХА · Електрика зібрана і перевірена під навантаженням](/tasks/vikha-elektryka-zibrana-i-perevirena-pid-navantazhenniam.md) — до роботи
 * [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт](/tasks/zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) — до роботи
+* [Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори](/tasks/zamovyty-shche-pachku-lamp-sunlite-81120-mr16-4000k-v-prozhe.md) — до роботи
 
 # Закупівля
 
@@ -212,3 +213,4 @@ generated: { by: "process:site-build" }
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](/bom/samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) — $21.88, купити
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](/bom/lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) — $24.99, купити
 * [ШІМ-диммер 12-24 В 30 А з гвинтовими клемами і регульованою частотою — заміна поверненому SUPERNIGHT](/bom/shim-dymmer-12-24-v-30-a-z-hvyntovymy-klemamy-i-rehulovanoiu.md) — $14.43 за шт, купити
+* [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](/bom/lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) — $17.50, купити
