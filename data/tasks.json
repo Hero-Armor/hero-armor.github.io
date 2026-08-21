@@ -2452,5 +2452,12 @@
   "status": "todo",
   "owner": "liza",
   "area": "liza"
+ },
+ {
+  "task": "Взяти в Лізи телеграм дівчини, якій відправляти PDF історій Храму на друк",
+  "system": "project",
+  "status": "todo",
+  "owner": "claude",
+  "area": "logistics"
  }
 ]

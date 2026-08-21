@@ -306,3 +306,4 @@
 * [Металева табличка з лазерним гравіюванням на подіум — знайти майстерню, яка встигне до 26.08](metaleva-tablychka-z-lazernym-hraviiuvanniam-na-podium-znait.md) - до роботи
 * [Хромована підставка-стенд під металеву табличку](khromovana-pidstavka-stend-pid-metalevu-tablychku.md) - до роботи
 * [Текст і макет металевої таблички — узгодити з Лізою (формулювання про Захара тільки їхні)](tekst-i-maket-metalevoi-tablychky-uzhodyty-z-lizoiu-formuliu.md) - до роботи
+* [Взяти в Лізи телеграм дівчини, якій відправляти PDF історій Храму на друк](vziaty-v-lizy-telehram-divchyny-iakii-vidpravliaty-pdf-istor.md) - до роботи
