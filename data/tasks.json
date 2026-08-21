@@ -2424,5 +2424,33 @@
   "system": "lights",
   "status": "todo",
   "owner": "ivan"
+ },
+ {
+  "task": "Наклейки маленькі (розмір як яблучко Apple з комплекту iPhone) — надрукувати і встигнути до виїзду",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
+ },
+ {
+  "task": "Металева табличка з лазерним гравіюванням на подіум — знайти майстерню, яка встигне до 26.08",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
+ },
+ {
+  "task": "Хромована підставка-стенд під металеву табличку",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
+ },
+ {
+  "task": "Текст і макет металевої таблички — узгодити з Лізою (формулювання про Захара тільки їхні)",
+  "system": "project",
+  "status": "todo",
+  "owner": "liza",
+  "area": "liza"
  }
 ]

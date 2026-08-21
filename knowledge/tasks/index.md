@@ -302,3 +302,7 @@
 * [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт](zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) - до роботи
 * [Замовити кріплення алюмінієвої підлоги: напівкруглі #8x2 (200), потайні #8x1.5 (100), зенківка 82 градуси однозуба](zamovyty-kriplennia-aliuminiievoi-pidlohy-napivkruhli-8x2-20.md) - до роботи
 * [Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори](zamovyty-shche-pachku-lamp-sunlite-81120-mr16-4000k-v-prozhe.md) - до роботи
+* [Наклейки маленькі (розмір як яблучко Apple з комплекту iPhone) — надрукувати і встигнути до виїзду](nakleiky-malenki-rozmir-iak-iabluchko-apple-z-komplektu-ipho.md) - до роботи
+* [Металева табличка з лазерним гравіюванням на подіум — знайти майстерню, яка встигне до 26.08](metaleva-tablychka-z-lazernym-hraviiuvanniam-na-podium-znait.md) - до роботи
+* [Хромована підставка-стенд під металеву табличку](khromovana-pidstavka-stend-pid-metalevu-tablychku.md) - до роботи
+* [Текст і макет металевої таблички — узгодити з Лізою (формулювання про Захара тільки їхні)](tekst-i-maket-metalevoi-tablychky-uzhodyty-z-lizoiu-formuliu.md) - до роботи
