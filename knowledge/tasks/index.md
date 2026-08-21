@@ -307,3 +307,9 @@
 * [Хромована підставка-стенд під металеву табличку](khromovana-pidstavka-stend-pid-metalevu-tablychku.md) - до роботи
 * [Текст і макет металевої таблички — узгодити з Лізою (формулювання про Захара тільки їхні)](tekst-i-maket-metalevoi-tablychky-uzhodyty-z-lizoiu-formuliu.md) - до роботи
 * [Взяти в Лізи телеграм дівчини, якій відправляти PDF історій Храму на друк](vziaty-v-lizy-telehram-divchyny-iakii-vidpravliaty-pdf-istor.md) - до роботи
+* [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз](bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) - до роботи
+* [Звірка таблиці надто строга: рахує формульні клітинки як розбіжність (268 на порожньому місці). Полагодити ПІСЛЯ виїзду, зараз не чіпати](zvirka-tablytsi-nadto-stroha-rakhuie-formulni-klitynky-iak-r.md) - до роботи
+* [Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів](skasuvaty-abo-povernuty-ecoflow-delta-3-ultra-plus-zamovlenn.md) - до роботи
+* [Запросити у фонду Rescue Now письмову угоду про фіскальне спонсорство і регулярний звіт по зборах — питання Лізи](zaprosyty-u-fondu-rescue-now-pysmovu-uhodu-pro-fiskalne-spon.md) - до роботи
+* [Коли пройдуть повернення (дуйка-дубль, замовлення Ace, EcoFlow) — прибрати ці суми з витрат. Поки висять на проєкті](koly-proidut-povernennia-duika-dubl-zamovlennia-ace-ecoflow-.md) - до роботи
+* [Взяти в Лізи ПОВНИЙ документ оренди Turo — страховка, депозит, ліміт пробігу. Поки в обліку стоїть 1100 з голосу](vziaty-v-lizy-povnyi-dokument-orendy-turo-strakhovka-depozyt.md) - до роботи

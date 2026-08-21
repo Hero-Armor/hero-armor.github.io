@@ -75,6 +75,8 @@ generated: { by: "process:site-build" }
 * [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](/tasks/zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) — до роботи
 * [Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова](/tasks/vyrishyty-po-vzhyvanii-stantsii-u-bay-area-zaraz-ie-delta-ma.md) — до роботи
 * [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](/tasks/nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) — до роботи
+* [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз](/tasks/bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) — до роботи
+* [Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів](/tasks/skasuvaty-abo-povernuty-ecoflow-delta-3-ultra-plus-zamovlenn.md) — до роботи
 
 # Закупівля
 
@@ -115,3 +117,4 @@ generated: { by: "process:site-build" }
 * [Роз'єм Anderson SB50 (страховка, якщо в станції не Powerpole)](/bom/roziem-anderson-sb50-strakhovka-iakshcho-v-stantsii-ne-power.md) — $~17, купити
 * [Наконечники кільцеві під 10 AWG на болт шини](/bom/nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) — $~10, купити
 * [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](/bom/stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) — $699-950 на розпродажі (звичайна $1498), купити
+* [Станція живлення з сонячними панелями — заміна поверненому EcoFlow](/bom/stantsiia-zhyvlennia-z-soniachnymy-paneliamy-zamina-povernen.md) — ~$1000 (закладено), купити

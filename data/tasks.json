@@ -2459,5 +2459,45 @@
   "status": "todo",
   "owner": "claude",
   "area": "logistics"
+ },
+ {
+  "task": "Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз",
+  "system": "solar",
+  "status": "todo",
+  "owner": "ivan"
+ },
+ {
+  "task": "Звірка таблиці надто строга: рахує формульні клітинки як розбіжність (268 на порожньому місці). Полагодити ПІСЛЯ виїзду, зараз не чіпати",
+  "system": "project",
+  "status": "todo",
+  "owner": "claude",
+  "area": "logistics"
+ },
+ {
+  "task": "Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів",
+  "system": "solar",
+  "status": "todo",
+  "owner": "ivan"
+ },
+ {
+  "task": "Запросити у фонду Rescue Now письмову угоду про фіскальне спонсорство і регулярний звіт по зборах — питання Лізи",
+  "system": "project",
+  "status": "todo",
+  "owner": "liza",
+  "area": "liza"
+ },
+ {
+  "task": "Коли пройдуть повернення (дуйка-дубль, замовлення Ace, EcoFlow) — прибрати ці суми з витрат. Поки висять на проєкті",
+  "system": "project",
+  "status": "todo",
+  "owner": "claude",
+  "area": "logistics"
+ },
+ {
+  "task": "Взяти в Лізи ПОВНИЙ документ оренди Turo — страховка, депозит, ліміт пробігу. Поки в обліку стоїть 1100 з голосу",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "logistics"
  }
 ]
