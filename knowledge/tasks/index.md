@@ -276,7 +276,7 @@
 * [Дерево на транспортування: бруски куплені на смітнику, ФАНЕРИ не вистачає — докупити або взяти в Марини](derevo-na-transportuvannia-brusky-kupleni-na-smitnyku-fanery.md) - до роботи
 * [Знайти магазин із бракованим/уціненим деревом у Bay Area — заїхати і взяти фанеру дешево](znaity-mahazyn-iz-brakovanym-utsinenym-derevom-u-bay-area-za.md) - до роботи
 * [Аудіо 1 · Налаштувати сенсор радара](audio-1-nalashtuvaty-sensor-radara.md) - до роботи
-* [Аудіо 2 · Підключити тимчасовий динамік для тестів (штатний у роботі під покраскою)](audio-2-pidkliuchyty-tymchasovyi-dynamik-dlia-testiv-shtatny.md) - до роботи
+* [Аудіо 2 · Підключити тимчасовий динамік для тестів (штатний у роботі під покраскою) [закрито в Todoist]](audio-2-pidkliuchyty-tymchasovyi-dynamik-dlia-testiv-shtatny.md) - готово
 * [Аудіо 3 · Залити прошивку](audio-3-zalyty-proshyvku.md) - до роботи
 * [Аудіо 4 · Протестувати вузол на коротких дротах, БЕЗ робота](audio-4-protestuvaty-vuzol-na-korotkykh-drotakh-bez-robota.md) - до роботи
 * [Аудіо 5 · Тимчасово підключити до робота і перевірити в зборі](audio-5-tymchasovo-pidkliuchyty-do-robota-i-pereviryty-v-zbo.md) - до роботи
@@ -299,3 +299,4 @@
 * [Калібрування радара: розкласти рулетку, пройти 1-2-3-4-5 м, записати що каже вузол — БЕЗ плівки поруч](kalibruvannia-radara-rozklasty-ruletku-proity-1-2-3-4-5-m-za.md) - до роботи
 * [Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках](dodaty-v-testovu-proshyvku-nalashtuvannia-radara-po-serial-m.md) - до роботи
 * [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) - до роботи
+* [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт](zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) - до роботи

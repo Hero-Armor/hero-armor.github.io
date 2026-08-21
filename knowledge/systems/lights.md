@@ -128,6 +128,7 @@ generated: { by: "process:site-build" }
 * [Заміри є: корпус світильника 17.6 мм, конус 18.8 мм — 3/4″ підходить обом](/tasks/zamiry-ie-korpus-svitylnyka-17-6-mm-konus-18-8-mm-3-4-pidkho.md) — готово
 * [Обрати таймер — прийшло два варіанти, вирішити який лишаємо](/tasks/obraty-taimer-pryishlo-dva-varianty-vyrishyty-iakyi-lyshaiem.md) — до роботи
 * [ВІХА · Електрика зібрана і перевірена під навантаженням](/tasks/vikha-elektryka-zibrana-i-perevirena-pid-navantazhenniam.md) — до роботи
+* [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт](/tasks/zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) — до роботи
 
 # Закупівля
 
@@ -210,3 +211,4 @@ generated: { by: "process:site-build" }
 * [Таймер MISOL 12 В, 25 А, програмований з екраном](/bom/taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) — , є
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](/bom/samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) — $21.88, купити
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](/bom/lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) — $24.99, купити
+* [ШІМ-диммер 12-24 В 30 А з гвинтовими клемами і регульованою частотою — заміна поверненому SUPERNIGHT](/bom/shim-dymmer-12-24-v-30-a-z-hvyntovymy-klemamy-i-rehulovanoiu.md) — $14.43 за шт, купити

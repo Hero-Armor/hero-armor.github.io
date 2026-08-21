@@ -297,3 +297,4 @@
 * [Алюміній рифлений 1/16″ з клейкою основою на підлогу подіуму — 48×48″, 5 листів (за кресленням 06.13)](aliuminii-ryflenyi-1-16-z-kleikoiu-osnovoiu-na-pidlohu-podiu.md) - $145.45/лист = $727.25 (ціна з таблиці Володимира 20.07), купити
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) - $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) - $232.14, купити
+* [ШІМ-диммер 12-24 В 30 А з гвинтовими клемами і регульованою частотою — заміна поверненому SUPERNIGHT](shim-dymmer-12-24-v-30-a-z-hvyntovymy-klemamy-i-rehulovanoiu.md) - $14.43 за шт, купити
