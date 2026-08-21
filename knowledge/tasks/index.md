@@ -328,3 +328,4 @@
 * [Захист машини від пилу плайї зовні — вирішити після ресерчу, чи є сенс у чохлі або плівці](zakhyst-mashyny-vid-pylu-plaii-zovni-vyrishyty-pislia-reserc.md) - до роботи
 * [Порахувати вартість мийки і прибирання машини після плайї, закласти в можливі витрати](porakhuvaty-vartist-myiky-i-prybyrannia-mashyny-pislia-plaii.md) - до роботи
 * [КРИТИЧНО: спитати Лізу, чи власник машини Turo знає і згоден, що авто їде на Burning Man. Turo прямо забороняє їзду по неблагоустроєних дорогах — при пошкодженні страховки не буде](krytychno-spytaty-lizu-chy-vlasnyk-mashyny-turo-znaie-i-zhod.md) - до роботи
+* [Вирішити: вініл рулоном замість алюмінію на підлогу подіуму — дешевше, товще, без різання на 8 сегментів, але ПВХ на сонці пустелі](vyrishyty-vinil-rulonom-zamist-aliuminiiu-na-pidlohu-podiumu.md) - до роботи

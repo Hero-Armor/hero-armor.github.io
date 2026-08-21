@@ -53,6 +53,7 @@ generated: { by: "process:site-build" }
 * [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](/tasks/zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) — до роботи
 * [Замовити кріплення алюмінієвої підлоги: напівкруглі #8x2 (200), потайні #8x1.5 (100), зенківка 82 градуси однозуба](/tasks/zamovyty-kriplennia-aliuminiievoi-pidlohy-napivkruhli-8x2-20.md) — до роботи
 * [Спитати Володимира: чи годиться алюміній 0.045 дюйма замість 1/16 на підлогу подіуму — усі листи 4х8 в наявності тонші за креслення](/tasks/spytaty-volodymyra-chy-hodytsia-aliuminii-0-045-diuima-zamis.md) — до роботи
+* [Вирішити: вініл рулоном замість алюмінію на підлогу подіуму — дешевше, товще, без різання на 8 сегментів, але ПВХ на сонці пустелі](/tasks/vyrishyty-vinil-rulonom-zamist-aliuminiiu-na-pidlohu-podiumu.md) — до роботи
 
 # Закупівля
 
@@ -89,3 +90,4 @@ generated: { by: "process:site-build" }
 * [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](/bom/hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) — $9.89 за 100, купити
 * [Гвинти потайні #8 × 1½″, оцинковані — там, де головка має бути врівень](/bom/hvynty-potaini-8-1-otsynkovani-tam-de-holovka-maie-buty-vriv.md) — $7.24 за 100, купити
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](/bom/zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) — $11.99, купити
+* [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](/bom/vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) — $169.99 ($1.62 за кв. фут), купити

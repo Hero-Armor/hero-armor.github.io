@@ -311,3 +311,4 @@
 * [Rosin paper Trimaco, рулон 3×144 фути — прошарок між ковдрою і обшивкою салону](rosin-paper-trimaco-rulon-3-144-futy-prosharok-mizh-kovdroiu.md) - ~$15-20, купити
 * [Ковдри для перевезення, комплект 8 шт — під кути і ребра вантажу](kovdry-dlia-perevezennia-komplekt-8-sht-pid-kuty-i-rebra-van.md) - ~$70-90, купити
 * [Фольгований екран на лобове скло — закрити головний вхід пилу зсередини](folhovanyi-ekran-na-lobove-sklo-zakryty-holovnyi-vkhid-pylu-.md) - ~$15-25, купити
+* [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) - $169.99 ($1.62 за кв. фут), купити
