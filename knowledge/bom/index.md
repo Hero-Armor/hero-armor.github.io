@@ -303,7 +303,7 @@
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) - $11.99, купити
 * [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) - $17.50, купити
 * [Станція живлення з сонячними панелями — заміна поверненому EcoFlow](stantsiia-zhyvlennia-z-soniachnymy-paneliamy-zamina-povernen.md) - ~$1000 (закладено), купити
-* [Simpson TPA57 — притискна пластина 127×178 мм під анкерний вузол](simpson-tpa57-prytyskna-plastyna-127-178-mm-pid-ankernyi-vuz.md) - $8.24 за шт · 12 шт = $98.88 (мінімум 8 шт = $65.92), купити
+* [Опорні шайби Simpson BP 2½×2½ — запасний варіант, якщо не буде TPA57](oporni-shaiby-simpson-bp-2-2-zapasnyi-variant-iakshcho-ne-bu.md) - $1.60 за шт = $38.40, купити
 * [Болти 3/8″ × 3½″ оцинковані, шестигранні — наскрізні в анкерному вузлі](bolty-3-8-3-otsynkovani-shestyhranni-naskrizni-v-ankernomu-v.md) - ~$14, купити
 * [Гайки 3/8″ з нейлоновим кільцем (nylock) — щоб не розкрутились від вібрації](haiky-3-8-z-neilonovym-kiltsem-nylock-shchob-ne-rozkrutylys-.md) - ~$5 за пачку, купити
 * [Болти з гайками для скручування притискних пластин між собою](bolty-z-haikamy-dlia-skruchuvannia-prytysknykh-plastyn-mizh-.md) - ~$12 разом, купити
