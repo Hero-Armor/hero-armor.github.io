@@ -52,6 +52,7 @@ generated: { by: "process:site-build" }
 * [Подіум 10 · Просвердлити проходи під конектори і розмістити коробки](/tasks/podium-10-prosverdlyty-prokhody-pid-konektory-i-rozmistyty-k.md) — до роботи
 * [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](/tasks/zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) — до роботи
 * [Замовити кріплення алюмінієвої підлоги: напівкруглі #8x2 (200), потайні #8x1.5 (100), зенківка 82 градуси однозуба](/tasks/zamovyty-kriplennia-aliuminiievoi-pidlohy-napivkruhli-8x2-20.md) — до роботи
+* [Спитати Володимира: чи годиться алюміній 0.045 дюйма замість 1/16 на підлогу подіуму — усі листи 4х8 в наявності тонші за креслення](/tasks/spytaty-volodymyra-chy-hodytsia-aliuminii-0-045-diuima-zamis.md) — до роботи
 
 # Закупівля
 
@@ -82,7 +83,7 @@ generated: { by: "process:site-build" }
 * [Герметик термостійкий Permatex Ultra Red RTV, 3 oz](/bom/hermetyk-termostiikyi-permatex-ultra-red-rtv-3-oz.md) — $7.56, купити
 * [Саморізи по дереву Power Pro #8 × 2″, 141 шт](/bom/samorizy-po-derevu-power-pro-8-2-141-sht.md) — $7.99, купити
 * [Кутики монтажні нержавійка, 40 шт](/bom/kutyky-montazhni-nerzhaviika-40-sht.md) — $6.99, купити
-* [Алюміній рифлений 1/16″ з клейкою основою на підлогу подіуму — 48×48″, 5 листів (за кресленням 06.13)](/bom/aliuminii-ryflenyi-1-16-z-kleikoiu-osnovoiu-na-pidlohu-podiu.md) — $145.45/лист = $727.25 (ціна з таблиці Володимира 20.07), купити
+* [Алюміній рифлений на підлогу подіуму — лист 4×8 футів (48×96″), 2 шт](/bom/aliuminii-ryflenyi-na-pidlohu-podiumu-lyst-4-8-futiv-48-96-2.md) — $169.99 за лист = $339.98, купити
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](/bom/vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) — $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](/bom/vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) — $232.14, купити
 * [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](/bom/hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) — $9.89 за 100, купити

@@ -77,6 +77,7 @@ generated: { by: "process:site-build" }
 * [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](/tasks/nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) — до роботи
 * [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз](/tasks/bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) — до роботи
 * [Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів](/tasks/skasuvaty-abo-povernuty-ecoflow-delta-3-ultra-plus-zamovlenn.md) — до роботи
+* [Перевірити перед оплатою: лаг-гвинти 3/8x10 на 62.97 — Володимир каже ґрунтові анкери дає фестиваль, тож під подіум вони не потрібні](/tasks/pereviryty-pered-oplatoiu-lah-hvynty-3-8x10-na-62-97-volodym.md) — до роботи
 
 # Закупівля
 
