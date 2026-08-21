@@ -141,7 +141,7 @@
 * [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $25.99 за 12 шт, купити
 * [Пластини кріплення ґрунтових анкерів до подіуму — лазерна різка 5x7", 3/16"](plastyny-kriplennia-gruntovykh-ankeriv-do-podiumu-lazerna-ri.md) - —, купити
 * [Ґрунтовка-герметик під фарбу Zinsser Bulls Eye 1-2-3 (обробка каркасу подіуму)](gruntovka-hermetyk-pid-farbu-zinsser-bulls-eye-1-2-3-obrobka.md) - $~40, купити
-* [Simpson TP57 — пластина 5 3/4" x 7", обкладинка бруса під анкер](simpson-tp57-plastyna-5-3-4-x-7-obkladynka-brusa-pid-anker.md) - $20, купити
+* [Simpson TPA57 — притискна пластина 127×178 мм під анкерний вузол](simpson-tpa57-prytyskna-plastyna-127-178-mm-pid-ankernyi-vuz.md) - $8.24 за шт · 12 шт = $98.88 (мінімум 8 шт = $65.92), купити
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) - —, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $51.83, є
 * [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $6.48/балон, є
@@ -303,6 +303,7 @@
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) - $11.99, купити
 * [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) - $17.50, купити
 * [Станція живлення з сонячними панелями — заміна поверненому EcoFlow](stantsiia-zhyvlennia-z-soniachnymy-paneliamy-zamina-povernen.md) - ~$1000 (закладено), купити
-* [Опорні шайби Simpson BP 2½×2½ — ЗАПАСНИЙ варіант до пластин TP57](oporni-shaiby-simpson-bp-2-2-zapasnyi-variant-do-plastyn-tp5.md) - $1.60 за шт = $38.40, купити
+* [Simpson TPA57 — притискна пластина 127×178 мм під анкерний вузол](simpson-tpa57-prytyskna-plastyna-127-178-mm-pid-ankernyi-vuz.md) - $8.24 за шт · 12 шт = $98.88 (мінімум 8 шт = $65.92), купити
 * [Болти 3/8″ × 3½″ оцинковані, шестигранні — наскрізні в анкерному вузлі](bolty-3-8-3-otsynkovani-shestyhranni-naskrizni-v-ankernomu-v.md) - ~$14, купити
 * [Гайки 3/8″ з нейлоновим кільцем (nylock) — щоб не розкрутились від вібрації](haiky-3-8-z-neilonovym-kiltsem-nylock-shchob-ne-rozkrutylys-.md) - ~$5 за пачку, купити
+* [Болти з гайками для скручування притискних пластин між собою](bolty-z-haikamy-dlia-skruchuvannia-prytysknykh-plastyn-mizh-.md) - ~$12 разом, купити

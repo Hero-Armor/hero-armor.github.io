@@ -153,3 +153,4 @@
 * [Світловідбиття на броні робимо скляними кульками по мокрому лаку, а не плівкою і не «світловідбивною фарбою»](svitlovidbyttia-na-broni-robymo-sklianymy-kulkamy-po-mokromu.md)
 * [У плайю йдуть тільки анкери з різьбою — гладкі шпильки і скоби не тримають](u-plaiiu-idut-tilky-ankery-z-rizboiu-hladki-shpylky-i-skoby-.md)
 * [Меморіальна табличка — дзеркальна нержавійка з ЧОРНИМ написом, формат A4, на анкерованому стенді](memorialna-tablychka-dzerkalna-nerzhaviika-z-chornym-napysom.md)
+* [Анкерний вузол: пластини Simpson TPA57, ґрунтові анкери дає фестиваль](ankernyi-vuzol-plastyny-simpson-tpa57-gruntovi-ankery-daie-f.md)

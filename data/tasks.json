@@ -2541,5 +2541,12 @@
   "status": "todo",
   "owner": "ivan",
   "area": "podium"
+ },
+ {
+  "task": "Дочекатись відповіді Володимира по пластинах TP57/TPA57 і по анкерах — надіслано 21.08 з характеристиками і картинкою",
+  "system": "project",
+  "status": "todo",
+  "owner": "claude",
+  "area": "podium"
  }
 ]
