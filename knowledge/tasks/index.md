@@ -322,3 +322,4 @@
 * [Дочекатись відповіді Володимира по пластинах TP57/TPA57 і по анкерах — надіслано 21.08 з характеристиками і картинкою](dochekatys-vidpovidi-volodymyra-po-plastynakh-tp57-tpa57-i-p.md) - до роботи
 * [Перевірити перед оплатою: лаг-гвинти 3/8x10 на 62.97 — Володимир каже ґрунтові анкери дає фестиваль, тож під подіум вони не потрібні](pereviryty-pered-oplatoiu-lah-hvynty-3-8x10-na-62-97-volodym.md) - до роботи
 * [Спитати Володимира: чи годиться алюміній 0.045 дюйма замість 1/16 на підлогу подіуму — усі листи 4х8 в наявності тонші за креслення](spytaty-volodymyra-chy-hodytsia-aliuminii-0-045-diuima-zamis.md) - до роботи
+* [Купити FrogTape по дорозі до Марселя — Home Depot Сан-Матео, є на полиці](kupyty-frogtape-po-dorozi-do-marselia-home-depot-san-mateo-i.md) - до роботи

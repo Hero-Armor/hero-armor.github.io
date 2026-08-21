@@ -69,6 +69,7 @@ generated: { by: "process:site-build" }
 * [Покраска 7 · Фінальна фарба поверх усього](/tasks/pokraska-7-finalna-farba-poverkh-usoho.md) — до роботи
 * [Покраска 8 · Зняти захисні скотчі з лампочок](/tasks/pokraska-8-zniaty-zakhysni-skotchi-z-lampochok.md) — до роботи
 * [Покраска 9 · Підфарбувати навколо лампочок після зняття скотчів](/tasks/pokraska-9-pidfarbuvaty-navkolo-lampochok-pislia-zniattia-sk.md) — до роботи
+* [Купити FrogTape по дорозі до Марселя — Home Depot Сан-Матео, є на полиці](/tasks/kupyty-frogtape-po-dorozi-do-marselia-home-depot-san-mateo-i.md) — до роботи
 
 # Закупівля
 
@@ -135,3 +136,4 @@ generated: { by: "process:site-build" }
 * [Світловідбивний вініл білий, рулон 12″ × 4 ft (Turner Moore)](/bom/svitlovidbyvnyi-vinil-bilyi-rulon-12-4-ft-turner-moore.md) — , є
 * [Світловідбивний вініл, аркуші 12×12″ (під Cricut)](/bom/svitlovidbyvnyi-vinil-arkushi-12-12-pid-cricut.md) — , є
 * [Скляні мікрокульки світловідбивні, 1 фунт — посипка по мокрому лаку](/bom/skliani-mikrokulky-svitlovidbyvni-1-funt-posypka-po-mokromu-.md) — $19.97, купити
+* [FrogTape Multi-Surface 1.88″ × 60 ярдів — малярний скотч, самовивіз по дорозі](/bom/frogtape-multi-surface-1-88-60-iardiv-maliarnyi-skotch-samov.md) — $9.98 за рулон, купити

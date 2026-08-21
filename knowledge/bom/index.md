@@ -307,3 +307,4 @@
 * [Болти 3/8″ × 3½″ оцинковані, шестигранні — наскрізні в анкерному вузлі](bolty-3-8-3-otsynkovani-shestyhranni-naskrizni-v-ankernomu-v.md) - ~$14, купити
 * [Гайки 3/8″ з нейлоновим кільцем (nylock) — щоб не розкрутились від вібрації](haiky-3-8-z-neilonovym-kiltsem-nylock-shchob-ne-rozkrutylys-.md) - ~$5 за пачку, купити
 * [Болти з гайками для скручування притискних пластин між собою](bolty-z-haikamy-dlia-skruchuvannia-prytysknykh-plastyn-mizh-.md) - ~$12 разом, купити
+* [FrogTape Multi-Surface 1.88″ × 60 ярдів — малярний скотч, самовивіз по дорозі](frogtape-multi-surface-1-88-60-iardiv-maliarnyi-skotch-samov.md) - $9.98 за рулон, купити

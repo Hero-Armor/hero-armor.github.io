@@ -2561,5 +2561,12 @@
   "status": "todo",
   "owner": "ivan",
   "area": "podium"
+ },
+ {
+  "task": "Купити FrogTape по дорозі до Марселя — Home Depot Сан-Матео, є на полиці",
+  "system": "armor",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "paint"
  }
 ]
