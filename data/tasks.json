@@ -2617,5 +2617,12 @@
   "status": "todo",
   "owner": "ivan",
   "area": "transport"
+ },
+ {
+  "task": "Ремені і прокладки під алюміній на дах Metris: притиснути ПЕРЕДНІЙ край, щоб вітер не заліз під лист",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
  }
 ]

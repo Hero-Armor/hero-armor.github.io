@@ -330,3 +330,4 @@
 * [КРИТИЧНО: спитати Лізу, чи власник машини Turo знає і згоден, що авто їде на Burning Man. Turo прямо забороняє їзду по неблагоустроєних дорогах — при пошкодженні страховки не буде](krytychno-spytaty-lizu-chy-vlasnyk-mashyny-turo-znaie-i-zhod.md) - до роботи
 * [Вирішити: вініл рулоном замість алюмінію на підлогу подіуму — дешевше, товще, без різання на 8 сегментів, але ПВХ на сонці пустелі](vyrishyty-vinil-rulonom-zamist-aliuminiiu-na-pidlohu-podiumu.md) - до роботи
 * [Заміряти рулеткою в кузові Canyon: висота колісної арки над підлогою, виступи над арками, висота борта зсередини](zamiriaty-ruletkoiu-v-kuzovi-canyon-vysota-kolisnoi-arky-nad.md) - до роботи
+* [Ремені і прокладки під алюміній на дах Metris: притиснути ПЕРЕДНІЙ край, щоб вітер не заліз під лист](remeni-i-prokladky-pid-aliuminii-na-dakh-metris-prytysnuty-p.md) - до роботи
