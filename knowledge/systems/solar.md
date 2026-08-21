@@ -78,6 +78,8 @@ generated: { by: "process:site-build" }
 * [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз](/tasks/bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) — до роботи
 * [Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів](/tasks/skasuvaty-abo-povernuty-ecoflow-delta-3-ultra-plus-zamovlenn.md) — до роботи
 * [Перевірити перед оплатою: лаг-гвинти 3/8x10 на 62.97 — Володимир каже ґрунтові анкери дає фестиваль, тож під подіум вони не потрібні](/tasks/pereviryty-pered-oplatoiu-lah-hvynty-3-8x10-na-62-97-volodym.md) — до роботи
+* [Скасувати замовлення Home Depot WN68023950 — EcoFlow DELTA 3 Ultra Plus $1752.90 з податком. Рішення Івана 21.08: не проходимо по бюджету, основну беремо з рук. Скасовувати ДО самовивозу (в магазині 25.08), гроші повертаються на карту …4677](/tasks/skasuvaty-zamovlennia-home-depot-wn68023950-ecoflow-delta-3-.md) — до роботи
+* [Буфер у подіум: висота порожнини всього 140-158 мм (торець 179 мм, аркуші 01.15/01.16). З покупних станцій влазить тільки EcoFlow RIVER 3 (112 мм, 245 Вт·год, вихід 12.6В/10А). River 2 Pro, EB3A і River 3 Plus не годяться](/tasks/bufer-u-podium-vysota-porozhnyny-vsoho-140-158-mm-torets-179.md) — до роботи
 
 # Закупівля
 
