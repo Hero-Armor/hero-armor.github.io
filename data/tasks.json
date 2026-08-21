@@ -2568,5 +2568,33 @@
   "status": "todo",
   "owner": "ivan",
   "area": "paint"
+ },
+ {
+  "task": "Перевірити умови Turo: чи не заборонена поїздка на Burning Man і які штрафи за прибирання — це важливіше за плівку",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
+ },
+ {
+  "task": "Захист салону орендованої машини від вантажу: картон на обшивку, ковдри, поліетилен — купити до виїзду",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
+ },
+ {
+  "task": "Захист машини від пилу плайї зовні — вирішити після ресерчу, чи є сенс у чохлі або плівці",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
+ },
+ {
+  "task": "Порахувати вартість мийки і прибирання машини після плайї, закласти в можливі витрати",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
  }
 ]

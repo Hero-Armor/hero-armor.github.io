@@ -323,3 +323,7 @@
 * [Перевірити перед оплатою: лаг-гвинти 3/8x10 на 62.97 — Володимир каже ґрунтові анкери дає фестиваль, тож під подіум вони не потрібні](pereviryty-pered-oplatoiu-lah-hvynty-3-8x10-na-62-97-volodym.md) - до роботи
 * [Спитати Володимира: чи годиться алюміній 0.045 дюйма замість 1/16 на підлогу подіуму — усі листи 4х8 в наявності тонші за креслення](spytaty-volodymyra-chy-hodytsia-aliuminii-0-045-diuima-zamis.md) - до роботи
 * [Купити FrogTape по дорозі до Марселя — Home Depot Сан-Матео, є на полиці](kupyty-frogtape-po-dorozi-do-marselia-home-depot-san-mateo-i.md) - до роботи
+* [Перевірити умови Turo: чи не заборонена поїздка на Burning Man і які штрафи за прибирання — це важливіше за плівку](pereviryty-umovy-turo-chy-ne-zaboronena-poizdka-na-burning-m.md) - до роботи
+* [Захист салону орендованої машини від вантажу: картон на обшивку, ковдри, поліетилен — купити до виїзду](zakhyst-salonu-orendovanoi-mashyny-vid-vantazhu-karton-na-ob.md) - до роботи
+* [Захист машини від пилу плайї зовні — вирішити після ресерчу, чи є сенс у чохлі або плівці](zakhyst-mashyny-vid-pylu-plaii-zovni-vyrishyty-pislia-reserc.md) - до роботи
+* [Порахувати вартість мийки і прибирання машини після плайї, закласти в можливі витрати](porakhuvaty-vartist-myiky-i-prybyrannia-mashyny-pislia-plaii.md) - до роботи
