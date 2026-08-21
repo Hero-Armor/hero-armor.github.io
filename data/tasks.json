@@ -2610,5 +2610,12 @@
   "status": "todo",
   "owner": "ivan",
   "area": "podium"
+ },
+ {
+  "task": "Заміряти рулеткою в кузові Canyon: висота колісної арки над підлогою, виступи над арками, висота борта зсередини",
+  "system": "project",
+  "status": "todo",
+  "owner": "ivan",
+  "area": "transport"
  }
 ]
