@@ -320,3 +320,8 @@
 * [Шайби пружинні (гровер) 3/8″ оцинковані, 100 шт — за кресленням поз.14, 17, 27](shaiby-pruzhynni-hrover-3-8-otsynkovani-100-sht-za-kreslenni.md) - пачка 100 шт, купити
 * [Шайби плоскі 3/8″ оцинковані, 100 шт — за кресленням поз.18, 28 (M10×30)](shaiby-ploski-3-8-otsynkovani-100-sht-za-kreslenniam-poz-18-.md) - $23.87 за 100 шт, купити
 * [Simpson LS90Z — регульований кутик, гнеться від 0 до 135°, ЗА КУТОМ ВОСЬМИКУТНИКА](simpson-ls90z-rehulovanyi-kutyk-hnetsia-vid-0-do-135-za-kuto.md) - ~$6/шт, купити
+* [Вентилятор ящика — Noctua NF-F12 iPPC-2000 IP67 PWM, 120 мм 12 В](ventyliator-iashchyka-noctua-nf-f12-ippc-2000-ip67-pwm-120-m.md) - $29.95, купити
+* [Змінні пилофільтри на вентилятор 120 мм, магнітні, 4 шт](zminni-pylofiltry-na-ventyliator-120-mm-mahnitni-4-sht.md) - $9.99, купити
+* [Термостат 12 В на вентилятор ящика, 2 шт](termostat-12-v-na-ventyliator-iashchyka-2-sht.md) - $12.99, купити
+* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) - ціну з сервера не зняв (Home Depot ріже запити) — дивитись на місці, купити
+* [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) - —, купити

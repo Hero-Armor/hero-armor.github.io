@@ -92,3 +92,6 @@ generated: { by: "process:site-build" }
 * [Гвинти потайні #8 × 1½″, оцинковані — там, де головка має бути врівень](/bom/hvynty-potaini-8-1-otsynkovani-tam-de-holovka-maie-buty-vriv.md) — $7.24 за 100, купити
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](/bom/zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) — $11.99, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](/bom/vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) — $169.99 ($1.62 за кв. фут), купити
+* [Вентилятор ящика — Noctua NF-F12 iPPC-2000 IP67 PWM, 120 мм 12 В](/bom/ventyliator-iashchyka-noctua-nf-f12-ippc-2000-ip67-pwm-120-m.md) — $29.95, купити
+* [Змінні пилофільтри на вентилятор 120 мм, магнітні, 4 шт](/bom/zminni-pylofiltry-na-ventyliator-120-mm-mahnitni-4-sht.md) — $9.99, купити
+* [Термостат 12 В на вентилятор ящика, 2 шт](/bom/termostat-12-v-na-ventyliator-iashchyka-2-sht.md) — $12.99, купити

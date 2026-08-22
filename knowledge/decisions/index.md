@@ -156,3 +156,4 @@
 * [Анкерний вузол: пластини Simpson TPA57, ґрунтові анкери дає фестиваль](ankernyi-vuzol-plastyny-simpson-tpa57-gruntovi-ankery-daie-f.md)
 * [Підлога подіуму — тільки алюміній. Вініл відхилено](pidloha-podiumu-tilky-aliuminii-vinil-vidkhyleno.md)
 * [Генератор працює ривками на зарядку станції, а не цілодобово на інсталяцію](henerator-pratsiuie-ryvkamy-na-zariadku-stantsii-a-ne-tsilod.md)
+* [Неон садимо на кліпси плюс 100% силікон, а не на клей; паз фрезеруємо ДО алюмінію](neon-sadymo-na-klipsy-plius-100-sylikon-a-ne-na-klei-paz-fre.md)

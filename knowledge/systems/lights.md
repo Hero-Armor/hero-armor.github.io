@@ -62,6 +62,7 @@ generated: { by: "process:site-build" }
 * [Коронки по алюмінію — тільки біметал M42 фірмових ліній, дешевий набір не беремо](/decisions/koronky-po-aliuminiiu-tilky-bimetal-m42-firmovykh-linii-desh.md)
 * [Стрічка виступає на 2-3 мм над подіумом, ОСБ ріжемо на дві частини по контуру](/decisions/strichka-vystupaie-na-2-3-mm-nad-podiumom-osb-rizhemo-na-dvi.md)
 * [У плайю йдуть тільки анкери з різьбою — гладкі шпильки і скоби не тримають](/decisions/u-plaiiu-idut-tilky-ankery-z-rizboiu-hladki-shpylky-i-skoby-.md)
+* [Неон садимо на кліпси плюс 100% силікон, а не на клей; паз фрезеруємо ДО алюмінію](/decisions/neon-sadymo-na-klipsy-plius-100-sylikon-a-ne-na-klei-paz-fre.md)
 
 # Задачі
 
@@ -214,3 +215,5 @@ generated: { by: "process:site-build" }
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](/bom/lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) — $24.99, купити
 * [ШІМ-диммер 12-24 В 30 А з гвинтовими клемами і регульованою частотою — заміна поверненому SUPERNIGHT](/bom/shim-dymmer-12-24-v-30-a-z-hvyntovymy-klemamy-i-rehulovanoiu.md) — $14.43 за шт, купити
 * [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](/bom/lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) — $17.50, купити
+* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](/bom/sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) — ціну з сервера не зняв (Home Depot ріже запити) — дивитись на місці, купити
+* [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](/bom/sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) — —, купити
