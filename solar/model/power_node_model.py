@@ -144,6 +144,63 @@ def station_options(panel_w=None):
     return out
 
 
+
+def generator():
+    """Генератор як джерело: скільки бензину і як часто заливати.
+
+    Питання Івана 22.08.2026: «як часто заливати, враховуючи наше маленьке
+    споживання» і «чи зекономить вихід 12 В».
+
+    Головна пастка тут не в арифметиці, а в режимі. Генератор жере паливо за
+    ОБЕРТИ, а не за віддані вати. Якщо тримати його ввімкненим цілу добу заради
+    наших ~34 Вт середніх, платимо за холостий хід — це в рази дорожче, ніж
+    зарядити станцію ривком і заглушити.
+    """
+    G = P["generator"]
+    d = demand()
+    gal_per_h_at_25 = G["tank_gal"] / G["runtime_h_25pct_gas"]
+
+    # Режим А — генератор годує інсталяцію напряму, цілу добу.
+    lo, hi = G["idle_gal_per_h_est"]
+    direct = {"gal_day": (lo * 24, hi * 24),
+              "refuels_day": (lo * 24 / G["tank_gal"], hi * 24 / G["tank_gal"])}
+
+    # Режим Б — генератор ривком заряджає станцію, станція годує інсталяцію.
+    into_battery = d["total"] / G["charge_eff"]
+    hours = into_battery / G["charge_w"]
+    # Паливо рахуємо через ЕНЕРГІЮ, а не через години: за годину на 1100 Вт мотор
+    # віддає більше, ніж за годину на 800 Вт, тому множити години на витрату для
+    # 25% навантаження — це занижувати. Перший варіант так і зробив і дав 10 діб
+    # на бак замість 7.3, розійшовшись із енергетичним рахунком на тій же сторінці.
+    gal_per_wh = G["tank_gal"] / (G["runtime_h_25pct_gas"] * G["load_at_25pct_w"])
+    gal_day = into_battery * gal_per_wh
+    burst = {"hours": hours, "gal_day": gal_day,
+             "days_per_tank": G["tank_gal"] / gal_day}
+
+    # Пропан тим самим режимом: рахуємо енергію, яку віддає один балон 20 фунтів.
+    lpg_wh_per_tank = G["runtime_h_25pct_lpg20lb"] * G["load_at_25pct_w"]
+    gas_wh_per_tank = G["runtime_h_25pct_gas"] * G["load_at_25pct_w"]
+    fuels = {"пропан 20 фунтів": lpg_wh_per_tank / into_battery,
+             f"бензин {G['tank_gal']} гал": gas_wh_per_tank / into_battery}
+    return dict(gal_per_h_at_25=gal_per_h_at_25, direct=direct, burst=burst,
+                fuels=fuels, into_battery=into_battery)
+
+
+def _selfcheck():
+    """Одна перевірка, що ловить головне: ривковий режим мусить бути в рази
+    економнішим за цілодобовий, інакше в моделі помилка знаку або одиниць."""
+    g = generator()
+    assert g["burst"]["gal_day"] * 5 < g["direct"]["gal_day"][0], \
+        "ривковий режим має бути щонайменше вп'ятеро економнішим"
+    assert 5 < g["burst"]["days_per_tank"] < 30, "діб на бак вийшло неправдоподібно"
+    # Два способи порахувати «скільки діб дає бак» мусять збігатись: через паливо
+    # за добу і через енергію на бак. Розбіжність = помилка в обліку годин.
+    assert abs(g["burst"]["days_per_tank"] - g["fuels"]["бензин 1.48 гал"]) < 0.1, \
+        "рахунок по паливу і по енергії розійшлись"
+    assert P["generator"]["has_12v_power_socket"] is False
+    return True
+
+
 def main():
     d = demand()
     name, st = station()
@@ -172,6 +229,22 @@ def main():
         print(f"  {s['name']:14} {s['wh']:5} Wh  баланс {s['balance_wh']:+6.0f} Wh  "
               f"без сонця {s['nights_no_sun']:4.1f} діб  підміна {swap:>10}  "
               f"зарядка {s['recharge_h']:4.1f} год{cap}")
+
+    G, g = P["generator"], generator()
+    print(f"\n=== ГЕНЕРАТОР: {G['model']} ===")
+    print(f"Бак {G['tank_gal']} гал · на 25% навантаження (800 Вт) {G['runtime_h_25pct_gas']} год "
+          f"-> {g['gal_per_h_at_25']:.3f} гал/год")
+    lo, hi = g["direct"]["gal_day"]
+    rlo, rhi = g["direct"]["refuels_day"]
+    print(f"А. Годує інсталяцію ЦІЛОДОБОВО: {lo:.1f}-{hi:.1f} гал/добу, "
+          f"тобто заливати {rlo:.1f}-{rhi:.1f} разів на день  [холостий хід — ОЦІНКА]")
+    b = g["burst"]
+    print(f"Б. Ривком заряджає станцію:     {b['gal_day']:.2f} гал/добу "
+          f"({b['hours']*60:.0f} хв роботи), одного бака вистачає на {b['days_per_tank']:.1f} діб")
+    for fuel, days in g["fuels"].items():
+        print(f"   один {fuel:18} = {days:.0f} діб інсталяції")
+    print(f"12 В: {G['dc_output']} — {G['_dc_note'][:60]}...")
+    assert _selfcheck()
 
 
 if __name__ == "__main__":
