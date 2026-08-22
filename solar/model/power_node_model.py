@@ -162,7 +162,10 @@ def generator():
 
     # Режим А — генератор годує інсталяцію напряму, цілу добу.
     lo, hi = G["idle_gal_per_h_est"]
-    direct = {"gal_day": (lo * 24, hi * 24),
+    mid = gal_per_h_at_25 * G["idle_ratio_of_25pct"]
+    direct = {"gal_day": (lo * 24, hi * 24), "gal_h_mid": mid,
+              "hours_per_tank": (G["tank_gal"] / hi, G["tank_gal"] / lo),
+              "hours_per_tank_mid": G["tank_gal"] / mid,
               "refuels_day": (lo * 24 / G["tank_gal"], hi * 24 / G["tank_gal"])}
 
     # Режим Б — генератор ривком заряджає станцію, станція годує інсталяцію.
@@ -193,6 +196,10 @@ def _selfcheck():
     assert g["burst"]["gal_day"] * 5 < g["direct"]["gal_day"][0], \
         "ривковий режим має бути щонайменше вп'ятеро економнішим"
     assert 5 < g["burst"]["days_per_tank"] < 30, "діб на бак вийшло неправдоподібно"
+    # Центр діапазону холостого ходу мусить лежати ВСЕРЕДИНІ самого діапазону,
+    # інакше коефіцієнт і межі розʼїхались при черговій правці даних.
+    _lo, _hi = P["generator"]["idle_gal_per_h_est"]
+    assert _lo <= g["direct"]["gal_h_mid"] <= _hi, "центр холостого ходу випав з діапазону"
     # Два способи порахувати «скільки діб дає бак» мусять збігатись: через паливо
     # за добу і через енергію на бак. Розбіжність = помилка в обліку годин.
     assert abs(g["burst"]["days_per_tank"] - g["fuels"]["бензин 1.48 гал"]) < 0.1, \
@@ -236,8 +243,11 @@ def main():
           f"-> {g['gal_per_h_at_25']:.3f} гал/год")
     lo, hi = g["direct"]["gal_day"]
     rlo, rhi = g["direct"]["refuels_day"]
+    hlo, hhi = g["direct"]["hours_per_tank"]
     print(f"А. Годує інсталяцію ЦІЛОДОБОВО: {lo:.1f}-{hi:.1f} гал/добу, "
-          f"тобто заливати {rlo:.1f}-{rhi:.1f} разів на день  [холостий хід — ОЦІНКА]")
+          f"тобто заливати {rlo:.1f}-{rhi:.1f} разів на день  [холостий хід — ОЦІНКА за аналогом]")
+    print(f"   На ОДНОМУ баку на холостому ходу: {hhi:.0f}-{hlo:.0f} год "
+          f"(центр {g['direct']['hours_per_tank_mid']:.0f} год) при {g['direct']['gal_h_mid']:.3f} гал/год")
     b = g["burst"]
     print(f"Б. Ривком заряджає станцію:     {b['gal_day']:.2f} гал/добу "
           f"({b['hours']*60:.0f} хв роботи), одного бака вистачає на {b['days_per_tank']:.1f} діб")
