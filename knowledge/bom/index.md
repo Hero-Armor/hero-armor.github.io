@@ -294,7 +294,7 @@
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) - $24.99, купити
 * [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, купити
 * [Кабель AUX 3.5 мм тато-тато, 1 фут, кутовий — ЦАП → підсилювач](kabel-aux-3-5-mm-tato-tato-1-fut-kutovyi-tsap-pidsyliuvach.md) - $6.49, купити
-* [Алюміній рифлений на підлогу подіуму — McMaster 4917T31, 48×48″, 1/16″, клейка основа](aliuminii-ryflenyi-na-pidlohu-podiumu-mcmaster-4917t31-48-48.md) - $145.45/лист · $727.25 за 5, купити
+* [Алюміній рифлений на підлогу подіуму — McMaster 4917T31, 48×48″, 1/16″, клейка основа](aliuminii-ryflenyi-na-pidlohu-podiumu-mcmaster-4917t31-48-48.md) - $145.45/лист · $930.05 за 5 з доставкою і податком, є
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) - $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) - $232.14, купити
 * [ШІМ-диммер 12-24 В 30 А з гвинтовими клемами і регульованою частотою — заміна поверненому SUPERNIGHT](shim-dymmer-12-24-v-30-a-z-hvyntovymy-klemamy-i-rehulovanoiu.md) - $14.43 за шт, купити

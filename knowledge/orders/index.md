@@ -37,3 +37,4 @@
 * [ORD-032 — Amazon](ord-032.md) - доставлено
 * [ORD-033 — Home Depot](ord-033.md) - замовлено
 * [ORD-034 — Home Depot](ord-034.md) - замовлено
+* [ORD-035 — McMaster-Carr](ord-035.md) - їде
