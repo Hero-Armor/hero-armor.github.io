@@ -205,10 +205,10 @@ generated: { by: "process:site-build" }
 * [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](/bom/koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) — $14.79, купити
 * [Коронка Bosch HBT100 1″ біметал M42 — робоча, під отвір джгута](/bom/koronka-bosch-hbt100-1-bimetal-m42-robocha-pid-otvir-dzhhuta.md) — $7.49, купити
 * [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](/bom/nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) — $89.00, купити
-* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](/bom/mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) — $15.16, купити
+* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](/bom/mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) — $15.16, є
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](/bom/voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) — $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](/bom/nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) — $37.49, купити
-* [Мастило для різання Tap Magic Industrial Pro, 4 oz](/bom/mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) — $7.90, купити
+* [Мастило для різання Tap Magic Industrial Pro, 4 oz](/bom/mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) — $7.90, є
 * [Таймер MISOL 12 В, 25 А, програмований з екраном](/bom/taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) — , є
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](/bom/samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) — $21.88, купити
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](/bom/lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) — $24.99, купити

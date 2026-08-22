@@ -215,7 +215,7 @@
 * [Коронка LENOX 1⅛″ з тримачем (1772483) — із запасом під гермоввід](koronka-lenox-1-z-trymachem-1772483-iz-zapasom-pid-hermovvid.md) - $14.79, купити
 * [Коронка Bosch HBT100 1″ біметал M42 — робоча, під отвір джгута](koronka-bosch-hbt100-1-bimetal-m42-robocha-pid-otvir-dzhhuta.md) - $7.49, купити
 * [Набір Milwaukee Hole Dozer 13 предметів (49-22-4025) — якщо потрібен саме набір](nabir-milwaukee-hole-dozer-13-predmetiv-49-22-4025-iakshcho-.md) - $89.00, купити
-* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $15.16, купити
+* [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $15.16, є
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) - $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) - $37.49, купити
 * [Фанера береза PureBond 1/2″ × 4×8 футів (Home Depot)](fanera-bereza-purebond-1-2-4-8-futiv-home-depot.md) - $59.98 / аркуш, купити
@@ -232,13 +232,13 @@
 * [Герметик термостійкий Permatex Ultra Red RTV, 3 oz](hermetyk-termostiikyi-permatex-ultra-red-rtv-3-oz.md) - $7.56, купити
 * [Саморізи по дереву Power Pro #8 × 2″, 141 шт](samorizy-po-derevu-power-pro-8-2-141-sht.md) - $7.99, купити
 * [Кутики монтажні нержавійка, 40 шт](kutyky-montazhni-nerzhaviika-40-sht.md) - $6.99, купити
-* [Мастило для різання Tap Magic Industrial Pro, 4 oz](mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) - $7.90, купити
+* [Мастило для різання Tap Magic Industrial Pro, 4 oz](mastylo-dlia-rizannia-tap-magic-industrial-pro-4-oz.md) - $7.90, є
 * [Набір насадок Dremel 710-08, 160 предметів](nabir-nasadok-dremel-710-08-160-predmetiv.md) - $39.97, купити
 * [Відрізні круги фібро-армовані TEMO, 100 шт + 2 мандрелі](vidrizni-kruhy-fibro-armovani-temo-100-sht-2-mandreli.md) - $17.99, купити
-* [Набір насадок Dremel 709-02, 110 предметів](nabir-nasadok-dremel-709-02-110-predmetiv.md) - $24.98, купити
+* [Набір насадок Dremel 709-02, 110 предметів](nabir-nasadok-dremel-709-02-110-predmetiv.md) - $24.98, є
 * [Груша-здувач Rocket Air Blaster, велика](hrusha-zduvach-rocket-air-blaster-velyka.md) - $21.95, купити
 * [Набір насадок Ryobi A90AS37, 37 предметів](nabir-nasadok-ryobi-a90as37-37-predmetiv.md) - $11.91, купити
-* [Набір насадок WEN 230327A, 327 предметів](nabir-nasadok-wen-230327a-327-predmetiv.md) - $17.11, купити
+* [Набір насадок WEN 230327A, 327 предметів](nabir-nasadok-wen-230327a-327-predmetiv.md) - $17.11, є
 * [Дуйка акумуляторна WOLFBOX MF200 (змінна батарея)](duika-akumuliatorna-wolfbox-mf200-zminna-batareia.md) - $85–102, купити
 * [Запасна батарея до WOLFBOX MF200, 37 Вт·год](zapasna-batareia-do-wolfbox-mf200-37-vt-hod.md) - $14.39, купити
 * [Дуйка акумуляторна WOLFBOX MF70](duika-akumuliatorna-wolfbox-mf70.md) - $49.99, купити
@@ -281,8 +281,8 @@
 * [Світловідбивний вініл, аркуші 12×12″ (під Cricut)](svitlovidbyvnyi-vinil-arkushi-12-12-pid-cricut.md) - , є
 * [Таймер MISOL 12 В, 25 А, програмований з екраном](taimer-misol-12-v-25-a-prohramovanyi-z-ekranom.md) - , є
 * [Скляні мікрокульки світловідбивні, 1 фунт — посипка по мокрому лаку](skliani-mikrokulky-svitlovidbyvni-1-funt-posypka-po-mokromu-.md) - $19.97, купити
-* [Стяжні ремені з храповиком Jack Boss, 1″ × 15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-z-khrapovykom-jack-boss-1-15-ft-4-sht-rozryv.md) - $0 — уточнити, купити
-* [Ковдри для перевезення WEN 72″×80″, 4 шт](kovdry-dlia-perevezennia-wen-72-80-4-sht.md) - $39.99, купити
+* [Стяжні ремені з храповиком Jack Boss, 1″ × 15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-z-khrapovykom-jack-boss-1-15-ft-4-sht-rozryv.md) - $0 — уточнити, є
+* [Ковдри для перевезення WEN 72″×80″, 4 шт](kovdry-dlia-perevezennia-wen-72-80-4-sht.md) - $39.99, є
 * [Ковдри для перевезення Amazon Basics 72″×80″, 6 шт](kovdry-dlia-perevezennia-amazon-basics-72-80-6-sht.md) - $48.14, купити
 * [Перехідники з шестигранника 1/4″ на квадрат 1/4, 3/8 і 1/2 — LEXIVON LX-104, 4 шт + тримач](perekhidnyky-z-shestyhrannyka-1-4-na-kvadrat-1-4-3-8-i-1-2-l.md) - $8.47, купити
 * [Перехідники LEXIVON LX-101, 3 шт (без тримача) — дешевша версія](perekhidnyky-lexivon-lx-101-3-sht-bez-trymacha-deshevsha-ver.md) - $7.17, купити
@@ -290,9 +290,9 @@
 * [Набір головок NEIKO 02432A, квадрат 3/8″, 21 шт — SAE і метричні, 6 граней](nabir-holovok-neiko-02432a-kvadrat-3-8-21-sht-sae-i-metrychn.md) - $23.98, купити
 * [Знімач задирок Sabre/аналог — заміна Milwaukee 49-66-4588: Sabre Tools 9/16″ × 6″ магнітна](znimach-zadyrok-sabre-analoh-zamina-milwaukee-49-66-4588-sab.md) - $7.99, купити
 * [Саморізи по металу з шестигранною голівкою, набір 370 шт — дрібне кріплення ліхтариків](samorizy-po-metalu-z-shestyhrannoiu-holivkoiu-nabir-370-sht-.md) - $21.88, купити
-* [Знімач задирок AFA Tooling, 11 лез M2 HSS, алюмінієва ручка](znimach-zadyrok-afa-tooling-11-lez-m2-hss-aliuminiieva-ruchk.md) - $9.99, купити
+* [Знімач задирок AFA Tooling, 11 лез M2 HSS, алюмінієва ручка](znimach-zadyrok-afa-tooling-11-lez-m2-hss-aliuminiieva-ruchk.md) - $9.99, є
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) - $24.99, купити
-* [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, купити
+* [Стяжні ремені Jack Boss 1″×15 ft, 4 шт, розрив 1500 lbs](stiazhni-remeni-jack-boss-1-15-ft-4-sht-rozryv-1500-lbs.md) - $19.99, є
 * [Кабель AUX 3.5 мм тато-тато, 1 фут, кутовий — ЦАП → підсилювач](kabel-aux-3-5-mm-tato-tato-1-fut-kutovyi-tsap-pidsyliuvach.md) - $6.49, купити
 * [Алюміній рифлений на підлогу подіуму — McMaster 4917T31, 48×48″, 1/16″, клейка основа](aliuminii-ryflenyi-na-pidlohu-podiumu-mcmaster-4917t31-48-48.md) - $145.45/лист · $930.05 за 5 з доставкою і податком, є
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) - $69.98, купити
@@ -312,3 +312,4 @@
 * [Ковдри для перевезення, комплект 8 шт — під кути і ребра вантажу](kovdry-dlia-perevezennia-komplekt-8-sht-pid-kuty-i-rebra-van.md) - ~$70-90, купити
 * [Фольгований екран на лобове скло — закрити головний вхід пилу зсередини](folhovanyi-ekran-na-lobove-sklo-zakryty-holovnyi-vkhid-pylu-.md) - ~$15-25, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) - $169.99 ($1.62 за кв. фут), купити
+* [Стенд підлоговий під меморіальну табличку — VAIIGO 8.5×11, хром, плоска сталева база](stend-pidlohovyi-pid-memorialnu-tablychku-vaiigo-8-5-11-khro.md) - $47.99, купити
