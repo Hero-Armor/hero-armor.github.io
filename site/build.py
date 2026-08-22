@@ -1928,7 +1928,26 @@ def build():
         f'    <div class="decision">\n      <h3>{esc(d["title"])}</h3>\n'
         f'      <p><span class="why">чому</span> · {d["why"]}</p>\n    </div>'
         for d in s_decs if not d.get("open")))
-    solar_page = solar_page.replace("{{FLAGS_HTML}}", "\n".join(
+    # Генератор — окремий блок, бо це друге джерело поруч зі станцією і сонцем.
+    # Числа беруться з моделі, не вписуються руками (правило проєкту).
+    G, gg = pw.P["generator"], pw.generator()
+    _lo, _hi = gg["direct"]["gal_day"]
+    _rlo, _rhi = gg["direct"]["refuels_day"]
+    gen_html = (
+        f'  <div class="flag">\n    <h3>Генератор: {esc(G["model"])}</h3>\n'
+        f'    <p>Бак {G["tank_gal"]} гал. На 25% навантаження ({G["load_at_25pct_w"]} Вт) — '
+        f'{G["runtime_h_25pct_gas"]} год, тобто {gg["gal_per_h_at_25"]:.3f} гал/год. '
+        f'Шум {G["sound_db_7m_25pct"]} дБ на 7 м, вага {G["weight_lb"]} фунтів.</p>\n'
+        f'    <p><b>Годує інсталяцію цілодобово:</b> {_lo:.1f}–{_hi:.1f} гал/добу, '
+        f'заливати {_rlo:.1f}–{_rhi:.1f} разів на день. Холостий хід тут — ОЦІНКА, '
+        f'не паспорт: виробник дає витрату лише на 25% навантаження.</p>\n'
+        f'    <p><b>Ривком заряджає станцію:</b> {gg["burst"]["gal_day"]:.2f} гал/добу, '
+        f'{gg["burst"]["hours"]*60:.0f} хв роботи, одного бака вистачає на '
+        f'{gg["burst"]["days_per_tank"]:.1f} діб. Це і є робочий режим.</p>\n'
+        + "".join(f'    <p>Один {esc(k)} = {v:.0f} діб інсталяції.</p>\n'
+                  for k, v in gg["fuels"].items()) +
+        f'    <p><b>Про вихід 12 В:</b> {esc(G["dc_output"])}. {esc(G["_dc_note"])}</p>\n  </div>')
+    solar_page = solar_page.replace("{{FLAGS_HTML}}", gen_html + "\n" + "\n".join(
         f'  <div class="flag">\n    <h3>{esc(d["title"])}</h3>\n'
         f'    <p><span class="why">відкрите</span> · {d["why"]}</p>\n  </div>'
         for d in s_decs if d.get("open")))
