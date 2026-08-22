@@ -313,3 +313,10 @@
 * [Фольгований екран на лобове скло — закрити головний вхід пилу зсередини](folhovanyi-ekran-na-lobove-sklo-zakryty-holovnyi-vkhid-pylu-.md) - ~$15-25, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) - $169.99 ($1.62 за кв. фут), купити
 * [Стенд підлоговий під меморіальну табличку — VAIIGO 8.5×11, хром, плоска сталева база](stend-pidlohovyi-pid-memorialnu-tablychku-vaiigo-8-5-11-khro.md) - $47.99, купити
+* [Болти 3/8″ × 3″ оцинковані — рама подіуму (за кресленням M10×70, поз.15)](bolty-3-8-3-otsynkovani-rama-podiumu-za-kreslenniam-m10-70-p.md) - $17 за 25 шт, купити
+* [Болти 3/8″ × 4½″ оцинковані — база робота (за кресленням M10×110, поз.25)](bolty-3-8-4-otsynkovani-baza-robota-za-kreslenniam-m10-110-p.md) - поштучно, купити
+* [Шпилька різьбова 3/8-16 × 36″ оцинкована — на 4 довгі болти M10×180 (поз.24)](shpylka-rizbova-3-8-16-36-otsynkovana-na-4-dovhi-bolty-m10-1.md) - $5.27, купити
+* [Гайки 3/8-16 з нейлоновим кільцем, пачка 10 шт — за кресленням поз.13, 16, 26](haiky-3-8-16-z-neilonovym-kiltsem-pachka-10-sht-za-kreslenni.md) - пачка 10 шт, купити
+* [Шайби пружинні (гровер) 3/8″ оцинковані, 100 шт — за кресленням поз.14, 17, 27](shaiby-pruzhynni-hrover-3-8-otsynkovani-100-sht-za-kreslenni.md) - пачка 100 шт, купити
+* [Шайби плоскі 3/8″ оцинковані, 100 шт — за кресленням поз.18, 28 (M10×30)](shaiby-ploski-3-8-otsynkovani-100-sht-za-kreslenniam-poz-18-.md) - $23.87 за 100 шт, купити
+* [Simpson LS90Z — регульований кутик, гнеться від 0 до 135°, ЗА КУТОМ ВОСЬМИКУТНИКА](simpson-ls90z-rehulovanyi-kutyk-hnetsia-vid-0-do-135-za-kuto.md) - ~$6/шт, купити
