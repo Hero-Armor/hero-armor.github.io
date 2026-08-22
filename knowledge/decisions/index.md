@@ -155,3 +155,4 @@
 * [Меморіальна табличка — дзеркальна нержавійка з ЧОРНИМ написом, формат A4, на анкерованому стенді](memorialna-tablychka-dzerkalna-nerzhaviika-z-chornym-napysom.md)
 * [Анкерний вузол: пластини Simpson TPA57, ґрунтові анкери дає фестиваль](ankernyi-vuzol-plastyny-simpson-tpa57-gruntovi-ankery-daie-f.md)
 * [Підлога подіуму — тільки алюміній. Вініл відхилено](pidloha-podiumu-tilky-aliuminii-vinil-vidkhyleno.md)
+* [Генератор працює ривками на зарядку станції, а не цілодобово на інсталяцію](henerator-pratsiuie-ryvkamy-na-zariadku-stantsii-a-ne-tsilod.md)
