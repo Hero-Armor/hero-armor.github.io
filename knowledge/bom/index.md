@@ -218,7 +218,7 @@
 * [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $15.16, є
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) - $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) - $37.49, купити
-* [Фанера на підлогу подіуму — ARAUCO 19/32" 4×8 Pine Sanded (факт ~15 мм), заміна 3 зіпсованих сегментів](fanera-na-pidlohu-podiumu-arauco-19-32-4-8-pine-sanded-fakt-.md) - $32.51 за лист (~$65 за два), купити
+* [Фанера на підлогу подіуму — ARAUCO 19/32" 4×8 Pine Sanded (факт ~15 мм), заміна 3 зіпсованих сегментів](fanera-na-pidlohu-podiumu-arauco-19-32-4-8-pine-sanded-fakt-.md) - $35.16 за лист CDX на полиці / $32.51 шліфована ($70-77 за два з податком), купити
 * [Мінеральна вата ROCKWOOL Rockboard 60, 2″ (50 мм), 4 плити](mineralna-vata-rockwool-rockboard-60-2-50-mm-4-plyty.md) - $122.99, купити
 * [Фольгована ізоляція в рулоні 23.6″ × 10 футів](folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) - $12.99, купити
 * [Гофра вихлопна нержавійка T304, 1.5″ × 6 футів](hofra-vykhlopna-nerzhaviika-t304-1-5-6-futiv.md) - $34.80, купити
