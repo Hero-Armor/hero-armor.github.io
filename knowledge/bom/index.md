@@ -32,8 +32,8 @@
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
-* [Сонячні панелі для масиву (потужність не обрана)](soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - $149, купити
-* [Друга станція EcoFlow — змінна, модель не обрана](druha-stantsiia-ecoflow-zminna-model-ne-obrana.md) - ~$1600, купити
+* [Сонячна панель під Bluetti AC200P — 300-400 Вт, VOC 35-150 В](soniachna-panel-pid-bluetti-ac200p-300-400-vt-voc-35-150-v.md) - $49-99 (вторинка), купити
+* [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) - ~$1600, є
 * [Рама під сонячний масив](rama-pid-soniachnyi-masyv.md) - —, купити
 * [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - $61.95, купити
 * [Щит-бокс із тримачами запобіжників — Cyrico 12 Circuits](shchyt-boks-iz-trymachamy-zapobizhnykiv-cyrico-12-circuits.md) - $15.99, купити
@@ -120,7 +120,7 @@
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) - $93.01, купити
 * [Обдувач компресорний WOLFBOX MF100 (турбіна 150 000 об/хв)](obduvach-kompresornyi-wolfbox-mf100-turbina-150-000-ob-khv.md) - $69.75, купити
 * [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) - $1,599.00, є
-* [Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)](iashchyk-sterilite-40-gal-wheeled-industrial-tote-para-stant.md) - $176.99, купити
+* [Ящик станції — Sterilite 160 Qt (40 gal) Wheeled Storage Box 14674K02](iashchyk-stantsii-sterilite-160-qt-40-gal-wheeled-storage-bo.md) - $15.98, купити
 * [Кабель від станції до щита під Anderson, переріз на 30 А](kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) - —, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](dmwd-12mm-led-dozamovyty-1-upakovku.md) - $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) - $11.99 за набір, купити
@@ -218,7 +218,7 @@
 * [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $15.16, є
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) - $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) - $37.49, купити
-* [Фанера береза PureBond 1/2″ × 4×8 футів (Home Depot)](fanera-bereza-purebond-1-2-4-8-futiv-home-depot.md) - $59.98 / аркуш, купити
+* [Фанера на ПІДЛОГУ ПОДІУМУ — під наявні 16 мм, добір зіпсованих сегментів](fanera-na-pidlohu-podiumu-pid-naiavni-16-mm-dobir-zipsovanyk.md) - $30-60, купити
 * [Мінеральна вата ROCKWOOL Rockboard 60, 2″ (50 мм), 4 плити](mineralna-vata-rockwool-rockboard-60-2-50-mm-4-plyty.md) - $122.99, купити
 * [Фольгована ізоляція в рулоні 23.6″ × 10 футів](folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) - $12.99, купити
 * [Гофра вихлопна нержавійка T304, 1.5″ × 6 футів](hofra-vykhlopna-nerzhaviika-t304-1-5-6-futiv.md) - $34.80, купити

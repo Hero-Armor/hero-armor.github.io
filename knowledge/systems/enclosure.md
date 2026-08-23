@@ -69,9 +69,8 @@ generated: { by: "process:site-build" }
 * [Гермоввід PG13.5 IP68](/bom/hermovvid-pg13-5-ip68.md) — $10, купити
 * [Кулер Coleman 100-150 qt](/bom/kuler-coleman-100-150-qt.md) — $100-140, купити
 * [Каністри під воду 5 л](/bom/kanistry-pid-vodu-5-l.md) — $40, купити
-* [Ящик Sterilite 40 gal Wheeled Industrial Tote, пара (станція + щит)](/bom/iashchyk-sterilite-40-gal-wheeled-industrial-tote-para-stant.md) — $176.99, купити
+* [Ящик станції — Sterilite 160 Qt (40 gal) Wheeled Storage Box 14674K02](/bom/iashchyk-stantsii-sterilite-160-qt-40-gal-wheeled-storage-bo.md) — $15.98, купити
 * [Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском](/bom/henerator-ecoflow-smart-generator-4000-dual-fuel-firmovyi-z-.md) — $1259, купити
-* [Фанера береза PureBond 1/2″ × 4×8 футів (Home Depot)](/bom/fanera-bereza-purebond-1-2-4-8-futiv-home-depot.md) — $59.98 / аркуш, купити
 * [Мінеральна вата ROCKWOOL Rockboard 60, 2″ (50 мм), 4 плити](/bom/mineralna-vata-rockwool-rockboard-60-2-50-mm-4-plyty.md) — $122.99, купити
 * [Фольгована ізоляція в рулоні 23.6″ × 10 футів](/bom/folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) — $12.99, купити
 * [Гофра вихлопна нержавійка T304, 1.5″ × 6 футів](/bom/hofra-vykhlopna-nerzhaviika-t304-1-5-6-futiv.md) — $34.80, купити
