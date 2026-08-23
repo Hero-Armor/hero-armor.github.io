@@ -83,7 +83,7 @@
 * [Стяжки нейлонові UV-стійкі, 400 шт](stiazhky-neilonovi-uv-stiiki-400-sht.md) - $7, купити
 * [Кейс під станцію](keis-pid-stantsiiu.md) - $75-485, купити
 * [Канальний фільтр-бокс AC Infinity 6"](kanalnyi-filtr-boks-ac-infinity-6.md) - $70, купити
-* [Фільтр MERV 13 12×20×1"](filtr-merv-13-12-20-1.md) - $12, купити
+* [Фільтр щільний MERV 13, полотно 24×96" — ріжеться під отвір, миється](filtr-shchilnyi-merv-13-polotno-24-96-rizhetsia-pid-otvir-my.md) - $17.09, купити
 * [Поролоновий передфільтр (тип Outerwears)](porolonovyi-peredfiltr-typ-outerwears.md) - $30, купити
 * [Канальний вентилятор AC Infinity 6" на нагнітання](kanalnyi-ventyliator-ac-infinity-6-na-nahnitannia.md) - $80, купити
 * [Пасивна жалюзі-решітка на випуск](pasyvna-zhaliuzi-reshitka-na-vypusk.md) - $15, купити
@@ -131,7 +131,7 @@
 * [Наконечники кільцеві під 10 AWG на болт шини](nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) - $~10, купити
 * [Свердло Форстнера 1" (25.4 мм) по дереву](sverdlo-forstnera-1-25-4-mm-po-derevu.md) - $~15, купити
 * [Ступінчасте свердло 6-35 мм (дерево + алюміній)](stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) - $~20, купити
-* [Simpson Strong-Tie LS50Z — кутик з регульованим кутом (2x6/2x8), ZMAX](simpson-strong-tie-ls50z-kutyk-z-rehulovanym-kutom-2x6-2x8-z.md) - $67, купити
+* [Simpson Strong-Tie LS50Z — кутик з регульованим кутом (2x6/2x8), ZMAX](simpson-strong-tie-ls50z-kutyk-z-rehulovanym-kutom-2x6-2x8-z.md) - ~$4.20 за штуку, купити
 * [Simpson Strong-Tie HTP37Z — пластина-тяж 3"x7", 16ga, ZMAX](simpson-strong-tie-htp37z-plastyna-tiazh-3-x7-16ga-zmax.md) - —, купити
 * [Гвинти Simpson SD9112 #9x1 1/2" (Strong-Drive connector screw)](hvynty-simpson-sd9112-9x1-1-2-strong-drive-connector-screw.md) - $30.84, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) - —, купити
@@ -200,7 +200,7 @@
 * [Жовта світлоповертальна плівка, 3 листи 12″×12″ — під круг поз. 5](zhovta-svitlopovertalna-plivka-3-lysty-12-12-pid-kruh-poz-5.md) - $13.95, купити
 * [Коронка Bosch HBT075 3/4″ біметал M42 — отвори під врізні вогні](koronka-bosch-hbt075-3-4-bimetal-m42-otvory-pid-vrizni-vohni.md) - $6.49 за шт ($12.98 за дві), купити
 * [Ступеневе свердло 1/4″–3/4″ (Neiko 10184A) — точний діаметр по алюмінію](stupeneve-sverdlo-1-4-3-4-neiko-10184a-tochnyi-diametr-po-al.md) - $9.19, купити
-* [Amzonly навігаційні вогні для каяка, 4 шт — маркери периметра, 170 годин мигання](amzonly-navihatsiini-vohni-dlia-kaiaka-4-sht-markery-perymet.md) - $12.99 за набір ($51.96 за 16 шт), купити
+* [Amzonly навігаційні вогні для каяка, 4 шт — маркери периметра, 170 годин мигання](amzonly-navihatsiini-vohni-dlia-kaiaka-4-sht-markery-perymet.md) - $14.21 за набір, купити
 * [Мастило для різання металу (cutting fluid) — обовʼязкове для алюмінію](mastylo-dlia-rizannia-metalu-cutting-fluid-oboviazkove-dlia-.md) - ~$10, купити
 * [Набір біметалевих коронок M42, 3/4″–2″ — під світильники, розʼєми і кабельні проходи](nabir-bimetalevykh-koronok-m42-3-4-2-pid-svitylnyky-roziemy-.md) - $24-38 залежно від набору, купити
 * [Стійки під плати самоклейні, нейлон — 100 шт (не свердлити коробку)](stiiky-pid-platy-samokleini-neilon-100-sht-ne-sverdlyty-koro.md) - $9.99, купити
@@ -223,7 +223,7 @@
 * [Фольгована ізоляція в рулоні 23.6″ × 10 футів](folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) - $12.99, купити
 * [Гофра вихлопна нержавійка T304, 1.5″ × 6 футів](hofra-vykhlopna-nerzhaviika-t304-1-5-6-futiv.md) - $34.80, купити
 * [Прохід вихлопу крізь стінку GenExhaust, подвійна стінка 1½″](prokhid-vykhlopu-kriz-stinku-genexhaust-podviina-stinka-1.md) - $104.50, купити
-* [Решітка вентиляційна металева 6″, плоскі жалюзі](reshitka-ventyliatsiina-metaleva-6-ploski-zhaliuzi.md) - $16.45 / шт, купити
+* [Вихлопна решітка ящика — Deflecto 4" з гравітаційною заслінкою](vykhlopna-reshitka-iashchyka-deflecto-4-z-hravitatsiinoiu-za.md) - $7.92, купити
 * [Петлі нержавійка 3″, 4 шт](petli-nerzhaviika-3-4-sht.md) - $9.99, купити
 * [Засувки-защіпки нержавійка 304, 2 шт](zasuvky-zashchipky-nerzhaviika-304-2-sht.md) - $17.99, купити
 * [Ручка врізна пружинна сталева з накладкою](ruchka-vrizna-pruzhynna-staleva-z-nakladkoiu.md) - $19.95 / шт, купити
@@ -309,7 +309,7 @@
 * [Болти 1/4-20 × 3/4″ + гайки з нейлоновим кільцем — скрутити притискні пластини між собою](bolty-1-4-20-3-4-haiky-z-neilonovym-kiltsem-skrutyty-prytysk.md) - ~$12 разом, купити
 * [FrogTape Multi-Surface 1.88″ × 60 ярдів — малярний скотч, самовивіз по дорозі](frogtape-multi-surface-1-88-60-iardiv-maliarnyi-skotch-samov.md) - $9.98 за рулон, купити
 * [Rosin paper Trimaco, рулон 3×144 фути — прошарок між ковдрою і обшивкою салону](rosin-paper-trimaco-rulon-3-144-futy-prosharok-mizh-kovdroiu.md) - ~$15-20, купити
-* [Ковдри для перевезення, комплект 8 шт — під кути і ребра вантажу](kovdry-dlia-perevezennia-komplekt-8-sht-pid-kuty-i-rebra-van.md) - ~$70-90, купити
+* [Ковдри для перевезення — добір, якщо 4 шт WEN не вистачить](kovdry-dlia-perevezennia-dobir-iakshcho-4-sht-wen-ne-vystach.md) - $9.99 за шт, купити
 * [Фольгований екран на лобове скло — закрити головний вхід пилу зсередини](folhovanyi-ekran-na-lobove-sklo-zakryty-holovnyi-vkhid-pylu-.md) - ~$15-25, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) - $169.99 ($1.62 за кв. фут), купити
 * [Стенд підлоговий під меморіальну табличку — VAIIGO 8.5×11, хром, плоска сталева база](stend-pidlohovyi-pid-memorialnu-tablychku-vaiigo-8-5-11-khro.md) - $47.99, купити
@@ -320,8 +320,12 @@
 * [Шайби пружинні (гровер) 3/8″ оцинковані, 100 шт — за кресленням поз.14, 17, 27](shaiby-pruzhynni-hrover-3-8-otsynkovani-100-sht-za-kreslenni.md) - пачка 100 шт, купити
 * [Шайби плоскі 3/8″ оцинковані, 100 шт — за кресленням поз.18, 28 (M10×30)](shaiby-ploski-3-8-otsynkovani-100-sht-za-kreslenniam-poz-18-.md) - $23.87 за 100 шт, купити
 * [Simpson LS90Z — регульований кутик, гнеться від 0 до 135°, ЗА КУТОМ ВОСЬМИКУТНИКА](simpson-ls90z-rehulovanyi-kutyk-hnetsia-vid-0-do-135-za-kuto.md) - ~$6/шт, купити
-* [Вентилятор ящика — Noctua NF-F12 iPPC-2000 IP67 PWM, 120 мм 12 В](ventyliator-iashchyka-noctua-nf-f12-ippc-2000-ip67-pwm-120-m.md) - $29.95, купити
+* [Вентилятор ящика — 120 мм 12 В, 1600 об/хв, 47 CFM, 2 шт у наборі](ventyliator-iashchyka-120-mm-12-v-1600-ob-khv-47-cfm-2-sht-u.md) - $12.99, купити
 * [Змінні пилофільтри на вентилятор 120 мм, магнітні, 4 шт](zminni-pylofiltry-na-ventyliator-120-mm-mahnitni-4-sht.md) - $9.99, купити
 * [Термостат 12 В на вентилятор ящика, 2 шт](termostat-12-v-na-ventyliator-iashchyka-2-sht.md) - $12.99, купити
 * [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) - ціну з сервера не зняв (Home Depot ріже запити) — дивитись на місці, купити
 * [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) - —, купити
+* [Батарейки AAA Energizer MAX, 48 шт — маркерні вогні (12 ліхтарів × 3)](batareiky-aaa-energizer-max-48-sht-markerni-vohni-12-likhtar.md) - $19.73, купити
+* [Поролон-передфільтр Frost King 15×24", відкритопористий — груба ступінь](porolon-peredfiltr-frost-king-15-24-vidkrytoporystyi-hruba-s.md) - $4.49, купити
+* [Гвинти #8 × 2″ ПОТАЙНІ нержавіючі — тримають ВСЮ верхню кришку наскрізь](hvynty-8-2-potaini-nerzhaviiuchi-trymaiut-vsiu-verkhniu-krys.md) - $11.25 за 50 · $33.75 за 150, купити
+* [Сталь 1/16″ листом на пластини 7×5″ — варіант «купити і порізати» замість TPA57](stal-1-16-lystom-na-plastyny-7-5-variant-kupyty-i-porizaty-z.md) - $39.90/лист · $79.80, купити

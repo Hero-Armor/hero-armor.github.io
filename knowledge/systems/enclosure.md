@@ -62,7 +62,7 @@ generated: { by: "process:site-build" }
 * [Маркерний вогник ящика — індикатор 12 мм 12 В](/bom/markernyi-vohnyk-iashchyka-indykator-12-mm-12-v.md) — ~$10, купити
 * [Кейс під станцію](/bom/keis-pid-stantsiiu.md) — $75-485, купити
 * [Канальний фільтр-бокс AC Infinity 6"](/bom/kanalnyi-filtr-boks-ac-infinity-6.md) — $70, купити
-* [Фільтр MERV 13 12×20×1"](/bom/filtr-merv-13-12-20-1.md) — $12, купити
+* [Фільтр щільний MERV 13, полотно 24×96" — ріжеться під отвір, миється](/bom/filtr-shchilnyi-merv-13-polotno-24-96-rizhetsia-pid-otvir-my.md) — $17.09, купити
 * [Поролоновий передфільтр (тип Outerwears)](/bom/porolonovyi-peredfiltr-typ-outerwears.md) — $30, купити
 * [Канальний вентилятор AC Infinity 6" на нагнітання](/bom/kanalnyi-ventyliator-ac-infinity-6-na-nahnitannia.md) — $80, купити
 * [Пасивна жалюзі-решітка на випуск](/bom/pasyvna-zhaliuzi-reshitka-na-vypusk.md) — $15, купити
@@ -76,7 +76,7 @@ generated: { by: "process:site-build" }
 * [Фольгована ізоляція в рулоні 23.6″ × 10 футів](/bom/folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) — $12.99, купити
 * [Гофра вихлопна нержавійка T304, 1.5″ × 6 футів](/bom/hofra-vykhlopna-nerzhaviika-t304-1-5-6-futiv.md) — $34.80, купити
 * [Прохід вихлопу крізь стінку GenExhaust, подвійна стінка 1½″](/bom/prokhid-vykhlopu-kriz-stinku-genexhaust-podviina-stinka-1.md) — $104.50, купити
-* [Решітка вентиляційна металева 6″, плоскі жалюзі](/bom/reshitka-ventyliatsiina-metaleva-6-ploski-zhaliuzi.md) — $16.45 / шт, купити
+* [Вихлопна решітка ящика — Deflecto 4" з гравітаційною заслінкою](/bom/vykhlopna-reshitka-iashchyka-deflecto-4-z-hravitatsiinoiu-za.md) — $7.92, купити
 * [Петлі нержавійка 3″, 4 шт](/bom/petli-nerzhaviika-3-4-sht.md) — $9.99, купити
 * [Засувки-защіпки нержавійка 304, 2 шт](/bom/zasuvky-zashchipky-nerzhaviika-304-2-sht.md) — $17.99, купити
 * [Ручка врізна пружинна сталева з накладкою](/bom/ruchka-vrizna-pruzhynna-staleva-z-nakladkoiu.md) — $19.95 / шт, купити
@@ -92,6 +92,7 @@ generated: { by: "process:site-build" }
 * [Гвинти потайні #8 × 1½″, оцинковані — там, де головка має бути врівень](/bom/hvynty-potaini-8-1-otsynkovani-tam-de-holovka-maie-buty-vriv.md) — $7.24 за 100, купити
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](/bom/zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) — $11.99, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](/bom/vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) — $169.99 ($1.62 за кв. фут), купити
-* [Вентилятор ящика — Noctua NF-F12 iPPC-2000 IP67 PWM, 120 мм 12 В](/bom/ventyliator-iashchyka-noctua-nf-f12-ippc-2000-ip67-pwm-120-m.md) — $29.95, купити
+* [Вентилятор ящика — 120 мм 12 В, 1600 об/хв, 47 CFM, 2 шт у наборі](/bom/ventyliator-iashchyka-120-mm-12-v-1600-ob-khv-47-cfm-2-sht-u.md) — $12.99, купити
 * [Змінні пилофільтри на вентилятор 120 мм, магнітні, 4 шт](/bom/zminni-pylofiltry-na-ventyliator-120-mm-mahnitni-4-sht.md) — $9.99, купити
 * [Термостат 12 В на вентилятор ящика, 2 шт](/bom/termostat-12-v-na-ventyliator-iashchyka-2-sht.md) — $12.99, купити
+* [Поролон-передфільтр Frost King 15×24", відкритопористий — груба ступінь](/bom/porolon-peredfiltr-frost-king-15-24-vidkrytoporystyi-hruba-s.md) — $4.49, купити
