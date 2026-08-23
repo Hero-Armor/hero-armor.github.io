@@ -60,7 +60,7 @@
 * [Зарядник 14.6 В 20-30 А з Anderson](zariadnyk-14-6-v-20-30-a-z-anderson.md) - ~$60, купити
 * [Victron Orion-Tr 48/12-30A (360 Вт), ізольований](victron-orion-tr-48-12-30a-360-vt-izolovanyi.md) - $201, купити
 * [Victron Orion-Tr 48/12-20A (240 Вт), ізольований](victron-orion-tr-48-12-20a-240-vt-izolovanyi.md) - $114, купити
-* [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) - $6.99 за 2 пари, купити
+* [BLUETTI RV Cable 12V/30A (авіа→XT60→Anderson)](bluetti-rv-cable-12v-30a-avia-xt60-anderson.md) - $29.99 (звірити), купити
 * [Кабель XT150 для порту розширення (готовий)](kabel-xt150-dlia-portu-rozshyrennia-hotovyi.md) - ~$25, купити
 * [Макетна плата 9×15см двостороння](maketna-plata-9-15sm-dvostoronnia.md) - $13, купити
 * [Набір нейлонових стійок M2.5/M3/M4](nabir-neilonovykh-stiiok-m2-5-m3-m4.md) - $17, купити
@@ -218,7 +218,7 @@
 * [Мастило для різання алюмінію — Tap Magic Aluminum, 16 oz з носиком](mastylo-dlia-rizannia-aliuminiiu-tap-magic-aluminum-16-oz-z-.md) - $15.16, є
 * [Восковий олівець для різання — Champion BruteLube, 2 oz](voskovyi-olivets-dlia-rizannia-champion-brutelube-2-oz.md) - $22.60, купити
 * [Набір коронок Bosch HSBIM9, 9 предметів — 6 коронок + ДВІ оправки + кейс](nabir-koronok-bosch-hsbim9-9-predmetiv-6-koronok-dvi-opravky.md) - $37.49, купити
-* [Фанера на підлогу подіуму — ARAUCO 19/32" 4×8 Pine Sanded (факт ~15 мм), заміна 3 зіпсованих сегментів](fanera-na-pidlohu-podiumu-arauco-19-32-4-8-pine-sanded-fakt-.md) - $35.16 за лист CDX на полиці / $32.51 шліфована ($70-77 за два з податком), купити
+* [Фанера на підлогу подіуму — ARAUCO 19/32" 4×8 Pine Sanded (факт ~15 мм), заміна 3 зіпсованих сегментів](fanera-na-pidlohu-podiumu-arauco-19-32-4-8-pine-sanded-fakt-.md) - $35.16 за лист CDX на полиці / $32.51 шліфована ($70-77 за два з податком), є
 * [Мінеральна вата ROCKWOOL Rockboard 60, 2″ (50 мм), 4 плити](mineralna-vata-rockwool-rockboard-60-2-50-mm-4-plyty.md) - $122.99, купити
 * [Фольгована ізоляція в рулоні 23.6″ × 10 футів](folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) - $12.99, купити
 * [Гофра вихлопна нержавійка T304, 1.5″ × 6 футів](hofra-vykhlopna-nerzhaviika-t304-1-5-6-futiv.md) - $34.80, купити
@@ -329,3 +329,4 @@
 * [Поролон-передфільтр Frost King 15×24", відкритопористий — груба ступінь](porolon-peredfiltr-frost-king-15-24-vidkrytoporystyi-hruba-s.md) - $4.49, купити
 * [Гвинти #8 × 2″ ПОТАЙНІ нержавіючі — тримають ВСЮ верхню кришку наскрізь](hvynty-8-2-potaini-nerzhaviiuchi-trymaiut-vsiu-verkhniu-krys.md) - $11.25 за 50 · $33.75 за 150, купити
 * [Сталь 1/16″ листом на пластини 7×5″ — варіант «купити і порізати» замість TPA57](stal-1-16-lystom-na-plastyny-7-5-variant-kupyty-i-porizaty-z.md) - $39.90/лист · $79.80, купити
+* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) - ~$10, купити

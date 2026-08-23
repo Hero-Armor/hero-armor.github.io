@@ -6,10 +6,10 @@ resource: "https://www.amazon.com/dp/B07CHDM1VT"
 tags: ["solar"]
 quantity: "1 пара"
 price: "$~17"
-procurement_status: "add"
+procurement_status: "tbd"
 generated: { by: "process:site-build" }
 ---
 
-Anderson Power Products SB50, сірий корпус, контакт 6 AWG, ★4.6 (403) — оригінал. SB50 і Powerpole НЕ сумісні між собою, тому це саме страховка на випадок, якщо гніздо станції виявиться SB. Контактів під 10 AWG в оригіналі нема — при потребі жилу складають удвоє (так радить сам Powerwerx).
+Anderson Power Products SB50, сірий корпус, контакт 6 AWG, ★4.6 (403) — оригінал. SB50 і Powerpole НЕ сумісні між собою, тому це саме страховка на випадок, якщо гніздо станції виявиться SB. Контактів під 10 AWG в оригіналі нема — при потребі жилу складають удвоє (так радить сам Powerwerx). | ⛔ ЗНЯТО 23.08: Anderson був потрібен під EcoFlow DELTA 3 Ultra Plus. Куплено Bluetti AC200P — у неї Anderson НЕМАЄ взагалі, вихід 12 В/25 А це круглий авіаційний роз'єм. Позиція втратила підставу.
 
 Система: [Живлення](/systems/solar.md) · статус: **купити** · ціна $~17 · к-сть 1 пара

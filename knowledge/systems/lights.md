@@ -218,3 +218,4 @@ generated: { by: "process:site-build" }
 * [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](/bom/lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) — $17.50, купити
 * [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](/bom/sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) — ціну з сервера не зняв (Home Depot ріже запити) — дивитись на місці, купити
 * [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](/bom/sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) — —, купити
+* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](/bom/pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) — ~$10, купити
