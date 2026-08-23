@@ -330,3 +330,7 @@
 * [Гвинти #8 × 2″ ПОТАЙНІ нержавіючі — тримають ВСЮ верхню кришку наскрізь](hvynty-8-2-potaini-nerzhaviiuchi-trymaiut-vsiu-verkhniu-krys.md) - $11.25 за 50 · $33.75 за 150, купити
 * [Сталь 1/16″ листом на пластини 7×5″ — варіант «купити і порізати» замість TPA57](stal-1-16-lystom-na-plastyny-7-5-variant-kupyty-i-porizaty-z.md) - $39.90/лист · $79.80, купити
 * [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) - ~$10, купити
+* [Набір свердел DEWALT Black and Gold, 21 шт (DWA1181), 1/16″–3/8″](nabir-sverdel-dewalt-black-and-gold-21-sht-dwa1181-1-16-3-8.md) - $29.97, купити
+* [Зенківка-комбі Milwaukee #6/#8/#10, набір 3 шт (48-13-5003)](zenkivka-kombi-milwaukee-6-8-10-nabir-3-sht-48-13-5003.md) - $9.97, купити
+* [Кернер автоматичний Husky 6″ (70079H)](kerner-avtomatychnyi-husky-6-70079h.md) - $12.99, купити
+* [Гвинти потайні #8 × 1½″ оцинковані, 100 шт (Everbilt 801842)](hvynty-potaini-8-1-otsynkovani-100-sht-everbilt-801842.md) - $12.99, купити
