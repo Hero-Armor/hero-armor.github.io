@@ -157,3 +157,4 @@
 * [Підлога подіуму — тільки алюміній. Вініл відхилено](pidloha-podiumu-tilky-aliuminii-vinil-vidkhyleno.md)
 * [Генератор працює ривками на зарядку станції, а не цілодобово на інсталяцію](henerator-pratsiuie-ryvkamy-na-zariadku-stantsii-a-ne-tsilod.md)
 * [Неон садимо на кліпси плюс 100% силікон, а не на клей; паз фрезеруємо ДО алюмінію](neon-sadymo-na-klipsy-plius-100-sylikon-a-ne-na-klei-paz-fre.md)
+* [Підлогу ФАРБУЄМО до посадки неону на силікон, не навпаки](pidlohu-farbuiemo-do-posadky-neonu-na-sylikon-ne-navpaky.md)

@@ -63,6 +63,7 @@ generated: { by: "process:site-build" }
 * [Стрічка виступає на 2-3 мм над подіумом, ОСБ ріжемо на дві частини по контуру](/decisions/strichka-vystupaie-na-2-3-mm-nad-podiumom-osb-rizhemo-na-dvi.md)
 * [У плайю йдуть тільки анкери з різьбою — гладкі шпильки і скоби не тримають](/decisions/u-plaiiu-idut-tilky-ankery-z-rizboiu-hladki-shpylky-i-skoby-.md)
 * [Неон садимо на кліпси плюс 100% силікон, а не на клей; паз фрезеруємо ДО алюмінію](/decisions/neon-sadymo-na-klipsy-plius-100-sylikon-a-ne-na-klei-paz-fre.md)
+* [Підлогу ФАРБУЄМО до посадки неону на силікон, не навпаки](/decisions/pidlohu-farbuiemo-do-posadky-neonu-na-sylikon-ne-navpaky.md)
 
 # Задачі
 
