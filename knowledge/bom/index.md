@@ -327,7 +327,7 @@
 * [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) - —, купити
 * [Батарейки AAA Energizer MAX, 48 шт — маркерні вогні (12 ліхтарів × 3)](batareiky-aaa-energizer-max-48-sht-markerni-vohni-12-likhtar.md) - $19.73, купити
 * [Поролон-передфільтр Frost King 15×24", відкритопористий — груба ступінь](porolon-peredfiltr-frost-king-15-24-vidkrytoporystyi-hruba-s.md) - $4.49, купити
-* [Гвинти #8 × 2″ ПОТАЙНІ нержавіючі — тримають ВСЮ верхню кришку наскрізь](hvynty-8-2-potaini-nerzhaviiuchi-trymaiut-vsiu-verkhniu-krys.md) - $21.98 за 1 lb (110 шт) · 2 упаковки = $43.96, купити
+* [Гвинти #8 × 2″ потайні — тримають ВСЮ верхню кришку наскрізь (Home Depot)](hvynty-8-2-potaini-trymaiut-vsiu-verkhniu-kryshku-naskriz-ho.md) - ціну на місці, купити
 * [Сталь 1/16″ листом на пластини 7×5″ — варіант «купити і порізати» замість TPA57](stal-1-16-lystom-na-plastyny-7-5-variant-kupyty-i-porizaty-z.md) - $39.90/лист · $79.80, купити
 * [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) - ~$10, купити
 * [Набір свердел DEWALT Black and Gold, 21 шт (DWA1181), 1/16″–3/8″](nabir-sverdel-dewalt-black-and-gold-21-sht-dwa1181-1-16-3-8.md) - $24.97 (знижка з $29.97), купити
