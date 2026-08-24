@@ -2274,21 +2274,7 @@ def build():
     rent = TRD.get("rent_html", "")
     tdec = [d for d in DECISIONS if d.get("system") == "project" and "транспорт" in (d.get("title", "") + d.get("why", "")).lower()]
     ttask = [t for t in TASKS if t.get("system") == "project" and "транспорт" in t.get("task", "").lower()]
-    # Закупівля каркасу перевезення. Він же після приїзду стає опорою під сонячну
-    # панель (креслення 06.22 і 06.23 rev 3.2), тому брус, кутики і кріплення панелі
-    # показуємо ОДНИМ блоком — це одна покупка, а не дві. Слова match — у transport.json.
-    crate_match = TRD.get("crate_buy", {}).get("match", [])
-    crate_rows = [b for b in BOM
-                  if any(m.lower() in (b["item"] + b.get("note", "")).lower()
-                         for m in crate_match)] if crate_match else []
-    if crate_match and not crate_rows:
-        print("warn: закупівля каркасу порожня — перевір transport.json -> crate_buy.match")
-    crate_buy = (photo_wall_html(crate_rows) +
-                 buy_table_html(crate_rows, TRD.get("crate_buy", {}).get("note", ""))
-                 ) if crate_rows else ""
-
-    tr = (tr.replace("{{CRATE_BUY}}", crate_buy)
-            .replace("{{LEAD}}", esc(TRD["note"]))
+    tr = (tr.replace("{{LEAD}}", esc(TRD["note"]))
             .replace("{{DIAGRAM}}", tdia)
             .replace("{{HOW_HTML}}", how)
             .replace("{{VOLODYMYR}}", (lambda v: (
