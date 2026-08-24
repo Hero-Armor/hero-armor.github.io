@@ -345,3 +345,4 @@
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) - $59.25 за 10 шт, купити
 * [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) - $100 за дві · $200 за чотири, купити
 * [Сонячна панель Trina TSM-330PE14A 330 Вт — лот Івана 24.08, $50 за штуку](soniachna-panel-trina-tsm-330pe14a-330-vt-lot-ivana-24-08-50.md) - $50/шт · $100 за дві, купити
+* [Сонячна панель SunPower SPR-E20-327 327 Вт — НАЙБЛИЖЧИЙ лот, $55, 7.7 миль](soniachna-panel-sunpower-spr-e20-327-327-vt-naiblyzhchyi-lot.md) - $55/шт · $110 за дві, купити
