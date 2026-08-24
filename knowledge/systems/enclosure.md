@@ -69,7 +69,7 @@ generated: { by: "process:site-build" }
 * [Гермоввід PG13.5 IP68](/bom/hermovvid-pg13-5-ip68.md) — $10, купити
 * [Кулер Coleman 100-150 qt](/bom/kuler-coleman-100-150-qt.md) — $100-140, купити
 * [Каністри під воду 5 л](/bom/kanistry-pid-vodu-5-l.md) — $40, купити
-* [Ящик станції — Pelican/Hardigg Storm iM3075 Storm Trak (з рук) або Sterilite 160 Qt як запасний](/bom/iashchyk-stantsii-pelican-hardigg-storm-im3075-storm-trak-z-.md) — $160 iM3075 з рук / $15.98 Sterilite, купити
+* [Ящик станції — Pelican/Hardigg Storm iM3075 Storm Trak (з рук) або Sterilite 160 Qt як запасний](/bom/iashchyk-stantsii-pelican-hardigg-storm-im3075-storm-trak-z-.md) — $160 iM3075 з рук / $15.98 Sterilite, є
 * [Генератор EcoFlow Smart Generator 4000 Dual Fuel — фірмовий, з автозапуском](/bom/henerator-ecoflow-smart-generator-4000-dual-fuel-firmovyi-z-.md) — $1259, купити
 * [Мінеральна вата ROCKWOOL Rockboard 60, 2″ (50 мм), 4 плити](/bom/mineralna-vata-rockwool-rockboard-60-2-50-mm-4-plyty.md) — $122.99, купити
 * [Фольгована ізоляція в рулоні 23.6″ × 10 футів](/bom/folhovana-izoliatsiia-v-ruloni-23-6-10-futiv.md) — $12.99, купити
