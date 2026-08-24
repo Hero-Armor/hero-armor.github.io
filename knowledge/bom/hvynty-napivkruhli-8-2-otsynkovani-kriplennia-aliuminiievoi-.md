@@ -1,16 +1,16 @@
 ---
 type: "Part"
 title: "Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів"
-description: "ЗА КРЕСЛЕННЯМ, не з голови. Аркуш 06.11, примітка 1 дослівно: «Secure the floor covering sheets (segments) around the perimeter to the podium frame using ROUND-"
-resource: "https://www.amazon.com/dp/B0BFLBHJH5"
+description: "⚠ 24.08: у Home Depot НАПІВКРУГЛОЇ (round head) #8×2″ багатопаком не буває взагалі. Найближче — Everbilt pan head 801632, пачка 50 шт, $10.32, але в San Mateo л"
+resource: "https://www.homedepot.com/p/Everbilt-8-x-2-in-Phillips-Pan-Head-Zinc-Plated-Sheet-Metal-Screw-50-Pack-801632/204275094"
 tags: ["enclosure"]
 quantity: "200 шт (за кресленням 136)"
-price: "$9.89 за 100"
+price: "$10.32 за пачку 50 шт"
 procurement_status: "add"
 generated: { by: "process:site-build" }
 ---
 
-ЗА КРЕСЛЕННЯМ, не з голови. Аркуш 06.11, примітка 1 дослівно: «Secure the floor covering sheets (segments) around the perimeter to the podium frame using ROUND-HEAD self-tapping screws spaced no more than 1 ft apart» — тобто по периметру кожного сегмента, НАПІВКРУГЛА головка, крок не більший за фут. У таблиці матеріалів це позиція 30: #8 × 2″ PH RND HD WOOD SCREW, ZINC, 136 шт.
+⚠ 24.08: у Home Depot НАПІВКРУГЛОЇ (round head) #8×2″ багатопаком не буває взагалі. Найближче — Everbilt pan head 801632, пачка 50 шт, $10.32, але в San Mateo лише 3 пачки = 150 шт при потребі 200. Pan head майже те саме: плоский низ голівки, лист притискає так само. Або добираємо 4-ту пачку в іншій філії, або переходимо на потайні (див. сусідній рядок). ЗА КРЕСЛЕННЯМ, не з голови. Аркуш 06.11, примітка 1 дослівно: «Secure the floor covering sheets (segments) around the perimeter to the podium frame using ROUND-HEAD self-tapping screws spaced no more than 1 ft apart» — тобто по периметру кожного сегмента, НАПІВКРУГЛА головка, крок не більший за фут. У таблиці матеріалів це позиція 30: #8 × 2″ PH RND HD WOOD SCREW, ZINC, 136 шт.
 Беремо 200, бо крок «не більше фута» на восьми сегментах з'їдає більше, ніж рахувалось, а докупити після 26.08 вже нема коли.
 
-Система: [Ящик станції](/systems/enclosure.md) · статус: **купити** · ціна $9.89 за 100 · к-сть 200 шт (за кресленням 136)
+Система: [Ящик станції](/systems/enclosure.md) · статус: **купити** · ціна $10.32 за пачку 50 шт · к-сть 200 шт (за кресленням 136)

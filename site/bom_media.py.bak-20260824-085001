@@ -149,31 +149,6 @@ def image_from_page(url):
     товари живуть на Amazon (Victron, AC Infinity, кейси). Тут не з чим звіряти
     ASIN, тому беремо тільки те, що сама сторінка оголосила своїм зображенням.
     """
-    if "homedepot.com" in url:
-        # Home Depot (Akamai) віддає Firecrawl і проксі 403 — беремо сторінку
-        # очима браузера Івана на Маку. Перевірено 24.08.2026.
-        import subprocess
-        try:
-            html = subprocess.run(["/root/tools/mac_fetch.sh", url],
-                                  capture_output=True, text=True, timeout=200).stdout
-        except Exception as e:
-            print(f"    mac_fetch: {e}")
-            return None
-        imgs = re.findall(
-            r'https://images\.thdstatic\.com/productImages/[^"\']+?_600\.jpg', html)
-        # ⚠ ПЕРША картинка на сторінці — часто СУСІДНІЙ товар з блоку рекомендацій
-        # (спіймано 24.08.2026: на картці шайб 800962 першим ішов everbilt-hex-nuts-801750).
-        # Тому беремо ту, у чиєму імені є номер моделі з адреси товару.
-        model = re.search(r'-(\d{6})/\d+/?$', url)
-        if model:
-            for i in imgs:
-                if model.group(1) in i:
-                    return i
-            print(f"    home depot: фото з моделлю {model.group(1)} не знайшлось "
-                  f"({len(imgs)} чужих картинок) — не беру чуже")
-            return None
-        return imgs[0] if imgs else None
-
     body = json.dumps({"url": url, "formats": ["rawHtml"]}).encode()
     req = urllib.request.Request(FIRECRAWL, data=body,
                                  headers={"Content-Type": "application/json"})

@@ -137,5 +137,5 @@ generated: { by: "process:site-build" }
 * [Світловідбивний вініл, аркуші 12×12″ (під Cricut)](/bom/svitlovidbyvnyi-vinil-arkushi-12-12-pid-cricut.md) — , є
 * [Скляні мікрокульки світловідбивні, 1 фунт — посипка по мокрому лаку](/bom/skliani-mikrokulky-svitlovidbyvni-1-funt-posypka-po-mokromu-.md) — $19.97, купити
 * [FrogTape Multi-Surface 1.88″ × 60 ярдів — малярний скотч, самовивіз по дорозі](/bom/frogtape-multi-surface-1-88-60-iardiv-maliarnyi-skotch-samov.md) — $9.98 за рулон, купити
-* [Болти 3/8″ × 4½″ оцинковані — база робота (за кресленням M10×110, поз.25)](/bom/bolty-3-8-4-otsynkovani-baza-robota-za-kreslenniam-m10-110-p.md) — поштучно, купити
-* [Шпилька різьбова 3/8-16 × 36″ оцинкована — на 4 довгі болти M10×180 (поз.24)](/bom/shpylka-rizbova-3-8-16-36-otsynkovana-na-4-dovhi-bolty-m10-1.md) — $5.27, купити
+* [Болти 3/8″ × 4½″ оцинковані — база робота (за кресленням M10×110, поз.25)](/bom/bolty-3-8-4-otsynkovani-baza-robota-za-kreslenniam-m10-110-p.md) — $1.97 за штуку, купити
+* [Шпилька різьбова 3/8-16 × 36″ оцинкована — на 4 довгі болти M10×180 (поз.24)](/bom/shpylka-rizbova-3-8-16-36-otsynkovana-na-4-dovhi-bolty-m10-1.md) — $5.98, купити

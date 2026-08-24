@@ -127,3 +127,4 @@ generated: { by: "process:site-build" }
 * [Наконечники кільцеві під 10 AWG на болт шини](/bom/nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) — $~10, купити
 * [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](/bom/stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) — $699-950 на розпродажі (звичайна $1498), купити
 * [Станція живлення з сонячними панелями — заміна поверненому EcoFlow](/bom/stantsiia-zhyvlennia-z-soniachnymy-paneliamy-zamina-povernen.md) — ~$1000 (закладено), купити
+* [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](/bom/hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) — $59.25 за 10 шт, купити
