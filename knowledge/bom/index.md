@@ -350,3 +350,4 @@
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) - $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) - $15-30, купити
 * [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) - —, купити
+* [Гвинти #8 × ½″ декоративні — тримають ЛИШЕ алюміній на фанері поля сегмента, в каркас не заходять](hvynty-8-dekoratyvni-trymaiut-lyshe-aliuminii-na-faneri-poli.md) - —, купити

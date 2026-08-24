@@ -164,3 +164,4 @@
 * [Гроші від фонду приходять на Chase, а в інвойсах надрукований U.S. Bank — розбіжність, яку треба закрити](hroshi-vid-fondu-prykhodiat-na-chase-a-v-invoisakh-nadrukova.md)
 * [Алюмінієву підлогу криємо МАТОВИМ прозорим лаком, не фарбою і не глянцем](aliuminiievu-pidlohu-kryiemo-matovym-prozorym-lakom-ne-farbo.md)
 * [Кабель ЗАКОПУЄМО в мілку траншею — так велить сам Burning Man для арт-інсталяцій](kabel-zakopuiemo-v-milku-transheiu-tak-velyt-sam-burning-man.md)
+* [Кріплення алюмінієвої підлоги — два класи гвинтів: наскрізні в каркас і короткі декоративні тільки в фанеру](kriplennia-aliuminiievoi-pidlohy-dva-klasy-hvyntiv-naskrizni.md)

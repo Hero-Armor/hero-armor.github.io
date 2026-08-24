@@ -339,3 +339,4 @@
 * [Подати план кріплення подіуму до грунтових анкерів у Art Support Services (ASS) Burning Man ДО фестивалю — узгодити тип і кількість анкерів](podaty-plan-kriplennia-podiumu-do-hruntovykh-ankeriv-u-art-s.md) - до роботи
 * [Спитати Володимира: TPA57 має відігнуту полицю, а креслення 06.17 просить ПЛОСКІ пластини пакетом — чи годиться, чи беремо TP47 (105×178 мм) або ріжемо сталь 1/16″ самі](spytaty-volodymyra-tpa57-maie-vidihnutu-polytsiu-a-kreslenni.md) - до роботи
 * [Спитати Володимира, чим кріпити плечову трубу 2″ NPS до каркасу перевезення — саморізи по металу з буром чи наскрізні болти](spytaty-volodymyra-chym-kripyty-plechovu-trubu-2-nps-do-kark.md) - до роботи
+* [Підібрати і купити короткі декоративні гвинти для поля алюмінієвої підлоги — заходять у фанеру 16 мм, НЕ наскрізь, тримають лише лист (орієнтир #8 × ½″)](pidibraty-i-kupyty-korotki-dekoratyvni-hvynty-dlia-polia-ali.md) - до роботи
