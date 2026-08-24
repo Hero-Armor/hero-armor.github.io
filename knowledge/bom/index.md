@@ -343,3 +343,4 @@
 * [Кутики посилені Simpson RTA2Z під брус 2× — вузли каркасу перевезення](kutyky-posyleni-simpson-rta2z-pid-brus-2-vuzly-karkasu-perev.md) - $4.20 за шт · $33.60, купити
 * [Ремені з тріскачкою DEWALT 1″×12 ft (25 мм × 3.7 м), 1500 lbs, 4 шт — фіксація каркасу в кузові](remeni-z-triskachkoiu-dewalt-1-12-ft-25-mm-3-7-m-1500-lbs-4-.md) - $30.98, купити
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) - $59.25 за 10 шт, купити
+* [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) - $100 за дві · $200 за чотири, купити

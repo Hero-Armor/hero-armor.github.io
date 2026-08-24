@@ -128,3 +128,4 @@ generated: { by: "process:site-build" }
 * [Станція Anker SOLIX C2000 Gen 2, 2048 Вт·год — альтернатива EcoFlow](/bom/stantsiia-anker-solix-c2000-gen-2-2048-vt-hod-alternatyva-ec.md) — $699-950 на розпродажі (звичайна $1498), купити
 * [Станція живлення з сонячними панелями — заміна поверненому EcoFlow](/bom/stantsiia-zhyvlennia-z-soniachnymy-paneliamy-zamina-povernen.md) — ~$1000 (закладено), купити
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](/bom/hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) — $59.25 за 10 шт, купити
+* [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](/bom/soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) — $100 за дві · $200 за чотири, купити
