@@ -42,7 +42,7 @@
 * [Marcel: заміряти трубу кріплення прожектора (діаметр, різьба)](marcel-zamiriaty-trubu-kriplennia-prozhektora-diametr-rizba.md) - чекаємо
 * [Відповісти Володимиру по просадці 12В — тест уже зроблено](vidpovisty-volodymyru-po-prosadtsi-12v-test-uzhe-zrobleno.md) - чекаємо
 * [Зміряти ватметром реальне споживання LED-стрічки (Вт/м)](zmiriaty-vatmetrom-realne-spozhyvannia-led-strichky-vt-m.md) - готово
-* [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) - в роботі
+* [Знайти шлях на 20-30 А по 12 В (станція або перехідник) [закрито в Todoist]](znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk-.md) - готово
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) - до роботи
 * [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) - до роботи
 * [Дозамовити стрічку: 2 рулони по 5 м (треба 9.77 м, є 5 м)](dozamovyty-strichku-2-rulony-po-5-m-treba-9-77-m-ie-5-m.md) - готово
@@ -79,7 +79,7 @@
 * [Тест станції під навантаженням до виїзду (виїзд 28-29.08, Burn 30.08-07.09)](test-stantsii-pid-navantazhenniam-do-vyizdu-vyizd-28-29-08-b.md) - чекаємо
 * [Виміряти реальну висоту ящика Sterilite — 457 мм це з колесами чи без](vymiriaty-realnu-vysotu-iashchyka-sterilite-457-mm-tse-z-kol.md) - готово
 * [Обрати кабель від станції до щита під Anderson на 30 А](obraty-kabel-vid-stantsii-do-shchyta-pid-anderson-na-30-a.md) - до роботи
-* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) - в роботі
+* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт [закрито в Todoist]](dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) - готово
 * [Обрати кабель магістралі станція → щит під Anderson 30 А](obraty-kabel-mahistrali-stantsiia-shchyt-pid-anderson-30-a.md) - до роботи
 * [Оформити кошик Amazon — 45 позицій, ~$1 110](oformyty-koshyk-amazon-45-pozytsii-1-110.md) - чекаємо
 * [Звірити руками, скільки рулонів неону фізично лежить у Марселя](zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) - до роботи
@@ -97,7 +97,7 @@
 * [Вписати розділ Travel & Fuel у НАШУ копію таблиці (вкладка «Hero Armor — Purchase Audit»)](vpysaty-rozdil-travel-fuel-u-nashu-kopiiu-tablytsi-vkladka-h.md) - чекаємо
 * [Подивитись розмір болта на шинах Avelis і дібрати кільцеві наконечники під 10 AWG](podyvytys-rozmir-bolta-na-shynakh-avelis-i-dibraty-kiltsevi-.md) - до роботи
 * [Підсилити ділянку кабелю там, де реально ходять — накладка або підняти](pidsylyty-dilianku-kabeliu-tam-de-realno-khodiat-nakladka-ab.md) - до роботи
-* [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення](vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) - в роботі
+* [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення [закрито в Todoist]](vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) - готово
 * [З'єднувачі подіуму: фінал — 16 кутиків LS50Z без запасу (Володимир 12.08), 2 пачки гвинтів SD9112. Купити](ziednuvachi-podiumu-final-16-kutykiv-ls50z-bez-zapasu-volody.md) - в роботі
 * [Аварійні габаритні вогні на стійки прожекторів (поз. N7 креслення 04.6): 8 шт, IP67, 3 Вт, бурштин/червоний, 10-30 В — у Володимира в специфікації є, у нашій закупівлі їх немає взагалі](avariini-habarytni-vohni-na-stiiky-prozhektoriv-poz-n7-kresl.md) - до роботи
 * [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) - до роботи
@@ -243,7 +243,7 @@
 * [Зняти по місцю ширину кузова між арками і з кришкою — ящик 53.2″ має лягти зверху на арки, перевірити чи знімається кришка](zniaty-po-mistsiu-shyrynu-kuzova-mizh-arkamy-i-z-kryshkoiu-i.md) - до роботи
 * [Проба світловідбиття на обрізку броні: мокрий лак + скляні кульки, подивитись у світлі ліхтаря вночі](proba-svitlovidbyttia-na-obrizku-broni-mokryi-lak-skliani-ku.md) - до роботи
 * [Замовити скляні світловідбивні кульки — 1 lb $19.97 або 4.4 lb $27.99, доставка 21.08](zamovyty-skliani-svitlovidbyvni-kulky-1-lb-19-97-abo-4-4-lb-.md) - до роботи
-* [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) - до роботи
+* [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні [закрито в Todoist]](zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) - готово
 * [Склейка пальців через метал — 3D-пластик](skleika-paltsiv-cherez-metal-3d-plastyk.md) - до роботи
 * [Склейка пальців через метал — 3D-пластик](skleika-paltsiv-cherez-metal-3d-plastyk.md) - до роботи
 * [Подіум 1 · Прокласти електрику в подіум — проводка груп до місць світла](podium-1-proklasty-elektryku-v-podium-provodka-hrup-do-mists.md) - до роботи
@@ -299,15 +299,15 @@
 * [Калібрування радара: розкласти рулетку, пройти 1-2-3-4-5 м, записати що каже вузол — БЕЗ плівки поруч](kalibruvannia-radara-rozklasty-ruletku-proity-1-2-3-4-5-m-za.md) - до роботи
 * [Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках](dodaty-v-testovu-proshyvku-nalashtuvannia-radara-po-serial-m.md) - до роботи
 * [Звірити з Володимиром: ніша під стрічку фрезерується ДО укладки алюмінію чи після — на аркуші 06.15 ніша в ОСБ, під металом, а в порядку робіт фрезерування стоїть після монтажу алюмінію](zviryty-z-volodymyrom-nisha-pid-strichku-frezeruietsia-do-uk.md) - до роботи
-* [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт](zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) - до роботи
+* [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт [закрито в Todoist]](zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) - готово
 * [Замовити кріплення алюмінієвої підлоги: напівкруглі #8x2 (200), потайні #8x1.5 (100), зенківка 82 градуси однозуба](zamovyty-kriplennia-aliuminiievoi-pidlohy-napivkruhli-8x2-20.md) - до роботи
-* [Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори](zamovyty-shche-pachku-lamp-sunlite-81120-mr16-4000k-v-prozhe.md) - до роботи
-* [Наклейки маленькі (розмір як яблучко Apple з комплекту iPhone) — надрукувати і встигнути до виїзду](nakleiky-malenki-rozmir-iak-iabluchko-apple-z-komplektu-ipho.md) - до роботи
+* [Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори [закрито в Todoist]](zamovyty-shche-pachku-lamp-sunlite-81120-mr16-4000k-v-prozhe.md) - готово
+* [Наклейки маленькі (розмір як яблучко Apple з комплекту iPhone) — надрукувати і встигнути до виїзду](nakleiky-malenki-rozmir-iak-iabluchko-apple-z-komplektu-ipho.md) - в роботі
 * [Металева табличка з лазерним гравіюванням на подіум — знайти майстерню, яка встигне до 26.08](metaleva-tablychka-z-lazernym-hraviiuvanniam-na-podium-znait.md) - до роботи
 * [Хромована підставка-стенд під металеву табличку](khromovana-pidstavka-stend-pid-metalevu-tablychku.md) - до роботи
 * [Текст і макет металевої таблички — узгодити з Лізою (формулювання про Захара тільки їхні)](tekst-i-maket-metalevoi-tablychky-uzhodyty-z-lizoiu-formuliu.md) - до роботи
 * [Взяти в Лізи телеграм дівчини, якій відправляти PDF історій Храму на друк](vziaty-v-lizy-telehram-divchyny-iakii-vidpravliaty-pdf-istor.md) - до роботи
-* [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз](bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) - до роботи
+* [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз [закрито в Todoist]](bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) - готово
 * [Звірка таблиці надто строга: рахує формульні клітинки як розбіжність (268 на порожньому місці). Полагодити ПІСЛЯ виїзду, зараз не чіпати](zvirka-tablytsi-nadto-stroha-rakhuie-formulni-klitynky-iak-r.md) - до роботи
 * [Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів](skasuvaty-abo-povernuty-ecoflow-delta-3-ultra-plus-zamovlenn.md) - до роботи
 * [Запросити у фонду Rescue Now письмову угоду про фіскальне спонсорство і регулярний звіт по зборах — питання Лізи](zaprosyty-u-fondu-rescue-now-pysmovu-uhodu-pro-fiskalne-spon.md) - до роботи
@@ -334,6 +334,6 @@
 * [Скасувати замовлення Home Depot WN68023950 — EcoFlow DELTA 3 Ultra Plus $1752.90 з податком. Рішення Івана 21.08: не проходимо по бюджету, основну беремо з рук. Скасовувати ДО самовивозу (в магазині 25.08), гроші повертаються на карту …4677](skasuvaty-zamovlennia-home-depot-wn68023950-ecoflow-delta-3-.md) - до роботи
 * [Буфер у подіум: висота порожнини всього 140-158 мм (торець 179 мм, аркуші 01.15/01.16). З покупних станцій влазить тільки EcoFlow RIVER 3 (112 мм, 245 Вт·год, вихід 12.6В/10А). River 2 Pro, EB3A і River 3 Plus не годяться](bufer-u-podium-vysota-porozhnyny-vsoho-140-158-mm-torets-179.md) - до роботи
 * [Заряджати станцію ЗРАНКУ (7-11, коли 20-32°C), а не в спеку 13-17. Нам треба 800 Вт·год/добу, 600 Вт панелей дають це за 2 години. Тоді тепло в ящику вдень падає з 25 Вт до 3 Вт і перегрів з +7°C до +1°C — це знімає більшу частину теплової проблеми без залізяк](zariadzhaty-stantsiiu-zranku-7-11-koly-20-32-c-a-ne-v-speku-.md) - до роботи
-* [Рішення Івана 22.08 вечір: 1500X класу МАЛО (1.27-1.42 доби). Шукаємо ТІЛЬКИ 3000-й клас (Yeti 3000X 3032 Вт·год / 3000 Lithium 3075) або Bluetti 2 кВт (AC200P 25А, AC200MAX 30А). Стеля $1000, ціль 600-800. Продавцям 1500X сказано ввічливе ні](rishennia-ivana-22-08-vechir-1500x-klasu-malo-1-27-1-42-doby.md) - до роботи
+* [Рішення Івана 22.08 вечір: 1500X класу МАЛО (1.27-1.42 доби). Шукаємо ТІЛЬКИ 3000-й клас (Yeti 3000X 3032 Вт·год / 3000 Lithium 3075) або Bluetti 2 кВт (AC200P 25А, AC200MAX 30А). Стеля $1000, ціль 600-800. Продавцям 1500X сказано ввічливе ні [закрито в Todoist]](rishennia-ivana-22-08-vechir-1500x-klasu-malo-1-27-1-42-doby.md) - готово
 * [Ідея Івана 22.08: доставку eBay слати не в Бей, а в Рено — вони там зупиняються дорогою. The UPS Store 561 Keystone Ave Reno NV 89503, на коробці Hold for Burning Man. Дає +2-3 дні запасу. ПЕРЕД замовленням подзвонити: чи приймуть на людину без скриньки і скільки коштує](ideia-ivana-22-08-dostavku-ebay-slaty-ne-v-bei-a-v-reno-vony.md) - до роботи
 * [Подати план кріплення подіуму до грунтових анкерів у Art Support Services (ASS) Burning Man ДО фестивалю — узгодити тип і кількість анкерів](podaty-plan-kriplennia-podiumu-do-hruntovykh-ankeriv-u-art-s.md) - до роботи

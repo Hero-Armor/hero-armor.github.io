@@ -47,6 +47,8 @@ generated: { by: "process:site-build" }
 * [Страховку Home Depot на станцію не беремо](/decisions/strakhovku-home-depot-na-stantsiiu-ne-beremo.md)
 * [REI як місце покупки станції — не підходить: потрібної моделі там нема](/decisions/rei-iak-mistse-pokupky-stantsii-ne-pidkhodyt-potribnoi-model.md)
 * [Генератор працює ривками на зарядку станції, а не цілодобово на інсталяцію](/decisions/henerator-pratsiuie-ryvkamy-na-zariadku-stantsii-a-ne-tsilod.md)
+* [Сонячна панель — до 400 Вт, не 500](/decisions/soniachna-panel-do-400-vt-ne-500.md)
+* [Пошук станції живлення зупинено — станцію куплено](/decisions/poshuk-stantsii-zhyvlennia-zupyneno-stantsiiu-kupleno.md)
 
 # Задачі
 
@@ -55,7 +57,7 @@ generated: { by: "process:site-build" }
 * [Вирішити скільки станцій і яку модель [ЗАКРИТО 19.08: замовлено EcoFlow DELTA 3 Ultra Plus, $1752.90, прибуття 25.08]](/tasks/vyrishyty-skilky-stantsii-i-iaku-model-zakryto-19-08-zamovle.md) — готово
 * [Звірити паспорт станції: ліміт сонячного входу](/tasks/zviryty-pasport-stantsii-limit-soniachnoho-vkhodu.md) — готово
 * [Спроєктувати раму сонячного масиву під вітер плайї](/tasks/sproiektuvaty-ramu-soniachnoho-masyvu-pid-viter-plaii.md) — чекаємо
-* [Знайти шлях на 20-30 А по 12 В (станція або перехідник)](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk.md) — в роботі
+* [Знайти шлях на 20-30 А по 12 В (станція або перехідник) [закрито в Todoist]](/tasks/znaity-shliakh-na-20-30-a-po-12-v-stantsiia-abo-perekhidnyk-.md) — готово
 * [Перевірити за $1, чи віддає порт розширення струм (резистор 1 кОм + мультиметр)](/tasks/pereviryty-za-1-chy-viddaie-port-rozshyrennia-strum-rezystor.md) — до роботи
 * [Подивитись Bluetti AC200P на Marketplace ($700-800, самовивіз)](/tasks/podyvytys-bluetti-ac200p-na-marketplace-700-800-samovyviz.md) — до роботи
 * [Замовити резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](/tasks/zamovyty-rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-.md) — до роботи
@@ -73,16 +75,16 @@ generated: { by: "process:site-build" }
 * [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите [ЗАКРИТО 19.08: замовлено EcoFlow DELTA 3 Ultra Plus, $1752.90, прибуття 25.08]](/tasks/vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) — готово
 * [ПИТАННЯ ДО МЕНЕ: підтвердити, що вчорашнє замовлення в Home Depot — це саме станція EcoFlow. Лист «Order confirmed» від 19.08 08:59 є, але Home Depot не пише назв у листі](/tasks/pytannia-do-mene-pidtverdyty-shcho-vchorashnie-zamovlennia-v.md) — чекаємо
 * [Купити сонячні панелі для масиву — потужність не обрана](/tasks/kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — до роботи
-* [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні](/tasks/zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) — до роботи
+* [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні [закрито в Todoist]](/tasks/zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) — готово
 * [Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова](/tasks/vyrishyty-po-vzhyvanii-stantsii-u-bay-area-zaraz-ie-delta-ma.md) — до роботи
 * [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](/tasks/nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) — до роботи
-* [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз](/tasks/bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) — до роботи
+* [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз [закрито в Todoist]](/tasks/bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) — готово
 * [Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів](/tasks/skasuvaty-abo-povernuty-ecoflow-delta-3-ultra-plus-zamovlenn.md) — до роботи
 * [Перевірити перед оплатою: лаг-гвинти 3/8x10 на 62.97 — Володимир каже ґрунтові анкери дає фестиваль, тож під подіум вони не потрібні](/tasks/pereviryty-pered-oplatoiu-lah-hvynty-3-8x10-na-62-97-volodym.md) — до роботи
 * [Скасувати замовлення Home Depot WN68023950 — EcoFlow DELTA 3 Ultra Plus $1752.90 з податком. Рішення Івана 21.08: не проходимо по бюджету, основну беремо з рук. Скасовувати ДО самовивозу (в магазині 25.08), гроші повертаються на карту …4677](/tasks/skasuvaty-zamovlennia-home-depot-wn68023950-ecoflow-delta-3-.md) — до роботи
 * [Буфер у подіум: висота порожнини всього 140-158 мм (торець 179 мм, аркуші 01.15/01.16). З покупних станцій влазить тільки EcoFlow RIVER 3 (112 мм, 245 Вт·год, вихід 12.6В/10А). River 2 Pro, EB3A і River 3 Plus не годяться](/tasks/bufer-u-podium-vysota-porozhnyny-vsoho-140-158-mm-torets-179.md) — до роботи
 * [Заряджати станцію ЗРАНКУ (7-11, коли 20-32°C), а не в спеку 13-17. Нам треба 800 Вт·год/добу, 600 Вт панелей дають це за 2 години. Тоді тепло в ящику вдень падає з 25 Вт до 3 Вт і перегрів з +7°C до +1°C — це знімає більшу частину теплової проблеми без залізяк](/tasks/zariadzhaty-stantsiiu-zranku-7-11-koly-20-32-c-a-ne-v-speku-.md) — до роботи
-* [Рішення Івана 22.08 вечір: 1500X класу МАЛО (1.27-1.42 доби). Шукаємо ТІЛЬКИ 3000-й клас (Yeti 3000X 3032 Вт·год / 3000 Lithium 3075) або Bluetti 2 кВт (AC200P 25А, AC200MAX 30А). Стеля $1000, ціль 600-800. Продавцям 1500X сказано ввічливе ні](/tasks/rishennia-ivana-22-08-vechir-1500x-klasu-malo-1-27-1-42-doby.md) — до роботи
+* [Рішення Івана 22.08 вечір: 1500X класу МАЛО (1.27-1.42 доби). Шукаємо ТІЛЬКИ 3000-й клас (Yeti 3000X 3032 Вт·год / 3000 Lithium 3075) або Bluetti 2 кВт (AC200P 25А, AC200MAX 30А). Стеля $1000, ціль 600-800. Продавцям 1500X сказано ввічливе ні [закрито в Todoist]](/tasks/rishennia-ivana-22-08-vechir-1500x-klasu-malo-1-27-1-42-doby.md) — готово
 * [Ідея Івана 22.08: доставку eBay слати не в Бей, а в Рено — вони там зупиняються дорогою. The UPS Store 561 Keystone Ave Reno NV 89503, на коробці Hold for Burning Man. Дає +2-3 дні запасу. ПЕРЕД замовленням подзвонити: чи приймуть на людину без скриньки і скільки коштує](/tasks/ideia-ivana-22-08-dostavku-ebay-slaty-ne-v-bei-a-v-reno-vony.md) — до роботи
 
 # Закупівля

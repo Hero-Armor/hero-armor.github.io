@@ -102,7 +102,7 @@ generated: { by: "process:site-build" }
 * [Відновити посилання на неон WS2811 — старий лістинг Amazon знято](/tasks/vidnovyty-posylannia-na-neon-ws2811-staryi-listynh-amazon-zn.md) — до роботи
 * [Заземлити металеву раму подіуму на мінус шини](/tasks/zazemlyty-metalevu-ramu-podiumu-na-minus-shyny.md) — чекаємо
 * [Зняти справжні довжини кабельних трас із креслення (зараз прикидка)](/tasks/zniaty-spravzhni-dovzhyny-kabelnykh-tras-iz-kreslennia-zaraz.md) — до роботи
-* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт](/tasks/dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) — в роботі
+* [Дозамовити упаковку ламп 12 мм на адресу Марселя — не вистачає 5 шт [закрито в Todoist]](/tasks/dozamovyty-upakovku-lamp-12-mm-na-adresu-marselia-ne-vystach.md) — готово
 * [Обрати кабель магістралі станція → щит під Anderson 30 А](/tasks/obraty-kabel-mahistrali-stantsiia-shchyt-pid-anderson-30-a.md) — до роботи
 * [Звірити руками, скільки рулонів неону фізично лежить у Марселя](/tasks/zviryty-rukamy-skilky-ruloniv-neonu-fizychno-lezhyt-u-marsel.md) — до роботи
 * [Обрати кабель на гілку Гр.2 замість поверненої бухти](/tasks/obraty-kabel-na-hilku-hr-2-zamist-povernenoi-bukhty.md) — до роботи
@@ -111,7 +111,7 @@ generated: { by: "process:site-build" }
 * [Описати перехід кабелю подіум → фігура (роз'єм чи глухий ввід)](/tasks/opysaty-perekhid-kabeliu-podium-fihura-roziem-chy-hlukhyi-vv.md) — готово
 * [Перед оплатою кошика виставити кількість 1 на бухту 12/2 і 1 на лот 16/2](/tasks/pered-oplatoiu-koshyka-vystavyty-kilkist-1-na-bukhtu-12-2-i-.md) — до роботи
 * [14/2 можна прибрати із закупівлі — лінія підживлення стрічки тягне 0.38 А](/tasks/14-2-mozhna-prybraty-iz-zakupivli-liniia-pidzhyvlennia-stric.md) — до роботи
-* [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення](/tasks/vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) — в роботі
+* [Врізні вогні торця: отвір за кресленням 04.8 — 22 мм в алюмінієвій накладці (R11) і 50 мм у дереві за нею (R25). Наш Sunmerit просить 22.6 мм — на 0.4 мм більше. Вирішити: свердлимо 23 мм ступінчастим свердлом чи просимо Володимира поправити креслення [закрито в Todoist]](/tasks/vrizni-vohni-tortsia-otvir-za-kreslenniam-04-8-22-mm-v-alium.md) — готово
 * [Аварійні габаритні вогні на стійки прожекторів (поз. N7 креслення 04.6): 8 шт, IP67, 3 Вт, бурштин/червоний, 10-30 В — у Володимира в специфікації є, у нашій закупівлі їх немає взагалі](/tasks/avariini-habarytni-vohni-na-stiiky-prozhektoriv-poz-n7-kresl.md) — до роботи
 * [Свіжі креслення освітлення Володимира (липень 2026, рев. 3.1) всі на 24 В, а ми перейшли на шину 12 В (DEC-120, 08.08 — новіше). Звірити з ним, щоб він переклав специфікацію на 12 В або підтвердив, що це не критично](/tasks/svizhi-kreslennia-osvitlennia-volodymyra-lypen-2026-rev-3-1-.md) — до роботи
 * [Світло в торець подіуму: Іван чекає відповідь по лазерній різці отворів. Якщо великі круглі отвори зробити не вийде — беремо накладні (ALFU бурштин $2/шт або Dream Lighting теплий білий $4.5/шт)](/tasks/svitlo-v-torets-podiumu-ivan-chekaie-vidpovid-po-lazernii-ri.md) — чекаємо
@@ -130,8 +130,8 @@ generated: { by: "process:site-build" }
 * [Заміри є: корпус світильника 17.6 мм, конус 18.8 мм — 3/4″ підходить обом](/tasks/zamiry-ie-korpus-svitylnyka-17-6-mm-konus-18-8-mm-3-4-pidkho.md) — готово
 * [Обрати таймер — прийшло два варіанти, вирішити який лишаємо](/tasks/obraty-taimer-pryishlo-dva-varianty-vyrishyty-iakyi-lyshaiem.md) — до роботи
 * [ВІХА · Електрика зібрана і перевірена під навантаженням](/tasks/vikha-elektryka-zibrana-i-perevirena-pid-navantazhenniam.md) — до роботи
-* [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт](/tasks/zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) — до роботи
-* [Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори](/tasks/zamovyty-shche-pachku-lamp-sunlite-81120-mr16-4000k-v-prozhe.md) — до роботи
+* [Замовити ШІМ-диммери на заміну поверненим SUPERNIGHT — з гвинтовими клемами і регульованою частотою, 2 шт [закрито в Todoist]](/tasks/zamovyty-shim-dymmery-na-zaminu-povernenym-supernight-z-hvyn.md) — готово
+* [Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори [закрито в Todoist]](/tasks/zamovyty-shche-pachku-lamp-sunlite-81120-mr16-4000k-v-prozhe.md) — готово
 
 # Закупівля
 
@@ -219,3 +219,4 @@ generated: { by: "process:site-build" }
 * [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](/bom/sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) — ціну з сервера не зняв (Home Depot ріже запити) — дивитись на місці, купити
 * [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](/bom/sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) — —, купити
 * [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](/bom/pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) — ~$10, купити
+* [Саморізи #6 × 3/4″ потайні, цинк, 100 шт (Everbilt 801372) — поз.29 креслення](/bom/samorizy-6-3-4-potaini-tsynk-100-sht-everbilt-801372-poz-29-.md) — $2.99, купити

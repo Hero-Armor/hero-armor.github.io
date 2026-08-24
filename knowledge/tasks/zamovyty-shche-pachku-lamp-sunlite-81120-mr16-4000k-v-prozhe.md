@@ -1,9 +1,9 @@
 ---
 type: "Task"
-title: "Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори"
+title: "Замовити ще пачку ламп Sunlite 81120 MR16 4000K в прожектори [закрито в Todoist]"
 tags: ["lights"]
-task_status: "todo"
+task_status: "done"
 generated: { by: "process:site-build" }
 ---
 
-Статус: **до роботи** · система: [Світло](/systems/lights.md)
+Статус: **готово** · система: [Світло](/systems/lights.md)
