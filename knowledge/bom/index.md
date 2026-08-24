@@ -120,7 +120,7 @@
 * [Резервний блок живлення 110 В → 12 В (Mean Well HLG-320H-12A)](rezervnyi-blok-zhyvlennia-110-v-12-v-mean-well-hlg-320h-12a.md) - $93.01, купити
 * [Обдувач компресорний WOLFBOX MF100 (турбіна 150 000 об/хв)](obduvach-kompresornyi-wolfbox-mf100-turbina-150-000-ob-khv.md) - $69.75, купити
 * [Станція живлення EcoFlow DELTA 3 Ultra Plus, 3072 Вт·год, Anderson 12.6 В/30 А](stantsiia-zhyvlennia-ecoflow-delta-3-ultra-plus-3072-vt-hod-.md) - $1,599.00, є
-* [Ящик станції — Sterilite 160 Qt (40 gal) Wheeled Storage Box 14674K02](iashchyk-stantsii-sterilite-160-qt-40-gal-wheeled-storage-bo.md) - $15.98, купити
+* [Ящик станції — Pelican/Hardigg Storm iM3075 Storm Trak (з рук) або Sterilite 160 Qt як запасний](iashchyk-stantsii-pelican-hardigg-storm-im3075-storm-trak-z-.md) - $160 iM3075 з рук / $15.98 Sterilite, купити
 * [Кабель від станції до щита під Anderson, переріз на 30 А](kabel-vid-stantsii-do-shchyta-pid-anderson-pereriz-na-30-a.md) - —, купити
 * [DMWD 12мм LED — дозамовити 1 упаковку](dmwd-12mm-led-dozamovyty-1-upakovku.md) - $10.99, купити
 * [Шини розподільчі 150 А — Avelis, 2 шт в наборі](shyny-rozpodilchi-150-a-avelis-2-sht-v-nabori.md) - $11.99 за набір, купити
