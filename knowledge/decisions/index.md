@@ -113,7 +113,6 @@
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 * [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, живлення тільки паралельне](indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
 * [Наступна ревізія аудіо-вузла — робот питає людину і записує її історію](nastupna-reviziia-audio-vuzla-robot-pytaie-liudynu-i-zapysui.md)
-* [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 * [Магістраль — готовий кабель Anderson, відрізаний з боку щита; залишок іде на гілку Гр.2](mahistral-hotovyi-kabel-anderson-vidrizanyi-z-boku-shchyta-z.md)
 * [Відстань станція → подіум лишається ~7.6 м; кабель веде суцільний кондуит, не розрізна гофра](vidstan-stantsiia-podium-lyshaietsia-7-6-m-kabel-vede-sutsil.md)
 * [Аудіо-вузол оновлюється по повітрю: власна точка WiFi на вимогу + автовідкат на попередню прошивку](audio-vuzol-onovliuietsia-po-povitriu-vlasna-tochka-wifi-na-.md)
@@ -164,3 +163,4 @@
 * [Станція — Bluetti AC200P, а не EcoFlow. Вікно входу 35-150 В міняє схему панелей](stantsiia-bluetti-ac200p-a-ne-ecoflow-vikno-vkhodu-35-150-v-.md)
 * [Гроші від фонду приходять на Chase, а в інвойсах надрукований U.S. Bank — розбіжність, яку треба закрити](hroshi-vid-fondu-prykhodiat-na-chase-a-v-invoisakh-nadrukova.md)
 * [Алюмінієву підлогу криємо МАТОВИМ прозорим лаком, не фарбою і не глянцем](aliuminiievu-pidlohu-kryiemo-matovym-prozorym-lakom-ne-farbo.md)
+* [Кабель ЗАКОПУЄМО в мілку траншею — так велить сам Burning Man для арт-інсталяцій](kabel-zakopuiemo-v-milku-transheiu-tak-velyt-sam-burning-man.md)

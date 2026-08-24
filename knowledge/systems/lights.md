@@ -54,7 +54,6 @@ generated: { by: "process:site-build" }
 * [Магістраль станція → щит лишилась без кабелю: обидві бухти 8/2 у поверненні](/decisions/mahistral-stantsiia-shchyt-lyshylas-bez-kabeliu-obydvi-bukht.md)
 * [Обрана стрічка не гнеться на коло: мінімальний радіус 80 мм](/decisions/obrana-strichka-ne-hnetsia-na-kolo-minimalnyi-radius-80-mm.md)
 * [Індикаторні лампи корпусу — 12-вольтові з резистором усередині, живлення тільки паралельне](/decisions/indykatorni-lampy-korpusu-12-voltovi-z-rezystorom-useredyni-.md)
-* [Кабель до подіуму НЕ закопуємо — ведемо поверхнею в гофрі й позначаємо](/decisions/kabel-do-podiumu-ne-zakopuiemo-vedemo-poverkhneiu-v-hofri-i-.md)
 * [Джгут із фігури вниз — три кабелі, три розʼєми, отвір не менший за 25 мм](/decisions/dzhhut-iz-fihury-vnyz-try-kabeli-try-roziemy-otvir-ne-menshy.md)
 * [Чим вмикати світло без людини — тижневий таймер з годинником, фотореле як додаток](/decisions/chym-vmykaty-svitlo-bez-liudyny-tyzhnevyi-taimer-z-hodynnyko.md)
 * [Врізні вогні торця ставимо В ПЛАСТИКОВОМУ КОЖУСІ, отвір 3/4″](/decisions/vrizni-vohni-tortsia-stavymo-v-plastykovomu-kozhusi-otvir-3-.md)
@@ -64,6 +63,7 @@ generated: { by: "process:site-build" }
 * [У плайю йдуть тільки анкери з різьбою — гладкі шпильки і скоби не тримають](/decisions/u-plaiiu-idut-tilky-ankery-z-rizboiu-hladki-shpylky-i-skoby-.md)
 * [Неон садимо на кліпси плюс 100% силікон, а не на клей; паз фрезеруємо ДО алюмінію](/decisions/neon-sadymo-na-klipsy-plius-100-sylikon-a-ne-na-klei-paz-fre.md)
 * [Підлогу ФАРБУЄМО до посадки неону на силікон, не навпаки](/decisions/pidlohu-farbuiemo-do-posadky-neonu-na-sylikon-ne-navpaky.md)
+* [Кабель ЗАКОПУЄМО в мілку траншею — так велить сам Burning Man для арт-інсталяцій](/decisions/kabel-zakopuiemo-v-milku-transheiu-tak-velyt-sam-burning-man.md)
 
 # Задачі
 
