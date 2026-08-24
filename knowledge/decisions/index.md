@@ -163,3 +163,4 @@
 * [Пошук станції живлення зупинено — станцію куплено](poshuk-stantsii-zhyvlennia-zupyneno-stantsiiu-kupleno.md)
 * [Станція — Bluetti AC200P, а не EcoFlow. Вікно входу 35-150 В міняє схему панелей](stantsiia-bluetti-ac200p-a-ne-ecoflow-vikno-vkhodu-35-150-v-.md)
 * [Гроші від фонду приходять на Chase, а в інвойсах надрукований U.S. Bank — розбіжність, яку треба закрити](hroshi-vid-fondu-prykhodiat-na-chase-a-v-invoisakh-nadrukova.md)
+* [Алюмінієву підлогу криємо МАТОВИМ прозорим лаком, не фарбою і не глянцем](aliuminiievu-pidlohu-kryiemo-matovym-prozorym-lakom-ne-farbo.md)
