@@ -132,3 +132,7 @@ generated: { by: "process:site-build" }
 * [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](/bom/soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) — $100 за дві · $200 за чотири, купити
 * [Сонячна панель Trina TSM-330PE14A 330 Вт — лот Івана 24.08, $50 за штуку](/bom/soniachna-panel-trina-tsm-330pe14a-330-vt-lot-ivana-24-08-50.md) — $50/шт · $100 за дві, купити
 * [Сонячна панель SunPower SPR-E20-327 327 Вт — НАЙБЛИЖЧИЙ лот, $55, 7.7 миль](/bom/soniachna-panel-sunpower-spr-e20-327-327-vt-naiblyzhchyi-lot.md) — $55/шт · $110 за дві, купити
+* [Подовжувач сонячний MC4 10AWG, 20 футів — BougeRV](/bom/podovzhuvach-soniachnyi-mc4-10awg-20-futiv-bougerv.md) — $29.99, купити
+* [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](/bom/zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) — $14.99/шт, купити
+* [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](/bom/multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) — $15-30, купити
+* [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](/bom/kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) — —, купити
