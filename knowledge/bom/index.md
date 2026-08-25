@@ -323,13 +323,13 @@
 * [Вентилятор ящика — 120 мм 12 В, 1600 об/хв, 47 CFM, 2 шт у наборі](ventyliator-iashchyka-120-mm-12-v-1600-ob-khv-47-cfm-2-sht-u.md) - $12.99, купити
 * [Змінні пилофільтри на вентилятор 120 мм, магнітні, 4 шт](zminni-pylofiltry-na-ventyliator-120-mm-mahnitni-4-sht.md) - $9.99, купити
 * [Термостат 12 В на вентилятор ящика, 2 шт](termostat-12-v-na-ventyliator-iashchyka-2-sht.md) - $12.99, купити
-* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) - ціну з сервера не зняв (Home Depot ріже запити) — дивитись на місці, купити
+* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) - $11.48 за тюбик · 2 тюби = $22.96, купити
 * [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) - —, купити
 * [Батарейки AAA Energizer MAX, 48 шт — маркерні вогні (12 ліхтарів × 3)](batareiky-aaa-energizer-max-48-sht-markerni-vohni-12-likhtar.md) - $19.73, купити
 * [Поролон-передфільтр Frost King 15×24", відкритопористий — груба ступінь](porolon-peredfiltr-frost-king-15-24-vidkrytoporystyi-hruba-s.md) - $4.49, купити
-* [Гвинти #8 × 2″ потайні — тримають ВСЮ верхню кришку наскрізь (Home Depot)](hvynty-8-2-potaini-trymaiut-vsiu-verkhniu-kryshku-naskriz-ho.md) - ціну на місці, купити
-* [Сталь 1/16″ листом на пластини 7×5″ — варіант «купити і порізати» замість TPA57](stal-1-16-lystom-na-plastyny-7-5-variant-kupyty-i-porizaty-z.md) - $39.90/лист · $79.80, купити
-* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) - ~$10, купити
+* [Гвинти #8 × 2″ потайні — тримають ВСЮ верхню кришку наскрізь (Home Depot)](hvynty-8-2-potaini-trymaiut-vsiu-verkhniu-kryshku-naskriz-ho.md) - $10.97 за пачку 1 lb · 2 пачки = $21.94, купити
+* [Сталь 1/16″ листом на пластини 7×5″ — варіант «купити і порізати» замість TPA57](stal-1-16-lystom-na-plastyny-7-5-variant-kupyty-i-porizaty-z.md) - $48.44 за лист 24×24″ у Home Depot (або $39.90/лист на Amazon), купити
+* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) - $5.98, купити
 * [Набір свердел DEWALT Black and Gold, 21 шт (DWA1181), 1/16″–3/8″](nabir-sverdel-dewalt-black-and-gold-21-sht-dwa1181-1-16-3-8.md) - $24.97 (знижка з $29.97), купити
 * [Зенківка-комбі Milwaukee #6/#8/#10, набір 3 шт (48-13-5003)](zenkivka-kombi-milwaukee-6-8-10-nabir-3-sht-48-13-5003.md) - $34.97, купити
 * [Кернер автоматичний Husky 6″ (70079H)](kerner-avtomatychnyi-husky-6-70079h.md) - $20.97, купити
@@ -337,7 +337,7 @@
 * [Шурупи по дереву #8 × 3/4″ напівкругла голівка, оцинковані (Everbilt 827011) — поз.31 креслення](shurupy-po-derevu-8-3-4-napivkruhla-holivka-otsynkovani-ever.md) - $2.99 за пачку · 15 пачок = $44.85, купити
 * [Саморізи #6 × 3/4″ потайні, цинк, 100 шт (Everbilt 801372) — поз.29 креслення](samorizy-6-3-4-potaini-tsynk-100-sht-everbilt-801372-poz-29-.md) - $2.99, купити
 * [Алюмінієва окантовка сходинки M-D 78022, 1-1/8″×1-1/8″×36″ з цвяхами-шурупами — поз.10 креслення](aliuminiieva-okantovka-skhodynky-m-d-78022-1-1-8-1-1-8-36-z-.md) - $8.98 за шт · 8 шт = $71.84, купити
-* [Брус 2×4″ × 8 ft (38×89×2438 мм) — нижні балки каркасу перевезення](brus-2-4-8-ft-38-89-2438-mm-nyzhni-balky-karkasu-perevezenni.md) - $3.95 за шт · $7.90, купити
+* [Брус 2×4″ × 8 ft (38×89×2438 мм) — нижні балки каркасу перевезення](brus-2-4-8-ft-38-89-2438-mm-nyzhni-balky-karkasu-perevezenni.md) - $3.95 за шт · $11.85, купити
 * [Брус 2×3″ × 8 ft (38×64×2438 мм) — стійки й ферма каркасу перевезення](brus-2-3-8-ft-38-64-2438-mm-stiiky-i-ferma-karkasu-perevezen.md) - $3.48 за шт · $31.32, купити
 * [Саморізи конструкційні 3″ (76 мм), 1 lb — збірка каркасу перевезення](samorizy-konstruktsiini-3-76-mm-1-lb-zbirka-karkasu-pereveze.md) - $12.47, купити
 * [Кутики посилені Simpson RTA2Z під брус 2× — вузли каркасу перевезення](kutyky-posyleni-simpson-rta2z-pid-brus-2-vuzly-karkasu-perev.md) - $4.20 за шт · $33.60, купити
@@ -350,4 +350,11 @@
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) - $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) - $15-30, купити
 * [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) - —, купити
-* [Гвинти #8 × ½″ декоративні — тримають ЛИШЕ алюміній на фанері поля сегмента, в каркас не заходять](hvynty-8-dekoratyvni-trymaiut-lyshe-aliuminii-na-faneri-poli.md) - —, купити
+* [Гвинти #8 × ½″ потайні оцинковані, 100 шт (Everbilt 801802) — алюміній на фанері поля сегмента](hvynty-8-potaini-otsynkovani-100-sht-everbilt-801802-aliumin.md) - $6.87, купити
+* [Кутик Simpson RTC22Z — головні кути каркасу перевезення](kutyk-simpson-rtc22z-holovni-kuty-karkasu-perevezennia.md) - $5.06 за шт · $20.24, купити
+* [Кутик Simpson RTT22Z — Т-подібний, опора під ящик станції](kutyk-simpson-rtt22z-t-podibnyi-opora-pid-iashchyk-stantsii.md) - $4.16 за шт · $16.64, купити
+* [Кутик Simpson RTRZ — плоский, кріплення похилої рами під панель](kutyk-simpson-rtrz-ploskyi-kriplennia-pokhyloi-ramy-pid-pane.md) - $1.35 за шт · $5.40, купити
+* [Болт 5/16″-18 × 6″ (заміна М8×150) — труба переноски робота до каркасу](bolt-5-16-18-6-zamina-m8-150-truba-perenosky-robota-do-karka.md) - $1.03 за шт · $2.06, купити
+* [Болт 5/16″-18 × 2½″ (заміна М8×60) — база робота до каркасу, пачка 15](bolt-5-16-18-2-zamina-m8-60-baza-robota-do-karkasu-pachka-15.md) - $13.56, купити
+* [Шайби широкі 5/16″ × 1½″ (fender) — під болти каркасу, пачка 6](shaiby-shyroki-5-16-1-fender-pid-bolty-karkasu-pachka-6.md) - $1.38 за пачку · $2.76, купити
+* [Гайки 5/16-18 з нейлоновим кільцем — під болти каркасу, пачка 15](haiky-5-16-18-z-neilonovym-kiltsem-pid-bolty-karkasu-pachka-.md) - $4.57, купити

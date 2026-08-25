@@ -50,6 +50,7 @@ generated: { by: "process:site-build" }
 * [Сонячна панель — до 400 Вт, не 500](/decisions/soniachna-panel-do-400-vt-ne-500.md)
 * [Пошук станції живлення зупинено — станцію куплено](/decisions/poshuk-stantsii-zhyvlennia-zupyneno-stantsiiu-kupleno.md)
 * [Станція — Bluetti AC200P, а не EcoFlow. Вікно входу 35-150 В міняє схему панелей](/decisions/stantsiia-bluetti-ac200p-a-ne-ecoflow-vikno-vkhodu-35-150-v-.md)
+* [Розтяжки каркасу — ремені з тріскачкою, а не сталевий трос із талрепами](/decisions/roztiazhky-karkasu-remeni-z-triskachkoiu-a-ne-stalevyi-tros-.md)
 
 # Задачі
 

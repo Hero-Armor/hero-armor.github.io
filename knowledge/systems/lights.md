@@ -216,7 +216,7 @@ generated: { by: "process:site-build" }
 * [Lag screws 1/4"×6" гарячий цинк, 50 шт — кріплення ліхтариків до плайї](/bom/lag-screws-1-4-6-hariachyi-tsynk-50-sht-kriplennia-likhtaryk.md) — $24.99, купити
 * [ШІМ-диммер 12-24 В 30 А з гвинтовими клемами і регульованою частотою — заміна поверненому SUPERNIGHT](/bom/shim-dymmer-12-24-v-30-a-z-hvyntovymy-klemamy-i-rehulovanoiu.md) — $14.43 за шт, купити
 * [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](/bom/lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) — $17.50, купити
-* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](/bom/sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) — ціну з сервера не зняв (Home Depot ріже запити) — дивитись на місці, купити
+* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](/bom/sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) — $11.48 за тюбик · 2 тюби = $22.96, купити
 * [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](/bom/sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) — —, купити
-* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](/bom/pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) — ~$10, купити
+* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](/bom/pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) — $5.98, купити
 * [Саморізи #6 × 3/4″ потайні, цинк, 100 шт (Everbilt 801372) — поз.29 креслення](/bom/samorizy-6-3-4-potaini-tsynk-100-sht-everbilt-801372-poz-29-.md) — $2.99, купити

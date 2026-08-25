@@ -165,3 +165,4 @@
 * [Алюмінієву підлогу криємо МАТОВИМ прозорим лаком, не фарбою і не глянцем](aliuminiievu-pidlohu-kryiemo-matovym-prozorym-lakom-ne-farbo.md)
 * [Кабель ЗАКОПУЄМО в мілку траншею — так велить сам Burning Man для арт-інсталяцій](kabel-zakopuiemo-v-milku-transheiu-tak-velyt-sam-burning-man.md)
 * [Кріплення алюмінієвої підлоги — два класи гвинтів: наскрізні в каркас і короткі декоративні тільки в фанеру](kriplennia-aliuminiievoi-pidlohy-dva-klasy-hvyntiv-naskrizni.md)
+* [Розтяжки каркасу — ремені з тріскачкою, а не сталевий трос із талрепами](roztiazhky-karkasu-remeni-z-triskachkoiu-a-ne-stalevyi-tros-.md)
