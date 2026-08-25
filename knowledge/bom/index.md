@@ -131,7 +131,7 @@
 * [Наконечники кільцеві під 10 AWG на болт шини](nakonechnyky-kiltsevi-pid-10-awg-na-bolt-shyny.md) - $~10, купити
 * [Свердло Форстнера 1" (25.4 мм) по дереву](sverdlo-forstnera-1-25-4-mm-po-derevu.md) - $~15, купити
 * [Ступінчасте свердло 6-35 мм (дерево + алюміній)](stupinchaste-sverdlo-6-35-mm-derevo-aliuminii.md) - $~20, купити
-* [Simpson Strong-Tie LS50Z — кутик з регульованим кутом (2x6/2x8), ZMAX](simpson-strong-tie-ls50z-kutyk-z-rehulovanym-kutom-2x6-2x8-z.md) - $4.20 за штуку, купити
+* [Simpson Strong-Tie LS50Z — кутик з регульованим кутом (2x6/2x8), ZMAX](simpson-strong-tie-ls50z-kutyk-z-rehulovanym-kutom-2x6-2x8-z.md) - $4.20 за штуку, є
 * [Simpson Strong-Tie HTP37Z — пластина-тяж 3"x7", 16ga, ZMAX](simpson-strong-tie-htp37z-plastyna-tiazh-3-x7-16ga-zmax.md) - —, купити
 * [Гвинти Simpson SD9112 #9x1 1/2" (Strong-Drive connector screw)](hvynty-simpson-sd9112-9x1-1-2-strong-drive-connector-screw.md) - $30.84, купити
 * [Аварійний габаритний вогонь на стійку прожектора (поз. N7 креслення)](avariinyi-habarytnyi-vohon-na-stiiku-prozhektora-poz-n7-kres.md) - —, купити
@@ -141,7 +141,7 @@
 * [Ліхтарі-кліпси Treela, 12 шт — аварійне світло на будівництві](likhtari-klipsy-treela-12-sht-avariine-svitlo-na-budivnytstv.md) - $25.99 за 12 шт, купити
 * [Пластини кріплення ґрунтових анкерів до подіуму — лазерна різка 5x7", 3/16"](plastyny-kriplennia-gruntovykh-ankeriv-do-podiumu-lazerna-ri.md) - —, купити
 * [Ґрунтовка-герметик під фарбу Zinsser Bulls Eye 1-2-3 (обробка каркасу подіуму)](gruntovka-hermetyk-pid-farbu-zinsser-bulls-eye-1-2-3-obrobka.md) - $~40, купити
-* [Simpson TPA57 — притискна пластина 127×178 мм під анкерний вузол](simpson-tpa57-prytyskna-plastyna-127-178-mm-pid-ankernyi-vuz.md) - $8.24 за шт · 12 шт = $98.88 (мінімум 8 шт = $65.92), купити
+* [Simpson TPA57 — притискна пластина 127×178 мм під анкерний вузол](simpson-tpa57-prytyskna-plastyna-127-178-mm-pid-ankernyi-vuz.md) - $8.24 за шт · 12 шт = $98.88 (мінімум 8 шт = $65.92), є
 * [Sunlite MR16 6W 12V 4000K CRI90 (арт. 81120) — лампи прожекторів, друга партія](sunlite-mr16-6w-12v-4000k-cri90-art-81120-lampy-prozhektoriv.md) - —, купити
 * [Ґрунт сірий Rust-Oleum Painter's Touch 2X 12oz Flat Gray Primer 334017](grunt-siryi-rust-oleum-painters-touch-2x-12oz-flat-gray-prim.md) - $51.83, є
 * [Металік Rust-Oleum Stops Rust Bright Coat Metallic Chrome Spray Paint 7718830, 11 oz](metalik-rust-oleum-stops-rust-bright-coat-metallic-chrome-sp.md) - $6.48/балон, є
@@ -298,50 +298,50 @@
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) - $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) - $232.14, купити
 * [ШІМ-диммер 12-24 В 30 А з гвинтовими клемами і регульованою частотою — заміна поверненому SUPERNIGHT](shim-dymmer-12-24-v-30-a-z-hvyntovymy-klemamy-i-rehulovanoiu.md) - $14.43 за шт, купити
-* [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) - $10.32 за пачку 50 шт, купити
+* [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) - $10.32 за пачку 50 шт · 3 пачки = $30.96, є
 * [Гвинти потайні #8 × 1½″, оцинковані — там, де головка має бути врівень](hvynty-potaini-8-1-otsynkovani-tam-de-holovka-maie-buty-vriv.md) - $7.24 за 100, купити
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) - $11.99, купити
 * [Лампи Sunlite 81120 MR16 12 В 4000K CRI90 — ще одна пачка в прожектори](lampy-sunlite-81120-mr16-12-v-4000k-cri90-shche-odna-pachka-.md) - $17.50, купити
 * [Станція живлення з сонячними панелями — заміна поверненому EcoFlow](stantsiia-zhyvlennia-z-soniachnymy-paneliamy-zamina-povernen.md) - ~$1000 (закладено), купити
 * [Опорні шайби Simpson BP 2½×2½ — запасний варіант, якщо не буде TPA57](oporni-shaiby-simpson-bp-2-2-zapasnyi-variant-iakshcho-ne-bu.md) - $1.60 за шт = $38.40, купити
-* [Болти 3/8″ × 3½″ оцинковані, шестигранні — наскрізні в анкерному вузлі](bolty-3-8-3-otsynkovani-shestyhranni-naskrizni-v-ankernomu-v.md) - $18.88 за пачку 25 шт, купити
+* [Болти 3/8″ × 3½″ оцинковані, шестигранні — наскрізні в анкерному вузлі](bolty-3-8-3-otsynkovani-shestyhranni-naskrizni-v-ankernomu-v.md) - $18.88 за пачку 25 шт, є
 * [Гайки 3/8″ з нейлоновим кільцем (nylock) — щоб не розкрутились від вібрації](haiky-3-8-z-neilonovym-kiltsem-nylock-shchob-ne-rozkrutylys-.md) - ~$5 за пачку, купити
-* [Болти 1/4-20 × 3/4″ + гайки з нейлоновим кільцем — скрутити притискні пластини між собою](bolty-1-4-20-3-4-haiky-z-neilonovym-kiltsem-skrutyty-prytysk.md) - $2.99 за пачку 100 шт (болти) + гайки nylock окремо, купити
+* [Болти 1/4-20 × 3/4″ + гайки з нейлоновим кільцем — скрутити притискні пластини між собою](bolty-1-4-20-3-4-haiky-z-neilonovym-kiltsem-skrutyty-prytysk.md) - $2.99 за пачку 100 шт (болти) + гайки nylock окремо, є
 * [FrogTape Multi-Surface 1.88″ × 60 ярдів — малярний скотч, самовивіз по дорозі](frogtape-multi-surface-1-88-60-iardiv-maliarnyi-skotch-samov.md) - $9.98 за рулон, купити
 * [Rosin paper Trimaco, рулон 3×144 фути — прошарок між ковдрою і обшивкою салону](rosin-paper-trimaco-rulon-3-144-futy-prosharok-mizh-kovdroiu.md) - ~$15-20, купити
 * [Ковдри для перевезення — добір, якщо 4 шт WEN не вистачить](kovdry-dlia-perevezennia-dobir-iakshcho-4-sht-wen-ne-vystach.md) - $9.99 за шт, купити
 * [Фольгований екран на лобове скло — закрити головний вхід пилу зсередини](folhovanyi-ekran-na-lobove-sklo-zakryty-holovnyi-vkhid-pylu-.md) - ~$15-25, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) - $169.99 ($1.62 за кв. фут), купити
 * [Стенд підлоговий під меморіальну табличку — VAIIGO 8.5×11, хром, плоска сталева база](stend-pidlohovyi-pid-memorialnu-tablychku-vaiigo-8-5-11-khro.md) - $47.99, купити
-* [Болти 3/8″ × 3″ оцинковані — рама подіуму (за кресленням M10×70, поз.15)](bolty-3-8-3-otsynkovani-rama-podiumu-za-kreslenniam-m10-70-p.md) - $19.40 за пачку 15 шт, купити
-* [Болти 3/8″ × 4½″ оцинковані — база робота (за кресленням M10×110, поз.25)](bolty-3-8-4-otsynkovani-baza-robota-za-kreslenniam-m10-110-p.md) - $1.97 за штуку, купити
-* [Шпилька різьбова 3/8-16 × 36″ оцинкована — на 4 довгі болти M10×180 (поз.24)](shpylka-rizbova-3-8-16-36-otsynkovana-na-4-dovhi-bolty-m10-1.md) - $5.98, купити
-* [Гайки 3/8-16 з нейлоновим кільцем, пачка 10 шт — за кресленням поз.13, 16, 26](haiky-3-8-16-z-neilonovym-kiltsem-pachka-10-sht-za-kreslenni.md) - $4.57 за пачку 10 шт · 5 пачок = $22.85, купити
-* [Шайби пружинні (гровер) 3/8″ оцинковані, 100 шт — за кресленням поз.14, 17, 27](shaiby-pruzhynni-hrover-3-8-otsynkovani-100-sht-za-kreslenni.md) - $17.54 за пачку 50 шт, купити
-* [Шайби плоскі 3/8″ оцинковані, 100 шт — за кресленням поз.18, 28 (M10×30)](shaiby-ploski-3-8-otsynkovani-100-sht-za-kreslenniam-poz-18-.md) - $6.87 за пачку 50 шт, купити
-* [Simpson LS90Z — регульований кутик, гнеться від 0 до 135°, ЗА КУТОМ ВОСЬМИКУТНИКА](simpson-ls90z-rehulovanyi-kutyk-hnetsia-vid-0-do-135-za-kuto.md) - ~$6/шт, купити
+* [Болти 3/8″ × 3″ оцинковані — рама подіуму (за кресленням M10×70, поз.15)](bolty-3-8-3-otsynkovani-rama-podiumu-za-kreslenniam-m10-70-p.md) - $19.40 за пачку 15 шт, є
+* [Болти 3/8″ × 4½″ оцинковані — база робота (за кресленням M10×110, поз.25)](bolty-3-8-4-otsynkovani-baza-robota-za-kreslenniam-m10-110-p.md) - $1.97 за штуку, є
+* [Шпилька різьбова 3/8-16 × 36″ оцинкована — на 4 довгі болти M10×180 (поз.24)](shpylka-rizbova-3-8-16-36-otsynkovana-na-4-dovhi-bolty-m10-1.md) - $5.98, є
+* [Гайки 3/8-16 з нейлоновим кільцем, пачка 10 шт — за кресленням поз.13, 16, 26](haiky-3-8-16-z-neilonovym-kiltsem-pachka-10-sht-za-kreslenni.md) - $4.57 за пачку 10 шт · 5 пачок = $22.85, є
+* [Шайби пружинні (гровер) 3/8″ оцинковані, 100 шт — за кресленням поз.14, 17, 27](shaiby-pruzhynni-hrover-3-8-otsynkovani-100-sht-za-kreslenni.md) - $17.54 за пачку 50 шт, є
+* [Шайби плоскі 3/8″ оцинковані, 100 шт — за кресленням поз.18, 28 (M10×30)](shaiby-ploski-3-8-otsynkovani-100-sht-za-kreslenniam-poz-18-.md) - $6.87 за пачку 50 шт, є
+* [Simpson LS90Z — регульований кутик, гнеться від 0 до 135°, ЗА КУТОМ ВОСЬМИКУТНИКА](simpson-ls90z-rehulovanyi-kutyk-hnetsia-vid-0-do-135-za-kuto.md) - ~$6/шт, є
 * [Вентилятор ящика — 120 мм 12 В, 1600 об/хв, 47 CFM, 2 шт у наборі](ventyliator-iashchyka-120-mm-12-v-1600-ob-khv-47-cfm-2-sht-u.md) - $12.99, купити
 * [Змінні пилофільтри на вентилятор 120 мм, магнітні, 4 шт](zminni-pylofiltry-na-ventyliator-120-mm-mahnitni-4-sht.md) - $9.99, купити
 * [Термостат 12 В на вентилятор ящика, 2 шт](termostat-12-v-na-ventyliator-iashchyka-2-sht.md) - $12.99, купити
-* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) - $11.48 за тюбик · 2 тюби = $22.96, купити
+* [Силікон 100% нейтральний GE Advanced Silicone 2, прозорий 10.1 oz — посадка неону в паз](sylikon-100-neitralnyi-ge-advanced-silicone-2-prozoryi-10-1-.md) - $11.48 за тюбик · 2 тюби = $22.96, є
 * [Sil-Poxy (Smooth-On) — клей саме силікон-до-чого-завгодно, на торці й ремонт](sil-poxy-smooth-on-klei-same-sylikon-do-choho-zavhodno-na-to.md) - —, купити
 * [Батарейки AAA Energizer MAX, 48 шт — маркерні вогні (12 ліхтарів × 3)](batareiky-aaa-energizer-max-48-sht-markerni-vohni-12-likhtar.md) - $19.73, купити
 * [Поролон-передфільтр Frost King 15×24", відкритопористий — груба ступінь](porolon-peredfiltr-frost-king-15-24-vidkrytoporystyi-hruba-s.md) - $4.49, купити
 * [Гвинти #8 × 2″ потайні — тримають ВСЮ верхню кришку наскрізь (Home Depot)](hvynty-8-2-potaini-trymaiut-vsiu-verkhniu-kryshku-naskriz-ho.md) - $10.97 за пачку 1 lb · 2 пачки = $21.94, купити
 * [Сталь 1/16″ листом на пластини 7×5″ — варіант «купити і порізати» замість TPA57](stal-1-16-lystom-na-plastyny-7-5-variant-kupyty-i-porizaty-z.md) - $48.44 за лист 24×24″ у Home Depot (або $39.90/лист на Amazon), купити
-* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) - $5.98, купити
-* [Набір свердел DEWALT Black and Gold, 21 шт (DWA1181), 1/16″–3/8″](nabir-sverdel-dewalt-black-and-gold-21-sht-dwa1181-1-16-3-8.md) - $24.97 (знижка з $29.97), купити
-* [Зенківка-комбі Milwaukee #6/#8/#10, набір 3 шт (48-13-5003)](zenkivka-kombi-milwaukee-6-8-10-nabir-3-sht-48-13-5003.md) - $34.97, купити
-* [Кернер автоматичний Husky 6″ (70079H)](kerner-avtomatychnyi-husky-6-70079h.md) - $20.97, купити
-* [Гвинти потайні #8 × 1½″ оцинковані, 100 шт (Everbilt 801842)](hvynty-potaini-8-1-otsynkovani-100-sht-everbilt-801842.md) - $11.47, купити
+* [Пістолет для силікону — Anvil 10 oz Light-Duty Drip Free Smooth Rod](pistolet-dlia-sylikonu-anvil-10-oz-light-duty-drip-free-smoo.md) - $5.98, є
+* [Набір свердел DEWALT Black and Gold, 21 шт (DWA1181), 1/16″–3/8″](nabir-sverdel-dewalt-black-and-gold-21-sht-dwa1181-1-16-3-8.md) - $24.97 (знижка з $29.97), є
+* [Зенківка-комбі Milwaukee #6/#8/#10, набір 3 шт (48-13-5003)](zenkivka-kombi-milwaukee-6-8-10-nabir-3-sht-48-13-5003.md) - $34.97, є
+* [Кернер автоматичний Husky 6″ (70079H)](kerner-avtomatychnyi-husky-6-70079h.md) - $20.97, є
+* [Гвинти потайні #8 × 1½″ оцинковані, 100 шт (Everbilt 801842)](hvynty-potaini-8-1-otsynkovani-100-sht-everbilt-801842.md) - $11.47, є
 * [Шурупи по дереву #8 × 3/4″ напівкругла голівка, оцинковані (Everbilt 827011) — поз.31 креслення](shurupy-po-derevu-8-3-4-napivkruhla-holivka-otsynkovani-ever.md) - $2.99 за пачку · 15 пачок = $44.85, купити
-* [Саморізи #6 × 3/4″ потайні, цинк, 100 шт (Everbilt 801372) — поз.29 креслення](samorizy-6-3-4-potaini-tsynk-100-sht-everbilt-801372-poz-29-.md) - $2.99, купити
+* [Саморізи #6 × 3/4″ потайні, цинк, 100 шт (Everbilt 801372) — поз.29 креслення](samorizy-6-3-4-potaini-tsynk-100-sht-everbilt-801372-poz-29-.md) - $2.99, є
 * [Алюмінієва окантовка сходинки M-D 78022, 1-1/8″×1-1/8″×36″ з цвяхами-шурупами — поз.10 креслення](aliuminiieva-okantovka-skhodynky-m-d-78022-1-1-8-1-1-8-36-z-.md) - $8.98 за шт · 8 шт = $71.84, купити
-* [Брус 2×4″ × 8 ft (38×89×2438 мм) — нижні балки каркасу перевезення](brus-2-4-8-ft-38-89-2438-mm-nyzhni-balky-karkasu-perevezenni.md) - $3.95 за шт · $11.85, купити
-* [Брус 2×3″ × 8 ft (38×64×2438 мм) — стійки й ферма каркасу перевезення](brus-2-3-8-ft-38-64-2438-mm-stiiky-i-ferma-karkasu-perevezen.md) - $3.48 за шт · $31.32, купити
-* [Саморізи конструкційні 3″ (76 мм), 1 lb — збірка каркасу перевезення](samorizy-konstruktsiini-3-76-mm-1-lb-zbirka-karkasu-pereveze.md) - $12.47, купити
+* [Брус 2×4″ × 8 ft (38×89×2438 мм) — нижні балки каркасу перевезення](brus-2-4-8-ft-38-89-2438-mm-nyzhni-balky-karkasu-perevezenni.md) - $3.95 за шт · $11.85, є
+* [Брус 2×3″ × 8 ft (38×64×2438 мм) — стійки й ферма каркасу перевезення](brus-2-3-8-ft-38-64-2438-mm-stiiky-i-ferma-karkasu-perevezen.md) - $3.48 за шт · $31.32, є
+* [Саморізи конструкційні 3″ (76 мм), 1 lb — збірка каркасу перевезення](samorizy-konstruktsiini-3-76-mm-1-lb-zbirka-karkasu-pereveze.md) - $12.47, є
 * [Кутики посилені Simpson RTA2Z під брус 2× — вузли каркасу перевезення](kutyky-posyleni-simpson-rta2z-pid-brus-2-vuzly-karkasu-perev.md) - $4.20 за шт · $33.60, купити
-* [Ремені з тріскачкою DEWALT 1″×12 ft (25 мм × 3.7 м), 1500 lbs, 4 шт — фіксація каркасу в кузові](remeni-z-triskachkoiu-dewalt-1-12-ft-25-mm-3-7-m-1500-lbs-4-.md) - $30.98, купити
+* [Ремені з тріскачкою DEWALT 1″×12 ft (25 мм × 3.7 м), 1500 lbs, 4 шт — фіксація каркасу в кузові](remeni-z-triskachkoiu-dewalt-1-12-ft-25-mm-3-7-m-1500-lbs-4-.md) - $30.98, є
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) - $59.25 за 10 шт, купити
 * [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) - $100 за дві · $200 за чотири, купити
 * [Сонячна панель Trina TSM-330PE14A 330 Вт — лот Івана 24.08, $50 за штуку](soniachna-panel-trina-tsm-330pe14a-330-vt-lot-ivana-24-08-50.md) - $50/шт · $100 за дві, купити
@@ -350,11 +350,14 @@
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) - $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) - $15-30, купити
 * [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) - —, купити
-* [Гвинти #8 × ½″ потайні оцинковані, 100 шт (Everbilt 801802) — алюміній на фанері поля сегмента](hvynty-8-potaini-otsynkovani-100-sht-everbilt-801802-aliumin.md) - $6.87, купити
-* [Кутик Simpson RTC22Z — головні кути каркасу перевезення](kutyk-simpson-rtc22z-holovni-kuty-karkasu-perevezennia.md) - $5.06 за шт · $20.24, купити
-* [Кутик Simpson RTT22Z — Т-подібний, опора під ящик станції](kutyk-simpson-rtt22z-t-podibnyi-opora-pid-iashchyk-stantsii.md) - $4.16 за шт · $16.64, купити
-* [Кутик Simpson RTRZ — плоский, кріплення похилої рами під панель](kutyk-simpson-rtrz-ploskyi-kriplennia-pokhyloi-ramy-pid-pane.md) - $1.35 за шт · $5.40, купити
-* [Болт 5/16″-18 × 6″ (заміна М8×150) — труба переноски робота до каркасу](bolt-5-16-18-6-zamina-m8-150-truba-perenosky-robota-do-karka.md) - $1.03 за шт · $2.06, купити
-* [Болт 5/16″-18 × 2½″ (заміна М8×60) — база робота до каркасу, пачка 15](bolt-5-16-18-2-zamina-m8-60-baza-robota-do-karkasu-pachka-15.md) - $13.56, купити
-* [Шайби широкі 5/16″ × 1½″ (fender) — під болти каркасу, пачка 6](shaiby-shyroki-5-16-1-fender-pid-bolty-karkasu-pachka-6.md) - $1.38 за пачку · $2.76, купити
-* [Гайки 5/16-18 з нейлоновим кільцем — під болти каркасу, пачка 15](haiky-5-16-18-z-neilonovym-kiltsem-pid-bolty-karkasu-pachka-.md) - $4.57, купити
+* [Гвинти #8 × ½″ потайні оцинковані, 100 шт (Everbilt 801802) — алюміній на фанері поля сегмента](hvynty-8-potaini-otsynkovani-100-sht-everbilt-801802-aliumin.md) - $6.87, є
+* [Кутик Simpson RTC22Z — головні кути каркасу перевезення](kutyk-simpson-rtc22z-holovni-kuty-karkasu-perevezennia.md) - $5.06 за шт · $20.24, є
+* [Кутик Simpson RTT22Z — Т-подібний, опора під ящик станції](kutyk-simpson-rtt22z-t-podibnyi-opora-pid-iashchyk-stantsii.md) - $4.16 за шт · $16.64, є
+* [Кутик Simpson RTRZ — плоский, кріплення похилої рами під панель](kutyk-simpson-rtrz-ploskyi-kriplennia-pokhyloi-ramy-pid-pane.md) - $1.35 за шт · $5.40, є
+* [Болт 5/16″-18 × 6″ (заміна М8×150) — труба переноски робота до каркасу](bolt-5-16-18-6-zamina-m8-150-truba-perenosky-robota-do-karka.md) - $1.03 за шт · $2.06, є
+* [Болт 5/16″-18 × 2½″ (заміна М8×60) — база робота до каркасу, пачка 15](bolt-5-16-18-2-zamina-m8-60-baza-robota-do-karkasu-pachka-15.md) - $13.56, є
+* [Шайби широкі 5/16″ × 1½″ (fender) — під болти каркасу, пачка 6](shaiby-shyroki-5-16-1-fender-pid-bolty-karkasu-pachka-6.md) - $1.38 за пачку · $2.76, є
+* [Гайки 5/16-18 з нейлоновим кільцем — під болти каркасу, пачка 15](haiky-5-16-18-z-neilonovym-kiltsem-pid-bolty-karkasu-pachka-.md) - $4.57, є
+* [Шурупи по дереву #8 × 2″ КРУГЛА головка, оцинковані (Hillman, Lowe's) — позиція 30 креслення](shurupy-po-derevu-8-2-kruhla-holovka-otsynkovani-hillman-low.md) - $1.98 за пачку 6 шт · 23 пачки = $45.54, купити
+* [Гвинти #8 x 3/4 pan head оцинковані, 100 шт (Everbilt 801592) — поз.31 креслення](hvynty-8-x-3-4-pan-head-otsynkovani-100-sht-everbilt-801592-.md) - $8.47 за пачку 100 шт, є
+* [Builders Paper 35″ × 150 ft (889 мм × 45.7 м) — прошарок у ящику перевезення](builders-paper-35-150-ft-889-mm-45-7-m-prosharok-u-iashchyku.md) - $12.98, є

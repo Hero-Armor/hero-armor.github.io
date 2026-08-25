@@ -6,10 +6,10 @@ resource: "https://www.homedepot.com/p/DECKMATE-9-x-3-in-Red-Star-Flat-Head-Wood
 tags: ["project"]
 quantity: "1 упаковка (73 шт)"
 price: "$12.47"
-procurement_status: "add"
+procurement_status: "have"
 generated: { by: "process:site-build" }
 ---
 
 З кошторису Володимира 24.08 (він закладав $10 за фунт). DECKMATE #9×3″, зірка Red Star — бита в комплекті, не злизується.
 
-Система: [Проєкт](/project.md) · статус: **купити** · ціна $12.47 · к-сть 1 упаковка (73 шт)
+Система: [Проєкт](/project.md) · статус: **є** · ціна $12.47 · к-сть 1 упаковка (73 шт)

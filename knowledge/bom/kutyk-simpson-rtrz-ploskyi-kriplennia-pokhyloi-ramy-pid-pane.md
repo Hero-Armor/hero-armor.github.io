@@ -6,10 +6,10 @@ resource: "https://www.homedepot.com/p/Simpson-Strong-Tie-RTR-ZMAX-Galvanized-Ri
 tags: ["project"]
 quantity: "4 шт"
 price: "$1.35 за шт · $5.40"
-procurement_status: "add"
+procurement_status: "have"
 generated: { by: "process:site-build" }
 ---
 
 Модель назвав Володимир 24.08 як RTR2Z; у каталозі Simpson і в Home Depot вона значиться RTRZ — це той самий Rigid Tie Rail. 20 калібр, розмір 3″×2 7/8″×3″ = 76×73×76 мм, ZMAX. Місце: кріплення похилої рами (де в дорозі лежить робот, а на плайї стоїть сонячна панель) до стійок і основи. Володимир закладав ~$2.90, реально $1.35.
 
-Система: [Проєкт](/project.md) · статус: **купити** · ціна $1.35 за шт · $5.40 · к-сть 4 шт
+Система: [Проєкт](/project.md) · статус: **є** · ціна $1.35 за шт · $5.40 · к-сть 4 шт

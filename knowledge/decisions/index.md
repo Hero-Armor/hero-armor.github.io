@@ -166,3 +166,5 @@
 * [Кабель ЗАКОПУЄМО в мілку траншею — так велить сам Burning Man для арт-інсталяцій](kabel-zakopuiemo-v-milku-transheiu-tak-velyt-sam-burning-man.md)
 * [Кріплення алюмінієвої підлоги — два класи гвинтів: наскрізні в каркас і короткі декоративні тільки в фанеру](kriplennia-aliuminiievoi-pidlohy-dva-klasy-hvyntiv-naskrizni.md)
 * [Розтяжки каркасу — ремені з тріскачкою, а не сталевий трос із талрепами](roztiazhky-karkasu-remeni-z-triskachkoiu-a-ne-stalevyi-tros-.md)
+* [Підлога подіуму — фанера 16 мм, а не OSB 23/32″ з креслення](pidloha-podiumu-fanera-16-mm-a-ne-osb-23-32-z-kreslennia.md)
+* [Кріплення алюмінієвої підлоги — pan head замість круглої головки](kriplennia-aliuminiievoi-pidlohy-pan-head-zamist-kruhloi-hol.md)

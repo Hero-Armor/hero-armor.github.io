@@ -38,3 +38,4 @@
 * [ORD-033 — Home Depot](ord-033.md) - замовлено
 * [ORD-034 — Home Depot](ord-034.md) - замовлено
 * [ORD-035 — McMaster-Carr](ord-035.md) - їде
+* [ORD-036 — Home Depot](ord-036.md) - замовлено

@@ -6,7 +6,7 @@ resource: "https://www.homedepot.com/p/Simpson-Strong-Tie-LS-7-7-8-in-18-Gauge-Z
 tags: ["project"]
 quantity: "2 шт (на пробу, за проханням Івана)"
 price: "~$6/шт"
-procurement_status: "add"
+procurement_status: "have"
 generated: { by: "process:site-build" }
 ---
 
@@ -16,4 +16,4 @@ generated: { by: "process:site-build" }
 Менший брат LS70Z ($5.46, 6⅜″) — https://www.homedepot.com/p/Simpson-Strong-Tie-LS-6-3-8-in-18-Gauge-ZMAX-Galvanized-Adjustable-L-Angle-LS70Z/100375235
 Нижні кутики вже є: LS50Z, 16 шт, кількість затверджена Володимиром 11.08.
 
-Система: [Проєкт](/project.md) · статус: **купити** · ціна ~$6/шт · к-сть 2 шт (на пробу, за проханням Івана)
+Система: [Проєкт](/project.md) · статус: **є** · ціна ~$6/шт · к-сть 2 шт (на пробу, за проханням Івана)

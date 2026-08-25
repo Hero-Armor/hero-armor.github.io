@@ -87,7 +87,7 @@ generated: { by: "process:site-build" }
 * [Алюміній рифлений на підлогу подіуму — McMaster 4917T31, 48×48″, 1/16″, клейка основа](/bom/aliuminii-ryflenyi-na-pidlohu-podiumu-mcmaster-4917t31-48-48.md) — $145.45/лист · $930.05 за 5 з доставкою і податком, є
 * [Вініл «щіткова сталь» на підлогу подіуму — VViViD Black Brushed Steel, рулон 10×5 ft](/bom/vinil-shchitkova-stal-na-pidlohu-podiumu-vvivid-black-brushe.md) — $69.98, купити
 * [Вініл 3M 2080 Brushed Aluminum, 5×10 ft — фірмовий варіант плівки](/bom/vinil-3m-2080-brushed-aluminum-5-10-ft-firmovyi-variant-pliv.md) — $232.14, купити
-* [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](/bom/hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) — $10.32 за пачку 50 шт, купити
+* [Гвинти напівкруглі #8 × 2″, оцинковані — кріплення алюмінієвої підлоги по периметру сегментів](/bom/hvynty-napivkruhli-8-2-otsynkovani-kriplennia-aliuminiievoi-.md) — $10.32 за пачку 50 шт · 3 пачки = $30.96, є
 * [Гвинти потайні #8 × 1½″, оцинковані — там, де головка має бути врівень](/bom/hvynty-potaini-8-1-otsynkovani-tam-de-holovka-maie-buty-vriv.md) — $7.24 за 100, купити
 * [Зенківка 82° по алюмінію, однозуба, кобальт M35 з покриттям TiAlN](/bom/zenkivka-82-po-aliuminiiu-odnozuba-kobalt-m35-z-pokryttiam-t.md) — $11.99, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](/bom/vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) — $169.99 ($1.62 за кв. фут), купити

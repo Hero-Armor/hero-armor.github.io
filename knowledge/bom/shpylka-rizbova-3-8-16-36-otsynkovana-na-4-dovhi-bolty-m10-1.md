@@ -6,7 +6,7 @@ resource: "https://www.homedepot.com/p/Everbilt-3-8-in-x-3-ft-Zinc-Plated-Steel-
 tags: ["armor"]
 quantity: "1 шт"
 price: "$5.98"
-procurement_status: "add"
+procurement_status: "have"
 generated: { by: "process:site-build" }
 ---
 
@@ -15,4 +15,4 @@ generated: { by: "process:site-build" }
 Другий аргумент Івана — «підтягувати з двох боків» — теж працює саме тут, у наскрізному вузлі кріплення робота.
 Кількість — з ВІДОМОСТІ КРІПЛЕННЯ креслення 01.8 rev 3.1 (позиція 24), плюс 10% запасу, як вимагає примітка 2 того ж аркуша: «Fasteners must be purchased with a safety margin (+10%) … in case fasteners are lost during installation in the desert». Примітка 3: усе кріплення оцинковане або з іншим захистом від корозії.
 
-Система: [Броня](/systems/armor.md) · статус: **купити** · ціна $5.98 · к-сть 1 шт
+Система: [Броня](/systems/armor.md) · статус: **є** · ціна $5.98 · к-сть 1 шт

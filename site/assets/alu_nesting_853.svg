@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="691" height="761" viewBox="0 0 691 761" font-family="DejaVu Sans, Arial" font-size="13">
+<rect width="691" height="761" fill="white"/>
+<g transform="translate(90,90) scale(0.42)">
+<rect x="0" y="0" width="1219" height="1219" fill="#fafafa" stroke="#333" stroke-width="4"/>
+<path d="M0,0 L853,0 L853,898 L366,898 L259,791 L0,510 Z" fill="#cfe3f7" stroke="#1560a8" stroke-width="6"/>
+<text x="330" y="430" font-size="40" fill="#1560a8" text-anchor="middle">СЕКЦІЯ</text>
+<text x="330" y="480" font-size="30" fill="#1560a8" text-anchor="middle">853 × 898 мм</text>
+<text x="330" y="522" font-size="26" fill="#5a86ad" text-anchor="middle">33.6 × 35.4″</text>
+<rect x="853" y="0" width="160" height="853" fill="#d8f0d8" stroke="#2e7d32" stroke-width="5"/>
+<text x="933.0" y="435.5" font-size="27" fill="#2e7d32" text-anchor="middle" transform="rotate(-90,933.0,426.5)">160×853</text>
+<rect x="1013" y="0" width="160" height="853" fill="#d8f0d8" stroke="#2e7d32" stroke-width="5"/>
+<text x="1093.0" y="435.5" font-size="27" fill="#2e7d32" text-anchor="middle" transform="rotate(-90,1093.0,426.5)">160×853</text>
+<rect x="0" y="898" width="853" height="160" fill="#d8f0d8" stroke="#2e7d32" stroke-width="5"/>
+<text x="426.5" y="987.0" font-size="27" fill="#2e7d32" text-anchor="middle">160×853</text>
+<rect x="0" y="1058" width="853" height="160" fill="#d8f0d8" stroke="#2e7d32" stroke-width="5"/>
+<text x="426.5" y="1147.0" font-size="27" fill="#2e7d32" text-anchor="middle">160×853</text>
+<text x="609.5" y="-26" font-size="32" text-anchor="middle">1219 мм (48″)</text>
+<text x="-30" y="609.5" font-size="32" text-anchor="middle" transform="rotate(-90,-30,609.5)">1219 мм (48″)</text>
+</g>
+<text x="345.5" y="727" font-size="17" text-anchor="middle" font-weight="bold">Розкрій листа 48×48″ · секція + торці по 853 мм</text>
+<text x="345.5" y="748" font-size="14" text-anchor="middle" fill="#555">з листа: 1 секція + 4 торцевих смуг 160×853 мм</text>
+</svg>
