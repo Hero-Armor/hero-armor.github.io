@@ -33,7 +33,7 @@
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
 * [Сонячна панель під Bluetti AC200P — 300-400 Вт, VOC 35-150 В](soniachna-panel-pid-bluetti-ac200p-300-400-vt-voc-35-150-v.md) - $49-99 (вторинка), купити
-* [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) - ~$1600, є
+* [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) - $600 (з рук, 23.08.2026), є
 * [Рама під сонячний масив](rama-pid-soniachnyi-masyv.md) - —, купити
 * [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - $61.95, купити
 * [Щит-бокс із тримачами запобіжників — Cyrico 12 Circuits](shchyt-boks-iz-trymachamy-zapobizhnykiv-cyrico-12-circuits.md) - $15.99, купити
@@ -339,7 +339,7 @@
 * [Алюмінієва окантовка сходинки M-D 78022, 1-1/8″×1-1/8″×36″ з цвяхами-шурупами — поз.10 креслення](aliuminiieva-okantovka-skhodynky-m-d-78022-1-1-8-1-1-8-36-z-.md) - $8.98 за шт · 8 шт = $71.84, купити
 * [Брус 2×4″ × 8 ft (38×89×2438 мм) — нижні балки каркасу перевезення](brus-2-4-8-ft-38-89-2438-mm-nyzhni-balky-karkasu-perevezenni.md) - $3.95 за шт · $11.85, є
 * [Брус 2×3″ × 8 ft (38×64×2438 мм) — стійки й ферма каркасу перевезення](brus-2-3-8-ft-38-64-2438-mm-stiiky-i-ferma-karkasu-perevezen.md) - $3.48 за шт · $31.32, є
-* [Саморізи конструкційні 3″ (76 мм), 1 lb — збірка каркасу перевезення](samorizy-konstruktsiini-3-76-mm-1-lb-zbirka-karkasu-pereveze.md) - $12.47, є
+* [Саморізи конструкційні 3″ (76 мм), 1 lb — збірка каркасу перевезення](samorizy-konstruktsiini-3-76-mm-1-lb-zbirka-karkasu-pereveze.md) - $12.47 за упаковку · 2 = $24.94, купити
 * [Кутики посилені Simpson RTA2Z під брус 2× — вузли каркасу перевезення](kutyky-posyleni-simpson-rta2z-pid-brus-2-vuzly-karkasu-perev.md) - $4.20 за шт · $33.60, купити
 * [Ремені з тріскачкою DEWALT 1″×12 ft (25 мм × 3.7 м), 1500 lbs, 4 шт — фіксація каркасу в кузові](remeni-z-triskachkoiu-dewalt-1-12-ft-25-mm-3-7-m-1500-lbs-4-.md) - $30.98, є
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) - $59.25 за 10 шт, купити
@@ -362,3 +362,6 @@
 * [Гвинти #8 x 3/4 pan head оцинковані, 100 шт (Everbilt 801592) — поз.31 креслення](hvynty-8-x-3-4-pan-head-otsynkovani-100-sht-everbilt-801592-.md) - $8.47 за пачку 100 шт, є
 * [Builders Paper 35″ × 150 ft (889 мм × 45.7 м) — прошарок у ящику перевезення](builders-paper-35-150-ft-889-mm-45-7-m-prosharok-u-iashchyku.md) - $12.98, є
 * [Гвинтові ґрунтові анкери Eurmax 11.8″ зі стропами, 4 шт — АЛЬТЕРНАТИВА під стенд таблички](hvyntovi-gruntovi-ankery-eurmax-11-8-zi-stropamy-4-sht-alter.md) - $29.91 ($7.48/шт), купити
+* [Кодовий замок Master Lock 1500D на ящик станції — 2 шт (по одному на кожну засувку)](kodovyi-zamok-master-lock-1500d-na-iashchyk-stantsii-2-sht-p.md) - $8.98 за шт · 2 шт = $17.96, купити
+* [Simpson HTP37Z 3×7″ 16 ga ZMAX — важка притискна пластина, ДРУГА партія 12 шт](simpson-htp37z-3-7-16-ga-zmax-vazhka-prytyskna-plastyna-druh.md) - $2.98 за шт (чек Лізи) · 12 шт ≈ $35.76 + податок, купити
+* [Гвинти #8 × ¾″ ПОТАЙНІ (flat head) оцинковані, 100 шт (Everbilt 801392)](hvynty-8-potaini-flat-head-otsynkovani-100-sht-everbilt-8013.md) - ≈$2.99 за пачку 100 шт, купити

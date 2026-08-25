@@ -342,3 +342,4 @@
 * [Підібрати і купити короткі декоративні гвинти для поля алюмінієвої підлоги — заходять у фанеру 16 мм, НЕ наскрізь, тримають лише лист (орієнтир #8 × ½″)](pidibraty-i-kupyty-korotki-dekoratyvni-hvynty-dlia-polia-ali.md) - до роботи
 * [Обдзвін складів металу по запасному листу алюмінію 38×34″ — закрито без купівлі](obdzvin-skladiv-metalu-po-zapasnomu-lystu-aliuminiiu-38-34-z.md) - готово
 * [Список порізки бруса каркасу перевезення надіслано Лізі напряму](spysok-porizky-brusa-karkasu-perevezennia-nadislano-lizi-nap.md) - готово
+* [Анкери під стенд таблички — обидва варіанти з бази виявились мертвими, потрібне рішення на місці](ankery-pid-stend-tablychky-obydva-varianty-z-bazy-vyiavylys-.md) - до роботи

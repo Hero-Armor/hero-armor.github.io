@@ -95,3 +95,5 @@ generated: { by: "process:site-build" }
 * [Змінні пилофільтри на вентилятор 120 мм, магнітні, 4 шт](/bom/zminni-pylofiltry-na-ventyliator-120-mm-mahnitni-4-sht.md) — $9.99, купити
 * [Термостат 12 В на вентилятор ящика, 2 шт](/bom/termostat-12-v-na-ventyliator-iashchyka-2-sht.md) — $12.99, купити
 * [Поролон-передфільтр Frost King 15×24", відкритопористий — груба ступінь](/bom/porolon-peredfiltr-frost-king-15-24-vidkrytoporystyi-hruba-s.md) — $4.49, купити
+* [Кодовий замок Master Lock 1500D на ящик станції — 2 шт (по одному на кожну засувку)](/bom/kodovyi-zamok-master-lock-1500d-na-iashchyk-stantsii-2-sht-p.md) — $8.98 за шт · 2 шт = $17.96, купити
+* [Simpson HTP37Z 3×7″ 16 ga ZMAX — важка притискна пластина, ДРУГА партія 12 шт](/bom/simpson-htp37z-3-7-16-ga-zmax-vazhka-prytyskna-plastyna-druh.md) — $2.98 за шт (чек Лізи) · 12 шт ≈ $35.76 + податок, купити

@@ -92,7 +92,7 @@ generated: { by: "process:site-build" }
 # Закупівля
 
 * [Сонячна панель під Bluetti AC200P — 300-400 Вт, VOC 35-150 В](/bom/soniachna-panel-pid-bluetti-ac200p-300-400-vt-voc-35-150-v.md) — $49-99 (вторинка), купити
-* [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](/bom/stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) — ~$1600, є
+* [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](/bom/stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) — $600 (з рук, 23.08.2026), є
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $61.95, купити
 * [Кабель: Станція (Anderson 30 А) → щит запобіжників](/bom/kabel-stantsiia-anderson-30-a-shchyt-zapobizhnykiv.md) — $72.99, купити
