@@ -341,3 +341,4 @@
 * [Спитати Володимира, чим кріпити плечову трубу 2″ NPS до каркасу перевезення — саморізи по металу з буром чи наскрізні болти](spytaty-volodymyra-chym-kripyty-plechovu-trubu-2-nps-do-kark.md) - готово
 * [Підібрати і купити короткі декоративні гвинти для поля алюмінієвої підлоги — заходять у фанеру 16 мм, НЕ наскрізь, тримають лише лист (орієнтир #8 × ½″)](pidibraty-i-kupyty-korotki-dekoratyvni-hvynty-dlia-polia-ali.md) - до роботи
 * [Обдзвін складів металу по запасному листу алюмінію 38×34″ — закрито без купівлі](obdzvin-skladiv-metalu-po-zapasnomu-lystu-aliuminiiu-38-34-z.md) - готово
+* [Список порізки бруса каркасу перевезення надіслано Лізі напряму](spysok-porizky-brusa-karkasu-perevezennia-nadislano-lizi-nap.md) - готово
