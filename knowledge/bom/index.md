@@ -361,3 +361,4 @@
 * [Шурупи по дереву #8 × 2″ КРУГЛА головка, оцинковані (Hillman, Lowe's) — позиція 30 креслення](shurupy-po-derevu-8-2-kruhla-holovka-otsynkovani-hillman-low.md) - $1.98 за пачку 6 шт · 23 пачки = $45.54, купити
 * [Гвинти #8 x 3/4 pan head оцинковані, 100 шт (Everbilt 801592) — поз.31 креслення](hvynty-8-x-3-4-pan-head-otsynkovani-100-sht-everbilt-801592-.md) - $8.47 за пачку 100 шт, є
 * [Builders Paper 35″ × 150 ft (889 мм × 45.7 м) — прошарок у ящику перевезення](builders-paper-35-150-ft-889-mm-45-7-m-prosharok-u-iashchyku.md) - $12.98, є
+* [Гвинтові ґрунтові анкери Eurmax 11.8″ зі стропами, 4 шт — АЛЬТЕРНАТИВА під стенд таблички](hvyntovi-gruntovi-ankery-eurmax-11-8-zi-stropamy-4-sht-alter.md) - $29.91 ($7.48/шт), купити
