@@ -169,3 +169,4 @@
 * [Підлога подіуму — фанера 16 мм, а не OSB 23/32″ з креслення](pidloha-podiumu-fanera-16-mm-a-ne-osb-23-32-z-kreslennia.md)
 * [Кріплення алюмінієвої підлоги — pan head замість круглої головки](kriplennia-aliuminiievoi-pidlohy-pan-head-zamist-kruhloi-hol.md)
 * [Пошук металу закрито — ні запасний лист алюмінію, ні сталь на анкерні пластини більше не потрібні](poshuk-metalu-zakryto-ni-zapasnyi-lyst-aliuminiiu-ni-stal-na.md)
+* [Панель Risen 435 Вт за $180 — беремо, бо каркас 06.24 намальований рівно під її габарит](panel-risen-435-vt-za-180-beremo-bo-karkas-06-24-namalovanyi.md)

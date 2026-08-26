@@ -51,6 +51,7 @@ generated: { by: "process:site-build" }
 * [Пошук станції живлення зупинено — станцію куплено](/decisions/poshuk-stantsii-zhyvlennia-zupyneno-stantsiiu-kupleno.md)
 * [Станція — Bluetti AC200P, а не EcoFlow. Вікно входу 35-150 В міняє схему панелей](/decisions/stantsiia-bluetti-ac200p-a-ne-ecoflow-vikno-vkhodu-35-150-v-.md)
 * [Розтяжки каркасу — ремені з тріскачкою, а не сталевий трос із талрепами](/decisions/roztiazhky-karkasu-remeni-z-triskachkoiu-a-ne-stalevyi-tros-.md)
+* [Панель Risen 435 Вт за $180 — беремо, бо каркас 06.24 намальований рівно під її габарит](/decisions/panel-risen-435-vt-za-180-beremo-bo-karkas-06-24-namalovanyi.md)
 
 # Задачі
 
@@ -91,7 +92,7 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [Сонячна панель під Bluetti AC200P — 300-400 Вт, VOC 35-150 В](/bom/soniachna-panel-pid-bluetti-ac200p-300-400-vt-voc-35-150-v.md) — $49-99 (вторинка), купити
+* [Сонячна панель Risen RSM108-8-435BNOG, 435 Вт — Сан-Хосе, з рук](/bom/soniachna-panel-risen-rsm108-8-435bnog-435-vt-san-khose-z-ru.md) — $180, купити
 * [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](/bom/stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) — $600 (з рук, 23.08.2026), є
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $61.95, купити
