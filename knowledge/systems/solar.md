@@ -138,6 +138,6 @@ generated: { by: "process:site-build" }
 * [Подовжувач сонячний MC4 10AWG, 20 футів — BougeRV](/bom/podovzhuvach-soniachnyi-mc4-10awg-20-futiv-bougerv.md) — $29.99, купити
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](/bom/zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) — $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](/bom/multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) — $15-30, купити
-* [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](/bom/kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) — —, купити
+* [Авіаційний роз'єм HangTon 2-pin для Bluetti — сонячний кабель у станцію](/bom/aviatsiinyi-roziem-hangton-2-pin-dlia-bluetti-soniachnyi-kab.md) — $15.86, є
 * [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](/bom/soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) — —, купити
 * [Сонячна панель Renogy 200 Вт N-type 16BB — ДВІ послідовно, нові з Amazon](/bom/soniachna-panel-renogy-200-vt-n-type-16bb-dvi-poslidovno-nov.md) — $179.99/шт · $360 за дві, купити

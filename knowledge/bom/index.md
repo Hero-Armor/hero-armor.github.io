@@ -349,9 +349,9 @@
 * [Подовжувач сонячний MC4 10AWG, 20 футів — BougeRV](podovzhuvach-soniachnyi-mc4-10awg-20-futiv-bougerv.md) - $29.99, купити
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) - $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) - $15-30, купити
-* [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) - —, купити
+* [Авіаційний роз'єм HangTon 2-pin для Bluetti — сонячний кабель у станцію](aviatsiinyi-roziem-hangton-2-pin-dlia-bluetti-soniachnyi-kab.md) - $15.86, є
 * [Гвинти #8 × ½″ потайні оцинковані, 100 шт (Everbilt 801802) — алюміній на фанері поля сегмента](hvynty-8-potaini-otsynkovani-100-sht-everbilt-801802-aliumin.md) - $6.87, є
-* [Кутик Simpson RTC22Z — головні кути каркасу перевезення](kutyk-simpson-rtc22z-holovni-kuty-karkasu-perevezennia.md) - $5.06 за шт · $20.24, є
+* [Кутик Simpson RTC22Z — головні кути каркасу перевезення](kutyk-simpson-rtc22z-holovni-kuty-karkasu-perevezennia.md) - $5.06 за шт · $20.24, купити
 * [Кутик Simpson RTT22Z — Т-подібний, опора під ящик станції](kutyk-simpson-rtt22z-t-podibnyi-opora-pid-iashchyk-stantsii.md) - $4.16 за шт · $16.64, є
 * [Кутик Simpson RTRZ — плоский, кріплення похилої рами під панель](kutyk-simpson-rtrz-ploskyi-kriplennia-pokhyloi-ramy-pid-pane.md) - $1.35 за шт · $5.40, є
 * [Болт 5/16″-18 × 6″ (заміна М8×150) — труба переноски робота до каркасу](bolt-5-16-18-6-zamina-m8-150-truba-perenosky-robota-do-karka.md) - $1.03 за шт · $2.06, є
