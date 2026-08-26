@@ -370,3 +370,4 @@
 * [Шпилька різьбова 3/8-16 × 3 ft (9.5 мм × 914 мм) оцинкована](shpylka-rizbova-3-8-16-3-ft-9-5-mm-914-mm-otsynkovana.md) - ≈$8/шт, купити
 * [Гайки 3/8-16 оцинковані, 100 шт](haiky-3-8-16-otsynkovani-100-sht.md) - ≈$13, купити
 * [Гайки 3/8-16 з нейлоновим кільцем (nylock), 10 шт](haiky-3-8-16-z-neilonovym-kiltsem-nylock-10-sht.md) - ≈$3/пачка, купити
+* [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) - —, купити

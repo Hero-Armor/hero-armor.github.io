@@ -138,3 +138,4 @@ generated: { by: "process:site-build" }
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](/bom/zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) — $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](/bom/multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) — $15-30, купити
 * [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](/bom/kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) — —, купити
+* [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](/bom/soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) — —, купити
