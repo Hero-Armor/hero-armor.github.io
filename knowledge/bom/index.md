@@ -365,3 +365,8 @@
 * [Кодовий замок Master Lock 1500D на ящик станції — 2 шт (по одному на кожну засувку)](kodovyi-zamok-master-lock-1500d-na-iashchyk-stantsii-2-sht-p.md) - $8.98 за шт · 2 шт = $17.96, купити
 * [Simpson HTP37Z 3×7″ 16 ga ZMAX — важка притискна пластина, ДРУГА партія 12 шт](simpson-htp37z-3-7-16-ga-zmax-vazhka-prytyskna-plastyna-druh.md) - $2.98 за шт (чек Лізи) · 12 шт ≈ $35.76 + податок, купити
 * [Гвинти #8 × ¾″ ПОТАЙНІ (flat head) оцинковані, 100 шт (Everbilt 801392)](hvynty-8-potaini-flat-head-otsynkovani-100-sht-everbilt-8013.md) - ≈$2.99 за пачку 100 шт, купити
+* [Брус 2×3″ × 8 ft (38×64 мм, 2438 мм) — добір розкрою каркаса + запас](brus-2-3-8-ft-38-64-mm-2438-mm-dobir-rozkroiu-karkasa-zapas.md) - $3.13/шт = $12.52, купити
+* [Брус 2×4″ × 8 ft (38×89 мм) — запас до каркаса](brus-2-4-8-ft-38-89-mm-zapas-do-karkasa.md) - ≈$6, купити
+* [Шпилька різьбова 3/8-16 × 3 ft (9.5 мм × 914 мм) оцинкована](shpylka-rizbova-3-8-16-3-ft-9-5-mm-914-mm-otsynkovana.md) - ≈$8/шт, купити
+* [Гайки 3/8-16 оцинковані, 100 шт](haiky-3-8-16-otsynkovani-100-sht.md) - ≈$13, купити
+* [Гайки 3/8-16 з нейлоновим кільцем (nylock), 10 шт](haiky-3-8-16-z-neilonovym-kiltsem-nylock-10-sht.md) - ≈$3/пачка, купити
