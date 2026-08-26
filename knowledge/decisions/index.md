@@ -170,3 +170,4 @@
 * [Кріплення алюмінієвої підлоги — pan head замість круглої головки](kriplennia-aliuminiievoi-pidlohy-pan-head-zamist-kruhloi-hol.md)
 * [Пошук металу закрито — ні запасний лист алюмінію, ні сталь на анкерні пластини більше не потрібні](poshuk-metalu-zakryto-ni-zapasnyi-lyst-aliuminiiu-ni-stal-na.md)
 * [Панель — SunPower SPR-E20-327 (дві по $55), а не Risen 435: станція міряє Vmp, а не Voc](panel-sunpower-spr-e20-327-dvi-po-55-a-ne-risen-435-stantsii.md)
+* [Тільки ОДНА панель. Пара великих модулів скасована](tilky-odna-panel-para-velykykh-moduliv-skasovana.md)

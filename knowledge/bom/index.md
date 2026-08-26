@@ -371,3 +371,4 @@
 * [Гайки 3/8-16 оцинковані, 100 шт](haiky-3-8-16-otsynkovani-100-sht.md) - ≈$13, купити
 * [Гайки 3/8-16 з нейлоновим кільцем (nylock), 10 шт](haiky-3-8-16-z-neilonovym-kiltsem-nylock-10-sht.md) - ≈$3/пачка, купити
 * [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) - —, купити
+* [Сонячна панель Renogy 200 Вт N-type 16BB — ДВІ послідовно, нові з Amazon](soniachna-panel-renogy-200-vt-n-type-16bb-dvi-poslidovno-nov.md) - $179.99/шт · $360 за дві, купити

@@ -52,6 +52,7 @@ generated: { by: "process:site-build" }
 * [Станція — Bluetti AC200P, а не EcoFlow. Вікно входу 35-150 В міняє схему панелей](/decisions/stantsiia-bluetti-ac200p-a-ne-ecoflow-vikno-vkhodu-35-150-v-.md)
 * [Розтяжки каркасу — ремені з тріскачкою, а не сталевий трос із талрепами](/decisions/roztiazhky-karkasu-remeni-z-triskachkoiu-a-ne-stalevyi-tros-.md)
 * [Панель — SunPower SPR-E20-327 (дві по $55), а не Risen 435: станція міряє Vmp, а не Voc](/decisions/panel-sunpower-spr-e20-327-dvi-po-55-a-ne-risen-435-stantsii.md)
+* [Тільки ОДНА панель. Пара великих модулів скасована](/decisions/tilky-odna-panel-para-velykykh-moduliv-skasovana.md)
 
 # Задачі
 
@@ -139,3 +140,4 @@ generated: { by: "process:site-build" }
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](/bom/multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) — $15-30, купити
 * [Кабель XT90→MC4 і авіаційний→XT90 для Bluetti AC200P — ПЕРЕВІРИТИ КОМПЛЕКТ](/bom/kabel-xt90-mc4-i-aviatsiinyi-xt90-dlia-bluetti-ac200p-perevi.md) — —, купити
 * [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](/bom/soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) — —, купити
+* [Сонячна панель Renogy 200 Вт N-type 16BB — ДВІ послідовно, нові з Amazon](/bom/soniachna-panel-renogy-200-vt-n-type-16bb-dvi-poslidovno-nov.md) — $179.99/шт · $360 за дві, купити
