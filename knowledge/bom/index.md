@@ -313,7 +313,7 @@
 * [Фольгований екран на лобове скло — закрити головний вхід пилу зсередини](folhovanyi-ekran-na-lobove-sklo-zakryty-holovnyi-vkhid-pylu-.md) - ~$15-25, купити
 * [Вініл рифлений рулоном на підлогу подіуму — альтернатива алюмінію (ідея Івана)](vinil-ryflenyi-rulonom-na-pidlohu-podiumu-alternatyva-aliumi.md) - $169.99 ($1.62 за кв. фут), купити
 * [Стенд підлоговий під меморіальну табличку — VAIIGO 8.5×11, хром, плоска сталева база](stend-pidlohovyi-pid-memorialnu-tablychku-vaiigo-8-5-11-khro.md) - $47.99, купити
-* [Болти 3/8″ × 3″ оцинковані — рама подіуму (за кресленням M10×70, поз.15)](bolty-3-8-3-otsynkovani-rama-podiumu-za-kreslenniam-m10-70-p.md) - $19.40 за пачку 15 шт, є
+* [Болти Everbilt 3/8″-16 × 3″ ГАРЯЧИЙ ЦИНК, пачка 15 — анкерні вузли (M10×70, поз.15)](bolty-everbilt-3-8-16-3-hariachyi-tsynk-pachka-15-ankerni-vu.md) - $19.40 за пачку 15 шт · 2 пачки = $38.80, купити
 * [Болти 3/8″ × 4½″ оцинковані — база робота (за кресленням M10×110, поз.25)](bolty-3-8-4-otsynkovani-baza-robota-za-kreslenniam-m10-110-p.md) - $1.97 за штуку, є
 * [Шпилька різьбова 3/8-16 × 36″ оцинкована — на 4 довгі болти M10×180 (поз.24)](shpylka-rizbova-3-8-16-36-otsynkovana-na-4-dovhi-bolty-m10-1.md) - $5.98, є
 * [Гайки 3/8-16 з нейлоновим кільцем, пачка 10 шт — за кресленням поз.13, 16, 26](haiky-3-8-16-z-neilonovym-kiltsem-pachka-10-sht-za-kreslenni.md) - $4.57 за пачку 10 шт · 5 пачок = $22.85, є
@@ -372,3 +372,4 @@
 * [Гайки 3/8-16 з нейлоновим кільцем (nylock), 10 шт](haiky-3-8-16-z-neilonovym-kiltsem-nylock-10-sht.md) - ≈$3/пачка, купити
 * [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) - —, купити
 * [Сонячна панель Renogy 200 Вт N-type 16BB — ДВІ послідовно, нові з Amazon](soniachna-panel-renogy-200-vt-n-type-16bb-dvi-poslidovno-nov.md) - $179.99/шт · $360 за дві, купити
+* [Прапорець безпеки 18×18″ сітчастий (Safety Flag SFKVH18) — на свес каркаса](praporets-bezpeky-18-18-sitchastyi-safety-flag-sfkvh18-na-sv.md) - $16.67 за шт · 2 шт = $33.34, купити
