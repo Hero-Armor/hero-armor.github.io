@@ -51,7 +51,7 @@ generated: { by: "process:site-build" }
 * [Пошук станції живлення зупинено — станцію куплено](/decisions/poshuk-stantsii-zhyvlennia-zupyneno-stantsiiu-kupleno.md)
 * [Станція — Bluetti AC200P, а не EcoFlow. Вікно входу 35-150 В міняє схему панелей](/decisions/stantsiia-bluetti-ac200p-a-ne-ecoflow-vikno-vkhodu-35-150-v-.md)
 * [Розтяжки каркасу — ремені з тріскачкою, а не сталевий трос із талрепами](/decisions/roztiazhky-karkasu-remeni-z-triskachkoiu-a-ne-stalevyi-tros-.md)
-* [Панель Risen 435 Вт за $180 — беремо, бо каркас 06.24 намальований рівно під її габарит](/decisions/panel-risen-435-vt-za-180-beremo-bo-karkas-06-24-namalovanyi.md)
+* [Панель — SunPower SPR-E20-327 (дві по $55), а не Risen 435: станція міряє Vmp, а не Voc](/decisions/panel-sunpower-spr-e20-327-dvi-po-55-a-ne-risen-435-stantsii.md)
 
 # Задачі
 
@@ -133,7 +133,7 @@ generated: { by: "process:site-build" }
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](/bom/hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) — $59.25 за 10 шт, купити
 * [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](/bom/soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) — $100 за дві · $200 за чотири, купити
 * [Сонячна панель Trina TSM-330PE14A 330 Вт — лот Івана 24.08, $50 за штуку](/bom/soniachna-panel-trina-tsm-330pe14a-330-vt-lot-ivana-24-08-50.md) — $50/шт · $100 за дві, купити
-* [Сонячна панель SunPower SPR-E20-327 327 Вт — НАЙБЛИЖЧИЙ лот, $55, 7.7 миль](/bom/soniachna-panel-sunpower-spr-e20-327-327-vt-naiblyzhchyi-lot.md) — $55/шт · $110 за дві, купити
+* [Сонячна панель SunPower SPR-E20-327, 327 Вт — ОБРАНА 25.08, Редвуд-Сіті, $55/шт](/bom/soniachna-panel-sunpower-spr-e20-327-327-vt-obrana-25-08-red.md) — $55/шт · $110 за дві, купити
 * [Подовжувач сонячний MC4 10AWG, 20 футів — BougeRV](/bom/podovzhuvach-soniachnyi-mc4-10awg-20-futiv-bougerv.md) — $29.99, купити
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](/bom/zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) — $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](/bom/multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) — $15-30, купити
