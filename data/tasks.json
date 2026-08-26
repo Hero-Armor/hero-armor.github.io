@@ -1975,7 +1975,7 @@
  {
   "task": "Купити сонячні панелі для масиву — потужність не обрана",
   "system": "solar",
-  "status": "todo",
+  "status": "done",
   "owner": "ivan"
  },
  {
@@ -2374,7 +2374,7 @@
  {
   "task": "Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md",
   "system": "solar",
-  "status": "todo",
+  "status": "done",
   "owner": "ivan",
   "area": "logistics"
  },

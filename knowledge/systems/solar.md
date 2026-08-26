@@ -53,6 +53,7 @@ generated: { by: "process:site-build" }
 * [Розтяжки каркасу — ремені з тріскачкою, а не сталевий трос із талрепами](/decisions/roztiazhky-karkasu-remeni-z-triskachkoiu-a-ne-stalevyi-tros-.md)
 * [Панель — SunPower SPR-E20-327 (дві по $55), а не Risen 435: станція міряє Vmp, а не Voc](/decisions/panel-sunpower-spr-e20-327-dvi-po-55-a-ne-risen-435-stantsii.md)
 * [Тільки ОДНА панель. Пара великих модулів скасована](/decisions/tilky-odna-panel-para-velykykh-moduliv-skasovana.md)
+* [Панель куплено — SunPower SPR-E20-327 ×2 за $110. Пошук зупинено](/decisions/panel-kupleno-sunpower-spr-e20-327-2-za-110-poshuk-zupyneno.md)
 
 # Задачі
 
@@ -78,10 +79,10 @@ generated: { by: "process:site-build" }
 * [Спитати Shing, чи можна поставити 20-футовий трейлер біля арту, на якій відстані і чи можна банер на його стінку. Від відповіді залежить, чи просимо панель узагалі — лист відправлено Лізі 18.08 (рос. пояснення + англ. текст на пересилку), чекаємо відповідь Shing. Фото трейлера має скинути Іван](/tasks/spytaty-shing-chy-mozhna-postavyty-20-futovyi-treiler-bilia-.md) — чекаємо
 * [Вирішити розвилку по станції: EcoFlow DELTA 3 Ultra Plus $1599 у Home Depot АБО пара дешевших. Без цього живлення проєкту не закрите [ЗАКРИТО 19.08: замовлено EcoFlow DELTA 3 Ultra Plus, $1752.90, прибуття 25.08]](/tasks/vyrishyty-rozvylku-po-stantsii-ecoflow-delta-3-ultra-plus-15.md) — готово
 * [ПИТАННЯ ДО МЕНЕ: підтвердити, що вчорашнє замовлення в Home Depot — це саме станція EcoFlow. Лист «Order confirmed» від 19.08 08:59 є, але Home Depot не пише назв у листі](/tasks/pytannia-do-mene-pidtverdyty-shcho-vchorashnie-zamovlennia-v.md) — чекаємо
-* [Купити сонячні панелі для масиву — потужність не обрана](/tasks/kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — до роботи
+* [Купити сонячні панелі для масиву — потужність не обрана](/tasks/kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) — готово
 * [Забрати станцію EcoFlow у Home Depot після 25.08 (замовлення WN68023950) і одразу протестувати під навантаженням — часу до виїзду два дні [закрито в Todoist]](/tasks/zabraty-stantsiiu-ecoflow-u-home-depot-pislia-25-08-zamovlen.md) — готово
 * [Вирішити по вживаній станції: у Bay Area зараз є Delta Max 2000 (2016 Вт·год) за $580 і Delta Pro refurb (3600 Вт·год) за $999 — обидві дешевші за Вт·год, ніж нова](/tasks/vyrishyty-po-vzhyvanii-stantsii-u-bay-area-zaraz-ie-delta-ma.md) — до роботи
-* [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](/tasks/nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) — до роботи
+* [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](/tasks/nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) — готово
 * [Буфер у подіумі: маленька станція на звук + аварійну лінію Гр.3А, заряджається від основної станції по 12 В. Вимога Івана 20.08. Кандидат — EcoFlow RIVER 2 Pro, 768 Вт·год, вихід 12.6 В/10 А, $344.81 Home Depot, самовивіз [закрито в Todoist]](/tasks/bufer-u-podiumi-malenka-stantsiia-na-zvuk-avariinu-liniiu-hr.md) — готово
 * [Скасувати або повернути EcoFlow DELTA 3 Ultra Plus (замовлення в Home Depot) і обрати станцію на ~1000 доларів](/tasks/skasuvaty-abo-povernuty-ecoflow-delta-3-ultra-plus-zamovlenn.md) — до роботи
 * [Перевірити перед оплатою: лаг-гвинти 3/8x10 на 62.97 — Володимир каже ґрунтові анкери дає фестиваль, тож під подіум вони не потрібні](/tasks/pereviryty-pered-oplatoiu-lah-hvynty-3-8x10-na-62-97-volodym.md) — до роботи
@@ -134,7 +135,7 @@ generated: { by: "process:site-build" }
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](/bom/hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) — $59.25 за 10 шт, купити
 * [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](/bom/soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) — $100 за дві · $200 за чотири, купити
 * [Сонячна панель Trina TSM-330PE14A 330 Вт — лот Івана 24.08, $50 за штуку](/bom/soniachna-panel-trina-tsm-330pe14a-330-vt-lot-ivana-24-08-50.md) — $50/шт · $100 за дві, купити
-* [Сонячна панель SunPower SPR-E20-327, 327 Вт — ОБРАНА 25.08, Редвуд-Сіті, $55/шт](/bom/soniachna-panel-sunpower-spr-e20-327-327-vt-obrana-25-08-red.md) — $55/шт · $110 за дві, купити
+* [Сонячна панель SunPower SPR-E20-327, 327 Вт — КУПЛЕНО 26.08, 2 шт](/bom/soniachna-panel-sunpower-spr-e20-327-327-vt-kupleno-26-08-2-.md) — $55/шт · $110 за дві, є
 * [Подовжувач сонячний MC4 10AWG, 20 футів — BougeRV](/bom/podovzhuvach-soniachnyi-mc4-10awg-20-futiv-bougerv.md) — $29.99, купити
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](/bom/zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) — $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](/bom/multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) — $15-30, купити

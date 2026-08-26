@@ -345,7 +345,7 @@
 * [Глухарі lag screws 18″ (457 мм) — ґрунтові анкери каркасу з сонячною панеллю](hlukhari-lag-screws-18-457-mm-gruntovi-ankery-karkasu-z-soni.md) - $59.25 за 10 шт, купити
 * [Сонячна панель Renogy RNG-100D-R 100 Вт — лот Івана 24.08, дві штуки за $100](soniachna-panel-renogy-rng-100d-r-100-vt-lot-ivana-24-08-dvi.md) - $100 за дві · $200 за чотири, купити
 * [Сонячна панель Trina TSM-330PE14A 330 Вт — лот Івана 24.08, $50 за штуку](soniachna-panel-trina-tsm-330pe14a-330-vt-lot-ivana-24-08-50.md) - $50/шт · $100 за дві, купити
-* [Сонячна панель SunPower SPR-E20-327, 327 Вт — ОБРАНА 25.08, Редвуд-Сіті, $55/шт](soniachna-panel-sunpower-spr-e20-327-327-vt-obrana-25-08-red.md) - $55/шт · $110 за дві, купити
+* [Сонячна панель SunPower SPR-E20-327, 327 Вт — КУПЛЕНО 26.08, 2 шт](soniachna-panel-sunpower-spr-e20-327-327-vt-kupleno-26-08-2-.md) - $55/шт · $110 за дві, є
 * [Подовжувач сонячний MC4 10AWG, 20 футів — BougeRV](podovzhuvach-soniachnyi-mc4-10awg-20-futiv-bougerv.md) - $29.99, купити
 * [Запобіжник інлайн MC4 15 А — Renogy, у лінію панель→станція](zapobizhnyk-inlain-mc4-15-a-renogy-u-liniiu-panel-stantsiia.md) - $14.99/шт, купити
 * [Мультиметр простий — КУПИТИ В HOME DEPOT СЬОГОДНІ, не Amazon](multymetr-prostyi-kupyty-v-home-depot-sohodni-ne-amazon.md) - $15-30, купити

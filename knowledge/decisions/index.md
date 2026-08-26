@@ -171,3 +171,4 @@
 * [Пошук металу закрито — ні запасний лист алюмінію, ні сталь на анкерні пластини більше не потрібні](poshuk-metalu-zakryto-ni-zapasnyi-lyst-aliuminiiu-ni-stal-na.md)
 * [Панель — SunPower SPR-E20-327 (дві по $55), а не Risen 435: станція міряє Vmp, а не Voc](panel-sunpower-spr-e20-327-dvi-po-55-a-ne-risen-435-stantsii.md)
 * [Тільки ОДНА панель. Пара великих модулів скасована](tilky-odna-panel-para-velykykh-moduliv-skasovana.md)
+* [Панель куплено — SunPower SPR-E20-327 ×2 за $110. Пошук зупинено](panel-kupleno-sunpower-spr-e20-327-2-za-110-poshuk-zupyneno.md)

@@ -236,7 +236,7 @@
 * [Тимчасовий динамік для тестів аудіо — штатний стоїть у роботі, до нього не підійти під час покраски [ЗАКРИТО 19.08: покраска пішла, «fast dry» виявився просто маркетинговим написом на всіх банках — помилка в постановці, не в товарі]](tymchasovyi-dynamik-dlia-testiv-audio-shtatnyi-stoit-u-robot.md) - готово
 * [Обрати таймер — прийшло два варіанти, вирішити який лишаємо](obraty-taimer-pryishlo-dva-varianty-vyrishyty-iakyi-lyshaiem.md) - до роботи
 * [Підбити фінанси: надійшло ~$2000 + $500 + $300, звести з витратами](pidbyty-finansy-nadiishlo-2000-500-300-zvesty-z-vytratamy.md) - до роботи
-* [Купити сонячні панелі для масиву — потужність не обрана](kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - до роботи
+* [Купити сонячні панелі для масиву — потужність не обрана](kupyty-soniachni-paneli-dlia-masyvu-potuzhnist-ne-obrana.md) - готово
 * [Порахувати ящик: чи вистачає матеріалу, що треба докупити](porakhuvaty-iashchyk-chy-vystachaie-materialu-shcho-treba-do.md) - до роботи
 * [Транспортування робота: зняти з оренди GMC довжину кузова (довга/коротка база), Ліза скидала листування з хостом](transportuvannia-robota-zniaty-z-orendy-gmc-dovzhynu-kuzova-.md) - до роботи
 * [Замовити стяжні ремені з храповиком (ratchet straps), набір 4 шт — кріплення робота в кузові](zamovyty-stiazhni-remeni-z-khrapovykom-ratchet-straps-nabir-.md) - до роботи
@@ -294,7 +294,7 @@
 * [Перебрати речі в машині: частина перекладена в RV у Мелени — забрати назад у машину](perebraty-rechi-v-mashyni-chastyna-perekladena-v-rv-u-meleny.md) - до роботи
 * [Відсортувати речі: що беру на Burning Man, що лишається; машина лишається в Ріно](vidsortuvaty-rechi-shcho-beru-na-burning-man-shcho-lyshaiets.md) - до роботи
 * [Дозамовити особисті речі, потрібні на Burning Man — скласти список](dozamovyty-osobysti-rechi-potribni-na-burning-man-sklasty-sp.md) - до роботи
-* [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) - до роботи
+* [Надіслати Mel (ресепшен адміністрації BM) прохання про контакт по сонячних панелях — текст готовий у private/logistics/mel_solar_request.md](nadislaty-mel-resepshen-administratsii-bm-prokhannia-pro-kon.md) - готово
 * [Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить [ЗРОБЛЕНО 20.08 — залито по кабелю з сервера]](skopiiuvaty-16-holosovykh-mp3-z-private-firmware-radar-sound.md) - готово
 * [Калібрування радара: розкласти рулетку, пройти 1-2-3-4-5 м, записати що каже вузол — БЕЗ плівки поруч](kalibruvannia-radara-rozklasty-ruletku-proity-1-2-3-4-5-m-za.md) - до роботи
 * [Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках](dodaty-v-testovu-proshyvku-nalashtuvannia-radara-po-serial-m.md) - до роботи
