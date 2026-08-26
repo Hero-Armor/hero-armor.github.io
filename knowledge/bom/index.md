@@ -32,7 +32,7 @@
 * [Неон WS2811 12 В силіконовий — дозамовити 2 рулони по 5 м](neon-ws2811-12-v-sylikonovyi-dozamovyty-2-rulony-po-5-m.md) - $27.99/рулон 16.4 ft — три рулони, $93 разом, купити
 * [GLEDOPTO ESP32 WLED, IP65](gledopto-esp32-wled-ip65.md) - $23, купити
 * [SUPERNIGHT ШІМ-диммер 12-24 В 30 А](supernight-shim-dymmer-12-24-v-30-a.md) - $13.99 за 2 шт, купити
-* [Сонячна панель Risen RSM108-8-435BNOG, 435 Вт — Сан-Хосе, з рук](soniachna-panel-risen-rsm108-8-435bnog-435-vt-san-khose-z-ru.md) - $180, купити
+* [Сонячна панель Risen RSM108-9-435BNOG, 435 Вт біфаціальна n-type — Сан-Хосе, з рук](soniachna-panel-risen-rsm108-9-435bnog-435-vt-bifatsialna-n-.md) - $180, купити
 * [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) - $600 (з рук, 23.08.2026), є
 * [Рама під сонячний масив](rama-pid-soniachnyi-masyv.md) - —, купити
 * [Кабель MC4 + роз'єми для масиву](kabel-mc4-roziemy-dlia-masyvu.md) - $61.95, купити

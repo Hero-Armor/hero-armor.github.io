@@ -92,7 +92,7 @@ generated: { by: "process:site-build" }
 
 # Закупівля
 
-* [Сонячна панель Risen RSM108-8-435BNOG, 435 Вт — Сан-Хосе, з рук](/bom/soniachna-panel-risen-rsm108-8-435bnog-435-vt-san-khose-z-ru.md) — $180, купити
+* [Сонячна панель Risen RSM108-9-435BNOG, 435 Вт біфаціальна n-type — Сан-Хосе, з рук](/bom/soniachna-panel-risen-rsm108-9-435bnog-435-vt-bifatsialna-n-.md) — $180, купити
 * [Станція живлення — Bluetti AC200P, 2000 Вт·год, 12 В/25 А (КУПЛЕНО)](/bom/stantsiia-zhyvlennia-bluetti-ac200p-2000-vt-hod-12-v-25-a-ku.md) — $600 (з рук, 23.08.2026), є
 * [Рама під сонячний масив](/bom/rama-pid-soniachnyi-masyv.md) — —, купити
 * [Кабель MC4 + роз'єми для масиву](/bom/kabel-mc4-roziemy-dlia-masyvu.md) — $61.95, купити
