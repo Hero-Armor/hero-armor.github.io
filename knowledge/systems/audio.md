@@ -39,12 +39,13 @@ generated: { by: "process:site-build" }
 * [Динамік у голові живиться ОКРЕМИМ кабелем, не тією ж витою парою, що радар](/decisions/dynamik-u-holovi-zhyvytsia-okremym-kabelem-ne-tiieiu-zh-vyto.md)
 * [Траса радара скоротилась до 1 м — радар ставимо в ногу, не в голову](/decisions/trasa-radara-skorotylas-do-1-m-radar-stavymo-v-nohu-ne-v-hol.md)
 * [Радар ставимо в носок ноги — працює, але це найгірша висота, тому три обовʼязкові поправки](/decisions/radar-stavymo-v-nosok-nohy-pratsiuie-ale-tse-naihirsha-vysot.md)
+* [Фраза завжди договорюється до кінця, обрив по виходу з зони вимкнено](/decisions/fraza-zavzhdy-dohovoriuietsia-do-kintsia-obryv-po-vykhodu-z-.md)
 
 # Задачі
 
 * [A/B тест динаміків MA-3013 vs Herdio (на нічній гучності, 75 дБ фону)](/tasks/a-b-test-dynamikiv-ma-3013-vs-herdio-na-nichnii-huchnosti-75.md) — до роботи
 * [Прошивка ESP32: MP3→I2S моно, 3 шари гучності, перемикання день/ніч по BLE, UART радара](/tasks/proshyvka-esp32-mp3-i2s-mono-3-shary-huchnosti-peremykannia-.md) — готово
-* [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — чекаємо
+* [Кліпи ElevenLabs: нормалізація піків −1 dBFS, HPF 120 Гц, 44.1k MP3 192k+](/tasks/klipy-elevenlabs-normalizatsiia-pikiv-1-dbfs-hpf-120-hts-44-.md) — готово
 * [Зібрати вузол на столі: повний ланцюг від EcoFlow, димова проба](/tasks/zibraty-vuzol-na-stoli-povnyi-lantsiuh-vid-ecoflow-dymova-pr.md) — готово
 * [Пилозахист динаміка: гриль + тканина, мембрана вниз](/tasks/pylozakhyst-dynamika-hryl-tkanyna-membrana-vnyz.md) — готово
 * [Звірити замовлену коробку по семи вимогах (пластик, 165×105×55, вводи, радіатор, вентиляція, доступ до USB)](/tasks/zviryty-zamovlenu-korobku-po-semy-vymohakh-plastyk-165-105-5.md) — готово

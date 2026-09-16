@@ -142,3 +142,4 @@ generated: { by: "process:site-build" }
 * [Авіаційний роз'єм HangTon 2-pin для Bluetti — сонячний кабель у станцію](/bom/aviatsiinyi-roziem-hangton-2-pin-dlia-bluetti-soniachnyi-kab.md) — $15.86, є
 * [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](/bom/soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) — —, купити
 * [Сонячна панель Renogy 200 Вт N-type 16BB — ДВІ послідовно, нові з Amazon](/bom/soniachna-panel-renogy-200-vt-n-type-16bb-dvi-poslidovno-nov.md) — $179.99/шт · $360 за дві, купити
+* [Болти М6×30 нержавіюча сталь + гайки М6 — кутик кріплення PV до панелі](/bom/bolty-m6-30-nerzhaviiucha-stal-haiky-m6-kutyk-kriplennia-pv-.md) — ≈$10, купити

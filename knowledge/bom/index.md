@@ -373,3 +373,5 @@
 * [Сонячна панель SEG-410-BMD-HV, 410 Вт — пропозиція з Facebook 25.08](soniachna-panel-seg-410-bmd-hv-410-vt-propozytsiia-z-faceboo.md) - —, купити
 * [Сонячна панель Renogy 200 Вт N-type 16BB — ДВІ послідовно, нові з Amazon](soniachna-panel-renogy-200-vt-n-type-16bb-dvi-poslidovno-nov.md) - $179.99/шт · $360 за дві, купити
 * [Прапорець безпеки 18×18″ сітчастий (Safety Flag SFKVH18) — на свес каркаса](praporets-bezpeky-18-18-sitchastyi-safety-flag-sfkvh18-na-sv.md) - $16.67 за шт · 2 шт = $33.34, купити
+* [Болти М6×30 нержавіюча сталь + гайки М6 — кутик кріплення PV до панелі](bolty-m6-30-nerzhaviiucha-stal-haiky-m6-kutyk-kriplennia-pv-.md) - ≈$10, купити
+* [Брус 2×3" × 8 ft — на укосини проти вітру і бруси №9](brus-2-3-8-ft-na-ukosyny-proty-vitru-i-brusy-9.md) - $3.48/шт, купити
