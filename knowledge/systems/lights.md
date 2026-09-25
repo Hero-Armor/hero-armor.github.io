@@ -64,6 +64,7 @@ generated: { by: "process:site-build" }
 * [Неон садимо на кліпси плюс 100% силікон, а не на клей; паз фрезеруємо ДО алюмінію](/decisions/neon-sadymo-na-klipsy-plius-100-sylikon-a-ne-na-klei-paz-fre.md)
 * [Підлогу ФАРБУЄМО до посадки неону на силікон, не навпаки](/decisions/pidlohu-farbuiemo-do-posadky-neonu-na-sylikon-ne-navpaky.md)
 * [Кабель ЗАКОПУЄМО в мілку траншею — так велить сам Burning Man для арт-інсталяцій](/decisions/kabel-zakopuiemo-v-milku-transheiu-tak-velyt-sam-burning-man.md)
+* [Світло подіуму: синьо-жовта база плюс шоу з кольорових режимів](/decisions/svitlo-podiumu-syno-zhovta-baza-plius-shou-z-kolorovykh-rezh.md)
 
 # Задачі
 

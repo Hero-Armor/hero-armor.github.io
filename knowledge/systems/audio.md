@@ -76,6 +76,8 @@ generated: { by: "process:site-build" }
 * [Скопіювати 16 голосових mp3 з private/firmware/radar-sound-test/voice/ у КОРІНЬ microSD — без них тест мовчить [ЗРОБЛЕНО 20.08 — залито по кабелю з сервера]](/tasks/skopiiuvaty-16-holosovykh-mp3-z-private-firmware-radar-sound.md) — готово
 * [Калібрування радара: розкласти рулетку, пройти 1-2-3-4-5 м, записати що каже вузол — БЕЗ плівки поруч](/tasks/kalibruvannia-radara-rozklasty-ruletku-proity-1-2-3-4-5-m-za.md) — до роботи
 * [Додати в тестову прошивку налаштування радара по serial: максимальна комірка і чутливість по комірках](/tasks/dodaty-v-testovu-proshyvku-nalashtuvannia-radara-po-serial-m.md) — до роботи
+* [Перед виставкою: виставити підстроєчник на підсилювачі як СТЕЛЮ (на нашому максимумі −1 dBFS = найгучніше, що взагалі треба в залі) і зафіксувати лаком. Не на максимум: на максимумі чути шипіння між фразами і будь-яка помилка в команді б'є по вухах відвідувачів](/tasks/pered-vystavkoiu-vystavyty-pidstroiechnyk-na-pidsyliuvachi-i.md) — до роботи
+* [Перед виставкою: завести мережу майданчика у вузол заздалегідь (join <мережа> <пароль>) і ПЕРЕВІРИТИ, що дзвінок на сервер проходить. Публічні мережі часто з вікном входу — його вузол пройти не може, тоді робочий варіант тільки хотспот Івана](/tasks/pered-vystavkoiu-zavesty-merezhu-maidanchyka-u-vuzol-zazdale.md) — до роботи
 
 # Закупівля
 
