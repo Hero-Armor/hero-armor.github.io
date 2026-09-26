@@ -174,3 +174,4 @@
 * [Панель куплено — SunPower SPR-E20-327 ×2 за $110. Пошук зупинено](panel-kupleno-sunpower-spr-e20-327-2-za-110-poshuk-zupyneno.md)
 * [Фраза завжди договорюється до кінця, обрив по виходу з зони вимкнено](fraza-zavzhdy-dohovoriuietsia-do-kintsia-obryv-po-vykhodu-z-.md)
 * [Світло подіуму: синьо-жовта база плюс шоу з кольорових режимів](svitlo-podiumu-syno-zhovta-baza-plius-shou-z-kolorovykh-rezh.md)
+* [Робот говорить сценарієм з 6 етапів за відстанню, голос Захара; «справжня історія» — з тексту Лізи](robot-hovoryt-stsenariiem-z-6-etapiv-za-vidstanniu-holos-zak.md)

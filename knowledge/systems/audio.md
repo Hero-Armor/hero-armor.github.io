@@ -40,6 +40,7 @@ generated: { by: "process:site-build" }
 * [Траса радара скоротилась до 1 м — радар ставимо в ногу, не в голову](/decisions/trasa-radara-skorotylas-do-1-m-radar-stavymo-v-nohu-ne-v-hol.md)
 * [Радар ставимо в носок ноги — працює, але це найгірша висота, тому три обовʼязкові поправки](/decisions/radar-stavymo-v-nosok-nohy-pratsiuie-ale-tse-naihirsha-vysot.md)
 * [Фраза завжди договорюється до кінця, обрив по виходу з зони вимкнено](/decisions/fraza-zavzhdy-dohovoriuietsia-do-kintsia-obryv-po-vykhodu-z-.md)
+* [Робот говорить сценарієм з 6 етапів за відстанню, голос Захара; «справжня історія» — з тексту Лізи](/decisions/robot-hovoryt-stsenariiem-z-6-etapiv-za-vidstanniu-holos-zak.md)
 
 # Задачі
 
