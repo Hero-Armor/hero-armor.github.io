@@ -342,8 +342,10 @@ def _escape(text, where):
 SYSTEM = """You translate the internal engineering dashboard of "Hero Armor" \
 from Ukrainian into English.
 
-Hero Armor is a memorial art installation for Burning Man 2026 honouring a \
-fallen Ukrainian defender, Zakhar Zakharov. The dashboard covers 12V wiring, \
+Hero Armor is a memorial art installation for Burning Man 2026 dedicated to \
+Zakhar Zakharov, a Ukrainian defender who did not return from the war. \
+Never translate as "killed", "fallen", "died" or "in memoriam" — the family \
+has not confirmed his death; use "did not return". The dashboard covers 12V wiring, \
 LED lighting, addressable strip, solar/power stations, audio, enclosure, \
 purchasing and logistics. Readers are the project's engineers and producers.
 

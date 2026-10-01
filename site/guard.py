@@ -207,6 +207,31 @@ try:
 except Exception as e:
     problems.append(f"схема бази: перевірку не вдалося запустити ({e})")
 
+# --- 7. заборонені формулювання про Захара --------------------------------
+# Ліза 10.08.2026: родина не підтверджує загибель, від нас — тільки «не повернувся».
+# 09.08 на сайт потрапило «In Memoriam», 26.09 — «was killed in the war», а в
+# knowledge/project.md до 01.10 лежало «який загинув». Правило в тексті не
+# спрацювало тричі — тепер збірка падає. Підвал «In memory of Zakhar Zakharov»
+# стоїть з самого початку, рішення за Лізою — його пропускаємо.
+DEATH = re.compile(r"загину|загибел|поляг|поліг|поминальн|was killed|been killed|killed in|"
+                   r"\bfallen\b|\bdied\b|passed away|in memoriam|\bKIA\b|years? of life|"
+                   r"\(\d{4}\s*[–-]\s*\d{4}\)", re.I)
+DEATH_OK = re.compile(r"in memory of zakhar zakharov|https?://\S+", re.I)
+for rel in tracked:
+    if rel == SELF or not rel.endswith((".html", ".md", ".json", ".txt", ".svg")):
+        continue
+    if rel.startswith(("data/private/", "site/i18n/")) or "attic" in rel:
+        continue
+    f = ROOT / rel
+    if not f.is_file() or f.stat().st_size > 2_000_000:
+        continue
+    txt = DEATH_OK.sub("", f.read_text(encoding="utf-8", errors="ignore"))
+    for m in DEATH.finditer(txt):
+        ctx = txt[max(0, m.start()-40):m.end()+30].replace("\n", " ")
+        if re.search(r"захар|zakhar|hero|вартов|робот|memorial|меморіал", ctx, re.I):
+            problems.append(f"ЗАБОРОНЕНЕ про Захара в {rel}: «…{ctx.strip()}…»")
+            break
+
 # --- вердикт ---------------------------------------------------------------
 if problems:
     print("ГАРДРЕЙЛ: знайдено порушення\n")
