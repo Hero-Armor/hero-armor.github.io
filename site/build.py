@@ -3158,10 +3158,15 @@ def build():
             .replace("{{KERF}}", str(PWD["kerf_mm"]))
             .replace("{{PRICE_DATE}}", "19.10.2026")
             .replace("{{PIECE_ROWS}}", "\n".join(
-                f'      <tr><td class="num">{pc["pos"]}</td><td>{pc["stock"]}</td>'
-                f'<td class="num">{pc["len_mm"]} мм</td><td class="num">{pc["per_quarter"]}</td>'
-                f'<td class="num">{pc["per_quarter"] * PWD["quarters"]}</td></tr>'
+                f'      <tr><td><span class="chip p{pc["pos"]}">{pc["pos"]}</span></td><td>{pc["stock"]}</td>'
+                f'<td class="num">{pc["len_mm"]} мм · {pc["len_ft"]}</td>'
+                f'<td class="num">{pc["per_quarter"] * PWD["quarters"]}</td>'
+                f'<td style="white-space:normal">{esc(pc["where"])}</td></tr>'
                 for pc in PWD["pieces"]))
+            .replace("{{FIGS}}", "\n".join(
+                f'    <figure><a href="{f}"><img src="{f}" alt="{esc(c)}" loading="lazy"></a>'
+                f'<figcaption>{esc(c)}</figcaption></figure>' for f, c in PWD["figures"]))
+            .replace("{{SRC_NOTE}}", esc(PWD["_source"]))
             .replace("{{DECK_NOTE}}", esc(PWD["deck"]["_sheets_note"]))
             .replace("{{SCOPE}}", esc(PWD["_scope"]))
             .replace("{{PHOTO_WALL}}", photo_wall_html(list(_pw_items.values())))

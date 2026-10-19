@@ -112,6 +112,15 @@
   .thumb img { width: 56px; height: 56px; object-fit: cover; border-radius: 4px; display: block; }
   .seg button.active { background: var(--panel); border-color: var(--accent); color: var(--accent); font-weight: 600; }
   tr.sum td { font-weight: 650; }
+  .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+  .figs figure { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: .5rem; }
+  .figs img { width: 100%; display: block; }
+  .figs figcaption { font-size: .78rem; color: #555; margin-top: .4rem; }
+  .chip { display: inline-block; min-width: 1.6em; text-align: center; font-family: var(--mono);
+          font-weight: 700; color: #fff; border-radius: 4px; padding: 0 .3em; }
+  .p1 { background: #8c3b1a; } .p2 { background: #c0602b; } .p3 { background: #d9963a; }
+  .p4 { background: #2f5f8a; } .p5 { background: #3d8a6b; } .p6 { background: #7a4f9e; } .p7 { background: #b8466e; }
+  .cutsvg { width: 100%; height: auto; display: block; }
 </style>
 
 
@@ -121,7 +130,7 @@
   <p class="sub">Тільки деревина: бруси каркаса й листи настилу восьмикутного подіуму R&nbsp;48″.
   Без металу, шурупів, клею і фарби. Три набори: як фактично зроблено, як на кресленні
   і водостійкий (усе дерево просочене). Розкрій узятий зі специфікації Володимира (комплект
-  «WOODEN PODIUM» Rev&nbsp;3.1), модель розкладає деталі по дошках з пропилом
+  «WOODEN PODIUM» ревізія«WOODEN PODIUM» Rev&nbsp;3.1nbsp;3.2), модель розкладає деталі по дошках з пропилом
   {{KERF}}&nbsp;мм і множить на ціни Home Depot San Mateo станом на {{PRICE_DATE}}.</p>
 
   <div class="seg" id="deck-seg"></div>
@@ -136,21 +145,26 @@
 
 {{PHOTO_WALL}}
 
-  <h2>Розкрій каркаса по дошках</h2>
-  <p style="font-size:.85rem;color:var(--ink-2)">Кожен рядок — одна дошка:
-  які деталі з неї випилюються і скільки лишається в обрізках. Набір перемикається кнопками згори.</p>
-  <div class="tbl-wrap"><table>
-    <thead><tr><th>Дошка</th><th>Деталі, мм</th><th>Обрізок, мм</th></tr></thead>
-    <tbody id="cuts"></tbody>
-  </table></div>
+  <h2>Куди яка дошка йде</h2>
+  <p style="font-size:.85rem;color:var(--ink-2)">Креслення Володимира, ревізія 3.2 (серпень 2026). Рама — чотири
+  однакові частини PART A–D; на аркуші 06.3 одна частина з номерами позицій і розмірами. Натисни на креслення, щоб
+  відкрити його на весь екран.</p>
+  <div class="figs">
+{{FIGS}}
+  </div>
 
-  <h2>Деталі з креслення</h2>
+  <h2>Позиції з креслення</h2>
   <div class="tbl-wrap"><table>
-    <thead><tr><th>Поз.</th><th>Переріз</th><th>Довжина</th><th>На ¼ подіуму</th><th>На весь подіум</th></tr></thead>
+    <thead><tr><th>Поз.</th><th>Переріз</th><th>Довжина</th><th>Штук на подіум</th><th>Де стоїть</th></tr></thead>
     <tbody>
 {{PIECE_ROWS}}
     </tbody>
   </table></div>
+
+  <h2>Розкрій: що з якої дошки випиляти</h2>
+  <p style="font-size:.85rem;color:var(--ink-2)">Кожна смуга — одна дошка в масштабі. Кольорові шматки — деталі
+  (номер позиції і довжина в мм), сіре — обрізок. Набір перемикається кнопками згори.</p>
+  <div class="tbl-wrap" style="padding:.6rem"><svg class="cutsvg" id="cuts"></svg></div>
 
   <div class="flag">
     <p><b>Настил.</b> {{DECK_NOTE}}</p>
@@ -160,6 +174,7 @@
   </div>
 
   <h2>Файли проєкту</h2>
+  <p style="font-size:.85rem;color:var(--ink-2)">{{SRC_NOTE}}</p>
   <p style="font-size:.85rem;color:var(--ink-2)">Розкрій, ціни й посилання —
   <code style="font-family:var(--mono)">project/data/podium_wood.json</code>; рахує
   <code style="font-family:var(--mono)">project/model/podium_wood.py</code>.</p>
@@ -189,8 +204,24 @@
       `<td>${esc(r.store)} · на складі ${r.in_stock}</td></tr>`).join("") +
       `<tr class="sum"><td></td><td>Без податку</td><td></td><td></td><td class="num">${usd(t.net)}</td><td></td></tr>` +
       `<tr class="sum"><td></td><td>З податком ${PW.tax_pct}%</td><td></td><td></td><td class="num">${usd(t.total)}</td><td></td></tr>`;
-    $("cuts").innerHTML = t.cuts.map(c =>
-      `<tr><td>${esc(c.name)}</td><td class="num">${c.parts.join(" + ")}</td><td class="num">${c.left}</td></tr>`).join("");
+    const COL = {1:"#8c3b1a",2:"#c0602b",3:"#d9963a",4:"#2f5f8a",5:"#3d8a6b",6:"#7a4f9e",7:"#b8466e"};
+    const W = 1000, L = 90, H = 26, G = 8, maxb = Math.max(...t.cuts.map(c => c.board_mm));
+    const sx = (W - L - 10) / maxb;
+    let y = 0, svg = "";
+    t.cuts.forEach(c => {
+      let x = L;
+      svg += `<text x="0" y="${y + 17}" font-size="13" fill="currentColor">${esc(c.name)}</text>`;
+      svg += `<rect x="${L}" y="${y}" width="${c.board_mm * sx}" height="${H}" fill="#9993" rx="3"/>`;
+      c.parts.forEach(p => {
+        const w = p.len * sx;
+        svg += `<rect x="${x}" y="${y}" width="${w}" height="${H}" fill="${COL[p.pos]}" rx="3"/>` +
+               `<text x="${x + w / 2}" y="${y + 17}" font-size="12" fill="#fff" text-anchor="middle">${p.pos} · ${p.len}</text>`;
+        x += w + 3 * sx;
+      });
+      y += H + G;
+    });
+    $("cuts").setAttribute("viewBox", `0 0 ${W} ${y}`);
+    $("cuts").innerHTML = svg;
     const why = PW.why[key];
     $("why").hidden = !why;
     if (why) $("why").querySelector("p").innerHTML = "<b>Чому так.</b> " + esc(why);

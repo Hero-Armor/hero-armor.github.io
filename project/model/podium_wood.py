@@ -52,7 +52,9 @@ def totals(key=None):
     for k, s in stock.items():
         plan = cut_plan(k, s["board_mm"])
         rows.append(dict(s, key=k, qty=len(plan), sum=round(len(plan) * s["price"], 2)))
-        cuts += [{"name": f"{k} № {i}", "parts": b,
+        pos = {pc["len_mm"]: pc["pos"] for pc in P["pieces"] if pc["stock"] == k}
+        cuts += [{"name": f"{k} № {i}", "board_mm": s["board_mm"],
+                  "parts": [{"pos": pos[c], "len": c} for c in b],
                   "left": s["board_mm"] - sum(b) - P["kerf_mm"] * (len(b) - 1)}
                  for i, b in enumerate(plan, 1)]
     rows.append(dict(deck, key="deck", qty=P["deck"]["sheets"],
@@ -63,6 +65,9 @@ def totals(key=None):
 
 
 if __name__ == "__main__":
+    for k in {pc["stock"] for pc in P["pieces"]}:
+        lens = [pc["len_mm"] for pc in P["pieces"] if pc["stock"] == k]
+        assert len(lens) == len(set(lens)), f"{k}: дві позиції однієї довжини — розкрій не розрізнить"
     for key, (label, stock, _) in variants().items():
         t = totals(key)
         for k, s in stock.items():
