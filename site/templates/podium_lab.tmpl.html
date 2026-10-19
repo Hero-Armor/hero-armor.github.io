@@ -119,11 +119,13 @@
   <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor · головна</a> · вартість дерева подіуму</p>
   <h1>Подіум: скільки коштує дерево</h1>
   <p class="sub">Тільки деревина: бруси каркаса й листи настилу восьмикутного подіуму R&nbsp;48″.
-  Без металу, шурупів, клею і фарби. Розкрій узятий зі специфікації Володимира (комплект
-  «WOODEN PODIUM» Rev&nbsp;3.1), модель розкладає деталі по 8-футових дошках з пропилом
+  Без металу, шурупів, клею і фарби. Три набори: як фактично зроблено, як на кресленні
+  і водостійкий (усе дерево просочене). Розкрій узятий зі специфікації Володимира (комплект
+  «WOODEN PODIUM» Rev&nbsp;3.1), модель розкладає деталі по дошках з пропилом
   {{KERF}}&nbsp;мм і множить на ціни Home Depot San Mateo станом на {{PRICE_DATE}}.</p>
 
   <div class="seg" id="deck-seg"></div>
+  <div class="flag" id="why" hidden><p></p></div>
   <div class="tiles" id="tiles"></div>
 
   <h2>Що купити</h2>
@@ -135,13 +137,11 @@
 {{PHOTO_WALL}}
 
   <h2>Розкрій каркаса по дошках</h2>
-  <p style="font-size:.85rem;color:var(--ink-2)">Кожен рядок — одна дошка 8&nbsp;ft ({{BOARD}}&nbsp;мм):
-  які деталі з неї випилюються і скільки лишається в обрізках.</p>
+  <p style="font-size:.85rem;color:var(--ink-2)">Кожен рядок — одна дошка:
+  які деталі з неї випилюються і скільки лишається в обрізках. Набір перемикається кнопками згори.</p>
   <div class="tbl-wrap"><table>
     <thead><tr><th>Дошка</th><th>Деталі, мм</th><th>Обрізок, мм</th></tr></thead>
-    <tbody>
-{{CUT_ROWS}}
-    </tbody>
+    <tbody id="cuts"></tbody>
   </table></div>
 
   <h2>Деталі з креслення</h2>
@@ -179,7 +179,7 @@
     $("tiles").innerHTML = [
       tile("Разом з податком", usd(t.total), "усе дерево подіуму", "good"),
       tile("Каркас", usd(frame), t.rows.filter(r => r.key !== "deck").map(r => r.qty + " × " + r.key).join(" + ")),
-      tile("Настил", usd(deck.sum), deck.qty + " листи 4×8"),
+      tile("Настил", usd(deck.sum), deck.qty + " листи 4×8 · " + esc(deck.item.split(" × ")[0])),
       tile("Податок", usd(t.tax), PW.tax_pct + "% San Mateo"),
     ].join("");
     $("buy").innerHTML = t.rows.map(r =>
@@ -189,6 +189,11 @@
       `<td>${esc(r.store)} · на складі ${r.in_stock}</td></tr>`).join("") +
       `<tr class="sum"><td></td><td>Без податку</td><td></td><td></td><td class="num">${usd(t.net)}</td><td></td></tr>` +
       `<tr class="sum"><td></td><td>З податком ${PW.tax_pct}%</td><td></td><td></td><td class="num">${usd(t.total)}</td><td></td></tr>`;
+    $("cuts").innerHTML = t.cuts.map(c =>
+      `<tr><td>${esc(c.name)}</td><td class="num">${c.parts.join(" + ")}</td><td class="num">${c.left}</td></tr>`).join("");
+    const why = PW.why[key];
+    $("why").hidden = !why;
+    if (why) $("why").querySelector("p").innerHTML = "<b>Чому так.</b> " + esc(why);
   }
   Object.entries(PW.labels).forEach(([k, label]) => {
     const b = document.createElement("button");

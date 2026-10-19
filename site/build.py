@@ -3152,32 +3152,25 @@ def build():
 
     # ================= вартість дерева подіуму =================
     PWD = pwood.P
-    plab = tmpl("podium_lab.tmpl.html")
-    cut_rows = []
-    for key in PWD["stock"]:
-        for i, b in enumerate(pwood.cut_plan(key), 1):
-            left = PWD["board_mm"] - sum(b) - PWD["kerf_mm"] * (len(b) - 1)
-            cut_rows.append(f'      <tr><td>{esc(key)} № {i}</td>'
-                            f'<td class="num">{" + ".join(map(str, b))}</td>'
-                            f'<td class="num">{left}</td></tr>')
-    plab = (plab.replace("{{KERF}}", str(PWD["kerf_mm"]))
-                .replace("{{BOARD}}", str(PWD["board_mm"]))
-                .replace("{{PRICE_DATE}}", "19.10.2026")
-                .replace("{{CUT_ROWS}}", "\n".join(cut_rows))
-                .replace("{{PIECE_ROWS}}", "\n".join(
-                    f'      <tr><td class="num">{pc["pos"]}</td><td>{pc["stock"]}</td>'
-                    f'<td class="num">{pc["len_mm"]} мм</td><td class="num">{pc["per_quarter"]}</td>'
-                    f'<td class="num">{pc["per_quarter"] * PWD["quarters"]}</td></tr>'
-                    for pc in PWD["pieces"]))
-                .replace("{{DECK_NOTE}}", esc(PWD["deck"]["_sheets_note"]))
-                .replace("{{SCOPE}}", esc(PWD["_scope"]))
-                .replace("{{PHOTO_WALL}}", photo_wall_html(
-                    list(PWD["stock"].values()) + list(PWD["deck"]["options"].values())))
-                .replace("{{PW_JSON}}", json.dumps({
-                    "default": PWD["deck"]["default"], "tax_pct": PWD["tax_pct"],
-                    "labels": {k: o["label"] for k, o in PWD["deck"]["options"].items()},
-                    "variants": {k: pwood.totals(k) for k in PWD["deck"]["options"]},
-                }, ensure_ascii=False).replace("</", "<\\/")))
+    PVAR = pwood.variants()
+    _pw_items = {r["item"]: r for _, st, dk in PVAR.values() for r in [*st.values(), dk]}
+    plab = (tmpl("podium_lab.tmpl.html")
+            .replace("{{KERF}}", str(PWD["kerf_mm"]))
+            .replace("{{PRICE_DATE}}", "19.10.2026")
+            .replace("{{PIECE_ROWS}}", "\n".join(
+                f'      <tr><td class="num">{pc["pos"]}</td><td>{pc["stock"]}</td>'
+                f'<td class="num">{pc["len_mm"]} мм</td><td class="num">{pc["per_quarter"]}</td>'
+                f'<td class="num">{pc["per_quarter"] * PWD["quarters"]}</td></tr>'
+                for pc in PWD["pieces"]))
+            .replace("{{DECK_NOTE}}", esc(PWD["deck"]["_sheets_note"]))
+            .replace("{{SCOPE}}", esc(PWD["_scope"]))
+            .replace("{{PHOTO_WALL}}", photo_wall_html(list(_pw_items.values())))
+            .replace("{{PW_JSON}}", json.dumps({
+                "default": PWD["deck"]["default"], "tax_pct": PWD["tax_pct"],
+                "labels": {k: v[0] for k, v in PVAR.items()},
+                "why": {"waterproof": PWD["waterproof"]["why"]},
+                "variants": {k: pwood.totals(k) for k in PVAR},
+            }, ensure_ascii=False).replace("</", "<\\/")))
 
     pages = {**circ_pages,
              "index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,

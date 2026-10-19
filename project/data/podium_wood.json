@@ -1,32 +1,67 @@
 {
-  "_source": "Розкрій каркаса — аркуш «РАСКРОЙ ДЕРЕВА ДЛЯ КАРКАСА», специфікація на 1/4 подіуму, комплект Володимира «WOODEN PODIUM» Rev 3.1 (текст аркуша: private/knowledge/files/project/613.txt). Настил — аркуш 01.11 (2.5 листа 4×8) і аркуш 06.12 (сегмент-трапеція 873/346×898, коло R346). Ціни — Home Depot, зняті 19.10.2026 через SerpApi (tools/ha_hd_stock.py).",
+  "_source": "Розкрій каркаса — аркуш «РАСКРОЙ ДЕРЕВА ДЛЯ КАРКАСА», специфікація на 1/4 подіуму, комплект Володимира «WOODEN PODIUM» Rev 3.1 (текст аркуша: private/knowledge/files/project/613.txt). Настил — аркуш 01.11 (2.5 листа 4×8) і аркуш 06.12 (сегмент-трапеція 873/346×898, коло R346). Ціни — Home Depot, зняті 19.10.2026 (і звичайні, і просочені) через SerpApi (tools/ha_hd_stock.py).",
   "_scope": "ТІЛЬКИ дерево: бруси каркаса і листи настилу. НЕ входять: метал (рифлений алюміній, анкерні пластини, болти, кутики), шурупи, клей, шканти, фарба, ґрунт, робота з різання.",
   "quarters": 4,
-  "board_mm": 2438,
   "kerf_mm": 3,
   "tax_pct": 9.625,
   "_tax_note": "податок з продажу San Mateo County",
   "pieces": [
-    {"pos": 1, "stock": "2x6", "len_mm": 981, "per_quarter": 1},
-    {"pos": 2, "stock": "2x6", "len_mm": 220, "per_quarter": 2},
-    {"pos": 3, "stock": "1x6", "len_mm": 595, "per_quarter": 2},
-    {"pos": 4, "stock": "1x6", "len_mm": 970, "per_quarter": 2},
-    {"pos": 5, "stock": "1x6", "len_mm": 981, "per_quarter": 2},
-    {"pos": 6, "stock": "1x6", "len_mm": 415, "per_quarter": 2}
+    {
+      "pos": 1,
+      "stock": "2x6",
+      "len_mm": 981,
+      "per_quarter": 1
+    },
+    {
+      "pos": 2,
+      "stock": "2x6",
+      "len_mm": 220,
+      "per_quarter": 2
+    },
+    {
+      "pos": 3,
+      "stock": "1x6",
+      "len_mm": 595,
+      "per_quarter": 2
+    },
+    {
+      "pos": 4,
+      "stock": "1x6",
+      "len_mm": 970,
+      "per_quarter": 2
+    },
+    {
+      "pos": 5,
+      "stock": "1x6",
+      "len_mm": 981,
+      "per_quarter": 2
+    },
+    {
+      "pos": 6,
+      "stock": "1x6",
+      "len_mm": 415,
+      "per_quarter": 2
+    }
   ],
   "_pieces_note": "Довжини — з колонки «Длина, м» специфікації (0.981 / 0.220 / 0.595 / 0.970 / 0.981 / 0.415). У футах на аркуші: 3.219′, 0.72′, 1.952′, 3.184′, 3.219′, 1.362′.",
   "stock": {
     "2x6": {
       "item": "Брус 2×6″ × 8 ft (38×140×2438 мм), Premium Fir",
-      "price": 9.48, "store": "San Mateo", "in_stock": 346,
+      "price": 9.48,
+      "store": "San Mateo",
+      "in_stock": 346,
       "url": "https://www.homedepot.com/p/2-in-x-6-in-x-8-ft-Premium-Fir-Dimensional-Lumber-769887254813/333311570",
-      "img": "assets/bom/podium-2x6x8-fir.jpg"
+      "img": "assets/bom/podium-2x6x8-fir.jpg",
+      "board_mm": 2438
     },
     "1x6": {
       "item": "Дошка 1×6″ × 8 ft (19×140×2438 мм), Premium Kiln-Dried Whitewood",
-      "price": 12.55, "store": "San Mateo", "in_stock": 253,
+      "price": 12.55,
+      "store": "San Mateo",
+      "in_stock": 253,
       "url": "https://www.homedepot.com/p/1-in-x-6-in-x-8-ft-Premium-Kiln-Dried-Square-Edge-Whitewood-Common-Softwood-Boards-Board-914770/100028725",
-      "img": "assets/bom/podium-1x6x8-whitewood.jpg"
+      "img": "assets/bom/podium-1x6x8-whitewood.jpg",
+      "board_mm": 2438
     }
   },
   "deck": {
@@ -35,19 +70,56 @@
     "default": "plywood",
     "options": {
       "plywood": {
-        "label": "Фанера 19/32″ (~15 мм) — як фактично зроблено",
+        "label": "Фанера 19/32″ — як фактично зроблено",
         "item": "Фанера 19/32″ × 4 × 8 ft Sheathing Plywood",
-        "price": 35.85, "store": "San Mateo", "in_stock": 254,
+        "price": 35.85,
+        "store": "San Mateo",
+        "in_stock": 254,
         "url": "https://www.homedepot.com/p/19-32-in-x-4-ft-x-8-ft-Sheathing-Plywood-Actual-0-563-in-x-48-in-x-96-in-407735/206821342",
         "img": "assets/bom/podium-plywood-19-32.jpg"
       },
       "osb": {
-        "label": "OSB 23/32″ (18 мм) — як на кресленні 01.11",
+        "label": "OSB 23/32″ — як на кресленні",
         "item": "OSB 23/32″ × 4 × 8 ft T&G Subfloor",
-        "price": 26.50, "store": "San Carlos", "in_stock": 5,
+        "price": 26.5,
+        "store": "San Carlos",
+        "in_stock": 5,
         "url": "https://www.homedepot.com/p/23-32-in-T-G-OSB-Subfloor-Common-23-32-in-x-4-ft-x-8-ft-Actual-0-703-in-x-47-875-in-x-95-875-in-920924/100054132",
         "img": "assets/bom/podium-osb-23-32.jpg"
       }
+    }
+  },
+  "waterproof": {
+    "label": "Водостійкий — просочене дерево",
+    "why": "Усе дерево просочене під тиском (pressure-treated): не гниє від вологи й контакту з землею, витримує дощ і мокру плаю. Бруси 2×6 — клас ground contact (можна прямо на ґрунт). Фанера 23/32″ просочена — це рівно та товщина 18 мм, що на кресленні 01.11. Дошок 1×6 довжиною 8 футів у просоченому виконанні в San Mateo нема — є тільки 4-футові (клас above ground, не для прямого контакту з ґрунтом), тому модель кроїть з 4-футових і їх виходить більше. Просочене дерево приходить вологим: перед фарбою дати висохнути кілька тижнів, кріплення — тільки оцинковане або нержавійка (мідь у просочці їсть звичайну сталь).",
+    "stock": {
+      "2x6": {
+        "item": "Брус 2×6″ × 8 ft просочений, ground contact (38×140×2438 мм)",
+        "price": 11.18,
+        "store": "San Mateo",
+        "in_stock": 229,
+        "board_mm": 2438,
+        "url": "https://www.homedepot.com/p/2-in-x-6-in-x-8-ft-Pressure-Treated-Lumber-Brown-Stain-Ground-Contact-WW-Actual-1-5-in-x-5-5-in-x-96-in-17464-08/206952301",
+        "img": "assets/bom/podium-pt-2x6x8.jpg"
+      },
+      "1x6": {
+        "item": "Дошка 1×6″ × 4 ft просочена ProWood, above ground (19×140×1219 мм)",
+        "price": 7.28,
+        "store": "San Mateo",
+        "in_stock": 113,
+        "board_mm": 1219,
+        "url": "https://www.homedepot.com/p/ProWood-1-in-x-6-in-x-4-ft-Whitewood-Brown-Stain-Above-Ground-Pressure-Treated-Board-342788/305914941",
+        "img": "assets/bom/podium-pt-1x6x4.jpg"
+      }
+    },
+    "deck": {
+      "label": "Фанера 23/32″ просочена",
+      "item": "Фанера 23/32″ × 4 × 8 ft просочена (pressure-treated rated sheathing, 18 мм)",
+      "price": 70.88,
+      "store": "San Mateo",
+      "in_stock": 42,
+      "url": "https://www.homedepot.com/p/Pressure-Treated-Plywood-Rated-Sheathing-Common-23-32-in-x-4-ft-x-8-ft-Actual-703-in-x-48-in-x-96-in-261688/100049211",
+      "img": "assets/bom/podium-pt-plywood-23-32.jpg"
     }
   }
 }
