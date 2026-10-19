@@ -3167,6 +3167,7 @@ def build():
                 f'    <figure><a href="{f}"><img src="{f}" alt="{esc(c)}" loading="lazy"></a>'
                 f'<figcaption>{esc(c)}</figcaption></figure>' for f, c in PWD["figures"]))
             .replace("{{SRC_NOTE}}", esc(PWD["_source"]))
+            .replace("{{ENDS_NOTE}}", esc(PWD["_ends_note"]))
             .replace("{{DECK_NOTE}}", esc(PWD["deck"]["_sheets_note"]))
             .replace("{{SCOPE}}", esc(PWD["_scope"]))
             .replace("{{PHOTO_WALL}}", photo_wall_html(list(_pw_items.values())))
@@ -3174,6 +3175,7 @@ def build():
                 "default": PWD["deck"]["default"], "tax_pct": PWD["tax_pct"],
                 "labels": {k: v[0] for k, v in PVAR.items()},
                 "why": {"waterproof": PWD["waterproof"]["why"]},
+                "pieces": PWD["pieces"], "kerf": PWD["kerf_mm"], "angle_howto": PWD["angle_howto"],
                 "variants": {k: pwood.totals(k) for k in PVAR},
             }, ensure_ascii=False).replace("</", "<\\/")))
 

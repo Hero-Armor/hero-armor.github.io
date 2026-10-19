@@ -121,6 +121,19 @@
   .p1 { background: #8c3b1a; } .p2 { background: #c0602b; } .p3 { background: #d9963a; }
   .p4 { background: #2f5f8a; } .p5 { background: #3d8a6b; } .p6 { background: #7a4f9e; } .p7 { background: #b8466e; }
   .cutsvg { width: 100%; height: auto; display: block; }
+  .steps { counter-reset: st; display: grid; gap: 1rem; }
+  .step { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.1rem; }
+  .step h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+  .step h3::before { counter-increment: st; content: counter(st); display: inline-grid; place-items: center;
+    width: 1.9rem; height: 1.9rem; margin-right: .6rem; border-radius: 50%; background: var(--ink); color: var(--bg);
+    font-family: var(--mono); font-size: .95rem; }
+  .step p { margin: .3rem 0; font-size: .9rem; }
+  .piece { display: grid; grid-template-columns: minmax(180px, 330px) 1fr; gap: .4rem 1rem; align-items: center;
+    border-top: 1px dashed var(--line); padding: .6rem 0; }
+  .piece svg { width: 100%; height: auto; }
+  .piece .t { font-size: .86rem; }
+  .piece .chk { color: var(--warn); font-size: .82rem; margin-top: .25rem; }
+  @media (max-width: 640px) { .piece { grid-template-columns: 1fr; } }
 </style>
 
 
@@ -161,6 +174,11 @@
     </tbody>
   </table></div>
 
+  <h2>Інструкція по кроках: що різати і під яким кутом</h2>
+  <p style="font-size:.85rem;color:var(--ink-2)">Як в ІКЕА: по черзі, дошка за дошкою. Кількості й номери дощок
+  міняються разом із набором, обраним згори. {{ENDS_NOTE}}</p>
+  <div class="steps" id="steps"></div>
+
   <h2>Розкрій: що з якої дошки випиляти</h2>
   <p style="font-size:.85rem;color:var(--ink-2)">Кожна смуга — одна дошка в масштабі. Кольорові шматки — деталі
   (номер позиції і довжина в мм), сіре — обрізок. Набір перемикається кнопками згори.</p>
@@ -182,6 +200,7 @@
 
 <script>
   const PW = {{PW_JSON}};
+  const COL = {1:"#8c3b1a",2:"#c0602b",3:"#d9963a",4:"#2f5f8a",5:"#3d8a6b",6:"#7a4f9e",7:"#b8466e"};
   const $ = id => document.getElementById(id);
   const usd = v => "$" + v.toFixed(2);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -204,7 +223,6 @@
       `<td>${esc(r.store)} · на складі ${r.in_stock}</td></tr>`).join("") +
       `<tr class="sum"><td></td><td>Без податку</td><td></td><td></td><td class="num">${usd(t.net)}</td><td></td></tr>` +
       `<tr class="sum"><td></td><td>З податком ${PW.tax_pct}%</td><td></td><td></td><td class="num">${usd(t.total)}</td><td></td></tr>`;
-    const COL = {1:"#8c3b1a",2:"#c0602b",3:"#d9963a",4:"#2f5f8a",5:"#3d8a6b",6:"#7a4f9e",7:"#b8466e"};
     const W = 1000, L = 90, H = 26, G = 8, maxb = Math.max(...t.cuts.map(c => c.board_mm));
     const sx = (W - L - 10) / maxb;
     let y = 0, svg = "";
@@ -222,9 +240,58 @@
     });
     $("cuts").setAttribute("viewBox", `0 0 ${W} ${y}`);
     $("cuts").innerHTML = svg;
+    renderSteps(t);
     const why = PW.why[key];
     $("why").hidden = !why;
     if (why) $("why").querySelector("p").innerHTML = "<b>Чому так.</b> " + esc(why);
+  }
+  // піктограма деталі: вид зверху на торець, товщину збільшено, щоб було видно кут
+  function pic(pc) {
+    const L = 300, T = pc.stock === "2x6" ? 34 : 22, o = T * Math.tan(Math.PI / 8) * 1.6;
+    const lt = {"90": 0, "22.5": o, "v": 0, "point": 0}[pc.ends[0]], rt = {"90": 0, "22.5": o, "v": 0, "point": 0}[pc.ends[1]];
+    let pts;
+    const left = pc.ends[0] === "v" ? [[0, 0], [o, T / 2], [0, T]] : [[lt, 0], [0, T]];
+    const right = pc.ends[1] === "point" ? [[L, T], [L + o, T / 2], [L, 0]] : [[L, T], [L - rt, 0]];
+    pts = [...left, ...right];
+    const col = COL[pc.pos], y0 = 18;
+    const lab = e => e === "90" ? "90°" : (e === "22.5" ? "22.5°" : "2×22.5°");
+    return `<svg viewBox="-30 0 ${L + 70} ${T + 52}"><polygon transform="translate(0 ${y0})" points="${pts.map(p => p.join(",")).join(" ")}" fill="${col}" stroke="#0006"/>` +
+      `<text x="0" y="12" font-size="13" fill="currentColor">${lab(pc.ends[0])}</text>` +
+      `<text x="${L}" y="12" font-size="13" fill="currentColor" text-anchor="end">${lab(pc.ends[1])}</text>` +
+      `<text x="${L / 2}" y="${y0 + T / 2 + 5}" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">${pc.pos}</text>` +
+      `<text x="${L / 2}" y="${y0 + T + 22}" font-size="14" fill="currentColor" text-anchor="middle">${pc.len_mm} мм · ${pc.len_ft}</text></svg>`;
+  }
+  function renderSteps(t) {
+    const P = Object.fromEntries(PW.pieces.map(p => [p.pos, p]));
+    const steps = [];
+    steps.push(`<h3>Купи дерево</h3>` + t.rows.filter(r => r.key !== "deck").map(r =>
+      `<p>${r.qty} × <a href="${esc(r.url)}">${esc(r.item)}</a></p>`).join("") +
+      `<p>Інструмент: торцювальна пила (диск з поворотом і нахилом до 22.5°), рулетка, кутник, олівець, маркер.</p>`);
+    steps.push(`<h3>Налаштуй пилу на 22.5°</h3><p>${esc(PW.angle_howto)}</p>`);
+    // однакові дошки — одним кроком
+    const groups = [];
+    t.cuts.forEach(c => {
+      const sig = c.name.split(" ")[0] + "|" + c.parts.map(p => p.pos + ":" + p.len).join(",");
+      const g = groups.find(g => g.sig === sig);
+      if (g) g.names.push(c.name); else groups.push({sig, names: [c.name], c});
+    });
+    groups.forEach(g => {
+      const nums = g.names.map(n => n.split("№ ")[1]);
+      const kind = g.names[0].split(" ")[0];
+      const head = `${kind} № ${nums.length > 1 ? nums[0] + "–" + nums[nums.length - 1] : nums[0]}` +
+                   (nums.length > 1 ? ` (${nums.length} шт., кожну однаково)` : "");
+      const uniq = [...new Set(g.c.parts.map(p => p.pos))];
+      steps.push(`<h3>Розпиляй ${esc(head)}</h3>` +
+        `<p>З кожної дошки по черзі: ${g.c.parts.map(p => `<span class="chip p${p.pos}">${p.pos}</span> ${p.len}`).join(" → ")} мм, ` +
+        `обрізок ${g.c.left} мм. Між деталями йде пропил ${PW.kerf} мм — розмічай наступну від свіжого торця.</p>` +
+        uniq.map(pos => { const pc = P[pos]; return `<div class="piece">${pic(pc)}<div class="t"><b>Поз. ${pos}</b>, ${pc.stock}: ${esc(pc.how)}` +
+          (pc.check ? `<div class="chk">${esc(pc.check)}</div>` : "") + `</div></div>`; }).join("") +
+        `<p>Одразу підпиши маркером номер позиції на кожній деталі.</p>`);
+    });
+    steps.push(`<h3>Розклади на чотири комплекти A, B, C, D</h3><p>У кожному комплекті: ` +
+      PW.pieces.map(p => `<span class="chip p${p.pos}">${p.pos}</span> × ${p.per_set}`).join(" · ") +
+      `. Кожен комплект — одна чверть рами; збирається за аркушами 06.3–06.6 креслення (вище).</p>`);
+    $("steps").innerHTML = steps.map(s => `<div class="step">${s}</div>`).join("");
   }
   Object.entries(PW.labels).forEach(([k, label]) => {
     const b = document.createElement("button");
