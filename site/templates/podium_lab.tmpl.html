@@ -1,0 +1,200 @@
+<title>Hero Armor — вартість дерева подіуму</title>
+<style>
+  :root {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --disp: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+      --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+      --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+      --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #edece5; --panel: #f7f6f1; --ink: #24231d; --ink-2: #6b675c;
+    --line: #d8d5c9; --accent: #b35b1e; --signal: #3d6f96;
+    --good: #3d7a4f; --warn: #b07c14; --crit: #b23a2e;
+    --good-bg: #e3ede4; --warn-bg: #f2e9d2; --crit-bg: #f3ded9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181d; --panel: #1e2127; --ink: #e8e5dc; --ink-2: #9a968a;
+    --line: #33363d; --accent: #e08b3e; --signal: #6fa3c9;
+    --good: #6fbf87; --warn: #d9a83a; --crit: #e07a6a;
+    --good-bg: #21301f; --warn-bg: #322a15; --crit-bg: #35201c;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body);
+         margin: 0; padding: 2rem 1.25rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+             text-transform: uppercase; color: var(--accent); margin: 0 0 .4rem; }
+  .eyebrow a { color: var(--accent); }
+  h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem);
+       margin: 0 0 .3rem; text-wrap: balance; letter-spacing: .01em; }
+  .sub { color: var(--ink-2); max-width: 66ch; margin: 0 0 1.4rem; }
+  h2 { font-family: var(--disp); font-weight: 600; font-size: 1.25rem;
+       margin: 2.6rem 0 .9rem; letter-spacing: .02em; }
+  /* Посилання: синій на цьому фоні читався погано (Іван 31.07) —
+     переводимо на акцентний, він однаково живий і в темній темі. */
+  a { color: var(--accent); text-underline-offset: .15em; }
+  a:hover { color: var(--ink); }
+  .nav { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.6rem; }
+  .nav a { display: inline-block; font-family: var(--mono); font-size: .8rem;
+           padding: .5rem .9rem; background: var(--panel); border: 1px solid var(--line);
+           border-radius: 4px; text-decoration: none; color: var(--ink); }
+  .nav a:hover { border-color: var(--accent); }
+  .nav a b { color: var(--accent); }
+  .presets { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.2rem; }
+  .seg { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .7rem; }
+  .seg button {
+    font-family: var(--mono); font-size: .76rem; padding: .45rem .7rem;
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 4px; cursor: pointer;
+  }
+  .seg button:hover { border-color: var(--accent); }
+  .seg button.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+  .sim { display: grid; grid-template-columns: minmax(280px, 360px) 1fr; gap: 1.25rem; align-items: start; }
+  @media (max-width: 820px) { .sim { grid-template-columns: 1fr; } }
+  .controls, .outputs { background: var(--panel); border: 1px solid var(--line);
+                        border-radius: 6px; padding: 1.1rem 1.2rem; }
+  .ctrl { margin-bottom: .9rem; }
+  .ctrl label { display: flex; justify-content: space-between; font-size: .82rem;
+                color: var(--ink-2); margin-bottom: .15rem; }
+  .ctrl label b { font-family: var(--mono); color: var(--ink); font-weight: 600;
+                  font-variant-numeric: tabular-nums; }
+  .ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+  .ctrl-group { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--ink-2);
+                border-top: 1px solid var(--line); padding-top: .8rem; margin: 1.1rem 0 .7rem; }
+  .ctrl-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; }
+  .tile { border: 1px solid var(--line); border-radius: 5px; padding: .7rem .8rem; background: var(--bg); }
+  .tile .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+             text-transform: uppercase; color: var(--ink-2); }
+  .tile .v { font-family: var(--mono); font-size: 1.45rem; font-weight: 600;
+             margin-top: .15rem; font-variant-numeric: tabular-nums; }
+  .tile .u { font-size: .78rem; color: var(--ink-2); font-weight: 400; }
+  .tile .note { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+  .tile.good { background: var(--good-bg); } .tile.good .v { color: var(--good); }
+  .tile.warn { background: var(--warn-bg); } .tile.warn .v { color: var(--warn); }
+  .tile.crit { background: var(--crit-bg); } .tile.crit .v { color: var(--crit); }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+  .tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line);
+              border-radius: 6px; margin-top: 1rem; }
+  th, td { text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+       text-transform: uppercase; color: var(--ink-2); }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  tr.pick td { background: var(--good-bg); }
+  tr.pick td:first-child { box-shadow: inset 3px 0 0 var(--good); }
+  .v-ok { color: var(--good); } .v-warn { color: var(--warn); } .v-crit { color: var(--crit); }
+  .pill { display: inline-block; font-family: var(--mono); font-size: .68rem;
+          padding: .1rem .5rem; border-radius: 999px; white-space: nowrap; }
+  .pill.have { background: var(--good-bg); color: var(--good); }
+  .pill.add { background: var(--warn-bg); color: var(--warn); }
+  .layers { display: grid; gap: .8rem; }
+  .layer { border-left: 3px solid var(--signal); background: var(--panel);
+           border-radius: 0 5px 5px 0; padding: .8rem 1rem; }
+  .layer h3 { margin: 0 0 .25rem; font-size: .95rem; font-weight: 650; }
+  .layer p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 80ch; }
+  .flag { border-left: 3px solid var(--warn); background: var(--panel);
+          border-radius: 0 5px 5px 0; padding: .8rem 1rem; margin-top: 1rem; }
+  .flag p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 80ch; }
+  .thumb img { width: 56px; height: 56px; object-fit: cover; border-radius: 4px; display: block; }
+  .seg button.active { background: var(--panel); border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  tr.sum td { font-weight: 650; }
+</style>
+
+
+<div class="wrap">
+  <p class="eyebrow"><a href="https://hero-armor.github.io/">← Hero Armor · головна</a> · вартість дерева подіуму</p>
+  <h1>Подіум: скільки коштує дерево</h1>
+  <p class="sub">Тільки деревина: бруси каркаса й листи настилу восьмикутного подіуму R&nbsp;48″.
+  Без металу, шурупів, клею і фарби. Розкрій узятий зі специфікації Володимира (комплект
+  «WOODEN PODIUM» Rev&nbsp;3.1), модель розкладає деталі по 8-футових дошках з пропилом
+  {{KERF}}&nbsp;мм і множить на ціни Home Depot San Mateo станом на {{PRICE_DATE}}.</p>
+
+  <div class="seg" id="deck-seg"></div>
+  <div class="tiles" id="tiles"></div>
+
+  <h2>Що купити</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th></th><th>Позиція</th><th>К-сть</th><th>Ціна</th><th>Сума</th><th>Магазин</th></tr></thead>
+    <tbody id="buy"></tbody>
+  </table></div>
+
+{{PHOTO_WALL}}
+
+  <h2>Розкрій каркаса по дошках</h2>
+  <p style="font-size:.85rem;color:var(--ink-2)">Кожен рядок — одна дошка 8&nbsp;ft ({{BOARD}}&nbsp;мм):
+  які деталі з неї випилюються і скільки лишається в обрізках.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Дошка</th><th>Деталі, мм</th><th>Обрізок, мм</th></tr></thead>
+    <tbody>
+{{CUT_ROWS}}
+    </tbody>
+  </table></div>
+
+  <h2>Деталі з креслення</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Поз.</th><th>Переріз</th><th>Довжина</th><th>На ¼ подіуму</th><th>На весь подіум</th></tr></thead>
+    <tbody>
+{{PIECE_ROWS}}
+    </tbody>
+  </table></div>
+
+  <div class="flag">
+    <p><b>Настил.</b> {{DECK_NOTE}}</p>
+  </div>
+  <div class="flag">
+    <p><b>Що сюди НЕ входить.</b> {{SCOPE}}</p>
+  </div>
+
+  <h2>Файли проєкту</h2>
+  <p style="font-size:.85rem;color:var(--ink-2)">Розкрій, ціни й посилання —
+  <code style="font-family:var(--mono)">project/data/podium_wood.json</code>; рахує
+  <code style="font-family:var(--mono)">project/model/podium_wood.py</code>.</p>
+</div>
+
+<script>
+  const PW = {{PW_JSON}};
+  const $ = id => document.getElementById(id);
+  const usd = v => "$" + v.toFixed(2);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  function render(key) {
+    const t = PW.variants[key];
+    document.querySelectorAll("#deck-seg button").forEach(b => b.classList.toggle("active", b.dataset.k === key));
+    const tile = (k, v, note, cls) => `<div class="tile ${cls || ""}"><div class="k">${k}</div><div class="v">${v}</div><div class="note">${note}</div></div>`;
+    const frame = t.rows.filter(r => r.key !== "deck").reduce((a, r) => a + r.sum, 0);
+    const deck = t.rows.find(r => r.key === "deck");
+    $("tiles").innerHTML = [
+      tile("Разом з податком", usd(t.total), "усе дерево подіуму", "good"),
+      tile("Каркас", usd(frame), t.rows.filter(r => r.key !== "deck").map(r => r.qty + " × " + r.key).join(" + ")),
+      tile("Настил", usd(deck.sum), deck.qty + " листи 4×8"),
+      tile("Податок", usd(t.tax), PW.tax_pct + "% San Mateo"),
+    ].join("");
+    $("buy").innerHTML = t.rows.map(r =>
+      `<tr><td class="thumb"><a href="${esc(r.url)}"><img src="${esc(r.img)}" alt="${esc(r.item)}" loading="lazy"></a></td>` +
+      `<td><a href="${esc(r.url)}">${esc(r.item)}</a></td><td class="num">${r.qty}</td>` +
+      `<td class="num">${usd(r.price)}</td><td class="num">${usd(r.sum)}</td>` +
+      `<td>${esc(r.store)} · на складі ${r.in_stock}</td></tr>`).join("") +
+      `<tr class="sum"><td></td><td>Без податку</td><td></td><td></td><td class="num">${usd(t.net)}</td><td></td></tr>` +
+      `<tr class="sum"><td></td><td>З податком ${PW.tax_pct}%</td><td></td><td></td><td class="num">${usd(t.total)}</td><td></td></tr>`;
+  }
+  Object.entries(PW.labels).forEach(([k, label]) => {
+    const b = document.createElement("button");
+    b.dataset.k = k; b.textContent = label + " · " + usd(PW.variants[k].total);
+    b.addEventListener("click", () => render(k));
+    $("deck-seg").appendChild(b);
+  });
+  render(PW.default);
+</script>

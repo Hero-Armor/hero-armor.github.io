@@ -40,6 +40,8 @@ import circuit_lab as cl  # noqa: E402  (окремі сторінки-каль�
 import strip_layout as stl  # noqa: E402  (план стрічки в подіумі + монтаж і закупівля)
 import back_core as bcore  # noqa: E402  (ядро на спині: модуль, вікно, ТЗ друкарю)
 import power_node_model as pw
+sys.path.insert(0, str(ROOT / "project" / "model"))
+import podium_wood as pwood  # noqa: E402  (вартість дерева подіуму, project/data/podium_wood.json)
 sys.path.insert(0, str(ROOT / "enclosure" / "model"))
 import enclosure_model as enc  # noqa: E402  (pulls demand from lights + audio)
 
@@ -3148,6 +3150,35 @@ def build():
     llab = llab.replace("{{CIRCUIT_NAV}}", " · ".join(
         f'<a href="{SITE_URL}{c["key"]}.html">{esc(c["title"])}</a>' for c in all_circ))
 
+    # ================= вартість дерева подіуму =================
+    PWD = pwood.P
+    plab = tmpl("podium_lab.tmpl.html")
+    cut_rows = []
+    for key in PWD["stock"]:
+        for i, b in enumerate(pwood.cut_plan(key), 1):
+            left = PWD["board_mm"] - sum(b) - PWD["kerf_mm"] * (len(b) - 1)
+            cut_rows.append(f'      <tr><td>{esc(key)} № {i}</td>'
+                            f'<td class="num">{" + ".join(map(str, b))}</td>'
+                            f'<td class="num">{left}</td></tr>')
+    plab = (plab.replace("{{KERF}}", str(PWD["kerf_mm"]))
+                .replace("{{BOARD}}", str(PWD["board_mm"]))
+                .replace("{{PRICE_DATE}}", "19.10.2026")
+                .replace("{{CUT_ROWS}}", "\n".join(cut_rows))
+                .replace("{{PIECE_ROWS}}", "\n".join(
+                    f'      <tr><td class="num">{pc["pos"]}</td><td>{pc["stock"]}</td>'
+                    f'<td class="num">{pc["len_mm"]} мм</td><td class="num">{pc["per_quarter"]}</td>'
+                    f'<td class="num">{pc["per_quarter"] * PWD["quarters"]}</td></tr>'
+                    for pc in PWD["pieces"]))
+                .replace("{{DECK_NOTE}}", esc(PWD["deck"]["_sheets_note"]))
+                .replace("{{SCOPE}}", esc(PWD["_scope"]))
+                .replace("{{PHOTO_WALL}}", photo_wall_html(
+                    list(PWD["stock"].values()) + list(PWD["deck"]["options"].values())))
+                .replace("{{PW_JSON}}", json.dumps({
+                    "default": PWD["deck"]["default"], "tax_pct": PWD["tax_pct"],
+                    "labels": {k: o["label"] for k, o in PWD["deck"]["options"].items()},
+                    "variants": {k: pwood.totals(k) for k in PWD["deck"]["options"]},
+                }, ensure_ascii=False).replace("</", "<\\/")))
+
     pages = {**circ_pages,
              "index.html": index, "audio.html": audio, "lab.html": lab, "ops.html": ops,
              "tasks.html": tasks_page, "lights.html": lights,
@@ -3155,7 +3186,8 @@ def build():
              "lights_lab.html": llab, "cables.html": cables,
              "solar.html": solar_page,
              "solar_lab.html": slab, "cables_lab.html": clab,
-             "enclosure_lab.html": elab, "back_core_lab.html": bclab, **sys_pages}
+             "enclosure_lab.html": elab, "back_core_lab.html": bclab,
+             "podium_lab.html": plab, **sys_pages}
     # Смужка «Лабораторії» на кожну лабораторну сторінку. Вставляємо тут, а не
     # в кожен шаблон окремо: інакше нова лабораторія знову виявиться загубленою.
     lab_pages = {l["page"]: l["page"] for l in LABS}
